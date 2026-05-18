@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Hunt × 한국 시장 기회 분석</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; background: #0f0f15; color: #e8e8f0; }
+  .container { max-width: 960px; margin: 0 auto; padding: 28px 20px; }
+  h1 { font-size: 22px; font-weight: 900; text-align: center; margin-bottom: 6px;
+    background: linear-gradient(135deg, #ff6b35, #ffd700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .subtitle { text-align: center; font-size: 12px; color: #888; margin-bottom: 28px; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+  .tab { padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 700;
+    cursor: pointer; border: 1.5px solid #333; background: transparent; color: #aaa; transition: all 0.2s; }
+  .tab.active { background: #ff6b35; border-color: #ff6b35; color: #fff; }
+  .tab:hover:not(.active) { border-color: #ff6b35; color: #ff6b35; }
+  .panel { display: none; } .panel.active { display: block; }
+  .section-title { font-size: 14px; font-weight: 800; color: #ff6b35; margin-bottom: 14px;
+    padding-bottom: 8px; border-bottom: 1px solid #2a2a38; }
+  .summary-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 24px; }
+  .summary-card { background: #1a1a25; border: 1px solid #2a2a38; border-radius: 10px; padding: 14px; text-align: center; }
+  .summary-num { font-size: 30px; font-weight: 900; background: linear-gradient(135deg, #ff6b35, #ffd700);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .summary-label { font-size: 11px; color: #888; margin-top: 4px; }
+  .product-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-bottom: 20px; }
+  .product-card { background: #1a1a25; border: 1px solid #2a2a38; border-radius: 10px; padding: 12px; }
+  .product-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
+  .product-name { font-size: 13px; font-weight: 700; color: #fff; }
+  .product-score { font-size: 11px; font-weight: 700; color: #ffd700; background: #2a2510; padding: 2px 8px; border-radius: 8px; }
+  .product-desc { font-size: 11px; color: #999; line-height: 1.5; margin-bottom: 8px; }
+  .tag { display: inline-block; font-size: 10px; padding: 2px 8px; border-radius: 10px; margin: 2px 2px 0 0; }
+  .cat-meeting { background: #1a2a1a; color: #4ade80; border: 1px solid #1e4d2b; }
+  .cat-ai { background: #1a1a3a; color: #818cf8; border: 1px solid #2a2a5a; }
+  .cat-content { background: #2a1a1a; color: #f87171; border: 1px solid #4a2222; }
+  .cat-voice { background: #1a2a2a; color: #22d3ee; border: 1px solid #1a4a4a; }
+  .cat-video { background: #2a1a2a; color: #c084fc; border: 1px solid #4a1a4a; }
+  .cat-design { background: #2a2a1a; color: #fbbf24; border: 1px solid #4a4a1a; }
+  .cat-dev { background: #1a2a2a; color: #34d399; border: 1px solid #1a4a3a; }
+  .cat-crm { background: #2a1a1a; color: #fb923c; border: 1px solid #4a2a1a; }
+  .cat-seo { background: #1a1a2a; color: #a78bfa; border: 1px solid #2a1a4a; }
+  .pattern-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-bottom: 20px; }
+  .pattern-card { background: #1a1a25; border: 1px solid #2a2a38; border-radius: 10px; padding: 14px; }
+  .pattern-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .pattern-icon { font-size: 24px; }
+  .pattern-title { font-size: 13px; font-weight: 700; color: #fff; }
+  .pattern-count { font-size: 11px; color: #888; margin-bottom: 8px; }
+  .bar-wrap { background: #111; border-radius: 4px; height: 6px; margin-bottom: 10px; }
+  .bar-fill { height: 6px; border-radius: 4px; }
+  .pattern-examples { font-size: 11px; color: #aaa; margin-bottom: 6px; }
+  .pattern-insight { font-size: 11px; color: #ff6b35; font-style: italic; }
+  .market-grid { display: grid; gap: 10px; }
+  .market-row { background: #1a1a25; border: 1px solid #2a2a38; border-radius: 10px;
+    padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .market-left { display: flex; align-items: center; gap: 12px; flex: 1; }
+  .market-rank { font-size: 24px; font-weight: 900; color: #444; min-width: 28px; }
+  .market-name { font-size: 13px; font-weight: 700; color: #fff; }
+  .market-cat { font-size: 11px; color: #888; margin-top: 3px; }
+  .market-bar-wrap { background: #111; border-radius: 4px; height: 4px; margin-top: 8px; }
+  .market-bar-fill { height: 4px; border-radius: 4px; background: linear-gradient(90deg, #ff6b35, #ffd700); }
+  .market-value { font-size: 18px; font-weight: 900; color: #ffd700; text-align: right; white-space: nowrap; }
+  .market-growth { font-size: 11px; color: #4ade80; text-align: right; }
+  .opp-card { background: #1a1a25; border: 1.5px solid #2a2a38; border-radius: 14px;
+    padding: 20px; margin-bottom: 14px; position: relative; }
+  .opp-rank-badge { position: absolute; top: 16px; right: 16px; width: 38px; height: 38px;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 17px; font-weight: 900; }
+  .r1 { background: linear-gradient(135deg,#ffd700,#ff8c00); color: #000; }
+  .r2 { background: linear-gradient(135deg,#c0c0c0,#888); color: #000; }
+  .r3 { background: linear-gradient(135deg,#cd7f32,#8b4513); color: #fff; }
+  .r4 { background: #1e3a5f; color: #60a5fa; border: 1px solid #3a6a8f; }
+  .r5 { background: #1e1e3a; color: #a78bfa; border: 1px solid #3a3a6a; }
+  .opp-title { font-size: 17px; font-weight: 800; color: #fff; margin-bottom: 3px; padding-right: 52px; }
+  .opp-en { font-size: 11px; color: #666; margin-bottom: 12px; }
+  .opp-metrics { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin-bottom: 12px; }
+  .opp-metric { background: #111; border-radius: 8px; padding: 8px 10px; }
+  .opp-ml { font-size: 10px; color: #666; margin-bottom: 3px; }
+  .opp-mv { font-size: 12px; font-weight: 700; color: #fff; }
+  .ibox { border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; }
+  .ibox-green { background: #0f1f0f; border: 1px solid #1e4d1e; }
+  .ibox-yellow { background: #1f1500; border: 1px solid #4d3500; }
+  .ibox-blue { background: #0f1520; border: 1px solid #1e3a5f; }
+  .ilabel { font-size: 10px; font-weight: 700; margin-bottom: 4px; }
+  .il-green { color: #4ade80; } .il-yellow { color: #fbbf24; } .il-blue { color: #60a5fa; }
+  .itext { font-size: 12px; color: #ccc; line-height: 1.55; }
+  .diff-row { display: flex; align-items: center; gap: 6px; margin-top: 10px; }
+  .dd { width: 10px; height: 10px; border-radius: 50%; }
+  .df { background: #ff6b35; } .de { background: #333; }
+  .diff-label { font-size: 11px; color: #888; }
+  @media(max-width:600px){
+    .product-grid,.pattern-grid,.opp-metrics,.summary-grid{grid-template-columns:1fr;}
+    .market-row{flex-direction:column;align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🚀 Product Hunt 상위 50개 서비스 분석</h1>
+  <p class="subtitle">2026.04.19 ~ 05.19 | 한국 시장 미개척 기회 발굴 리포트</p>
+
+  <div class="summary-grid">
+    <div class="summary-card"><div class="summary-num">50</div><div class="summary-label">분석 대상 서비스</div></div>
+    <div class="summary-card"><div class="summary-num">6</div><div class="summary-label">공통 문제 패턴</div></div>
+    <div class="summary-card"><div class="summary-num">94%</div><div class="summary-label">AI 기반 서비스 비율</div></div>
+    <div class="summary-card"><div class="summary-num">5</div><div class="summary-label">한국 미개척 기회</div></div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" onclick="showPanel('products',this)">📋 서비스 목록</button>
+    <button class="tab" onclick="showPanel('patterns',this)">🔍 공통 패턴</button>
+    <button class="tab" onclick="showPanel('markets',this)">📊 시장 규모</button>
+    <button class="tab" onclick="showPanel('opportunities',this)">💡 한국 TOP 5</button>
+  </div>
+
+  <!-- PANEL 1 -->
+  <div id="panel-products" class="panel active">
+    <div class="section-title">📋 Product Hunt 상위 서비스 목록 (2026.04~05)</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#1 Brila</div><div class="product-score">★ 1,326</div></div>
+        <div class="product-desc">구글맵 리뷰에서 JTBD 기법으로 고객 진짜 언어를 추출해 1페이지 웹사이트 자동 생성</div>
+        <span class="tag cat-ai">AI</span><span class="tag cat-crm">Website Builder</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#2 Lightfield</div><div class="product-score">★ 730</div></div>
+        <div class="product-desc">스스로 구축되며 업무도 직접 처리하는 AI 네이티브 CRM. 수동 입력 제로</div>
+        <span class="tag cat-crm">CRM</span><span class="tag cat-ai">AI</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#3 Plurai</div><div class="product-score">★ 747</div></div>
+        <div class="product-desc">AI 에이전트 신뢰성·가드레일을 위한 Vibe-training. 설명만으로 학습 데이터 생성·배포</div>
+        <span class="tag cat-ai">AI Agent</span><span class="tag cat-dev">Dev Tools</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#4 Fathom 3.0</div><div class="product-score">★ 777</div></div>
+        <div class="product-desc">봇 없이 회의 녹음·노트. 전체 회의 히스토리 질문 가능. Claude/ChatGPT/CRM 연동</div>
+        <span class="tag cat-meeting">Meetings</span><span class="tag cat-ai">AI</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#5 ProdShort</div><div class="product-score">★ 727</div></div>
+        <div class="product-desc">회의 내용을 Shorts·LinkedIn·Twitter 게시물로 자동 변환. 가짜 AI 없이 진짜 목소리로</div>
+        <span class="tag cat-content">콘텐츠</span><span class="tag cat-meeting">Meetings</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#6 Clera</div><div class="product-score">★ 715</div></div>
+        <div class="product-desc">iMessage/WhatsApp으로 직무 파악 후 맞춤 기업에 직접 소개하는 AI 채용 에이전트</div>
+        <span class="tag cat-crm">채용</span><span class="tag cat-ai">AI Agent</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#7 Velo</div><div class="product-score">★ 680</div></div>
+        <div class="product-desc">화면 녹화를 AI로 즉시 보기 좋은 공유 가능 영상으로 변환</div>
+        <span class="tag cat-video">Video</span><span class="tag cat-ai">AI</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#8 Kilo Code v7</div><div class="product-score">★ 692</div></div>
+        <div class="product-desc">VS Code용 병렬 에이전트 + diff 리뷰어 + 멀티모델 비교. AI 코드를 실제로 신뢰 가능하게</div>
+        <span class="tag cat-dev">Dev Tools</span><span class="tag cat-ai">AI</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#9 Dune</div><div class="product-score">★ 635</div></div>
+        <div class="product-desc">실행 중인 앱에 따라 3개 키 기능이 실시간으로 바뀌는 맥용 컨텍스트 인식 키패드</div>
+        <span class="tag cat-dev">Dev Tools</span><span class="tag cat-ai">AI</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#10 RankSpot</div><div class="product-score">★ 649</div></div>
+        <div class="product-desc">경쟁사 딥 인텔리전스 기반 AI SEO 블로그 자동 생성</div>
+        <span class="tag cat-seo">SEO</span><span class="tag cat-content">마케팅</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#11 NovaVoice</div><div class="product-score">★ 601</div></div>
+        <div class="product-desc">음성으로 200+ wpm 입력, 앱 전환 없이 명령 실행하는 음성 OS</div>
+        <span class="tag cat-voice">Voice</span><span class="tag cat-ai">AI</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#12 Figma for Agents</div><div class="product-score">★ 591</div></div>
+        <div class="product-desc">AI 에이전트가 디자인 시스템을 이해하도록 Figma MCP 도구 제공. 브랜드 일관성 유지</div>
+        <span class="tag cat-design">Design</span><span class="tag cat-ai">AI Agent</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#13 Claude Code Routines</div><div class="product-score">★ 589</div></div>
+        <div class="product-desc">Claude Code 작업을 스마트 루틴으로 자동화. 반복 개발 태스크 autopilot</div>
+        <span class="tag cat-dev">Dev Tools</span><span class="tag cat-ai">AI</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#14 Velo 2.0</div><div class="product-score">★ 617</div></div>
+        <div class="product-desc">음성+화면 녹화를 즉시 공유 가능한 세일즈·데모 영상으로 변환</div>
+        <span class="tag cat-video">Video</span><span class="tag cat-content">Sales</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#15 Shadow 2.0</div><div class="product-score">★ 541</div></div>
+        <div class="product-desc">회의가 끝나기 전에 후속 업무를 완료. 회의 중 실시간 액션 아이템 처리</div>
+        <span class="tag cat-meeting">Meetings</span><span class="tag cat-ai">AI</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#16 Claude Design</div><div class="product-score">★ 546</div></div>
+        <div class="product-desc">Claude와 대화하며 프로토타입·슬라이드·원페이저 즉시 제작</div>
+        <span class="tag cat-design">Prototyping</span><span class="tag cat-ai">AI</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#17 Spellar 3.0</div><div class="product-score">★ 538</div></div>
+        <div class="product-desc">회의 간 교차 메모리 AI 회의 동반자. 여러 회의의 맥락을 연결해 기억</div>
+        <span class="tag cat-meeting">Meetings</span><span class="tag cat-ai">AI 메모리</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#18 FlowMarket</div><div class="product-score">★ 518</div></div>
+        <div class="product-desc">AI 에이전트들의 소셜 네트워크. 에이전트 간 B2B 거래 자동 생성</div>
+        <span class="tag cat-ai">AI Agent</span><span class="tag cat-crm">B2B Sales</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#19 Kanwas</div><div class="product-score">★ 506</div></div>
+        <div class="product-desc">팀을 위한 오픈소스 두뇌. AI로 팀 지식을 구조화하고 공유</div>
+        <span class="tag cat-ai">Knowledge</span><span class="tag cat-dev">Open Source</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#20 Kelviq</div><div class="product-score">★ 504</div></div>
+        <div class="product-desc">SaaS·AI 기업을 위한 결제·세금·빌링 통합 솔루션</div>
+        <span class="tag cat-crm">Payments</span><span class="tag cat-dev">SaaS</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#21 Wispr Flow</div><div class="product-score">★ 480</div></div>
+        <div class="product-desc">Mac 받아쓰기. 자연스럽게 말하면 모든 앱에서 자신의 스타일로 텍스트 자동 입력</div>
+        <span class="tag cat-voice">Voice</span><span class="tag cat-ai">Dictation</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#22 Monid 2.0</div><div class="product-score">★ 487</div></div>
+        <div class="product-desc">에이전트 도구를 위한 OpenRouter. AI 에이전트가 쓰는 외부 도구 라우팅 통합</div>
+        <span class="tag cat-ai">AI Agent</span><span class="tag cat-dev">Infrastructure</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#23 Stitch 2.0 by Google</div><div class="product-score">★ 470</div></div>
+        <div class="product-desc">프롬프트로 편집 가능한 UI·프로토타입·코드 연동 출력물 즉시 생성</div>
+        <span class="tag cat-design">Design AI</span><span class="tag cat-ai">AI</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#24 Postiz</div><div class="product-score">★ 563</div></div>
+        <div class="product-desc">에이전틱 소셜미디어 스케줄러. AI 에이전트와 연동 가능한 오픈소스</div>
+        <span class="tag cat-content">SNS</span><span class="tag cat-ai">자동화</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#25 Frontdesk AI</div><div class="product-score">★ 410</div></div>
+        <div class="product-desc">통화·채팅·예약·CRM 워크플로우를 통합 처리하는 AI COO</div>
+        <span class="tag cat-ai">AI Agent</span><span class="tag cat-crm">Business Ops</span>
+      </div>
+      <div class="product-card">
+        <div class="product-header"><div class="product-name">#26~50 기타 주요 서비스</div><div class="product-score">분석 포함</div></div>
+        <div class="product-desc">Wonder (AI 디자인 에이전트), Figr AI (UX AI), Polygram (AI 앱빌더), Arcana Labs (AI 스튜디오), OpenHuman (AI 하니스), AgentRail (멀티에이전트), Paraflow (제품설계), Knooth (화면녹화 AI), HabitVs (건강 AI), DeepFrame (보안 SaaS), Vivago Video Agent, Ask Product Hunt AI, Stella (자가수정 앱), Pixcode (에이전트 라우팅), ElevenCreative Flows, Articuler.ai 등 25개</div>
+        <span class="tag cat-ai">AI</span><span class="tag cat-dev">Dev</span><span class="tag cat-content">Creator</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL 2 -->
+  <div id="panel-patterns" class="panel">
+    <div class="section-title">🔍 6대 공통 문제 패턴 분석</div>
+    <div class="pattern-grid">
+      <div class="pattern-card">
+        <div class="pattern-header"><div class="pattern-icon">🤝</div><div class="pattern-title">패턴 1. 회의 지식 손실</div></div>
+        <div class="pattern-count">관련 서비스 8개 (16%)</div>
+        <div class="bar-wrap"><div class="bar-fill" style="width:80%;background:linear-gradient(90deg,#4ade80,#16a34a)"></div></div>
+        <div class="pattern-examples">Fathom 3.0, Shadow 2.0, Spellar 3.0, ProdShort, Dune, Velo, Wispr Flow, Monid 2.0</div>
+        <div class="pattern-insight">💡 "회의는 하는데 기억도·후속도·콘텐츠도 안 된다"</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pattern-header"><div class="pattern-icon">🤖</div><div class="pattern-title">패턴 2. AI 에이전트 신뢰/관리 불능</div></div>
+        <div class="pattern-count">관련 서비스 12개 (24%) — 최다</div>
+        <div class="bar-wrap"><div class="bar-fill" style="width:100%;background:linear-gradient(90deg,#818cf8,#4f46e5)"></div></div>
+        <div class="pattern-examples">Plurai, Kilo Code v7, Figma for Agents, Claude Code Routines, Monid 2.0, FlowMarket, AgentRail, Polygram, Kanwas, Paraflow, OpenHuman, Pixcode</div>
+        <div class="pattern-insight">💡 "AI가 짜는데 신뢰 못함·관리 못함·오케스트레이션 없음"</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pattern-header"><div class="pattern-icon">📱</div><div class="pattern-title">패턴 3. 반복 콘텐츠 제작 피로</div></div>
+        <div class="pattern-count">관련 서비스 9개 (18%)</div>
+        <div class="bar-wrap"><div class="bar-fill" style="width:90%;background:linear-gradient(90deg,#f87171,#dc2626)"></div></div>
+        <div class="pattern-examples">ProdShort, Postiz, RankSpot, Vivago, Velo 2.0, ElevenCreative, Arcana Labs, Knooth, Claude Design</div>
+        <div class="pattern-insight">💡 "매일 올려야 하는데 시간도 없고 AI는 가짜 같다"</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pattern-header"><div class="pattern-icon">🎨</div><div class="pattern-title">패턴 4. AI 디자인 브랜드 일관성 파괴</div></div>
+        <div class="pattern-count">관련 서비스 7개 (14%)</div>
+        <div class="bar-wrap"><div class="bar-fill" style="width:70%;background:linear-gradient(90deg,#fbbf24,#d97706)"></div></div>
+        <div class="pattern-examples">Figma for Agents, Stitch 2.0, Wonder, Figr AI, Claude Design, Paraflow, Genpire</div>
+        <div class="pattern-insight">💡 "AI로 디자인 빠른데 브랜드 깨짐 → 손으로 다시 수정"</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pattern-header"><div class="pattern-icon">🌐</div><div class="pattern-title">패턴 5. 진정성 있는 온라인 존재감 부재</div></div>
+        <div class="pattern-count">관련 서비스 4개 (8%)</div>
+        <div class="bar-wrap"><div class="bar-fill" style="width:40%;background:linear-gradient(90deg,#6ee7b7,#059669)"></div></div>
+        <div class="pattern-examples">Brila, Articuler.ai, Clera, Frontdesk AI</div>
+        <div class="pattern-insight">💡 "내가 누군지 온라인에서 진정성 있게 표현하고 싶지만 템플릿은 다 똑같다"</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pattern-header"><div class="pattern-icon">🎙️</div><div class="pattern-title">패턴 6. 타이핑 속도 병목·앱 전환 피로</div></div>
+        <div class="pattern-count">관련 서비스 3개 (6%)</div>
+        <div class="bar-wrap"><div class="bar-fill" style="width:30%;background:linear-gradient(90deg,#22d3ee,#0891b2)"></div></div>
+        <div class="pattern-examples">NovaVoice, Wispr Flow, Dune</div>
+        <div class="pattern-insight">💡 "생각이 타이핑보다 빠르다 → 말로 입력·앱 전환 없애고 싶다"</div>
+      </div>
+    </div>
+    <div style="background:#1a1a25;border:1px solid #2a2a38;border-radius:10px;padding:16px;">
+      <div class="section-title" style="margin-bottom:10px;">🎯 핵심 인사이트</div>
+      <p style="font-size:13px;color:#ccc;line-height:1.8;">상위 50개의 <strong style="color:#ff6b35">94%가 AI 기반</strong>이며 트렌드는 단순 "AI 기능 추가"가 아닌 <strong style="color:#ffd700">"AI가 일한 결과를 인간이 신뢰·관리·활용"</strong>하는 2차 레이어로 이동했습니다. 특히 <strong style="color:#4ade80">한국 시장</strong>에서는 이 6가지 패턴이 영어 서비스 위주로만 해결되고 있어, <strong style="color:#818cf8">한국어 최적화 + 카카오/네이버 생태계 연동</strong>이라는 로컬라이징 기회가 대규모로 열려 있습니다.</p>
+    </div>
+  </div>
+
+  <!-- PANEL 3 -->
+  <div id="panel-markets" class="panel">
+    <div class="section-title">📊 카테고리별 시장 규모 (글로벌 + 한국 기회)</div>
+    <div class="market-grid">
+      <div class="market-row">
+        <div class="market-left">
+          <div class="market-rank">1</div>
+          <div style="flex:1"><div class="market-name">🤖 AI 에이전트 오케스트레이션</div>
+          <div class="market-cat">패턴 2 | 한국 대기업·스타트업 수요 급증 | 2026 최우선 투자 영역</div>
+          <div class="market-bar-wrap"><div class="market-bar-fill" style="width:95%"></div></div></div>
+        </div>
+        <div><div class="market-value">$45.1B</div><div class="market-growth">↑ 45% YoY</div></div>
+      </div>
+      <div class="market-row">
+        <div class="market-left">
+          <div class="market-rank">2</div>
+          <div style="flex:1"><div class="market-name">📝 AI 회의·업무 생산성</div>
+          <div class="market-cat">패턴 1 | 한국 약 4,300억원 추정 | 원격근무 확산으로 가속</div>
+          <div class="market-bar-wrap"><div class="market-bar-fill" style="width:78%"></div></div></div>
+        </div>
+        <div><div class="market-value">$23.4B</div><div class="market-growth">↑ 31% YoY</div></div>
+      </div>
+      <div class="market-row">
+        <div class="market-left">
+          <div class="market-rank">3</div>
+          <div style="flex:1"><div class="market-name">📱 AI 콘텐츠·SNS 자동화</div>
+          <div class="market-cat">패턴 3 | 한국 소상공인 SNS 마케팅 수요 폭발 | 크리에이터 이코노미</div>
+          <div class="market-bar-wrap"><div class="market-bar-fill" style="width:72%"></div></div></div>
+        </div>
+        <div><div class="market-value">$18.6B</div><div class="market-growth">↑ 28% YoY</div></div>
+      </div>
+      <div class="market-row">
+        <div class="market-left">
+          <div class="market-rank">4</div>
+          <div style="flex:1"><div class="market-name">🌐 AI 로컬 비즈니스 웹사이트</div>
+          <div class="market-cat">패턴 5 | 한국 소상공인 550만명 | 대부분 웹 존재감 부재</div>
+          <div class="market-bar-wrap"><div class="market-bar-fill" style="width:55%"></div></div></div>
+        </div>
+        <div><div class="market-value">$12.8B</div><div class="market-growth">↑ 22% YoY</div></div>
+      </div>
+      <div class="market-row">
+        <div class="market-left">
+          <div class="market-rank">5</div>
+          <div style="flex:1"><div class="market-name">🎓 버티컬 AI 교육·입시</div>
+          <div class="market-cat">패턴 5+3 | 한국 사교육 시장 26조원 | AI 개인화 교육 미개척</div>
+          <div class="market-bar-wrap"><div class="market-bar-fill" style="width:50%"></div></div></div>
+        </div>
+        <div><div class="market-value">$8.3B</div><div class="market-growth">↑ 38% YoY</div></div>
+      </div>
+      <div class="market-row">
+        <div class="market-left">
+          <div class="market-rank">6</div>
+          <div style="flex:1"><div class="market-name">🎙️ AI 음성 인터페이스</div>
+          <div class="market-cat">패턴 6 | 한국어 음성인식 정확도 향상으로 기회 확대</div>
+          <div class="market-bar-wrap"><div class="market-bar-fill" style="width:42%"></div></div></div>
+        </div>
+        <div><div class="market-value">$6.1B</div><div class="market-growth">↑ 35% YoY</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL 4 -->
+  <div id="panel-opportunities" class="panel">
+    <div class="section-title">💡 1인 개발자가 구축 가능한 한국 미개척 서비스 TOP 5</div>
+
+    <div class="opp-card">
+      <div class="opp-rank-badge r1">1</div>
+      <div class="opp-title">🏪 소상공인 AI SNS 자동화 올인원</div>
+      <div class="opp-en">Korean Local Business AI Content Agent (카카오+네이버+인스타 동시 발행)</div>
+      <div class="opp-metrics">
+        <div class="opp-metric"><div class="opp-ml">목표 타겟</div><div class="opp-mv">550만 소상공인</div></div>
+        <div class="opp-metric"><div class="opp-ml">월 구독료</div><div class="opp-mv">₩29,000~59,000</div></div>
+        <div class="opp-metric"><div class="opp-ml">1,000명 MRR</div><div class="opp-mv">₩2,900만~</div></div>
+      </div>
+      <div class="ibox ibox-green">
+        <div class="ilabel il-green">📌 글로벌 PH 레퍼런스</div>
+        <div class="itext">ProdShort (★727) + Postiz (★563) + RankSpot (★649) 세 서비스가 해결하는 문제를 하나로 합쳐 <strong>카카오채널 + 네이버 블로그 + 인스타그램</strong> 동시 발행으로 완전 한국화. 이 조합을 한국어로 제공하는 서비스는 글로벌에 전혀 없음.</div>
+      </div>
+      <div class="ibox ibox-green">
+        <div class="ilabel il-green">🇰🇷 한국 특화 차별점</div>
+        <div class="itext">네이버지도·카카오맵 리뷰 기반 콘텐츠 자동 생성 · 카카오채널 자동 발행 · 네이버 블로그 SEO 최적화 · 인스타그램 릴스 한국어 자막 · 계절별 이벤트 자동 기획. 경쟁사 전무.</div>
+      </div>
+      <div class="ibox ibox-yellow">
+        <div class="ilabel il-yellow">⚡ 루나님 직결 기회</div>
+        <div class="itext">커피스미스 카페 + 실용음악 학원 두 곳을 직접 MVP 검증 대상으로 활용 가능. 실제 사용자 1호가 본인. 소상공인 네트워크를 통한 입소문 마케팅 최적화.</div>
+      </div>
+      <div class="diff-row">
+        <div class="dd df"></div><div class="dd df"></div><div class="dd df"></div><div class="dd de"></div><div class="dd de"></div>
+        <span class="diff-label">개발 난이도 ★★★☆☆ | Claude API + 카카오/네이버 Open API | 예상 MVP 기간 2~3개월</span>
+      </div>
+    </div>
+
+    <div class="opp-card">
+      <div class="opp-rank-badge r2">2</div>
+      <div class="opp-title">🎵 실용음악·예술 입시 AI 피드백 플랫폼</div>
+      <div class="opp-en">Korean Arts Entrance Exam AI Coach (화성법·시창청음 자동 채점)</div>
+      <div class="opp-metrics">
+        <div class="opp-metric"><div class="opp-ml">연간 입시생</div><div class="opp-mv">실용음악과 3만+명</div></div>
+        <div class="opp-metric"><div class="opp-ml">월 구독료</div><div class="opp-mv">₩49,000~99,000</div></div>
+        <div class="opp-metric"><div class="opp-ml">한국 사교육</div><div class="opp-mv">26조원 시장</div></div>
+      </div>
+      <div class="ibox ibox-green">
+        <div class="ilabel il-green">📌 글로벌 PH 레퍼런스</div>
+        <div class="itext">Spellar 3.0 (회의 간 크로스 메모리·★538) + Plurai (AI 피드백 학습·★747) → 이 두 서비스의 핵심을 음악 교육 버전으로 전환. 화성법 자동 채점 + 시창 청음 AI 평가는 글로벌에 유사 서비스 전무.</div>
+      </div>
+      <div class="ibox ibox-green">
+        <div class="ilabel il-green">🇰🇷 한국 특화 차별점</div>
+        <div class="itext">서울예대·경희대·한양대 등 기출 데이터 특화 · 29챕터 화성법 커리큘럼 탑재 · 학원 B2B 라이선스 판매 · 교수 직접 설계라는 신뢰도 최고 해자 보유</div>
+      </div>
+      <div class="ibox ibox-yellow">
+        <div class="ilabel il-yellow">⚡ 루나님 직결 기회</div>
+        <div class="itext">기존 HarmonyAI v4 프로젝트와 직결! 이미 개발 중인 앱의 상용화로 가장 빠른 수익화 경로. 20년 교수 경력 + 입시 지도 노하우 = 경쟁 불가능한 진입장벽.</div>
+      </div>
+      <div class="diff-row">
+        <div class="dd df"></div><div class="dd df"></div><div class="dd de"></div><div class="dd de"></div><div class="dd de"></div>
+        <span class="diff-label">개발 난이도 ★★☆☆☆ | 기존 앱 기반 확장 | 예상 MVP 기간 1~2개월</span>
+      </div>
+    </div>
+
+    <div class="opp-card">
+      <div class="opp-rank-badge r3">3</div>
+      <div class="opp-title">📍 네이버·카카오맵 리뷰 기반 AI 랜딩페이지</div>
+      <div class="opp-en">Korean Review-to-Landing Page AI Builder (Brila 한국판)</div>
+      <div class="opp-metrics">
+        <div class="opp-metric"><div class="opp-ml">목표 시장</div><div class="opp-mv">웹 없는 자영업자</div></div>
+        <div class="opp-metric"><div class="opp-ml">구독/건당</div><div class="opp-mv">₩9,900~19,000</div></div>
+        <div class="opp-metric"><div class="opp-ml">레퍼런스 PH 순위</div><div class="opp-mv">4월 전체 1위</div></div>
+      </div>
+      <div class="ibox ibox-green">
+        <div class="ilabel il-green">📌 글로벌 PH 레퍼런스</div>
+        <div class="itext">Brila (★1,326 — 4월 전체 1위!) → 구글맵 리뷰 기반 웹사이트 자동 생성. 한국판은 <strong>네이버 플레이스 + 카카오맵 리뷰</strong>를 분석해 고객이 실제로 쓴 말로 한국어 랜딩페이지 자동 생성. 완전 로컬 공백.</div>
+      </div>
+      <div class="ibox ibox-green">
+        <div class="ilabel il-green">🇰🇷 한국 특화 차별점</div>
+        <div class="itext">네이버 플레이스 리뷰 분석 → 고객 실제 언어로 카피 생성 · 카카오 채널 연동 버튼 자동 포함 · 네이버 검색 SEO 메타태그 자동 삽입 · 모바일 최적화 1페이지 사이트</div>
+      </div>
+      <div class="diff-row">
+        <div class="dd df"></div><div class="dd df"></div><div class="dd df"></div><div class="dd de"></div><div class="dd de"></div>
+        <span class="diff-label">개발 난이도 ★★★☆☆ | 네이버 API + Claude API + 웹빌더 | 예상 MVP 2~3개월</span>
+      </div>
+    </div>
+
+    <div class="opp-card">
+      <div class="opp-rank-badge r4">4</div>
+      <div class="opp-title">📅 학원·소상공인 AI 예약 + 노쇼 방지 봇</div>
+      <div class="opp-en">Korean SMB Appointment AI + No-show Prevention (카카오알림톡 연동)</div>
+      <div class="opp-metrics">
+        <div class="opp-metric"><div class="opp-ml">목표 시장</div><div class="opp-mv">학원 6만곳+서비스업</div></div>
+        <div class="opp-metric"><div class="opp-ml">월 구독료</div><div class="opp-mv">₩19,000~49,000</div></div>
+        <div class="opp-metric"><div class="opp-ml">고통 지수</div><div class="opp-mv">노쇼율 평균 20%</div></div>
+      </div>
+      <div class="ibox ibox-green">
+        <div class="ilabel il-green">📌 글로벌 PH 레퍼런스</div>
+        <div class="itext">Frontdesk AI (★410) → 통화·예약·CRM AI COO. 국내에는 학원 특화 예약 + 카카오알림톡 자동 리마인더 + 수납 연동까지 한 번에 처리하는 도구 없음. 기존 학원 SW는 UI 낡고 모바일 미지원.</div>
+      </div>
+      <div class="ibox ibox-yellow">
+        <div class="ilabel il-yellow">⚡ 루나님 직결 기회</div>
+        <div class="itext">실용음악·댄스 학원 운영 중 → 직접 사용자 1호로 즉시 검증. 원장 커뮤니티 네트워크를 통한 확산 용이.</div>
+      </div>
+      <div class="diff-row">
+        <div class="dd df"></div><div class="dd df"></div><div class="dd de"></div><div class="dd de"></div><div class="dd de"></div>
+        <span class="diff-label">개발 난이도 ★★☆☆☆ | 카카오 비즈니스 API + 예약 DB | 예상 MVP 1~2개월</span>
+      </div>
+    </div>
+
+    <div class="opp-card">
+      <div class="opp-rank-badge r5">5</div>
+      <div class="opp-title">🎙️ 한국어 AI 회의록 + 카카오워크 연동</div>
+      <div class="opp-en">Korean Voice Meeting Intelligence (존댓말·업계용어 특화 인식)</div>
+      <div class="opp-metrics">
+        <div class="opp-metric"><div class="opp-ml">목표 시장</div><div class="opp-mv">B2B 중소기업</div></div>
+        <div class="opp-metric"><div class="opp-ml">월 구독료</div><div class="opp-mv">₩9,900~29,000/인</div></div>
+        <div class="opp-metric"><div class="opp-ml">경쟁 공백</div><div class="opp-mv">한국어 특화 전무</div></div>
+      </div>
+      <div class="ibox ibox-green">
+        <div class="ilabel il-green">📌 글로벌 PH 레퍼런스</div>
+        <div class="itext">Fathom 3.0 (★777) + Shadow 2.0 (★541) + Spellar 3.0 (★538) 세 서비스 모두 영어 최적화. 한국어 방언·존댓말·업계 전문 용어에 최적화된 회의록 AI = 완전 공백 시장.</div>
+      </div>
+      <div class="ibox ibox-blue">
+        <div class="ilabel il-blue">🔗 기술 스택</div>
+        <div class="itext">Whisper (한국어) + Claude API (요약·분류) + 카카오워크/라인웍스/슬랙 Webhook + Google Docs 한국어 정리 자동화. 가장 빠른 MVP 경로는 Zoom + 카카오워크 연동 봇.</div>
+      </div>
+      <div class="diff-row">
+        <div class="dd df"></div><div class="dd df"></div><div class="dd df"></div><div class="dd df"></div><div class="dd de"></div>
+        <span class="diff-label">개발 난이도 ★★★★☆ | Whisper + Claude API + 카카오 연동 | 예상 MVP 3~4개월</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function showPanel(name, el) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('panel-' + name).classList.add('active');
+  el.classList.add('active');
+}
+</script>
+</body>
+</html>
