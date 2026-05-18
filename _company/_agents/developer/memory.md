@@ -10,3 +10,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-18] AI 피드백과 학습 데이터를 효과적으로 관리하기 위한 관계형 데이터베이스(SQL) 스키마 및 초기 백엔드 아키텍처(기술 스택 제안 포함)의 초안을 설계하라 → 산출물 sessions/2026-05-18T13-43/developer.md
 - [2026-05-18] Writer가 설계한 'AI 보컬 성장 서사'의 각 단계별 성취도(Growth, Engagement, Monetization) KPI를 DB 스키마와 연결하여 실시간 추적 기능을 위한 데이터 모델을 구체화하라. → 산출물 sessions/2026-05-18T14-19/developer.md
 - [2026-05-18] AI 보컬 성장 서사(Growth, Engagement, Monetization) KPI를 DB 스키마와 연결하여 실시간 추적 기능을 위한 초기 데이터 모델의 구체화 방안(SQL 스키마 초안 포함)을 설계하라. → 산출물 sessions/2026-05-18T14-34/developer.md
+- [2026-05-18] Coda가 설계한 SQL 데이터 모델(Growth, Engagement, Monetization KPI)을 기반으로, 웹페이지의 프론트엔드와 백엔드가 연결될 수 있는 최소 기능 제품(MVP) 아키텍처 및 필요한 API 엔드포인트 구성을 제안해줘. → 산출물 sessions/2026-05-18T14-38/developer.md
