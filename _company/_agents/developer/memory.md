@@ -16,3 +16,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-18] PC와 GitHub를 자동 동기화할 수 있는 스크립트 또는 설정 방법을 설계하고 구현하여, 향후 지속적인 동기화가 가능하도록 환경을 설정해줘. → 산출물 sessions/2026-05-18T15-14/developer.md
 - [2026-05-18] Sync_Workflow.sh 및 monitor_sync.sh 스크립트에 실제 환경 오류 처리 로직을 추가하고, Git Hooks 및 Cron Job 연동 시 발생할 수 있는 모든 예외 상황에 대한 안정성 검증 코드를 최종적으로 보강하여 완성하라. → 산출물 sessions/2026-05-18T15-19/developer.md
 - [2026-05-18] 모니터링 결과 로그 파일(`/Users/iyeongjae/Desktop/초보프로젝트/_company/cron_logs/cron_sync.log`)을 분석하여 현재 개발 환경에서 발견된 가장 큰 병목 현상 1가지와 개선 방안을 보고하세요. → 산출물 sessions/2026-05-18T15-34/developer.md
+- [2026-05-18] Business팀이 제시한 수익화 로직과 데이터 모델에 맞춰, 'Gap Score Depth' 지표를 포함하는 API 엔드포인트 설계의 기술적 우선순위와 데이터 저장 구조(DB 스키마) 개선안을 확정하라. → 산출물 sessions/2026-05-18T15-49/developer.md
