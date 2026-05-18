@@ -1,0 +1,1 @@
+# 썸네일 최종 디자인 사양: 시스템 각성 (System Awakening)
