@@ -11,3 +11,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-18] * `Growth`, `Engagement`, `Monetization` KPI를 별도의 테이블/필드로 분리 설계한 것은 데이터 분석 및 리포팅에 매우 적합합니다. 이는 비즈니스 목표와 기술 구현을 명확히 연결합니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-05-18] * **권한 기반 접근 제어(RBAC)의 기본 구조:** `Diagnosis_Results`와 같은 민감한 데이터에 대한 접근을 사용자 레벨 또는 구독 레벨로 분리하는 것은 유료화 모델 구현의 핵심입니다. _(근거: sessions/2026-05-18T13-43/developer.md)_
 - [2026-05-18] # 에 기반하여 성장 지표를 종합적으로 산출 _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-05-18] * 해당 사용자가 요청하는 데이터(`diagnosis_type`)에 접근할 **권한(Role-Based Access Control, RBAC)**을 가지고 있는지 DB를 통해 검증한다. (예: 무료 사용자에게는 'Engagement' 리포트 접근 제한) $\rightarrow$ ** _(근거: sessions/2026-05-18T13-43/developer.md)_
+- [2026-05-18] * `result_data`가 정의된 JSON 스키마를 따르는지 확인한다. 특히 KPI(`Growth`, `Engagement`, `Monetization`) 값이 예상 범위를 벗어나지 않는지 검증한다. $\rightarrow$ ** _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-05-18] * 검증이 통과되면, `Diagnosis_Results` 테이블에 결과(`result_data`, `context_id`, 시간 스탬프)를 삽입한다. $\rightarrow$ ** _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-05-18] * 이때, `Growth`, `Engagement`, `Monetization` KPI는 별도의 테이블(`KPI_Metrics`)에 연관시켜 저장하여 추적 용이성을 확보한다. $\rightarrow$ ** _(근거: sessions/2026-05-18T43/developer.md)_
