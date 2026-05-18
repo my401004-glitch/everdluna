@@ -12,3 +12,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-18] AI 보컬 성장 서사(Growth, Engagement, Monetization) KPI를 DB 스키마와 연결하여 실시간 추적 기능을 위한 초기 데이터 모델의 구체화 방안(SQL 스키마 초안 포함)을 설계하라. → 산출물 sessions/2026-05-18T14-34/developer.md
 - [2026-05-18] Coda가 설계한 SQL 데이터 모델(Growth, Engagement, Monetization KPI)을 기반으로, 웹페이지의 프론트엔드와 백엔드가 연결될 수 있는 최소 기능 제품(MVP) 아키텍처 및 필요한 API 엔드포인트 구성을 제안해줘. → 산출물 sessions/2026-05-18T14-38/developer.md
 - [2026-05-18] Writer가 제시한 'Gap Score 진단 테스트'의 요구사항(AI 진단 로직)을 바탕으로, 백엔드 API 엔드포인트 설계 및 필요한 초기 데이터 모델(SQL 스키마)을 구체화해줘 → 산출물 sessions/2026-05-18T14-49/developer.md
+- [2026-05-18] 코다리가 설계한 SQL 데이터 모델(`User_Progress`, `Diagnosis_Log`, `Session_Details`)을 기반으로, AI 보컬 진단 로직(Pitch, Frequency Stability 등)과 사용자 세션 데이터를 연결하는 백엔드 API 엔드포인트 설계 및 초기 데이터 흐름 구조를 구체화하라. → 산출물 sessions/2026-05-18T15-04/developer.md
