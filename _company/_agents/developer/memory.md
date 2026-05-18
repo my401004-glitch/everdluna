@@ -14,3 +14,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-18] Writer가 제시한 'Gap Score 진단 테스트'의 요구사항(AI 진단 로직)을 바탕으로, 백엔드 API 엔드포인트 설계 및 필요한 초기 데이터 모델(SQL 스키마)을 구체화해줘 → 산출물 sessions/2026-05-18T14-49/developer.md
 - [2026-05-18] 코다리가 설계한 SQL 데이터 모델(`User_Progress`, `Diagnosis_Log`, `Session_Details`)을 기반으로, AI 보컬 진단 로직(Pitch, Frequency Stability 등)과 사용자 세션 데이터를 연결하는 백엔드 API 엔드포인트 설계 및 초기 데이터 흐름 구조를 구체화하라. → 산출물 sessions/2026-05-18T15-04/developer.md
 - [2026-05-18] PC와 GitHub를 자동 동기화할 수 있는 스크립트 또는 설정 방법을 설계하고 구현하여, 향후 지속적인 동기화가 가능하도록 환경을 설정해줘. → 산출물 sessions/2026-05-18T15-14/developer.md
+- [2026-05-18] Sync_Workflow.sh 및 monitor_sync.sh 스크립트에 실제 환경 오류 처리 로직을 추가하고, Git Hooks 및 Cron Job 연동 시 발생할 수 있는 모든 예외 상황에 대한 안정성 검증 코드를 최종적으로 보강하여 완성하라. → 산출물 sessions/2026-05-18T15-19/developer.md
