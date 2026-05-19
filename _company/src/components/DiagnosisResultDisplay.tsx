@@ -44,14 +44,13 @@ const DiagnosisResultDisplay: React.FC<Props> = ({ result }) => {
 
       {/* 📊 KPI 상세 지표 섹션 */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        {Object.entries(result.kpis) as [keyof typeof result.kpis, number][]}
-          .map(([key, score]) => (
-            <div key={key} className="p-5 border rounded-lg shadow-sm bg-gray-50">
-              <h4 className="text-lg font-semibold text-[#0A2463] mb-1">{key.toUpperCase()}</h4>
-              <p className={`text-4xl font-extrabold ${score < 0.4 ? 'text-red-500' : 'text-green-600'}`}>{Math.round(score * 10) / 10} 점</p>
-              <p className="text-sm text-gray-500 mt-2">현재 지표의 안정성과 개선 필요도를 나타냅니다.</p>
-            </div>
-          ))}
+        {(Object.entries(result.kpis) as [keyof typeof result.kpis, number][]).map(([key, score]) => (
+          <div key={key} className="p-5 border rounded-lg shadow-sm bg-gray-50">
+            <h4 className="text-lg font-semibold text-[#0A2463] mb-1">{key.toUpperCase()}</h4>
+            <p className={`text-4xl font-extrabold ${score < 0.4 ? 'text-red-500' : 'text-green-600'}`}>{Math.round(score * 10) / 10} 점</p>
+            <p className="text-sm text-gray-500 mt-2">현재 지표의 안정성과 개선 필요도를 나타냅니다.</p>
+          </div>
+        ))}
       </section>
 
       {/* 📚 상세 보고서 및 CTA (Monetization Funnel) */}

@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 19. 오후 8:44:47_
+_업데이트: 2026. 5. 19. 오후 8:52:50_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,9 +17,9 @@ _업데이트: 2026. 5. 19. 오후 8:44:47_
 - [2026-05-19] 확정된 Dark Blue/Accent Yellow 디자인 시스템과 Gap Score 시각화 모듈 사양을 기반으로, 문제 제기 → 솔루션 제시 → 데이터 증명 → 유료 전환의 수익화 퍼널 구조를 따른 Landing Kit의 전체적인 UI/UX 레이아웃 스케치와 핵심 컴포넌트의 반응형 디자인 프로토타입을 생성하고 최종 시각적 사양을 확정하라. → 산출물 sessions/2026-05-19T11-29/designer.md
 - [2026-05-19] 확정된 Dark Blue/Accent Yellow 디자인 시스템과 Gap Score 시각화 모듈 사양을 기반으로 Landing Kit의 전체 UI/UX 레이아웃 및 핵심 컴포넌트 프로토타입을 최종 확정하고 개발팀이 즉시 적용할 수 있도록 시각적 사양을 제공하세요. → 산출물 sessions/2026-05-19T11-41/designer.md
 ### 💻 코다리
-- [2026-05-19] 확정된 데이터 모델(`DiagnosisResult` 등)과 디자인 사양을 기반으로 Landing Kit의 핵심 프론트엔드 컴포넌트 초기 Mockup 코드를 생성하고, 백엔드 API 연동 로직 구현을 즉시 시작할 것. → 산출물 sessions/2026-05-19T11-21/developer.md
 - [2026-05-19] Designer가 제공한 UI/UX 사양 및 코다리의 API 계약(DiagnosisResult 등)을 기반으로, Landing Kit에 필요한 프론트엔드 컴포넌트의 초기 Mockup 코드와 백엔드 API 연동 로직을 통합하여 실제 작동 가능한 웹페이지 템플릿 구조를 구현하라. → 산출물 sessions/2026-05-19T11-29/developer.md
 - [2026-05-19] 디자이너가 제공할 UI/UX 사양과 데이터 모델(`DiagnosisResult` 등)을 기반으로 Landing Kit에 필요한 백엔드 API 구조와 프론트엔드 Mockup 코드 생성을 즉시 시작하세요. → 산출물 sessions/2026-05-19T11-41/developer.md
+- [2026-05-19] 코다리에게 `diagnosisController.ts`의 실제 비즈니스 로직(점수 산출 알고리즘)을 완성하고, Mock Data 연동을 테스트하여 백엔드 기능의 안정성을 확보하도록 지시한다. → 산출물 sessions/2026-05-19T11-51/developer.md
 ### 💼 현빈
 - [2026-05-19] 확정된 KPI와 데이터 흐름(Gap Score $ightarrow$ Modules $ightarrow$ CTA)을 기반으로 백엔드 API 모델 정의(`Schema`) 및 핵심 로직 구현에 착수하여 개발팀의 작업이 비즈니스 목표에 정확히 부합하도록 보장 → 산출물 sessions/2026-05-19T09-27/business.md
 - [2026-05-19] 현빈 에이전트가 설계한 Pain Point와 수익화 경로(`recommendedModules`) 데이터를 기반으로, 실제 유료 모듈과 연동될 백엔드 데이터 모델(`Schema`) 구현을 위한 최종 필드 정의 및 API 계약을 확정해달라. → 산출물 sessions/2026-05-19T09-42/business.md

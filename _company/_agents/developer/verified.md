@@ -29,3 +29,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-19] 2. **API 연동 로직 구현**: `DiagnosisResult` 스키마에 맞춰 가상의 백엔드 API 엔드포인트(`api/v1/diagnosis_score`)를 호출하는 비동기 함수를 컴포넌트 내부에 즉시 통합합니다. _(근거: sessions/2026-05-19T09:57, sessions/2026-05-18T16:19)_
 - [2026-05-19] 1. **Backend API 설계**: 진단 점수 계산 및 데이터 처리를 담당할 컨트롤러(`diagnosisController.ts`)를 구현합니다. 핵심 엔드포인트 `GET /api/v1/diagnosis_score`가 정의되어야 합니다. _(근거: sessions/2026-05-19T09:57, sessions/2026-05-18T14-34/developer.md)_
 - [2026-05-19] // 해당 diagnosis_type에 접근할 권한이 있는지 DB를 통해 검증해야 합니다. _(근거: sessions/2026-05-18T13:43)_
+- [2026-05-19] 22 // 해당 diagnosis_type에 접근할 권한이 있는지 DB를 통해 검증해야 합니다. _(근거: sessions/2026-05-18T13:43)_
