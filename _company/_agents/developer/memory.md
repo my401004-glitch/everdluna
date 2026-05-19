@@ -66,3 +66,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] Designer가 제공한 최종 UI/UX 사양(Dark Blue/Accent Yellow, Gap Score 시각화) 및 Business팀의 데이터 모델(Schema)을 기반으로 Landing Kit에 적용할 핵심 프론트엔드 컴포넌트의 초기 Mockup 코드를 생성하고, 이를 백엔드 API 계약(`/api/diagnosis/results`, `/api/metrics/trend`)에 연결하는 최소 기능 구현 계획을 즉시 시작하라. → 산출물 sessions/2026-05-19T09-12/developer.md
 - [2026-05-19] Designer가 제공한 최종 UI/UX 사양(Dark Blue/Accent Yellow, Gap Score 시각화)과 Business팀의 데이터 모델(Schema)을 기반으로 Landing Kit에 적용할 핵심 프론트엔드 컴포넌트 구현 및 초기 API 연결 구조를 즉시 개발 시작 → 산출물 sessions/2026-05-19T09-27/developer.md
 - [2026-05-19] Business 에이전트가 제공할 Schema를 기반으로, Landing Kit의 핵심 기능(Gap Score 시각화)에 필요한 초기 데이터 모델 구조(`DiagnosisResult` 및 관련 엔티티)를 정의하고 코다리에게 전달해달라. → 산출물 sessions/2026-05-19T09-42/developer.md
+- [2026-05-19] 확정된 `DiagnosisResult` 스키마 및 API 계약(`sessions/2026-05-19T09-12/developer.md`)을 기반으로, Landing Kit의 핵심 프론트엔드 컴포넌트 초기 Mockup 코드를 생성하고 백엔드 API 연결 계획을 즉시 시작하라. → 산출물 sessions/2026-05-19T09-57/developer.md
