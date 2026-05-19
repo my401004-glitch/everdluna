@@ -134,6 +134,10 @@ def main():
     if not api_key:
         print("❌ YOUTUBE_API_KEY 미설정. youtube_account.json에 채워주세요.")
         sys.exit(1)
+    # URL 형식으로 채널 ID가 입력된 경우 자동 파싱
+    if chan_id.startswith("http"):
+        m = re.search(r'UC[\w-]{22}', chan_id)
+        chan_id = m.group(0) if m else ""
     if not (handle or chan_id):
         print("❌ MY_CHANNEL_HANDLE 또는 MY_CHANNEL_ID 필요.")
         sys.exit(1)
