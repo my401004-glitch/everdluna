@@ -36,3 +36,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] 모든 코드 및 스크립트 실행 전에 'Self-Verification Loop' (필수 패키지 설치 및 환경 변수 체크)를 자동화하는 모듈 개발 계획을 수립하고, 이를 다른 에이전트의 작업 흐름에 통합할 방안을 제시하라. → 산출물 sessions/2026-05-19T02-44/developer.md
 - [2026-05-19] Designer와 Researcher가 제시한 'Report_Growth_Visualization_v1' 디자인 목업과 핵심 KPI 목록을 기반으로, MVP 우선순위(진단 → 권한 → 성과 추적)에 따른 핵심 API 엔드포인트(/api/v1/diagnosis_score 등)의 백엔드 로직 초안과 DB 스키마 설계를 즉시 시작하고 기술 실행 계획을 보고하라. → 산출물 sessions/2026-05-19T02-59/developer.md
 - [2026-05-19] 이전 설계(DB 스키마, API 명세)를 기반으로 'Report_Growth_Visualization_v1'에 필요한 핵심 API 엔드포인트(/api/v1/diagnosis_score 등)의 백엔드 로직과 DB 스키마 구현을 즉시 시작하고, 모든 코드 실행 전에 'Self-Verification Loop' (필수 패키지 설치 및 환경 변수 체크)를 적용하여 개발을 진행하라. → 산출물 sessions/2026-05-19T03-06/developer.md
+- [2026-05-19] Designer가 제시한 시각화 명세서와 Writer가 요구한 데이터 요구사항을 기반으로, MVP 구현을 위한 핵심 API 엔드포인트(`/api/v1/diagnosis_score` 등)의 백엔드 로직 초안과 DB 스키마 설계(ROI 및 리스크 지표 포함)를 즉시 시작하라. → 산출물 sessions/2026-05-19T03-14/developer.md

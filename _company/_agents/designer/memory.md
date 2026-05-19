@@ -32,3 +32,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] Writer와 Researcher의 핵심 메시지 및 KPI를 반영하여, '학생 성장 리포트' 데이터 시각화 화면(`Report_Growth_Visualization_v1`)에 대한 최종 디자인 목업(Wireframe) 구성을 확정하고 개발팀이 바로 구현할 수 있도록 상세한 컴포넌트 명명과 데이터 흐름 정의를 제공하라. → 산출물 sessions/2026-05-19T02-14/designer.md
 - [2026-05-19] 채널의 핵심 톤앤매너(ROI/리스크 최소화)를 반영한 채널 브랜드 가이드라인(컬러 팔레트, 타이포그래피 스타일)을 정의하고, 초기 영상에 사용할 썸네일 디자인 목업(Wireframe) 컨셉을 제시하라. → 산출물 sessions/2026-05-19T02-49/designer.md
 - [2026-05-19] 채널의 브랜드 가이드라인(컬러 팔레트, 타이포그래피 스타일)과 'Report_Growth_Visualization_v1' 디자인 목업을 기반으로, 첫 번째 영상에 사용할 썸네일 디자인 컨셉 및 와이어프레임을 최종 확정하라. → 산출물 sessions/2026-05-19T03-06/designer.md
+- [2026-05-19] Writer와 Researcher가 제시한 'Report_Growth_Visualization_v1'의 디자인 목업(Wireframe)을 기반으로, 개발팀이 구현해야 할 핵심 데이터 지표 3가지와 그에 따른 시각화 컴포넌트 명세서를 최종 확정하라. → 산출물 sessions/2026-05-19T03-14/designer.md
