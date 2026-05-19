@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 19. 오후 8:52:50_
+_업데이트: 2026. 5. 19. 오후 9:24:28_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,17 +13,17 @@ _업데이트: 2026. 5. 19. 오후 8:52:50_
 - [2026-05-19] 고객의 고통(Pain Point) 포착과 인게이지먼트 유도 전략이 실제 콘텐츠 기획 단계에서 어떻게 반영되어야 하는지 분석하고, 릴스/피드 콘텐츠가 데이터 기반으로 지속적인 개선을 유도하는 피드백 루프를 설계하라. → 산출물 sessions/2026-05-19T06-58/instagram.md
 - [2026-05-19] writer가 생성한 각 후크 버전에 대해, 가장 높은 인게이지먼트를 유도할 수 있는 최적의 게시 시간, 핵심 해시태그 전략 및 포맷(릴스/피드)별 구체적인 실행 방안을 제시하라. → 산출물 sessions/2026-05-19T07-44/instagram.md
 ### 🎨 Designer
-- [2026-05-19] 디자이너는 확정된 Dark Blue/Accent Yellow 디자인 시스템과 코다리의 API 구조를 통합하여, Landing Kit의 핵심 컴포넌트(Header, Dashboard, KPI 섹션)에 대한 최종 반응형 UI/UX 프로토타입을 개발팀이 즉시 적용할 수 있도록 시각적 사양을 확정하고 제공한다. → 산출물 sessions/2026-05-19T10-53/designer.md
-- [2026-05-19] 확정된 Dark Blue/Accent Yellow 디자인 시스템과 Gap Score 시각화 모듈 사양을 기반으로, 문제 제기 → 솔루션 제시 → 데이터 증명 → 유료 전환의 수익화 퍼널 구조를 따른 Landing Kit의 전체적인 UI/UX 레이아웃 스케치와 핵심 컴포넌트의 반응형 디자인 프로토타입을 생성하고 최종 시각적 사양을 확정하라. → 산출물 sessions/2026-05-19T11-29/designer.md
-- [2026-05-19] 확정된 Dark Blue/Accent Yellow 디자인 시스템과 Gap Score 시각화 모듈 사양을 기반으로 Landing Kit의 전체 UI/UX 레이아웃 및 핵심 컴포넌트 프로토타입을 최종 확정하고 개발팀이 즉시 적용할 수 있도록 시각적 사양을 제공하세요. → 산출물 sessions/2026-05-19T11-41/designer.md
+- [2026-05-19] 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)을 기반으로 AI 출결 어플의 Landing Kit UI/UX 레이아웃 스케치와 핵심 데이터 시각화(Gap Score 등)를 포함한 초기 프로토타입 방향을 제시해줘 → 산출물 sessions/2026-05-19T12-04/designer.md
+- [2026-05-19] Pain $\rightarrow$ Gain 프레임워크, Gap Score 시각화 모듈 사양, Dark Blue/Accent Yellow 디자인 시스템을 기반으로 'Premium Accountability Tracker'의 전체 UI/UX 흐름도와 핵심 컴포넌트 프로토타입(Landing Kit)을 최종 확정하고 시각적 사양을 제공하라. → 산출물 sessions/2026-05-19T12-06/designer.md
+- [2026-05-19] 확정된 Dark Blue/Accent Yellow 디자인 시스템과 Pain $\rightarrow$ Gain 흐름을 적용하여 Landing Kit의 핵심 컴포넌트 프로토타입 구현을 즉시 시작하고, 개발팀이 바로 적용할 수 있도록 시각적 사양을 제공하라. → 산출물 sessions/2026-05-19T12-21/designer.md
 ### 💻 코다리
-- [2026-05-19] Designer가 제공한 UI/UX 사양 및 코다리의 API 계약(DiagnosisResult 등)을 기반으로, Landing Kit에 필요한 프론트엔드 컴포넌트의 초기 Mockup 코드와 백엔드 API 연동 로직을 통합하여 실제 작동 가능한 웹페이지 템플릿 구조를 구현하라. → 산출물 sessions/2026-05-19T11-29/developer.md
-- [2026-05-19] 디자이너가 제공할 UI/UX 사양과 데이터 모델(`DiagnosisResult` 등)을 기반으로 Landing Kit에 필요한 백엔드 API 구조와 프론트엔드 Mockup 코드 생성을 즉시 시작하세요. → 산출물 sessions/2026-05-19T11-41/developer.md
-- [2026-05-19] 코다리에게 `diagnosisController.ts`의 실제 비즈니스 로직(점수 산출 알고리즘)을 완성하고, Mock Data 연동을 테스트하여 백엔드 기능의 안정성을 확보하도록 지시한다. → 산출물 sessions/2026-05-19T11-51/developer.md
+- [2026-05-19] 수립된 비즈니스 로직과 디자인 사양을 바탕으로 앱에 필요한 최소 기능 데이터 모델(DB 스키마)과 핵심 API 구조를 정의하고 개발 착수를 위한 초기 설계안을 작성해줘 → 산출물 sessions/2026-05-19T12-04/developer.md
+- [2026-05-19] Designer가 제공할 UI/UX 사양과 백엔드 API 구조(DiagnosisResult 등)를 기반으로, Landing Kit에 필요한 프론트엔드 Mockup 코드와 백엔드 API 연동 로직을 통합하여 개발 착수 준비를 완료하라. → 산출물 sessions/2026-05-19T12-06/developer.md
+- [2026-05-19] Designer가 제공할 UI/UX 사양과 백엔드 API 계약 구조를 기반으로 Landing Kit의 프론트엔드 Mockup 코드와 필요한 최소 기능 데이터 모델(DB 스키마)을 즉시 구현하라. → 산출물 sessions/2026-05-19T12-21/developer.md
 ### 💼 현빈
-- [2026-05-19] 확정된 KPI와 데이터 흐름(Gap Score $ightarrow$ Modules $ightarrow$ CTA)을 기반으로 백엔드 API 모델 정의(`Schema`) 및 핵심 로직 구현에 착수하여 개발팀의 작업이 비즈니스 목표에 정확히 부합하도록 보장 → 산출물 sessions/2026-05-19T09-27/business.md
-- [2026-05-19] 현빈 에이전트가 설계한 Pain Point와 수익화 경로(`recommendedModules`) 데이터를 기반으로, 실제 유료 모듈과 연동될 백엔드 데이터 모델(`Schema`) 구현을 위한 최종 필드 정의 및 API 계약을 확정해달라. → 산출물 sessions/2026-05-19T09-42/business.md
 - [2026-05-19] 기존에 정의된 '학원 운영자의 재무적 안정성 및 교육 시스템 효율화 도구'라는 핵심 가치 제안을 바탕으로 웹페이지의 주요 목표(KPI)와 CTA 구성을 정의하고, 페이지에 포함되어야 할 핵심 모듈(Gap Score 시각화 등)을 명시하십시오. → 산출물 sessions/2026-05-19T10-29/business.md
+- [2026-05-19] AI 출결 어플의 핵심 수익화 모델(유료 모듈)과 타깃 사용자층(실용음악 입시생)에 따른 KPI를 정의하고 'Pain $\rightarrow$ Gain' 프레임워크를 적용하여 가치 제안을 수립해줘 → 산출물 sessions/2026-05-19T12-04/business.md
+- [2026-05-19] 확정된 UI/UX 흐름도에 대해 잠재 고객의 행동 유도(CTA)와 수익화 경로(Module Completion Rate, Data Package Conversion Rate)가 명확하게 반영되었는지 검토하고, KPI 달성에 최적화된 레이아웃 및 정보 배치를 제안하라. → 산출물 sessions/2026-05-19T12-06/business.md
 ### 📱 영숙
 - [2026-05-19] 최종적으로 정의된 'Project Charter v2.0'에 대한 승인 여부를 확인하고, 이를 코다리에게 전달할 준비를 하세요. → 산출물 sessions/2026-05-19T05-29/secretary.md
 - [2026-05-19] 현재 에이전트 간의 작업 흐름(Workflow)에서 발생하는 커뮤니케이션 및 일정 관리상의 비효율성을 분석하고, 모든 에이전트가 목표에 집중할 수 있도록 일일 보고 및 할 일 배분 시스템을 최적화하라. → 산출물 sessions/2026-05-19T06-58/secretary.md
@@ -31,11 +31,11 @@ _업데이트: 2026. 5. 19. 오후 8:52:50_
 ### 🎵 루나
 - [2026-05-19] 📥 새 지식 입수 — **student_growth_report_generator_v_1.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-19/student_growth_report_generator_v_1.html)
 ### ✍️ Writer
-- [2026-05-19] researcher가 도출한 핵심 주제 3가지를 바탕으로, 유튜브 채널 목표(1만 구독자) 달성에 가장 효과적인 '진단 → 과정 → 결과' 기둥 전략을 적용한 초기 영상 기획안(주제, 후크 아이디어 포함) 초안을 작성해줘 → 산출물 sessions/2026-05-19T10-12/writer.md
 - [2026-05-19] Business팀이 정의한 목표와 Designer가 제시한 시각적 구조에 맞춰, 학원 운영자에게 신뢰를 주고 행동을 유도할 수 있는 웹페이지의 핵심 카피(메인 헤드라인, 모듈 설명, CTA 문구) 초안을 작성하십시오. → 산출물 sessions/2026-05-19T10-29/writer.md
 - [2026-05-19] youtube 에이전트가 도출한 콘텐츠 전략을 기반으로, 실용음악 교육 시장의 잠재 수요를 명확히 반영하여 높은 클릭률을 보장하는 영상 스크립트와 핵심 후크(Hook)를 작성하라. → 산출물 sessions/2026-05-19T11-36/writer.md
+- [2026-05-19] 수립된 비즈니스 전략과 사용자 고통점을 바탕으로 앱의 핵심 가치를 전달하는 랜딩 페이지용 후크 문구(Hook) 및 핵심 기능 소개 카피를 3가지 버전으로 작성해줘 → 산출물 sessions/2026-05-19T12-04/writer.md
 ### 🔍 Researcher
-- [2026-05-19] 실용음악 입시생 타겟에 가장 높은 전환율을 보장할 수 있는 최신 트렌드 및 경쟁 채널의 핵심 주제 5가지를 데이터 기반으로 리서치하고 요약하라. → 산출물 sessions/2026-05-19T07-14/researcher.md
 - [2026-05-19] 현재 구독자 목표 달성과 사용자 고통 포착을 위해 유튜브 채널 성장에 가장 기여할 수 있는 다음 4개 영상의 주제 및 핵심 데이터 기반 트렌드를 리서치하고 분석하라. → 산출물 sessions/2026-05-19T07-29/researcher.md
 - [2026-05-19] 실용음악 입시생 및 학원 운영자의 재무적 불안정성/시간 낭비에 대한 최신 트렌드와 경쟁 채널의 성공적인 KPI 기반 콘텐츠 전략을 분석하여 핵심 주제 3가지를 도출하고, 각 주제에 대한 잠재 고객의 Pain Point를 구체화해줘 → 산출물 sessions/2026-05-19T10-12/researcher.md
+- [2026-05-19] 실용음악 입시생 및 교육 시장의 현재 고통점(Pain Points)과 잠재 수요에 대한 최신 트렌드 데이터를 수집하고 분석하여 앱의 핵심 기능 방향을 도출해줘 → 산출물 sessions/2026-05-19T12-04/researcher.md
 

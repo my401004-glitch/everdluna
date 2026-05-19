@@ -73,3 +73,6 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] Designer가 제공한 UI/UX 사양 및 코다리의 API 계약(DiagnosisResult 등)을 기반으로, Landing Kit에 필요한 프론트엔드 컴포넌트의 초기 Mockup 코드와 백엔드 API 연동 로직을 통합하여 실제 작동 가능한 웹페이지 템플릿 구조를 구현하라. → 산출물 sessions/2026-05-19T11-29/developer.md
 - [2026-05-19] 디자이너가 제공할 UI/UX 사양과 데이터 모델(`DiagnosisResult` 등)을 기반으로 Landing Kit에 필요한 백엔드 API 구조와 프론트엔드 Mockup 코드 생성을 즉시 시작하세요. → 산출물 sessions/2026-05-19T11-41/developer.md
 - [2026-05-19] 코다리에게 `diagnosisController.ts`의 실제 비즈니스 로직(점수 산출 알고리즘)을 완성하고, Mock Data 연동을 테스트하여 백엔드 기능의 안정성을 확보하도록 지시한다. → 산출물 sessions/2026-05-19T11-51/developer.md
+- [2026-05-19] 수립된 비즈니스 로직과 디자인 사양을 바탕으로 앱에 필요한 최소 기능 데이터 모델(DB 스키마)과 핵심 API 구조를 정의하고 개발 착수를 위한 초기 설계안을 작성해줘 → 산출물 sessions/2026-05-19T12-04/developer.md
+- [2026-05-19] Designer가 제공할 UI/UX 사양과 백엔드 API 구조(DiagnosisResult 등)를 기반으로, Landing Kit에 필요한 프론트엔드 Mockup 코드와 백엔드 API 연동 로직을 통합하여 개발 착수 준비를 완료하라. → 산출물 sessions/2026-05-19T12-06/developer.md
+- [2026-05-19] Designer가 제공할 UI/UX 사양과 백엔드 API 계약 구조를 기반으로 Landing Kit의 프론트엔드 Mockup 코드와 필요한 최소 기능 데이터 모델(DB 스키마)을 즉시 구현하라. → 산출물 sessions/2026-05-19T12-21/developer.md
