@@ -1,6 +1,6 @@
 'use server'; // Next.js Server Action임을 명시
 
-import { DiagnosisApiResponse, UserDiagnosisInputs } from '@/types/diagnosis';
+import { DiagnosisApiResponse, UserDiagnosisInputs, DiagnosisResult } from '@/types/diagnosis';
 
 /**
  * [POST /api/diagnosis] 

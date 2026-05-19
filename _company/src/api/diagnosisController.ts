@@ -1,7 +1,17 @@
 // src/api/diagnosisController.ts
 
 import { Request, Response } from 'express';
-import { DiagnosisInputParams, DiagnosisResult } from '../types/DiagnosisTypes'; // 가상으로 생성된 타입 정의 파일 가정
+
+export interface DiagnosisResult {
+    score: number;
+    levelName: string;
+    recommendationText: string;
+    kpis: {
+        growth: number;
+        engagement: number;
+        monetization: number;
+    };
+}
 
 /**
  * @desc    진단 점수를 계산하고 결과를 반환하는 API 엔드포인트
@@ -13,7 +23,8 @@ export const getDiagnosisScore = async (req: Request, res: Response): Promise<vo
     const { diagnosis_type } = req.query;
 
     if (!diagnosis_type) {
-        return res.status(400).json({ message: "진단 유형(diagnosis_type)이 필요합니다." });
+        res.status(400).json({ message: "진단 유형(diagnosis_type)이 필요합니다." });
+        return;
     }
 
     try {
@@ -23,7 +34,8 @@ export const getDiagnosisScore = async (req: Request, res: Response): Promise<vo
         const userRole = "Free"; // Mocking: 현재 사용자는 무료 사용자라고 가정
         
         if (userRole === "Free" && diagnosis_type !== "general") {
-             return res.status(403).json({ message: `[${diagnosis_type}]: 이 진단 유형에 대한 접근 권한이 없습니다. Premium 구독이 필요합니다.` });
+             res.status(403).json({ message: `[${diagnosis_type}]: 이 진단 유형에 대한 접근 권한이 없습니다. Premium 구독이 필요합니다.` });
+             return;
         }
 
         // 3. 핵심 비즈니스 로직 실행 (점수 계산 및 데이터 조합)

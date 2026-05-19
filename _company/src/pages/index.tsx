@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Header from '../components/Header'; // Assuming components exist
-import HeroSection from '../components/HeroSection';
 import DiagnosisScoreCard from '../components/DiagnosisScoreCard';
 import PricingSection from '../components/PricingSection';
 import Footer from '../components/Footer';
@@ -71,9 +70,9 @@ const LandingPage: React.FC = () => {
             <div className="container max-w-4xl mx-auto">
                 <h2 className="text-3xl font-bold text-center mb-12">✨ Gap Score 진단 결과</h2>
                 {isLoading ? (
-                    <div className="text-center py-10"><p class="text-lg text-gray-600">데이터 분석 중... 잠시만 기다려주세요. ⏳</p></div>
+                    <div className="text-center py-10"><p className="text-lg text-gray-600">데이터 분석 중... 잠시만 기다려주세요. ⏳</p></div>
                 ) : error ? (
-                    <div className="text-center py-10"><p class="text-lg text-red-500">{error}</p></div>
+                    <div className="text-center py-10"><p className="text-lg text-red-500">{error}</p></div>
                 ) : scoreData ? (
                     <DiagnosisScoreCard data={scoreData} />
                 ) : null}

@@ -45,3 +45,5 @@ _현빈 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-19] 확정된 KPI와 데이터 흐름(Gap Score $ightarrow$ Modules $ightarrow$ CTA)을 기반으로 백엔드 API 모델 정의(`Schema`) 및 핵심 로직 구현에 착수하여 개발팀의 작업이 비즈니스 목표에 정확히 부합하도록 보장 → 산출물 sessions/2026-05-19T09-27/business.md
 - [2026-05-19] 현빈 에이전트가 설계한 Pain Point와 수익화 경로(`recommendedModules`) 데이터를 기반으로, 실제 유료 모듈과 연동될 백엔드 데이터 모델(`Schema`) 구현을 위한 최종 필드 정의 및 API 계약을 확정해달라. → 산출물 sessions/2026-05-19T09-42/business.md
 - [2026-05-19] 기존에 정의된 '학원 운영자의 재무적 안정성 및 교육 시스템 효율화 도구'라는 핵심 가치 제안을 바탕으로 웹페이지의 주요 목표(KPI)와 CTA 구성을 정의하고, 페이지에 포함되어야 할 핵심 모듈(Gap Score 시각화 등)을 명시하십시오. → 산출물 sessions/2026-05-19T10-29/business.md
+- [2026-05-19] AI 출결 어플의 핵심 수익화 모델(유료 모듈)과 타깃 사용자층(실용음악 입시생)에 따른 KPI를 정의하고 'Pain $\rightarrow$ Gain' 프레임워크를 적용하여 가치 제안을 수립해줘 → 산출물 sessions/2026-05-19T12-04/business.md
+- [2026-05-19] 확정된 UI/UX 흐름도에 대해 잠재 고객의 행동 유도(CTA)와 수익화 경로(Module Completion Rate, Data Package Conversion Rate)가 명확하게 반영되었는지 검토하고, KPI 달성에 최적화된 레이아웃 및 정보 배치를 제안하라. → 산출물 sessions/2026-05-19T12-06/business.md
