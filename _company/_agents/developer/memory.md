@@ -78,3 +78,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] Designer가 제공할 UI/UX 사양과 백엔드 API 계약 구조를 기반으로 Landing Kit의 프론트엔드 Mockup 코드와 필요한 최소 기능 데이터 모델(DB 스키마)을 즉시 구현하라. → 산출물 sessions/2026-05-19T12-21/developer.md
 - [2026-05-19] 코다리야 어플을 만들수 있겠니? → 산출물 sessions/2026-05-19T12-33/developer.md
 - [2026-05-19] Business와 Designer가 제시한 우선순위와 UI/UX 사양을 기반으로, Landing Kit에 필요한 백엔드 API 구조 및 프론트엔드 Mockup 코드의 초기 개발 착수 계획(Task Breakdown)을 수립하라. → 산출물 sessions/2026-05-19T12-36/developer.md
+- [2026-05-19] Designer가 제공한 UI/UX 사양(Dark Blue/Accent Yellow 시스템)과 Business가 정의한 핵심 기능 목록을 기반으로, Landing Kit의 프론트엔드 Mockup 코드 구현을 즉시 착수할 수 있는 API 구조와 초기 데이터 모델을 정의하고 코딩을 시작하라. → 산출물 sessions/2026-05-19T13-17/developer.md
