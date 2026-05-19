@@ -20,3 +20,4 @@ _현빈 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-18] 📥 새 지식 입수 — **producthunt_korea_analysis.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-19/producthunt_korea_analysis.html)
 - [2026-05-18] 현재의 데이터 모델과 콘텐츠 전략을 기반으로, 무료 진단 테스트에서 유료 모듈로 전환하는 과정에 필요한 핵심 KPI(Growth/Engagement/Monetization)를 재설정하고, 각 단계별 수익화 로직의 효율성을 분석하여 개선 방안을 제시하라. → 산출물 sessions/2026-05-18T16-10/business.md
 - [2026-05-18] 리포트 기능을 유료화하기 위한 수익 모델(Pricing Strategy), 핵심 KPI(유료 전환율, WTP), 그리고 학원/교육기관 대상의 비즈니스 전략을 설계해줘. → 산출물 sessions/2026-05-18T16-25/business.md
+- [2026-05-19] 개발팀이 제시할 API 및 DB 설계가 B2B 마케팅 목표(ROI, 리스크 최소화)에 직접적으로 기여하는지 검토하고, 각 데이터 필드에 대한 측정 기준(KPI 연결)을 명확히 정의하여 기술 실행 계획의 방향성을 조정하라. → 산출물 sessions/2026-05-19T02-29/business.md

@@ -53,3 +53,44 @@
 (4s-5s) : A hook that grabs the viewer's attention with an interesting fact or quote
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 11:30:15
+## 📡 키워드: AI 비즈니스, 마케팅 트렌드
+
+**마케팅 트렌드 분석 보고서**
+
+**🌍 트렌드 해킹 분석**
+
+ recent 30일의 유튜브 트렌드 해석을 통해 다음과 같은 패턴이 emergesました.
+
+*   **AI 비즈니스**: 채널 Rowan Cheung, Raj Shamani, CNA Insider, Mark Tilbury, Yash Pratap Singh와 같은 채널들은 AI에 대해 다양한 주제를 다루고 있습니다. 이 중 "AI Dropshipping", "AI Business Ideas", "AI + business"는 상당히 인기를 끌고 있습니다.
+*   **마케팅 트렌드**: 크몽 kmong, 곽팀장 채널은 shorten video에 대한 트렌드에 대해 설명하고 있습니다. additionally, 쁠케팅 채널은 블로그 마케팅의 종말에 대해 강조합니다.
+
+**🎯 빈집 털기 전략**
+
+ following 3개의 차별화 가능한 틈새 주제가 emergeました:
+
+1.  **AI 비즈니스**: "AI Dropshipping"과 "AI Business Ideas"를 위한 vidéo 프로젝트
+2.  **마케팅 트렌드**: shorten video에 대한 새로운 방법과 트렌드
+3.  ** 블로그 마케팅**: blog 마케팅의 종말에 대해 설명하고, 대안을 제시하는 영상
+
+이们는 current 트렌드와 관련된 topics를 다루고 있으며, audience가 관심을 끌 수 있을 것으로 예상됩니다.
+
+**🎬 파괴적 영상 기획안**
+
+ below는 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)으로 구성된 파괴적 영상 기획안입니다:
+
+*   **썸ネ일 카피**: "AI로 비즈니스 만들기" / "블로그 마케팅의 종말"
+*   **제목 3개**:
+    *   "AI 비즈니스에 성공할 수 있는 bí quyết"
+    *   "블로그 마케팅의 종말: 대안을 찾다"
+    *   "AI Dropshipping의 bí quyết: cómo 시작할 수 있다?"
+*   **후킹 오프닝(첫 5초)**:
+    *   ( AI 관련된 animation )
+    *   " AI-powered 비즈니스 만들기 "
+    *   ( 블로그 마케팅에 대해 설명하는 animation )
+
+이 파괴적 영상 기획안은 audience의 관심을 끌 수 있는 intriguing한 내용과 eye-catching 썸네일 카피를 포함합니다.
+
+---
