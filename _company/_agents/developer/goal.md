@@ -62,3 +62,65 @@
 - 커밋 메시지 빈 채로 git commit → reject.
 - 사용자 데이터·API 키를 코드에 그대로 박기.
 - 테스트 안 돌려보고 "수정 완료했습니다" 출력 → 거짓말.
+
+---
+
+## 📚 코다리 트러블슈팅 지식 (2026-05-20 누적)
+
+### TypeScript 개발환경 구성 핵심 패턴
+
+**문제: `npm error Missing script: "build"`**
+- 원인: 루트 `package.json`에 scripts 항목이 없거나 파일 자체가 없음
+- 해결: 루트에 `package.json` + `tsconfig.json` 생성 후 `npm install` 실행
+
+**문제: `tsc: command not found`**
+- 원인: TypeScript가 글로벌 설치되지 않음 (로컬 node_modules에만 있음)
+- 해결: 항상 `npx tsc --noEmit` 형태로 실행. 또는 `npm install -g typescript`로 글로벌 설치
+
+**문제: `error TS5112: tsconfig.json is present but will not be loaded if files are specified on commandline`**
+- 원인: tsconfig.json이 있는 상태에서 파일 경로를 직접 명령어에 지정함
+- 해결: 파일 경로 제거하고 `npx tsc --noEmit`만 실행 (tsconfig.json이 알아서 대상 파일 결정)
+- 예방: `package.json` scripts에 `"typecheck": "tsc --noEmit"` 등록 → `npm run typecheck`로 통일
+
+**문제: `error TS2307: Cannot find module '../types/XYZ'`**
+- 원인: 임포트하는 타입 파일이 실제로 존재하지 않음 (에이전트가 가상으로 만든 파일 구조)
+- 해결: 해당 타입 파일을 실제로 생성하거나, 해당 파일 내부에 타입을 직접 선언
+
+**문제: JSX 내부 `as` 타입 캐스팅 후 `.map()` 구문 에러 (TS1381, TS1382)**
+- 원인: JSX 안에서 `{someArray as Type[]}` 직후 `.map()`을 체이닝하면 JSX 파서가 오해함
+- 올바른 패턴: `{(someArray as Type[]).map(item => (<div>...</div>))}`
+  - 전체 표현식을 소괄호로 감싸서 하나의 JS 표현식으로 만들어야 함
+
+**문제: Express 핸들러에서 `return res.json(...)` 타입 에러**
+- 원인: 반환 타입이 `Promise<void>`인데 `Response` 객체를 return하면 타입 불일치
+- 해결: `res.json(...)` 이후 별도로 `return;` 사용
+  ```typescript
+  // ❌ 틀린 패턴
+  return res.status(400).json({ message: "..." });
+  // ✅ 올바른 패턴
+  res.status(400).json({ message: "..." });
+  return;
+  ```
+
+### 루트 tsconfig.json 표준 템플릿 (_company 워크스페이스)
+```json
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": { "@/*": ["./src/*"] }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "music-education-app", "connect-ai-"]
+}
+```

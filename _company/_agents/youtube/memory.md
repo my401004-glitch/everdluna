@@ -38,4 +38,43 @@ _레오 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-19] 리서치된 트렌드와 작성된 콘텐츠 아이디어를 기반으로, 다음 4주 동안 가장 높은 조회수와 구독자 증가를 유도할 수 있는 영상 포맷(Shorts/Long-form)과 채널 전략을 구체적으로 기획하라. → 산출물 sessions/2026-05-19T12-46/youtube.md
 - [2026-05-19] 이전에 작성된 'Gap Score' 기반의 가장 높은 클릭률과 신뢰도를 유도하는 유튜브 영상 기획안 및 핵심 후크 스크립트를 즉시 실행하고, 첫 번째 영상 제작을 위한 상세 가이드라인을 작성하라. → 산출물 sessions/2026-05-19T12-51/youtube.md
 - [2026-05-19] Pain $\rightarrow$ Gain 프레임워크를 기반으로, 다음 영상(Week 1)에 사용할 가장 높은 클릭률을 유도할 수 있는 핵심 후크 스크립트와 영상 컨셉 3가지를 즉시 기획하라. → 산출물 sessions/2026-05-19T15-07/youtube.md
-- [2026-05-19] Designer가 제시한 디자인 사양과 Writer의 최종 스크립트를 통합하여, 가장 높은 CTR을 유도할 수 있는 핵심 후크(Hook)를 기반으로 실제 영상 제작에 필요한 상세 가이드라인 및 스크립트 검토 작업을 시작하라. → 산출물 sessions/2026-05-19T15-37/youtube.md
+- [2026-05-19] Designer가 제시한 디자인 사양과 Writer의 최종 스크립트를 통합하여, 가장 높은 CTR을 유도할 수 있는 핵심 후크(Hook)를 기반으로 실제 영상 제작에 필요한 상세 가이드라인 및 스크립트 검토 작업을 시작하라. → 산출물 sessions/2026-05-19T15-37/youtube.md- [2026-05-20] ✅ **video_uploader 도구 실전 배포 완료**: `video_uploader.py` 스크립트를 직접 개발하고, Google OAuth 2.0 인증을 통해 유튜브 자동 업로드 기능을 레오 에이전트 도구로 등록 완료.
+
+---
+
+## 🔧 기술 트러블슈팅 지식 (video_uploader)
+
+### [2026-05-20] OAuth 업로드 도구 최초 배포 시 발생 가능한 에러 모음
+
+**에러 1: `ModuleNotFoundError: No module named 'google_auth_oauthlib'`**
+- 원인: `.venv`에 필수 패키지 미설치
+- 해결: `./.venv/bin/pip install google-api-python-client google-auth-oauthlib google-auth-httplib2`
+
+**에러 2: `❌ Error: 파일이 존재하지 않습니다`**
+- 원인: 파일 경로에 실제 파일명이 아닌 예시 텍스트를 그대로 입력함
+- 해결: 실제 영상 파일의 절대 경로를 `"큰따옴표"` 로 감싸서 입력. 드래그 앤 드롭으로 경로 자동 입력 활용
+
+**에러 3: `argument --file: expected one argument`**
+- 원인: `--file` 인수와 파일 경로 사이에 줄바꿈이 들어감 (드래그 앤 드롭 시 발생 가능)
+- 해결: 명령어 전체를 한 줄로 작성. 파일 경로를 `"큰따옴표"`로 감쌀 것
+
+**에러 4: `(invalid_client) The provided client secret is invalid`**
+- 원인: Google Cloud Console의 OAuth Client Secret이 만료되거나 재발급 후 갱신 안 됨
+- 해결:
+  1. Google Cloud Console → OAuth 2.0 클라이언트 → 보안 비밀번호 재설정
+  2. 새 Secret 값을 `youtube_account.json`의 `"YOUTUBE_OAUTH_CLIENT_SECRET"` 키에 업데이트
+  3. 기존 토큰 파일 삭제: `rm token_uploader.json`
+  4. 업로드 명령어 재실행하면 구글 로그인 창 재오픈
+
+### 올바른 업로드 실행 명령어 (복사용 템플릿)
+```bash
+cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools && \
+./.venv/bin/python video_uploader.py \
+  --title "영상 제목을 여기에" \
+  --description "영상 설명을 여기에" \
+  --tags "태그1,태그2,태그3" \
+  --privacy-status "private" \
+  --file "/Users/iyeongjae/Downloads/업로드할파일.mp4"
+```
+- `privacy-status`: `public`(즉시공개) / `private`(비공개) / `unlisted`(링크공개). 기본값은 `private`
+- 최초 1회만 브라우저 구글 로그인 필요. 이후에는 `token_uploader.json`으로 자동 인증됨
