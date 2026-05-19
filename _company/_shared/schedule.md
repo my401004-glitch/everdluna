@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 19. 오후 1:48:20_
+_업데이트: 2026. 5. 19. 오후 1:51:06_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -23,9 +23,9 @@ _업데이트: 2026. 5. 19. 오후 1:48:20_
 - [2026-05-19] 3단계 전환 퍼널맵(인지, 고려, 전환)에 따라, 'Starter Pack' 유료 서비스의 구체적인 가격 책정 근거와 ROI 산출 기준을 즉시 마련하라. → 산출물 sessions/2026-05-19T04-14/business.md
 - [2026-05-19] 최근 확정된 B2B ROI 프레임워크(Gap Score, Engagement Rate 등)와 영상 제작 목표(다음 영상 1개)에 맞춰, 콘텐츠 기획의 우선순위와 각 단계별 필요 데이터 요구사항을 재확인하고 최종 실행 로드맵을 제시하라. → 산출물 sessions/2026-05-19T04-29/business.md
 ### 📱 영숙
-- [2026-05-19] 영숙 (Google Calendar OAuth) 기능이 미연결 상태를 해결하기 위한 방법을 알려줘 → 산출물 sessions/2026-05-19T03-43/secretary.md
 - [2026-05-19] 영숙 지금 구글캘린더 자동일정 연결됬는지 확인해줘 → 산출물 sessions/2026-05-19T04-32/secretary.md
 - [2026-05-19] 영숙아 구글 캘린더 자동일정 연결됬는지 확인해봐 → 산출물 sessions/2026-05-19T04-46/secretary.md
+- [2026-05-19] 영숙아 자격증명을 하고 재실행 해 → 산출물 sessions/2026-05-19T04-50/secretary.md
 ### 🎵 루나
 - [2026-05-19] 📥 새 지식 입수 — **student_growth_report_generator_v_1.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-19/student_growth_report_generator_v_1.html)
 ### ✍️ Writer
