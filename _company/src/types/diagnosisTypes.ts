@@ -20,7 +20,7 @@ export interface DiagnosisResult {
     title: string; // 진단 결과의 제목 (예: "보컬 아티스트 성장 잠재력 분석")
 
     // 핵심 KPI 데이터 배열
-    kpiMetrics: KpiMetric[]; 
+    kpiMetrics: KpiMetric[];
 
     // 시각화에 필요한 추가 정보 (Pain -> Gain 구조를 위한 텍스트)
     painPointSummary: string; // 현재 가장 취약한 지점 요약
@@ -36,5 +36,5 @@ export interface DiagnosisRequest {
     contextId: string; // 어떤 컨텍스트(교육 과정)에 대한 진단인지 식별자
 }
 
-// 예시 데이터 구조를 위한 임포트 (실제 API 호출 시 사용될 예상 값들)
-export type DiagnosisType = 'Vocal';
+// 진단 타입 유니온 타입 정의
+export type DiagnosisType = 'Vocal' | 'Rhythm' | 'Other';
