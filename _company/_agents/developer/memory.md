@@ -33,3 +33,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] Researcher가 제시한 핵심 개념(KPI 목록)과 Designer가 확정한 최종 Wireframe/데이터 모델을 기반으로, MVP 우선순위(진단 → 권한 → 성과 추적)에 따른 핵심 API 엔드포인트(`/api/v1/diagnosis_score` 등)의 백엔드 로직 초안과 DB 스키마 설계를 즉시 시작하고 기술 실행 계획을 보고하라. → 산출물 sessions/2026-05-19T02-14/developer.md
 - [2026-05-19] Designer가 확정한 'Report_Growth_Visualization_v1' 디자인 목업과 Researcher가 제시한 핵심 KPI 목록을 기반으로, MVP 우선순위(진단 $ightarrow$ 권한 $ightarrow$ 성과 추적)에 따른 핵심 API 엔드포인트(`/api/v1/diagnosis_score` 등)의 백엔드 로직 초안과 DB 스키마 설계를 즉시 시작하고 기술 실행 계획을 보고하라. → 산출물 sessions/2026-05-19T02-29/developer.md
 - [2026-05-19] 이전 실행 실패 로그(`my_videos_check.py` 실패)에 대한 근본 원인(환경 설정, 의존성 확인)을 분석하고, 모든 스크립트 실행 전 필수 패키지 설치 및 환경 변수 체크를 강제하는 자동화된 'Self-Verification Loop'를 개발하여 적용 계획을 수립하라. → 산출물 sessions/2026-05-19T02-38/developer.md
+- [2026-05-19] 모든 코드 및 스크립트 실행 전에 'Self-Verification Loop' (필수 패키지 설치 및 환경 변수 체크)를 자동화하는 모듈 개발 계획을 수립하고, 이를 다른 에이전트의 작업 흐름에 통합할 방안을 제시하라. → 산출물 sessions/2026-05-19T02-44/developer.md
