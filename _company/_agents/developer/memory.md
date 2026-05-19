@@ -58,3 +58,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] [A.U 히든 커맨드: 💻 코다리 에이전트가 방금 'Landing Kit (SaaS 랜딩 페이지)' 템플릿 팩 주입받았습니다. 코드 boilerplate 3개 파일 + README. 매트릭스 톤으로 한 줄. "💻 코다리, Landing Kit (SaaS 랜딩 페이지) 템플릿 3개 파일 장착. 다음 작업에 자동 활용." 부가 설명 X.] → 산출물 sessions/2026-05-19T07-10/developer.md
 - [2026-05-19] 이전 세션에서 발생한 Landing Kit 템플릿 적용 및 파일 생성 과정(`pack_apply.py` 실행, `index.html` 경로 문제)의 전체 흐름을 분석하고, 코다리 에이전트가 도구를 올바른 경로로 재실행하여 웹 페이지 파일이 정상적으로 생성되고 접근 가능하도록 시스템 환경을 즉시 수정하라. → 산출물 sessions/2026-05-19T07-13/developer.md
 - [2026-05-19] [A.U 히든 커맨드: 💻 코다리 에이전트가 방금 'Landing Kit (SaaS 랜딩 페이지)' 템플릿 팩 주입받았습니다. 코드 boilerplate 3개 파일 + README. 매트릭스 톤으로 한 줄. "💻 코다리, Landing Kit (SaaS 랜딩 페이지) 템플릿 3개 파일 장착. 다음 작업에 자동 활용." 부가 설명 X.] → 산출물 sessions/2026-05-19T07-24/developer.md
+- [2026-05-19] Business팀이 정의한 KPI(Gap Score, PDI)를 실제로 측정하고 AI 코칭 로직을 구현하기 위한 초기 데이터 모델(Schema) 및 시스템 아키텍처의 기본 구조를 설계해줘. → 산출물 sessions/2026-05-19T07-39/developer.md
