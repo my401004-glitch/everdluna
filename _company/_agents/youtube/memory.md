@@ -78,3 +78,5 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 ```
 - `privacy-status`: `public`(즉시공개) / `private`(비공개) / `unlisted`(링크공개). 기본값은 `private`
 - 최초 1회만 브라우저 구글 로그인 필요. 이후에는 `token_uploader.json`으로 자동 인증됨
+
+- [2026-05-19] 이전 작업에서 도출된 가장 높은 CTR을 유도하는 핵심 후크 스크립트와 디자인 사양(Designer 산출물 기반)을 통합하여, 다음 영상의 최종 기획안(스크립트 초안 및 썸네일 컨셉 확정)을 작성하라. → 산출물 sessions/2026-05-19T16-22/youtube.md

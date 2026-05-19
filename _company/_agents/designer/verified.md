@@ -23,3 +23,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-19] | **Body Color (가독성)** | Neutral Grey (`#F5F5F5`) | 본문 텍스트 배경으로 사용하여 Dark Blue와의 대비를 유지하고 데이터 영역을 명확히 구분합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-05-19] | **Title Type** | Montserrat Bold | 모든 핵심 헤드라인(Pain, Gain)에 사용되어 강력한 메시지 전달력을 확보합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-05-19] | **Body Type** | Noto Sans KR | 데이터 및 상세 설명 텍스트에 사용하여 높은 가독성을 보장합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-05-19] | **Primary Color (신뢰)** | Dark Blue (`#0A2463`) | 배경, 주요 정보 영역. 전문성과 신뢰감 확보. | | _(근거: Designer 검증된 지식)_
+- [2026-05-19] | **Accent Color (행동 유도)** | Accent Yellow (`#FFD700`) | 이탈 위험 수치 강조, 최종 CTA 버튼. 즉각적인 시선 집중 유도. | | _(근거: Designer 검증된 지식)_
+- [2026-05-19] | **Title Typography** | Montserrat Bold | 핵심 경고 문구(Pain)에 사용. 강력한 메시지 전달력 확보. | | _(근거: Designer 검증된 지식)_
+- [2026-05-19] | **Body Typography** | Noto Sans KR | 구체적인 데이터 및 설명 텍스트에 사용. 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
