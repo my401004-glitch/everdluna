@@ -29,3 +29,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-18] Designer가 제시한 최종 Wireframe과 데이터 모델을 기반으로, '학생 성장 리포트' 생성에 필요한 핵심 API 엔드포인트(`/api/v1/diagnosis_score` 등)의 백엔드 로직 초안과 MVP 구현 우선순위(진단 $ightarrow$ 권한 $ightarrow$ 성과 추적)를 최종 확정하고 기술적 실행 계획을 보고하세요. → 산출물 sessions/2026-05-18T21-30/developer.md
 - [2026-05-18] Writer가 제안한 영상 기획안의 후킹 포인트를 기반으로, MVP 우선순위(진단 $ightarrow$ 권한 $ightarrow$ 성과 추적)에 맞춰 최소 기능 API 구조 및 DB 스키마 설계를 즉시 시작하고 기술 실행 계획을 보고하라. → 산출물 sessions/2026-05-18T23-13/developer.md
 - [2026-05-19] Writer가 제안한 영상 기획안의 후킹 포인트를 기반으로, MVP 우선순위(진단 $ightarrow$ 권한 $ightarrow$ 성과 추적)에 맞춰 최소 기능 API 구조 및 DB 스키마 설계를 즉시 시작하고 기술 실행 계획을 보고하라. → 산출물 sessions/2026-05-18T23-57/developer.md
+- [2026-05-19] Designer가 제시한 최종 Wireframe 및 데이터 모델을 기반으로, MVP 우선순위(진단 $ightarrow$ 권한 $ightarrow$ 성과 추적)에 따른 핵심 API 엔드포인트(`/api/v1/diagnosis_score` 등)의 백엔드 로직 초안과 DB 스키마 설계를 즉시 시작하고 기술 실행 계획을 보고하라. → 산출물 sessions/2026-05-19T01-44/developer.md
