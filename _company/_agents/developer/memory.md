@@ -52,3 +52,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] business팀과 designer가 정의한 ROI 기반 데이터 모델(KPIs 포함)을 기반으로, MVP 개발 환경 설정(`web_init` 재확인 및 데이터 구조 초기 설계)을 즉시 시작하고 핵심 로직 구현을 준비하라. → 산출물 sessions/2026-05-19T06-29/developer.md
 - [2026-05-19] 코다리야 이번엔 폴더를 다시 지정했으니 다시 해봐바 → 산출물 sessions/2026-05-19T06-33/developer.md
 - [2026-05-19] business팀과 designer가 확정한 데이터 모델(Student, Module, Performance)을 기반으로 MVP 개발 환경(`web_init`)을 재실행하고, 핵심 데이터 스키마 설계를 시작하여 초기 데이터베이스 구조를 정의하라. → 산출물 sessions/2026-05-19T06-34/developer.md
+- [2026-05-19] 코다리야 자꾸 생산물이 안나오는 이유를 내가 어떻게 해결하면 되는지 순서대로 알려줘 → 산출물 sessions/2026-05-19T06-47/developer.md
