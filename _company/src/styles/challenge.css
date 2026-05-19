@@ -4,7 +4,7 @@
 
 :root {
   --bg-color: #0b0c10;
-  --panel-bg: rgba(26, 26, 36, 0.7);
+  --panel-bg: rgba(26, 26, 36, 0.85);
   --primary: #1f2833;
   --electric-blue: #00f0ff;
   --neon-pink: #ff007f;
@@ -17,14 +17,14 @@
 
 .game-container {
   min-height: 100vh;
-  background: radial-gradient(circle at center, #1a0033 0%, #000000 100%);
+  background: radial-gradient(circle at center, #140b24 0%, #030206 100%);
   color: var(--text-color);
   font-family: 'Rajdhani', sans-serif;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  overflow-y: auto;
   position: relative;
 }
 
@@ -45,7 +45,7 @@
 /* Header & Stats */
 .game-header {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +54,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1rem 2rem;
   border-radius: 15px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
 }
 
@@ -96,15 +96,16 @@
 /* Main Display */
 .main-display {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   background: var(--panel-bg);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(0, 240, 255, 0.2);
   border-radius: 20px;
-  padding: 3rem 2rem;
+  padding: 2.5rem 2rem;
   text-align: center;
   box-shadow: 0 0 30px rgba(0, 240, 255, 0.15);
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .mode-selector {
@@ -132,38 +133,211 @@
   box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
 }
 
-.visualizer-box {
-  height: 120px;
+/* 8-Measure Melody Container */
+.melody-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.melody-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 0.8rem 0.2rem;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.melody-bar.active {
+  border-color: var(--electric-blue);
+  background: rgba(0, 240, 255, 0.08);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.melody-bar.completed {
+  border-color: var(--success);
+  background: rgba(57, 255, 20, 0.08);
+}
+
+.melody-bar.failed {
+  border-color: var(--error);
+  background: rgba(255, 49, 49, 0.08);
+}
+
+.bar-num {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.4rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.bar-note {
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-family: 'Orbitron', sans-serif;
+  color: var(--text-white);
+}
+
+.melody-bar.completed .bar-note {
+  color: var(--success);
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.4);
+}
+
+/* Piano Keyboard (2 Octaves) */
+.piano-section {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.piano-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  color: var(--beast-yellow);
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.piano-keyboard {
+  display: flex;
+  position: relative;
+  background: #111;
+  padding: 10px;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.3);
-  margin-bottom: 2rem;
+  border: 3px solid #222;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.white-key {
+  width: 44px;
+  height: 180px;
+  background: linear-gradient(to bottom, #ffffff 0%, #ebebeb 100%);
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+  color: #333;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.75rem;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.white-key:hover {
+  background: #f5f5f5;
+}
+
+.white-key.active-press {
+  background: var(--electric-blue) !important;
+  color: #000;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+  transform: translateY(2px);
+}
+
+.white-key.feedback-correct {
+  background: var(--success) !important;
+  color: #000;
+}
+
+.white-key.feedback-wrong {
+  background: var(--error) !important;
+  color: #fff;
+}
+
+.black-key {
+  width: 26px;
+  height: 110px;
+  background: linear-gradient(to bottom, #111 0%, #333 100%);
+  border: 1px solid #000;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 8px;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.65rem;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.black-key:hover {
+  background: #222;
+}
+
+.black-key.active-press {
+  background: var(--neon-pink) !important;
+  color: #fff;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+  transform: translateY(2px);
+}
+
+.black-key.feedback-correct {
+  background: var(--success) !important;
+  color: #000;
+}
+
+.black-key.feedback-wrong {
+  background: var(--error) !important;
+  color: #fff;
+}
+
+/* Audio Wave Visualizer */
+.visualizer-box {
+  height: 100px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border: 1px dashed rgba(0, 240, 255, 0.3);
   overflow: hidden;
 }
 
 .detected-pitch {
   font-family: 'Orbitron', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 900;
   color: var(--success);
   text-shadow: 0 0 15px rgba(57, 255, 20, 0.7);
 }
 
-/* Game Status/Message */
+/* Content Texts & Titles */
 .question-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--text-white);
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   font-weight: 700;
 }
 
 .quest-desc {
-  font-size: 1.2rem;
-  color: #888;
-  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #999;
+  margin-bottom: 1.5rem;
 }
 
 /* Buttons */
@@ -171,8 +345,8 @@
   background: linear-gradient(45deg, var(--neon-pink), #a000ff);
   border: none;
   color: var(--text-white);
-  padding: 1rem 2.5rem;
-  font-size: 1.4rem;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.3rem;
   font-family: 'Orbitron', sans-serif;
   font-weight: 900;
   border-radius: 50px;
@@ -187,39 +361,13 @@
   box-shadow: 0 0 30px rgba(255, 0, 127, 0.8);
 }
 
-.choice-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.choice-btn {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--text-white);
-  padding: 1.2rem;
-  border-radius: 12px;
-  font-size: 1.3rem;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.choice-btn:hover {
-  background: rgba(0, 240, 255, 0.1);
-  border-color: var(--electric-blue);
-  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
-}
-
-/* Timers & Progress */
+/* Timer and progress bar */
 .progress-bar-container {
   width: 100%;
   height: 8px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   overflow: hidden;
 }
 
@@ -258,6 +406,41 @@
 
 @keyframes pop-anim {
   0% { transform: scale(1); }
-  50% { transform: scale(1.15); border-color: var(--success); box-shadow: 0 0 40px rgba(57, 255, 20, 0.5); }
+  50% { transform: scale(1.05); border-color: var(--success); box-shadow: 0 0 40px rgba(57, 255, 20, 0.5); }
   100% { transform: scale(1); }
 }
+
+/* College selection style */
+.college-selector {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.college-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.college-btn:hover {
+  background: rgba(255, 238, 0, 0.1);
+  border-color: var(--beast-yellow);
+}
+
+.college-btn.active {
+  background: linear-gradient(45deg, var(--beast-yellow), #ffa800);
+  color: #000;
+  border-color: transparent;
+  box-shadow: 0 0 15px rgba(255, 238, 0, 0.4);
+}
+

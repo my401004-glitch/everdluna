@@ -8,50 +8,86 @@ import '../styles/challenge.css';
 const AudioHelper = new AudioEngine();
 const Tracker = new PitchDetector();
 
+// 피아노 건반 데이터 정의 (C4 ~ C6 2옥타브)
+const WHITE_KEYS = ['C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4', 'C5', 'D5', 'E5', 'F5', 'G5', 'A5', 'B5', 'C6'];
+const BLACK_KEYS = [
+  { note: 'C#4', parentIdx: 0 },
+  { note: 'D#4', parentIdx: 1 },
+  { note: 'F#4', parentIdx: 3 },
+  { note: 'G#4', parentIdx: 4 },
+  { note: 'A#4', parentIdx: 5 },
+  { note: 'C#5', parentIdx: 7 },
+  { note: 'D#5', parentIdx: 8 },
+  { note: 'F#5', parentIdx: 10 },
+  { note: 'G#5', parentIdx: 11 },
+  { note: 'A#5', parentIdx: 12 }
+];
+
 export default function ChallengePage() {
   const [mode, setMode] = useState<'ear' | 'sight'>('ear');
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
   const [lives, setLives] = useState(3);
   const [currentLevel, setCurrentLevel] = useState(1);
-  const [targetNote, setTargetNote] = useState<string>('');
-  const [choices, setChoices] = useState<string[]>([]);
-  const [detectedNote, setDetectedNote] = useState<string>('듣는 중...');
+
+  // 8마디 음계/멜로디 상태
+  const [melody, setMelody] = useState<string[]>([]);
+  const [currentNoteIdx, setCurrentNoteIdx] = useState(0);
+  const [isPlayingMelody, setIsPlayingMelody] = useState(false);
+
+  // 피드백/피치 상태
+  const [detectedNote, setDetectedNote] = useState<string>('소리 대기 중...');
+  const [activePressKey, setActivePressKey] = useState<string | null>(null);
+  const [feedbackKey, setFeedbackKey] = useState<{ note: string; status: 'correct' | 'wrong' } | null>(null);
+
   const [isSinging, setIsSinging] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(5);
+  const [timeLeft, setTimeLeft] = useState(25);
   const [gameState, setGameState] = useState<'idle' | 'playing' | 'gameover'>('idle');
   const [isShaking, setIsShaking] = useState(false);
   const [isPopping, setIsPopping] = useState(false);
 
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const currentNoteIdxRef = useRef(0);
 
-  // 문제 생성
-  const generateQuestion = () => {
+  // 레벨별 멜로디 생성 (8음정)
+  const generate8BarMelody = () => {
     const notes = Object.keys(NOTE_FREQS);
-    // 현재 레벨에 따라 범위 제한
-    const limit = 4 + currentLevel * 3;
-    const pool = notes.slice(0, Math.min(limit, notes.length));
-    const target = pool[Math.floor(Math.random() * pool.length)];
-    setTargetNote(target);
+    // 레벨에 따라 고를 수 있는 음정 범위 확장
+    const limit = Math.min(6 + currentLevel * 2, notes.length);
+    const pool = notes.slice(0, limit);
 
-    // 4개 선택지 구성
-    const incorrect = pool.filter(n => n !== target);
-    const shuffledIncorrect = incorrect.sort(() => 0.5 - Math.random()).slice(0, 3);
-    const finalChoices = [target, ...shuffledIncorrect].sort(() => 0.5 - Math.random());
-    setChoices(finalChoices);
+    const newMelody: string[] = [];
+    for (let i = 0; i < 8; i++) {
+      newMelody.push(pool[Math.floor(Math.random() * pool.length)]);
+    }
 
-    setTimeLeft(Math.max(3, 8 - currentLevel)); // 레벨이 오를수록 빨라짐
+    setMelody(newMelody);
+    setCurrentNoteIdx(0);
+    currentNoteIdxRef.current = 0;
+    setTimeLeft(25); // 8마디 도전이므로 충분한 시간 부여
     setGameState('playing');
   };
 
-  // 소리 재생 (청음 모드)
-  const playCurrentTarget = () => {
-    if (!targetNote) return;
-    const freq = NOTE_FREQS[targetNote];
-    AudioHelper.playTone(freq, 'triangle', 1.0);
+  // 피아노 건반 소리 재생 + 건반 누름 효과
+  const playPianoNote = (note: string) => {
+    const freq = NOTE_FREQS[note];
+    if (freq) {
+      AudioHelper.playPianoTone(freq, 1.2);
+      setActivePressKey(note);
+      setTimeout(() => setActivePressKey(null), 200);
+    }
   };
 
-  // 시간 카운트다운 루프
+  // 8마디 전체 재생 (청음용)
+  const playFullMelody = async () => {
+    if (isPlayingMelody || melody.length === 0) return;
+    setIsPlayingMelody(true);
+    const freqs = melody.map(n => NOTE_FREQS[n]);
+    await AudioHelper.playSequence(freqs, 0.6, 0.3);
+    setIsPlayingMelody(false);
+  };
+
+  // 타이머 루프
   useEffect(() => {
     if (gameState === 'playing' && timeLeft > 0) {
       timerRef.current = setTimeout(() => {
@@ -67,15 +103,15 @@ export default function ChallengePage() {
 
   // 성공 처리
   const handleSuccess = () => {
-    setScore(prev => prev + 100 * (streak + 1));
+    setScore(prev => prev + 500 * (streak + 1));
     setStreak(prev => prev + 1);
     setIsPopping(true);
     setTimeout(() => setIsPopping(false), 500);
 
-    if ((score + 100) % 500 === 0) {
+    if (currentLevel < 10) {
       setCurrentLevel(prev => prev + 1);
     }
-    generateQuestion();
+    generate8BarMelody();
   };
 
   // 실패 처리
@@ -83,27 +119,49 @@ export default function ChallengePage() {
     setIsShaking(true);
     setTimeout(() => setIsShaking(false), 300);
     setStreak(0);
+    
+    // 오답 효과음
+    AudioHelper.playPianoTone(110, 0.6); // A2 낮은 주파수 버즈
+
     setLives(prev => {
       const nextLives = prev - 1;
       if (nextLives <= 0) {
         setGameState('gameover');
       } else {
-        generateQuestion();
+        generate8BarMelody();
       }
       return nextLives;
     });
   };
 
-  // 객관식 선택 시 (청음 모드)
-  const handleChoice = (selected: string) => {
-    if (selected === targetNote) {
-      handleSuccess();
+  // 청음 모드: 건반 입력 시 정오답 체크
+  const handleKeyboardInput = (note: string) => {
+    if (gameState !== 'playing' || isPlayingMelody) return;
+
+    playPianoNote(note);
+    const target = melody[currentNoteIdx];
+
+    if (note === target) {
+      // 정답 피드백
+      setFeedbackKey({ note, status: 'correct' });
+      setTimeout(() => setFeedbackKey(null), 300);
+
+      const nextIdx = currentNoteIdx + 1;
+      setCurrentNoteIdx(nextIdx);
+      currentNoteIdxRef.current = nextIdx;
+
+      if (nextIdx >= 8) {
+        handleSuccess();
+      }
     } else {
+      // 오답 피드백
+      setFeedbackKey({ note, status: 'wrong' });
+      setTimeout(() => setFeedbackKey(null), 300);
       handleFail();
     }
   };
 
-  // 시창 감지 루프
+  // 시창 모드: 실시간 목소리 감지
   useEffect(() => {
     if (mode === 'sight' && isSinging && gameState === 'playing') {
       let matchCount = 0;
@@ -111,18 +169,32 @@ export default function ChallengePage() {
         const result = PitchDetector.getNoteFromFreq(freq);
         if (result) {
           setDetectedNote(result.note);
-          if (result.note === targetNote) {
+          
+          // 현재 맞추고 있는 목표 음정
+          const target = melody[currentNoteIdxRef.current];
+
+          if (result.note === target) {
             matchCount++;
-            if (matchCount >= 8) { // 8프레임 연속 일치 시 (약 0.5초)
-              Tracker.stopTracking();
-              setIsSinging(false);
-              handleSuccess();
+            if (matchCount >= 6) { // 약 0.4초간 올바른 음 유지 시
+              matchCount = 0;
+              // 정답 효과음
+              AudioHelper.playPianoTone(NOTE_FREQS[target], 0.4);
+              
+              const nextIdx = currentNoteIdxRef.current + 1;
+              setCurrentNoteIdx(nextIdx);
+              currentNoteIdxRef.current = nextIdx;
+
+              if (nextIdx >= 8) {
+                Tracker.stopTracking();
+                setIsSinging(false);
+                handleSuccess();
+              }
             }
           } else {
             matchCount = 0;
           }
         } else {
-          setDetectedNote('소리 없음');
+          setDetectedNote('소리 대기 중...');
         }
       }).catch(err => {
         alert(err.message);
@@ -133,25 +205,47 @@ export default function ChallengePage() {
     return () => {
       Tracker.stopTracking();
     };
-  }, [isSinging, mode, gameState, targetNote]);
+  }, [isSinging, mode, gameState]);
 
   const startGame = () => {
     setScore(0);
     setStreak(0);
     setLives(3);
     setCurrentLevel(1);
-    generateQuestion();
+    generate8BarMelody();
+  };
+
+  // 키보드 키 상태 클래스 계산
+  const getKeyClass = (note: string, isBlack: boolean) => {
+    let cls = isBlack ? 'black-key' : 'white-key';
+    
+    // 사용자가 건반을 눌렀을 때
+    if (activePressKey === note) {
+      cls += ' active-press';
+    }
+
+    // 마이크 시창 시 실시간 음정 하이라이트
+    if (isSinging && detectedNote === note) {
+      cls += ' active-press';
+    }
+
+    // 정오답 피드백
+    if (feedbackKey && feedbackKey.note === note) {
+      cls += feedbackKey.status === 'correct' ? ' feedback-correct' : ' feedback-wrong';
+    }
+
+    return cls;
   };
 
   return (
     <div className="game-container">
       <Head>
-        <title>MR.BEAST MUSIC CHALLENGE</title>
+        <title>MR.BEAST 8-BAR PIANO CHALLENGE</title>
       </Head>
 
       {/* 헤더 & 스탯 */}
       <header className="game-header">
-        <div className="logo">⚡ BEAST EAR ⚡</div>
+        <div className="logo">⚡ BEAST PIANO ⚡</div>
         <div className="stats-group">
           <div className="stat-item">Level: <span className="stat-value">{currentLevel}</span></div>
           <div className="stat-item">Score: <span className="stat-value">{score}</span></div>
@@ -171,13 +265,13 @@ export default function ChallengePage() {
             className={`mode-btn ${mode === 'ear' ? 'active' : ''}`}
             onClick={() => { setMode('ear'); setGameState('idle'); Tracker.stopTracking(); setIsSinging(false); }}
           >
-            🔥 청음 모드 (Ear)
+            🎹 8마디 청음 (Ear)
           </button>
           <button 
             className={`mode-btn ${mode === 'sight' ? 'active' : ''}`}
             onClick={() => { setMode('sight'); setGameState('idle'); }}
           >
-            🎤 시창 모드 (Vocal)
+            🎤 8마디 시창 (Vocal)
           </button>
         </div>
 
@@ -185,13 +279,13 @@ export default function ChallengePage() {
           <div>
             <h1 className="question-title">
               {mode === 'ear' 
-                ? '들리는 음정을 맞춰라!' 
-                : '보이는 음정을 정확히 불러라!'}
+                ? '재생되는 8마디 음계를 듣고 피아노로 연주해라!' 
+                : '표시된 8마디 음계를 마이크에 순서대로 불러라!'}
             </h1>
             <p className="quest-desc">
               {mode === 'ear'
-                ? '가장 높은 스트릭을 달성해 랭킹 보드에 이름을 남기세요!'
-                : '마이크를 허용하고 실시간으로 음정을 분석합니다.'}
+                ? '실제 피아노 음원이 재생됩니다. 똑같이 따라 치세요!'
+                : '마이크를 켜고 실시간 보컬 음치 탈출에 도전하세요!'}
             </p>
             <button className="action-btn" onClick={startGame}>챌린지 시작 🚀</button>
           </div>
@@ -200,39 +294,56 @@ export default function ChallengePage() {
         {gameState === 'playing' && (
           <div>
             <h2 className="question-title">
-              {mode === 'ear' ? '이 음정은 무엇일까요?' : `표시된 음을 노래하세요: ${targetNote}`}
+              {mode === 'ear' ? '들려주는 8마디 음계를 받아치세요!' : '음계 시창 도전!'}
             </h2>
 
+            {/* 8마디 음계 진척도 인디케이터 */}
+            <div className="melody-container">
+              {melody.map((note, index) => {
+                let statusClass = '';
+                if (index < currentNoteIdx) statusClass = 'completed';
+                else if (index === currentNoteIdx) statusClass = 'active';
+                
+                return (
+                  <div key={index} className={`melody-bar ${statusClass}`}>
+                    <span className="bar-num">{index + 1}마디</span>
+                    <span className="bar-note">{mode === 'sight' || index < currentNoteIdx ? note : '?'}</span>
+                  </div>
+                );
+              })}
+            </div>
+
             {mode === 'ear' ? (
-              <div>
-                <button className="action-btn" onClick={playCurrentTarget}>🔊 소리 다시 듣기</button>
-                <div className="choice-grid">
-                  {choices.map((choice, i) => (
-                    <button key={i} className="choice-btn" onClick={() => handleChoice(choice)}>
-                      {choice}
-                    </button>
-                  ))}
-                </div>
+              <div style={{ marginBottom: '1.5rem' }}>
+                <button 
+                  className="action-btn" 
+                  onClick={playFullMelody} 
+                  disabled={isPlayingMelody}
+                >
+                  {isPlayingMelody ? '🔊 재생 중...' : '🔊 8마디 멜로디 듣기'}
+                </button>
               </div>
             ) : (
               <div>
                 <div className="visualizer-box">
-                  <span className="detected-pitch">{detectedNote}</span>
+                  <span className="detected-pitch">내 음정: {detectedNote}</span>
                 </div>
-                <button 
-                  className="action-btn" 
-                  onClick={() => setIsSinging(prev => !prev)}
-                >
-                  {isSinging ? '⏹ 감지 중지' : '🎙 노래하기 시작'}
-                </button>
+                <div style={{ marginBottom: '1.5rem' }}>
+                  <button 
+                    className="action-btn" 
+                    onClick={() => setIsSinging(prev => !prev)}
+                  >
+                    {isSinging ? '⏹ 감지 중지' : '🎙 노래하기 시작'}
+                  </button>
+                </div>
               </div>
             )}
 
-            {/* 프로그레스 바 타이머 */}
+            {/* 타이머 바 */}
             <div className="progress-bar-container">
               <div 
-                className={`progress-bar ${timeLeft <= 2 ? 'critical' : ''}`}
-                style={{ width: `${(timeLeft / (Math.max(3, 8 - currentLevel))) * 100}%` }}
+                className={`progress-bar ${timeLeft <= 5 ? 'critical' : ''}`}
+                style={{ width: `${(timeLeft / 25) * 100}%` }}
               ></div>
             </div>
           </div>
@@ -246,6 +357,35 @@ export default function ChallengePage() {
           </div>
         )}
       </main>
+
+      {/* 2옥타브 인터랙티브 피아노 섹션 */}
+      <section className="piano-section">
+        <h3 className="piano-title">🎹 실시간 피아노 건반 (마우스 클릭 또는 음계 확인)</h3>
+        <div className="piano-keyboard">
+          {/* 백건 렌더링 */}
+          {WHITE_KEYS.map((note, index) => (
+            <div 
+              key={note} 
+              className={getKeyClass(note, false)}
+              onClick={() => handleKeyboardInput(note)}
+            >
+              {note}
+            </div>
+          ))}
+
+          {/* 흑건 렌더링 (백건 위에 절대 좌표로 오버레이) */}
+          {BLACK_KEYS.map((black) => (
+            <div 
+              key={black.note} 
+              className={getKeyClass(black.note, true)}
+              style={{ left: `${black.parentIdx * 44 + 31}px` }}
+              onClick={() => handleKeyboardInput(black.note)}
+            >
+              {black.note.replace(/[0-9]/g, '')}
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
