@@ -15,3 +15,11 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-18] * `result_data`가 정의된 JSON 스키마를 따르는지 확인한다. 특히 KPI(`Growth`, `Engagement`, `Monetization`) 값이 예상 범위를 벗어나지 않는지 검증한다. $\rightarrow$ ** _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-05-18] * 검증이 통과되면, `Diagnosis_Results` 테이블에 결과(`result_data`, `context_id`, 시간 스탬프)를 삽입한다. $\rightarrow$ ** _(근거: sessions/2026-05-18T43/developer.md)_
 - [2026-05-18] * 이때, `Growth`, `Engagement`, `Monetization` KPI는 별도의 테이블(`KPI_Metrics`)에 연관시켜 저장하여 추적 용이성을 확보한다. $\rightarrow$ ** _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-05-19] 13	기존에 정의된 `schema.sql`의 기본 구조를 확장하고, 요구되는 모든 로그와 관계를 지원하도록 테이블을 추가합니다. **외래 키(Foreign Key)**를 통해 데이터의 일관성과 추적 가능성을 확보하는 것이 핵심입니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-05-19] 38	아래는 핵심 테이블 구조입니다. 실제 구현 시 인덱스 설정 및 트랜잭션 처리를 반드시 고려해야 합니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-05-19] 131	시스템의 안정성과 비즈니스 가치를 고려하여 다음 순서대로 개발을 진행해야 합니다. _(근거: sessions/2026-05-18T15-04/business.md)_
+- [2026-05-19] 99 # 에 기반하여 성장 지표를 종합적으로 산출 _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-05-19] 33 * 해당 사용자가 요청하는 데이터(`diagnosis_type`)에 접근할 **권한(Role-Based Access Control, RBAC)**을 가지고 있는지 DB를 통해 검증한다. (예: 무료 사용자에게는 'Engagement' 리포트 접근 제한) $\rightarrow$ ** _(근거: sessions/2026-05-18T13-43/developer.md)_
+- [2026-05-19] 35 * `result_data`가 정의된 JSON 스키마를 따르는지 확인한다. 특히 KPI(`Growth`, `Engagement`, `Monetization`) 값이 예상 범위를 벗어나지 않는지 검증한다. $\rightarrow$ ** _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-05-19] 37 * 검증이 통과되면, `Diagnosis_Results` 테이블에 결과(`result_data`, `context_id`, 시간 스탬프)를 삽입한다. $\rightarrow$ ** _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-05-19] 38 * 이때, `Growth`, `Engagement`, `Monetization` KPI는 별도의 테이블(`KPI_Metrics`)에 연관시켜 저장하여 추적 용이성을 확보한다. $\rightarrow$ ** _(근거: sessions/2026-05-18T43/developer.md)_
