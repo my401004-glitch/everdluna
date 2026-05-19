@@ -443,3 +443,416 @@ Recent 30일 동안의 데이터를 analyzing한 결과 다음과 같습니다.
  3. text overlay with the words "Automation Revolution"
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 17:55:38
+## 📡 키워드: 마케팅 트렌드, 유튜브 자동화
+
+📊 마케팅 트렌드 해킹 분석 보고서
+
+**🌍 트렌드 해킹 분석**
+
+ recent 30일 동안 유튜브 마케팅 트렌드는以下의 패턴으로 조회수를 끌고 있습니다.
+
+*   **AI 활용**: AI 활용이 주류로 대중화되면서, 마케팅 트렌드는 AI 활용을 위한ทร렌드를 보입니다.
+*   **가성비 vs 납득감**: 가성비와 납득감을 두고 말하는 트렌드가 emerge합니다. 
+*   **오프라인 소비**: 오프라인 소비를 위한 트렌트가 emerge합니다.
+*   **블로그 마케팅의 종말**: 블로그 마케팅은 AI에 의해 지배된 것처럼 보이며, 이에 대한 반대파는 emergurat 해소하고자 합니다.
+
+**🎯 빈집 털기 전략**
+
+마케팅 트렌드 해킹 분석 결과에서 discernible trend가 emerge합니다. 
+
+*   **AI 활용의 다양한 접근법**: 여러 접근법을 통해 AI 활용을 구현하는 방법이Emerge합니다.
+*   **가성비와 납득감**: 가성비와 납득감에 대한 트렌드가 emergurat 해소하고자 합니다.
+*   **오프라인 소비**: 오프라인 소비를 위한 트렌트가 emerge합니다.
+*   **블로그 마케팅의 종말**: 블로그 마케팅은 AI에 의해 지배된 것처럼 보이며, 이에 대한 반대파는 emergurat 해소하고자 합니다.
+
+**🎬 파괴적 영상 기획안**
+
+영화-like로 기획해 보는 영상 기획안을 below에 작성합니다. 
+
+1.  **썸네일 카피**: 🤩 "AI가 나를 만든 vidéo!" - 예시: 마케팅 트렌드의 가장 최근तम 트렌드를 보여주는 썸네일
+2.  **제목 3개**: 
+    *   "마케팅 트렌드 해킹"
+    *   "AI 활용의 다양한 접근법"
+    *   "가성비와 납득감에 대한 전략"
+3.  **후킹 오프닝(첫 5초)**: 🎬"마케팅의Future는 AI?" - 예시: 마케팅 트렌드 해킹 분석 결과를 보여주는 후킹 오프닝
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 17:55:50
+## 📡 키워드: 생산성 툴, 유튜브 자동화
+
+📊 유튜브 트렌드 해킹 분석 보고서
+
+**1. 🌍 트렌드 해킹 분석**
+
+ recently의 유튜브 영상을 분석한 결과, 다음 패턴이 조회수를 끌고 있는 것으로 밝혀졌습니다.
+
+*   **생산성 툴**: 유튜бер들이 생산성 툴과 관련된 영상이 increasingly 많은 조회수를 보인다는 점에 주목할 수 있습니다. 이 패턴은 유튜브에서 생산성 툴과 관련된 영상의 Popularity가 상승하는 경향에 의해 발생하였습니다.
+*   **유튜브自动화**: 유튜브 자동화와 관련된 영상이 Increasingly 많은 조회수를 보인다는 점에 주목할 수 있습니다. 이 패턴은 유튜브에서 автомат化 teknologie와 관련된 영상의 Popularity가 상승하는 경향에 의해 발생하였습니다.
+
+**2. 🎯 빈집 털기 전략**
+
+생산성 툴과 유튜브 자동화와 관련된 영상이 조회수를 끌고 있는 패턴을 identified했습니다. 다음은 차별화 가능한 틈새 주제입니다.
+
+*   **유튜브 자동화**: 유튜브自动화 related 영상의 Popularity가 상승하는 경향에 의해 발생하였습니다. 이 패턴은 유튜브에서 автомат化 teknologie와 관련된 영상의 Popularity가 상승하는 경향에 의해 발생하였습니다.
+*   **생산성 툴**: 유튜버들이 생산성 툴과 관련된 영상이 Increasingly 많은 조회수를 보인다는 점에 주목할 수 있습니다. 이 패턴은 유튜브에서 생산성 툴과 관련된 영상의 Popularity가 상승하는 경향에 의해 발생하였습니다.
+*   **아griculture**: Agriculture related 영상의 Popularity가 상승하는 경향을 observed했습니다. 이 패턴은 agriculture와 관련된 영상의 Popularity가 상승하는 경향에 의해 발생하였습니다.
+
+**3. 🎬 파괴적 영상 기획안**
+
+생산성 툴과 유튜브 자동화 related 영상이 조회수를 끌고 있는 패턴을 identified했습니다. 다음은 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)로 구성된 파괴적 영상 기획안입니다.
+
+*   썸네일 카피: "🔥 automatically grow your channel!"
+*  제목 3개:
+    *   *"How to automate your YouTube channel with AI"*
+    *   *"Maximize your productivty with specialized tools"*
+    *   *"Make money with automated YouTube content creation"*
+*   후킹 오프닝(첫 5초): "🔥 Welcome to the future of YouTube automation!"
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 17:56:33
+## 📡 키워드: AI 비즈니스, 마케팅 트렌드
+
+**마케팅 트렌드 및 AI 비즈니스 해석 보고서**
+
+**1. 🌍 트렌드 해킹 분석**
+
+* ** 패턴:** 현재 트렌드 해킹에 대한 관심은 크mong의 숏폼 영상과 곽팀장의 오프라인 소비에 대한 discussing이 높습니다.
+* **인기 키워드:**
+ + "알고리즘"
+ + "트렌드"
+ + "외주견적"
+ + "비주얼후킹"
+ + "가성비"
+ + "납득감"
+ + "공간"
+ + "온라인 쇼핑"
+* **해석:** 트렌드는 오프라인 소비의 역할을 강조하고 온라인 쇼핑의 역할을 giảm시킵니다. 또한, 알고리즘과 비주얼후킹은 마케팅 트렌드에 대한 관심을 끌고 있습니다.
+
+**2. 🎯 빈집 털기 전략**
+
+* **차별화 가능한 틈새 주제:**
+ + AI와 마케팅의 관련성
+ + 오프라인 소비의益處
+ + 온라인 쇼핑의 한계
+* **전략 아이디어:**
+ + "AI와 마케팅의 상호작용" тем을 다루는 영상
+ + 오프라인 소비의益处를 강조하는 영상
+ + 온라인 쇼핑의 한계에 대한 आल리기를 포함하는 영상
+
+**3. 🎬 파괴적 vidéo 기획안**
+
+* **썸네일 카피:**
+ + "AI로 가는 오프라인 소비"
+ + "온라인 쇼핑의 끝, 오프라인 소비의 시작"
+ + "가성비를 잃지 않고 오프라인 소비를 즐기다"
+* **제목 3개:**
+ + "AI와 마케팅의 상호작용: 가성비를 잃지 않으려면?"
+ + "온라인 쇼핑의 끝, 오프라인 소비의 시작: AI를 활용하라!"
+ + "가성비를 잃지 않고 오프라인 소비를 즐기다: AI와 마케팅의-secret"
+* **후킹 오프닝(첫 5초):**
+ + 가장 첫 5초에 "AI로 가는 오프라인 소비"을 보여주고, 후반부에는 오프라인 소비의益处와 온라인 쇼핑의 한계를 강조하는 영상
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 17:56:44
+## 📡 키워드: AI 비즈니스, 생산성 툴
+
+📊 마르्क다운 보고서 📊
+
+**1. 🌍 트렌드 해킹 분석**
+
+트렌드 해킹을 통해 조회수를 끌어올리는 패턴은 다음과 같습니다.
+
+*   **AI 비즈니스**: recent 30일 동안 AI 비즈니스 채널에서 많은 관심이集中되어 있었습니다. 특정 주제에 대해 deepen한 이해를 제공하고, 경쟁력을 부여하는 виде오와 포스트가 조회수를 끌고 있습니다.
+*   **생산성 툴**: 생산성 툴 채널은 최근로 인기를 거두고 있습니다. 다양한 제품의ประโยชน을 보여주는 비디오와 포스트가 조회수를 끌고 있습니다.
+
+**2. 🎯 빈집 털기 전략**
+
+빈집 털기 전략을 통해 차별화 가능한 틈새 주제를 찾는 방법은 다음과 같습니다.
+
+*   **AI 비즈니스**: AI 비즈니스 채널에서 다음과 같은 틈새 주제가 발견됩니다.
+    *   "AI와 가속도: 새로운ธุรกิจ 기회"
+    *   "AI의 미래: 인공지능과 인류"
+    *   "AI의 역할: 경쟁력과 보상"
+*   **생산성 툴**: 생산성 툴 채널에서 다음과 같은 틈새 주제가 발견됩니다.
+    *   "Productivity와 성과: 생산성 툴을 사용하는 방법"
+    *   "Tooling for Success: 최적의 제품을 선택하는 방법"
+    *   "The Future of Farming: 현대 farming tool의Role"
+
+**3. 🎬 파괴적 영상 기획안**
+
+파괴적 영상 기획안을 통해 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초) 등을 작성하는 방법은 다음과 같습니다.
+
+*   **썸네일 카피**: "AI와 가속도: 새로운ธุรกิจ 기회"
+*   **제목 3개**:
+    *   "AI의 미래: 인공지능과 인류"
+    *   "AI를 사용하는 비즈니스 success stories"
+    *   "AI의 역할: 경쟁력과 보상"
+*   **후킹 오프닝(첫 5초)**:
+    *   (0s-1s) 화면에 AI-related图시크로.display
+    *   (1s-2s) 로우티pline을 그려서 'New Business Opportunity'를 표시하고, 동적으로 변색
+    *   (2s-3s) 3D график스에서 'Faster'를 표시하고, 화면에 'AI'를 displaying
+    *   (3s-4s) 화면에 'Discover the Future of Business'를 표시하고, 동적으로 변색
+    *   (4s-5s) 화면에 'AI'를 표시하고, 화면이 비우면서 "The End"를 표시
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 17:56:58
+## 📡 키워드: 유튜브 자동화, 마케팅 트렌드
+
+📊 유튜브 트렌드 해킹 분석 보고서
+
+**1. 🌍 트렌드 해킹 분석**
+
+트렌드 해킹에 관해 분석한 결과 다음과 같습니다.
+
+*   유튜브 자동화와 AI를 주제로 하는 vídeo가 많은 조회수를 끌고 있습니다.
+*   마케팅 트렌드는 온라인 쇼핑, 블로그 마케팅, Shorts виде오와 관련된 트레нд가 높은 조회수를 얻는 데 도움이 됩니다.
+*   이에 따라 채널과 vidéo 제목을 분석해 보았으며, 결과를 siguiente 표에 정리했습니다.
+
+| 채널 | 제목 | 조회수 |
+| :--- | :----- | :------- |
+| 마플 마인크래프트 | 만들어 놓으면 쌓여 있는 게 자동화지 ㅋㅋㅋㅋㅋ | 12000 |
+| MystGrow | How I Made $18,000 with USA YouTube Automation | Full Course | 2500 |
+| CONNECT AI LAB | AI 직원 10명이 24시간 일하는 완전 무료 프로그램 (AI 1인 기업 자동화) | 1000 |
+| Alex Best Digital | Clone Any Youtube Channel With Claude AI (No coding skills required) | 500 |
+| AIpreneur | Clone ANY YouTube Channel With Claude AI in 1 Hour (No Skills Needed) | 200 |
+
+**2. 🎯 빈집 털기 전략 — 차별화 가능한 틈새 주제**
+
+트렌드 해킹 분석 결과를 바탕으로 void 집 털기 전략을 below에 정리했습니다.
+
+*   유튜브 자동화와 AI가 트렌드인 것만 아니라, 온라인 쇼핑과 블로그 마케팅도 높은 조회수를 얻는 데 도움이 됩니다.
+*   또한 Shorts 영상과 관련된 트렌드를 확인해 보았으며, 결과를 siguiente 표에 정리했습니다.
+
+| 채널 | 제목 | 조회수 |
+| :--- | :----- | :------- |
+| 크몽 kmong | 숏폼영상, 알고리즘의 선택을 받는 방법  | 10000 |
+| 곽팀장 | ‘가성비’가 아닌 ‘납득감’을 사는 사람들  | 5000 |
+| 곽팀장 | 초저가와 모임이 되살리는 오프라인 소비  | 2000 |
+
+*   위의 결과를 바탕으로 void 집 털기 전략은 온라인 쇼핑과 블로그 마케팅을 주제로 하는 채널이 많으며, Shorts 영상에 대한 트렌드가 높아야 합니다.
+*   또한 '가성비'와 '납득감'이 인기를 끌고 있는 문제로, corresponding 주제를 차별화하여 void 집 털기 전략을 구상해야 합니다.
+
+**3. 🎬 파괴적 영상 기획안 — 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)**
+
+트렌드 해iking 분석 결과를 바탕으로 파괴적 영상 기획안을 below에 정리했습니다.
+
+*   유튜브 자동화와 AI가 트렌드인 것만 아니라, 온라인 쇼핑과 블로그 마케팅도 높은 조회수를 얻는 데 도움이 됩니다.
+*   또한 Shorts 영상과 관련된 트렌드를 확인해 보았으며, 결과를 siguiente 표에 정리했습니다.
+
+| 채널 | 제목 | 썸네일 카피 | 장점 | 부족 |
+| :--- | :----- | :------- | :------ | :----- |
+| 크몽 kmong | 숏폼영상, 알고리즘의 선택을 받는 방법  | 알gorihtm selects | 유튜브 자동화 트렌드 | SHORTS 영상에 대한 트렌드가 낮아 |
+| 곽팀장 | ‘가성비’가 아닌 ‘납득감’을 사는 사람들  | 가성비 vs 납득감 | 온라인 쇼핑과 블로그 마케팅이 인기가 많은 | Shorts 영상에 대한 트렌드가 낮아 |
+
+*   위의 결과를 바탕으로 파괴적 영상 기획안은 online shopping과 blog marketing을 주제로 하는 채널이 많으며, Shorts 영상에 대한 트렌드가 높아야 합니다.
+*   또한 '가성비'와 '납득감'이 인기를 끌고 있는 문제로, corresponding 주제를 차별화하여 파괴적 영상 기획안을 구상해야 합니다.
+
+ 위의 결과는 void 집 털기 전략과 파괴적 영상 기획안에 대한 요약입니다. 채널과 제목을 분석해 보았으며, SHORTS 영상과 관련된 트렌드가 높아야 합니다. 또한 '가성비'와 '납득감'이 인기를 끌고 있는 문제로, corresponding 주제를 차별화하여 void 집 털기 전략과 파괴적 영상 기획안을 구상해야 합니다.
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 17:57:08
+## 📡 키워드: AI 비즈니스, 마케팅 트렌드
+
+🔥 유튜브 알고리즘 마스터마인드의 보고서 📊
+
+**1. 🌍 트렌드 해킹 분석**
+
+트렌드해킹은 유튜브 채널들이 사용하는 중요한 keywords를分析하여 조회수를 끌어올리는 수단입니다. 최근 30일의 데이터를 analyzes하면 다음과 같은 패턴이 emerge했습니다.
+
+*   **AI 비즈니스**: AI-related 키워드는channel을 비롯해 많은 채널에서 사용されています. 예를 들어, "AI 비즈니스"와 "마케팅 트렌드"는 모두 Channel: Raj Shamani에서 많이 사용됩니다.
+*   **마케팅 트렌드**: 마케팅 트렌드는 모든 channel에서 사용되어있습니다. 예를 들어, "숏폼 영상", "알고리즘의 선택", "납득감"은 모두_channel을 비롯해 많은 채널에서 사용되고 있습니다.
+*   **인프라 및 기술**: 인프라 및 기술 관련 키워드는 channel을 비롯해 일부 채널에서 사용되어있습니다. 예를 들어, "AI Dropshipping"와 "Vaibhav FO499 Raj Shamani"는 모두 Channel: Mark Tilbury에서 사용됩니다.
+
+**2. 🎯 빈집 털기 전략**
+
+빈집 털기 전략은 유튜브 채널들이 사용하는 차별화 가능한 틈새 주제입니다. 최근 30일의 데이터를 analyzes하면 다음과 같은 패턴이 emerge했습니다.
+
+*   **AI 비즈니스**: AI-related topic은 channel을 비롯해 많은 채널에서 사용되어있습니다. 예를 들어, "AI 비즈니스"와 "마케팅 트렌드"가 모두 Channel: Raj Shamani에서 많이 사용됩니다.
+*   **마케팅 트렌드**: 마케팅 트렌드는 모든 channel에서 사용되어있습니다. 예를 들어, "숏폼 영상", "알고리즘의 선택", "납득감"은 모두 channel을 비롯해 많은 채널에서 사용되고 있습니다.
+*   **인프라 및 기술**: 인프라 및 기술 관련 topic은 channel을 비롯해 일부 채널에서 사용되어있습니다. 예를 들어, "AI Dropshipping"와 "Vaibhav FO499 Raj Shamani"는 모두 Channel: Mark Tilbury에서 사용됩니다.
+
+**3. 🎬 파괴적 영상 기획안**
+
+파괴적 영상은 유튜브 채널들이 사용하는 중요한 영역입니다. 최근 30일의 데이터를 analyzes하면 다음과 같은 패턴이 emerge했습니다.
+
+*   **썸네일 카피**: 썸네일 카피는 channel을 비롯해 많은 채널에서 사용되어있습니다. 예를 들어, "AI 비즈니스"와 "마케팅 트렌드"가 모두 Channel: Raj Shamani에서 많이 사용됩니다.
+*   **제목 3개**: 제목은 모든 channel에서 사용되어있습니다. 예를 들어, "숏폼 영상", "알고리즘의 선택", "납득감"은 모두 channel을 비롯해 많은 채널에서 사용되고 있습니다.
+*   **후킹 오프닝(첫 5초)**: 후킹 오프닝은 channel을 비롯해 일부 채널에서 사용되어있습니다. 예를 들어, Channel: Yash Pratap Singh에서 "How AI + business changing the way of learning"라는 제목이 use되고 있습니다.
+
+이 보고서는 유튜브 알고리즘 마스터마인드가 사용하는 트렌드 해킹 패턴과 빈집 털기 전략을 analyzes하여 channel들이 사용할 수 있는 틈새 주제를 제공했습니다. 또한 파괴적 영상 기획안에 대한 analysis를 통해 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)로의 strategt를 提 proposition해줬습니다.
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 18:09:48
+## 📡 키워드: 유튜브 자동화, 생산성 툴
+
+**유튜브自动화와 생산성 툴 트렌드 해킹 분석 보고서**
+
+### 1. 🌍 트렌드 해킹 분석
+
+유튜브自動화와 생산성 툴은 최근에 크게 인기를 얻고 있습니다.
+
+*   **유튜브 자동화**: 마플 마인크래프트 채널, MystGrow, Alex Best Digital, AIpreneur, Danny Why의 채널이 많은 조회수를 끌고 있습니다. Claude AI가 유튜브 automatization을에 대한 인식과 수준이 올라가고 있습니다.
+*   **생산성 툴**: Dream Build Repeat, SetupsAI, golden orange fruit, Prime Care의 채널도 크게 인기를 얻고 있습니다. Modern Farming Tools, Hydraulic Power Tools, Accurate Diagnostic Tools와 같은 생산성 툴에 대한 관심이 높아지고 있습니다.
+
+### 2. 🎯 빈집 털기 전략
+
+유튜브 자동화와 생산성 툴에 대한interest는 많은 người들에게 상당한 인기를 얻고 있기 때문에, 차별화 가능한 틈새 주제를 찾는 것이 중요합니다.
+
+*   **유튜브 자동화**: 채널은 clone any youtube channel과 similar channel automatic creation에 대해 포괄적이고 detailed한 내용을 제공하는channel이 많지만, specific niche automaton에 대한 정보가 부족하거나, custom automatization solution에 대한 정보가 부족합니다.
+*   **생산성 툴**: modern farming tools, hydraulic power tools, accurate diagnostic tool 등에 대해 포괄적이고 detailed한 내용을 제공하는channel이 많지만, specific niche production tool에 대한 정보가 부족하거나, custom production tool solution에 대한 정보가 부족합니다.
+
+### 3. 🎬 파괴적 영상 기획안
+
+파괴적 영상은 유튜브에서 매우 인기가 있기 때문에, 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)으로 시작하는 파괴적 영상 기획안을 below에 설명합니다.
+
+*   **썸네일 카피**: Clone Any Youtube Channel With Claude AI (No coding skills required)과 Clone ANY YouTube Channel With Claude AI in 1 Hour (No Skills Needed)와 같은 title이 인기가 있는 pattern입니다.
+*   **제목 3개**:
+    *   "클라우드 AI를 이용한 유튜브 자동화 방법"
+    *   "유튜브自动화: 클라우드 AI를 이용한 성공적인 전략"
+    *   "클라우드 AI로 쉽게 유튜브 automatic creation"
+*   **후킹 오프닝(첫 5초)**:
+    *   [00:00] - 클라우드 AI가 인기를 얻고있는 상황에 대한 예상과 상관하여 예상을 지속하는 장면
+    *   [00:01] - 유튜브自动화와 생산성 툴에 대한 관심이 강한 상황에서, automatically creation solution을 제시하는 장면
+    *   [00:02] - successful 전략의 전개 및 예상과 상관하여 예상을 지속하는 장면
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 18:09:57
+## 📡 키워드: 생산성 툴, AI 비즈니스
+
+**트렌드 해킹 분석**
+
+Recent 30일 내내 뚜렷한 트랜드가 나타났다.
+
+🌟 **생산성 툴**: 채널을 많이 보았고, 생산성 툴에 대한ความสนใจ는 강한 것으로 나타난다. 채널 중 하나인 Dream Build Repeat의-video는 Productionivity Boosting Tool Review을제목으로 올렸으며, another channel SetupsAI는 Find almost any tools you need #productivity #tools #tool를제목으로 올렸고, Prime Care는 Maximizing Construction Productivity with Hydraulic Power Tools를제목으로 올렸으며 Work Permit은 Maximizing Productivity with Modern Cordless Power Tool Technology를제목으로 올리며, RAFFWORK ID의 timber joint trick 또한 popularity를 누린다.
+
+🌟 **AI 비즈니스**: AI 비즈니스 채널 중 Raj Shamani는 Earn Crores with AI: Business Ideas, Claude, Free Tools &amp; Prompts | Vaibhav | FO499 Raj Shamani를제목으로 올렸으며 Mark Tilbury는 I Tried AI Dropshipping For a Week (RAW RESULTS)로 유명해졌다. 
+
+🌟 **주요 키워드**: 생산성 툴과 AI 비즈니스-related 키워드가 dominates하여 트렌드는 해당 분야의 중요성을 강조하는 것으로 나타났다.
+
+**빈집 털기 전략**
+
+생산성 툴과 AI 비즈니스 채널이 popularity를 누린다는 점을 참고하면, 특정한 niche에 집중하는 approach가 유리한 것으로 보인다. 
+
+🔍 **생산성 툴**: 채널 중 하나인 Dream Build Repeat의 video는 Productionivity Boosting Tool Review을제목으로 올렸으며, SetupsAI는 Find almost any tools you need #productivity #tools #tool를제목으로 올렸고, Prime Care는 Maximizing Construction Productivity with Hydraulic Power Tools를제목으로 올리며, RAFFWORK ID의 timber joint trick 또한 popularity를 누린다. 
+
+🔍 **AI 비즈니스**: Raj Shamani와 Mark Tilbury의 채널은 Earn Crores with AI: Business Ideas, Claude, Free Tools &amp; Prompts | Vaibhav | FO499 Raj Shamani와 I Tried AI Dropshipping For a Week (RAW RESULTS)로 유명해졌다. 
+
+**파괴적 영상 기획안**
+
+썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)을 참고하면 following는 파괴적 영상 기획안이 될 수 있다.
+
+🔥 썸네일 카피:
+
+🌟 "생산성 툴을 활용하여 수익성을 높이고 productivity를 boost할 방법은? 🤔"
+
+📈 "AI 비즈니스: earns $10k+ with just 1 hour of work per day 🤑"
+
+🎥 "AI Dropshipping: Success story with $50k+ in sales 💸"
+
+👀 후킹 오프닝(첫 5초):
+
+🚨 "이것이 생산성 툴의 bí quyết! 🤫"
+ 
+🔥 "AI 비즈니스: earns $10k+ with just 1 hour of work per day 🤑"
+ 
+📊 "AI Dropshipping: Success story with $50k+ in sales 💸"
+
+위에 기획안이 유용한 것으로 보인다.
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 18:19:10
+## 📡 키워드: 생산성 툴, 유튜브 자동화
+
+**유튜브 트렌드 해킹 분석 보고서**
+
+### 🌍 트rend 해킹 분석
+
+트렌드 해킹 분석을 통해 유튜브의 최근 trend를 살펴보아야 합니다. 이 때, keyword가 포함된 channel과 video의 trend pattern를 analyzing 하여야 합니다.
+
+*   **생산성 툴:** 채널: SetupsAI, golden orange fruit
+    *   keyword "productivity"와 "tools"가 많은 조회수를 끌고 있습니다.
+*   **유튜브 자동화:** 채널: MystGrow, CONNECT AI LAB
+    *   keyword "automation", "AI"가 많은 조회수를 끌고 있습니다.
+
+### 🎯 빈집 털기 전략
+
+빈집 털기 전략을 통해 차별화 가능한 틈새 주제를 찾아야 합니다. 이 때, 트렌드 해킹 분석 결과와 유튜브 사용자들의 관심사를 고려하여 niche topic을 선택해야 합니다.
+
+*   **생산성 툴:**
+    *   Modern Farming Tools Boost Productivity (golden orange fruit)
+    *   Maximizing Construction Productivity with Hydraulic Power Tools (Prime Care)
+*   **유튜브 자동화:**
+    *   Clone Any Youtube Channel With Claude AI (Alex Best Digital, AIpreneur)
+
+### 🎬 파괴적 영상 기획안
+
+파괴적 영상 기획안을 통해 썸네일 카피, 제목, 후킹 오프닝(첫 5초)을 작성해야 합니다. 이 때, 트렌드 해킹 분석 결과와 niche topic을 고려하여 기획안을 작성해야 합니다.
+
+*   **썸네일 카피:**
+    *   생산성 툴: "생산성 툴으로 productivity를 skyrocket!"
+    *   유튜브 자동화: "AI로 유튜브自動화! automatic channel clone!"
+*   **제목:**
+    *   생산성 툴: "Skyrocket Planting Productivity With Specialized Tools"
+    *   유튜브 자동화: "$18,000 USD에 $0 USD의 비용으로 유튜브 자동화!"
+*   **후킹 오프닝(첫 5초):**
+    *   생산성 툴: (가장-fastest camera motion)
+    *   유튜브automation: (가장-fastest camera motion)
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 18:19:18
+## 📡 키워드: 마케팅 트렌드, AI 비즈니스
+
+**마케팅 트렌드 해킹 분석报告**
+
+### 🌍 트렌드 해킹 분석
+
+ recent 30일 동안 조회수를 끌고 있는 패턴은 다음과 같습니다.
+
+*   **AI 비즈니스**: AI와 관련된 트렌드는 지속적으로 인기있는 주제입니다. Rowan Cheung와 Raj Shamani의 채널은 AI에 대한 비즈니스 아이디어를 다루고 있습니다.
+*   **마케팅 트렌드**: 가성비가 아닌 '납득감'을 사는 사람들, 초저가와 모임이 되살리는 오프라인 소비, 편리함만 남은 온라인 쇼핑, 브랜드는 공간으로 이러한 주제가 조회수를 끌고 있습니다.
+*   **인터넷 마케팅**: 블로그 마케팅의 종말에 대해 쁠케팅이 다루고 있는 내용이 조회수를 끌고 있습니다.
+
+### 🎯 빈집 털기 전략
+
+차별화 가능한 틈새 주제는 다음과 같습니다.
+
+*   AI 비즈니스: AI-powered Dropshipping, AI-generated Content
+*   마케팅 트렌드: '납득감'과 '가성비'를 사는 사람들, 초저가와 모임이 되살리는 오프라인 소비, 편리함만 남은 온라인 쇼핑
+*   인터넷 마케eting: 블로그 마케팅의 종말, AI에 철저히 짓밟혔다
+
+### 🎬 파괴적 영상 기획안
+
+ 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)은 다음과 같습니다.
+
+*   썸네일 카피: "AI-powered Dropshipping이 가จริง나?" 또는 "AI에 철저히 짓밟혔다. 블로그 마케팅의 종말!"
+*   제목 3개:
+    *   "[AI Dropshipping]: 가성비가 아닌 '납득감'을 사는 사람들"
+    *   "이러한 오프라인 소비에 대한 모임이 되살리기!"
+    *   "Online 쇼핑의 편리함만 남은 브랜드, 공간으로!"
+*   후킹 오프닝(첫 5초):
+    *   (0:00) - 초반 1초: 썸네일 카피
+    *   (0:01-0:03): 전화 소리는 주목받는 부분과 마케팅 트레ンド에 대한 브리핑으로 전환합니다.
+    *   (0:04-0:06): AI-powered Dropshipping에 대한 설명이 주목받는 부분입니다.
+
+---

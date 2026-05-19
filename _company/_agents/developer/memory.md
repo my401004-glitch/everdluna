@@ -59,3 +59,8 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] 이전 세션에서 발생한 Landing Kit 템플릿 적용 및 파일 생성 과정(`pack_apply.py` 실행, `index.html` 경로 문제)의 전체 흐름을 분석하고, 코다리 에이전트가 도구를 올바른 경로로 재실행하여 웹 페이지 파일이 정상적으로 생성되고 접근 가능하도록 시스템 환경을 즉시 수정하라. → 산출물 sessions/2026-05-19T07-13/developer.md
 - [2026-05-19] [A.U 히든 커맨드: 💻 코다리 에이전트가 방금 'Landing Kit (SaaS 랜딩 페이지)' 템플릿 팩 주입받았습니다. 코드 boilerplate 3개 파일 + README. 매트릭스 톤으로 한 줄. "💻 코다리, Landing Kit (SaaS 랜딩 페이지) 템플릿 3개 파일 장착. 다음 작업에 자동 활용." 부가 설명 X.] → 산출물 sessions/2026-05-19T07-24/developer.md
 - [2026-05-19] Business팀이 정의한 KPI(Gap Score, PDI)를 실제로 측정하고 AI 코칭 로직을 구현하기 위한 초기 데이터 모델(Schema) 및 시스템 아키텍처의 기본 구조를 설계해줘. → 산출물 sessions/2026-05-19T07-39/developer.md
+- [2026-05-19] Designer가 제시한 비주얼 브리프(Gap Score 시각화 모듈)를 바탕으로 Landing Kit 템플릿에 핵심 UI/UX 플로우 및 Gap Score 시각화 모듈을 즉시 구현하여 시스템 안정성을 확보하세요. → 산출물 sessions/2026-05-19T07-54/developer.md
+- [2026-05-19] Business팀이 정의한 초기 데이터 모델(Schema)을 기반으로, 다음 단계에서 필요한 백엔드 API 설계의 핵심 구조(Endpoint 및 데이터 흐름)에 대한 초안을 작성하고, Landing Kit 구현 시 필요한 최소 기능(MVP) 코드를 검토해줘 → 산출물 sessions/2026-05-19T08-42/developer.md
+- [2026-05-19] Designer가 제공한 최종 UI/UX 사양과 Business팀의 데이터 모델(Schema)을 기반으로, Landing Kit에 적용할 핵심 프론트엔드 컴포넌트 구현 계획 및 초기 API 연결 구조를 설계하라. → 산출물 sessions/2026-05-19T08-57/developer.md
+- [2026-05-19] 코다리야 너 거기 있니? → 산출물 sessions/2026-05-19T09-10/developer.md
+- [2026-05-19] Designer가 제공한 최종 UI/UX 사양(Dark Blue/Accent Yellow, Gap Score 시각화) 및 Business팀의 데이터 모델(Schema)을 기반으로 Landing Kit에 적용할 핵심 프론트엔드 컴포넌트의 초기 Mockup 코드를 생성하고, 이를 백엔드 API 계약(`/api/diagnosis/results`, `/api/metrics/trend`)에 연결하는 최소 기능 구현 계획을 즉시 시작하라. → 산출물 sessions/2026-05-19T09-12/developer.md
