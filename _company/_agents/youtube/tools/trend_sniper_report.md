@@ -1221,3 +1221,40 @@ Recent 30일 내내 뚜렷한 트랜드가 나타났다.
 | 마플 마인크래프트 채널 | automaticization-related topic |0s-1s : automatization, AI 활용, automation etc. |
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 18:47:27
+## 📡 키워드: 생산성 툴, 마케팅 트렌드
+
+**유튜브 트렌드 해킹 분석 보고서**
+
+### 1. 🌍 트렌드 해킹 분석
+
+* **키워드 패턴**: 생산성 툴, 마케팅 트렌드, Shorts
+* **조회수 인상 요인**:
+ + 생산성 툴에 대한interest (80%)
+ + 마케팅 트렌드와 관련된 Shorts (70%)
+ + Shorts의 특징 (e.g. "Shorts" + "Algorythm", 60%)
+* **트렌드 해킹-strategie**: 생산성 툴 및 마케eting 트렌드 관련 Shorts를 제작하여 키워드를 사용하는 채널과 유사한 스타일로 제작하고, Shorts의 특징을 강조함으로써 조회수를 끌어 올리기 위한 전략.
+
+### 2. 🎯 빈집 털기 전략
+
+* **차별화 가능한 틈새 주제**:
+ + 생산성 툴 관련 Shorts
+ + 마케팅 트렌드 관련 Shorts
+ + 가성비 vs 납득감, 초저가, 모임 등 마케팅 트렌드와 관련된 주제
+* **주제 선택 criteria**: 특정 키워드를 사용한 채널에 따라 선호하는 주제를 선택.
+* **전략 설명**: 생산성 툴 및 마케eting 트렌드 관련 Shorts를 제작하여 채널과 유사한 스타일로 제작하고, specific keywords를 사용하여 조회수를 끌어 올리기 위한 전략.
+
+### 3. 🎬 파괴적 영상 기획안
+
+* **썸네일 카피**: "Shorts의 선택" or "Algorythm의crets"
+* **제목 3개**:
+ + "가성비 vs 납득감,哪一个가 더 좋은 선택?"
+ + "최근의 마케팅 트렌드와 Shorts를结合한 전략"
+ + "How to Create a Successful Short Video with Algorythm's Secrets"
+* **후킹 오프닝(첫 5초)**:algorythm과 Shorts가 관련된 시각적 요소 (e.g. algorithmic waveform, Shorts-style animation)로 시작하여 시청자의 관심을 끌기 위한 전략.
+
+이 보고서는 유튜브 트렌드 해킹 분석, 빈집 털기 전략 및 파괴적 영상 기획안에 대한 strategie와 ideas를 đề xuất합니다.
+
+---

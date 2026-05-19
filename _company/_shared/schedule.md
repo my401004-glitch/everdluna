@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 19. 오후 6:32:00_
+_업데이트: 2026. 5. 19. 오후 6:44:59_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,13 +17,13 @@ _업데이트: 2026. 5. 19. 오후 6:32:00_
 - [2026-05-19] 이전 작업에서 확정된 Dark Blue/Accent Yellow 컬러 시스템과 Gap Score 시각화 모듈을 기반으로, 개발팀(developer)이 즉시 구현할 수 있도록 최종적인 UI/UX 컴포넌트 사양 및 반응형 레이아웃 스케치를 제공하라. → 산출물 sessions/2026-05-19T08-57/designer.md
 - [2026-05-19] 확정된 Dark Blue/Accent Yellow 디자인 시스템과 Gap Score 시각화 모듈을 기반으로, 개발팀(developer)이 즉시 구현할 수 있도록 최종적인 UI/UX 컴포넌트 사양 및 반응형 레이아웃 스케치를 최종 확정하고 제공 → 산출물 sessions/2026-05-19T09-27/designer.md
 ### 💻 코다리
-- [2026-05-19] 코다리야 너 거기 있니? → 산출물 sessions/2026-05-19T09-10/developer.md
 - [2026-05-19] Designer가 제공한 최종 UI/UX 사양(Dark Blue/Accent Yellow, Gap Score 시각화) 및 Business팀의 데이터 모델(Schema)을 기반으로 Landing Kit에 적용할 핵심 프론트엔드 컴포넌트의 초기 Mockup 코드를 생성하고, 이를 백엔드 API 계약(`/api/diagnosis/results`, `/api/metrics/trend`)에 연결하는 최소 기능 구현 계획을 즉시 시작하라. → 산출물 sessions/2026-05-19T09-12/developer.md
 - [2026-05-19] Designer가 제공한 최종 UI/UX 사양(Dark Blue/Accent Yellow, Gap Score 시각화)과 Business팀의 데이터 모델(Schema)을 기반으로 Landing Kit에 적용할 핵심 프론트엔드 컴포넌트 구현 및 초기 API 연결 구조를 즉시 개발 시작 → 산출물 sessions/2026-05-19T09-27/developer.md
+- [2026-05-19] Business 에이전트가 제공할 Schema를 기반으로, Landing Kit의 핵심 기능(Gap Score 시각화)에 필요한 초기 데이터 모델 구조(`DiagnosisResult` 및 관련 엔티티)를 정의하고 코다리에게 전달해달라. → 산출물 sessions/2026-05-19T09-42/developer.md
 ### 💼 현빈
-- [2026-05-19] Writer와 Researcher가 제시한 '진단 → 과정 → 결과' 기둥 전략을 기반으로, 초기 사용자(학원 운영자) 대상의 LTV 증명 KPI 및 수익화 모델에 대한 백엔드 API 설계의 초기 데이터 모델을 정의하세요. → 자격증명 부족으로 차단됨
 - [2026-05-19] 개발팀이 추구해야 할 핵심 KPI(Gap Score 및 데이터 흐름)와 수익화 전략에 대한 최종 확인을 하고, 개발 과정에서 발생할 수 있는 비효율성 위험 요소를 사전에 점검하는 체크리스트를 준비하라. → 산출물 sessions/2026-05-19T09-12/business.md
 - [2026-05-19] 확정된 KPI와 데이터 흐름(Gap Score $ightarrow$ Modules $ightarrow$ CTA)을 기반으로 백엔드 API 모델 정의(`Schema`) 및 핵심 로직 구현에 착수하여 개발팀의 작업이 비즈니스 목표에 정확히 부합하도록 보장 → 산출물 sessions/2026-05-19T09-27/business.md
+- [2026-05-19] 현빈 에이전트가 설계한 Pain Point와 수익화 경로(`recommendedModules`) 데이터를 기반으로, 실제 유료 모듈과 연동될 백엔드 데이터 모델(`Schema`) 구현을 위한 최종 필드 정의 및 API 계약을 확정해달라. → 산출물 sessions/2026-05-19T09-42/business.md
 ### 📱 영숙
 - [2026-05-19] 최종적으로 정의된 'Project Charter v2.0'에 대한 승인 여부를 확인하고, 이를 코다리에게 전달할 준비를 하세요. → 산출물 sessions/2026-05-19T05-29/secretary.md
 - [2026-05-19] 현재 에이전트 간의 작업 흐름(Workflow)에서 발생하는 커뮤니케이션 및 일정 관리상의 비효율성을 분석하고, 모든 에이전트가 목표에 집중할 수 있도록 일일 보고 및 할 일 배분 시스템을 최적화하라. → 산출물 sessions/2026-05-19T06-58/secretary.md
