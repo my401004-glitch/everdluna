@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 19. 오후 7:34:51_
+_업데이트: 2026. 5. 19. 오후 7:55:41_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 5. 19. 오후 7:34:51_
 - [2026-05-19] 고객의 고통(Pain Point) 포착과 인게이지먼트 유도 전략이 실제 콘텐츠 기획 단계에서 어떻게 반영되어야 하는지 분석하고, 릴스/피드 콘텐츠가 데이터 기반으로 지속적인 개선을 유도하는 피드백 루프를 설계하라. → 산출물 sessions/2026-05-19T06-58/instagram.md
 - [2026-05-19] writer가 생성한 각 후크 버전에 대해, 가장 높은 인게이지먼트를 유도할 수 있는 최적의 게시 시간, 핵심 해시태그 전략 및 포맷(릴스/피드)별 구체적인 실행 방안을 제시하라. → 산출물 sessions/2026-05-19T07-44/instagram.md
 ### 🎨 Designer
-- [2026-05-19] 확정된 Dark Blue/Accent Yellow 디자인 시스템과 Gap Score 시각화 모듈을 기반으로, 개발팀(developer)이 즉시 구현할 수 있도록 최종적인 UI/UX 컴포넌트 사양 및 반응형 레이아웃 스케치를 최종 확정하고 제공 → 산출물 sessions/2026-05-19T09-27/designer.md
 - [2026-05-19] 확정된 Dark Blue/Accent Yellow 디자인 시스템과 Gap Score 시각화 모듈을 기반으로, Landing Kit의 핵심 컴포넌트 초기 Mockup 구현을 시작하고 개발팀이 즉시 적용할 수 있는 UI/UX 컴포넌트 사양 및 반응형 레이아웃 스케치를 최종 확정하여 제공하라. → 산출물 sessions/2026-05-19T09-57/designer.md
 - [2026-05-19] 확정된 Dark Blue/Accent Yellow 디자인 시스템과 Gap Score 시각화 모듈 사양을 기반으로, 웹페이지의 전체적인 UI/UX 레이아웃 스케치와 핵심 컴포넌트(Header, Dashboard, KPI 섹션)의 반응형 디자인 프로토타입을 생성하십시오. → 산출물 sessions/2026-05-19T10-29/designer.md
+- [2026-05-19] 디자이너는 확정된 Dark Blue/Accent Yellow 디자인 시스템과 코다리의 API 구조를 통합하여, Landing Kit의 핵심 컴포넌트(Header, Dashboard, KPI 섹션)에 대한 최종 반응형 UI/UX 프로토타입을 개발팀이 즉시 적용할 수 있도록 시각적 사양을 확정하고 제공한다. → 산출물 sessions/2026-05-19T10-53/designer.md
 ### 💻 코다리
-- [2026-05-19] Business 에이전트가 제공할 Schema를 기반으로, Landing Kit의 핵심 기능(Gap Score 시각화)에 필요한 초기 데이터 모델 구조(`DiagnosisResult` 및 관련 엔티티)를 정의하고 코다리에게 전달해달라. → 산출물 sessions/2026-05-19T09-42/developer.md
 - [2026-05-19] 확정된 `DiagnosisResult` 스키마 및 API 계약(`sessions/2026-05-19T09-12/developer.md`)을 기반으로, Landing Kit의 핵심 프론트엔드 컴포넌트 초기 Mockup 코드를 생성하고 백엔드 API 연결 계획을 즉시 시작하라. → 산출물 sessions/2026-05-19T09-57/developer.md
 - [2026-05-19] Business팀이 정의한 데이터 모델(`DiagnosisResult` 등)과 Designer가 확정한 UI/UX 사양을 기반으로, 웹페이지에 필요한 초기 프론트엔드 컴포넌트의 API 계약 및 핵심 구조(Skeleton Code)를 설계하십시오. → 산출물 sessions/2026-05-19T10-29/developer.md
+- [2026-05-19] 코다리는 확정된 TypeScript 인터페이스(`DiagnosisResult` 등)를 기반으로 백엔드 API 스키마 구현 및 초기 데이터 모델 구조를 즉시 완성하고, Designer가 제공한 UI/UX 사양에 맞는 Mockup 코드 생성을 준비한다. → 산출물 sessions/2026-05-19T10-53/developer.md
 ### 💼 현빈
 - [2026-05-19] 확정된 KPI와 데이터 흐름(Gap Score $ightarrow$ Modules $ightarrow$ CTA)을 기반으로 백엔드 API 모델 정의(`Schema`) 및 핵심 로직 구현에 착수하여 개발팀의 작업이 비즈니스 목표에 정확히 부합하도록 보장 → 산출물 sessions/2026-05-19T09-27/business.md
 - [2026-05-19] 현빈 에이전트가 설계한 Pain Point와 수익화 경로(`recommendedModules`) 데이터를 기반으로, 실제 유료 모듈과 연동될 백엔드 데이터 모델(`Schema`) 구현을 위한 최종 필드 정의 및 API 계약을 확정해달라. → 산출물 sessions/2026-05-19T09-42/business.md
