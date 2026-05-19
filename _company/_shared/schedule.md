@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 19. 오후 6:16:01_
+_업데이트: 2026. 5. 19. 오후 6:32:00_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,17 +13,17 @@ _업데이트: 2026. 5. 19. 오후 6:16:01_
 - [2026-05-19] 고객의 고통(Pain Point) 포착과 인게이지먼트 유도 전략이 실제 콘텐츠 기획 단계에서 어떻게 반영되어야 하는지 분석하고, 릴스/피드 콘텐츠가 데이터 기반으로 지속적인 개선을 유도하는 피드백 루프를 설계하라. → 산출물 sessions/2026-05-19T06-58/instagram.md
 - [2026-05-19] writer가 생성한 각 후크 버전에 대해, 가장 높은 인게이지먼트를 유도할 수 있는 최적의 게시 시간, 핵심 해시태그 전략 및 포맷(릴스/피드)별 구체적인 실행 방안을 제시하라. → 산출물 sessions/2026-05-19T07-44/instagram.md
 ### 🎨 Designer
-- [2026-05-19] writer가 제공한 콘텐츠 초안 중 가장 강력하다고 판단되는 후크 1가지에 대해, Dark Blue/Accent Yellow 컬러 시스템과 Gap Score 시각화 요소를 극대화하여 즉시 적용 가능한 썸네일(혹은 영상 도입부) 비주얼 브리프를 작성하라. → 산출물 sessions/2026-05-19T07-44/designer.md
 - [2026-05-19] Writer가 작성한 스크립트 중 가장 강력하다고 판단되는 후크를 선택하여, Dark Blue/Accent Yellow 컬러 시스템과 Gap Score 시각화 요소를 극대화한 영상 도입부(썸네일 또는 인트로 비주얼)의 최종 디자인 브리프를 확정해줘 → 산출물 sessions/2026-05-19T08-42/designer.md
 - [2026-05-19] 이전 작업에서 확정된 Dark Blue/Accent Yellow 컬러 시스템과 Gap Score 시각화 모듈을 기반으로, 개발팀(developer)이 즉시 구현할 수 있도록 최종적인 UI/UX 컴포넌트 사양 및 반응형 레이아웃 스케치를 제공하라. → 산출물 sessions/2026-05-19T08-57/designer.md
+- [2026-05-19] 확정된 Dark Blue/Accent Yellow 디자인 시스템과 Gap Score 시각화 모듈을 기반으로, 개발팀(developer)이 즉시 구현할 수 있도록 최종적인 UI/UX 컴포넌트 사양 및 반응형 레이아웃 스케치를 최종 확정하고 제공 → 산출물 sessions/2026-05-19T09-27/designer.md
 ### 💻 코다리
-- [2026-05-19] Designer가 제공한 최종 UI/UX 사양과 Business팀의 데이터 모델(Schema)을 기반으로, Landing Kit에 적용할 핵심 프론트엔드 컴포넌트 구현 계획 및 초기 API 연결 구조를 설계하라. → 산출물 sessions/2026-05-19T08-57/developer.md
 - [2026-05-19] 코다리야 너 거기 있니? → 산출물 sessions/2026-05-19T09-10/developer.md
 - [2026-05-19] Designer가 제공한 최종 UI/UX 사양(Dark Blue/Accent Yellow, Gap Score 시각화) 및 Business팀의 데이터 모델(Schema)을 기반으로 Landing Kit에 적용할 핵심 프론트엔드 컴포넌트의 초기 Mockup 코드를 생성하고, 이를 백엔드 API 계약(`/api/diagnosis/results`, `/api/metrics/trend`)에 연결하는 최소 기능 구현 계획을 즉시 시작하라. → 산출물 sessions/2026-05-19T09-12/developer.md
+- [2026-05-19] Designer가 제공한 최종 UI/UX 사양(Dark Blue/Accent Yellow, Gap Score 시각화)과 Business팀의 데이터 모델(Schema)을 기반으로 Landing Kit에 적용할 핵심 프론트엔드 컴포넌트 구현 및 초기 API 연결 구조를 즉시 개발 시작 → 산출물 sessions/2026-05-19T09-27/developer.md
 ### 💼 현빈
-- [2026-05-19] 핵심 수익화 모델과 KPI(LTV, ROI)를 기반으로, 학원 운영자에게 제공할 AI 교육 솔루션의 핵심 가치 제안(Value Proposition)을 재정의하고 초기 비즈니스 목표를 설정해줘. → 산출물 sessions/2026-05-19T07-39/business.md
 - [2026-05-19] Writer와 Researcher가 제시한 '진단 → 과정 → 결과' 기둥 전략을 기반으로, 초기 사용자(학원 운영자) 대상의 LTV 증명 KPI 및 수익화 모델에 대한 백엔드 API 설계의 초기 데이터 모델을 정의하세요. → 자격증명 부족으로 차단됨
 - [2026-05-19] 개발팀이 추구해야 할 핵심 KPI(Gap Score 및 데이터 흐름)와 수익화 전략에 대한 최종 확인을 하고, 개발 과정에서 발생할 수 있는 비효율성 위험 요소를 사전에 점검하는 체크리스트를 준비하라. → 산출물 sessions/2026-05-19T09-12/business.md
+- [2026-05-19] 확정된 KPI와 데이터 흐름(Gap Score $ightarrow$ Modules $ightarrow$ CTA)을 기반으로 백엔드 API 모델 정의(`Schema`) 및 핵심 로직 구현에 착수하여 개발팀의 작업이 비즈니스 목표에 정확히 부합하도록 보장 → 산출물 sessions/2026-05-19T09-27/business.md
 ### 📱 영숙
 - [2026-05-19] 최종적으로 정의된 'Project Charter v2.0'에 대한 승인 여부를 확인하고, 이를 코다리에게 전달할 준비를 하세요. → 산출물 sessions/2026-05-19T05-29/secretary.md
 - [2026-05-19] 현재 에이전트 간의 작업 흐름(Workflow)에서 발생하는 커뮤니케이션 및 일정 관리상의 비효율성을 분석하고, 모든 에이전트가 목표에 집중할 수 있도록 일일 보고 및 할 일 배분 시스템을 최적화하라. → 산출물 sessions/2026-05-19T06-58/secretary.md

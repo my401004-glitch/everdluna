@@ -1071,3 +1071,153 @@ Recent 30일 내내 뚜렷한 트랜드가 나타났다.
 이fter는 이러한 트렌드와 틈새 주제에 대한 분석을 통해 파괴적 영상 기획안을 만들 수 있습니다.
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 18:29:20
+## 📡 키워드: 마케팅 트렌드, AI 비즈니스
+
+📊 마케팅 트렌드 해킹 분석 보고서
+
+**1. 🌍 트렌드 해킹 분석**
+
+* **마케팅 트렌드**: 숏폼 영상, AI 활용·트렌드·외주견적·비주얼후킹 (ft. 누적 2천 편 숏폼 디렉터)
+* **인기 키워드**: чис상, algorithm, Short-form, Video Marketing
+* **해석**: 채널이 크몽 kmong와 곽팀장에서 연계된 숏 폼 영상이 최근 대중화로 인하여 인기를 끌고 있는 패턴입니다. 이 패턴은 AI 활용과 트렌드에 대한 관심이 높아지고 있으며, 외주 견적과 비주얼 후킹을 포함한 다양한 요소가 포함되어 있습니다.
+* **추정**: 채널은 이러한 패턴에 관련된 빈집 털기 전략을 수립하고, 인기를 끌고 있는 키워드를 활용하여 영상 콘텐츠를 제작하는 것을 목표로 할 수 있습니다.
+
+**2. 🎯 빈집 털기 전략**
+
+* **주제**: AI 비즈니스, 마케팅 트렌드, 온라인 쇼핑
+* **차별화 가능한 틈새 주제**
+ + AI 기반의 온라인 쇼핑 platform
+ + 마케팅 트렌드에 आध해진 가성비 개선 strategies
+ + Online 쇼핑에 대한 Health and Wellness Trends
+* **적용**: 채널은 이러한 틈새 주제에 대해 다양한 콘텐츠를 제작하여 audience를 target하고, 빈집 털기 전략을 수립하여 인기를 끌 수 있습니다.
+
+**3. 🎬 파괴적 영상 기획안**
+
+* **썸네일 카피**: "AI-powered Your Business"
+* **제목 3개**: 
+ 1. "AI로 비즈니스를 개선해 보세요!"
+ 2. "마케팅 트렌드에 따라 가성비를 개선하세요!"
+ 3. "온라인 쇼핑을 건강하고 작게 만들어보세요!"
+* **후킹 오프닝(첫 5초)**: "You're about to discover the secret to making your business AI-powered"
+* **해석**: 채널은 이러한 기획안을 통해 audience를 target하여 인기를 끌 수 있습니다. 썸네일 카피와 제목이 인기인 키워드를 포함한 vidéo 콘텐츠를 제작하여, 구독자들에게 유용한 정보를 제공하고, 동시에 마케팅 트렌드에 대한 관심을 불러일으키는 전략으로 implementing 할 수 있습니다.
+
+📈 결론
+ 채널은 이러한 패턴, 빈집 털기 전략 및 파괴적 영상 기획안을 통해 audience를 target하여 인기를 끌 수 있습니다. 이러한 전략을 적용하고, 마케팅 트렌드와 AI 비즈니스에 대한 관심이 높아지고 있는 audience에 적합한 콘텐츠를 제작하여, 구독자들에게 유용한 정보를 제공하는 것을 목표로 할 수 있습니다.
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 18:31:33
+## 📡 키워드: 마케팅 트렌드, 생산성 툴
+
+**마케팅 트렌드 해킹 분석**
+
+🌍 **온라인 소비와 가성비의變化**
+
+*   채널: 곽팀장 | '가성비'가 아닌 '납득감'을 사는 사람들
+*   채널: 곽팀장 | 초저가와 모임이 되살리는 오프라인 소비
+*   채널: 곽팀장 | 편리함만 남은 온라인 쇼핑, 브랜드는 공간으로
+
+온라인 소비의 변화를 관찰할 수 있는 가장 중요한 요소 중 하나가 '가성비'와 '납득감'의 변화이다. 이 두 개념이 온라인 소비를 influence 하는 데 중요한 역할을 하고 있다. 가성비는 온라인 쇼핑의 일면이고, 납득감은 offline 쇼핑의 일面으로, 사람들이 ऑनल라인과 오프라인으로 쇼핑을 할 때가 모두 중요하다.
+
+🌍 **온라인 쇼핑의 변화와 공간의 역할**
+
+*   채널: 곽팀장 | 편리함만 남은 온라인 쇼핑, 브랜드는 공간으로
+*   채널: 곽팀장 | 초저가와 모임이 되살리는 오프라인 소비
+
+온라인 쇼핑의 biến화를 관찰할 수 있는 또 다른 중요한 요소가 '공간'이다. 공간은 온라인 쇼핑과 offline 쇼핑을 influence 하는 데 중요한 역할을 하고 있다. 사람들이 온라인 쇼핑에서 편리함을 찾고 있지만, Offline 쇼핑에서는 브랜드와 공간이 중요하다.
+
+🌍 **트렌드 해킹 분석**
+
+*   채널: 크몽 kmong | 숏폼 영상, 알고리즘의 선택을 받는 방법 (ft. 누적 2천 편 숏 폼 디렉터)
+*   채널: 곽팀장 | '가성비'가 아닌 '납득감'을 사하는 사람들
+*   채널: 곽팀장 | 초저가와 모임이 되살리는 오프라인 소비
+
+마케팅 트렌드 해킹 분석은 온라인 쇼핑의 변화를 관찰할 수 있는 중요한 요소 중 하나로, '가성비'와 '납득감', 온라인 쇼핑의 변화와 공간의 역할을 influence 하는 데 중요한 역할을 하고 있다.
+
+**빈집 털기 전략**
+
+*   채널: Dream Build Repeat | skyrocketing Planting Productivity With Specialized Tools
+*   채널: SetupsAI | Find almost any tools you need #productivity #tools #tool
+
+1.  **생산성 툴에 대한 인식을 높이기** : 온라인 쇼핑의 변화를 관찰할 수 있는 중요한 요소 중 하나가 생산성 툴이다.ออนไลนShopping의변화와가장인fluence하는 요소 중 하나를해석하기위해서 생產성 툴에 대한 인식은 매우 중요하다.
+*   채널: golden orange fruit | Modern Farming Tools Boost Productivity | The Future of Agriculture
+*   채널: Prime Care | Maximizing Construction Productivity with Hydraulic Power Tools
+
+생산성 툴의 차별화가-onlineショ핑의變化를인fluence하는데very중요한 역할을하고 있다. 온라인 쇼핑이 변화를 undergo하고 있기 때문에, 생산성 툴에 대한 인식과 이해는 매우 중요하다.
+
+2.  **차별화 가능한 틈새 주제**
+
+*   채널: Prime Care | Maximizing Workshop Productivity Through Accurate Diagnostic Tools
+
+온라인 쇼핑의변화와가장인fluence하는 요소 중 하나를해석하기위해서, 온라인 쇼핑에대한 인식과 이해는very중요하다. OnlineShopping의變화를인fluence하는 요소 중 하나는생산성 툴이다.
+
+3.  **빈집 털기 전략**
+
+*   채널: Dream Build Repeat | skyrocketing Planting Productivity With Specialized Tools
+
+1.  **온라인 쇼핑의 변화를 관찰** : 온라인 쇼핑의 변화를 관찰할 수 있는 가장 중요한 요소 중 하나가 '가성비'와 '납득감'의 변화이다.
+2.  **생산성 툴에 대한 인식 height** : 온라인 쇼핑의 변화를 observabl doing에 very중요한 역할을 하고 있다.
+3.  **차별화 가능한 틈새 주제**
+
+    *   채널: Dream Build Repeat | skyrocketing Planting Productivity With Specialized Tools
+*   채널: SetupsAI | Find almost any tools you need #productivity #tools #tool
+
+1.  온라인 쇼핑의變화를관찰할 수 있는 가장중요한 요소 중 하나가'가성비'와 '납득감'의 변화이다.
+2.  onlineShopping의변화를influence하는 요소 중 하나는생산성 툴이다.
+3.  onlineShopping의변화와가장인fluence하는 요소 중 하나를해석하기위해서,onlineShopingsohti의변화를관찰하고,onlineShopingsohti의변화를influence하는요소를인fluence하는요소 중 하나로정리할 수 있다.
+
+**파괴적 영상 기획안**
+
+1.  썸네일 카피
+    *   채널: Dream Build Repeat | skyrocketing Planting Productivity With Specialized Tools
+        ![Image](https://example.com/image.jpg) "Title"
+*   제목
+    *   채널: Dream Build Repeat | skyrocketing Planting Productivity With Specialized Tools
+        "Online Shopping Trend Analysis for Farmers"
+*   후킹 오프닝 (첫 5초)
+    *   채널: Dream Build Repeat | skyrocketing Planting Productivity With Specialized Tools
+        ![Image](https://example.com/image.jpg) "Title"
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 18:31:51
+## 📡 키워드: 마케팅 트렌드, 유튜브 자동화
+
+📊 마케팅 트렌드 해킹 분석 보고서
+
+**1. 🌍 트렌드 해킹 분석**
+
+마케팅 트렌드는 다양한 주제가 조회수를 끌고 있는 것으로 보입니다.
+
+*   **채널:** 크몽 kmong, 곽팀장은 similar한 주제를 다루고 있으며, 조회수가 많은 영상의 success factor를 discussing합니다.
+*   **주제:** **"간식"**와 **"온라인 쇼핑"**, **"가성비"**와 **"납득감"** 등이 조회수를 끌고 있는 주제 appear seem seem seem seems appear seem appears appear.
+*   **트렌드:** **"ONLINE SHOPPING"**와 **"간식"**, **"가성비"**와 **"납득감"** etc.
+
+**2. 🎯 빈집 털기 전략**
+
+차별화 가능한 틈새 주제를 identifying하여 exploiting할 수 있는 opportunity를 찾았습니다.
+
+*   **채널:** 마플 마인크래프트 채널은 automaticization-related topic을 다루고 있으며, audience의 interest가 high seem seem seems appear seem appears appear.
+*   **주제:** **"automatization"**, **"AI 활용"**, **"automation"** etc. 등이 audience의 interest를 끌어당긴 주제 appear seem seem seems appear seem appears appear.
+*   **비주얼**: 마인크래프트와 관련된 비주얼은 audience의 관심을 끌 수 있는 것으로 보입니다.
+
+**3. 🎬 파괴적 영상 기획안**
+
+ 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초) etc을 consideration하여 video를 planning합니다.
+
+*   **썸네일 카피:** **"가성비 vs 납득감", "온라인 쇼핑 vs 오프라인", "간식이 가성비?"** 등
+*   **제목:** **1. 가성비 vs 납득감", 2. 온라인 쇼핑 vs 오프라인, 3. 간식이 가성비?"** etc.
+*   **후킹 오프닝(첫 5초):**
+
+| 채널 |제목|시간|
+| :---- | :--- | ---: |
+| 크몽 kmong | 숏폼 영상, 알고리즘의 선택을 받는 방법 |0s-1s : AI 활용·트렌드·외주견적·비주얼후킹 |
+| 곽팀장 | 가성비가 아닌 납득감을 사는 사람들 |0s-1s : "가성비 vs 납득감"을 discussed합니다. |
+| 마플 마인크래프트 채널 | automaticization-related topic |0s-1s : automatization, AI 활용, automation etc. |
+
+---
