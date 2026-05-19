@@ -323,3 +323,123 @@
 *   "이서, \[제목]에 대한 새로운 관점을 제공해 드리겠습니다."
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 15:38:22
+## 📡 키워드: AI 비즈니스, 유튜브 자동화
+
+📊 마크다운 보고서
+
+**1. 🌍 트렌드 해킹 분석**
+
+* **AI 비즈니스**: trending short #trendingshorts #ai #tech #future를ใช한 채널이 조회수를 끌고 있습니다.
+* **유튜브 자동화**: clone any youtube channel with claudiai, ai 직원 10명이 24시간 일하는 완전 무료 프로그램, etc.를 사용한 채널이 조회수를 끌고 있습니다.
+* **주요 패턴**: AI 비즈니스와 유튜브自動화에 대한 관심은-growing trend입니다.
+
+**2. 🎯 빈집 털기 전략**
+
+* **차별화 가능한 틈새 주제**:
+ + AI 비즈니스: AI-powered entrepreneurship, AI-driven marketing, etc.
+ + 유튜브 자동화: automation for creators, AI-powered content generation, etc.
+* **빈 집을 털어보는 채널**:
+ + AI 비즈니스: CNA Insider, Rowan Cheung, Raj Shamani
+ + 유튜브 automatization: 마플 마인크래프트 채널, MystGrow, CONNECT AI LAB
+
+**3. 🎬 파괴적 영상 기획안**
+
+* **썸네일 카피**: "AI-powered business" or "Automate your YouTube channel"
+* **제목 3개**:
+ + "Why is an AI agent managing this store in San Francisco?"
+ + "Earn Crores with AI: Business Ideas, Claude, Free Tools & Prompts"
+ + "I Tried AI Dropshipping For a Week (RAW RESULTS)"
+* **후킹 오프닝(첫 5초)**:
+ + "Imagine your YouTube channel automatically posting content, without any effort from you"
+ + "Are you tired of spending hours on YouTube management? Introducing our AI-powered automation solution!"
+ + "In this video, I'll show you how to make $18,000 with USA YouTube Automation"
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 15:41:06
+## 📡 키워드: AI 비즈니스, 생산성 툴
+
+🔥 유튜브 알고리즘 마스터마인드의 보고서 🔥
+
+**🌍 트렌드 해킹 분석**
+
+트렌드 해킹 분석을 통해 podemos 관찰할 수 있는 패턴은 다음과 같습니다.
+
+*   **AI 비즈니스**: 채널 Rowan Cheung의 Why is an AI agent managing this store in San Francisco?와 Raj Shamani의 Earn Crores with AI가 큰 인기를 끌고 있습니다. 이 두 가지 영상이 유튜브 사용자들에게 큰 이익을 주는 이유는 AI 비즈니스에 대한 인기를 불러일으키기 때문입니다.
+*   **생산성 툴**: 채널 Dream Build Repeat의 Skyrocket Planting Productivity With Specialized Tools와 SetupsAI의 Find almost any tools you need가 특정 장르의 영상과 관련된 트렌드를 보여주고 있습니다. 이 두 가지 영상은 생산성 툴에 대한 인기를 불러일으키고 đang-growing trending topic입니다.
+*   **AI 비즈니스와 생산성 툴**: 채널 Mark Tilbury의 I Tried AI Dropshipping For a Week (RAW RESULTS)와 Yash Pratap Singh의 How AI + business changing the way of learning는 AI 비즈니스와 생산성 툴을 결합한 영상으로 큰 인기를 끌고 있습니다. 이 두 가지 영상은 AI 비즈니스와 생산성 툴에 대한 트렌드를 보여주고 있으며, 사용자들이 주류 트레нд에 대해 더 깊이 있는 정보를 얻을 수 있는 영상입니다.
+
+**🎯 빈집 털기 전략**
+
+빈집 털기 전략은 다음의 차별화 가능한 틈새 주제를 고려하여 개발할 수 있습니다:
+
+*   **AI 비즈니스**: 채널 Raj Shamani의 Earn Crores with AI는 AI 비즈니스에 대한 정보와 예시를 제공합니다. 이 영상을 통해 사용자가 AI 비즈니스에 대한 지식과 경험을 얻을 수 있습니다.
+*   **생산성 툴**: 채널 Dream Build Repeat의 Skyrocket Planting Productivity With Specialized Tools는 생산성 툴에 대한 정보와 예시를 제공합니다. 이 영상을 통해 사용자가 생산성 툴에 대한 지식과 경험을 얻을 수 있습니다.
+*   **AI 비즈니스와 생산성 툴**: 채널 Mark Tilbury의 I Tried AI Dropshipping For a Week (RAW RESULTS)와 Yash Pratap Singh의 How AI + business changing the way of learning는 AI 비즈니스와 생산성 툴을 결합한 영상으로 큰 인기를 끌고 있습니다. 이 두 가지 영상은 AI 비즈니스와 생산성 툴에 대한 트렌드를 보여주고 있으며, 사용자들이 주류 트레ンド에 대해 더 깊이 있는 정보를 얻을 수 있는 영상입니다.
+
+**🎬 파괴적 영상 기획안**
+
+파괴적 영상 기획안은 다음의 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)를 고려하여 개발할 수 있습니다:
+
+*   **AI 비즈니스**: 
+    *   썸네일 카피: "AI 비즈니스에 대한 지식과 경험을 얻는 ultimate guide"
+    *  제목 3개: 
+        *   "AI 비즈니스에 대한 ultimate guide: Earn Crores with AI"
+        *   "How to Start an AI Business: A Step-by-Step Guide"
+        *   "The Future of Business: How AI is Changing Everything"
+    *   후킹 오프닝(첫 5초): 
+        *   "AI 비즈니스에 대한 지식과 경험을 얻는 ultimate guide. 이 영상에서, 우리가 AI 비즈니스에 대해 무엇인지, 어떤 방법이 있는지, 그리고how to start an AI business를 알려드릴게요."
+*   **생산성 툴**: 
+    *   썸네일 카피: "生产성 툴을 사용하여 अपनी 생산성을Skyrocket!"
+    *  제목 3개: 
+        *   "How to Use Productivity Tools to Skyrocket Your Business"
+        *   "The Top 5 Productivity Tools You Need to Know About"
+        *   "Productivity Hacks: How to Get More Done in Less Time"
+    *   후킹 오프닝(첫 5초): 
+        *   "生产성 툴을 사용하여 अपन리 생산성을 Skyrocket! 이 영상에서, 우리가 생산성 툴에 대해 무엇인지, 어떤 방법이 있는지, 그리고 how to use productivity tools to skyrocket your business를 알려드릴게요."
+
+이 보고서는 유튜브 알고리즘 마스터마인드의 전략과 지식을 제공하는 데 도움이 될 것입니다. 또한, 사용자가 AI 비즈니스와 생산성 툴에 대한 지식과 경험을 얻을 수 있는 영상의 기획안을 제공하는 데 도움이 될 것입니다.
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-19 15:41:26
+## 📡 키워드: 생산성 툴, 유튜브 자동화
+
+📊 유튜브 알고리즘 마스터마인드 보고서
+
+**1. 🌍 트렌드 해킹 분석**
+
+Recent 30일 동안의 데이터를 analyzing한 결과 다음과 같습니다.
+
+* 🔥 **생산성 툴**: 채널 Dream Build Repeat, SetupsAI, golden orange fruit, Prime Care가 상위 채널로 나옵니다. THESE CHANNELS ARE CREATING CONTENT AROUND MODERN FARMING TOOLS, CONSTRUCTION EQUIPMENT, AND WORKSHOP PRODUCTIVITY.
+* 🚀 **유튜브 자동화**: 채널 마플 마인크래프트 채널, MystGrow, CONNECT AI LAB, Alex Best Digital, AIpreneur가 상위 채널로 나옵니다. THESE CHANNELS ARE CREATING CONTENT AROUND YOUTUBE AUTOMATION, AI PRODUCTIVITY, AND CLONE CHANNELS.
+* 📈 **최근의 트렌드**: 유튜브 자동화와 생산성 툴이 최근에 강도 높은 트렌드를 보이고, 생명학 및 농업과 관련된 채널은 약간 후퇴하고 있습니다.
+
+**2. 🎯 빈집 털기 전략 — 차별화 가능한 틈새 주제**
+
+Recent 30일 동안의 데이터를 analyzing한 결과 다음과 같습니다.
+
+* 🔍 **생산성 툴**: modern farming tools, construction equipment, workshop productivity, smart farm, agriculture technology
+* 🤖 **유튜브 자동화**: youtube automation, AI productivity, clone channels, social media management, online business
+* 💡 **ใหม고 차별적인 주제**: 생명학 및 농업에 관련된 채널이 약간 후퇴하고 있습니다. 새로운 틈새 주제로 potential channel은 "smart home automation", "industrial automation", "IoT technology"가 있습니다.
+
+**3. 🎬 파괴적 영상 기획안 — 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)**
+
+Recent 30일 동안의 데이터를 analyzing한 결과 다음과 같습니다.
+
+* 썸네일 카피: "Automate Your YouTube Channel in 30 Days" / "Unlock the Secrets of AI-Driven Productivity" / "Boost Your Farming Efficiency with These 10 Tools"
+*제목: 
+ 1. "The Ultimate Guide to YouTube Automation for Small Business Owners"
+ 2. "How to Use AI to Increase Your Farming Productivity by 50% in 6 Months"
+ 3. "From Zero to Hero: How to Create a Fully Automated YouTube Channel in Just One Week"
+* 후킹 오프닝(첫 5초): 
+ 1. animation of a robot working on a farm
+ 2. video of a farmer using modern farming tools
+ 3. text overlay with the words "Automation Revolution"
+
+---
