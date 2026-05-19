@@ -70,3 +70,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] Business팀이 정의한 데이터 모델(`DiagnosisResult` 등)과 Designer가 확정한 UI/UX 사양을 기반으로, 웹페이지에 필요한 초기 프론트엔드 컴포넌트의 API 계약 및 핵심 구조(Skeleton Code)를 설계하십시오. → 산출물 sessions/2026-05-19T10-29/developer.md
 - [2026-05-19] 코다리는 확정된 TypeScript 인터페이스(`DiagnosisResult` 등)를 기반으로 백엔드 API 스키마 구현 및 초기 데이터 모델 구조를 즉시 완성하고, Designer가 제공한 UI/UX 사양에 맞는 Mockup 코드 생성을 준비한다. → 산출물 sessions/2026-05-19T10-53/developer.md
 - [2026-05-19] 확정된 데이터 모델(`DiagnosisResult` 등)과 디자인 사양을 기반으로 Landing Kit의 핵심 프론트엔드 컴포넌트 초기 Mockup 코드를 생성하고, 백엔드 API 연동 로직 구현을 즉시 시작할 것. → 산출물 sessions/2026-05-19T11-21/developer.md
+- [2026-05-19] Designer가 제공한 UI/UX 사양 및 코다리의 API 계약(DiagnosisResult 등)을 기반으로, Landing Kit에 필요한 프론트엔드 컴포넌트의 초기 Mockup 코드와 백엔드 API 연동 로직을 통합하여 실제 작동 가능한 웹페이지 템플릿 구조를 구현하라. → 산출물 sessions/2026-05-19T11-29/developer.md
