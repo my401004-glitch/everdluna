@@ -22,24 +22,7 @@ AUTONOMY_LEVEL: 2
 
 ## 사용 가능한 도구
 
-### `music_studio_setup`
-음악 모델 설치 (MusicGen / ACE-Step)
-
-- `enabled`: true
-- `requires_credentials`: `config.md` 참조
-
-### `music_generate`
-BGM 자동 생성 (장르·길이 지정)
-
-- `enabled`: true
-- `requires_credentials`: `config.md` 참조
-
-### `music_to_video`
-생성된 BGM을 영상에 합성 (loop/fade)
-
-- `enabled`: true
-- `requires_credentials`: `config.md` 참조
-
+### 영상/오디오 편집 관련 도구는 추후 추가 예정입니다.
 
 ---
 
