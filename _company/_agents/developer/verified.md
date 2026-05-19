@@ -25,3 +25,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-19] 38 * 이때, `Growth`, `Engagement`, `Monetization` KPI는 별도의 테이블(`KPI_Metrics`)에 연관시켜 저장하여 추적 용이성을 확보한다. $\rightarrow$ ** _(근거: sessions/2026-05-18T43/developer.md)_
 - [2026-05-19] CEO 지시사항과 지난 의사결정 로그를 검토했습니다. 현재 저희는 시스템 아키텍처와 데이터 모델(`DiagnosisResult` 스키마, `schema.sql`)은 거의 완성 단계에 도달했고, 프론트엔드 컴포넌트의 뼈대(Mockup)까지 준비된 상태입니다 . _(근거: sessions/2026-05-19T09:57)_
 - [2026-05-19] * RBAC 체크 (사용자 권한에 따른 접근 제어) . _(근거: sessions/2026-05-18T13:43)_
+- [2026-05-19] 1. **핵심 컴포넌트 정의**: Landing Kit의 핵심인 `DiagnosisScore` 시각화 섹션과 전반적인 페이지 구조(Header, CTA 등)를 TypeScript/React 기반으로 구현합니다. _(근거: sessions/2026-05-19T10:29)_
+- [2026-05-19] 2. **API 연동 로직 구현**: `DiagnosisResult` 스키마에 맞춰 가상의 백엔드 API 엔드포인트(`api/v1/diagnosis_score`)를 호출하는 비동기 함수를 컴포넌트 내부에 즉시 통합합니다. _(근거: sessions/2026-05-19T09:57, sessions/2026-05-18T16:19)_
