@@ -39,3 +39,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] Designer가 제시한 시각화 명세서와 Writer가 요구한 데이터 요구사항을 기반으로, MVP 구현을 위한 핵심 API 엔드포인트(`/api/v1/diagnosis_score` 등)의 백엔드 로직 초안과 DB 스키마 설계(ROI 및 리스크 지표 포함)를 즉시 시작하라. → 산출물 sessions/2026-05-19T03-14/developer.md
 - [2026-05-19] Designer가 제시한 시각적 연출(Red-Orange 전환 애니메이션 등)을 구현하기 위한 핵심 API/프론트엔드 로직의 기술 실행 계획을 수립하고, Writer와 Designer가 제공한 최종 산출물을 기반으로 MVP 구현을 위한 백엔드 로직 및 DB 스키마 설계를 즉시 시작하라. → 산출물 sessions/2026-05-19T04-44/developer.md
 - [2026-05-19] 코다리야 PROJECT_PATH 비어있고 web_init 기록도 없음 이걸 해결해 주고싶은데 어떻게 해야하니? → 산출물 sessions/2026-05-19T05-00/developer.md
+- [2026-05-19] Google 로그인 대기 중 발생하는 문제의 원인을 진단하고, OAuth 인증 절차 및 API 연동 오류를 해결하기 위한 구체적인 코드 수정 또는 설정 방법을 제시해줘. → 산출물 sessions/2026-05-19T05-05/developer.md
