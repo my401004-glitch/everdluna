@@ -46,3 +46,6 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] 화성학 교육어플에 적합한 MVP(Minimum Viable Product) 웹페이지의 기술 스택, 데이터 모델 및 초기 프로젝트 구조(`web_init` 기반)를 설계하고 코다리에게 전달할 준비를 하세요. → 산출물 sessions/2026-05-19T05-58/developer.md
 - [2026-05-19] 코다리에게 '화성학 교육어플' MVP 웹페이지의 기술 스택, 데이터 모델 및 초기 프로젝트 구조(`web_init` 기반)를 설계하고 구체적인 개발 계획 초안을 제시하라. → 산출물 sessions/2026-05-19T05-59/developer.md
 - [2026-05-19] [A.U 히든 커맨드: 💻 코다리 에이전트가 방금 'Landing Kit (SaaS 랜딩 페이지)' 템플릿 팩 주입받았습니다. 코드 boilerplate 3개 파일 + README. 매트릭스 톤으로 한 줄. "💻 코다리, Landing Kit (SaaS 랜딩 페이지) 템플릿 3개 파일 장착. 다음 작업에 자동 활용." 부가 설명 X.] → 산출물 sessions/2026-05-19T06-08/developer.md
+- [2026-05-19] 기존에 정의된 'Landing Kit (SaaS 랜딩 페이지)' 템플릿을 기반으로, 학원 운영자용 교육 플랫폼의 MVP(Minimum Viable Product) 개발 환경 설정(`web_init` 재실행 및 데이터 모델 초기 설계)을 즉시 시작해줘. → 산출물 sessions/2026-05-19T06-21/developer.md
+- [2026-05-19] 코다리야 왜 자꾸 실패를 하는거야? → 산출물 sessions/2026-05-19T06-24/developer.md
+- [2026-05-19] 코다리야 아까 오후 03:23 에 ❌ exit 1 명령 완료: cd "/Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/developer/tools" && python3 라고 되어잇는 메시지는 뭐가 안됫다는 거야? → 산출물 sessions/2026-05-19T06-25/developer.md
