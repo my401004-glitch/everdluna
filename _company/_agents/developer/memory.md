@@ -49,3 +49,5 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] 기존에 정의된 'Landing Kit (SaaS 랜딩 페이지)' 템플릿을 기반으로, 학원 운영자용 교육 플랫폼의 MVP(Minimum Viable Product) 개발 환경 설정(`web_init` 재실행 및 데이터 모델 초기 설계)을 즉시 시작해줘. → 산출물 sessions/2026-05-19T06-21/developer.md
 - [2026-05-19] 코다리야 왜 자꾸 실패를 하는거야? → 산출물 sessions/2026-05-19T06-24/developer.md
 - [2026-05-19] 코다리야 아까 오후 03:23 에 ❌ exit 1 명령 완료: cd "/Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/developer/tools" && python3 라고 되어잇는 메시지는 뭐가 안됫다는 거야? → 산출물 sessions/2026-05-19T06-25/developer.md
+- [2026-05-19] business팀과 designer가 정의한 ROI 기반 데이터 모델(KPIs 포함)을 기반으로, MVP 개발 환경 설정(`web_init` 재확인 및 데이터 구조 초기 설계)을 즉시 시작하고 핵심 로직 구현을 준비하라. → 산출물 sessions/2026-05-19T06-29/developer.md
+- [2026-05-19] 코다리야 이번엔 폴더를 다시 지정했으니 다시 해봐바 → 산출물 sessions/2026-05-19T06-33/developer.md
