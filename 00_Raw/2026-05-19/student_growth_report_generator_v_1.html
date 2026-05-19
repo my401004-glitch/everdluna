@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>학생 성장 리포트 AI v1</title>
+  <style>
+    :root {
+      --bg: #f7f5f2;
+      --card: #ffffff;
+      --primary: #6b4eff;
+      --primary-dark: #5135d8;
+      --text: #222222;
+      --muted: #777777;
+      --line: #e5e1dc;
+      --soft: #f0edff;
+      --danger: #d94c4c;
+      --success: #178a54;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    header {
+      padding: 28px 20px 20px;
+      background: linear-gradient(135deg, #2a225a, #6b4eff);
+      color: white;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 26px;
+      letter-spacing: -0.04em;
+    }
+
+    header p {
+      margin: 0;
+      opacity: 0.88;
+      font-size: 14px;
+    }
+
+    main {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 330px 1fr;
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.05);
+      padding: 18px;
+    }
+
+    .card h2 {
+      margin: 0 0 14px;
+      font-size: 18px;
+      letter-spacing: -0.04em;
+    }
+
+    .small-title {
+      margin: 22px 0 10px;
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #333;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 13px;
+      font-size: 14px;
+      font-family: inherit;
+      background: white;
+      outline: none;
+      transition: 0.2s;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(107,78,255,0.12);
+    }
+
+    textarea { min-height: 86px; resize: vertical; }
+
+    button {
+      border: none;
+      border-radius: 14px;
+      padding: 12px 14px;
+      font-size: 14px;
+      font-weight: 800;
+      font-family: inherit;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover { background: var(--primary-dark); }
+
+    .btn-soft {
+      background: var(--soft);
+      color: var(--primary-dark);
+    }
+
+    .btn-gray {
+      background: #eeeeee;
+      color: #333;
+    }
+
+    .btn-danger {
+      background: #fff0f0;
+      color: var(--danger);
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .btn-row button { flex: 1; min-width: 120px; }
+
+    .student-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 10px;
+      max-height: 420px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .student-item {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 12px;
+      background: #fff;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .student-item:hover, .student-item.active {
+      border-color: var(--primary);
+      background: var(--soft);
+    }
+
+    .student-item strong {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .student-item span {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--primary-dark);
+      font-size: 12px;
+      font-weight: 800;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    .report-box {
+      white-space: pre-wrap;
+      background: #fbfaf8;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      min-height: 260px;
+      font-size: 15px;
+    }
+
+    .history-item {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 8px;
+      background: #fff;
+    }
+
+    .history-item strong { font-size: 14px; }
+    .history-item p {
+      margin: 8px 0 0;
+      font-size: 13px;
+      color: var(--muted);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .notice {
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: #fff8e8;
+      color: #7a5600;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    .empty {
+      color: var(--muted);
+      font-size: 14px;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #222;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.25s;
+      z-index: 999;
+    }
+
+    .toast.show { opacity: 1; bottom: 28px; }
+
+    @media (max-width: 860px) {
+      main { grid-template-columns: 1fr; padding: 14px; }
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      header h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>학생 성장 리포트 AI v1</h1>
+    <p>수업 메모를 입력하면 학부모에게 보낼 수 있는 전문적인 성장 리포트를 자동 생성합니다.</p>
+  </header>
+
+  <main>
+    <aside class="card">
+      <h2>학생 등록</h2>
+      <div class="notice">첫 버전은 이 브라우저에만 저장됩니다. 테스트용으로 사용한 뒤 Google Sheets/Supabase로 확장하면 됩니다.</div>
+
+      <label>학생 이름</label>
+      <input id="studentName" placeholder="예: 김민지" />
+
+      <div class="grid-2">
+        <div>
+          <label>학년/나이</label>
+          <input id="studentGrade" placeholder="예: 고1" />
+        </div>
+        <div>
+          <label>전공/과목</label>
+          <input id="studentSubject" placeholder="예: 보컬" />
+        </div>
+      </div>
+
+      <label>수업 목표</label>
+      <input id="studentGoal" placeholder="예: 예고 입시, 취미반, 오디션 준비" />
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="addStudent()">학생 추가</button>
+        <button class="btn-gray" onclick="clearAllData()">전체 초기화</button>
+      </div>
+
+      <div class="small-title">학생 목록</div>
+      <div id="studentList" class="student-list"></div>
+    </aside>
+
+    <section class="card">
+      <div id="selectedStudentArea">
+        <h2>수업 리포트 작성</h2>
+        <div class="empty">왼쪽에서 학생을 추가하거나 선택해주세요.</div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script>
+    const STORAGE_KEY = "student_growth_report_v1";
+    let students = loadData();
+    let selectedStudentId = students[0]?.id || null;
+    let currentReport = "";
+
+    renderStudentList();
+    renderSelectedStudent();
+
+    function loadData() {
+      try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+      } catch (error) {
+        return [];
+      }
+    }
+
+    function saveData() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(students));
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 1800);
+    }
+
+    function addStudent() {
+      const name = document.getElementById("studentName").value.trim();
+      const grade = document.getElementById("studentGrade").value.trim();
+      const subject = document.getElementById("studentSubject").value.trim();
+      const goal = document.getElementById("studentGoal").value.trim();
+
+      if (!name) {
+        showToast("학생 이름을 입력해주세요.");
+        return;
+      }
+
+      const student = {
+        id: Date.now().toString(),
+        name,
+        grade,
+        subject,
+        goal,
+        reports: []
+      };
+
+      students.unshift(student);
+      selectedStudentId = student.id;
+      saveData();
+
+      document.getElementById("studentName").value = "";
+      document.getElementById("studentGrade").value = "";
+      document.getElementById("studentSubject").value = "";
+      document.getElementById("studentGoal").value = "";
+
+      renderStudentList();
+      renderSelectedStudent();
+      showToast("학생이 추가되었습니다.");
+    }
+
+    function selectStudent(id) {
+      selectedStudentId = id;
+      currentReport = "";
+      renderStudentList();
+      renderSelectedStudent();
+    }
+
+    function getSelectedStudent() {
+      return students.find(student => student.id === selectedStudentId);
+    }
+
+    function renderStudentList() {
+      const list = document.getElementById("studentList");
+
+      if (students.length === 0) {
+        list.innerHTML = '<div class="empty">등록된 학생이 없습니다.</div>';
+        return;
+      }
+
+      list.innerHTML = students.map(student => `
+        <div class="student-item ${student.id === selectedStudentId ? "active" : ""}" onclick="selectStudent('${student.id}')">
+          <strong>${escapeHtml(student.name)}</strong>
+          <span>${escapeHtml(student.grade || "학년 미입력")} · ${escapeHtml(student.subject || "과목 미입력")}</span>
+          <span>${escapeHtml(student.goal || "목표 미입력")}</span>
+          <span>리포트 ${student.reports.length}개</span>
+        </div>
+      `).join("");
+    }
+
+    function renderSelectedStudent() {
+      const area = document.getElementById("selectedStudentArea");
+      const student = getSelectedStudent();
+
+      if (!student) {
+        area.innerHTML = `
+          <h2>수업 리포트 작성</h2>
+          <div class="empty">왼쪽에서 학생을 추가하거나 선택해주세요.</div>
+        `;
+        return;
+      }
+
+      area.innerHTML = `
+        <h2>${escapeHtml(student.name)} 학생 리포트</h2>
+        <div>
+          <span class="pill">${escapeHtml(student.grade || "학년 미입력")}</span>
+          <span class="pill">${escapeHtml(student.subject || "과목 미입력")}</span>
+          <span class="pill">${escapeHtml(student.goal || "목표 미입력")}</span>
+        </div>
+
+        <div class="small-title">오늘 수업 기록</div>
+        <div class="grid-3">
+          <div>
+            <label>리포트 유형</label>
+            <select id="reportType">
+              <option value="balanced">균형형</option>
+              <option value="praise">칭찬 중심형</option>
+              <option value="improvement">보완 중심형</option>
+              <option value="exam">입시 준비형</option>
+              <option value="monthly">월간 상담형</option>
+            </select>
+          </div>
+          <div>
+            <label>수업 날짜</label>
+            <input id="lessonDate" type="date" value="${today()}" />
+          </div>
+          <div>
+            <label>수업 태도</label>
+            <select id="attitude">
+              <option value="집중도가 좋고 피드백을 빠르게 적용했습니다">좋음</option>
+              <option value="전반적으로 성실하게 참여했으나 중간중간 집중 보완이 필요했습니다">보통</option>
+              <option value="수업 몰입도를 높이기 위한 꾸준한 관리가 필요했습니다">관리 필요</option>
+            </select>
+          </div>
+        </div>
+
+        <label>오늘 수업한 내용</label>
+        <textarea id="lessonContent" placeholder="예: 호흡, 발성, 음정 교정, 곡 표현"></textarea>
+
+        <label>오늘 잘한 점</label>
+        <textarea id="strength" placeholder="예: 고음에서 힘이 덜 들어가고 호흡 유지가 좋아짐"></textarea>
+
+        <label>보완할 점</label>
+        <textarea id="weakness" placeholder="예: 후렴구에서 음정이 조금 흔들림"></textarea>
+
+        <label>다음 수업 전 과제</label>
+        <textarea id="homework" placeholder="예: 후렴구 4마디를 느린 템포로 5회 반복 연습"></textarea>
+
+        <div class="btn-row">
+          <button class="btn-primary" onclick="generateReport()">리포트 생성</button>
+          <button class="btn-soft" onclick="saveCurrentReport()">저장</button>
+          <button class="btn-gray" onclick="copyReport()">복사</button>
+          <button class="btn-danger" onclick="deleteStudent()">학생 삭제</button>
+        </div>
+
+        <div class="small-title">생성된 학부모 리포트</div>
+        <div id="reportBox" class="report-box">아직 생성된 리포트가 없습니다.</div>
+
+        <div class="small-title">저장된 리포트 히스토리</div>
+        <div id="historyList"></div>
+      `;
+
+      renderHistory();
+    }
+
+    function generateReport() {
+      const student = getSelectedStudent();
+      if (!student) return;
+
+      const type = document.getElementById("reportType").value;
+      const lessonDate = document.getElementById("lessonDate").value;
+      const lessonContent = document.getElementById("lessonContent").value.trim() || "기본기와 수업 목표에 맞춘 훈련";
+      const strength = document.getElementById("strength").value.trim() || "수업 내용을 이해하려는 태도와 적용력이 좋았습니다";
+      const weakness = document.getElementById("weakness").value.trim() || "일부 구간은 반복 연습을 통해 더 안정화할 필요가 있습니다";
+      const homework = document.getElementById("homework").value.trim() || "오늘 배운 내용을 짧게라도 매일 반복 연습하면 좋겠습니다";
+      const attitude = document.getElementById("attitude").value;
+
+      const intro = `안녕하세요. ${student.name} 학생 ${student.subject || "수업"} 성장 리포트입니다.`;
+
+      const templates = {
+        balanced: `${intro}\n\n오늘은 ${lessonContent}을 중심으로 수업을 진행했습니다. ${student.name} 학생은 ${strength} 특히 이전보다 수업 내용을 받아들이고 적용하려는 모습이 좋아지고 있습니다.\n\n다만 ${weakness} 이 부분은 단기간에 완성되기보다는 꾸준한 반복을 통해 안정되는 영역이기 때문에, 너무 조급하게 보기보다 매 수업마다 조금씩 개선해가겠습니다.\n\n다음 수업 전까지는 ${homework} 가정에서도 짧게 확인해주시면 수업 효과가 더 좋아질 것 같습니다.\n\n전반적으로 ${attitude}. 다음 수업에서는 오늘의 성장 흐름을 이어가며 더 안정적인 결과가 나오도록 지도하겠습니다.`,
+
+        praise: `${intro}\n\n오늘 수업에서 가장 인상적이었던 부분은 ${strength} ${student.name} 학생이 수업 중 피드백을 듣고 바로 시도해보려는 태도를 보여준 점이 좋았습니다.\n\n오늘은 ${lessonContent}을 중심으로 진행했고, 지난 시간보다 표현과 이해도가 조금씩 자연스러워지는 모습이 보였습니다. 이런 변화는 꾸준히 쌓였을 때 큰 성장으로 이어질 수 있습니다.\n\n보완할 부분은 ${weakness} 하지만 현재의 흐름을 보면 충분히 개선 가능성이 있습니다.\n\n다음 수업 전까지 ${homework}를 실천하면 다음 단계로 넘어가는 데 도움이 될 것입니다. 오늘도 성실하게 참여했습니다.`,
+
+        improvement: `${intro}\n\n오늘은 ${lessonContent}을 중심으로 수업하며 현재 필요한 보완점을 점검했습니다. ${student.name} 학생은 ${strength}\n\n다만 현재 가장 집중해서 다듬어야 할 부분은 ${weakness}입니다. 이 부분은 그냥 많이 반복하기보다 정확한 방법으로 천천히 연습하는 것이 중요합니다.\n\n이번 주 과제는 ${homework}입니다. 연습할 때 속도보다 정확도를 우선으로 두면 다음 수업에서 더 분명한 변화를 확인할 수 있을 것입니다.\n\n전반적으로 ${attitude}. 다음 수업에서는 보완점을 다시 확인하고, 안정적으로 수행할 수 있도록 이어서 지도하겠습니다.`,
+
+        exam: `${intro}\n\n오늘은 입시 준비 관점에서 ${lessonContent}을 집중적으로 점검했습니다. ${student.name} 학생은 ${strength} 이 부분은 입시 평가에서 긍정적으로 보일 수 있는 성장 포인트입니다.\n\n현재 보완이 필요한 부분은 ${weakness}입니다. 입시에서는 작은 흔들림도 전체 완성도에 영향을 줄 수 있기 때문에, 이 부분을 반복적으로 점검하며 안정화하는 것이 중요합니다.\n\n다음 수업 전까지 ${homework}를 과제로 진행하면 좋겠습니다. 연습 시에는 결과만 보지 말고, 과정에서 어떤 부분이 흔들리는지 스스로 체크하는 습관을 함께 만들어가야 합니다.\n\n전반적으로 ${attitude}. 다음 수업에서는 완성도와 표현력을 함께 끌어올리는 방향으로 지도하겠습니다.`,
+
+        monthly: `${intro}\n\n이번 수업에서는 ${lessonContent}을 중심으로 현재 성장 흐름을 점검했습니다. ${student.name} 학생은 최근 수업 과정에서 ${strength}\n\n앞으로 더 성장하기 위해서는 ${weakness} 부분을 꾸준히 다듬는 것이 필요합니다. 이 부분은 학생의 실력이 부족하다는 의미라기보다, 다음 단계로 넘어가기 위해 반드시 정리해야 할 핵심 과제에 가깝습니다.\n\n다음 기간 동안의 주요 과제는 ${homework}입니다. 이 과제를 꾸준히 실천하면 다음 상담 시 더 명확한 성장 변화를 확인할 수 있을 것입니다.\n\n전반적으로 ${attitude}. 앞으로도 학생의 강점은 살리고 보완점은 체계적으로 관리하며 지도하겠습니다.`
+      };
+
+      currentReport = templates[type] + `\n\n작성일: ${lessonDate}`;
+      document.getElementById("reportBox").textContent = currentReport;
+      showToast("리포트가 생성되었습니다.");
+    }
+
+    function saveCurrentReport() {
+      const student = getSelectedStudent();
+      if (!student) return;
+
+      if (!currentReport) {
+        showToast("먼저 리포트를 생성해주세요.");
+        return;
+      }
+
+      const lessonDate = document.getElementById("lessonDate")?.value || today();
+      student.reports.unshift({
+        id: Date.now().toString(),
+        date: lessonDate,
+        text: currentReport
+      });
+
+      saveData();
+      renderStudentList();
+      renderHistory();
+      showToast("리포트가 저장되었습니다.");
+    }
+
+    async function copyReport() {
+      if (!currentReport) {
+        const boxText = document.getElementById("reportBox")?.textContent || "";
+        if (!boxText || boxText.includes("아직 생성된")) {
+          showToast("복사할 리포트가 없습니다.");
+          return;
+        }
+        currentReport = boxText;
+      }
+
+      try {
+        await navigator.clipboard.writeText(currentReport);
+        showToast("리포트가 복사되었습니다.");
+      } catch (error) {
+        showToast("복사에 실패했습니다. 직접 선택해서 복사해주세요.");
+      }
+    }
+
+    function renderHistory() {
+      const student = getSelectedStudent();
+      const historyList = document.getElementById("historyList");
+      if (!student || !historyList) return;
+
+      if (student.reports.length === 0) {
+        historyList.innerHTML = '<div class="empty">저장된 리포트가 없습니다.</div>';
+        return;
+      }
+
+      historyList.innerHTML = student.reports.map(report => `
+        <div class="history-item">
+          <strong>${escapeHtml(report.date)} 리포트</strong>
+          <p>${escapeHtml(report.text)}</p>
+          <div class="btn-row">
+            <button class="btn-soft" onclick="loadHistoryReport('${report.id}')">불러오기</button>
+            <button class="btn-danger" onclick="deleteHistoryReport('${report.id}')">삭제</button>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function loadHistoryReport(reportId) {
+      const student = getSelectedStudent();
+      const report = student?.reports.find(item => item.id === reportId);
+      if (!report) return;
+      currentReport = report.text;
+      document.getElementById("reportBox").textContent = report.text;
+      showToast("저장된 리포트를 불러왔습니다.");
+    }
+
+    function deleteHistoryReport(reportId) {
+      const student = getSelectedStudent();
+      if (!student) return;
+      if (!confirm("이 리포트를 삭제할까요?")) return;
+      student.reports = student.reports.filter(report => report.id !== reportId);
+      saveData();
+      renderStudentList();
+      renderHistory();
+      showToast("리포트가 삭제되었습니다.");
+    }
+
+    function deleteStudent() {
+      const student = getSelectedStudent();
+      if (!student) return;
+      if (!confirm(`${student.name} 학생과 저장된 리포트를 모두 삭제할까요?`)) return;
+      students = students.filter(item => item.id !== student.id);
+      selectedStudentId = students[0]?.id || null;
+      currentReport = "";
+      saveData();
+      renderStudentList();
+      renderSelectedStudent();
+      showToast("학생이 삭제되었습니다.");
+    }
+
+    function clearAllData() {
+      if (!confirm("모든 학생과 리포트 데이터를 삭제할까요?")) return;
+      students = [];
+      selectedStudentId = null;
+      currentReport = "";
+      saveData();
+      renderStudentList();
+      renderSelectedStudent();
+      showToast("전체 데이터가 초기화되었습니다.");
+    }
+
+    function today() {
+      return new Date().toISOString().slice(0, 10);
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+  </script>
+</body>
+</html>
