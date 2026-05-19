@@ -76,3 +76,5 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] 수립된 비즈니스 로직과 디자인 사양을 바탕으로 앱에 필요한 최소 기능 데이터 모델(DB 스키마)과 핵심 API 구조를 정의하고 개발 착수를 위한 초기 설계안을 작성해줘 → 산출물 sessions/2026-05-19T12-04/developer.md
 - [2026-05-19] Designer가 제공할 UI/UX 사양과 백엔드 API 구조(DiagnosisResult 등)를 기반으로, Landing Kit에 필요한 프론트엔드 Mockup 코드와 백엔드 API 연동 로직을 통합하여 개발 착수 준비를 완료하라. → 산출물 sessions/2026-05-19T12-06/developer.md
 - [2026-05-19] Designer가 제공할 UI/UX 사양과 백엔드 API 계약 구조를 기반으로 Landing Kit의 프론트엔드 Mockup 코드와 필요한 최소 기능 데이터 모델(DB 스키마)을 즉시 구현하라. → 산출물 sessions/2026-05-19T12-21/developer.md
+- [2026-05-19] 코다리야 어플을 만들수 있겠니? → 산출물 sessions/2026-05-19T12-33/developer.md
+- [2026-05-19] Business와 Designer가 제시한 우선순위와 UI/UX 사양을 기반으로, Landing Kit에 필요한 백엔드 API 구조 및 프론트엔드 Mockup 코드의 초기 개발 착수 계획(Task Breakdown)을 수립하라. → 산출물 sessions/2026-05-19T12-36/developer.md

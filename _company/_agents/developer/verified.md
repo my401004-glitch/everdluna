@@ -41,3 +41,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-19] 1. **API 계약 준수:** `fetchDiagnosisScores` 함수를 통해 백엔드와 프론트엔드가 동일한 데이터 구조(TypeScript Interface)를 사용하도록 강제했습니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-05-19] 2. **가시적인 아키텍처:** `DiagnosisScoreCard`는 상태 관리 (`useState`)와 사이드 이펙트 처리 (`useEffect`)의 모범 사례를 따릅니다. _(근거: 코다리 개인 메모리 - 최신 React 패턴 학습)_
 - [2026-05-19] 33 // 해당 diagnosis_type에 접근할 권한이 있는지 DB를 통해 검증해야 합니다. _(근거: sessions/2026-05-18T13:43)_
+- [2026-05-19] 33 // 해당 diagnosis_type에 접근할 권한이 있는지 DB를 통해 검증해야 합니다. _(근거: sessions/2026-05-18T13:43)_

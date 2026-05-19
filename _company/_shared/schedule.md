@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 19. 오후 9:24:28_
+_업데이트: 2026. 5. 19. 오후 9:39:40_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,17 +13,17 @@ _업데이트: 2026. 5. 19. 오후 9:24:28_
 - [2026-05-19] 고객의 고통(Pain Point) 포착과 인게이지먼트 유도 전략이 실제 콘텐츠 기획 단계에서 어떻게 반영되어야 하는지 분석하고, 릴스/피드 콘텐츠가 데이터 기반으로 지속적인 개선을 유도하는 피드백 루프를 설계하라. → 산출물 sessions/2026-05-19T06-58/instagram.md
 - [2026-05-19] writer가 생성한 각 후크 버전에 대해, 가장 높은 인게이지먼트를 유도할 수 있는 최적의 게시 시간, 핵심 해시태그 전략 및 포맷(릴스/피드)별 구체적인 실행 방안을 제시하라. → 산출물 sessions/2026-05-19T07-44/instagram.md
 ### 🎨 Designer
-- [2026-05-19] 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)을 기반으로 AI 출결 어플의 Landing Kit UI/UX 레이아웃 스케치와 핵심 데이터 시각화(Gap Score 등)를 포함한 초기 프로토타입 방향을 제시해줘 → 산출물 sessions/2026-05-19T12-04/designer.md
 - [2026-05-19] Pain $\rightarrow$ Gain 프레임워크, Gap Score 시각화 모듈 사양, Dark Blue/Accent Yellow 디자인 시스템을 기반으로 'Premium Accountability Tracker'의 전체 UI/UX 흐름도와 핵심 컴포넌트 프로토타입(Landing Kit)을 최종 확정하고 시각적 사양을 제공하라. → 산출물 sessions/2026-05-19T12-06/designer.md
 - [2026-05-19] 확정된 Dark Blue/Accent Yellow 디자인 시스템과 Pain $\rightarrow$ Gain 흐름을 적용하여 Landing Kit의 핵심 컴포넌트 프로토타입 구현을 즉시 시작하고, 개발팀이 바로 적용할 수 있도록 시각적 사양을 제공하라. → 산출물 sessions/2026-05-19T12-21/designer.md
+- [2026-05-19] 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)과 Pain $ightarrow$ Gain 프레임워크를 기반으로, 핵심 기능 모듈에 필요한 데이터 시각화 및 사용자 흐름(User Flow)의 최종 레이아웃 사양을 확정하라. → 산출물 sessions/2026-05-19T12-36/designer.md
 ### 💻 코다리
-- [2026-05-19] 수립된 비즈니스 로직과 디자인 사양을 바탕으로 앱에 필요한 최소 기능 데이터 모델(DB 스키마)과 핵심 API 구조를 정의하고 개발 착수를 위한 초기 설계안을 작성해줘 → 산출물 sessions/2026-05-19T12-04/developer.md
-- [2026-05-19] Designer가 제공할 UI/UX 사양과 백엔드 API 구조(DiagnosisResult 등)를 기반으로, Landing Kit에 필요한 프론트엔드 Mockup 코드와 백엔드 API 연동 로직을 통합하여 개발 착수 준비를 완료하라. → 산출물 sessions/2026-05-19T12-06/developer.md
 - [2026-05-19] Designer가 제공할 UI/UX 사양과 백엔드 API 계약 구조를 기반으로 Landing Kit의 프론트엔드 Mockup 코드와 필요한 최소 기능 데이터 모델(DB 스키마)을 즉시 구현하라. → 산출물 sessions/2026-05-19T12-21/developer.md
+- [2026-05-19] 코다리야 어플을 만들수 있겠니? → 산출물 sessions/2026-05-19T12-33/developer.md
+- [2026-05-19] Business와 Designer가 제시한 우선순위와 UI/UX 사양을 기반으로, Landing Kit에 필요한 백엔드 API 구조 및 프론트엔드 Mockup 코드의 초기 개발 착수 계획(Task Breakdown)을 수립하라. → 산출물 sessions/2026-05-19T12-36/developer.md
 ### 💼 현빈
-- [2026-05-19] 기존에 정의된 '학원 운영자의 재무적 안정성 및 교육 시스템 효율화 도구'라는 핵심 가치 제안을 바탕으로 웹페이지의 주요 목표(KPI)와 CTA 구성을 정의하고, 페이지에 포함되어야 할 핵심 모듈(Gap Score 시각화 등)을 명시하십시오. → 산출물 sessions/2026-05-19T10-29/business.md
 - [2026-05-19] AI 출결 어플의 핵심 수익화 모델(유료 모듈)과 타깃 사용자층(실용음악 입시생)에 따른 KPI를 정의하고 'Pain $\rightarrow$ Gain' 프레임워크를 적용하여 가치 제안을 수립해줘 → 산출물 sessions/2026-05-19T12-04/business.md
 - [2026-05-19] 확정된 UI/UX 흐름도에 대해 잠재 고객의 행동 유도(CTA)와 수익화 경로(Module Completion Rate, Data Package Conversion Rate)가 명확하게 반영되었는지 검토하고, KPI 달성에 최적화된 레이아웃 및 정보 배치를 제안하라. → 산출물 sessions/2026-05-19T12-06/business.md
+- [2026-05-19] 현재까지의 개발 진행 상황(UI/UX 설계, API 구조 정의)과 'Pain $ightarrow$ Gain' 프레임워크를 기반으로, 다음 단계에서 가장 높은 전환율을 유도할 핵심 기능 모듈(MVP) 우선순위를 최종 결정하고 실행 계획을 수립하라. → 산출물 sessions/2026-05-19T12-36/business.md
 ### 📱 영숙
 - [2026-05-19] 최종적으로 정의된 'Project Charter v2.0'에 대한 승인 여부를 확인하고, 이를 코다리에게 전달할 준비를 하세요. → 산출물 sessions/2026-05-19T05-29/secretary.md
 - [2026-05-19] 현재 에이전트 간의 작업 흐름(Workflow)에서 발생하는 커뮤니케이션 및 일정 관리상의 비효율성을 분석하고, 모든 에이전트가 목표에 집중할 수 있도록 일일 보고 및 할 일 배분 시스템을 최적화하라. → 산출물 sessions/2026-05-19T06-58/secretary.md
