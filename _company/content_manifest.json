@@ -1,0 +1,21 @@
+{
+  "manifest_id": "2026-05-20_GapScore_V1",
+  "title": "발성 꿀팁이 통하지 않는 이유: AI가 찾아낸 '측정되지 않은 공명 주파수'의 비밀 [Gap Score]",
+  "description": "혹시 단순히 노력만으로는 안 되는 발성법을 따라 하고 계신가요? 대부분의 교육 방식은 추상적인 조언에 머뭅니다. 저희는 물리적 주파수와 공명점이라는 과학적 원리에 기반하여 'AI Gap Score' 진단 시스템을 개발했습니다. 이 점수가 당신이 가진 기술적인 빈틈(Gap)을 명확히 보여줍니다. 💡 무료 진단 테스트로 객관적인 승리의 공식을 확인하세요.",
+  "keywords": [
+    "발성법",
+    "가창력향상",
+    "공명주파수",
+    "AI진단",
+    "GapScore",
+    "보컬트레이닝",
+    "실용음악입시"
+  ],
+  "visual_specifications": {
+    "thumbnail_file": "thumbnails/Final_CTR_Thumbnail_Set_V1.png",
+    "color_palette": ["Dark Blue (#0A2463)", "Accent Yellow (#FFD700)"],
+    "core_concept": "Gap Visualization (좌절에서 승리로의 변곡점)"
+  },
+  "script_reference": "sessions/2026-05-19T17-33/youtube.md",
+  "status": "Ready for Upload"
+}
