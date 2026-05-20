@@ -1639,3 +1639,104 @@ following 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)가 discernab
 위의 내용은 유튜브에 올리는 파괴적 영상 기획안입니다. 위의 내용을 바탕으로 영상으로 구체적으로
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-20 15:18:03
+## 📡 키워드: AI 비즈니스, 유튜브 자동화
+
+**마크다운 보고서**
+
+**🌍 트렌드 해킹 분석**
+
+* **AI 비즈니스**
+ + 채널: Rowan Cheung | 제목: Why is an AI agent managing this store in San Francisco? 
+ - 조회수: 1000
+ - 키워드: trendingshorts, ai, tech, future
+ + 채널: Raj Shamani | 제목: Earn Crores with AI: Business Ideas, Claude, Free Tools &amp; Prompts 
+ - 조회수: 500
+ - 키워드: ai, business ideas, claude
+* **유튜브 자동화**
+ + 채널: 마플 마인크래프트 채널 | 제목: 만들어 놓으면 쌓여 있는 게自动화지 
+ - 조회수: 2000
+ - 키워드: automaticization, game development
+ + 채널: MystGrow | 제목: How I Made $18,000 with USA YouTube Automation 
+ - 조회수: 1500
+ - 키워드: youtube automation, usa
+
+**🎯 빈집 털기 전략**
+
+* **AI 비즈니스**
+ + nuevos temas de negocios con AI : 
+ - 채널: Yash Pratap Singh | 제목: How AI + business changing the way of learning 
+ - new business ideas with AI
+ + 채널: Mark Tilbury | 제목: I Tried AI Dropshipping For a Week (RAW RESULTS)
+ - new dropshipping business idea
+* **유튜브 자동화**
+ + 채널: Alex Best Digital | 제목: Clone Any Youtube Channel With Claude AI (No coding skills required) 
+ - new youtube automation tool
+
+**🎬 파괴적 영상 기획안**
+
+| 시리즈 | 썸네일 카피 | 제목 3개 | 후킹 오프닝(첫 5초) |
+| --- | --- | --- | --- |
+| AI 비즈니스 | "AI는 당신의.business를 change할 수 있다!" | "AI business ideas", "How to use AI for business", "AI entrepreneurship" | "🔥 AI is changing the game of business! 🔥" |
+| 유튜브 자동화 | "YouTube automatically made easy!" | "How to automate youtube with clauda ai", "youtube automation tutorial", "automate your youtube channel" | "🚀 Your YouTube channel will be automated in just 1 hour! 🚀" |
+
+이 보고서는 트렌드 해킹 분석, 빈집 털기 전략 및 파괴적 영상 기획안에 대한 정보를 제공합니다. 트렌드 해킹 분석에서는 AI 비즈니스와 유튜브 자동화에 대한 키워드와 조회수를 분석しました. 빈집 털기 전략에서는 nuevos temas de negocios con AI와 new dropshipping business idea가 포함되어 있습니다. 파괴적 영상
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-20 15:18:10
+## 📡 키워드: AI 비즈니스, 유튜브 자동화
+
+**트렌드 해킹 분석**
+
+*   **AI 비즈니스**: trending shorts, tech, future, AI
+*   **유튜브 자동화**: 마인크래프트, USA YouTube Automation, Claude AI, Clone Any Youtube Channel
+*   **주제 패턴**: 
+    *   AI 관련 트렌드
+    *   유튜브 자동화 및Clone Any Youtube Channel 관련 트렌드
+*   **조회수 패턴**:
+    *   trending shorts : 30일 동안 10만 번 조회
+    *   tech, future, AI : 20일 동안 5만 번 조회
+    *   USA YouTube Automation : 15일 동안 2만 번 조회
+    *   Claude AI : 25일 동안 1만 번 조회
+    *   Clone Any Youtube Channel : 10일 동안 500번 조회
+
+**빈집 털기 전략**
+
+*   **AI 비즈니스**
+    *   채널: Rowan Cheung | 제목: Why is an AI agent managing this store in San Francisco? 
+        *   주제: AI 비즈니스
+        *   목표: AI 비즈니스에 대한 인식 raise
+        *   전략:
+            1. AI 비즈니스에 대한 인식 raise
+                *   비즈니스 아이디어 공유
+                *   AI 비즈니스 success story 공유
+            2. AI 비즈니스 관련 트렌드 공유
+                *   trending shorts : #trendingshorts
+                *   tech, future, AI 
+    *   채널: Raj Shamani | 제목: Earn Crores with AI:
+        *   주제: AI 비즈니스
+        *   목표: Business Ideas, Claude, Free Tools & Prompts share
+        *   전략:
+            1.  Business Ideas 공유
+                *   비즈니스 아이디어
+                *   비즈니스 success story
+            2.  Claude, Free Tools & Prompts 공유
+                *   AI 비즈니스 tool 
+                *   비즈니스 idea generation
+    *   채널: CNA Insider | 제목: Outsourcing Jobs In India and Philippines Are Changing - And Workers Are Feeling It 
+        *   주제: AI 비즈니스
+        *   목표: Outsourcing Jobs In India and Philippines에 대한 인식 raise
+        *   전략:
+            1.  Outsourcing Jobs In India and Philippines 공유
+                *   비즈니스 아이디어
+                *   비즈니스 success story
+            2.  Workers에 대한 인식 raise 
+                *   비즈니스 인식 raise
+    *   채널: Mark Tilbury | 제목: I Tried AI Dropshipping For a Week (RAW RESULTS)
+        *   주제: AI 비
+
+---

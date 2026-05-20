@@ -41,12 +41,12 @@ const COLLEGES: College[] = [
   { id: 'snu', name: '👑 서울대 수석', badge: 'GOD MODE', difficulty: '★★★★★★★★', description: '12음기법 무조성(Atonal) 선율 및 증4도/단9도 난타' }
 ];
 
-// 화성학 교육 챕터 데이터 구조
+// 화성학 교육 챕터 데이터 구조 (정재열의 재즈화성 기반 개편)
 interface TheoryItem {
   id: string;
   name: string;
   description: string;
-  semitones?: string;
+  details: string;
   freqs: number[];
   notes: string[];
 }
@@ -61,52 +61,143 @@ interface Chapter {
 const THEORY_CHAPTERS: Chapter[] = [
   {
     id: 1,
-    title: '제 1장: 음정학 (Intervals Masterclass)',
-    description: '음정은 음악의 가장 최소 단위이자 주파수 비례 관계입니다. 완전/장/단/증감 음정의 고유한 맥놀이(Beats)와 입시 빈출 도약 패턴을 정복합니다.',
+    title: '제 1장: 재즈 음정과 다이아토닉 화성학 (Jazz Intervals & Diatonic Harmony)',
+    description: '조성 음악의 뼈대를 이루는 음정의 물리적 전위와 메이저 스케일에서 유도되는 7화음 및 선법(Church Modes)의 기본 색채를 분석합니다.',
     items: [
-      { id: 'p1', name: '완전1도 (Perfect 1st)', description: '동일한 음높이를 가진 두 음의 관계 (0반음). 맥놀이가 전혀 없어 완벽한 융합감을 주며, 두 주파수의 비율은 정확히 1:1입니다. 합창이나 기악 조율의 기본이 됩니다.', semitones: '0 semitones', freqs: [261.63, 261.63], notes: ['C4', 'C4'] },
-      { id: 'm2', name: '단2도 (Minor 2nd)', description: '반음 1개 거리 (예: C4-Db4). 주파수 비례가 가장 복잡하여 두 파형이 부딪치며 매우 거칠고 날카로운 맥놀이를 생성합니다. 현대 음악의 클러스터나 영화음악의 긴장/공포 씬에 필수적으로 사용됩니다.', semitones: '1 semitone', freqs: [261.63, 277.18], notes: ['C4', 'C#4'] },
-      { id: 'M2', name: '장2도 (Major 2nd)', description: '반음 2개 거리 (예: C4-D4). 온음 간격의 진행으로, 선율적 흐름을 만드는 스케일 순차진행의 기본 뼈대입니다. 단2도에 비해 부드러우며 현대 대중음악 화성에서 Add9의 색채로 애용됩니다.', semitones: '2 semitones', freqs: [261.63, 293.66], notes: ['C4', 'D4'] },
-      { id: 'm3', name: '단3도 (Minor 3rd)', description: '반음 3개 거리 (예: C4-Eb4). 단조(Minor key)의 성격을 규정짓는 핵심 음정입니다. 어둡고 슬프며, 우수에 찬 감정을 유발합니다. 자연배음 구조에서 비교적 상위에 있어 안정적인 협화음정으로 분류됩니다.', semitones: '3 semitones', freqs: [261.63, 311.13], notes: ['C4', 'D#4'] },
-      { id: 'M3', name: '장3도 (Major 3rd)', description: '반음 4개 거리 (예: C4-E4). 장조(Major key)를 규정하는 음정으로 밝고 긍정적인 울림을 줍니다. 주파수 비율은 5:4에 수렴하며, 3화음 구성 시 화음의 색깔을 결정짓는 중추 역할을 합니다.', semitones: '4 semitones', freqs: [261.63, 329.63], notes: ['C4', 'E4'] },
-      { id: 'p4', name: '완전4도 (Perfect 4th)', description: '반음 5개 거리 (예: C4-F4). 고대 그리스에서부터 협화음정으로 인정받았으며 주파수 비율은 4:3입니다. 선율적으로는 안정적이나, 저성부(Bass)에서 단독으로 울릴 경우 불협화음정으로 작용해 5도나 3도로 해결되려는 강한 성질을 지닙니다.', semitones: '5 semitones', freqs: [261.63, 349.23], notes: ['C4', 'F4'] },
-      { id: 'tritone', name: '증4도 / 감5도 (Tritone)', description: '반음 6개 거리 (예: C4-F#4). 옥타브를 정확히 반으로 나누는 음정으로, 중세 시대에는 악마의 음정(Diabolus in Musica)으로 불려 사용이 금지되었습니다. 도미넌트 7th 코드 내부에서 가이드 톤 역할을 하며 불안정한 성격으로 인해 해결을 극도로 갈구합니다.', semitones: '6 semitones', freqs: [261.63, 369.99], notes: ['C4', 'F#4'] },
-      { id: 'p5', name: '완전5도 (Perfect 5th)', description: '반음 7개 거리 (예: C4-G4). 주파수 비가 3:2로 완전1도와 완전8도 다음으로 완벽하게 어우러지는 협화음정입니다. 록 음악의 파워 코드(Power Chord)의 뼈대가 되며, 동양음악의 5음음계 생성 원리(삼분손익법)의 근간이 됩니다.', semitones: '7 semitones', freqs: [261.63, 392.00], notes: ['C4', 'G4'] },
-      { id: 'm6', name: '단6도 (Minor 6th)', description: '반음 8개 거리 (예: C4-Ab4). 옥타브 8도에서 장3도를 뺀 자리로, 낭만주의 음악에서 애절함을 표현할 때 극대화되어 나타납니다. 감정의 고조 및 해결을 위한 순차 진행 직전 도약음으로 많이 출제됩니다.', semitones: '8 semitones', freqs: [261.63, 415.30], notes: ['C4', 'G#4'] },
-      { id: 'M6', name: '장6도 (Major 6th)', description: '반음 9개 거리 (예: C4-A4). 주파수 비는 5:3에 가깝고 따뜻하며 서정적인 울림을 줍니다. 재즈 화성에서 토닉 코드의 대리 코드로 사용되거나 하프의 아르페지오 진행에서 자주 청취할 수 있습니다.', semitones: '9 semitones', freqs: [261.63, 440.00], notes: ['C4', 'A4'] },
-      { id: 'm7', name: '단7도 (Minor 7th)', description: '반음 10개 거리 (예: C4-Bb4). 도미넌트 7th와 마이너 7th의 기본 구성원입니다. 다소 흐릿하고 고독한 느낌을 줍니다. 완전5도 위로 3도를 더한 형태로서 현대 블루스 선율의 근간이 됩니다.', semitones: '10 semitones', freqs: [261.63, 466.16], notes: ['C4', 'A#4'] },
-      { id: 'M7', name: '장7도 (Major 7th)', description: '반음 11개 거리 (예: C4-B4). 반음 하나만 더 가면 옥타브(완전8도)가 되는 자리에 있어 극도의 인장력을 만들어 냅니다. 현대 팝 및 시티팝 화성에서 세련되고 몽환적인 감각을 표현할 때 메이저 7th 코드의 최상성부로 자주 등장합니다.', semitones: '11 semitones', freqs: [261.63, 493.88], notes: ['C4', 'B4'] },
-      { id: 'p8', name: '완전8도 (Octave)', description: '반음 12개 거리 (예: C4-C5). 주파수 비는 정확히 2:1로, 물리적으로 동일한 배음 구조를 가집니다. 완벽한 일치감을 자아내며 선율의 도약 훈련에서 기준점 역할을 하는 필수 코스입니다.', semitones: '12 semitones', freqs: [261.63, 523.25], notes: ['C4', 'C5'] }
+      { 
+        id: 'inversion', 
+        name: '음정의 전위 (Inversion of Intervals)', 
+        description: '기준음과 상성부 음의 위치를 대칭 교환하는 개념입니다.', 
+        details: '두 음의 간격을 옥타브 대칭하여 변환하는 원리입니다. 예컨대 장3도(C-E)는 전위 시 단6도(E-C)가 되며, 완전5도(C-G)는 완전4도(G-C)가 됩니다. 입시 실기에서는 화음의 전위형 청음 및 해결 방향을 파악할 때 필수적으로 적용되는 이론입니다.',
+        freqs: [261.63, 392.00], 
+        notes: ['C4', 'G4'] 
+      },
+      { 
+        id: 'diatonic_triads', 
+        name: '다이아토닉 3화음 (Diatonic Triads)', 
+        description: '메이저 스케일의 각 음 위에 3도씩 2개의 음을 쌓아 만든 7개의 화음입니다.', 
+        details: '스케일 내부 음으로만 구성된 화음군입니다. I, IV, V도는 메이저(Major), iim, iiim, vim도는 마이너(Minor), viim(b5)도는 디미니쉬(Diminished) 구조를 띱니다. 재즈 화성에서 코드 스케일을 분석하고 대리 코드를 산출하기 위한 모든 화성 전개의 시발점이 됩니다.',
+        freqs: [261.63, 329.63, 392.00], 
+        notes: ['C4', 'E4', 'G4'] 
+      },
+      { 
+        id: 'diatonic_7th', 
+        name: '다이아토닉 7화음 (Diatonic 7th Chords)', 
+        description: '3화음 위에 3도음(7음)을 추가하여 4성부로 확장한 현대 재즈의 기초 화음입니다.', 
+        details: 'IMaj7(Ionian), iim7(Dorian), iiim7(Phrygian), IVMaj7(Lydian), V7(Mixolydian), vim7(Aeolian), viim7b5(Locrian)로 귀결됩니다. 3화음에 비해 7음이 더해져 각 코드의 색채가 극대화되며, 재즈 연주나 편곡 시 기본적인 텐션(9, 11, 13)을 수용하는 안착지 역할을 수행합니다.',
+        freqs: [261.63, 329.63, 392.00, 493.88], 
+        notes: ['C4', 'E4', 'G4', 'B4'] 
+      },
+      { 
+        id: 'chord_functions', 
+        name: '다이아토닉 코드의 기능과 대리 (Functions & Substitutions)', 
+        description: '화음이 가지는 3대 화성적 기능(토닉, 서브도미넌트, 도미넌트)과 이를 대리하는 화음군입니다.', 
+        details: 'Tonic(I)은 안정, Subdominant(IV)은 이탈, Dominant(V)는 강력한 불안정과 토닉으로의 복귀 성질을 띱니다. 토닉의 안정감을 대신하기 위해 iiim7과 vim7이 대리 코드로 쓰이며, 서브도미넌트는 iim7이 대리하여 재즈의 보편적 코드 진행인 ii-V 진행을 완성시킵니다.',
+        freqs: [349.23, 440.00, 523.25, 659.25], 
+        notes: ['F4', 'A4', 'C5', 'E5'] 
+      },
+      { 
+        id: 'church_modes', 
+        name: '교회 선법 (Diatonic Modes / Church Modes)', 
+        description: '메이저 스케일의 시작점을 각기 달리하여 유도하는 7가지 선법적 음계입니다.', 
+        details: '아이오니안, 도리안, 프리지안, 리디안, 믹소리디안, 에올리안, 로크리안이 존재합니다. 조성적 화성 진행(Tonal)에서 벗어나, 선법의 독특한 음정 관계가 주는 색채 자체를 강조하는 모달 재즈(Modal Jazz) 및 현대 즉흥 연주 이론의 핵심 기초가 됩니다.',
+        freqs: [293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25, 587.33], 
+        notes: ['D4', 'E4', 'F4', 'G4', 'A4', 'B4', 'C5', 'D5'] 
+      }
     ]
   },
   {
     id: 2,
-    title: '제 2장: 화성 구조와 텐션 (Chords & Altered Tensions)',
-    description: '3화음(Triad)과 7화음(7th Chord)의 구성 및 텐션(Tension)의 개념을 학습합니다. 입시에서 화음 성질 청음 시험에 100% 출제되는 코어 영역입니다.',
+    title: '제 2장: 도미넌트 화성과 대칭 코드 스케일 (Dominant Chords & Altered Scales)',
+    description: '곡의 역동성을 불어넣는 세컨더리 도미넌트와 증4도 대리 화성, 얼터드 텐션을 적용한 대칭적/인위적 스케일의 해결 방식을 다룹니다.',
     items: [
-      { id: 'maj_triad', name: '메이저 3화음 (Major Triad)', description: '루트 + 장3도 + 단3도 (예: C-E-G). 자연배음 구조상 가장 낮은 번호의 상위 배음들로 이루어져 우주의 소리라 불릴 정도로 극상의 안정성과 순수하고 밝은 울림을 자랑합니다.', freqs: [261.63, 329.63, 392.00], notes: ['C4', 'E4', 'G4'] },
-      { id: 'min_triad', name: '마이너 3화음 (Minor Triad)', description: '루트 + 단3도 + 장3도 (예: C-Eb-G). 3음이 반음 내려감으로써 장조의 완벽한 안정감이 깨져 어둡고 우수 어린 분위기가 형성됩니다. 클래식 및 팝의 슬픈 단조 발라드의 기초 화음입니다.', freqs: [261.63, 311.13, 392.00], notes: ['C4', 'D#4', 'G4'] },
-      { id: 'dim_triad', name: '디미니쉬 3화음 (Diminished Triad)', description: '루트 + 단3도 + 단3도 (예: C-Eb-Gb). 완전5도마저 감5도(Tritone)로 찌그러져 극단적인 불안감을 내포합니다. 클래식 대위법과 영화음악에서 공포, 위기, 해결 직전의 압박감을 극대화할 때 활용합니다.', freqs: [261.63, 311.13, 369.99], notes: ['C4', 'D#4', 'F#4'] },
-      { id: 'aug_triad', name: '오그멘티드 3화음 (Augmented Triad)', description: '루트 + 장3도 + 장3도 (예: C-E-G#). 5음이 반음 솟구쳐서 옥타브 공간을 꽉 채웁니다. 어딘가 나사 하나가 풀린 듯 신비롭고 몽환적이며, SF 우주 영화의 성간 우주나 꿈속 장면의 사운드 트랙에 단골로 쓰입니다.', freqs: [261.63, 329.63, 415.30], notes: ['C4', 'E4', 'G#4'] },
-      { id: 'maj7_chord', name: '메이저 7화음 (Major 7th)', description: '루트 + 장3도 + 완전5도 + 장7도 (예: C-E-G-B). 메이저 코드 위에 팽팽한 긴장감의 장7도 음정을 얹은 형태입니다. 정통 클래식의 맑음과 재즈의 몽환적인 노스탤지어 감성을 관통하는 가장 세련된 화음입니다.', freqs: [261.63, 329.63, 392.00, 493.88], notes: ['C4', 'E4', 'G4', 'B4'] },
-      { id: 'min7_chord', name: '마이너 7화음 (Minor 7th)', description: '루트 + 단3도 + 완전5도 + 단7도 (예: C-Eb-G-Bb). 마이너 트라이어드의 우울함 위에 차분한 단7도가 얹어져 편안하면서도 센치한 도시적 라운지 감성을 발산합니다. 재즈/알앤비 음악의 모달 진행에 중추적인 코드입니다.', freqs: [261.63, 311.13, 392.00, 466.16], notes: ['C4', 'D#4', 'G4', 'A#4'] },
-      { id: 'dom7_chord', name: '도미넌트 7화음 (Dominant 7th)', description: '루트 + 장3도 + 완전5도 + 단7도 (예: C-E-G-Bb). 장3도와 단7도 사이의 악마의 음정(Tritone)이 화음 내부에 숨어 있어, 극도의 불협화 성향을 지니며 완전4도 아래(I 도)로 강하게 해결(Resolving)하려는 성질을 유발합니다.', freqs: [261.63, 329.63, 392.00, 466.16], notes: ['C4', 'E4', 'G4', 'A#4'] },
-      { id: 'm7b5_chord', name: '마이너 7화음 플랫5 (Half-Diminished 7th)', description: '루트 + 단3도 + 감5도 + 단7도 (예: C-Eb-Gb-Bb). 마이너 2-5-1 진행의 출발점으로 사용되며 서정적이면서도 위태로운 화성적 긴장을 표현합니다. 음대 입시 청음에서 구별하기 가장 까다로운 화음 중 하나입니다.', freqs: [261.63, 311.13, 369.99, 466.16], notes: ['C4', 'D#4', 'F#4', 'A#4'] },
-      { id: 'b9_tension', name: '얼터드 텐션 플랫나인 (Altered Tension b9)', description: '도미넌트 7화음 위에 루트보다 반음 높은 단9도(b9) 음색을 배치한 형태입니다 (예: C7의 Db). 어두운 재즈 발라드 및 오케스트라의 장엄하고 비극적인 클라이맥스 전조 시그널로 활용됩니다.', freqs: [261.63, 329.63, 466.16, 554.37], notes: ['C4', 'E4', 'A#4', 'C#5'] },
-      { id: 's11_tension', name: '리디안 텐션 샵일레븐 (Lydian Tension #11)', description: '메이저 또는 도미넌트 화음 위에 완전4도를 반음 올린 증4도(#11) 성부를 중첩한 극상의 신선함입니다 (예: C7의 F#). 우주적 확장감과 찬란하게 빛나는 신비감을 부여하는 재즈 모던 텐션의 대표 주자입니다.', freqs: [261.63, 329.63, 466.16, 739.99], notes: ['C4', 'E4', 'A#4', 'F#5'] }
+      { 
+        id: 'secondary_dominant', 
+        name: '세컨더리 도미넌트 (Secondary Dominant Chords)', 
+        description: '다이아토닉 스케일 1도를 제외한 다른 다이아토닉 코드로 해결하는 임시 도미넌트입니다.', 
+        details: '조성 바깥의 음(Non-diatonic tone)을 도입하여 일시적인 전조 효과와 함께 강렬한 화성적 진행감을 부여합니다. 예컨대 C Major Key에서 iim7(Dm7)으로 가기 전 장3도를 강제 도입한 A7(V7/ii)을 연주하는 형태가 보편적이며, 대중음악 및 클래식 편곡에서 가장 빈번하게 출제됩니다.',
+        freqs: [261.63, 329.63, 392.00, 466.16], 
+        notes: ['C4', 'E4', 'G4', 'A#4'] 
+      },
+      { 
+        id: 'tritone_sub', 
+        name: '증4도 대리 화음 (Tritone Substitute / subV7)', 
+        description: '동일한 가이드 톤(3, 7음)을 공유하는 증4도 관계의 대리 도미넌트 화음입니다.', 
+        details: 'G7(G-B-D-F)의 불안정 가이드톤인 B와 F는 감5도 음정입니다. 이 B와 F를 동일하게 3음과 7음으로 보유하는 화음이 바로 반음 위인 Db7(Db-F-Ab-Cb)입니다. 해결 시 베이스가 Db에서 C로 반음 하행하는 매우 세련된 재즈 특유의 크로매틱 베이스라인 진행을 만듭니다.',
+        freqs: [277.18, 349.23, 415.30, 493.88], 
+        notes: ['C#4', 'F4', 'G#4', 'B4'] 
+      },
+      { 
+        id: 'extended_dominant', 
+        name: '익스텐디드 도미넌트 (Extended Dominant)', 
+        description: '세컨더리 도미넌트가 연속적으로 5도 하행(Cycle of 5ths)하며 꼬리를 물고 전개되는 진행입니다.', 
+        details: '화성적 인장력을 극대화하기 위해 도미넌트 7화음이 토닉으로 해결되지 않고 다른 도미넌트로 연쇄 이행하는 패턴입니다 (예: III7 - VI7 - II7 - V7 - IMaj7). 연쇄 진행 과정에서 임시표가 복잡하게 얽혀, 입시생들이 실시간 임시표 스케일을 구별할 때 오답률이 가장 높은 구간입니다.',
+        freqs: [329.63, 415.30, 493.88, 587.33], 
+        notes: ['E4', 'G#4', 'B4', 'D5'] 
+      },
+      { 
+        id: 'altered_chord_scale', 
+        name: '얼터드 코드 스케일 (Altered Chord Scale)', 
+        description: '도미넌트 코드에서 사용할 수 있는 가장 텐션감이 강한 변형된 음계입니다.', 
+        details: '멜로디 마이너 스케일의 7번째 모드에서 파생되며, 1, 3, 7음을 제외한 모든 음이 플랫/샵 텐션(b9, #9, #11, b13)으로 구성되어 있습니다. 현대 재즈 즉흥 연주에서 도미넌트 화성이 토닉 마이너나 토닉 메이저로 해결되기 직전, 극적인 불협화적 해소감을 구현하기 위해 사용됩니다.',
+        freqs: [261.63, 277.18, 311.13, 329.63, 369.99, 415.30, 466.16, 523.25], 
+        notes: ['C4', 'C#4', 'D#4', 'E4', 'F#4', 'G#4', 'A#4', 'C5'] 
+      },
+      { 
+        id: 'diminished_types', 
+        name: '디미니쉬 코드의 세 분류 (Three Types of Diminished 7th Chords)', 
+        description: '음악적 전개 양상에 따른 디미니쉬드 7화음의 세 가지 기능적 구분입니다.', 
+        details: '인접한 두 다이아토닉 코드를 반음계적으로 연결하는 Passing Diminished (I-I#dim-ii), 상행하지 않고 하행 해결하는 Descending Diminished (ii-iibdim-I), 토닉이나 도미넌트와 루트를 공유하는 보조적 성격의 Auxiliary Diminished (I-Idim-I)로 구분되어 청음 평가에 출제됩니다.',
+        freqs: [261.63, 311.13, 369.99, 440.00], 
+        notes: ['C4', 'D#4', 'F#4', 'A4'] 
+      }
     ]
   },
   {
     id: 3,
-    title: '제 3장: 고급 대위법과 무조성 (Counterpoint & Serialism)',
-    description: '2개 이상의 성부가 독립적으로 전개되는 대위법과 현대음악의 무조성(Atonal) 시스템을 심층 해부합니다. 국내 상위권 대학 실기 시험의 최종 변별력 변수입니다.',
+    title: '제 3장: 고급 화성 분석과 모달 진행 (Advanced Harmony & Modal Progression)',
+    description: '마이너 키의 3가지 스케일 화성 체계, 라인 클리셰, 병렬 조에서 차용하는 모달 인터체인지 및 입시 평가 최종 단계인 재즈 블루스 포맷을 해부합니다.',
     items: [
-      { id: 'diatonic_mod', name: '관계조 전조 (Diatonic Modulation)', description: '으뜸조와 가까운 공통 코드를 징검다리 삼아 딸림조(Dominant)나 버금딸림조(Subdominant)로 흐르듯 열쇠를 바꾸는 기법입니다. 귀에 가장 자연스러운 음악적 전개 방식을 제공합니다.', freqs: [261.63, 392.00, 440.00], notes: ['C4', 'G4', 'A4'] },
-      { id: 'chromatic_mod', name: '원격조 전조 (Chromatic Modulation)', description: '공통음이 없는 먼 친척 조성(예: C Major에서 Tritone 간격의 F# Major)으로 충격적으로 변이합니다. 현대 대중음악 후렴구 극강의 드라마틱 고조 기법으로 음정 감각의 급격한 전조 적응력을 요구합니다.', freqs: [261.63, 369.99, 554.37], notes: ['C4', 'F#4', 'C#5'] },
-      { id: 'counterpoint_2v', name: '2성부 대위 선율 (Two-Voice Counterpoint)', description: '높은 소프라노 선율과 낮은 베이스 성부가 독립적인 리듬과 방향성(반진행, 병진행)을 갖고 대화하듯 교차 구동합니다. 청음 시 한 성부에 휩쓸리지 않고 두 주파수 레이어를 뇌에서 완전 분리해야 풀이가 가능합니다.', freqs: [261.63, 523.25, 392.00, 329.63], notes: ['C4', 'C5', 'G4', 'E4'] },
-      { id: 'dorian_mode', name: '도리안 선법 선율 (Dorian Mode)', description: '자연단음계에서 6번째 음을 반음 올려 밝고 신비로운 중세/민요적 색채를 유발합니다 (예: C-D-Eb-F-G-A-Bb-C). 재즈 및 현대 영상음악의 모달 진행의 가장 대중적인 선법입니다.', freqs: [261.63, 293.66, 311.13, 349.23, 392.00, 440.00, 466.16, 523.25], notes: ['C4', 'D4', 'D#4', 'F4', 'G4', 'A4', 'A#4', 'C5'] },
-      { id: 'altered_scale', name: '얼터드 스케일 (Altered Scale)', description: '루트음을 제외한 모든 음(b9, #9, #11, b13)이 임시표(Sharp/Flat)로 도배된 불안정의 극치입니다. 마이너 ii-V-I 진행의 극적인 해소를 이끌어내기 위해 사용되는 고급 입시 선율 분석 재료입니다.', freqs: [261.63, 277.18, 311.13, 329.63, 369.99, 415.30, 466.16, 523.25], notes: ['C4', 'C#4', 'D#4', 'E4', 'F#4', 'G#4', 'A#4', 'C5'] },
-      { id: 'schoenberg_atonal', name: '쇤베르크 12음 무조성 (12-Tone Serialism)', description: '전통적인 화성 중력을 소멸시키기 위해 12개 반음을 단 한 번씩만 사용하여 수평/수직적으로 배열하는 음렬주의 현대 기법입니다. 음들의 유기적 서열을 파괴하여 극도의 혼란스러운 음정 간격을 양산합니다.', freqs: [261.63, 369.99, 349.23, 493.88, 277.18, 440.00, 311.13, 415.30], notes: ['C4', 'F#4', 'F4', 'B4', 'C#4', 'A4', 'D#4', 'G#4'] }
+      { 
+        id: 'minor_diatonic', 
+        name: '마이너 다이아토닉 화성 (Minor Key Harmony)', 
+        description: '자연/화성/가락단음계의 3대 단음계 구조에서 구축되는 화성 체계입니다.', 
+        details: '단조는 메이저 키와 달리 세 종류의 단음계를 복합적으로 활용하여 화성을 구성합니다. 멜로디의 하행 시에는 자연단음계, 도미넌트 종지 시에는 화성단음계, 상행 선율 선율선에서는 가락단음계를 교차 적용하므로 복잡한 3도/7도 음정 변화를 귀로 분간해야 합니다.',
+        freqs: [261.63, 311.13, 392.00, 466.16], 
+        notes: ['C4', 'D#4', 'G4', 'A#4'] 
+      },
+      { 
+        id: 'line_cliche', 
+        name: '라인 클리셰 (Line Cliché)', 
+        description: '하나의 화음이 지속되는 동안 단성부(내성 또는 상성)가 반음계적으로 하행/상행하는 선율 진행입니다.', 
+        details: '마이너 트라이어드나 메이저 트라이어드 내부에서 루트 음이 반음씩 하행하여 (C - Cmaj7 - C7 - C6 또는 Cm - Cm(Maj7) - Cm7 - Cm6) 화음에 역동성과 애절함을 부여하는 장치입니다. 오케스트레이션 및 영화음악 테마 선율 청음 시험의 단골 출제 항목입니다.',
+        freqs: [261.63, 329.63, 392.00, 493.88], 
+        notes: ['C4', 'E4', 'G4', 'B4'] 
+      },
+      { 
+        id: 'modal_interchange', 
+        name: '모달 인터체인지 화음 (Modal Interchange Chords)', 
+        description: '동일한 으뜸음을 공유하는 다른 선법이나 병렬 단조(Parallel Key)에서 차용해오는 화음군입니다.', 
+        details: 'C Major Key 곡 전개 중 C minor Key의 다이아토닉 코드인 ivm7(Fm7), bVImaj7(Abmaj7), bVII7(Bb7) 등을 일시 빌려와 연주합니다. 순간적으로 조성의 빛이 바래며 감정을 깊게 가라앉히거나 서정적인 감동을 극대화시키는 현대 고급 실용음악 작곡의 감초 기법입니다.',
+        freqs: [349.23, 415.30, 523.25, 622.25], 
+        notes: ['F4', 'G#4', 'C5', 'D#5'] 
+      },
+      { 
+        id: 'minor_251', 
+        name: '2-5-1 마이너 패턴 (Minor ii-V-I Progression)', 
+        description: '마이너 키에서 완결되는 가장 핵심적인 화성 종지 진행 패턴입니다.', 
+        details: 'iim7(b5) - V7(b9) - im7 (또는 im6)으로 전개됩니다. ii도 화음의 감5도 울림과 V도 화음의 플랫나인(b9) 텐션이 가지는 강렬한 긴장 구조가 토닉 마이너 화음의 차분함으로 해소되는 과정의 주파수 연동을 명확하게 파악하는 것이 입시 청음의 합격 공식입니다.',
+        freqs: [293.66, 349.23, 415.30, 523.25], 
+        notes: ['D4', 'F4', 'G#4', 'C5'] 
+      },
+      { 
+        id: 'blues_scale', 
+        name: '블루스 스케일과 재즈 블루스 (Blues Scales & Form)', 
+        description: '블루 노트(b3, b5, b7)를 탑재한 독특한 6음 음계 및 이를 응용한 12마디 화성 형식입니다.', 
+        details: '메이저 스케일에 블루스 고유의 민속적 음정인 b3(Eb), b5(Gb), b7(Bb)을 더해 구성합니다 (C-Eb-F-F#-G-Bb-C). 재즈 블루스는 12마디 형식 속에 세컨더리 도미넌트와 2-5 연동을 결합하여, 실기 시험장에서 즉흥 라인을 영창(시창)하거나 임시표를 받아적는 최종 보스 과제입니다.',
+        freqs: [261.63, 311.13, 349.23, 369.99, 392.00, 466.16, 523.25], 
+        notes: ['C4', 'D#4', 'F4', 'F#4', 'G4', 'A#4', 'C5'] 
+      }
     ]
   }
 ];
@@ -158,11 +249,11 @@ export default function ChallengePage() {
     if (!selectedItem) return;
     if (selectedItem.freqs.length === 1) {
       AudioHelper.playPianoTone(selectedItem.freqs[0], 1.5);
-    } else if (selectedItem.id.includes('scale') || selectedItem.id.includes('mode') || selectedItem.id.includes('atonal')) {
-      // 스케일/선률 형태는 순차적으로 재생
-      AudioHelper.playSequence(selectedItem.freqs, 0.5, 0.2);
+    } else if (selectedItem.id.includes('scale') || selectedItem.id.includes('mode') || selectedItem.id.includes('atonal') || selectedItem.id.includes('church') || selectedItem.id.includes('blues')) {
+      // 스케일 형태는 순차적으로 재생
+      AudioHelper.playSequence(selectedItem.freqs, 0.5, 0.25);
     } else {
-      // 3화음, 7화음 및 텐션은 동시(Chord) 재생
+      // 화음 및 텐션은 동시(Chord) 재생
       AudioHelper.playChord(selectedItem.freqs, 'sine', 1.8);
     }
 
@@ -426,7 +517,7 @@ export default function ChallengePage() {
       <header className="game-header">
         <div className="logo">🎓 <span>AZIT</span> 화성학 아카데미</div>
         <div className="stats-group">
-          <div className="stat-item">오늘의 학습 목표: <span className="stat-value">시창청음 & 화성 분석</span></div>
+          <div className="stat-item">오늘의 학습 목표: <span className="stat-value">정재열 재즈 화성학 마스터</span></div>
         </div>
       </header>
 
@@ -491,16 +582,20 @@ export default function ChallengePage() {
                       onClick={() => setSelectedItem(item)}
                     >
                       <span>{item.name}</span>
-                      {item.semitones && <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{item.semitones}</span>}
                     </button>
                   ))}
                 </div>
 
                 {selectedItem && (
-                  <div className="theory-detail-panel">
+                  <div className="theory-detail-panel" style={{ flex: '1 1 auto', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', marginLeft: '1.5rem' }}>
                     <div>
                       <h4 className="detail-title">{selectedItem.name}</h4>
-                      <p className="detail-text">{selectedItem.description}</p>
+                      <p className="detail-text" style={{ fontWeight: '600', color: 'var(--text-main)', marginBottom: '0.6rem' }}>
+                        {selectedItem.description}
+                      </p>
+                      <p className="detail-text" style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: '1.6' }}>
+                        {selectedItem.details}
+                      </p>
                     </div>
                     <button 
                       className="action-btn"
