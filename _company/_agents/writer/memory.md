@@ -87,3 +87,9 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-20] Master_Hooking_Framework와 Content_KPI_Funnel_Matrix를 기반으로, '재무적 리스크 예측' 콘텐츠 축에 대한 구체적인 영상 스크립트 초안(Hook 포함)을 3개 작성하세요. → 산출물 sessions/2026-05-20T20-31/writer.md
 - [2026-05-20] 이전 세션에서 논의된 스크립트 중 가장 잠재력이 높은 스크립트 1개를 선택하여, 유튜브 영상 제작에 최적화된 최종 대본으로 다듬고 데이터 기반 후킹 요소를 극대화하여 완성하라. → 산출물 sessions/2026-05-20T20-46/writer.md
 - [2026-05-20] Researcher가 제시한 3가지 주제 중 가장 잠재력이 높은 주제를 선택하여, 데이터 기반 ROI 예측과 '좌절 $\rightarrow$ 해결책 제시 $\rightarrow$ 승리' 서사 흐름을 따른 최종 영상 스크립트 초안(Hook 포함)을 작성하라. → 산출물 sessions/2026-05-20T21-16/writer.md
+- [2026-05-20] Production Manual에 제시된 시간별 흐름과 시각화 요소를 반영하여, 최종 대본을 영상 내 구체적인 비주얼 흐름에 맞게 미세 조정하고 완성도를 높여라. → 산출물 sessions/2026-05-20T21-46/writer.md
+- [2026-05-20] Designer가 확정한 Production Manual(시간별 비주얼 로드맵)에 맞춰, Master Script 내의 모든 텍스트를 최종 편집 지침(컷 분할 및 자막 타이밍)에 완벽하게 매핑하여 최종 실행 가능한 마스터 스크립트를 완성하라. → 산출물 sessions/2026-05-20T22-01/writer.md
+- [2026-05-20] Designer가 제공한 브랜드 시스템(Dark Blue #0A2463, Accent Yellow #FFD700)을 최종 마스터 스크립트에 완벽히 반영하여 실제 녹화 및 편집 준비를 시작하세요. → 산출물 sessions/2026-05-20T22-16/writer.md
+- [2026-05-20] Designer가 제작할 최종 시각화 컨셉(Gap Visualization)이 스크립트의 감성적 흐름과 데이터 기반 경고를 효과적으로 연결하는지 검토하고, 영상의 후킹 요소를 극대화하도록 자막 문구와 강조 포인트를 미세 조정하라. → 산출물 sessions/2026-05-20T22-31/writer.md
+- [2026-05-20] Designer가 제공한 Visual Master Guide와 이전 대본을 기반으로, Production Manual에 따른 최종 대본 및 시간별 컷 분할(타이밍) 확정 작업을 진행하라. → 산출물 sessions/2026-05-20T22-46/writer.md
+- [2026-05-20] 코다리(developer)가 제시한 E2E 테스트 결과 및 오류 지점을 분석하여, Production Manual 흐름과 백엔드 로직 간의 불일치를 해소하기 위해 스크립트와 비주얼 지침을 즉시 미세 조정하고 최종본을 확정하라. → 산출물 sessions/2026-05-20T23-01/writer.md

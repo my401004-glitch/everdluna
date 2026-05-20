@@ -89,3 +89,4 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-05-20] my_videos_check.py 실행 결과를 분석하여 조회수/시청 지속률이 낮은 영상들의 Hook 개선 방안을 도출하고 다음 콘텐츠 기획에 반영할 수 있는 구체적인 액션 플랜을 제시하라. → 산출물 sessions/2026-05-20T20-01/youtube.md
 - [2026-05-20] 현재 채널 상태(데이터 부재 상황 포함)를 가정하고, 가장 높은 구독자 증가 및 시청 지속률 개선을 위한 3가지 핵심 콘텐츠 기획 방향과 이에 따른 초기 Hook 전략의 개요를 작성하라. → 산출물 sessions/2026-05-20T20-16/youtube.md
 - [2026-05-20] Writer가 확정한 대본과 Designer의 시각화 컨셉(Gap Visualization)을 기반으로, 실제 영상 제작에 필요한 최종 편집 가이드라인(컷 분할 및 자막 타이밍)을 작성하여 콘텐츠 생산 준비를 시작하세요. → 산출물 sessions/2026-05-20T21-01/youtube.md
+- [2026-05-20] Production Manual에 따라, 확정된 비주얼 가이드라인(타임코드별 컷 분할 및 자막 타이밍)을 적용하여 실제 영상 편집 지침을 구체화하고, Writer가 최종 대본을 미세 조정하도록 준비하라. → 산출물 sessions/2026-05-20T21-46/youtube.md

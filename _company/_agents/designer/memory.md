@@ -106,3 +106,5 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-20] 선택된 최종 스크립트의 핵심 메시지(데이터 기반 경고)를 시각적으로 가장 강력하게 전달할 수 있는 썸네일 비주얼 레퍼런스와 Gap Bar 시각화 컨셉을 최종 확정하고, 이를 영상 제작에 바로 활용할 수 있도록 최종 디자인 에셋을 준비하라. → 산출물 sessions/2026-05-20T20-46/designer.md
 - [2026-05-20] Writer가 작성한 최종 스크립트와 앞서 확정된 'Gap Visualization' 디자인 시스템(Dark Blue/Accent Yellow)을 기반으로, 영상에 필요한 핵심 시각화 컨셉 3가지(썸네일 및 Gap Bar 레이아웃)의 최종 비주얼 레퍼런스를 제작하라. → 산출물 sessions/2026-05-20T21-16/designer.md
 - [2026-05-20] 이전 작업에서 도출된 3가지 최종 썸네일 컨셉 중 가장 높은 CTR을 유도할 것으로 예상되는 컨셉(Concept 1 또는 Concept 2)을 최종 선택하고, 해당 디자인 에셋을 고해상도로 확정하여 영상 업로드 준비에 필요한 모든 시각적 자산을 완성하세요. → 산출물 sessions/2026-05-20T21-31/designer.md
+- [2026-05-20] Writer가 최종 확정한 Master Script와 Production Manual의 타임라인을 기반으로, 영상 제작에 필요한 모든 시각적 자산(Gap Visualization 에셋 및 색상 적용)을 최종 검토하고 완벽하게 준비하라. → 산출물 sessions/2026-05-20T22-01/designer.md
+- [2026-05-20] Writer가 확정한 Visual Master Script v3.0과 브랜드 색상 코드(Dark Blue #0A2463, Accent Yellow #FFD700)를 기반으로 최종 자막 및 그래픽 시안을 즉시 제작하여 영상 편집팀에 전달할 수 있는 고해상도 에셋을 생성하라. → 산출물 sessions/2026-05-20T22-31/designer.md

@@ -1,0 +1,40 @@
+{
+  "project_name": "실용음악AI활용프로그램",
+  "brand_colors": {
+    "primary": "#0A2463",
+    "accent": "#FFD700",
+    "background": "#F5F5F5"
+  },
+  "typography": {
+    "title": "Montserrat Bold",
+    "body": "Noto Sans KR"
+  },
+  "visual_structure": [
+    {
+      "timecode_start": "01:35",
+      "timecode_end": "02:00",
+      "theme": "Pain Focus (Risk)",
+      "color_scheme": {
+        "background": "#F5F5F5",
+        "text_primary": "#0A2463",
+        "highlight_pain": "#FFD700"
+      },
+      "visual_element": "Gap Score Visualization (Negative)",
+      "instruction": "데이터의 손실(Loss)을 강조하는 시각적 요소. 배경은 Neutral Grey, 핵심 수치는 Dark Blue로 표시하고 위험 지표는 Accent Yellow로 강조."
+    },
+    {
+      "timecode_start": "03:10",
+      "timecode_end": "03:45",
+      "theme": "Process Focus (Methodology)",
+      "color_scheme": {
+        "background": "#F5F5F5",
+        "text_primary": "#0A2463",
+        "highlight_gain": "#FFD700"
+      },
+      "visual_element": "Process Flow Visualization (Method)",
+      "instruction": "AI 진단 및 코칭 과정의 객관성과 흐름을 시각화. 데이터 처리 과정은 Dark Blue로 안정감을 주고, 성공적인 방법론(Gain)은 Accent Yellow로 명확하게 강조."
+    }
+  ],
+  "final_assets_status": "Confirmed_High_Res",
+  "note": "모든 Gap Visualization 에셋은 Writer의 내러티브 수정과 코다리의 E2E 검증을 반영하여, '데이터 기반 경고' 프레임워크를 시각적으로 완벽히 구현함. 영상 편집팀에 즉시 전달 가능."
+}
