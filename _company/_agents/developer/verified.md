@@ -60,3 +60,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-20] 단순히 `video_uploader.py`를 실행하는 것은 'End-to-End 테스트'에 가깝습니다. 이 단계에서 실패하면 원인을 찾기 어렵고, 코드를 수정할 때마다 모든 것을 처음부터 다시 돌려야 하는 리스크가 있습니다. _(근거: 시니어 엔지니어 경험)_
 - [2026-05-20] videoTitle: string; // 필수: _(근거: Writer 제안 제목)_
 - [2026-05-20] videoDescription: string; // 필수: _(근거: Writer 설명 전략)_
+- [2026-05-20] CEO 지시와 이전 메모리를 검토했습니다. 현재 저희가 가장 시급하게 처리해야 할 부분은 콘텐츠 제작의 최종 단계인 **'시스템 안정화 및 업로드 파이프라인 완성'**입니다. _(근거: CEO의 지시사항)_
+- [2026-05-20] 1. `video_uploader.py`를 생성하여 `ContentManifest`와 `validate_content_manifest`를 사용하는 핵심 로직을 통합했습니다. _(근거: ContentManifest 스키마, manifestValidator 모듈)_
+- [2026-05-20] 2. 메인 함수 `process_and_upload_content`에 **Try-Except 블록**과 **유효성 검사(Validation)** 단계를 명확히 분리하여 시스템 안정성을 높였습니다. _(근거: 코딩 원칙 (에러 처리))_
