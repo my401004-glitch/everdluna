@@ -54,3 +54,4 @@ _현빈 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-20] Stripe/PayPal 연동을 통해 수집할 핵심 ROI 지표(매출, 전환율 등)를 정의하고, 이를 콘텐츠 전략에 반영하기 위한 KPI 프레임워크 초안을 작성하라. → 산출물 sessions/2026-05-20T15-46/business.md
 - [2026-05-20] Stripe/PayPal 연동을 위한 잠재 수익 예측 점수(`Potential_ROI`)를 계산하기 위한 구체적인 비즈니스 규칙 및 공식(`ROI_Calculation_Rulebook.md`)을 정의하라. → 산출물 sessions/2026-05-20T16-31/business.md
 - [2026-05-20] 잠재 ROI 계산 규칙서(`ROI_Calculation_Rulebook.md`)를 기반으로, 사용자의 '절실함'(GSM)과 '참여 가치'(EVS) 지표를 결합하여 가장 높은 전환율을 유도할 수 있는 마스터 콘텐츠 전략(Gap Visualization 적용) 초안을 작성하라. → 산출물 sessions/2026-05-20T16-46/business.md
+- [2026-05-20] Writer와 Designer가 제시한 콘텐츠 기획(제목, 후크)에 대해 잠재 ROI 지표(`Potential_ROI`)를 예측하고, 이 전략이 현재의 수익화 목표(10k 구독자 달성)에 미치는 영향을 분석하여 다음 영상 제작 우선순위를 최종 결정하라. → 산출물 sessions/2026-05-20T17-31/business.md

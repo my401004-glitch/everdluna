@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 21. 오전 2:16:50_
+_업데이트: 2026. 5. 21. 오전 2:47:47_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,27 +13,27 @@ _업데이트: 2026. 5. 21. 오전 2:16:50_
 - [2026-05-19] 고객의 고통(Pain Point) 포착과 인게이지먼트 유도 전략이 실제 콘텐츠 기획 단계에서 어떻게 반영되어야 하는지 분석하고, 릴스/피드 콘텐츠가 데이터 기반으로 지속적인 개선을 유도하는 피드백 루프를 설계하라. → 산출물 sessions/2026-05-19T06-58/instagram.md
 - [2026-05-19] writer가 생성한 각 후크 버전에 대해, 가장 높은 인게이지먼트를 유도할 수 있는 최적의 게시 시간, 핵심 해시태그 전략 및 포맷(릴스/피드)별 구체적인 실행 방안을 제시하라. → 산출물 sessions/2026-05-19T07-44/instagram.md
 ### 🎨 Designer
-- [2026-05-20] Business 에이전트가 제시한 핵심 ROI 기반의 마스터 콘텐츠 전략(Gap Visualization 원칙 적용)을 시각화하는 디자인 시스템 및 템플릿 초안을 제작하라. → 산출물 sessions/2026-05-20T15-46/designer.md
-- [2026-05-20] Writer가 작성한 스크립트를 기반으로, 'Gap Visualization' 원칙과 브랜드 비주얼 시스템('Dark Blue'/'Accent Yellow')을 일관되게 적용하여, 가장 높은 CTR을 유도할 최종 유튜브 썸네일 시안의 레이아웃 및 핵심 비주얼 컨셉을 확정하고 이미지 파일 생성을 준비할 것. → 산출물 sessions/2026-05-20T17-01/designer.md
 - [2026-05-20] 이전 작업 로그에서 확정된 'Gap Visualization 극대화' 컨셉을 기반으로, 최종 유튜브 썸네일 이미지 파일 생성을 즉시 완료하고 관련 에셋을 ContentManifest에 등록하라. → 산출물 sessions/2026-05-20T17-16/designer.md
+- [2026-05-20] Writer가 제시한 핵심 후크 스크립트와 콘텐츠 전략에 맞춰, ContentManifest에 등록된 디자인 시스템('Dark Blue'/'Accent Yellow', 'Gap Visualization')을 완벽하게 반영한 최종 유튜브 썸네일 레이아웃 시안을 확정하고 이미지 생성을 준비하라. → 산출물 sessions/2026-05-20T17-31/designer.md
+- [2026-05-20] Writer가 확정한 후크 및 Designer의 디자인 시스템('Dark Blue'/'Accent Yellow', 'Gap Visualization')을 완벽하게 반영하여, 모든 콘텐츠에 사용될 최종 유튜브 썸네일 이미지 파일 생성을 즉시 완료하고 ContentManifest에 등록하라. → 산출물 sessions/2026-05-20T17-46/designer.md
 ### 💻 코다리
 - [2026-05-20] ContentManifest 스키마와 Validator 모듈 구현을 최우선으로 진행하고, video_uploader.py의 최종 검증 루프를 완성하여 시스템 안정성을 확보하라. → 산출물 sessions/2026-05-20T16-01/developer.md
 - [2026-05-20] ContentManifest의 유효성을 검사하는 manifest_validator.py 모듈을 video_uploader.py에 통합하고, 전체 파이프라인의 End-to-End(E2E) 테스트를 실행하여 시스템 안정성을 최종적으로 입증해야 합니다. → 산출물 sessions/2026-05-20T16-16/developer.md
 - [2026-05-20] Business 에이전트가 제시한 $	ext{pROI}$ 계산 규칙에 따라, 데이터 무결성을 확보할 수 있는 최소한의 DB 스키마 수정 요구사항과 API 엔드포인트 설계 초안을 정리하라. → 산출물 sessions/2026-05-20T16-46/developer.md
 ### 💼 현빈
-- [2026-05-20] Stripe/PayPal 연동을 통해 수집할 핵심 ROI 지표(매출, 전환율 등)를 정의하고, 이를 콘텐츠 전략에 반영하기 위한 KPI 프레임워크 초안을 작성하라. → 산출물 sessions/2026-05-20T15-46/business.md
 - [2026-05-20] Stripe/PayPal 연동을 위한 잠재 수익 예측 점수(`Potential_ROI`)를 계산하기 위한 구체적인 비즈니스 규칙 및 공식(`ROI_Calculation_Rulebook.md`)을 정의하라. → 산출물 sessions/2026-05-20T16-31/business.md
 - [2026-05-20] 잠재 ROI 계산 규칙서(`ROI_Calculation_Rulebook.md`)를 기반으로, 사용자의 '절실함'(GSM)과 '참여 가치'(EVS) 지표를 결합하여 가장 높은 전환율을 유도할 수 있는 마스터 콘텐츠 전략(Gap Visualization 적용) 초안을 작성하라. → 산출물 sessions/2026-05-20T16-46/business.md
+- [2026-05-20] Writer와 Designer가 제시한 콘텐츠 기획(제목, 후크)에 대해 잠재 ROI 지표(`Potential_ROI`)를 예측하고, 이 전략이 현재의 수익화 목표(10k 구독자 달성)에 미치는 영향을 분석하여 다음 영상 제작 우선순위를 최종 결정하라. → 산출물 sessions/2026-05-20T17-31/business.md
 ### 📱 영숙
-- [2026-05-20] 개발팀의 E2E 테스트 진행 상황을 모니터링하고, 다음 단계 기능 개발(예: Stripe/PayPal 연동)에 필요한 데이터 무결성 확보를 위한 보고 준비를 시작합니다. → 산출물 sessions/2026-05-20T16-16/secretary.md
 - [2026-05-20] Business 에이전트가 정의한 `ROI_Calculation_Rulebook.md` 초안을 바탕으로, 코다리에게 필요한 데이터 모델(`Potential_ROI` 필드) 및 API 엔드포인트 설계에 필요한 초기 요구사항 목록을 정리하라. → 산출물 sessions/2026-05-20T16-31/secretary.md
 - [2026-05-20] 위 두 결과물을 취합하여 다음 주 목표로 설정하고, 코다리에게 기술 구현에 필요한 구체적인 개발 목록(Action Items)을 정리하여 보고하라. → 산출물 sessions/2026-05-20T16-46/secretary.md
+- [2026-05-20] Designer와 Writer의 작업 진행 상황(최종 썸네일 시안 및 후크 확정본)을 요약하여, 다음 단계인 'Funnel Blueprint' 작업을 위해 필요한 최종 결과물을 정리하고 다음 액션 목록에 반영하라. → 산출물 sessions/2026-05-20T17-46/secretary.md
 ### 🎵 루나
 - [2026-05-19] 📥 새 지식 입수 — **student_growth_report_generator_v_1.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-19/student_growth_report_generator_v_1.html)
 ### ✍️ Writer
-- [2026-05-20] 확정된 영상 콘텐츠 기획(스크립트)를 기반으로, 제목(Title), 상세 설명(Description), 그리고 핵심 해시태그 전략을 최적화하여 제안한다. → 산출물 sessions/2026-05-20T14-46/writer.md
 - [2026-05-20] Designer가 제시한 마스터 콘텐츠 전략에 따라, 가장 높은 전환율 경로를 선택하여 해당 주제의 강력한 후크 스크립트와 상세 설명, 핵심 해시태그 전략 초안을 작성하라. → 산출물 sessions/2026-05-20T15-46/writer.md
 - [2026-05-20] Master_Content_Strategy_V1.md에 정의된 Pain Amplification $ightarrow$ Diagnosis 퍼널 구조를 기반으로, 가장 높은 전환율을 유도할 핵심 영상의 최종 스크립트 초안(후크 포함)을 작성하고, Gap Score를 활용하여 시청자의 불안함을 극대화하는 문구를 포함할 것. → 산출물 sessions/2026-05-20T17-01/writer.md
+- [2026-05-20] ContentManifest와 Gap Visualization 원칙을 기반으로, 가장 높은 조회수를 유도할 핵심 후크 스크립트(제목, 상세 설명 포함)를 작성하고, 디자인팀과 시각적 컨셉을 최종적으로 통합하여 다음 영상의 전체 기획안 초안을 제시하라. → 산출물 sessions/2026-05-20T17-31/writer.md
 ### 🔍 Researcher
 - [2026-05-20] 현재 시점의 미국 및 한국 증시 최신 데이터를 수집하고, 주요 시장 지표와 최근 추세를 분석하여 보고서를 작성하라. → 산출물 sessions/2026-05-20T12-20/researcher.md
 - [2026-05-20] 현재 시장 트렌드와 경쟁사 분석을 통해, 이번 영상 주제에 적용할 수 있는 가장 최신의 '객관적 증거(Proof)' 데이터 포인트를 3가지 이상 수집하고 이를 스크립트에 통합할 방안을 제안하라. → 산출물 sessions/2026-05-20T12-24/researcher.md
