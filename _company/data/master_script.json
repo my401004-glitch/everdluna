@@ -1,0 +1,11 @@
+{
+    "title": "AI 보컬 성장 리포트 마스터 스크립트",
+    "sections": [
+        {"name": "Hook", "timecode": "00:00-00:15", "content": "강한 경고 제시"},
+        {"name": "Problem_Area", "timecode": "00:15-00:45", "content": "Gap Score 진단 시작 구간"}
+    ],
+    "segments": {
+        "Hook": {"start_time": "00:00", "data_requirements": {"kpi": ["Growth"]}, "visual_requirements": {"asset_ids": ["INITIAL_HOOK"]}},
+        "Problem_Area": {"start_time": "00:15", "data_requirements": {"kpi": ["GapScore", "Engagement"]}, "visual_requirements": {"asset_ids": ["GAP_SCORE", "A_VISUAL_ASSET"]}}
+    }
+}
