@@ -52,3 +52,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-20] | **오류 타이틀** | Error Title (`Pain Message`) | `Montserrat Bold` / Dark Blue (`#0A2463`) | 핵심 문제(Pain)를 강력하게 강조하여 심각성을 전달함. | | _(근거: Designer 검증된 지식)_
 - [2026-05-20] | **상세 설명 (Body)** | Error Detail (`Gain Suggestion`) | `Noto Sans KR` / Dark Blue (`#0A2463`) | 구체적인 해결책(Gain)을 가독성 있게 제시함. 신뢰감을 바탕으로 행동 유도. | | _(근거: Designer 검증된 지식)_
 - [2026-05-20] | **CTA 버튼** | Action Button (if applicable) | `Accent Yellow (#FFD700)` 배경, Dark Blue 텍스트 | 사용자가 즉시 취해야 할 행동(Gain)을 강력하게 유도함. | | _(근거: Designer 검증된 지식)_
+- [2026-05-20] | **메인 컬러 (신뢰/안정)** | Dark Blue (`#0A2463`) | 배경, 핵심 정보 영역. 전문성과 신뢰감을 극대화합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-05-20] | **액센트 컬러 (행동 유도)** | Accent Yellow (`#FFD700`) | Pain(위험) 표시, Gain(이득), 최종 CTA 버튼에 사용. 즉각적인 시선 집중 및 행동 유도. | | _(근거: Designer 검증된 지식)_
+- [2026-05-20] | **타이포그래피 (Title)** | Montserrat Bold | 핵심 경고 문구(Pain)에 사용. 강력한 메시지 전달력 확보. | | _(근거: Designer 검증된 지식)_
+- [2026-05-20] | **타이포그래피 (Body)** | Noto Sans KR | 구체적인 데이터 및 상세 설명 텍스트에 사용. 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
+- [2026-05-20] | **배경/데이터** | Neutral Grey (`#F5F5F5`) | 본문 텍스트 배경, 데이터 영역. Dark Blue와의 명확한 대비를 통해 가독성 극대화. | | _(근거: Designer 검증된 지식)_
