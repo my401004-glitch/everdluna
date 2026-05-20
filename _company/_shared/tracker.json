@@ -1,0 +1,15 @@
+{
+  "tasks": [
+    {
+      "id": "20260520122041-kwdm",
+      "title": "미국/한국 증시 분석",
+      "description": "자료를 활용해서 미국,한국 증시좀 분석해줘",
+      "owner": "agent",
+      "createdAt": "2026-05-20T12:20:41.178Z",
+      "status": "in_progress",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": []
+    }
+  ]
+}
