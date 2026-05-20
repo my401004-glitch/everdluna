@@ -3,7 +3,7 @@
 자동으로 유튜브에 영상을 업로드하는 도구입니다.
 
 사용법:
-python video_uploader.py <video_file_path> <title> <description> <tags> <privacy_status>
+python3 video_uploader.py <video_file_path> <title> <description> <tags> <privacy_status>
 """
 import os
 import sys

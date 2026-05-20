@@ -14,7 +14,7 @@
 ## 실행 방법
 패널의 [▶ 실행] 버튼을 누르거나 터미널에서:
 ```bash
-python trend_sniper.py
+python3 trend_sniper.py
 ```
 
 ## 출력

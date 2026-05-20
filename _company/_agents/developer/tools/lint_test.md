@@ -7,7 +7,7 @@
 1. `package.json` 의 `scripts.{typecheck, lint, test, build}` 자동 감지·실행
 2. scripts 없으면 직접:
    - `.ts/.tsx` 있고 `tsconfig.json` 있으면 → `npx tsc --noEmit`
-   - `.py` 파일 있으면 → `python -m py_compile <각 파일>` (최대 30개)
+   - `.py` 파일 있으면 → `python3 -m py_compile <각 파일>` (최대 30개)
 3. 마크다운 리포트 — 각 검사 통과/실패 + 실패 시 마지막 15줄
 
 ## 설정

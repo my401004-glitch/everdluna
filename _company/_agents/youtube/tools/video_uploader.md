@@ -6,7 +6,7 @@
 ## 실행 방법 (터미널)
 
 ```bash
-python video_uploader.py --file "C:/my_video.mp4" --title "테스트 영상 제목" --description "이것은 영상 설명입니다." --tags "음악,화성학,AI" --privacy-status "private"
+python3 video_uploader.py --file "C:/my_video.mp4" --title "테스트 영상 제목" --description "이것은 영상 설명입니다." --tags "음악,화성학,AI" --privacy-status "private"
 ```
 
 * `privacy-status`는 `public`(공개), `private`(비공개), `unlisted`(일부 공개) 중 선택할 수 있습니다. 기본값은 `private`입니다.

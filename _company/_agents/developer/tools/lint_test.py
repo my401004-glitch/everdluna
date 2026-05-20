@@ -5,7 +5,7 @@
 코다리가 코드를 만든 직후 이 도구를 호출하면:
   1. package.json 의 scripts 자동 감지 (test/lint/typecheck/build)
   2. 또는 .ts/.tsx 파일 있으면 npx tsc --noEmit
-  3. .py 파일 있으면 python -m py_compile <각 파일>
+  3. .py 파일 있으면 python3 -m py_compile <각 파일>
   4. 결과 마크다운 리포트
 
 config:

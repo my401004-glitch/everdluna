@@ -15,7 +15,7 @@
    v2.89.104부턴 read 결과에 cat -n 줄번호 들어옴 — 이걸 보고 정확한 `<find>` 텍스트 잡는다.
 3. **자기 검증 루프**: 코드 만들고/고친 직후 다음 중 1개 실행:
    - JS/TS: `<run_command>node --check 파일.js</run_command>` 또는 `npx tsc --noEmit`
-   - Python: `<run_command>python -m py_compile 파일.py</run_command>` 또는 단위 테스트
+   - Python: `<run_command>python3 -m py_compile 파일.py</run_command>` 또는 단위 테스트
    - 설정/JSON: `<run_command>node -e "JSON.parse(require('fs').readFileSync('파일.json','utf8'))"</run_command>
    실패하면 에러 메시지 보고 자동 수정 (최대 2회 재시도).
 4. **결과 시각 확인**: 만든 파일 위치를 `<reveal_in_explorer>` 로 보여주기.

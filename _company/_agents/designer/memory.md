@@ -110,3 +110,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-20] Writer가 확정한 Visual Master Script v3.0과 브랜드 색상 코드(Dark Blue #0A2463, Accent Yellow #FFD700)를 기반으로 최종 자막 및 그래픽 시안을 즉시 제작하여 영상 편집팀에 전달할 수 있는 고해상도 에셋을 생성하라. → 산출물 sessions/2026-05-20T22-31/designer.md
 - [2026-05-20] Writer가 미세 조정한 최신 스크립트 및 코다리의 통합 검증 결과를 기반으로, Gap Visualization 에셋(시각화 결과)이 모든 영상 편집 요구사항을 완벽히 충족하는지 최종 확인하고 고해상도로 확정하라. → 산출물 sessions/2026-05-20T23-01/designer.md
 - [2026-05-20] Developer의 테스트 결과를 바탕으로, 최종 생성된 JSON 에셋(`final_Gap_Visualization_Assets.json`)이 실제 영상 편집팀의 워크플로우에 완벽히 통합될 수 있도록 라이브러리 및 파일 구조 정리 작업을 완료하라. → 산출물 sessions/2026-05-20T23-16/designer.md
+- [2026-05-20] 개발팀이 제공한 통합 테스트 결과 및 Visual Master Script를 기반으로, 최종 자막 및 그래픽 시안(`Visual_Asset_Mapping_Guide.md`)에 적용할 규칙을 확정하고 명확한 가이드라인을 문서화하라. → 산출물 sessions/2026-05-20T23-31/designer.md
