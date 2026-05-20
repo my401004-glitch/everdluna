@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 21. 오전 3:19:01_
+_업데이트: 2026. 5. 21. 오전 3:33:56_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 5. 21. 오전 3:19:01_
 - [2026-05-19] 고객의 고통(Pain Point) 포착과 인게이지먼트 유도 전략이 실제 콘텐츠 기획 단계에서 어떻게 반영되어야 하는지 분석하고, 릴스/피드 콘텐츠가 데이터 기반으로 지속적인 개선을 유도하는 피드백 루프를 설계하라. → 산출물 sessions/2026-05-19T06-58/instagram.md
 - [2026-05-19] writer가 생성한 각 후크 버전에 대해, 가장 높은 인게이지먼트를 유도할 수 있는 최적의 게시 시간, 핵심 해시태그 전략 및 포맷(릴스/피드)별 구체적인 실행 방안을 제시하라. → 산출물 sessions/2026-05-19T07-44/instagram.md
 ### 🎨 Designer
-- [2026-05-20] Writer가 제시한 핵심 후크 스크립트와 콘텐츠 전략에 맞춰, ContentManifest에 등록된 디자인 시스템('Dark Blue'/'Accent Yellow', 'Gap Visualization')을 완벽하게 반영한 최종 유튜브 썸네일 레이아웃 시안을 확정하고 이미지 생성을 준비하라. → 산출물 sessions/2026-05-20T17-31/designer.md
 - [2026-05-20] Writer가 확정한 후크 및 Designer의 디자인 시스템('Dark Blue'/'Accent Yellow', 'Gap Visualization')을 완벽하게 반영하여, 모든 콘텐츠에 사용될 최종 유튜브 썸네일 이미지 파일 생성을 즉시 완료하고 ContentManifest에 등록하라. → 산출물 sessions/2026-05-20T17-46/designer.md
 - [2026-05-20] Writer의 스토리라인과 Developer가 정의한 기술 구조를 통합하여, 모든 콘텐츠 단계에 적용될 'Gap Visualization' 디자인 시스템의 상세 레이아웃 및 컴포넌트 명세를 확정하라. → 산출물 sessions/2026-05-20T18-16/designer.md
+- [2026-05-20] 확정된 디자인 시스템(Dark Blue/Accent Yellow, Gap Visualization)을 기반으로 'Gap Bar' 컴포넌트의 시각적 프로토타입을 즉시 제작하여 개발팀에 전달하라. → 산출물 sessions/2026-05-20T18-31/designer.md
 ### 💻 코다리
-- [2026-05-20] Business 에이전트가 제시한 $	ext{pROI}$ 계산 규칙에 따라, 데이터 무결성을 확보할 수 있는 최소한의 DB 스키마 수정 요구사항과 API 엔드포인트 설계 초안을 정리하라. → 산출물 sessions/2026-05-20T16-46/developer.md
 - [2026-05-20] Writer가 설계한 스토리라인의 각 전환 지점이 작동하도록, 필요한 DB 스키마 변경 사항 및 핵심 API 엔드포인트(`diagnosis_score`, `user/progress` 등)의 기술 명세서를 구체화하라. → 산출물 sessions/2026-05-20T18-01/developer.md
 - [2026-05-20] 코다리가 설계한 DB 스키마 및 API 명세서(v1.0)를 기반으로, 콘텐츠 흐름에 필요한 최종 데이터 모델(Schema)을 확정하고 관련 유효성 검증 로직(Validator)의 초안을 작성하라. → 산출물 sessions/2026-05-20T18-16/developer.md
+- [2026-05-20] 코다리가 정의한 `ValidationUtility` 레이어의 실제 Python 모듈 구현 및 통합 테스트 코드를 작성하고, 데이터 무결성 검증 루프가 성공적으로 작동하는지 E2E 테스트를 실행하라. → 산출물 sessions/2026-05-20T18-31/developer.md
 ### 💼 현빈
 - [2026-05-20] Stripe/PayPal 연동을 위한 잠재 수익 예측 점수(`Potential_ROI`)를 계산하기 위한 구체적인 비즈니스 규칙 및 공식(`ROI_Calculation_Rulebook.md`)을 정의하라. → 산출물 sessions/2026-05-20T16-31/business.md
 - [2026-05-20] 잠재 ROI 계산 규칙서(`ROI_Calculation_Rulebook.md`)를 기반으로, 사용자의 '절실함'(GSM)과 '참여 가치'(EVS) 지표를 결합하여 가장 높은 전환율을 유도할 수 있는 마스터 콘텐츠 전략(Gap Visualization 적용) 초안을 작성하라. → 산출물 sessions/2026-05-20T16-46/business.md
