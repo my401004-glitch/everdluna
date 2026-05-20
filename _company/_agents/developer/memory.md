@@ -103,3 +103,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-20] Writer가 설계한 스토리라인의 각 전환 지점이 작동하도록, 필요한 DB 스키마 변경 사항 및 핵심 API 엔드포인트(`diagnosis_score`, `user/progress` 등)의 기술 명세서를 구체화하라. → 산출물 sessions/2026-05-20T18-01/developer.md
 - [2026-05-20] 코다리가 설계한 DB 스키마 및 API 명세서(v1.0)를 기반으로, 콘텐츠 흐름에 필요한 최종 데이터 모델(Schema)을 확정하고 관련 유효성 검증 로직(Validator)의 초안을 작성하라. → 산출물 sessions/2026-05-20T18-16/developer.md
 - [2026-05-20] 코다리가 정의한 `ValidationUtility` 레이어의 실제 Python 모듈 구현 및 통합 테스트 코드를 작성하고, 데이터 무결성 검증 루프가 성공적으로 작동하는지 E2E 테스트를 실행하라. → 산출물 sessions/2026-05-20T18-31/developer.md
+- [2026-05-20] 코다리: 구현된 ValidationUtility를 실제 API 입력 데이터에 연결하여 End-to-End(E2E) 테스트 흐름을 구축하고, 이 테스트 결과가 Designer의 시각화 프로토타입과 정확히 매핑되는지 확인하는 통합 테스트 스크립트를 작성하세요. → 산출물 sessions/2026-05-20T18-46/developer.md
