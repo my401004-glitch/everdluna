@@ -27,7 +27,18 @@ def _load(p):
     return {}
 
 
+def _init_env_path():
+    try:
+        shell = os.environ.get("SHELL", "/bin/bash")
+        r = subprocess.run(f"{shell} -l -c 'echo $PATH'", shell=True, capture_output=True, text=True, timeout=3)
+        if r.returncode == 0 and r.stdout.strip():
+            os.environ["PATH"] = r.stdout.strip()
+    except Exception:
+        pass
+
+
 def main():
+    _init_env_path()
     if not shutil.which("ffmpeg"):
         print("❌ ffmpeg가 설치돼있지 않아요.")
         print("  macOS: brew install ffmpeg")
@@ -41,7 +52,7 @@ def main():
     if not video_path:
         print("❌ VIDEO_PATH 미설정. ⚙️ 클릭해서 영상 파일 경로 입력해주세요.")
         sys.exit(1)
-    video_path = os.path.expanduser(video_path)
+    video_path = os.path.abspath(os.path.expanduser(video_path))
     if not os.path.exists(video_path):
         print(f"❌ 영상 파일 없음: {video_path}")
         sys.exit(1)
@@ -50,6 +61,8 @@ def main():
     music_path = (cfg.get("MUSIC_PATH") or "").strip()
     if not music_path:
         music_path = gen.get("LAST_OUTPUT") or ""
+    if music_path:
+        music_path = os.path.abspath(os.path.expanduser(music_path))
     if not music_path or not os.path.exists(music_path):
         print("❌ BGM 파일 없음. 먼저 'music_generate.py' 실행해서 BGM 생성하거나,")
         print("  ⚙️에서 MUSIC_PATH 직접 지정.")
@@ -57,6 +70,7 @@ def main():
 
     bgm_volume = float(cfg.get("BGM_VOLUME", 0.3))  # 0.0~1.0, 디폴트 30%
     output_path = cfg.get("OUTPUT_PATH") or video_path.rsplit(".", 1)[0] + "_with_bgm.mp4"
+    output_path = os.path.abspath(os.path.expanduser(output_path))
 
     _log(f"영상: {video_path}")
     _log(f"BGM: {music_path}")

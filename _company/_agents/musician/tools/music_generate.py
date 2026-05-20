@@ -126,7 +126,18 @@ def _generate_acestep(setup, prompt, duration_sec, output_path):
     return True, output_path
 
 
+def _init_env_path():
+    try:
+        shell = os.environ.get("SHELL", "/bin/bash")
+        r = subprocess.run(f"{shell} -l -c 'echo $PATH'", shell=True, capture_output=True, text=True, timeout=3)
+        if r.returncode == 0 and r.stdout.strip():
+            os.environ["PATH"] = r.stdout.strip()
+    except Exception:
+        pass
+
+
 def main():
+    _init_env_path()
     setup = _load(SETUP_CONFIG)
     if not setup.get("INSTALLED_AT"):
         print("❌ 음악 모델 미설치.")

@@ -215,7 +215,18 @@ def _install_acestep(model_key, install_dir):
     return True, venv_python
 
 
+def _init_env_path():
+    try:
+        shell = os.environ.get("SHELL", "/bin/bash")
+        r = subprocess.run(f"{shell} -l -c 'echo $PATH'", shell=True, capture_output=True, text=True, timeout=3)
+        if r.returncode == 0 and r.stdout.strip():
+            os.environ["PATH"] = r.stdout.strip()
+    except Exception:
+        pass
+
+
 def main():
+    _init_env_path()
     cfg = _load_config()
 
     # 기본 의존성
