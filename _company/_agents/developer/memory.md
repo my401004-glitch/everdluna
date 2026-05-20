@@ -97,3 +97,5 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-20] 최종 확정된 콘텐츠 기획 및 디자인 사양(`ContentManifest`)이 `video_uploader.py` 스크립트가 정상적으로 작동하도록 시스템 안정성을 최종 점검하고, 모든 메타데이터를 준비한다. → 산출물 sessions/2026-05-20T14-46/developer.md
 - [2026-05-20] 최종 확정된 ContentManifest 스키마와 Validator 모듈 구현을 최우선으로 진행하여 시스템 안정성을 확보하고, video_uploader.py의 최종 검증 루프를 완성한다. → 산출물 sessions/2026-05-20T15-01/developer.md
 - [2026-05-20] 생성된 3개의 썸네일 이미지 경로를 ContentManifest에 등록하는 작업 및 video_uploader.py의 최종 검증 루프 통합을 실행하여 시스템 안정성을 확보하라. → 산출물 sessions/2026-05-20T15-16/developer.md
+- [2026-05-20] ContentManifest 스키마와 Validator 모듈 구현을 최우선으로 진행하고, video_uploader.py의 최종 검증 루프를 완성하여 시스템 안정성을 확보하라. → 산출물 sessions/2026-05-20T16-01/developer.md
+- [2026-05-20] ContentManifest의 유효성을 검사하는 manifest_validator.py 모듈을 video_uploader.py에 통합하고, 전체 파이프라인의 End-to-End(E2E) 테스트를 실행하여 시스템 안정성을 최종적으로 입증해야 합니다. → 산출물 sessions/2026-05-20T16-16/developer.md

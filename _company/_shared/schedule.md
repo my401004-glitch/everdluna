@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 21. 오전 12:50:02_
+_업데이트: 2026. 5. 21. 오전 1:33:22_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,17 +17,17 @@ _업데이트: 2026. 5. 21. 오전 12:50:02_
 - [2026-05-20] 확정된 디자인 사양(`Dark Blue`/`Accent Yellow`, 'Gap Visualization' 원칙)을 기반으로, 실제 영상 업로드에 사용될 최종 이미지 파일 생성을 즉시 완료한다. → 산출물 sessions/2026-05-20T15-01/designer.md
 - [2026-05-20] Business 에이전트가 제시한 핵심 ROI 기반의 마스터 콘텐츠 전략(Gap Visualization 원칙 적용)을 시각화하는 디자인 시스템 및 템플릿 초안을 제작하라. → 산출물 sessions/2026-05-20T15-46/designer.md
 ### 💻 코다리
-- [2026-05-20] 최종 확정된 콘텐츠 기획 및 디자인 사양(`ContentManifest`)이 `video_uploader.py` 스크립트가 정상적으로 작동하도록 시스템 안정성을 최종 점검하고, 모든 메타데이터를 준비한다. → 산출물 sessions/2026-05-20T14-46/developer.md
-- [2026-05-20] 최종 확정된 ContentManifest 스키마와 Validator 모듈 구현을 최우선으로 진행하여 시스템 안정성을 확보하고, video_uploader.py의 최종 검증 루프를 완성한다. → 산출물 sessions/2026-05-20T15-01/developer.md
 - [2026-05-20] 생성된 3개의 썸네일 이미지 경로를 ContentManifest에 등록하는 작업 및 video_uploader.py의 최종 검증 루프 통합을 실행하여 시스템 안정성을 확보하라. → 산출물 sessions/2026-05-20T15-16/developer.md
+- [2026-05-20] ContentManifest 스키마와 Validator 모듈 구현을 최우선으로 진행하고, video_uploader.py의 최종 검증 루프를 완성하여 시스템 안정성을 확보하라. → 산출물 sessions/2026-05-20T16-01/developer.md
+- [2026-05-20] ContentManifest의 유효성을 검사하는 manifest_validator.py 모듈을 video_uploader.py에 통합하고, 전체 파이프라인의 End-to-End(E2E) 테스트를 실행하여 시스템 안정성을 최종적으로 입증해야 합니다. → 산출물 sessions/2026-05-20T16-16/developer.md
 ### 💼 현빈
-- [2026-05-19] 개발 및 디자인 작업의 우선순위를 확정하기 위해, Landing Kit의 유료 모듈 설계(Pain $ightarrow$ Gain 기반)와 예상 수익화 경로에 대한 최종 API 요구사항을 정의하여 개발팀에 전달하라. → 자격증명 부족으로 차단됨
 - [2026-05-20] 제안된 제목/설명/해시태그 전략을 바탕으로 A/B 테스트에 대비한 초기 마케팅 KPI(예상 CTR)를 분석하고 실행 계획을 수립한다. → 산출물 sessions/2026-05-20T14-46/business.md
 - [2026-05-20] Stripe/PayPal 연동을 통해 수집할 핵심 ROI 지표(매출, 전환율 등)를 정의하고, 이를 콘텐츠 전략에 반영하기 위한 KPI 프레임워크 초안을 작성하라. → 산출물 sessions/2026-05-20T15-46/business.md
+- [2026-05-20] Stripe/PayPal 연동을 위한 잠재 수익 예측 점수(`Potential_ROI`)를 계산하기 위한 구체적인 비즈니스 규칙 및 공식(`ROI_Calculation_Rulebook.md`)을 정의하라. → 산출물 sessions/2026-05-20T16-31/business.md
 ### 📱 영숙
-- [2026-05-20] 개발자 에이전트의 진단 결과와 개선된 코드에 대한 변경 사항을 요약하여 텔레그램 보고서를 준비할 것. → 산출물 sessions/2026-05-20T11-45/secretary.md
-- [2026-05-20] 위 작업을 수행하는 과정에서 발생하는 모든 중간 결과물과 오류를 실시간으로 모니터링하고, 다음 단계로의 흐름을 추적하여 보고하라. → 산출물 sessions/2026-05-20T15-16/secretary.md
-- [2026-05-20] 이전 단계에서 수행된 코다리님의 통합 테스트 결과 및 영숙님의 검증 리포트(`test_report.md`)를 취합하여 시스템 안정성 검증 보고서를 작성해줘. → 산출물 sessions/2026-05-20T15-31/secretary.md
+- [2026-05-20] 개발 작업에 필요한 리소스 및 다음 단계(레오/디자이너의 후속 작업) 일정을 확인하고, 진행 상황을 정리하여 보고할 준비를 하라. → 산출물 sessions/2026-05-20T16-01/secretary.md
+- [2026-05-20] 개발팀의 E2E 테스트 진행 상황을 모니터링하고, 다음 단계 기능 개발(예: Stripe/PayPal 연동)에 필요한 데이터 무결성 확보를 위한 보고 준비를 시작합니다. → 산출물 sessions/2026-05-20T16-16/secretary.md
+- [2026-05-20] Business 에이전트가 정의한 `ROI_Calculation_Rulebook.md` 초안을 바탕으로, 코다리에게 필요한 데이터 모델(`Potential_ROI` 필드) 및 API 엔드포인트 설계에 필요한 초기 요구사항 목록을 정리하라. → 산출물 sessions/2026-05-20T16-31/secretary.md
 ### 🎵 루나
 - [2026-05-19] 📥 새 지식 입수 — **student_growth_report_generator_v_1.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-19/student_growth_report_generator_v_1.html)
 ### ✍️ Writer

@@ -220,3 +220,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-20] | **3. 참여 (Engagement)** | 콘텐츠를 '재활용'할 가치 발견 | 🔸 Save Rate & Share Rate | Instagram Insights, 댓글 분석 (키워드 빈도) | **Save/Share Ratio > 2:1** (사용자가 나중에 다시 보거나 남에게 공유하고 싶다는 증거). | _(근거: sessions/2026-05-18T13:43/business.md)_
 - [2026-05-20] | **4. 전환 (Conversion)** | 유료 서비스 이용 행동 촉발 | 💎 **Free Test Conversion Rate (CR):** 무료 진단 신청 비율 | 웹사이트 분석 도구 (Google Analytics) | **CR > 5%**. (진단 테스트의 가치 증명에 성공했음을 의미). | _(근거: sessions/2026-05-18T14:19/business.md)_
 - [2026-05-20] | **5. 유지/재구매 (Retention)** | LTV 극대화 및 이탈 방지 | 💎 구독 전환율 (Subscription CR) / 재진입률(Revisit Rate) | CRM 시스템, 결제 게이트웨이 데이터 | **구독 CR > 2%** (KPI 대시보드 운영의 최종 목표). | _(근거: sessions/2026-05-18T13:08/business.md)_
+- [2026-05-20] 현재 PayPal 매출 데이터 분석은 환경 설정 문제로 인해 실패했으나, 이는 시스템 인프라 문제입니다. 대신, 다음 단계의 목표는 '데이터 기반 비즈니스 규칙'을 확정하는 것이므로, 기술적 실행 이전에 논리적인 프레임워크를 완성해야 합니다. _(근거: sessions/2026-05-20T16-16)_
+- [2026-05-20] 2. **KPI 연결:** '진단 테스트 완료'를 핵심 CTA(Call to Action)로 설정하고, 이 과정에서 유료 전환으로의 명확한 경로(Paywall/Next Step Prompt)를 구축해야 한다. _(근거: LTV 극대화를 위한 행동 유도)_
