@@ -1,23 +1,57 @@
+<create_file path="/Users/iyeongjae/Desktop/초보프로젝트/_company/ContentManifest/thumbnail_master.json">
 {
-  "asset_name": "YouTube_Thumbnail_Master_V1",
-  "concept": "Gap Visualization - Pain to Gain (Dark Blue/Yellow)",
-  "status": "Ready for Upload",
-  "design_spec": {
-    "colors": {
-      "primary": "#0A2463",
-      "accent": "#FFD700",
-      "background": "#F5F5F5"
+  "title": "노력의 함정: 발성 주파수로 측정하는 실용음악의 진실",
+  "concept": "Gap Visualization - Pain to Gain (Dark Blue & Accent Yellow)",
+  "layout_spec": {
+    "background_color": "#0A2463",
+    "text_colors": {
+      "title": "#FFD700",
+      "data_highlight": "#FFD700",
+      "body": "#F5F5F5"
     },
-    "typography": {
-      "title": "Montserrat Bold",
-      "body": "Noto Sans KR"
-    },
-    "layout_concept": "Pain (Yellow) $\rightarrow$ Gain (Blue)",
-    "dimensions": "1280x720"
+    "elements": [
+      {
+        "type": "Headline (Pain)",
+        "text": "🚨 노래 실력, 이걸로 측정하세요.",
+        "font": "Montserrat Bold",
+        "color": "#FFD700",
+        "position": "Top Center",
+        "size_priority": 1
+      },
+      {
+        "type": "Data Visualization (Gap)",
+        "text": "±7Hz 공명 주파수 이탈",
+        "font": "Montserrat Bold",
+        "color": "#FFD700",
+        "background": "#0A2463",
+        "position": "Center Left",
+        "size_priority": 2,
+        "visualization_style": "Large Number Highlight"
+      },
+      {
+        "type": "Body Text (Context)",
+        "text": "노력만으로는 부족합니다. 객관적 데이터가 필요해요.",
+        "font": "Noto Sans KR",
+        "color": "#F5F5F5",
+        "position": "Bottom Center",
+        "size_priority": 3
+      },
+      {
+        "type": "CTA Button",
+        "text": "AI 진단 시스템 필요",
+        "background": "#FFD700",
+        "border_color": "#0A2463",
+        "position": "Bottom Right",
+        "size_priority": 1
+      }
+    ]
   },
-  "source_file": "sessions/2026-05-20T17-01/designer.md",
-  "status_report": {
-    "gap_score_visualization": true,
-    "roi_highlight": true
+  "visual_system": {
+    "primary_color": "#0A2463",
+    "accent_color": "#FFD700",
+    "typography": {
+      "title_font": "Montserrat Bold",
+      "body_font": "Noto Sans KR"
+    }
   }
 }
