@@ -1,0 +1,23 @@
+{
+  "asset_name": "YouTube_Thumbnail_Master_V1",
+  "concept": "Gap Visualization - Pain to Gain (Dark Blue/Yellow)",
+  "status": "Ready for Upload",
+  "design_spec": {
+    "colors": {
+      "primary": "#0A2463",
+      "accent": "#FFD700",
+      "background": "#F5F5F5"
+    },
+    "typography": {
+      "title": "Montserrat Bold",
+      "body": "Noto Sans KR"
+    },
+    "layout_concept": "Pain (Yellow) $\rightarrow$ Gain (Blue)",
+    "dimensions": "1280x720"
+  },
+  "source_file": "sessions/2026-05-20T17-01/designer.md",
+  "status_report": {
+    "gap_score_visualization": true,
+    "roi_highlight": true
+  }
+}
