@@ -100,3 +100,6 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-20] 확정된 디자인 시스템(Dark Blue/Accent Yellow, Gap Visualization)을 기반으로 'Gap Bar' 컴포넌트의 시각적 프로토타입을 즉시 제작하여 개발팀에 전달하라. → 산출물 sessions/2026-05-20T18-31/designer.md
 - [2026-05-20] Designer: 확정된 'Gap Bar' 명세서와 개발팀이 제시할 것으로 예상되는 E2E 테스트 결과(데이터 구조)를 기반으로, 프론트엔드 컴포넌트(React/CSS)의 초기 시각화 프로토타입을 제작하고, 백엔드 유효성 검증 오류 상태를 시각적으로 명확하게 표현하는 UI/UX를 설계하세요. → 산출물 sessions/2026-05-20T18-46/designer.md
 - [2026-05-20] 이전 세션에서 확정된 'Gap Bar' 컴포넌트의 오류 상태 디자인(`GapBar_Error`)을 실제 API 실패 응답(Developer의 결과물)에 정확하게 매핑할 수 있도록 최종 데이터 구조 및 시각적 변수 명세를 확정하라. → 산출물 sessions/2026-05-20T19-01/designer.md
+- [2026-05-20] 확정된 디자인 시스템('Dark Blue'/'Accent Yellow', 'Gap Visualization')과 콘텐츠 기획안에 맞춰, 영상의 핵심 메시지를 시각적으로 극대화할 수 있는 최종적인 썸네일 비주얼 레퍼런스 및 레이아웃을 확정하고 전달하라. → 산출물 sessions/2026-05-20T19-31/designer.md
+- [2026-05-20] 이전 세션에서 제시된 썸네일 컨셉 중 CTR을 극대화할 것으로 예상되는 컨셉을 선택하고, 확정된 디자인 시스템('Dark Blue'/'Accent Yellow', 'Gap Visualization')을 적용하여 최종 썸네일 비주얼 레퍼런스 및 레이아웃 시안을 완성하라. → 산출물 sessions/2026-05-20T19-46/designer.md
+- [2026-05-20] Writer가 작성한 스크립트의 핵심 메시지(데이터 기반 경고)를 극대화할 수 있는 최종 썸네일 비주얼 레퍼런스와 영상 내 Gap Bar 시각화 컨셉을 3가지 주제에 맞춰 설계하세요. → 산출물 sessions/2026-05-20T20-31/designer.md
