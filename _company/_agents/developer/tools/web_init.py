@@ -212,7 +212,18 @@ python3 -m http.server 8000
     return True
 
 
+def _init_env_path():
+    try:
+        shell = os.environ.get("SHELL", "/bin/bash")
+        r = subprocess.run(f"{shell} -l -c 'echo $PATH'", shell=True, capture_output=True, text=True, timeout=3)
+        if r.returncode == 0 and r.stdout.strip():
+            os.environ["PATH"] = r.stdout.strip()
+    except Exception:
+        pass
+
+
 def main():
+    _init_env_path()
     cfg = _load()
     template = (cfg.get("TEMPLATE") or "").strip().lower() or "vite-react"
     name = (cfg.get("PROJECT_NAME") or "").strip() or "my-app"
@@ -232,7 +243,7 @@ def main():
     # 출력 위치
     if not out_dir:
         out_dir = os.path.expanduser("~/connect-ai-projects")
-    out_dir = os.path.expanduser(out_dir)
+    out_dir = os.path.abspath(os.path.expanduser(out_dir))
     os.makedirs(out_dir, exist_ok=True)
 
     target = os.path.join(out_dir, name)

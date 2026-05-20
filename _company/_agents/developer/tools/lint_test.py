@@ -38,7 +38,15 @@ def _load(p):
 def _run(cmd, cwd, timeout=180):
     _log(f"$ {cmd}", "step")
     try:
-        r = subprocess.run(cmd, shell=True, cwd=cwd, capture_output=True, text=True, timeout=timeout)
+        env = os.environ.copy()
+        try:
+            shell = os.environ.get("SHELL", "/bin/bash")
+            r_path = subprocess.run(f"{shell} -l -c 'echo $PATH'", shell=True, capture_output=True, text=True, timeout=3)
+            if r_path.returncode == 0 and r_path.stdout.strip():
+                env["PATH"] = r_path.stdout.strip()
+        except Exception:
+            pass
+        r = subprocess.run(cmd, shell=True, cwd=cwd, capture_output=True, text=True, timeout=timeout, env=env)
         return r.returncode, (r.stdout or "") + "\n" + (r.stderr or "")
     except subprocess.TimeoutExpired:
         return -1, f"⏱ Timeout ({timeout}s)"
@@ -55,12 +63,17 @@ def main():
     if not project:
         _log("PROJECT_PATH 비어있고 web_init 기록도 없음", "err")
         sys.exit(1)
-    project = os.path.expanduser(project)
+    project = os.path.abspath(os.path.expanduser(project))
     if not os.path.isdir(project):
         _log(f"폴더 없음: {project}", "err")
         sys.exit(1)
     strict = str(cfg.get("STRICT", "")).lower() in ("true", "1", "yes")
     _log(f"검증 대상: {project}", "info")
+
+    # node_modules 경고 추가
+    if os.path.exists(os.path.join(project, "package.json")):
+        if not os.path.exists(os.path.join(project, "node_modules")):
+            _log("node_modules 폴더 없음. 검증 전 npm install이 필요할 수 있습니다.", "warn")
 
     results = []  # (label, code, output)
 
@@ -97,7 +110,7 @@ def main():
         if py_files:
             errs = []
             for pf in py_files[:30]:  # 30개 cap
-                code, out = _run(f"python3 -m py_compile {json.dumps(pf)}", cwd=project, timeout=10)
+                code, out = _run(f"{json.dumps(sys.executable)} -m py_compile {json.dumps(pf)}", cwd=project, timeout=10)
                 if code != 0:
                     errs.append((pf, out.strip()[:120]))
             if errs:

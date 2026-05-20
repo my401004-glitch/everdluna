@@ -69,13 +69,21 @@ def _kill_old_pid(pid_file):
         with open(pid_file, "r") as f:
             pid = int(f.read().strip())
         try:
-            os.kill(pid, signal.SIGTERM)
-            time.sleep(0.5)
-            os.kill(pid, signal.SIGKILL)
+            if sys.platform != "win32":
+                os.killpg(pid, signal.SIGTERM)
+                time.sleep(0.5)
+                os.killpg(pid, signal.SIGKILL)
+            else:
+                os.kill(pid, signal.SIGTERM)
         except ProcessLookupError:
             pass
         except PermissionError:
             pass
+        except Exception:
+            try:
+                os.kill(pid, signal.SIGTERM)
+            except Exception:
+                pass
         _log(f"이전 dev server 종료 (PID {pid})", "info")
     except Exception:
         pass
@@ -97,7 +105,7 @@ def main():
         _log("PROJECT_PATH가 비어있고 web_init 기록도 없음. 프로젝트 경로 지정하세요.", "err")
         sys.exit(1)
 
-    project_path = os.path.expanduser(project_path)
+    project_path = os.path.abspath(os.path.expanduser(project_path))
     if not os.path.isdir(project_path):
         _log(f"폴더 없음: {project_path}", "err")
         sys.exit(1)
@@ -119,16 +127,32 @@ def main():
 
     # 백그라운드 실행
     try:
+        env = os.environ.copy()
+        try:
+            shell = os.environ.get("SHELL", "/bin/bash")
+            r_path = subprocess.run(f"{shell} -l -c 'echo $PATH'", shell=True, capture_output=True, text=True, timeout=3)
+            if r_path.returncode == 0 and r_path.stdout.strip():
+                env["PATH"] = r_path.stdout.strip()
+        except Exception:
+            pass
+
+        cmd = dev_cmd
+        parts = cmd.split()
+        if parts:
+            if parts[0] == "python3" or parts[0] == "python":
+                parts[0] = sys.executable
+                cmd = " ".join(parts)
+
         with open(log_file, "w") as logf:
             if sys.platform == "win32":
                 proc = subprocess.Popen(
-                    dev_cmd, shell=True, cwd=project_path,
+                    cmd, shell=True, cwd=project_path, env=env,
                     stdout=logf, stderr=subprocess.STDOUT,
                     creationflags=subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP,
                 )
             else:
                 proc = subprocess.Popen(
-                    dev_cmd, shell=True, cwd=project_path,
+                    cmd, shell=True, cwd=project_path, env=env,
                     stdout=logf, stderr=subprocess.STDOUT,
                     start_new_session=True,
                 )
@@ -148,9 +172,9 @@ def main():
             with open(log_file, "r") as f:
                 content = f.read()
             # 흔한 패턴: "Local:   http://localhost:3000" / "ready - started server on http://localhost:3000"
-            m = re.search(r"https?://(?:localhost|127\.0\.0\.1):\d+(?:/\S*)?", content)
+            m = re.search(r"https?://(?:localhost|127\.0\.0\.1|0\.0\.0\.0|\[::1\]):\d+(?:/\S*)?", content)
             if m:
-                url = m.group(0)
+                url = m.group(0).replace("0.0.0.0", "localhost").replace("[::1]", "localhost")
                 break
         except Exception:
             pass

@@ -92,7 +92,7 @@ def main():
         _log("PROJECT_PATH가 비어있고 web_init 기록도 없음", "err")
         sys.exit(1)
 
-    project_path = os.path.expanduser(project_path)
+    project_path = os.path.abspath(os.path.expanduser(project_path))
     if not os.path.isdir(project_path):
         _log(f"폴더 없음: {project_path}", "err")
         sys.exit(1)

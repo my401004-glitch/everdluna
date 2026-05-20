@@ -341,7 +341,18 @@ def _parse_cli_args():
     return out
 
 
+def _init_env_path():
+    try:
+        shell = os.environ.get("SHELL", "/bin/bash")
+        r = subprocess.run(f"{shell} -l -c 'echo $PATH'", shell=True, capture_output=True, text=True, timeout=3)
+        if r.returncode == 0 and r.stdout.strip():
+            os.environ["PATH"] = r.stdout.strip()
+    except Exception:
+        pass
+
+
 def main():
+    _init_env_path()
     cfg = _load(CONFIG)
     init_cfg = _load(WEB_INIT_CFG)
 
@@ -405,7 +416,7 @@ def main():
     if not project:
         _log("PROJECT_PATH 비어있고 web_init 기록도 없음", "err")
         sys.exit(1)
-    project = os.path.expanduser(project)
+    project = os.path.abspath(os.path.expanduser(project))
     if not os.path.isdir(project):
         _log(f"프로젝트 폴더 없음: {project}", "err")
         sys.exit(1)
