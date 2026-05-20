@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 21. 오전 8:34:31_
+_업데이트: 2026. 5. 21. 오전 8:47:15_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,9 +17,9 @@ _업데이트: 2026. 5. 21. 오전 8:34:31_
 - [2026-05-20] Developer의 테스트 결과를 바탕으로, 최종 생성된 JSON 에셋(`final_Gap_Visualization_Assets.json`)이 실제 영상 편집팀의 워크플로우에 완벽히 통합될 수 있도록 라이브러리 및 파일 구조 정리 작업을 완료하라. → 산출물 sessions/2026-05-20T23-16/designer.md
 - [2026-05-20] 개발팀이 제공한 통합 테스트 결과 및 Visual Master Script를 기반으로, 최종 자막 및 그래픽 시안(`Visual_Asset_Mapping_Guide.md`)에 적용할 규칙을 확정하고 명확한 가이드라인을 문서화하라. → 산출물 sessions/2026-05-20T23-31/designer.md
 ### 💻 코다리
-- [2026-05-20] Writer가 제시한 편집 지침(Production Manual)과 Designer의 시각화 규칙이 서버 로직에 완벽히 매핑되는지 통합 테스트 흐름을 검토하고, 데이터 연동상의 잠재적 오류를 확인하라. → 산출물 sessions/2026-05-20T22-46/developer.md
 - [2026-05-20] Writer가 확정한 최종 마스터 스크립트와 Designer가 확정한 Visual Master Script(Production Manual)를 기반으로, Gap Visualization 에셋이 실제 영상 편집 요구사항과 완벽히 매핑되는지 E2E 테스트 흐름을 실행하고 시스템 통합 오류 여부를 검증하라. → 산출물 sessions/2026-05-20T23-16/developer.md
 - [2026-05-20] integration_test.py의 오류 보고서를 분석하여 스크립트와 시각화 지침 간의 동기화 오류 지점을 최종적으로 확인하고, 이 결과를 바탕으로 수정 사항을 정리하라. → 산출물 sessions/2026-05-20T23-31/developer.md
+- [2026-05-20] integration_test 및 master_script.json, production_manual.json 파일을 분석하여 시스템 통합 테스트에서 발견된 모든 오류 로그를 최종적으로 디버깅하고 데이터 연동상의 잠재적 오류를 수정하여 완벽한 시스템 동기화를 확보하라. → 산출물 sessions/2026-05-20T23-46/developer.md
 ### 💼 현빈
 - [2026-05-20] 잠재 ROI 계산 규칙서(`ROI_Calculation_Rulebook.md`)를 기반으로, 사용자의 '절실함'(GSM)과 '참여 가치'(EVS) 지표를 결합하여 가장 높은 전환율을 유도할 수 있는 마스터 콘텐츠 전략(Gap Visualization 적용) 초안을 작성하라. → 산출물 sessions/2026-05-20T16-46/business.md
 - [2026-05-20] Writer와 Designer가 제시한 콘텐츠 기획(제목, 후크)에 대해 잠재 ROI 지표(`Potential_ROI`)를 예측하고, 이 전략이 현재의 수익화 목표(10k 구독자 달성)에 미치는 영향을 분석하여 다음 영상 제작 우선순위를 최종 결정하라. → 산출물 sessions/2026-05-20T17-31/business.md

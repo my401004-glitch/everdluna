@@ -110,3 +110,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-20] Writer가 제시한 편집 지침(Production Manual)과 Designer의 시각화 규칙이 서버 로직에 완벽히 매핑되는지 통합 테스트 흐름을 검토하고, 데이터 연동상의 잠재적 오류를 확인하라. → 산출물 sessions/2026-05-20T22-46/developer.md
 - [2026-05-20] Writer가 확정한 최종 마스터 스크립트와 Designer가 확정한 Visual Master Script(Production Manual)를 기반으로, Gap Visualization 에셋이 실제 영상 편집 요구사항과 완벽히 매핑되는지 E2E 테스트 흐름을 실행하고 시스템 통합 오류 여부를 검증하라. → 산출물 sessions/2026-05-20T23-16/developer.md
 - [2026-05-20] integration_test.py의 오류 보고서를 분석하여 스크립트와 시각화 지침 간의 동기화 오류 지점을 최종적으로 확인하고, 이 결과를 바탕으로 수정 사항을 정리하라. → 산출물 sessions/2026-05-20T23-31/developer.md
+- [2026-05-20] integration_test 및 master_script.json, production_manual.json 파일을 분석하여 시스템 통합 테스트에서 발견된 모든 오류 로그를 최종적으로 디버깅하고 데이터 연동상의 잠재적 오류를 수정하여 완벽한 시스템 동기화를 확보하라. → 산출물 sessions/2026-05-20T23-46/developer.md
