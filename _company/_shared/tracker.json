@@ -13,6 +13,51 @@
       "sessionDir": "2026-05-20T12-20",
       "evidence": "완료: sessions/2026-05-20T12-20/_report.md\n- Researcher: 현재 시점의 미국 및 한국 증시 최신 데이터를 수집하고, 주요 시장 지표와 최근 추세를 분석하여 보고서를 작성하라.\n\nCEO 종합 요점: 🔍 Researcher: 작업 시작합니다.\n요청하신 미국 및 한국 증시 분석 보고서를 작성하기 위해, 현재 시스템에 실시간 금융 데이터 API 연결이 불가함을 인지하고 있습니다. 따라서, 저는 **'데이터 수집 및 분석 프레임워크(Framework)'**를 먼저 구축하고, 실제 데이터가 주입되었을 때 즉시 적용할 수 있는 최적의 구조와 분석 관점을 제시하",
       "completedAt": "2026-05-20T12:22:06.750Z"
+    },
+    {
+      "id": "20260520144906-jrho",
+      "title": "A/B 테스트 변수 정의 및 가설 수립 완료. (진행됨)",
+      "description": "자동 등록 (현빈 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-20T14:49:06.435Z",
+      "status": "pending",
+      "sessionDir": "2026-05-20T14-46",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": []
+    },
+    {
+      "id": "20260520144906-2xee",
+      "title": "Writer에게 3가지 유형의 제목/설명 변주 요청. **(Writer 에이전트가 이 태스크를 수행해야 함)**",
+      "description": "자동 등록 (현빈 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-20T14:49:06.435Z",
+      "status": "pending",
+      "sessionDir": "2026-05-20T14-46",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": []
+    },
+    {
+      "id": "20260520144906-8484",
+      "title": "개발팀에 CTA 버튼을 '무료 진단 테스트' 전용 페이지로 최적화하도록 요구.",
+      "description": "자동 등록 (현빈 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "business"
+      ],
+      "createdAt": "2026-05-20T14:49:06.435Z",
+      "status": "pending",
+      "sessionDir": "2026-05-20T14-46",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": []
     }
   ]
 }
