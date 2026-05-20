@@ -90,4 +90,11 @@ export class AudioEngine {
       await new Promise(resolve => setTimeout(resolve, (toneDuration + gap) * 1000));
     }
   }
+
+  // Play multiple notes simultaneously (a chord)
+  public playChord(freqs: number[], type: string = 'sine', duration: number = 1.5) {
+    freqs.forEach(freq => {
+      this.playPianoTone(freq, duration);
+    });
+  }
 }
