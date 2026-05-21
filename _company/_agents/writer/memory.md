@@ -94,3 +94,6 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-20] Designer가 제공한 Visual Master Guide와 이전 대본을 기반으로, Production Manual에 따른 최종 대본 및 시간별 컷 분할(타이밍) 확정 작업을 진행하라. → 산출물 sessions/2026-05-20T22-46/writer.md
 - [2026-05-20] 코다리(developer)가 제시한 E2E 테스트 결과 및 오류 지점을 분석하여, Production Manual 흐름과 백엔드 로직 간의 불일치를 해소하기 위해 스크립트와 비주얼 지침을 즉시 미세 조정하고 최종본을 확정하라. → 산출물 sessions/2026-05-20T23-01/writer.md
 - [2026-05-20] 최종 확정된 Production Manual(타임코드 및 비주얼 지침)과 스크립트 간의 흐름이 논리적으로 완벽하게 일치하는지 검토하고, 콘텐츠 내 메시지의 데이터 기반 신뢰도를 극대화할 수 있도록 미세 조정을 수행하라. → 산출물 sessions/2026-05-20T23-31/writer.md
+- [2026-05-21] 연구 결과를 바탕으로, 기존에 확정된 Production Manual과 Visual Master Script를 활용하여 가장 높은 CTR을 유도할 것으로 예상되는 썸네일 컨셉 및 영상 후크(Hook) 버전을 3가지 버전으로 즉시 작성하라. → 산출물 sessions/2026-05-21T02-13/writer.md
+- [2026-05-21] 이전 사이클에서 확정된 마스터 스크립트와 Production Manual을 기반으로, 다음 영상에 대한 최종 대본 및 타이밍 지침을 미세 조정하고 명확히 정리하라. → 산출물 sessions/2026-05-21T05-15/writer.md
+- [2026-05-21] 최종 확정된 Production Manual 및 Visual Master Script에 따라, Writer가 미세 조정해야 할 최종 대본과 타이밍 지침의 데이터 흐름을 검토하고, 시스템 오류 수정 사항이 대본/타이밍에 반영되었는지 확인하라. → 산출물 sessions/2026-05-21T06-38/writer.md
