@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 21. 오후 4:49:26_
+_업데이트: 2026. 5. 21. 오후 5:55:35_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,9 +17,9 @@ _업데이트: 2026. 5. 21. 오후 4:49:26_
 - [2026-05-20] 개발팀이 제공한 통합 테스트 결과 및 Visual Master Script를 기반으로, 최종 자막 및 그래픽 시안(`Visual_Asset_Mapping_Guide.md`)에 적용할 규칙을 확정하고 명확한 가이드라인을 문서화하라. → 산출물 sessions/2026-05-20T23-31/designer.md
 - [2026-05-21] 최종 확정된 Visual Master Script(Production Manual)를 기반으로, 모든 시각화 에셋이 영상 편집 요구사항과 완벽하게 매핑되는지 최종 검토하고 필요한 에셋을 확인하라. → 산출물 sessions/2026-05-21T05-15/designer.md
 ### 💻 코다리
-- [2026-05-20] integration_test 및 master_script.json, production_manual.json 파일을 분석하여 시스템 통합 테스트에서 발견된 모든 오류 로그를 최종적으로 디버깅하고 데이터 연동상의 잠재적 오류를 수정하여 완벽한 시스템 동기화를 확보하라. → 산출물 sessions/2026-05-20T23-46/developer.md
 - [2026-05-21] Writer와 Designer가 확정한 가이드라인(Production Manual 및 Visual Master Script)에 따라, 시스템 통합 테스트의 최종 실행 흐름을 점검하고 잠재적인 동기화 오류를 재확인하라. → 산출물 sessions/2026-05-21T05-15/developer.md
 - [2026-05-21] integration_test.py 및 master_script.json, production_manual.json 파일 분석을 통해 시스템 통합 테스트에서 발견된 모든 오류 로그를 최종적으로 디버깅하고 데이터 연동상의 잠재적 오류를 수정하여 완벽한 시스템 동기화를 확보하라. → 산출물 sessions/2026-05-21T06-38/developer.md
+- [2026-05-21] integration_test.py, master_script.json, production_manual.json 파일 분석을 통해 시스템 통합 테스트 실패 원인 및 데이터 동기화 오류 지점을 최종적으로 진단하고 수정 방안을 제시하라. → 산출물 sessions/2026-05-21T08-36/developer.md
 ### 💼 현빈
 - [2026-05-20] 잠재 ROI 계산 규칙서(`ROI_Calculation_Rulebook.md`)를 기반으로, 사용자의 '절실함'(GSM)과 '참여 가치'(EVS) 지표를 결합하여 가장 높은 전환율을 유도할 수 있는 마스터 콘텐츠 전략(Gap Visualization 적용) 초안을 작성하라. → 산출물 sessions/2026-05-20T16-46/business.md
 - [2026-05-20] Writer와 Designer가 제시한 콘텐츠 기획(제목, 후크)에 대해 잠재 ROI 지표(`Potential_ROI`)를 예측하고, 이 전략이 현재의 수익화 목표(10k 구독자 달성)에 미치는 영향을 분석하여 다음 영상 제작 우선순위를 최종 결정하라. → 산출물 sessions/2026-05-20T17-31/business.md
@@ -31,9 +31,9 @@ _업데이트: 2026. 5. 21. 오후 4:49:26_
 ### 🎵 루나
 - [2026-05-19] 📥 새 지식 입수 — **student_growth_report_generator_v_1.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-19/student_growth_report_generator_v_1.html)
 ### ✍️ Writer
-- [2026-05-21] 연구 결과를 바탕으로, 기존에 확정된 Production Manual과 Visual Master Script를 활용하여 가장 높은 CTR을 유도할 것으로 예상되는 썸네일 컨셉 및 영상 후크(Hook) 버전을 3가지 버전으로 즉시 작성하라. → 산출물 sessions/2026-05-21T02-13/writer.md
 - [2026-05-21] 이전 사이클에서 확정된 마스터 스크립트와 Production Manual을 기반으로, 다음 영상에 대한 최종 대본 및 타이밍 지침을 미세 조정하고 명확히 정리하라. → 산출물 sessions/2026-05-21T05-15/writer.md
 - [2026-05-21] 최종 확정된 Production Manual 및 Visual Master Script에 따라, Writer가 미세 조정해야 할 최종 대본과 타이밍 지침의 데이터 흐름을 검토하고, 시스템 오류 수정 사항이 대본/타이밍에 반영되었는지 확인하라. → 산출물 sessions/2026-05-21T06-38/writer.md
+- [2026-05-21] 개발팀의 진단 결과를 바탕으로 Production Manual 및 Visual Master Script에 반영되어야 할 대본 및 타이밍 지침의 데이터 흐름 오류를 검토하고, 시스템 안정화에 필요한 최종 수정 사항을 도출하라. → 산출물 sessions/2026-05-21T08-36/writer.md
 ### 🔍 Researcher
 - [2026-05-20] 유튜브 채널 성장 및 Hook 개선에 필요한 핵심 트렌드, 경쟁사 분석, 그리고 데이터 기반 후킹 전략의 프레임워크를 수집하여 다음 단계 계획의 기초 자료로 준비하라. → 산출물 sessions/2026-05-20T20-16/researcher.md
 - [2026-05-20] 현재 채널의 데이터와 경쟁사 트렌드를 분석하여, 가장 높은 조회수/시청 지속률을 유도할 수 있는 다음 3가지 핵심 주제 및 후킹 전략을 도출하고 보고하라. → 산출물 sessions/2026-05-20T21-16/researcher.md
