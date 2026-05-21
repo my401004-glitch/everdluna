@@ -118,3 +118,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-21] master_script.json, production_manual.json, integration_test.py 파일 분석을 통해 시스템 통합 테스트 실패 원인 및 데이터 동기화 오류 지점을 최종적으로 진단하고 수정 방안을 제시하여 완벽한 시스템 동기화를 확보하라. → 산출물 sessions/2026-05-21T09-24/developer.md
 - [2026-05-21] 최근 시스템 통합 테스트(integration_test.py, master_script.json, production_manual.json)의 오류 로그를 최종 검토하고 데이터 동기화 오류 지점을 즉시 디버깅하여 시스템 안정성을 확보하세요. → 산출물 sessions/2026-05-21T09-35/developer.md
 - [2026-05-21] master_script.json, production_manual.json, integration_test.py 파일 분석을 통해 시스템 통합 테스트 실패 원인 및 데이터 동기화 오류 지점을 최종적으로 진단하고 수정 방안을 제시하여 완벽한 시스템 동기화를 확보하라. → 산출물 sessions/2026-05-21T10-10/developer.md
+- [2026-05-21] master_script.json, production_manual.json, integration_test.py 파일 내용을 분석하여 시스템 통합 테스트 실패의 근본 원인(데이터 매핑, 타입 캐스팅, 논리적 흐름 누락)을 진단하고 수정 방안을 제시하라. 최종 목표는 세 파일 간의 완벽한 동기화와 통합 테스트 통과를 확보하는 것이다. → 산출물 sessions/2026-05-21T10-25/developer.md
