@@ -43,3 +43,4 @@ _영숙 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-20] Business 에이전트가 정의한 `ROI_Calculation_Rulebook.md` 초안을 바탕으로, 코다리에게 필요한 데이터 모델(`Potential_ROI` 필드) 및 API 엔드포인트 설계에 필요한 초기 요구사항 목록을 정리하라. → 산출물 sessions/2026-05-20T16-31/secretary.md
 - [2026-05-20] 위 두 결과물을 취합하여 다음 주 목표로 설정하고, 코다리에게 기술 구현에 필요한 구체적인 개발 목록(Action Items)을 정리하여 보고하라. → 산출물 sessions/2026-05-20T16-46/secretary.md
 - [2026-05-20] Designer와 Writer의 작업 진행 상황(최종 썸네일 시안 및 후크 확정본)을 요약하여, 다음 단계인 'Funnel Blueprint' 작업을 위해 필요한 최종 결과물을 정리하고 다음 액션 목록에 반영하라. → 산출물 sessions/2026-05-20T17-46/secretary.md
+- [2026-05-21] 모든 에이전트(youtube, instagram, designer, developer, business, writer, researcher)의 현재 할당된 역할과 제약 조건 목록을 확인하고 이를 요약하여 보고할 것 → 산출물 sessions/2026-05-21T10-08/secretary.md

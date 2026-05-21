@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 21. 오후 6:39:46_
+_업데이트: 2026. 5. 21. 오후 7:09:53_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -25,9 +25,9 @@ _업데이트: 2026. 5. 21. 오후 6:39:46_
 - [2026-05-20] Writer와 Designer가 제시한 콘텐츠 기획(제목, 후크)에 대해 잠재 ROI 지표(`Potential_ROI`)를 예측하고, 이 전략이 현재의 수익화 목표(10k 구독자 달성)에 미치는 영향을 분석하여 다음 영상 제작 우선순위를 최종 결정하라. → 산출물 sessions/2026-05-20T17-31/business.md
 - [2026-05-20] 수집된 트렌드와 유튜브의 기획 방향을 바탕으로, 다음 달 영상 4개 목표 달성을 위한 최소한의 KPI(핵심 성과 지표)와 예상 ROI 프레임워크를 설계하라. → 산출물 sessions/2026-05-20T20-16/business.md
 ### 📱 영숙
-- [2026-05-20] Business 에이전트가 정의한 `ROI_Calculation_Rulebook.md` 초안을 바탕으로, 코다리에게 필요한 데이터 모델(`Potential_ROI` 필드) 및 API 엔드포인트 설계에 필요한 초기 요구사항 목록을 정리하라. → 산출물 sessions/2026-05-20T16-31/secretary.md
 - [2026-05-20] 위 두 결과물을 취합하여 다음 주 목표로 설정하고, 코다리에게 기술 구현에 필요한 구체적인 개발 목록(Action Items)을 정리하여 보고하라. → 산출물 sessions/2026-05-20T16-46/secretary.md
 - [2026-05-20] Designer와 Writer의 작업 진행 상황(최종 썸네일 시안 및 후크 확정본)을 요약하여, 다음 단계인 'Funnel Blueprint' 작업을 위해 필요한 최종 결과물을 정리하고 다음 액션 목록에 반영하라. → 산출물 sessions/2026-05-20T17-46/secretary.md
+- [2026-05-21] 모든 에이전트(youtube, instagram, designer, developer, business, writer, researcher)의 현재 할당된 역할과 제약 조건 목록을 확인하고 이를 요약하여 보고할 것 → 산출물 sessions/2026-05-21T10-08/secretary.md
 ### 🎵 루나
 - [2026-05-19] 📥 새 지식 입수 — **student_growth_report_generator_v_1.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-19/student_growth_report_generator_v_1.html)
 ### ✍️ Writer
