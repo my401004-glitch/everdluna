@@ -147,3 +147,7 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-22] Writer가 제공한 최종 스크립트 및 Visual Directives를 기반으로, '썸네일 컨셉 1'의 목업 이미지를 실제 이미지 생성 도구에 즉시 적용하여 외부 유입 준비를 완료하라. → 산출물 sessions/2026-05-22T19-57/designer.md
 - [2026-05-22] 선정된 최우선 영상 주제와 Writer가 제시할 초기 후킹 문구를 기반으로, Dark Blue/Accent Yellow 팔레트를 적용한 '썸네일 컨셉 1'의 최종 시각적 지침(Visual Directives) 목업을 제작하세요. → 산출물 sessions/2026-05-22T21-42/designer.md
 - [2026-05-22] 확정된 시각적 지침(Dark Blue/Accent Yellow)과 '학생 이탈 예측' 주제를 기반으로, 최종 썸네일 목업 이미지(Visual Directives)를 실제 생성 도구에 적용할 수 있는 형태로 제작하라. → 산출물 sessions/2026-05-22T21-57/designer.md
+- [2026-05-22] Writer가 제시할 후킹 문구를 기반으로, Dark Blue/Accent Yellow 팔레트를 적용한 '학생 이탈 예측' 영상의 썸네일 최종 시각적 지침(Visual Directives)을 즉시 제작해줘. → 산출물 sessions/2026-05-22T22-42/designer.md
+- [2026-05-22] 개발팀이 정의할 데이터 시각화 로직에 맞춰, 콘텐츠 제작의 효율성을 극대화하기 위한 최우선 스토리보드 및 UX 가이드라인을 최종 확정하라. → 산출물 sessions/2026-05-22T22-57/designer.md
+- [2026-05-22] Writer가 제공할 후킹 문구 및 스토리보드에 맞춰, Dark Blue/Accent Yellow 팔레트를 적용한 최종 썸네일 시각적 지침(Visual Directives)을 즉시 제작하라. → 산출물 sessions/2026-05-22T23-12/designer.md
+- [2026-05-22] 확정된 UX 가이드라인과 데이터 시각화 요구사항을 기반으로 Gap Score 대시보드 위젯의 와이어프레임 및 시각적 프로토타입 설계를 착수할 것. → 산출물 sessions/2026-05-22T23-42/designer.md
