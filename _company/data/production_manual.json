@@ -5,5 +5,5 @@
         {"id": "GAP_SCORE", "description": "진단 점수 시각화 그래프 (필수)"},
         {"id": "A_VISUAL_ASSET", "description": "일반적인 설명용 비주얼 에셋"}
     ],
-    "visual_assets": ["INITIAL_HOOK", "GAP_SCORE"]
+    "visual_assets": ["INITIAL_HOOK", "GAP_SCORE", "A_VISUAL_ASSET"]
 }

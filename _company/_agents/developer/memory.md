@@ -123,3 +123,7 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-21] master_script.json, production_manual.json, integration_test.py 파일 간의 데이터 매핑 오류, 타입 캐스팅 문제, 논리적 흐름 누락 등 시스템 통합 실패 원인을 진단하고 완벽한 데이터 동기화 및 통합 테스트 통과를 위한 수정 방안을 최우선으로 제시하라. → 산출물 sessions/2026-05-21T10-55/developer.md
 - [2026-05-22] master_script.json, production_manual.json, integration_test.py 파일 간의 데이터 흐름 및 스키마 불일치에 대한 근본 원인(Root Cause) 분석 보고서를 작성하고, 시스템 안정화 계획을 제시하세요. → 산출물 sessions/2026-05-22T01-19/developer.md
 - [2026-05-22] master_script.json, production_manual.json, integration_test.py 파일 간의 데이터 흐름 및 스키마 일관성 검증을 최종적으로 수행하고, 시스템 통합 실패 원인이 완전히 제거되었는지 확인하여 보고하라. → 산출물 sessions/2026-05-22T01-34/developer.md
+- [2026-05-22] master_script.json, production_manual.json, integration_test.py 파일 간의 데이터 흐름 및 스키마 불일치에 대한 근본 원인(Root Cause)을 분석하고, 시스템 통합 안정화(P0)를 위한 수정 전략을 수립하라. → 산출물 sessions/2026-05-22T01-49/developer.md
+- [2026-05-22] master_script.json, production_manual.json, integration_test.py 파일 간의 데이터 흐름 및 스키마 불일치에 대한 근본 원인(Root Cause)을 분석하고, 시스템 통합 안정화(P0)를 위한 수정 전략을 수립하여 실행하라. → 산출물 sessions/2026-05-22T02-04/developer.md
+- [2026-05-22] master_script.json, production_manual.json, integration_test.py 파일 간의 데이터 흐름 및 스키마 불일치에 대한 근본 원인(Root Cause)을 분석하고, 시스템 통합 안정화(P0)를 위한 수정 전략을 수립하라. → 산출물 sessions/2026-05-22T02-19/developer.md
+- [2026-05-22] 코다리 오류 개선됫는지 확인하도록 → 산출물 sessions/2026-05-22T02-24/developer.md
