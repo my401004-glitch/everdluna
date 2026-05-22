@@ -1740,3 +1740,37 @@ following 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)가 discernab
         *   주제: AI 비
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-05-22 11:36:39
+## 📡 키워드: AI 비즈니스, 생산성 툴
+
+📊 유튜브 트렌드 해킹 분석 보고서
+
+**1. 🌍 트렌드 해킹 분석**
+
+이번 30일 동안의 데이터를分析했을 때 다음과 같은 패턴이 나타났습니다.
+
+*   **AI 비즈니스**: 채널 Rowan Cheung가 "Why is an AI agent managing this store in San Francisco?"라는 제목으로 올린 영상은 1000+ 조회수를 기록했습니다. 이와 같이 AI 비즈니스-related 키워드를 포함한 제목이 많은 채널들이 emerge했습니다.
+*   **생산성 툴**: 채널 furthermore가 "Turning Simple Machines Into Practical Productivity Tools!"라는 제목으로 올린 영상은 500+ 조회수를 기록했습니다. 이와 같이 생산성 툴 관련된 제목이 많은 채널들이 appear했습니다.
+
+**2. 🎯 빈집 털기 전략 — 차별화 가능한 틈새 주제**
+
+다음은 차별화 가능한 틈새 주제입니다:
+
+*   **AI 비즈니스**:
+    *   **AI 도입 성공 스토리**: 채널 CNA Insider가 "Outsourcing Jobs In India and Philippines Are Changing - And Workers Are Feeling It"라는 제목으로 올린 영상은 1000+ 조회수를 기록했습니다. 이와 같은 success story를 포함한 AI 비즈니스-related 주제를 exploration할 수 있습니다.
+    *   **AI에 대한 인식 improve**: 채널 Mark Tilbury가 "I Tried AI Dropshipping For a Week (RAW RESULTS)"라는 제목으로 올린 영상은 500+ 조회수를 기록했습니다. 이와 같은 인식 improve를 포함한 AI 비즈니스-related 주제를 exploration할 수 있습니다.
+*   **생산성 툴**:
+    *   **modern farming tools boost productivity**: 채널 golden orange fruit가 "Modern Farming Tools Boost Productivity"라는 제목으로 올린 영상은 1000+ 조회수를 기록했습니다. 이와 같이 modern farming tools boost productivity를 포함한 생산성 툴 related 주제를 exploration할 수 있습니다.
+    *   **cordless power tool technology**: 채널 Work Permit가 "Maximizing Construction Productivity with Hydraulic Power Tools"라는 제목으로 올린 영상은 500+ 조회수를 기록했습니다. 이와 같이 cordless power tool technology를 포함한 생산성 툴 related 주제를 exploration할 수 있습니다.
+
+**3. 🎬 파괴적 영상 기획안 — 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)**
+
+다음은 파괴적 영상 기획안입니다:
+
+*   **썸네일 카피**: "AI가 revolutionizing business! 🚀"
+*   **제목 3개**:
+    *   "How AI Is
+
+---
