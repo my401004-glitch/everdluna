@@ -127,3 +127,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-22] master_script.json, production_manual.json, integration_test.py 파일 간의 데이터 흐름 및 스키마 불일치에 대한 근본 원인(Root Cause)을 분석하고, 시스템 통합 안정화(P0)를 위한 수정 전략을 수립하여 실행하라. → 산출물 sessions/2026-05-22T02-04/developer.md
 - [2026-05-22] master_script.json, production_manual.json, integration_test.py 파일 간의 데이터 흐름 및 스키마 불일치에 대한 근본 원인(Root Cause)을 분석하고, 시스템 통합 안정화(P0)를 위한 수정 전략을 수립하라. → 산출물 sessions/2026-05-22T02-19/developer.md
 - [2026-05-22] 코다리 오류 개선됫는지 확인하도록 → 산출물 sessions/2026-05-22T02-24/developer.md
+- [2026-05-22] 영상 기획 및 시각화에 필요한 데이터 흐름(Gap Score 산출 과정)이 시스템 안정화 목표(P0)에 부합하는지 최종 검토하고, 실제 영상 제작 단계에서 오류가 발생하지 않도록 통합 테스트 실행을 완료하라. → 산출물 sessions/2026-05-22T03-36/developer.md
