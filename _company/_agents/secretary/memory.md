@@ -45,3 +45,4 @@ _영숙 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-20] Designer와 Writer의 작업 진행 상황(최종 썸네일 시안 및 후크 확정본)을 요약하여, 다음 단계인 'Funnel Blueprint' 작업을 위해 필요한 최종 결과물을 정리하고 다음 액션 목록에 반영하라. → 산출물 sessions/2026-05-20T17-46/secretary.md
 - [2026-05-21] 모든 에이전트(youtube, instagram, designer, developer, business, writer, researcher)의 현재 할당된 역할과 제약 조건 목록을 확인하고 이를 요약하여 보고할 것 → 산출물 sessions/2026-05-21T10-08/secretary.md
 - [2026-05-22] 최근 개발팀(코다리)의 시스템 통합 안정화 작업 진행 상황과 `lint_test.py` 실행 결과를 요약하여 데일리 브리핑을 준비하세요. → 산출물 sessions/2026-05-22T02-34/secretary.md
+- [2026-05-22] 개발팀의 테스트 결과 분석이 완료될 때까지 다음 작업 순서('시스템 복구' → '전략 확정' → '시각화 설계')를 기준으로 대기하고, 필요한 경우 다음 단계(예: Mockup API 구현)에 대한 일정을 준비하라. → 산출물 sessions/2026-05-22T04-26/secretary.md
