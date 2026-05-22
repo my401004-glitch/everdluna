@@ -111,3 +111,4 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-05-22] Writer가 제공한 스크립트 및 Designer의 비주얼 가이드라인(Pain $ightarrow$ Gain 프레임워크, 색상 적용)을 기반으로 다음 영상에 대한 최종 스토리보드(Visual Directives)를 보강하고 후킹 부분의 시각적 효과 지침을 구체화하라. → 산출물 sessions/2026-05-22T16-57/youtube.md
 - [2026-05-22] Designer와 Writer가 제공한 최종 스토리보드 및 비주얼 지침을 기반으로, 실제 영상 제작에 필요한 최종 Visual Directives를 보강하여 즉시 제작 준비를 완료하라. → 산출물 sessions/2026-05-22T17-27/youtube.md
 - [2026-05-22] Designer가 제공한 최종 Visual Directives를 바탕으로, 다음 영상 제작에 필요한 스토리보드 및 후킹 부분의 시각적 효과 지침을 보강하여 실제 영상 제작 준비를 완료하도록 지원하라. → 산출물 sessions/2026-05-22T17-57/youtube.md
+- [2026-05-22] Phase I 목표 달성을 위한 영상 4개 중, 가장 시급하게 제작해야 할 콘텐츠 주제를 선정하고, 해당 주제에 맞춰 writer에게 후킹 전략 및 스토리보드 초안 작성을 요청하세요. → 산출물 sessions/2026-05-22T21-42/youtube.md
