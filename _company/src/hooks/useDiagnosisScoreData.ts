@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import * as api from '../api/diagnosisApi'; // 가상의 API 모듈
-import { DiagnosisResultSchema } from '../types/schema'; // 진단 결과 타입
+import * as api from '../api/diagnosisApi';
+import { DiagnosisResult } from '../types/diagnosis'; // 진단 결과 타입
 
 // Backend에서 정의된 상세 에러 구조를 가정합니다.
 export interface ApiErrorDetail {
@@ -9,7 +9,7 @@ export interface ApiErrorDetail {
 }
 
 export interface DiagnosisState {
-  data: DiagnosisResultSchema | null;
+  data: DiagnosisResult | null;
   isLoading: boolean;
   isSuccess: boolean;
   isError: boolean;
@@ -55,12 +55,12 @@ export const useDiagnosisScoreData = (userId: string): DiagnosisState => {
 
       } catch (e) {
         // 3. 실패 상태 처리 및 상세 오류 매핑 (핵심 로직!)
-        const error = e as Error;
+        const error = e as any;
         let details: ApiErrorDetail[] | null = null;
         let message: string = "데이터를 불러오는 중 예기치 않은 문제가 발생했습니다.";
 
         // 백엔드에서 구조화된 에러 객체를 받았는지 확인 (HTTP 400 등의 경우)
-        if (error.response && error.response.errors) {
+        if (error && error.response && error.response.errors) {
           details = error.response.errors; // [근거: ValidationUtility의 출력 형태]
           message = "진단 점수를 계산하기 위한 입력 데이터에 오류가 있습니다. 아래 내용을 확인해주세요.";
         } else if (error instanceof Error) {

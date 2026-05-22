@@ -1,22 +1,22 @@
-'use server'; // Next.js Server Action임을 명시
-
+import { NextRequest, NextResponse } from 'next/server';
 import { DiagnosisApiResponse, UserDiagnosisInputs, DiagnosisResult } from '@/types/diagnosis';
 
 /**
  * [POST /api/diagnosis] 
  * 사용자의 진단 데이터를 받아 AI 분석을 수행하고 결과를 반환하는 엔드포인트입니다.
- * @param body - 클라이언트가 전송한 UserDiagnosisInputs 객체
- * @returns DiagnosisApiResponse 형태의 JSON 데이터
+ * @param request - Next.js Request 객체
+ * @returns DiagnosisApiResponse 형태의 JSON 데이터를 포함한 NextResponse
  */
-export async function POST(body: UserDiagnosisInputs): Promise<DiagnosisApiResponse> {
-  console.log(`[API LOG] 수신된 진단 요청 타입: ${body.diagnosisType}`);
-  
-  // --- [!!! 핵심 로직 수행 구역 !!!] ---
-  // 1. (DB Check) Body의 userId로 기존 학습 기록 조회 및 권한 검증 (RBAC 적용 필요)
-  // 2. (AI Process) body.userAnswers를 기반으로 화성학 분석 AI 호출 (외부 API 연동 예상)
-  // 3. (Model Update) 계산된 KPI를 Diagnosis_Results 테이블에 저장하고 트랜잭션 커밋
-
+export async function POST(request: NextRequest): Promise<NextResponse<DiagnosisApiResponse>> {
   try {
+    const body: UserDiagnosisInputs = await request.json();
+    console.log(`[API LOG] 수신된 진단 요청 타입: ${body.diagnosisType}`);
+    
+    // --- [!!! 핵심 로직 수행 구역 !!!] ---
+    // 1. (DB Check) Body의 userId로 기존 학습 기록 조회 및 권한 검증 (RBAC 적용 필요)
+    // 2. (AI Process) body.userAnswers를 기반으로 화성학 분석 AI 호출 (외부 API 연동 예상)
+    // 3. (Model Update) 계산된 KPI를 Diagnosis_Results 테이블에 저장하고 트랜잭션 커밋
+
     // Mock 데이터 반환: 실제로는 복잡한 비즈니스 로직을 거쳐야 함
     const mockResult: any = {
       overallGapScore: Math.floor(Math.random() * 100) + 30, // 임의의 Gap Score (최소 30점부터 시작하도록 설정)
@@ -36,19 +36,19 @@ export async function POST(body: UserDiagnosisInputs): Promise<DiagnosisApiRespo
       }
     };
 
-    return {
+    return NextResponse.json({
       status: 'success',
       message: "진단 분석이 완료되었습니다.",
       data: mockResult as DiagnosisResult,
-    };
+    });
 
   } catch (error) {
     console.error("[API ERROR] 진단 처리 중 오류 발생:", error);
-    return {
+    return NextResponse.json({
       status: 'error',
       message: `서버 내부 오류로 진단을 완료할 수 없습니다. (${(error as Error).message})`,
       data: undefined,
-    };
+    }, { status: 500 });
   }
 }
 
