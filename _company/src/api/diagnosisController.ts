@@ -1,6 +1,7 @@
 // src/api/diagnosisController.ts
 
 import { Request, Response } from 'express';
+import { processDiagnosisScore } from '../services/DiagnosisService';
 
 export interface DiagnosisResult {
     score: number;
@@ -38,15 +39,18 @@ export const getDiagnosisScore = async (req: Request, res: Response): Promise<vo
              return;
         }
 
-        // 3. 핵심 비즈니스 로직 실행 (점수 계산 및 데이터 조합)
+        // 3. 핵심 비즈니스 로직 실행 (서비스 레이어 연동)
+        const userId = "mock-user-456";
+        const serviceResult = await processDiagnosisScore(userId, { diagnosisType: diagnosis_type });
+
         const mockDiagnosisResult: DiagnosisResult = {
-            score: Math.floor(Math.random() * (90 - 40 + 1)) + 40, // 임의 점수 생성 (40~90점)
+            score: serviceResult.overallGapScore,
             levelName: "준비 단계", // 실제 로직에 따라 결정됨
-            recommendationText: `현재 ${diagnosis_type} 영역에서는 기초를 탄탄히 다지는 것이 중요합니다. 꾸준한 연습이 필요해요!`,
+            recommendationText: serviceResult.summaryMessage,
             kpis: {
-                growth: Math.floor(Math.random() * 30) + 5, // Growth KPI (5~35점)
-                engagement: Math.floor(Math.random() * 40) + 10, // Engagement KPI (10~50점)
-                monetization: Math.floor(Math.random() * 20) + 1, // Monetization KPI (1~21점)
+                growth: Math.round(serviceResult.kpis.growthScore * 100),
+                engagement: Math.round(serviceResult.kpis.engagementScore * 100),
+                monetization: Math.round(serviceResult.kpis.monetizationPotential * 100),
             }
         };
 
@@ -59,6 +63,6 @@ export const getDiagnosisScore = async (req: Request, res: Response): Promise<vo
 
     } catch (error) {
         console.error("진단 API 처리 중 에러 발생:", error);
-        res.status(500).json({ message: "서버 내부 오류가 발생했습니다. 잠시 후 다시 시도해 주세요." });
+        res.status(500).json({ message: (error as Error).message || "서버 내부 오류가 발생했습니다. 잠시 후 다시 시도해 주세요." });
     }
 };
