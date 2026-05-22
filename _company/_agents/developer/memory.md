@@ -121,3 +121,5 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-21] master_script.json, production_manual.json, integration_test.py 파일 내용을 분석하여 시스템 통합 테스트 실패의 근본 원인(데이터 매핑, 타입 캐스팅, 논리적 흐름 누락)을 진단하고 수정 방안을 제시하라. 최종 목표는 세 파일 간의 완벽한 동기화와 통합 테스트 통과를 확보하는 것이다. → 산출물 sessions/2026-05-21T10-25/developer.md
 - [2026-05-21] master_script.json, production_manual.json, integration_test.py 파일의 내용 및 구조를 분석하여 시스템 통합 실패의 근본 원인(데이터 흐름 또는 스키마 불일치)을 진단하고 수정 계획을 도출하라. → 산출물 sessions/2026-05-21T10-40/developer.md
 - [2026-05-21] master_script.json, production_manual.json, integration_test.py 파일 간의 데이터 매핑 오류, 타입 캐스팅 문제, 논리적 흐름 누락 등 시스템 통합 실패 원인을 진단하고 완벽한 데이터 동기화 및 통합 테스트 통과를 위한 수정 방안을 최우선으로 제시하라. → 산출물 sessions/2026-05-21T10-55/developer.md
+- [2026-05-22] master_script.json, production_manual.json, integration_test.py 파일 간의 데이터 흐름 및 스키마 불일치에 대한 근본 원인(Root Cause) 분석 보고서를 작성하고, 시스템 안정화 계획을 제시하세요. → 산출물 sessions/2026-05-22T01-19/developer.md
+- [2026-05-22] master_script.json, production_manual.json, integration_test.py 파일 간의 데이터 흐름 및 스키마 일관성 검증을 최종적으로 수행하고, 시스템 통합 실패 원인이 완전히 제거되었는지 확인하여 보고하라. → 산출물 sessions/2026-05-22T01-34/developer.md
