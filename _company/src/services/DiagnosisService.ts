@@ -1,43 +1,58 @@
-// src/services/DiagnosisService.ts
-
-import { User, DiagnosisContext } from '../types/diagnosisTypes';
+import { PerformanceHistory, UserContext } from '../models';
+import * as db from '../db'; // DB 연결 모듈 가정
 
 /**
- * @description 사용자 진단 컨텍스트와 데이터를 기반으로 시각화에 적합한 Gap Score 추이 데이터를 계산합니다.
- * 이 로직은 DB에서 가져온 Raw Log를 가공하여 트렌드 차트에 최적화된 형태로 만듭니다.
- * @param user - 현재 사용자의 정보 (권한 체크용)
- * @param diagnosisContext - 진단을 수행할 때의 컨텍스트 데이터 (진단 유형, 목표 등)
- * @returns {Promise<{ timeSeriesData: Array<DiagnosisScorePoint>, summaryScore: number }>} 시각화에 필요한 구조화된 데이터
+ * @description 진단 점수 계산 및 사용량 로직을 통합 처리하는 서비스 레이어 함수.
+ * @param userId - 현재 사용자 ID (인증 필요)
+ * @param audioData - 분석할 오디오 데이터
+ * @returns Promise<DiagnosisResult>
  */
-export const calculateGapScoreHistory = async (user: User, diagnosisContext: DiagnosisContext): Promise<{ timeSeriesData: Array<DiagnosisScorePoint>, summaryScore: number }> => {
-    // [WARN] 실제 구현에서는 여기서 DB를 조회하여 사용자별 진단 로그(Diagnosis_Results)를 가져와야 합니다.
-    console.log(`[Service Logic] Calculating Gap Score history for User ${user.id}...`);
+export async function processDiagnosisScore(userId: string, audioData: any): Promise<any> {
+    // 1. [RBAC/Billing] 사용자 권한 및 사용량 확인 (핵심 로직)
+    const userContext = await db.getUserContext(userId); // DB에서 구독 레벨, 할당 횟수 조회
+    
+    if (!checkQuotaAvailable(userContext)) {
+        // 과도한 사용 시도를 기록하고 에러 발생
+        await recordUsageAttempt(userId, 'Diagnosis', 'QUOTA_EXCEEDED');
+        throw new Error("사용량 제한에 도달했습니다. Pro/Enterprise로 업그레이드하세요.");
+    }
 
-    // --- MOCK DATA GENERATION (실제 데이터 로직이 들어갈 자리입니다.) ---
-    // 시각화는 시간 흐름에 따른 변화(Time-Series)가 핵심이므로, 가상의 3개 세션 데이터를 만듭니다.
-    const mockData: Array<{ date: Date; score: number }> = [
-        { date: new Date('2026-05-10'), score: Math.round(Math.random() * (80 - 50 + 1)) + 50 }, // 낮은 점수 시작
-        { date: new Date('2026-05-17'), score: Math.round(Math.random() * (90 - 60 + 1)) + 60 }, // 중간 개선
-        { date: new Date('2026-05-24'), score: Math.round(Math.random() * (100 - 80 + 1)) + 80 }  // 높은 목표 달성 점수
-    ];
+    // 2. [Core Logic] 진단 점수 계산 (기존 로직 유지)
+    const diagnosisResult = await calculateDiagnosis(audioData); // 실제 분석 API 호출
 
-    const timeSeriesData: Array<DiagnosisScorePoint> = mockData.map((item, index) => ({
-        date: item.date.toISOString().split('T')[0], // YYYY-MM-DD 형식으로 통일
-        score: item.score,
-        // 기타 시각화에 필요한 메트릭 추가 가능 (예: trend_change: calculateChange(item))
-    }));
+    // 3. [Data Persistence] 결과 및 사용량 기록
+    await db.saveDiagnosisResult(userId, diagnosisResult);
+    await recordUsageAttempt(userId, 'Diagnosis', null); // 성공적으로 사용했으므로 기본 기록
 
-    // 최종 요약 점수는 가장 최근 데이터를 반영하거나 가중 평균합니다.
-    const summaryScore = timeSeriesData.length > 0 ? timeSeriesData[timeSeriesData.length - 1].score : 0;
+    return diagnosisResult;
+}
 
-    return {
-        timeSeriesData: timeSeriesData,
-        summaryScore: summaryScore
+
+/**
+ * @description 사용량 시도 및 제한 여부를 Performance_History에 기록합니다. (원자성 필수)
+ */
+async function recordUsageAttempt(userId: string, contextType: string, limitedKpi: string | null): Promise<void> {
+    const historyEntry: PerformanceHistory = {
+        history_id: undefined, // DB가 UUID 생성 가정
+        user_id: userId,
+        context_type: contextType,
+        attempted_access_kpi: limitedKpi || null,
+        is_restricted: !!limitedKpi,
+        metric_value: { /* ... */ },
+        recorded_at: new Date(),
     };
-};
 
-// 시각화에 필요한 데이터 포인트를 정의하는 인터페이스 (types/diagnosisTypes.ts와 연동되어야 함)
-export type DiagnosisScorePoint = {
-    date: string; // YYYY-MM-DD
-    score: number;
-};
+    // 트랜잭션 처리 필수! 기록 실패 시 데이터 불일치 발생 가능.
+    await db.insertPerformanceHistory(historyEntry); 
+}
+
+/**
+ * @description 사용자의 구독 레벨과 남은 횟수를 확인하는 가상 함수 (비즈니스 로직).
+ */
+function checkQuotaAvailable(userContext: any): boolean {
+    // 예시: Basic은 월 5회 제한. 현재 차감된 횟수가 5회를 넘으면 false 반환
+    if (userContext.tier === 'Basic' && userContext.usage_count >= 5) {
+        return false;
+    }
+    return true; // Pro/Enterprise는 무제한 또는 더 많은 할당량 가정
+}
