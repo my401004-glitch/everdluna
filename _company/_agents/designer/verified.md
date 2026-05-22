@@ -69,3 +69,13 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-22] | **Background Color (가독성)** | Neutral Grey (`#F5F5F5`) | 본문 텍스트 배경. Dark Blue와의 명확한 대비를 통해 데이터 영역의 가독성 극대화. | | _(근거: Designer 검증된 지식)_
 - [2026-05-22] | **Title Typography** | Montserrat Bold | 핵심 메시지(Pain, Gain)에 사용. 강력한 시각적 임팩트 제공. | | _(근거: Designer 검증된 지식)_
 - [2026-05-22] | **Body Typography** | Noto Sans KR | 데이터 및 상세 설명 텍스트에 사용. 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
+- [2026-05-22] | **Primary Color (신뢰)** | Dark Blue (`#0A2463`) | 배경, 헤더, 주요 정보 영역. 전문성과 신뢰감 극대화. | | _(근거: Designer 검증된 지식)_
+- [2026-05-22] | **Accent Color (행동 유도)** | Accent Yellow (`#FFD700`) | Pain(위험) 표시, Gain(이득), 최종 CTA 버튼 강조. 즉각적인 시선 집중 및 행동 유도. | | _(근거: Designer 검증된 지식)_
+- [2026-05-22] | **Title Typography** | Montserrat Bold | 핵심 메시지(Pain/Gain)에 사용되어 강력한 시각적 임팩트 제공. | | _(근거: Designer 검증된 지식)_
+- [2026-05-22] | **Body Typography** | Noto Sans KR | 데이터 및 상세 설명 텍스트에 사용되어 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
+- [2026-05-22] | **Layout Principle** | Pain $\rightarrow$ Gain | 모든 시각 요소는 '현재의 손실(Risk)'을 제시한 후, '솔루션 적용 시 얻을 수 있는 재무적 이득(ROI)'으로 명확하게 연결. | | _(근거: Designer 검증된 지식)_
+- [2026-05-22] | **Primary Color (신뢰/안정)** | Dark Blue (`#0A2463`) | 배경, 헤더, 핵심 데이터 영역. 전문성과 신뢰감을 극대화하여 데이터에 대한 믿음을 구축합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-05-22] | **Accent Color (행동 유도/기회)** | Accent Yellow (`#FFD700`) | Pain(위험) 표시, Gain(이득), 최종 CTA 버튼 등 행동을 유도해야 하는 모든 요소에 사용. 즉각적인 시선 집중 및 클릭을 유도합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-05-22] | **Background Color (가독성)** | Neutral Grey (`#F5F5F5`) | 본문 텍스트 배경으로 사용하여 Dark Blue와의 명확한 대비를 유지하고 데이터 영역을 시각적으로 분리하여 가독성을 극대화합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-05-22] | **Title Typography** | Montserrat Bold | 핵심 메시지(Pain, Gain)에 사용. 강력함과 긴급성을 전달하여 주의를 즉시 끌어당깁니다. | | _(근거: Designer 검증된 지식)_
+- [2026-05-22] | **Body Typography** | Noto Sans KR | 구체적인 데이터 및 상세 설명 텍스트에 사용. 높은 가독성을 보장하여 복잡한 수치도 명확하게 전달합니다. | | _(근거: Designer 검증된 지식)_

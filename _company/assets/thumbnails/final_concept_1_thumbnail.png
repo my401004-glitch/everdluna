@@ -1,0 +1,24 @@
+# 최종 썸네일 디자인 (컨셉 1: 극단적 대비형)
+## 디자인 사양
+*   **해상도:** 1280x720px (권장 유튜브 썸네일 크기)
+*   **주요 컨셉:** Pain $\rightarrow$ Gain의 시각적 분할 강조
+*   **Color Palette:**
+    *   Background (Left/Pain): Dark Blue (`#0A2463`)
+    *   Background (Right/Gain): Accent Yellow (`#FFD700`)
+    *   Text Contrast: White and Black
+*   **Typography:** Montserrat Bold (Title), Noto Sans KR (Body)
+
+## 레이아웃 상세 가이드라인
+1.  **전체 구조:** 세로 중앙선을 기준으로 좌측은 Pain, 우측은 Gain으로 명확하게 분리합니다.
+2.  **좌측 (Pain Zone):**
+    *   배경: Dark Blue (`#0A2463`)
+    *   텍스트: Montserrat Bold, White 색상으로 "현재의 손실 (Risk)" 또는 핵심 Pain 포인트. 폰트 크기 최대화.
+    *   시각적 강조: 이 구역에 약간의 어두운 그림자 효과를 주어 무게감을 부여합니다.
+3.  **우측 (Gain Zone):**
+    *   배경: Accent Yellow (`#FFD700`)
+    *   텍스트: Noto Sans KR, Dark Blue 또는 Black 색상으로 "얻을 수 있는 이득 (Gain)" 또는 핵심 결과. 폰트 크기 최대화.
+    *   시각적 강조: 노란색 배경의 밝기를 극대화하여 시선 집중.
+4.  **중앙 연결부:** 두 영역 사이에는 굵은 화살표(`$\rightarrow$`)를 배치하며, 이 화살표 자체는 Dark Blue와 Accent Yellow의 경계에 위치하도록 디자인합니다.
+
+## 최종 비주얼 에셋 설명
+이 디자인은 시청자가 스크롤하는 순간 즉각적으로 '문제 제기(Pain)'와 '해결책 제시(Gain)'라는 강력한 감정적 흐름을 인지하게 하여 클릭을 유도합니다. Dark Blue의 신뢰감과 Accent Yellow의 긴급성이 결합되어, 데이터 기반 코칭의 효과를 극대화하는 시각적 프레임워크를 제공합니다.
