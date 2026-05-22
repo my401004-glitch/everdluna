@@ -140,3 +140,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-22] Codari는 'Performance_History' 테이블 설계 및 API 매핑을 즉시 착수하여, 가격 모델(Basic, Pro, Enterprise)과 데이터 흐름이 완벽하게 매핑되는지 최종적으로 검증하고 그 결과를 보고하라. 이 결과는 Designer와 Writer의 다음 작업에 대한 기술적 근거가 된다. → 산출물 sessions/2026-05-22T09-58/developer.md
 - [2026-05-22] Performance_History 테이블 스키마(`schema.sql`)를 실제 시스템에 통합하기 위한 데이터 흐름의 최종 API 계약을 확정하고 구현 준비를 시작하라. → 산출물 sessions/2026-05-22T10-13/developer.md
 - [2026-05-22] Designer와 Writer가 제시한 모든 시각적 요구사항(Pain $ightarrow$ Gain 프레임워크 기반)이 시스템의 기술적 근거(`Performance_History` 테이블 설계 및 데이터 흐름)와 완벽하게 일치하는지 최종 검증하고 보고하라. → 산출물 sessions/2026-05-22T10-58/developer.md
+- [2026-05-22] Designer와 Writer가 제시한 모든 시각적 요구사항(Pain $ightarrow$ Gain 프레임워크)이 시스템의 기술적 근거(`Performance_History` API 계약)와 일치하는지 최종 검증하고, 비주얼 에셋 제작에 필요한 데이터 흐름의 기술적 안정성을 확인하라. → 산출물 sessions/2026-05-22T11-34/developer.md

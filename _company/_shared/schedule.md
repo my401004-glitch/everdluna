@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 22. 오후 8:23:14_
+_업데이트: 2026. 5. 22. 오후 8:38:19_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 5. 22. 오후 8:23:14_
 - [2026-05-21] 최근 인게이지먼트 데이터와 트렌드 분석을 기반으로 다음 콘텐츠 제작 시 최적의 게시 시간, 해시태그 전략 및 포맷(릴스/피드)별 실행 방안을 구체적으로 제시하세요. → 산출물 sessions/2026-05-21T09-35/instagram.md
 - [2026-05-22] writer가 작성한 후크 버전을 기반으로, 가장 높은 인게이지먼트를 유도할 수 있는 최적의 게시 시간, 핵심 해시태그 전략 및 포맷(릴스/피드)별 구체적인 실행 방안을 제시하세요. → 산출물 sessions/2026-05-22T02-49/instagram.md
 ### 🎨 Designer
-- [2026-05-22] Writer가 확정한 스크립트와 'Pain $ightarrow$ Gain' 프레임워크를 기반으로, Codari의 기술적 근거(Fact Check)를 통합하여 최종 비주얼 에셋 목업 가이드라인을 생성하라. → 산출물 sessions/2026-05-22T10-28/designer.md
 - [2026-05-22] 이전 논의를 통해 확정된 '가장 잠재력이 높은 썸네일 컨셉'과 'Pain $ightarrow$ Gain' 프레임워크, 그리고 Dark Blue/Accent Yellow 색상 규칙을 적용하여 최종 비주얼 에셋 제작을 즉시 착수하라. → 산출물 sessions/2026-05-22T10-43/designer.md
 - [2026-05-22] writer가 확정한 최종 스크립트 및 'Pain $ightarrow$ Gain' 프레임워크를 기반으로, 가장 잠재력 높은 썸네일 컨셉을 선택하고 Dark Blue(#0A2463)와 Accent Yellow(#FFD700) 색상을 적용하여 최종 비주얼 에셋 제작을 즉시 착수하라. → 산출물 sessions/2026-05-22T11-19/designer.md
+- [2026-05-22] Writer와 CEO의 최종 검증을 거친 '가장 잠재력 높은 썸네일 컨셉'과 Dark Blue(#0A2463) 및 Accent Yellow(#FFD700) 색상을 적용하여 최종 비주얼 에셋 제작을 즉시 착수하라. → 산출물 sessions/2026-05-22T11-34/designer.md
 ### 💻 코다리
-- [2026-05-22] Codari는 'Performance_History' 테이블 설계 및 API 매핑을 즉시 착수하여, 가격 모델(Basic, Pro, Enterprise)과 데이터 흐름이 완벽하게 매핑되는지 최종적으로 검증하고 그 결과를 보고하라. 이 결과는 Designer와 Writer의 다음 작업에 대한 기술적 근거가 된다. → 산출물 sessions/2026-05-22T09-58/developer.md
 - [2026-05-22] Performance_History 테이블 스키마(`schema.sql`)를 실제 시스템에 통합하기 위한 데이터 흐름의 최종 API 계약을 확정하고 구현 준비를 시작하라. → 산출물 sessions/2026-05-22T10-13/developer.md
 - [2026-05-22] Designer와 Writer가 제시한 모든 시각적 요구사항(Pain $ightarrow$ Gain 프레임워크 기반)이 시스템의 기술적 근거(`Performance_History` 테이블 설계 및 데이터 흐름)와 완벽하게 일치하는지 최종 검증하고 보고하라. → 산출물 sessions/2026-05-22T10-58/developer.md
+- [2026-05-22] Designer와 Writer가 제시한 모든 시각적 요구사항(Pain $ightarrow$ Gain 프레임워크)이 시스템의 기술적 근거(`Performance_History` API 계약)와 일치하는지 최종 검증하고, 비주얼 에셋 제작에 필요한 데이터 흐름의 기술적 안정성을 확인하라. → 산출물 sessions/2026-05-22T11-34/developer.md
 ### 💼 현빈
 - [2026-05-22] 레오의 리스크 가정과 현빈의 ROI 시뮬레이션 데이터를 분석하여, 가장 설득력 있는 'Pain $ightarrow$ Gain' 프레임워크 기반의 수익화 전략(가격 책정 및 상품 구성)을 도출하라. → 산출물 sessions/2026-05-22T05-56/business.md
 - [2026-05-22] 개발팀의 API 및 데이터 흐름 검증 결과를 바탕으로, 제시된 가격 모델(Basic, Pro, Enterprise)이 기술적 구현 가능성 및 예상 ROI를 충족하는지 비즈니스 관점에서 최종 분석하고 피드백을 제공하라. → 산출물 sessions/2026-05-22T06-11/business.md
@@ -31,9 +31,9 @@ _업데이트: 2026. 5. 22. 오후 8:23:14_
 ### 🎵 루나
 - [2026-05-19] 📥 새 지식 입수 — **student_growth_report_generator_v_1.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-19/student_growth_report_generator_v_1.html)
 ### ✍️ Writer
-- [2026-05-22] Codari의 기술 검증 결과를 바탕으로, 스크립트에 사용된 모든 데이터 지표에 대한 기술적 근거(Fact Check)를 보강하고 최종 메시지를 확정하라. → 산출물 sessions/2026-05-22T10-28/writer.md
 - [2026-05-22] 최종 확정된 스크립트 초안과 'Gap Score' 기반의 데이터 논리를 바탕으로, 영상 제작에 필요한 Scene-by-Scene Visual Brief(장면별 시각화 지침)를 상세하게 작성하라. → 산출물 sessions/2026-05-22T10-43/writer.md
 - [2026-05-22] youtube 에이전트가 제시한 최종 기획안에 맞춰, 채널 목표(1만 구독자) 달성에 최적화된 제목 후보 3개와 각 후크별 감정적 동기 부여 메시지를 보강하여 작성하라. → 산출물 sessions/2026-05-22T11-19/writer.md
+- [2026-05-22] Designer가 제공한 시각적 요구사항(Pain $ightarrow$ Gain 프레임워크 및 브랜드 컬러)에 맞춰, 가장 잠재력 높은 썸네일 컨셉의 메시지 및 텍스트 배치에 대한 최종 검토를 완료하고 디자인 작업에 필요한 모든 카피라이팅을 확정하라. → 산출물 sessions/2026-05-22T11-34/writer.md
 ### 🔍 Researcher
 - [2026-05-20] 현재 채널의 데이터와 경쟁사 트렌드를 분석하여, 가장 높은 조회수/시청 지속률을 유도할 수 있는 다음 3가지 핵심 주제 및 후킹 전략을 도출하고 보고하라. → 산출물 sessions/2026-05-20T21-16/researcher.md
 - [2026-05-21] 현재 실용음악/AI 교육 분야의 유튜브 및 숏폼 콘텐츠에서 가장 높은 시청 지속률(Retention)과 클릭률(CTR)을 유도하는 최신 트렌드 및 성공적인 Hook 전략 5가지를 데이터 기반으로 수집하고 요약하라. → 산출물 sessions/2026-05-21T02-13/researcher.md

@@ -1,5 +1,6 @@
 import { PerformanceHistory, UserContext } from '../models';
 import * as db from '../db'; // DB 연결 모듈 가정
+import { DiagnosisResult } from '../types/diagnosis';
 
 /**
  * @description 진단 점수 계산 및 사용량 로직을 통합 처리하는 서비스 레이어 함수.
@@ -7,7 +8,7 @@ import * as db from '../db'; // DB 연결 모듈 가정
  * @param audioData - 분석할 오디오 데이터
  * @returns Promise<DiagnosisResult>
  */
-export async function processDiagnosisScore(userId: string, audioData: any): Promise<any> {
+export async function processDiagnosisScore(userId: string, audioData: any): Promise<DiagnosisResult> {
     // 1. [RBAC/Billing] 사용자 권한 및 사용량 확인 (핵심 로직)
     const userContext = await db.getUserContext(userId); // DB에서 구독 레벨, 할당 횟수 조회
     
@@ -49,10 +50,37 @@ async function recordUsageAttempt(userId: string, contextType: string, limitedKp
 /**
  * @description 사용자의 구독 레벨과 남은 횟수를 확인하는 가상 함수 (비즈니스 로직).
  */
-function checkQuotaAvailable(userContext: any): boolean {
+function checkQuotaAvailable(userContext: UserContext): boolean {
     // 예시: Basic은 월 5회 제한. 현재 차감된 횟수가 5회를 넘으면 false 반환
     if (userContext.tier === 'Basic' && userContext.usage_count >= 5) {
         return false;
     }
     return true; // Pro/Enterprise는 무제한 또는 더 많은 할당량 가정
+}
+
+/**
+ * @description 실제 오디오 분석 API를 호출하여 진단 결과를 계산하는 내부 헬퍼 함수.
+ */
+async function calculateDiagnosis(audioData: any): Promise<DiagnosisResult> {
+    // 임시 Mock 구현: 실제 환경에 맞춤
+    return {
+        overallGapScore: 45,
+        isSuccessful: true,
+        summaryMessage: "오디오 파일 분석 및 진단이 완료되었습니다.",
+        kpis: {
+            growthScore: 0.75,
+            engagementScore: 0.82,
+            monetizationPotential: 0.61
+        },
+        detailedReportData: {
+            weakestAreas: [
+                { areaName: "Harmony", score: 60, recommendation: "기본 화성학 진행 분석 훈련 필요" }
+            ],
+            scoreBreakdown: {
+                "Harmony": 60,
+                "PitchDeviation": 75,
+                "Rhythm": 80
+            }
+        }
+    };
 }
