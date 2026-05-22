@@ -113,3 +113,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-20] 개발팀이 제공한 통합 테스트 결과 및 Visual Master Script를 기반으로, 최종 자막 및 그래픽 시안(`Visual_Asset_Mapping_Guide.md`)에 적용할 규칙을 확정하고 명확한 가이드라인을 문서화하라. → 산출물 sessions/2026-05-20T23-31/designer.md
 - [2026-05-21] 최종 확정된 Visual Master Script(Production Manual)를 기반으로, 모든 시각화 에셋이 영상 편집 요구사항과 완벽하게 매핑되는지 최종 검토하고 필요한 에셋을 확인하라. → 산출물 sessions/2026-05-21T05-15/designer.md
 - [2026-05-22] writer가 제시한 최종 후크 및 스크립트 방향성을 기반으로, 가장 임팩트가 클 것으로 예상되는 영상 1개의 핵심 시각화 에셋(`Visual_Asset_Mapping_Guide.md`)의 요구사항을 확정하고, 필요한 디자인 자산 목록을 정리하라. → 산출물 sessions/2026-05-22T03-21/designer.md
+- [2026-05-22] 현빈이 권고한 'Pro' 티어의 핵심 가치(Gap Score, 성장 대시보드)를 시각화하는 데 필요한 최종 비주얼 에셋 목록 및 요구사항을 확정하고 디자인 브리프 초안을 작성하라. → 산출물 sessions/2026-05-22T06-26/designer.md
