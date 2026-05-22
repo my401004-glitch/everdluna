@@ -141,3 +141,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-22] Performance_History 테이블 스키마(`schema.sql`)를 실제 시스템에 통합하기 위한 데이터 흐름의 최종 API 계약을 확정하고 구현 준비를 시작하라. → 산출물 sessions/2026-05-22T10-13/developer.md
 - [2026-05-22] Designer와 Writer가 제시한 모든 시각적 요구사항(Pain $ightarrow$ Gain 프레임워크 기반)이 시스템의 기술적 근거(`Performance_History` 테이블 설계 및 데이터 흐름)와 완벽하게 일치하는지 최종 검증하고 보고하라. → 산출물 sessions/2026-05-22T10-58/developer.md
 - [2026-05-22] Designer와 Writer가 제시한 모든 시각적 요구사항(Pain $ightarrow$ Gain 프레임워크)이 시스템의 기술적 근거(`Performance_History` API 계약)와 일치하는지 최종 검증하고, 비주얼 에셋 제작에 필요한 데이터 흐름의 기술적 안정성을 확인하라. → 산출물 sessions/2026-05-22T11-34/developer.md
+- [2026-05-22] schema.sql 파일을 업데이트하여 Diagnosis_Results 테이블에 물리 음성 분석 지표 필드를 정의하고, diagnosisController.ts 파일을 수정하여 새로운 데이터 필드를 처리하고 API 계약 확장 로직을 추가하는 백엔드 개발을 즉시 시작하라. → 산출물 sessions/2026-05-22T11-49/developer.md

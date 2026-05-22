@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 22. 오후 8:38:19_
+_업데이트: 2026. 5. 22. 오후 8:52:02_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,9 +17,9 @@ _업데이트: 2026. 5. 22. 오후 8:38:19_
 - [2026-05-22] writer가 확정한 최종 스크립트 및 'Pain $ightarrow$ Gain' 프레임워크를 기반으로, 가장 잠재력 높은 썸네일 컨셉을 선택하고 Dark Blue(#0A2463)와 Accent Yellow(#FFD700) 색상을 적용하여 최종 비주얼 에셋 제작을 즉시 착수하라. → 산출물 sessions/2026-05-22T11-19/designer.md
 - [2026-05-22] Writer와 CEO의 최종 검증을 거친 '가장 잠재력 높은 썸네일 컨셉'과 Dark Blue(#0A2463) 및 Accent Yellow(#FFD700) 색상을 적용하여 최종 비주얼 에셋 제작을 즉시 착수하라. → 산출물 sessions/2026-05-22T11-34/designer.md
 ### 💻 코다리
-- [2026-05-22] Performance_History 테이블 스키마(`schema.sql`)를 실제 시스템에 통합하기 위한 데이터 흐름의 최종 API 계약을 확정하고 구현 준비를 시작하라. → 산출물 sessions/2026-05-22T10-13/developer.md
 - [2026-05-22] Designer와 Writer가 제시한 모든 시각적 요구사항(Pain $ightarrow$ Gain 프레임워크 기반)이 시스템의 기술적 근거(`Performance_History` 테이블 설계 및 데이터 흐름)와 완벽하게 일치하는지 최종 검증하고 보고하라. → 산출물 sessions/2026-05-22T10-58/developer.md
 - [2026-05-22] Designer와 Writer가 제시한 모든 시각적 요구사항(Pain $ightarrow$ Gain 프레임워크)이 시스템의 기술적 근거(`Performance_History` API 계약)와 일치하는지 최종 검증하고, 비주얼 에셋 제작에 필요한 데이터 흐름의 기술적 안정성을 확인하라. → 산출물 sessions/2026-05-22T11-34/developer.md
+- [2026-05-22] schema.sql 파일을 업데이트하여 Diagnosis_Results 테이블에 물리 음성 분석 지표 필드를 정의하고, diagnosisController.ts 파일을 수정하여 새로운 데이터 필드를 처리하고 API 계약 확장 로직을 추가하는 백엔드 개발을 즉시 시작하라. → 산출물 sessions/2026-05-22T11-49/developer.md
 ### 💼 현빈
 - [2026-05-22] 레오의 리스크 가정과 현빈의 ROI 시뮬레이션 데이터를 분석하여, 가장 설득력 있는 'Pain $ightarrow$ Gain' 프레임워크 기반의 수익화 전략(가격 책정 및 상품 구성)을 도출하라. → 산출물 sessions/2026-05-22T05-56/business.md
 - [2026-05-22] 개발팀의 API 및 데이터 흐름 검증 결과를 바탕으로, 제시된 가격 모델(Basic, Pro, Enterprise)이 기술적 구현 가능성 및 예상 ROI를 충족하는지 비즈니스 관점에서 최종 분석하고 피드백을 제공하라. → 산출물 sessions/2026-05-22T06-11/business.md

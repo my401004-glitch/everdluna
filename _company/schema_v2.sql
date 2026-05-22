@@ -31,6 +31,9 @@ CREATE TABLE IF NOT EXISTS Diagnosis_Results (
     diagnosis_type VARCHAR(50) NOT NULL, -- 예: 'PitchAnalysis', 'RhythmTest'
     context_id UUID DEFAULT gen_random_uuid(), -- 어떤 학습 세션을 기반으로 했는지 추적
     result_data JSONB NOT NULL, -- 진단 점수 및 상세 결과 (JSON 스키마 준수 필수)
+    physical_pitch_stability FLOAT, -- 피치 안정성 지표 (Float)
+    physical_frequency_variance FLOAT, -- 주파수 변동 폭 (Float)
+    timbre_complexity INTEGER, -- 음색 복잡도 점수 (Int)
     created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     UNIQUE (user_id, diagnosis_type, created_at)
 );

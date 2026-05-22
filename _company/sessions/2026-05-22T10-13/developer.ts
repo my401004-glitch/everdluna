@@ -7,7 +7,7 @@ import { Request, Response } from 'express';
  */
 export const getDiagnosisScore = async (req: Request, res: Response) => {
     // ⚠️ 권한 검사 로직은 기존대로 유지되어야 합니다. [근거: sessions/2026-05-18T13:43]
-    const userRole = req.user?.role; 
+    const userRole = (req as any).user?.role; 
 
     if (!userRole || (userRole === 'Free' && !req.query.diagnosis_type)) {
         return res.status(403).json({ message: "Access denied. Diagnosis type required." });
