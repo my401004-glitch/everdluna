@@ -1,0 +1,22 @@
+{
+  "API_KEY": "***SET***",
+  "YOUTUBE_CHANNEL_ID": "https://www.youtube.com/channel/UC92YSjmyX0Url5noAXPPojQ",
+  "WATCHED_CHANNELS": [
+    // 향후 감시할 학원/교육기관 관련 채널 ID 추가 예정
+  ],
+  "COMPETITOR_CHANNELS": [
+    // 경쟁사 분석을 위해 업계 선두 교육 콘텐츠 채널 2~3개 ID 추가 필요
+  ],
+  "CORE_NARRATIVE": {
+    "primary_topic": "데이터 기반 학원 운영 ROI 극대화 및 학생 이탈 예측",
+    "target_audience": "학원 원장, 교육기관 대표 (B2B)",
+    "core_pain_points": [
+      "학생이 왜 성적을 올리지 못하는지 근본적인 이유를 모름.",
+      "수익 구조가 감성적 노력에 의존하고 있어 재무적 예측이 불가능함.",
+      "학생의 이탈 시점(Timing)과 사전 경고 신호를 놓침."
+    ],
+    "primary_keywords": [
+      "학원운영자", "교육데이터분석", "학생이탈방지", "ROI개선", "학원경영전략", "AI진단리포트"
+    ]
+  }
+}
