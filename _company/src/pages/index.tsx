@@ -79,6 +79,30 @@ const LandingPage: React.FC = () => {
             </div>
         </section>
 
+        {/* Simulator Integration Section */}
+        <section className="py-12 bg-slate-900 text-white">
+          <div className="container max-w-4xl mx-auto px-4 text-center">
+            <div className="bg-gradient-to-r from-indigo-900/60 to-purple-900/60 border border-indigo-500/30 rounded-2xl p-8 shadow-xl backdrop-blur-md">
+              <span className="bg-indigo-500/20 text-indigo-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block border border-indigo-500/30">
+                Premium Planner
+              </span>
+              <h3 className="text-2xl font-bold mb-3 text-yellow-400">대표자님 전용 5개년 10억 로드맵 시뮬레이터</h3>
+              <p className="text-gray-300 max-w-2xl mx-auto mb-6 text-sm leading-relaxed">
+                20년의 학원 운영 노하우와 2년의 F&B 프랜차이즈 지식을 결합한 B2B SaaS 기업 가치 및 영업이익 성장 모델입니다. 
+                SaaS 구독료, 가입 학원 수, 컨설팅 비용 등 핵심 변수를 직접 조정하며 5년 안에 자산 10억 원을 만드는 구체적인 경로를 확인해 보세요.
+              </p>
+              <a 
+                href="/financial_freedom_roadmap.html" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-bold rounded-xl shadow-lg transition duration-200 hover:-translate-y-0.5"
+              >
+                📈 성장 시뮬레이터 실행하기
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Features & Solution Section */}
         <section className="py-20 bg-white">
           <div className="container max-w-6xl mx-auto text-center">
