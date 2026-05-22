@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5개년 10억 경제적 자유 로드맵 & 시뮬레이터</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Chart.js CDN for interactive charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <style>
+    /* CSS 디자인 시스템 정의 (Vanilla CSS 프리미엄 에스테틱) */
+    :root {
+      --bg-dark: hsl(222, 47%, 6%);
+      --bg-card: rgba(15, 23, 42, 0.65);
+      --bg-card-hover: rgba(30, 41, 59, 0.8);
+      --primary: hsl(250, 84%, 63%);
+      --primary-hover: hsl(250, 85%, 55%);
+      --accent-violet: hsl(271, 91%, 65%);
+      --accent-emerald: hsl(142, 70%, 50%);
+      --accent-amber: hsl(37, 90%, 51%);
+      --text-light: hsl(210, 40%, 98%);
+      --text-muted: hsl(215, 25%, 70%);
+      --text-dark: hsl(222, 47%, 12%);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(99, 102, 241, 0.2);
+      --font-outfit: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --shadow-premium: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-inter);
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 40%);
+      background-attachment: fixed;
+      color: var(--text-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-bottom: 5rem;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-outfit);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    /* Container & Layout */
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Premium Header */
+    header {
+      padding: 2.5rem 0 1.5rem 0;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 2.5rem;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .brand-title {
+      font-size: 1.8rem;
+      background: linear-gradient(135deg, var(--text-light) 30%, var(--accent-violet) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .badge-premium {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent-violet) 100%);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      letter-spacing: 0.05em;
+      box-shadow: 0 0 15px var(--border-glow);
+    }
+
+    /* User Profile Card (Glassmorphism) */
+    .profile-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 1.75rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-premium);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .profile-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .profile-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .profile-value {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-light);
+    }
+
+    .profile-value.highlight-amber {
+      color: var(--accent-amber);
+    }
+    
+    .profile-value.highlight-violet {
+      color: var(--accent-violet);
+    }
+
+    /* Navigation Tabs */
+    .tabs {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.75rem;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-family: var(--font-outfit);
+      font-size: 1.05rem;
+      font-weight: 600;
+      padding: 0.6rem 1.2rem;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: var(--transition-smooth);
+      white-space: nowrap;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-light);
+      background-color: rgba(255, 255, 255, 0.03);
+    }
+
+    .tab-btn.active {
+      color: white;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent-violet) 100%);
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    }
+
+    /* Tab Content Panels */
+    .tab-panel {
+      display: none;
+      animation: fadeIn 0.4s ease-out forwards;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Grid Layouts */
+    .grid-dashboard {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      .grid-dashboard {
+        grid-template-columns: 420px 1fr;
+      }
+    }
+
+    /* Glassmorphism Panel */
+    .panel {
+      background: var(--bg-card);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: var(--shadow-premium);
+      transition: var(--transition-smooth);
+    }
+
+    .panel:hover {
+      border-color: rgba(99, 102, 241, 0.2);
+    }
+
+    .panel-title {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.75rem;
+    }
+
+    /* Simulation Control Sliders */
+    .slider-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.6rem;
+    }
+
+    .slider-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-light);
+    }
+
+    .slider-value {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent-emerald);
+      background: rgba(16, 185, 129, 0.1);
+      padding: 0.15rem 0.6rem;
+      border-radius: 6px;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    input[type="range"] {
+      width: 100%;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+      outline: none;
+      -webkit-appearance: none;
+      transition: var(--transition-smooth);
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--accent-violet);
+      cursor: pointer;
+      box-shadow: 0 0 10px var(--accent-violet);
+      transition: var(--transition-smooth);
+    }
+
+    input[type="range"]::-webkit-slider-thumb:hover {
+      transform: scale(1.2);
+      background: var(--text-light);
+    }
+
+    /* Big Metric Displays */
+    .metrics-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .metric-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+      transition: var(--transition-smooth);
+    }
+
+    .metric-box:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(99, 102, 241, 0.25);
+    }
+
+    .metric-box-title {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .metric-box-value {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text-light);
+    }
+
+    .metric-box.highlight {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+      border-color: rgba(139, 92, 246, 0.3);
+    }
+
+    .metric-box.highlight .metric-box-value {
+      background: linear-gradient(135deg, var(--text-light) 40%, var(--accent-violet) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Strategy & Timeline UI */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+      margin-top: 1rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: var(--border-color);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -29px;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--bg-dark);
+      border: 3px solid var(--primary);
+      box-shadow: 0 0 10px var(--primary);
+      z-index: 2;
+    }
+
+    .timeline-item.active .timeline-dot {
+      border-color: var(--accent-emerald);
+      box-shadow: 0 0 10px var(--accent-emerald);
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-year {
+      font-family: var(--font-outfit);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--accent-violet);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .timeline-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-light);
+      margin-bottom: 0.75rem;
+    }
+
+    .timeline-content {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    .timeline-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .timeline-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .timeline-list li::before {
+      content: '⚡';
+      position: absolute;
+      left: 0;
+      top: 1px;
+      font-size: 0.8rem;
+    }
+
+    /* Comparison Cards */
+    .compare-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .compare-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 1.75rem;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .compare-card.recommended {
+      border-color: rgba(99, 102, 241, 0.4);
+      background: linear-gradient(180deg, rgba(99, 102, 241, 0.03) 0%, rgba(15, 23, 42, 0.65) 100%);
+    }
+
+    .compare-card.recommended::before {
+      content: '추천 전략';
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: var(--accent-emerald);
+      color: var(--bg-dark);
+      font-size: 0.7rem;
+      font-weight: 800;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .compare-title {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+
+    .compare-card.recommended .compare-title {
+      color: var(--accent-violet);
+    }
+
+    .compare-metric {
+      margin: 1rem 0;
+      padding: 0.75rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.02);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .compare-metric-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .compare-metric-val {
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+
+    .compare-metric-val.bad {
+      color: #ef4444;
+    }
+
+    .compare-metric-val.good {
+      color: var(--accent-emerald);
+    }
+
+    .compare-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Action Checklist */
+    .checklist {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .checklist-item {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid var(--border-color);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .checklist-check {
+      min-width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 2px solid var(--accent-violet);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 0.7rem;
+      cursor: pointer;
+    }
+
+    .checklist-check.checked {
+      background: var(--accent-violet);
+    }
+
+    .checklist-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .checklist-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-light);
+    }
+
+    .checklist-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    .checklist-link {
+      color: var(--accent-violet);
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transition-smooth);
+    }
+
+    .checklist-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustment */
+    @media (max-width: 768px) {
+      .compare-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" style="margin-top: 2rem;">
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <div>
+          <h1 class="brand-title">AzitArt.AI 🎵 <span class="badge-premium">ROADMAP</span></h1>
+          <p style="color: var(--text-muted); margin-top: 0.25rem;">대표자님의 20년 전문성과 2천만 원 자본금 기반 '5년 10억' 자산 형성 시뮬레이터</p>
+        </div>
+        <div style="font-size: 0.9rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+          기준일: <span style="color: var(--text-light); font-weight: 600;">2026년 5월 22일</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- User Profile Overview -->
+    <div class="profile-card">
+      <div class="profile-item">
+        <span class="profile-label">보유 자본금</span>
+        <span class="profile-value highlight-amber">2,000만 원 (Bootstrapping 필수)</span>
+      </div>
+      <div class="profile-item">
+        <span class="profile-label">핵심 도메인 전문성 (20년)</span>
+        <span class="profile-value">실용음악 & 댄스학원 운영 (B2B 지식)</span>
+      </div>
+      <div class="profile-item">
+        <span class="profile-label">시스템화 전문성 (2년)</span>
+        <span class="profile-value">커피 프랜차이즈 운영 (표준화·가맹전략)</span>
+      </div>
+      <div class="profile-item">
+        <span class="profile-label">목표 자산 & 기간</span>
+        <span class="profile-value highlight-violet">10억 원 (5년 이내)</span>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(event, 'tab-simulator')">📈 5개년 시뮬레이터</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-roadmap')">📅 5단계 성장 로드맵</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-swot')">🧠 핵심 전략 분석</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-action')">🚀 즉시 실행 체크리스트</button>
+    </div>
+
+    <!-- TAB 1: SIMULATOR -->
+    <div id="tab-simulator" class="tab-panel active">
+      <div class="grid-dashboard">
+        <!-- Sliders panel -->
+        <div class="panel">
+          <h3 class="panel-title">변수 컨트롤러 <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 400;">(조정하며 시뮬레이션 해보세요)</span></h3>
+          
+          <!-- SaaS Subscription Fee -->
+          <div class="slider-group">
+            <div class="slider-header">
+              <span class="slider-title">SaaS 월 구독료</span>
+              <span id="val-saas-fee" class="slider-value">80,000원</span>
+            </div>
+            <input type="range" id="input-saas-fee" min="30000" max="300000" step="5000" value="80000" oninput="calculateModel()">
+          </div>
+
+          <!-- Academy Customer Count -->
+          <div class="slider-group">
+            <div class="slider-header">
+              <span class="slider-title">5년차 가입 학원 수</span>
+              <span id="val-saas-clients" class="slider-value">600개</span>
+            </div>
+            <input type="range" id="input-saas-clients" min="50" max="1500" step="25" value="600" oninput="calculateModel()">
+          </div>
+
+          <!-- Consulting Fee -->
+          <div class="slider-group">
+            <div class="slider-header">
+              <span class="slider-title">1회성 B2B 진단 컨설팅 비용</span>
+              <span id="val-consulting-fee" class="slider-value">1,500,000원</span>
+            </div>
+            <input type="range" id="input-consulting-fee" min="500000" max="5000000" step="100000" value="1500000" oninput="calculateModel()">
+          </div>
+
+          <!-- Monthly Consulting Clients -->
+          <div class="slider-group">
+            <div class="slider-header">
+              <span class="slider-title">월평균 컨설팅 수주 수</span>
+              <span id="val-consulting-clients" class="slider-value">2건</span>
+            </div>
+            <input type="range" id="input-consulting-clients" min="0" max="10" step="1" value="2" oninput="calculateModel()">
+          </div>
+
+          <!-- Franchise Setup Count (Year 4-5) -->
+          <div class="slider-group">
+            <div class="slider-header">
+              <span class="slider-title">스마트학원 시스템 라이선스 가맹점 (누적)</span>
+              <span id="val-franchise-count" class="slider-value">40개</span>
+            </div>
+            <input type="range" id="input-franchise-count" min="0" max="100" step="5" value="40" oninput="calculateModel()">
+          </div>
+          
+          <div style="background: rgba(99, 102, 241, 0.05); border: 1px solid var(--border-glow); padding: 1rem; border-radius: 12px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-top: 1.5rem;">
+            💡 <strong style="color: var(--text-light);">B2B SaaS 밸류에이션 공식:</strong><br>
+            SaaS(소프트웨어) 기업의 가치는 연간 구독 매출(ARR)의 대략 5배~10배의 배수(Multiple)로 가치 평가를 받습니다. 본 시뮬레이터는 보수적인 배수(5x ARR)를 기반으로 기업 가치를 산출합니다.
+          </div>
+        </div>
+
+        <!-- Metrics & Graph panel -->
+        <div style="display: flex; flex-direction: column; gap: 2rem;">
+          <!-- Metrics Display Grid -->
+          <div class="metrics-summary">
+            <div class="metric-box">
+              <div class="metric-box-title">5년차 월 고정 매출 (MRR)</div>
+              <div id="metric-mrr" class="metric-box-value">48,000,000원</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-box-title">5년차 연간 구독 매출 (ARR)</div>
+              <div id="metric-arr" class="metric-box-value">576,000,000원</div>
+            </div>
+            <div class="metric-box highlight">
+              <div class="metric-box-title">SaaS 기업 지분 가치 (5x ARR)</div>
+              <div id="metric-valuation" class="metric-box-value">28.8억 원</div>
+            </div>
+            <div class="metric-box" style="border-color: rgba(16, 185, 129, 0.3);">
+              <div class="metric-box-title">5개년 누적 영업 이익</div>
+              <div id="metric-profit" class="metric-box-value" style="color: var(--accent-emerald);">8.2억 원</div>
+            </div>
+          </div>
+
+          <!-- Dynamic Graph Panel -->
+          <div class="panel" style="flex: 1; display: flex; flex-direction: column;">
+            <h3 class="panel-title">5개년 자산 형성 시뮬레이션 차트</h3>
+            <div style="position: relative; flex: 1; min-height: 320px; width: 100%;">
+              <canvas id="growthChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: ROADMAP -->
+    <div id="tab-roadmap" class="tab-panel">
+      <div class="panel">
+        <h3 class="panel-title">5개년 단계별 실행 시나리오</h3>
+        
+        <div class="timeline">
+          <!-- Year 1 -->
+          <div class="timeline-item active">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">Year 1 (도입기)</div>
+            <div class="timeline-title">신뢰성 확보 및 MVP 검증 (컨설팅과 서비스형 SaaS 연계)</div>
+            <div class="timeline-content">
+              <p style="font-size: 0.95rem; color: var(--text-light); margin-bottom: 0.75rem;"><strong>핵심 목표:</strong> 대표자의 20년 학원 운영 경력을 기반으로 고단가 B2B 컨설팅 제공하여 초기 개발비용 마련 및 현장에서 필요로 하는 AI 진단 기능의 실마리 확보.</p>
+              <ul class="timeline-list">
+                <li><strong>컨설팅 연계형 MVP:</strong> 1회당 150만 원의 '학원 운영 효율성 및 학생 이탈 예측 컨설팅'을 제공하면서 스프레드시트나 가벼운 UI 모델로 Gap Score 모델 검증.</li>
+                <li><strong>유튜브 채널 셋업:</strong> 현재 세팅된 <a href="file:///Users/iyeongjae/Desktop/초보프로젝트/_company/youtube_account.json" class="checklist-link">youtube_account.json</a>의 키워드에 따라 학원 이탈 예측, ROI 개선 등 원장(B2B) 대상 신뢰형 콘텐츠 제작.</li>
+                <li><strong>MVP 개발:</strong> 현재 개발 중인 <a href="file:///Users/iyeongjae/Desktop/초보프로젝트/_company/src/pages/index.tsx" class="checklist-link">landing page</a> 및 진단 점수 로직 기반의 무료/유료 진단 리포트 웹페이지 완성.</li>
+                <li><strong>예상 자산:</strong> 자본금 2,000만 원 + 컨설팅 매출 약 3,600만 원 $\rightarrow$ 개발비 외 약 4,000만 원 확보.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Year 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">Year 2 (성장기)</div>
+            <div class="timeline-title">B2B SaaS 런칭 및 초기 100개 학원 가입 유치</div>
+            <div class="timeline-content">
+              <p style="font-size: 0.95rem; color: var(--text-light); margin-bottom: 0.75rem;"><strong>핵심 목표:</strong> 소프트웨어(SaaS) 제품을 정식 출시하고, 자동화된 학생 이탈 방지(Churn Prediction) 및 강사 ROI 예측 모델 배포.</p>
+              <ul class="timeline-list">
+                <li><strong>고객 획득:</strong> 20년간 구축한 개인 인맥 및 수도권 학원 연합 네트워크를 통해 30개 학원 선점 후, 유튜브 B2B 오가닉 채널을 통해 누적 100개 가입 달성.</li>
+                <li><strong>비즈니스 모델 다각화:</strong> 월 8만 원의 구독 요금제 외에, 강사 평가 및 학생 맞춤 커리큘럼 설계 모듈 등 '유료 추가 기능(Add-on)' 세팅.</li>
+                <li><strong>자본금 선순환:</strong> 월 구독 매출 약 800만 원(연 ARR 1억 원)에 달성하며 개발자 고용 혹은 아웃소싱 고도화가 가능한 수준의 Cash flow 확보.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Year 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">Year 3 (스케일업)</div>
+            <div class="timeline-title">F&B(커피 프랜차이즈) 도메인 확장 및 전국 학원 보급</div>
+            <div class="timeline-content">
+              <p style="font-size: 0.95rem; color: var(--text-light); margin-bottom: 0.75rem;"><strong>핵심 목표:</strong> 학원 데이터 엔진을 F&B 프랜차이즈 단골 이탈 및 ROI 분석 모델로 개량하여 시장 규모 확대.</p>
+              <ul class="timeline-list">
+                <li><strong>도메인 융합:</strong> 대표자의 2년 커피 프랜차이즈 운영 경험에서 나온 현장 문제를 해결하기 위해, 커피 가맹점 점포 효율성 및 고객 잔존율 예측을 위한 SaaS 모듈 추가 개발.</li>
+                <li><strong>영업 확장:</strong> 학원 지사 대리점 및 프랜차이즈 본사 대상 B2B 홀세일 세일즈. 가입 학원 300개, F&B 가맹점 100개 돌파.</li>
+                <li><strong>예상 ARR:</strong> 연 3~4억 원대 고정 구독 매출 돌입.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Year 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">Year 4 (시스템 프랜차이징)</div>
+            <div class="timeline-title">SaaS 탑재형 교육 브랜드 라이선스 프랜차이즈 런칭</div>
+            <div class="timeline-content">
+              <p style="font-size: 0.95rem; color: var(--text-light); margin-bottom: 0.75rem;"><strong>핵심 목표:</strong> 단순 소프트웨어 공급을 넘어, "학원 운영 표준 매뉴얼 + 데이터 플랫폼"을 결합한 스마트 학원 프랜차이즈 브랜드 가맹 유치.</p>
+              <ul class="timeline-list">
+                <li><strong>오프라인 표준화:</strong> 학원 대표로서 가진 20년 성공 노하우와 2년 프랜차이즈 시스템을 결합하여, 가맹 개설비(가맹비 1,000만 원)와 매월 데이터 로열티를 받는 가맹 사업 런칭.</li>
+                <li><strong>고수익 창출:</strong> 40개 가맹점 개설 시 가맹비 4억 원 일시 수입 및 매월 추가적인 로열티 고정 매출 발생.</li>
+                <li><strong>누적 이익:</strong> 현금 흐름이 폭발적으로 늘어나며 연간 순이익 6억 원 이상 달성.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Year 5 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">Year 5 (엑시트 또는 10억 달성 완료)</div>
+            <div class="timeline-title">기업 가치 평가 30억~50억 원 달성 및 엑시트/투자 유치</div>
+            <div class="timeline-content">
+              <p style="font-size: 0.95rem; color: var(--text-light); margin-bottom: 0.75rem;"><strong>핵심 목표:</strong> 탄탄한 영업이익과 데이터 솔루션 가치를 인정받아 자산 10억 원 돌파 및 경제적 자유 획득.</p>
+              <ul class="timeline-list">
+                <li><strong>지분 가치화:</strong> 가입 학원 600개 이상, 가맹 브랜드 40개 이상일 때 연 구독 매출(ARR) 약 6억 원 도달. 5배 ARR 기준 지분 가치 평가액 30억 원 돌파.</li>
+                <li><strong>엑시트 옵션:</strong> 대형 교육 플랫폼(대성, 메가스터디, 에스티유니타스 등) 또는 프랜차이즈 지주사에 SaaS 지분 일부를 매각하여 10억 원 이상 현금화(Exit), 혹은 회사 배당으로 매년 수억 원 수령.</li>
+                <li><strong>결과:</strong> 5년 전 2,000만 원으로 시작한 사업이 무차입 자산 10억 원 이상으로 확장 성공.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: STRATEGIC SWOT ANALYSIS -->
+    <div id="tab-swot" class="tab-panel">
+      <h2 style="font-family: var(--font-outfit); font-size: 1.6rem; margin-bottom: 1.5rem;">전략 옵션 비교 분석</h2>
+      <div class="compare-grid">
+        <!-- Option A -->
+        <div class="compare-card">
+          <h4 class="compare-title">방안 A: 오프라인 학원/카페 지점 확장</h4>
+          <div class="compare-metric">
+            <span class="compare-metric-label">필요 자본금</span>
+            <span class="compare-metric-val bad">최소 3억~5억 (대출 필수)</span>
+          </div>
+          <div class="compare-metric">
+            <span class="compare-metric-label">5년 후 기대 자산</span>
+            <span class="compare-metric-val">1.5억 ~ 3억</span>
+          </div>
+          <div class="compare-metric">
+            <span class="compare-metric-label">5년 목표 달성률</span>
+            <span class="compare-metric-val bad">5% 미만</span>
+          </div>
+          <p class="compare-desc">
+            현재 2,000만 원의 소액 자본으로는 새로운 지점 개설 보증금조차 내기 어렵습니다. 은행 대출이나 타인 투자를 대대적으로 끌어오더라도 고정비(임대료, 인건비) 리스크가 지나치게 높으며, 자산 가치가 물리적 규모에 묶여 선형적(Linear)으로만 상승하므로 5년 내 10억 달성은 불가능에 가깝습니다.
+          </p>
+        </div>
+
+        <!-- Option B -->
+        <div class="compare-card">
+          <h4 class="compare-title">방안 B: 순수 B2B SaaS 소프트웨어 창업</h4>
+          <div class="compare-metric">
+            <span class="compare-metric-label">필요 자본금</span>
+            <span class="compare-metric-val">약 2,000만 원 (개발 외주 시 부족)</span>
+          </div>
+          <div class="compare-metric">
+            <span class="compare-metric-label">5년 후 기대 자산</span>
+            <span class="compare-metric-val" style="color: var(--accent-violet);">5억 ~ 15억</span>
+          </div>
+          <div class="compare-metric">
+            <span class="compare-metric-label">5년 목표 달성률</span>
+            <span class="compare-metric-val">50%</span>
+          </div>
+          <p class="compare-desc">
+            소프트웨어는 고정비가 낮아 무한 확장이 가능합니다. 하지만 기술적 구현 비용이 문제입니다. 다행히 대표자님은 인공지능 에이전트(Antigravity)를 동반 코더로 삼아 개발비용을 거의 제로에 수렴하게 낮출 수 있습니다. 개발에 다소 시간이 걸리고 시장 검증(PMF)에 다소 긴 기간이 걸릴 수 있는 리스크가 있습니다.
+          </p>
+        </div>
+
+        <!-- Option C -->
+        <div class="compare-card recommended">
+          <h4 class="compare-title">방안 C: 하이브리드 컨설팅 + B2B SaaS + 프랜차이즈</h4>
+          <div class="compare-metric">
+            <span class="compare-metric-label">필요 자본금</span>
+            <span class="compare-metric-val good">2,000만 원 (초기 컨설팅 자금 확보)</span>
+          </div>
+          <div class="compare-metric">
+            <span class="compare-metric-label">5년 후 기대 자산</span>
+            <span class="compare-metric-val good">15억 ~ 30억</span>
+          </div>
+          <div class="compare-metric">
+            <span class="compare-metric-label">5년 목표 달성률</span>
+            <span class="compare-metric-val good">85% 이상</span>
+          </div>
+          <p class="compare-desc">
+            <strong>가장 현실적이고 확실한 경제적 자유 도달 경로입니다.</strong><br>
+            초기에는 대표자님의 20년 학원 브랜딩 및 운영 신뢰성을 바탕으로 1:1 '고단가 B2B 진단 컨설팅'을 제공하여 즉각적인 Cash flow를 확보합니다. 이를 기반으로 점진적으로 소프트웨어(SaaS) 진단 도구를 고도화하여 가입 학원 수를 늘립니다. 이후 4년 차부터 표준 프랜차이즈 라이선싱 형태로 확장하여 폭발적인 영업이익을 이끌어 냅니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- SWOT Panel -->
+      <div class="panel" style="margin-top: 2rem;">
+        <h3 class="panel-title">대표자님의 핵심 강점 & 자산 활용 방안</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); padding: 1.25rem; border-radius: 12px;">
+            <h5 style="color: var(--accent-violet); font-size: 1rem; margin-bottom: 0.5rem;">🔥 20년의 학원 운영 전문성</h5>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              시장에 흔한 '개발자 중심의 SaaS'는 현장 감각이 없어 원장들이 쓰지 않습니다. 대표자님은 학원 경영의 고충(강사 관리의 어려움, 학생 이탈 징후, 학부모 상담 기법)을 누구보다 잘 알고 있어, 기획 단계에서 완벽한 PMF(Product-Market Fit)를 맞출 수 있습니다. B2B 영업 시 '20년 원장의 AI 노하우'라는 타이틀로 압도적 신뢰를 줍니다.
+            </p>
+          </div>
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); padding: 1.25rem; border-radius: 12px;">
+            <h5 style="color: var(--accent-amber); font-size: 1rem; margin-bottom: 0.5rem;">☕ 2년의 F&B 프랜차이즈 지식</h5>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              학원을 넘어, F&B 가맹점의 점포별 매출 예측, 단골 고객 이탈 방지 등 B2B 로직을 가맹 시스템화하는 능력을 결합할 수 있습니다. 4년 차 이후 실행할 '스마트 학원 가맹 모델'을 설계할 때 가맹 계약서, 로열티 정산, 운영 교육 매뉴얼 구축 등에 관한 시행착오를 대폭 단축해 줍니다.
+            </p>
+          </div>
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid var(--border-color); padding: 1.25rem; border-radius: 12px;">
+            <h5 style="color: var(--accent-emerald); font-size: 1rem; margin-bottom: 0.5rem;">🤖 개발 리스크의 최소화 (인공지능 코딩)</h5>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              통상 소프트웨어 창업 시 가장 큰 돈이 드는 외주 개발 비용을 Antigravity와 같은 에이전트를 통해 해결하고 있습니다. 현재 프로젝트 내에 준비 중인 React/Next.js 기반의 진단 리포트 코드를 확장해 나간다면, 2,000만 원의 한정된 자본금으로도 완전한 정식 상용 솔루션을 안정적으로 런칭할 수 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: ACTION PLAN -->
+    <div id="tab-action" class="tab-panel">
+      <div class="panel">
+        <h3 class="panel-title">경제적 자유를 위한 즉시 실행 체크리스트</h3>
+        <div class="checklist">
+          <!-- Step 1 -->
+          <div class="checklist-item">
+            <div class="checklist-check checked">✓</div>
+            <div class="checklist-body">
+              <span class="checklist-title">1단계: B2B 유튜브 채널 활성화 및 콘텐츠 배포 시작</span>
+              <span class="checklist-desc">
+                이미 프로젝트 폴더에 세팅되어 있는 <a href="file:///Users/iyeongjae/Desktop/초보프로젝트/_company/youtube_account.json" class="checklist-link">youtube_account.json</a> 설정값을 바탕으로 유튜브 채널을 연동하고, '학생 이탈율을 70% 낮추는 데이터 비밀', '학원 ROI 극대화' 등 전국 원장들의 핵심 고민을 해결하는 영상 제작을 시작하세요. 이는 고비용의 마케팅 없이 대형 잠재고객 풀을 형성하는 가장 강력한 무기가 됩니다.
+              </span>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="checklist-item">
+            <div class="checklist-check">2</div>
+            <div class="checklist-body">
+              <span class="checklist-title">2단계: AI 진단 리포트 MVP 페이지 완성 및 테스트</span>
+              <span class="checklist-desc">
+                Next.js 앱의 메인 랜딩페이지 <a href="file:///Users/iyeongjae/Desktop/초보프로젝트/_company/src/pages/index.tsx" class="checklist-link">index.tsx</a>에 구축되고 있는 AI 진단 리포트 스코어 기능 및 유료 플랜 카드(<a href="file:///Users/iyeongjae/Desktop/초보프로젝트/_company/src/components/PricingSection.tsx" class="checklist-link">PricingSection.tsx</a>)를 완성하세요. 실제 학원 원장 2-3명에게 무료 진단 서비스를 테스트하고, AI 코멘트가 주는 심리적 충격과 액션플랜의 소구력을 검증하세요.
+              </span>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="checklist-item">
+            <div class="checklist-check">3</div>
+            <div class="checklist-body">
+              <span class="checklist-title">3단계: 고단가 컨설팅 가망 고객 10명 발굴</span>
+              <span class="checklist-desc">
+                20년 동안 학원을 하며 쌓은 네트워크 혹은 학원 원장들이 모인 커뮤니티(학원가, 학원인 등)에 '데이터 기반 학원 손실 및 이탈 진단 클리닉' 프로모션을 게시하세요. 1회 150만 원 상당의 유료 진단 컨설팅을 3~5회 제공하여 초기 MVP 피드백과 함께 500만 원 이상의 초동 운영 자금을 확보하세요.
+              </span>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="checklist-item">
+            <div class="checklist-check">4</div>
+            <div class="checklist-body">
+              <span class="checklist-title">4단계: SaaS 정식 구독 기능 및 가입 전환 자동화</span>
+              <span class="checklist-desc">
+                Year 2에 진입하기 전, 수작업 컨설팅 단계를 자동화하는 웹 기반 SaaS 결제 시스템(토스페이먼츠, 아임포트 등)을 Next.js 백엔드에 연동하세요. 결제한 원장이 직접 본인의 학생 리스트(CSV)를 올려 Churn(이탈) 점수와 Gap 점수를 즉시 다운받아 갈 수 있도록 가입 및 진단 자동화 루프를 설정합니다.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Tab 전환 로직
+    function switchTab(event, tabId) {
+      // 모든 탭 버튼 비활성화
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      // 모든 탭 패널 감추기
+      const panels = document.querySelectorAll('.tab-panel');
+      panels.forEach(panel => panel.classList.remove('active'));
+
+      // 선택한 탭 활성화
+      event.currentTarget.classList.add('active');
+      const activePanel = document.getElementById(tabId);
+      activePanel.classList.add('active');
+
+      // 차트가 있는 탭으로 갈 경우 차트 리사이즈 유도
+      if (tabId === 'tab-simulator' && myChart) {
+        setTimeout(() => {
+          myChart.resize();
+        }, 100);
+      }
+    }
+
+    // 전역 차트 객체
+    let myChart = null;
+
+    // 시뮬레이터 연산 및 시각화 코드
+    function calculateModel() {
+      // 1. 값 읽어오기
+      const saasFee = parseInt(document.getElementById('input-saas-fee').value);
+      const saasClients = parseInt(document.getElementById('input-saas-clients').value);
+      const consultingFee = parseInt(document.getElementById('input-consulting-fee').value);
+      const consultingClients = parseInt(document.getElementById('input-consulting-clients').value);
+      const franchiseCount = parseInt(document.getElementById('input-franchise-count').value);
+
+      // UI 텍스트 값 업데이트
+      document.getElementById('val-saas-fee').innerText = saasFee.toLocaleString() + '원';
+      document.getElementById('val-saas-clients').innerText = saasClients.toLocaleString() + '개';
+      document.getElementById('val-consulting-fee').innerText = consultingFee.toLocaleString() + '원';
+      document.getElementById('val-consulting-clients').innerText = consultingClients.toLocaleString() + '건';
+      document.getElementById('val-franchise-count').innerText = franchiseCount.toLocaleString() + '개';
+
+      // 2. 5개년 누적 계산
+      // 연차별 계산을 위한 임시 배열
+      const years = ['1년차', '2년차', '3년차', '4년차', '5년차'];
+      const saasRevenues = [];
+      const consultingRevenues = [];
+      const franchiseRevenues = [];
+      const cumulativeProfits = [];
+      const companyValuations = [];
+
+      let cumulativeProfit = 20000000; // 초기 자본금 2000만원
+
+      for (let y = 1; y <= 5; y++) {
+        // 연도별 가속도 계수 (성장 속도 적용)
+        const scaleFactor = y / 5; 
+        
+        // SaaS 매출 계산
+        const activeClients = Math.round(saasClients * scaleFactor);
+        const yearlySaaS = activeClients * saasFee * 12;
+        saasRevenues.push(yearlySaaS);
+
+        // 컨설팅 매출 계산 (후기 연도로 갈수록 SaaS 자동화로 인해 consulting 비중 축소 가정)
+        const activeConsultingClients = Math.round(consultingClients * (1.5 - (y * 0.2))) * 12;
+        const yearlyConsulting = activeConsultingClients * consultingFee;
+        consultingRevenues.push(yearlyConsulting);
+
+        // 프랜차이즈 매출 계산 (4-5년차에 활성화)
+        let yearlyFranchise = 0;
+        if (y >= 4) {
+          const currentYearFranchises = Math.round(franchiseCount * (y === 4 ? 0.3 : 1.0));
+          const newFranchisesThisYear = y === 4 ? currentYearFranchises : (franchiseCount - Math.round(franchiseCount * 0.3));
+          
+          const franchiseSignFee = newFranchisesThisYear * 10000000; // 가맹비 1000만원 1회성
+          const royaltyFee = currentYearFranchises * 300000 * 12; // 월 30만원 로열티
+          yearlyFranchise = franchiseSignFee + royaltyFee;
+        }
+        franchiseRevenues.push(yearlyFranchise);
+
+        // 총 매출 및 마진율 적용 (B2B SaaS 마진율 80%, 프랜차이즈/컨설팅 마진율 70% 가정, 판관비 제외)
+        const totalYearRevenue = yearlySaaS + yearlyConsulting + yearlyFranchise;
+        const expenses = totalYearRevenue * (y === 1 ? 0.4 : 0.25); // 초기 인프라/인건비 비중 높음
+        const yearProfit = totalYearRevenue - expenses;
+
+        cumulativeProfit += yearProfit;
+        cumulativeProfits.push(Math.round(cumulativeProfit / 10000000) / 10); // 억 단위 변환 (소수점 첫째자리)
+
+        // 5x ARR Valuation 계산 (억 단위)
+        const arrValuation = (yearlySaaS * 5) / 100000000;
+        companyValuations.push(Math.round(arrValuation * 10) / 10);
+      }
+
+      // 최종 5년차 지표 업데이트
+      const finalMRR = saasClients * saasFee;
+      const finalARR = finalMRR * 12;
+      const finalValuation = finalARR * 5;
+
+      document.getElementById('metric-mrr').innerText = finalMRR.toLocaleString() + '원';
+      document.getElementById('metric-arr').innerText = finalARR.toLocaleString() + '원';
+      document.getElementById('metric-valuation').innerText = (finalValuation / 100000000).toFixed(1) + '억 원';
+      document.getElementById('metric-profit').innerText = (cumulativeProfit / 100000000).toFixed(1) + '억 원';
+
+      // 3. 차트 렌더링 업데이트
+      updateChart(cumulativeProfits, companyValuations);
+    }
+
+    // Chart.js 초기화 및 업데이트 함수
+    function updateChart(profitsData, valuationData) {
+      const ctx = document.getElementById('growthChart').getContext('2d');
+      
+      const chartData = {
+        labels: ['1년차', '2년차', '3년차', '4년차', '5년차'],
+        datasets: [
+          {
+            label: '누적 영업이익 (억 원)',
+            data: profitsData,
+            borderColor: '#10b981',
+            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.4
+          },
+          {
+            label: 'SaaS 기업 지분가치 (억 원)',
+            data: valuationData,
+            borderColor: '#8b5cf6',
+            backgroundColor: 'rgba(139, 92, 246, 0.05)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.4
+          }
+        ]
+      };
+
+      if (myChart) {
+        myChart.data = chartData;
+        myChart.update();
+      } else {
+        myChart = new Chart(ctx, {
+          type: 'line',
+          data: chartData,
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                position: 'top',
+                labels: {
+                  color: '#e2e8f0',
+                  font: {
+                    family: 'Inter',
+                    size: 12
+                  }
+                }
+              },
+              tooltip: {
+                padding: 12,
+                backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                titleFont: { family: 'Outfit', size: 14, weight: 'bold' },
+                bodyFont: { family: 'Inter', size: 13 },
+                borderColor: 'rgba(255, 255, 255, 0.1)',
+                borderWidth: 1
+              }
+            },
+            scales: {
+              x: {
+                grid: {
+                  color: 'rgba(255, 255, 255, 0.05)'
+                },
+                ticks: {
+                  color: '#94a3b8',
+                  font: { family: 'Inter' }
+                }
+              },
+              y: {
+                grid: {
+                  color: 'rgba(255, 255, 255, 0.05)'
+                },
+                ticks: {
+                  color: '#94a3b8',
+                  font: { family: 'Inter' },
+                  callback: function(value) {
+                    return value + '억';
+                  }
+                }
+              }
+            }
+          }
+        });
+      }
+    }
+
+    // 초기 로딩 시 호출
+    window.addEventListener('DOMContentLoaded', () => {
+      calculateModel();
+
+      // 체크박스 클릭 이벤트 바인딩
+      const checkBoxes = document.querySelectorAll('.checklist-check');
+      checkBoxes.forEach(box => {
+        box.addEventListener('click', (e) => {
+          e.currentTarget.classList.toggle('checked');
+          if(e.currentTarget.classList.contains('checked')) {
+            e.currentTarget.innerText = '✓';
+          } else {
+            e.currentTarget.innerText = '';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
