@@ -143,3 +143,5 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-22] 확정된 Visual Directives와 Pain $ightarrow$ Gain 프레임워크를 기반으로, '썸네일 컨셉 1'의 최종 목업 이미지 제작을 즉시 실행하여 외부 유입 준비를 완료할 것. → 산출물 sessions/2026-05-22T18-27/designer.md
 - [2026-05-22] 최종 썸네일 컨셉 1에 대한 Visual Directives와 Pain $\rightarrow$ Gain 프레임워크를 기반으로, 최종 목업 이미지(`final_thumbnail_mockup_concept_1.md`)를 실제 이미지 생성 도구에 즉시 적용하여 외부 유입 준비를 완료하고 결과물을 산출하라. → 산출물 sessions/2026-05-22T18-42/designer.md
 - [2026-05-22] writer가 제시한 후킹 문구들을 검토하고, 이들이 시각적 지침(Pain $ightarrow$ Gain)에 완벽하게 부합하는지 최종적으로 확인하여 영상 제작팀에게 전달할 최종 스토리보드 지침을 보강하라. → 산출물 sessions/2026-05-22T18-57/designer.md
+- [2026-05-22] Writer가 제시한 후킹 문구와 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)을 기반으로, 가장 강력하다고 판단되는 주제에 대한 '썸네일 컨셉 1'의 상세 시각적 지침(Visual Directives) 목업 초안을 제작하라. → 산출물 sessions/2026-05-22T19-42/designer.md
+- [2026-05-22] Writer가 제공한 최종 스크립트 및 Visual Directives를 기반으로, '썸네일 컨셉 1'의 목업 이미지를 실제 이미지 생성 도구에 즉시 적용하여 외부 유입 준비를 완료하라. → 산출물 sessions/2026-05-22T19-57/designer.md

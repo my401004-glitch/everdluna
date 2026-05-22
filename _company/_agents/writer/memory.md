@@ -124,3 +124,5 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-22] Designer가 제시한 최종 Visual Directives와 Pain $ightarrow$ Gain 프레임워크를 반영하여, 다음 영상에 필요한 '최종 스토리보드 및 후킹 부분의 시각적 효과 지침'을 보강하고 제작팀 전달용 사양서를 준비하라. → 산출물 sessions/2026-05-22T18-12/writer.md
 - [2026-05-22] 작성된 Production Spec을 기반으로 실제 영상 편집팀에 전달할 공식 지침서를 최종 검토 및 보완하여 콘텐츠 제작 준비를 완료할 것. → 산출물 sessions/2026-05-22T18-27/writer.md
 - [2026-05-22] 이전 논의된 Pain $ightarrow$ Gain 프레임워크와 시각적 지침(Dark Blue/Accent Yellow)을 기반으로, 다음 영상에 가장 높은 클릭률을 유도할 수 있는 후킹 문구 3가지와 영상 스크립트 초안을 작성하라. → 산출물 sessions/2026-05-22T18-57/writer.md
+- [2026-05-22] Researcher가 제시한 3가지 아이디어 중 가장 잠재력이 높은 주제를 선정하고, 'Pain $ightarrow$ Gain' 프레임워크에 맞춰 강력한 후킹 문구(Hook) 초안 3가지를 작성하라. → 산출물 sessions/2026-05-22T19-42/writer.md
+- [2026-05-22] Designer가 확정한 '썸네일 컨셉 1'의 후킹 전략과 Pain $ightarrow$ Gain 프레임워크를 기반으로, 영상의 몰입도를 극대화할 최종 대본 초안(스크립트)을 작성하라. → 산출물 sessions/2026-05-22T19-57/writer.md
