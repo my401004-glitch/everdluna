@@ -137,3 +137,5 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-22] youtube 에이전트가 요청한 스토리보드에 맞춰, 확정된 Dark Blue(#0A2463)와 Accent Yellow(#FFD700) 색상을 적용하여 각 씬의 핵심 비주얼 흐름을 시각적으로 구체화하는 최종 Visual Directives를 보강하라. → 산출물 sessions/2026-05-22T16-57/designer.md
 - [2026-05-22] 이전 세션에서 확정된 Dark Blue(#0A2463)와 Accent Yellow(#FFD700) 색상을 적용하고 Pain $ightarrow$ Gain 프레임워크를 극대화하여, 가장 잠재력 높은 썸네일 컨셉 3가지에 대한 디자인 시안을 즉시 실행하라. → 산출물 sessions/2026-05-22T17-12/designer.md
 - [2026-05-22] 선택된 '변곡점 스토리텔링형' 컨셉(Pain $ightarrow$ Gain, Dark Blue/Accent Yellow)을 기반으로, 다음 영상에 대한 최종 Storyboard와 각 씬의 핵심 비주얼 지침(Visual Directives)을 명확하게 작성하고 확정하라. → 산출물 sessions/2026-05-22T17-27/designer.md
+- [2026-05-22] 최종 제작 사양서에 명시된 Dark Blue/Accent Yellow 비주얼 지침과 스토리보드를 기반으로, 실제 영상 제작에 필요한 모든 시각적 에셋(썸네일 초안 및 핵심 비주얼 흐름) 제작을 즉시 시작하라. → 산출물 sessions/2026-05-22T17-42/designer.md
+- [2026-05-22] 최종 영상 제작에 필요한 모든 Visual Directives를 확정된 브랜드 비주얼 시스템(Dark Blue #0A2463, Accent Yellow #FFD700)과 Pain $\rightarrow$ Gain 프레임워크를 기반으로 구체적으로 작성하여 즉시 실행 가능하게 산출하라. → 산출물 sessions/2026-05-22T17-57/designer.md
