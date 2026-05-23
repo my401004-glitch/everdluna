@@ -166,3 +166,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-23] | **BL-01** | Pain $\rightarrow$ Gain 전환 | `Pain` 지표(예: Pitch Instability)가 높고, `Gain` 지표(예: Technique Improvement)가 낮은 경우 | 데이터에서 Clear한 'Gap'이 식별됨. | 리포트의 핵심 메시지(`The Gap`)로 명시되어야 하며, 다음 액션 아이템으로 전환을 유도하는 CTA가 포함되어야 함. | Pain과 Gain 간의 논리적 인과관계 설명 실패 (서사 파괴). | | _(근거: sessions/2026-05-23T00-42)_
 - [2026-05-23] | **BL-02** | 시점별 성장 추적 | 시간 경과에 따른 데이터 변화 확인 | 3개월 간의 연속된 `Diagnosis_Results` 데이터가 존재함. | 초기 Pain $\rightarrow$ 중간 Gap $\rightarrow$ 최종 Gain으로 명확히 단계화되어, '성장 곡선'을 보여주는 그래프로 시각화되어야 함. | 전반적인 추세(Trend) 분석 실패 또는 급격한 하락/상승의 원인 설명 불가. | | _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-05-23] CEO 지시사항을 검토했습니다. 현재 우리가 도달한 단계는 '시스템 아키텍처와 데이터 모델 정의'를 넘어, 이 시스템이 실제로 콘텐츠 제작이라는 비즈니스 목표를 달성할 만큼 **기술적으로 안정적인지** 검증하는 단계입니다. _(근거: sessions/2026-05-19T09:57)_
+- [2026-05-23] CEO 지시사항을 검토했습니다. `DataExtractorService`와 `Validation Layer`의 기술적 안정성을 확보하는 것은 현재 비즈니스 가치(Diagnosis Score)를 유지하고 유료 서비스로 전환하기 위한 **최우선 전제 조건**입니다. _(근거: 코다리 개인 메모리)_
+- [2026-05-23] ## 목표 및 배경 _(근거: CEO 지시)_
+- [2026-05-23] | **TC-004** | **RBAC Violation** | 현재 사용자 Role이 접근 권한을 가지지 못한 KPI(`Monetization`) 데이터가 요청된 경우. | Validation Layer에서 `PermissionDeniedError`를 반환하고, 해당 스코어는 0으로 처리되며 에러 로그를 남긴다. | ValidationLayer | _(근거: 코다리 검증된 지식)_
+- [2026-05-23] | **TC-005** | **KPI Out of Range** | KPI 값이 비즈니스적으로 불가능한 값(예: Growth Score가 -100%)인 경우. | Validation Layer에서 `InvalidDataRangeError`를 발생시키고, 시스템은 이전 유효 데이터로 폴백(Fallback) 처리하거나 해당 요청을 거부한다. | ValidationLayer | _(근거: 코다리 검증된 지식)_

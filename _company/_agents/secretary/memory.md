@@ -66,3 +66,4 @@ _영숙 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-23] Content_Production_Calendar.md에 명시된 대로, 오늘부터 시작되는 '콘텐츠 제작 마스터 스케줄(SOP)'을 매주 월요일 오전 10시에 업데이트하는 루틴을 즉시 확정하고 실행하십시오. → 산출물 sessions/2026-05-23T03-14/secretary.md
 - [2026-05-23] 최근 데이터 수집 시도(my_videos_check.py, comment_harvester.py) 실패 원인 및 누락된 데이터 항목을 분석하고, 다음 작업에 필요한 정확한 정보(예: WATCHED_CHANNELS 목록 또는 API 접근 권한)를 확보하기 위한 즉각적인 행동 계획을 수립하여 보고하라. → 산출물 sessions/2026-05-23T04-14/secretary.md
 - [2026-05-23] youtube와 designer가 작업하는 동안, 콘텐츠 배포 일정을 확정하고 다음 업로드 일정을 Google Calendar에 반영하여 실행 흐름을 관리하라. → 산출물 sessions/2026-05-23T05-14/secretary.md
+- [2026-05-23] Designer와 Writer가 작업하는 동안 진행 상황을 모니터링하고, 필요한 경우 일정 및 피드백 요청 사항을 정리하여 보고할 준비를 하라. → 산출물 sessions/2026-05-23T06-14/secretary.md

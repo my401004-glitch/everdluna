@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 23. 오후 2:48:06_
+_업데이트: 2026. 5. 23. 오후 3:17:41_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,27 +13,27 @@ _업데이트: 2026. 5. 23. 오후 2:48:06_
 - [2026-05-22] writer가 작성한 후크 버전을 기반으로, 가장 높은 인게이지먼트를 유도할 수 있는 최적의 게시 시간, 핵심 해시태그 전략 및 포맷(릴스/피드)별 구체적인 실행 방안을 제시하세요. → 산출물 sessions/2026-05-22T02-49/instagram.md
 - [2026-05-22] Writer가 제시한 후킹 문구들을 기반으로, 다음 콘텐츠 업로드에 최적화된 게시 시간, 핵심 해시태그 전략, 그리고 릴스/피드 포맷별 구체적인 실행 방안을 즉시 확정하여 보고하라. → 산출물 sessions/2026-05-22T19-12/instagram.md
 ### 🎨 Designer
-- [2026-05-23] 최종 확정된 Visual System 가이드라인(`Dark Blue`/`Accent Yellow`)과 콘텐츠 스토리보드(youtube 에이전트 산출물)를 기반으로 다음 영상의 인트로 그래픽 및 썸네일 목업 디자인을 즉시 제작하라. → 산출물 sessions/2026-05-23T05-14/designer.md
-- [2026-05-23] 레오가 제시한 최종 스크립트를 기반으로 가장 효과적인 썸네일 컨셉(컨셉 1 또는 2)을 선택하고, 확정된 Visual System(`Dark Blue`/`Accent Yellow`)을 적용하여 최종 아트워크 제작을 즉시 시작하라. → 산출물 sessions/2026-05-23T05-29/designer.md
 - [2026-05-23] 확정된 Visual System(`Dark Blue`/`Accent Yellow`)과 콘텐츠 스토리보드를 기반으로, 클릭률(CTR) 극대화를 위한 썸네일 아트워크 제작을 즉시 시작하라. → 산출물 sessions/2026-05-23T05-44/designer.md
+- [2026-05-23] 최종 선택된 썸네일 컨셉(컨셉 1 또는 2)을 확정하고, 확정된 Visual System(`Dark Blue`/`Accent Yellow`)에 맞춰 실제 인트로 그래픽 및 썸네일 아트워크 제작을 즉시 착수하라. → 산출물 sessions/2026-05-23T05-59/designer.md
+- [2026-05-23] 이전에 논의된 썸네일 컨셉(1 또는 2) 중 하나를 최종 선택하고, 확정된 Visual System(`Dark Blue`/`Accent Yellow`)을 적용하여 실제 아트워크 제작을 즉시 시작하라. → 산출물 sessions/2026-05-23T06-14/designer.md
 ### 💻 코다리
-- [2026-05-23] DataExtractorService 및 Validation Layer에 대한 최종 테스트 케이스를 작성하고, Pain $\rightarrow$ Gain 프레임워크 기반의 기술적 안정성 검증 체크리스트를 완성하라. → 산출물 sessions/2026-05-23T04-29/developer.md
 - [2026-05-23] 레오가 요청한 콘텐츠 제작에 필요한 데이터 요구사항(data_req_01_v2.md)과 API 매핑 로직(M-DRS 기반)이 현재 시스템에서 안정적으로 연동되는지 최종 점검하고, 만약 불안정하면 즉시 수정 사항을 보고하라. → 산출물 sessions/2026-05-23T04-44/developer.md
 - [2026-05-23] DataExtractorService 및 Validation Layer에 대한 Pain $ightarrow$ Gain 프레임워크 기반의 기술적 안정성 검증 체크리스트를 최종화하고, 레오가 요청한 콘텐츠 제작에 필요한 최소 테스트 케이스(Test Case)를 정의하여 실행 계획을 수립하라. → 산출물 sessions/2026-05-23T04-59/developer.md
+- [2026-05-23] DataExtractorService 및 Validation Layer에 대한 기술적 안정성 검증 체크리스트를 바탕으로, 다음 영상 제작에 필요한 데이터 요구사항(`data_req_01_v2.md`) 연동 테스트를 최종 실행 계획으로 수립하고 진행하라. → 산출물 sessions/2026-05-23T05-59/developer.md
 ### 💼 현빈
 - [2026-05-22] 선정된 단일 실행 과제(예: 영상 제작 준비, 개발 로드맵 재추정, 마케팅 전략 확정 중 택 1)에 대해 Pain $ightarrow$ Gain 프레임워크를 적용하여 자원 배분 우선순위를 제시하십시오. → 산출물 sessions/2026-05-22T22-12/business.md
 - [2026-05-22] 기술 안정성(Gap Score API)과 마케팅 자원(콘텐츠 기획)을 연결하여, 데이터 기반의 초기 수익화 모델(MVP 상품/서비스 구상) 및 가격 전략 초안을 작성해줘 → 산출물 sessions/2026-05-22T23-54/business.md
 - [2026-05-23] 개발팀이 정의한 테스트 케이스를 기반으로, 데이터 시스템 MVP가 달성해야 할 핵심 KPI(CTR 극대화에 기여하는 Pain $ightarrow$ Gain 시각화)와 기술적 안정성 목표를 명확히 설정하고 요구사항을 구체화하세요. → 산출물 sessions/2026-05-23T03-29/business.md
 ### 📱 영숙
-- [2026-05-23] Content_Production_Calendar.md에 명시된 대로, 오늘부터 시작되는 '콘텐츠 제작 마스터 스케줄(SOP)'을 매주 월요일 오전 10시에 업데이트하는 루틴을 즉시 확정하고 실행하십시오. → 산출물 sessions/2026-05-23T03-14/secretary.md
 - [2026-05-23] 최근 데이터 수집 시도(my_videos_check.py, comment_harvester.py) 실패 원인 및 누락된 데이터 항목을 분석하고, 다음 작업에 필요한 정확한 정보(예: WATCHED_CHANNELS 목록 또는 API 접근 권한)를 확보하기 위한 즉각적인 행동 계획을 수립하여 보고하라. → 산출물 sessions/2026-05-23T04-14/secretary.md
 - [2026-05-23] youtube와 designer가 작업하는 동안, 콘텐츠 배포 일정을 확정하고 다음 업로드 일정을 Google Calendar에 반영하여 실행 흐름을 관리하라. → 산출물 sessions/2026-05-23T05-14/secretary.md
+- [2026-05-23] Designer와 Writer가 작업하는 동안 진행 상황을 모니터링하고, 필요한 경우 일정 및 피드백 요청 사항을 정리하여 보고할 준비를 하라. → 산출물 sessions/2026-05-23T06-14/secretary.md
 ### 🎵 루나
 - [2026-05-19] 📥 새 지식 입수 — **student_growth_report_generator_v_1.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-19/student_growth_report_generator_v_1.html)
 ### ✍️ Writer
-- [2026-05-23] 시스템화된 스케줄에 맞춰, [Step 2] 스크립트 개발 & 구조화 단계를 시작하여 최종 스크립트를 완성하고 나머지 에이전트의 작업 준비를 완료하십시오. (최신 콘텐츠 기획 및 Pain $ightarrow$ Gain 프레임워크 적용) → 산출물 sessions/2026-05-23T03-14/writer.md
-- [2026-05-23] youtube 에이전트가 제시한 스토리보드를 기반으로, 시청자의 감성적 불안감(Pain)을 극대화하고 즉각적인 해결책(Gain)을 제시하는 후킹 스크립트 초안을 작성하라. → 산출물 sessions/2026-05-23T03-44/writer.md
 - [2026-05-23] 레오가 완성한 최종 스크립트 및 후크 스크립트를 바탕으로 실제 영상 내레이션 및 후크 스크립트를 최종적으로 다듬어 콘텐츠 제작을 시작할 수 있도록 최종본을 완성하라. → 산출물 sessions/2026-05-23T05-44/writer.md
+- [2026-05-23] 레오가 제안한 제목과 설명란 구조(Pain $ightarrow$ Gain 퍼널)에 맞춰, 전체 5부작 시리즈의 나머지 스크립트(2편, 3편) 기획을 병행하여 콘텐츠 로드맵을 확정하라. → 산출물 sessions/2026-05-23T05-59/writer.md
+- [2026-05-23] 최종 결정된 썸네일 컨셉을 기반으로, 'Pain $ightarrow$ Gain' 프레임워크에 따라 다음 영상의 최종 스크립트 초안 작성을 즉시 시작하라. → 산출물 sessions/2026-05-23T06-14/writer.md
 ### 🔍 Researcher
 - [2026-05-22] 현재 실용음악 입시생 타겟의 유튜브 콘텐츠 트렌드를 분석하고, 다음 영상 주제로 가장 높은 인게이지먼트가 예상되는 3가지 핵심 아이디어를 데이터 기반으로 제시하라. → 산출물 sessions/2026-05-22T19-42/researcher.md
 - [2026-05-22] Gap Score 시뮬레이션 결과와 시장 트렌드를 연결하여, 잠재 고객의 가장 큰 Pain Point를 증명하는 콘텐츠 주제 3가지와 그에 따른 예상 반응을 리서치해줘 → 산출물 sessions/2026-05-22T23-54/researcher.md
