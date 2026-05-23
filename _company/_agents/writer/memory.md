@@ -135,3 +135,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-23] 최종 스토리보드와 Visual Directives를 기반으로, 실제 영상 제작에 바로 사용할 수 있도록 스크립트의 흐름과 시각적 연출 포인트를 명확히 정리하여 전달할 준비를 하라. → 산출물 sessions/2026-05-23T00-27/writer.md
 - [2026-05-23] Designer가 확정한 Dark Blue/Accent Yellow 팔레트와 Pain $ightarrow$ Gain 구조를 기반으로, 다음 영상에 적용할 최종 스토리보드와 내레이션 톤앤매너 초안을 작성하라. (Visual Directives 통합 문서 참고) → 산출물 sessions/2026-05-23T00-57/writer.md
 - [2026-05-23] Designer가 확정한 Visual Directives와 Pain $ightarrow$ Gain 구조를 통합하여, 다음 영상에 최적화된 스토리보드 기반의 최종 스크립트 초안 및 후킹 문구(Hook)를 정리하라. → 산출물 sessions/2026-05-23T01-27/writer.md
+- [2026-05-23] 이전 단계에서 확정된 스토리보드와 Pain $\rightarrow$ Gain 프레임워크를 기반으로 다음 영상의 최종 스크립트 초안 및 내레이션 문구를 즉시 작성하라. → 산출물 sessions/2026-05-23T02-44/writer.md
