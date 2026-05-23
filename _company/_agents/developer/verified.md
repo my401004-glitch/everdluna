@@ -197,3 +197,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-23] 9	| `diagnosis_type` | Enum/String | 요청된 진단 유형 (e.g., 'VocalGrowth', 'Engagement'). | 미리 정의된 값만 허용 | | _(근거: sessions/2026-05-18T13:43/developer.md)_
 - [2026-05-23] 9	| `diagnosis_type` | Enum/String | 요청된 진단 유형 (e.g., 'VocalGrowth', 'Engagement'). | 미리 정의된 값만 허용 | | _(근거: sessions/2026-05-18T13:43/developer.md)_
 - [2026-05-23] 18	* **Factor Type:** Pain 또는 Gain. **(필수 필드)** _(근거: Designer의 P $\rightarrow$ G 흐름)_
+- [2026-05-23] * **Step A (RBAC Check):** 사용자 권한(Role) 체크 및 접근 가능한 KPI(`Growth`, `Engagement`, `Monetization`) 리스트 확보. _(근거: sessions/2026-05-18T13:43)_
+- [2026-05-23] * **Step C (Persistence):** 계산된 3가지 스코어($P, G, Gap$)와 관련 KPI를 `Diagnosis_Results` 및 `KPI_Metrics`에 트랜잭션으로 기록한다. _(근거: sessions/2026-05-18T43/)_

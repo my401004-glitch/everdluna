@@ -193,11 +193,13 @@
         "designer"
       ],
       "createdAt": "2026-05-23T18:54:59.437Z",
-      "status": "pending",
+      "status": "done",
       "sessionDir": "2026-05-23T18-54",
       "nudges": 0,
       "priority": "normal",
-      "preAlarmsSent": []
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-23T18-54/_report.md\n- Designer: 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $\rightarrow$ Gain 구조)과 스토리보드를 기반으로, 다음\n- 코다리: Designer가 제공한 최종 아트워크 초안 및 비주얼 요구사항이 백엔드 데이터 구조(`schema_contract.md` 기반)와 완벽히 연동\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $\rightarrow$ Gain 구조)과 스토리보드를 기반으로, 다음 영상 제작을 위한 최종 편집 요구사항 및 시각화 가이드라인을 확정하여 제출하라.\n> \ud83d",
+      "completedAt": "2026-05-23T18:56:31.461Z"
     },
     {
       "id": "20260523185459-s8mz",
@@ -208,11 +210,13 @@
         "designer"
       ],
       "createdAt": "2026-05-23T18:54:59.438Z",
-      "status": "pending",
+      "status": "done",
       "sessionDir": "2026-05-23T18-54",
       "nudges": 0,
       "priority": "normal",
-      "preAlarmsSent": []
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-23T18-54/_report.md\n- Designer: 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $\rightarrow$ Gain 구조)과 스토리보드를 기반으로, 다음\n- 코다리: Designer가 제공한 최종 아트워크 초안 및 비주얼 요구사항이 백엔드 데이터 구조(`schema_contract.md` 기반)와 완벽히 연동\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $\rightarrow$ Gain 구조)과 스토리보드를 기반으로, 다음 영상 제작을 위한 최종 편집 요구사항 및 시각화 가이드라인을 확정하여 제출하라.\n> \ud83d",
+      "completedAt": "2026-05-23T18:56:31.461Z"
     },
     {
       "id": "20260523185459-0hwe",
@@ -223,11 +227,13 @@
         "designer"
       ],
       "createdAt": "2026-05-23T18:54:59.439Z",
-      "status": "pending",
+      "status": "done",
       "sessionDir": "2026-05-23T18-54",
       "nudges": 0,
       "priority": "normal",
-      "preAlarmsSent": []
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-23T18-54/_report.md\n- Designer: 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $\rightarrow$ Gain 구조)과 스토리보드를 기반으로, 다음\n- 코다리: Designer가 제공한 최종 아트워크 초안 및 비주얼 요구사항이 백엔드 데이터 구조(`schema_contract.md` 기반)와 완벽히 연동\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $\rightarrow$ Gain 구조)과 스토리보드를 기반으로, 다음 영상 제작을 위한 최종 편집 요구사항 및 시각화 가이드라인을 확정하여 제출하라.\n> \ud83d",
+      "completedAt": "2026-05-23T18:56:31.462Z"
     },
     {
       "id": "20260523185459-vno0",
@@ -238,11 +244,13 @@
         "designer"
       ],
       "createdAt": "2026-05-23T18:54:59.439Z",
-      "status": "pending",
+      "status": "done",
       "sessionDir": "2026-05-23T18-54",
       "nudges": 0,
       "priority": "normal",
-      "preAlarmsSent": []
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-23T18-54/_report.md\n- Designer: 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $\rightarrow$ Gain 구조)과 스토리보드를 기반으로, 다음\n- 코다리: Designer가 제공한 최종 아트워크 초안 및 비주얼 요구사항이 백엔드 데이터 구조(`schema_contract.md` 기반)와 완벽히 연동\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $\rightarrow$ Gain 구조)과 스토리보드를 기반으로, 다음 영상 제작을 위한 최종 편집 요구사항 및 시각화 가이드라인을 확정하여 제출하라.\n> \ud83d",
+      "completedAt": "2026-05-23T18:56:31.462Z"
     }
   ]
 }

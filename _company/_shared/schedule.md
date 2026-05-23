@@ -1,25 +1,25 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 24. 오전 3:42:16_
+_업데이트: 2026. 5. 24. 오전 4:41:45_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-05-23] Writer가 완성한 최종 스크립트와 Designer가 확정한 시각화 요구사항(Dark Blue/Yellow 시스템, Pain->Gain 구조)을 기반으로 다음 영상의 실제 편집 및 콘텐츠 제작을 즉시 실행하여 초안을 생성하라. → 산출물 sessions/2026-05-23T17-39/youtube.md
 - [2026-05-23] Writer가 제공한 스크립트와 Designer가 확정한 비주얼 가이드라인(Dark Blue/Accent Yellow, Pain $ightarrow$ Gain 구조)을 기반으로 다음 영상의 최종 편집 요구사항 및 초안 제작을 즉시 시작할 것. → 산출물 sessions/2026-05-23T18-09/youtube.md
 - [2026-05-23] 레오가 정리한 'final_production_bible.md'를 기반으로 영상 제작팀이 실행할 수 있도록 편집 및 사운드 디자인 우선순위를 최종 점검하고, 다음 영상 제작 흐름에 맞춰 구체적인 작업 순서를 조정하라. → 산출물 sessions/2026-05-23T18-24/youtube.md
+- [2026-05-23] Writer가 제공한 스크립트와 Designer가 제시한 비주얼 요구사항을 통합하여, 다음 영상에 최적화된 제목과 구체적인 영상 편집 요구사항(Pain $ightarrow$ Gain 흐름)을 정리해줘. → 산출물 sessions/2026-05-23T19-24/youtube.md
 ### 📷 Instagram
 - [2026-05-22] Writer가 제시한 후킹 문구들을 기반으로, 다음 콘텐츠 업로드에 최적화된 게시 시간, 핵심 해시태그 전략, 그리고 릴스/피드 포맷별 구체적인 실행 방안을 즉시 확정하여 보고하라. → 산출물 sessions/2026-05-22T19-12/instagram.md
 - [2026-05-23] 유튜브 영상의 핵심 주제(Pain $ightarrow$ Gap Score)에서 가장 자극적이면서도 전문적인 '후킹 포인트 3가지'를 추출하여 Reels용 스크립트 초안과 최적 게시 시간, 해시태그 전략을 구체적으로 제시하라. → 산출물 sessions/2026-05-23T17-54/instagram.md
 - [2026-05-23] Writer와 Designer의 산출물을 통합하여, 최적의 게시 시간, 해시태그 전략, 그리고 릴스/피드 포맷별 구체적인 실행 방안(최종 게시 준비 단계)을 제시하라. → 산출물 sessions/2026-05-23T18-39/instagram.md
 ### 🎨 Designer
-- [2026-05-23] Youtube 제작 흐름에 맞추어, 확정된 비주얼 시스템(Dark Blue/Accent Yellow)과 Pain $ightarrow$ Gain 구조를 영상 편집에 적용하기 위한 최종 시각화 요구사항 및 스토리보드를 정리할 것. → 산출물 sessions/2026-05-23T18-09/designer.md
-- [2026-05-23] 확정된 비주얼 시스템(Dark Blue/Accent Yellow)과 마스터 가이드라인을 기반으로 유튜브 및 릴스 콘텐츠에 적용될 일관된 디자인 템플릿을 생성하여, 자가학습 목표를 즉시 지원하라. → 산출물 sessions/2026-05-23T18-24/designer.md
-- [2026-05-23] 확정된 디자인 시스템(Dark Blue/Accent Yellow, Pain $ightarrow$ Gain 구조)을 기반으로, Writer가 제공한 스크립트를 시각화할 최종 스토리보드 및 릴스용 핵심 비주얼 요구사항을 즉시 정리하라. → 산출물 sessions/2026-05-23T18-39/designer.md
+- [2026-05-23] 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $ightarrow$ Gain 구조)과 데이터 무결성 체크리스트(`design_data_integrity_checklist.md`)를 기반으로, 유튜브 및 릴스 콘텐츠에 적용될 일관된 디자인 템플릿을 생성하라. → 산출물 sessions/2026-05-23T19-09/designer.md
+- [2026-05-23] 이전 세션에서 확정된 Dark Blue/Accent Yellow 비주얼 시스템 및 Pain $ightarrow$ Gain 레이아웃 가이드라인을 기반으로, 위에서 작성된 스크립트의 핵심 메시지를 시각화할 최종 유튜브 썸네일 아트워크 초안(3분할 레이아웃)을 제작해줘. → 산출물 sessions/2026-05-23T19-24/designer.md
+- [2026-05-23] Writer와 레오가 합의한 Pain $\rightarrow$ Gain 흐름, Dark Blue/Accent Yellow 비주얼 시스템을 기반으로, 다음 영상에 적용할 최종 썸네일 아트워크 컨셉(1~3안 중 택 1)을 확정하고 디자인 작업을 시작할 수 있도록 구체적인 시각화 가이드라인을 최종 정리하라. → 산출물 sessions/2026-05-23T19-39/designer.md
 ### 💻 코다리
-- [2026-05-23] Designer가 요청한 최종 비주얼 요구사항(Gap Score 등)이 백엔드 데이터 구조(`data_req_01_v2.md` 기반)와 정확히 연동되는지 기술적 안정성을 검증하고, 디자인 작업에 필요한 최소 데이터의 무결성 확보 계획을 수립하라. → 산출물 sessions/2026-05-23T15-54/developer.md
 - [2026-05-23] Designer가 요청한 최종 비주얼 요구사항(Gap Score 등)이 백엔드 데이터 구조(`schema_contract.md` 기반)와 정확히 연동되는지 기술적 안정성을 최종 검증하고, 디자인 작업에 필요한 최소 데이터의 무결성 확보 계획을 재확인하라. → 산출물 sessions/2026-05-23T16-09/developer.md
 - [2026-05-23] Designer가 요청한 최종 아트워크 초안(Concept 1 또는 Concept 2)의 색상 코드 및 레이아웃 가이드라인(`Dark Blue/Accent Yellow`)이 백엔드 데이터 구조(`data_req_01_v2.md`)와 기술적으로 완벽히 일치하는지 최종 검증하고, 디자인 작업에 필요한 최소 데이터의 무결성 확보 계획을 수립하라. → 산출물 sessions/2026-05-23T16-39/developer.md
+- [2026-05-23] Designer가 제공한 최종 아트워크 초안 및 비주얼 요구사항이 백엔드 데이터 구조(`schema_contract.md` 기반)와 완벽히 연동되는지 기술적 안정성을 최종 검증하고, 디자인에 필요한 최소 데이터의 무결성 확보 계획을 재확인하라. → 산출물 sessions/2026-05-23T18-54/developer.md
 ### 💼 현빈
 - [2026-05-23] 현재 진행 중인 콘텐츠 제작 사이클에서 가장 높은 ROI를 보장할 수 있는 다음 영상의 주제와 'Pain $ightarrow$ Gain' 프레임워크 적용 전략에 대한 최종 의견을 제시하라. → 산출물 sessions/2026-05-23T14-12/business.md
 - [2026-05-23] 파일럿 테스트 결과를 분석할 수 있는 측정 지표(KPI)를 정의하고, 잠재 고객 반응 데이터를 기반으로 유료 서비스 전환율 극대화를 위한 가격 책정 및 마케팅 전략의 수정안을 제시하라. → 산출물 sessions/2026-05-23T14-16/business.md
@@ -31,9 +31,9 @@ _업데이트: 2026. 5. 24. 오전 3:42:16_
 ### 🎵 루나
 - [2026-05-19] 📥 새 지식 입수 — **student_growth_report_generator_v_1.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-19/student_growth_report_generator_v_1.html)
 ### ✍️ Writer
-- [2026-05-23] Designer가 확정한 시각적 가이드라인에 맞춰, 가장 강력한 후킹 포인트(Hook)를 극대화하는 다음 영상의 최종 스크립트 및 내레이션 초안을 작성할 것. → 산출물 sessions/2026-05-23T18-09/writer.md
-- [2026-05-23] 완성된 스크립트를 기반으로 가장 높은 인게이지먼트 유도 Hook을 포함한 마이크로 콘텐츠(Reels)용 후킹 포인트 3가지와 최적 게시 전략을 확정하라. → 산출물 sessions/2026-05-23T18-24/writer.md
 - [2026-05-23] 확정된 Reels 전략(Concept 1) 중 가장 강력한 후킹 포인트를 기반으로, 다음 콘텐츠에 최적화된 최종 스크립트와 캡션(Hook 포함)을 작성하라. → 산출물 sessions/2026-05-23T18-39/writer.md
+- [2026-05-23] 가장 강력한 주제(Topic 1: 객관적 주파수 진단)에 맞춰, 확정된 Pain $ightarrow$ Gain 구조를 적용하여 다음 영상의 스크립트와 가장 자극적인 후킹 문구(Hook) 3가지를 작성하고, 데이터 기반으로 Gap Score를 명시해줘. → 산출물 sessions/2026-05-23T19-24/writer.md
+- [2026-05-23] Designer가 확정한 비주얼 시스템과 데이터 요구사항(Pain $\rightarrow$ Gain 구조)에 맞춰, 현재 작성된 스크립트의 각 섹션을 편집용으로 다듬고 시각적 요소(Gap Score 강조 지점)를 명확히 표시하는 최종 편집 가이드라인을 생성하라. → 산출물 sessions/2026-05-23T19-39/writer.md
 ### 🔍 Researcher
 - [2026-05-23] Pain $\rightarrow$ Gain 프레임워크가 유튜브 콘텐츠 기획 및 데이터 수집 과정에 어떻게 적용되어야 하는지에 대한 기준(Metric)을 정의하고, 개발팀의 체크리스트와 연동할 수 있는 데이터 요구사항 명세서를 초안 작성하라. → 산출물 sessions/2026-05-23T04-29/researcher.md
 - [2026-05-23] 최근 트렌드 및 경쟁사 분석 데이터를 바탕으로 새로 작성된 후크 스크립트가 현재 실용음악 입시생들의 가장 강한 'Pain'을 정확히 건드리고 있는지 검증하고, 보완할 부분을 제시하라. → 산출물 sessions/2026-05-23T09-09/researcher.md
