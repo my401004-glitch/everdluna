@@ -121,3 +121,4 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-05-23] Writer와 Designer가 제공한 최종 산출물을 통합하여, 다음 영상 업로드에 최적화된 제목 구조, 설명란 구성, 핵심 해시태그 전략 및 업로드 실행 계획(타이밍 포함)을 정리하고 보고하라. → 산출물 sessions/2026-05-23T02-59/youtube.md
 - [2026-05-23] 코다리와 현빈이 제공한 API 응답 샘플과 디자인 가이드라인을 기반으로, 다음 영상의 'Pain $ightarrow$ Gain' 스토리보드와 제목/핵심 메시지 초안을 작성하라. → 산출물 sessions/2026-05-23T03-44/youtube.md
 - [2026-05-23] my_videos_check 및 comment_harvester 실행 결과를 즉시 수집하고, 확보된 데이터를 기반으로 'Pain $\rightarrow$ Gain' 스토리보드와 제목 구조를 재작성하여 다음 콘텐츠 기획을 위한 기초 자료를 준비하라. → 산출물 sessions/2026-05-23T03-59/youtube.md
+- [2026-05-23] 최종 QA 프로세스 결과에 따라 다음 영상 기획 시 적용할 'Pain $\rightarrow$ Gain' 기반의 제목 구조, 후크 전략 및 핵심 메시지 프레임워크를 정의하고 초안을 작성하라. → 산출물 sessions/2026-05-23T04-29/youtube.md
