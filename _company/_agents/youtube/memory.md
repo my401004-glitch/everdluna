@@ -130,3 +130,5 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-05-23] 레오에게 전달될 다음 영상의 최종 스크립트/시각화 요구사항 정리 작업을 시작하고, 콘텐츠 제작 흐름에 맞춰 작업 우선순위를 조정할 준비를 하라. → 산출물 sessions/2026-05-23T14-39/youtube.md
 - [2026-05-23] Designer가 확정한 Visual System(Dark Blue/Accent Yellow)과 Pain $ightarrow$ Gain 구조를 기반으로, 다음 영상의 최종 스토리보드 및 편집 요구사항을 구체화하여 콘텐츠 제작 흐름에 맞게 정리하라. → 산출물 sessions/2026-05-23T15-24/youtube.md
 - [2026-05-23] Writer가 완성한 최종 스크립트와 Designer가 확정한 시각화 요구사항(Dark Blue/Yellow 시스템, Pain->Gain 구조)을 기반으로 다음 영상의 실제 편집 및 콘텐츠 제작을 즉시 실행하여 초안을 생성하라. → 산출물 sessions/2026-05-23T17-39/youtube.md
+- [2026-05-23] Writer가 제공한 스크립트와 Designer가 확정한 비주얼 가이드라인(Dark Blue/Accent Yellow, Pain $ightarrow$ Gain 구조)을 기반으로 다음 영상의 최종 편집 요구사항 및 초안 제작을 즉시 시작할 것. → 산출물 sessions/2026-05-23T18-09/youtube.md
+- [2026-05-23] 레오가 정리한 'final_production_bible.md'를 기반으로 영상 제작팀이 실행할 수 있도록 편집 및 사운드 디자인 우선순위를 최종 점검하고, 다음 영상 제작 흐름에 맞춰 구체적인 작업 순서를 조정하라. → 산출물 sessions/2026-05-23T18-24/youtube.md

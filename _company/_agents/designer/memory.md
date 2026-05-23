@@ -186,3 +186,8 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-23] Writer가 제공할 스토리보드 및 핵심 메시지를 바탕으로, 확정된 Visual System(Dark Blue/Accent Yellow)을 적용한 다음 영상의 최종 썸네일 아트워크 목업 초안 3가지를 제작하라. → 산출물 sessions/2026-05-23T17-09/designer.md
 - [2026-05-23] Writer가 제시한 최종 스토리보드 및 핵심 메시지를 바탕으로, Pain $ightarrow$ Gain 구조를 명확히 시각화하고, 개발팀의 Schema Contract와 일치하는 디자인 가이드라인을 최종 확정하라. → 산출물 sessions/2026-05-23T17-24/designer.md
 - [2026-05-23] Writer와 코다리가 확정한 최종 디자인 가이드라인(Dark Blue/Accent Yellow, Pain->Gain 시각화)을 기반으로 영상 편집에 필요한 최종 비주얼 요소 및 편집 요구사항을 정리하여 유튜브 제작 프로세스를 지원하라. → 산출물 sessions/2026-05-23T17-39/designer.md
+- [2026-05-23] Instagram에 적용할 마이크로 콘텐츠의 시각적 요구사항(자막 애니메이션, 톤앤매너)을 최종 점검하고, 확정된 비주얼 시스템(Dark Blue/Accent Yellow)에 맞춰 가이드라인을 즉시 확정하라. → 산출물 sessions/2026-05-23T17-54/designer.md
+- [2026-05-23] Youtube 제작 흐름에 맞추어, 확정된 비주얼 시스템(Dark Blue/Accent Yellow)과 Pain $ightarrow$ Gain 구조를 영상 편집에 적용하기 위한 최종 시각화 요구사항 및 스토리보드를 정리할 것. → 산출물 sessions/2026-05-23T18-09/designer.md
+- [2026-05-23] 확정된 비주얼 시스템(Dark Blue/Accent Yellow)과 마스터 가이드라인을 기반으로 유튜브 및 릴스 콘텐츠에 적용될 일관된 디자인 템플릿을 생성하여, 자가학습 목표를 즉시 지원하라. → 산출물 sessions/2026-05-23T18-24/designer.md
+- [2026-05-23] 확정된 디자인 시스템(Dark Blue/Accent Yellow, Pain $ightarrow$ Gain 구조)을 기반으로, Writer가 제공한 스크립트를 시각화할 최종 스토리보드 및 릴스용 핵심 비주얼 요구사항을 즉시 정리하라. → 산출물 sessions/2026-05-23T18-39/designer.md
+- [2026-05-23] 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $ightarrow$ Gain 구조)과 스토리보드를 기반으로, 다음 영상 제작을 위한 최종 편집 요구사항 및 시각화 가이드라인을 확정하여 제출하라. → 산출물 sessions/2026-05-23T18-54/designer.md
