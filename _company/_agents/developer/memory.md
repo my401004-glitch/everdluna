@@ -163,3 +163,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-23] 데이터 수집 실패의 근본 원인(API 연동 또는 데이터 구조 문제)을 진단하고, 'Pain $ightarrow$ Gain' 프레임워크를 적용하기 위한 최소한의 데이터 입력 스키마 및 안정적인 데이터 추출 루프(SOP)를 즉시 수정하여 실행할 준비를 하라. → 산출물 sessions/2026-05-23T04-14/developer.md
 - [2026-05-23] DataExtractorService 및 Validation Layer에 대한 최종 테스트 케이스를 작성하고, Pain $\rightarrow$ Gain 프레임워크 기반의 기술적 안정성 검증 체크리스트를 완성하라. → 산출물 sessions/2026-05-23T04-29/developer.md
 - [2026-05-23] 레오가 요청한 콘텐츠 제작에 필요한 데이터 요구사항(data_req_01_v2.md)과 API 매핑 로직(M-DRS 기반)이 현재 시스템에서 안정적으로 연동되는지 최종 점검하고, 만약 불안정하면 즉시 수정 사항을 보고하라. → 산출물 sessions/2026-05-23T04-44/developer.md
+- [2026-05-23] DataExtractorService 및 Validation Layer에 대한 Pain $ightarrow$ Gain 프레임워크 기반의 기술적 안정성 검증 체크리스트를 최종화하고, 레오가 요청한 콘텐츠 제작에 필요한 최소 테스트 케이스(Test Case)를 정의하여 실행 계획을 수립하라. → 산출물 sessions/2026-05-23T04-59/developer.md
