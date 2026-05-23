@@ -183,3 +183,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-23] * **핵심 가정:** 백엔드는 DB의 `Diagnosis_Results` 테이블에 저장된 데이터를 기반으로 계산을 수행합니다 . _(근거: sessions/2026-05-18T43/developer.md)_
 - [2026-05-23] | **TC-02** | **권한 제한 오류 (RBAC)**: 무료 사용자가 'Growth' 리포트를 요청하는 경우. | `diagnosis_type: 'Growth'`, 권한 레벨: Free. | HTTP Status 403 Forbidden 또는 에러 메시지 반환. | 백엔드에서 사용자 Role을 확인하고, 접근 불가 시 즉시 응답해야 합니다 . | _(근거: sessions/2026-05-18T13:43/developer.md)_
 - [2026-05-23] | **TC-04** | **데이터 형식 오류 (Schema)**: `KPI_Metrics`의 특정 값이 문자열로 들어오는 경우. | 정상적인 Context ID와 함께 비정형 데이터 입력. | HTTP Status 500 Internal Server Error 및 구체적인 에러 메시지 반환. | DB 레벨에서 데이터 타입을 강제하고, 백엔드 로직이 이를 잡아내어 안정적으로 실패해야 합니다 . | _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-05-23] * **Input:** 사용자의 초기 진단 정보 (예: 테스트 응답 값). _(근거: `sessions/2026-05-18T14-34/developer.md`)_
+- [2026-05-23] * **Process 1 (API):** 이 Input을 받아 백엔드에서 **Gap Score**를 계산합니다. Gap Score는 단순한 평균이 아니라, 특정 KPI(`Growth`, `Engagement`)의 비율과 가중치가 필요할 것입니다. _(근거: Designer가 요청한 'Gap Score' 및 `sessions/2026-05-18T43/developer.md`)_
+- [2026-05-23] * **Process 2 (Schema):** 계산된 Gap Score는 최종적으로 `Diagnosis_Results` 테이블에 저장됩니다. 이 과정에서 **RBAC 검증**이 필수입니다. _(근거: `sessions/2026-05-18T13-43/developer.md`)_
+- [2026-05-23] | `diagnosis_type` | Enum/String | 요청된 진단 유형 (e.g., 'VocalGrowth', 'Engagement'). | 미리 정의된 값만 허용 | | _(근거: sessions/2026-05-18T13:43/developer.md)_
+- [2026-05-23] * **Factor Type:** Pain 또는 Gain. **(필수 필드)** _(근거: Designer의 P $\rightarrow$ G 흐름)_
