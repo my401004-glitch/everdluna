@@ -114,3 +114,6 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-05-22] Phase I 목표 달성을 위한 영상 4개 중, 가장 시급하게 제작해야 할 콘텐츠 주제를 선정하고, 해당 주제에 맞춰 writer에게 후킹 전략 및 스토리보드 초안 작성을 요청하세요. → 산출물 sessions/2026-05-22T21-42/youtube.md
 - [2026-05-22] Writer와 Designer가 확정한 최종 스토리보드 및 Visual Directives를 기반으로, 다음 콘텐츠 업로드에 최적화된 영상 제작 준비를 완료하고, 게시 시간 및 해시태그 전략을 실행하라. → 산출물 sessions/2026-05-22T23-12/youtube.md
 - [2026-05-22] Writer와 Designer가 제공한 모든 산출물(최종 스크립트 초안, Visual Directives)을 통합하여, 가장 효과적인 영상 업로드 타이밍(화/목 저녁), 제목 구조, 설명란 구성, 핵심 해시태그 전략을 최종 확정하고 실행 계획을 정리하라. → 산출물 sessions/2026-05-22T23-27/youtube.md
+- [2026-05-23] Writer와 Designer가 확정한 최종 스토리보드 및 Visual Directives를 기반으로 영상 제작에 필요한 최종 스크립트 초안과 디자인 가이드라인을 즉시 정리하여 레오에게 전달할 준비를 하라. → 산출물 sessions/2026-05-23T00-27/youtube.md
+- [2026-05-23] Writer가 완성한 최종 스크립트 초안과 Designer가 확정한 Visual Directives를 통합하여, 다음 영상 업로드에 최적화된 제목 구조, 설명란 구성, 핵심 해시태그 전략을 즉시 실행 계획으로 정리하고 보고하라. → 산출물 sessions/2026-05-23T01-12/youtube.md
+- [2026-05-23] Writer와 Designer가 제공한 산출물을 기반으로, 다음 영상 업로드에 최적화된 제목 구조, 설명란 구성, 핵심 해시태그 전략을 최종 실행 계획으로 정리하고 보고하라. → 산출물 sessions/2026-05-23T01-27/youtube.md
