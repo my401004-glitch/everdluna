@@ -251,6 +251,57 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-05-23T18-54/_report.md\n- Designer: 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $\rightarrow$ Gain 구조)과 스토리보드를 기반으로, 다음\n- 코다리: Designer가 제공한 최종 아트워크 초안 및 비주얼 요구사항이 백엔드 데이터 구조(`schema_contract.md` 기반)와 완벽히 연동\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $\rightarrow$ Gain 구조)과 스토리보드를 기반으로, 다음 영상 제작을 위한 최종 편집 요구사항 및 시각화 가이드라인을 확정하여 제출하라.\n> \ud83d",
       "completedAt": "2026-05-23T18:56:31.462Z"
+    },
+    {
+      "id": "20260523202538-drdz",
+      "title": "모든 통계 수치 출처가 명확하게 시각화되었는가? (데이터 무결성)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-23T20:25:38.323Z",
+      "status": "done",
+      "sessionDir": "2026-05-23T20-24",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-23T20-24/_report.md\n- 레오: 제작 표준 매뉴얼(v2.0)에 따라 첫 번째 영상의 스크립트와 편집/사운드 디자인 우선순위를 확정하고, 실제 제작을 위한 최종 요구사항 목록을 \n- Designer: 확정된 비주얼 시스템(Dark Blue/Yellow 및 Pain $\rightarrow$ Gain 구조)과 콘텐츠 표준 매뉴얼에 맞춰 첫 번째 영\n- Writer: youtube 에이전트가 제시한 최종 편집 및 사운드 디자인 우선순위를 반영하여, 영상에 들어갈 구체적인 컷 전환 및 사운드 디자인 지침을 작성\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 제작 표준 매뉴얼(v2.0)에 따라 첫 번째 영상의 스크립트와 편집/사운드 디자인 우선순위를 확정하고, 실제 제작을 위한 최종 요구사항 목록을 작성하라.\n> 🔧 **도구 실행**: `comment_harvester.py`, `my_vid",
+      "completedAt": "2026-05-23T20:27:30.737Z"
+    },
+    {
+      "id": "20260523202538-o6k1",
+      "title": "영상 초반 30초 이탈률 방지 장치가 작동하는가? (Hook 강화)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-23T20:25:38.324Z",
+      "status": "done",
+      "sessionDir": "2026-05-23T20-24",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-23T20-24/_report.md\n- 레오: 제작 표준 매뉴얼(v2.0)에 따라 첫 번째 영상의 스크립트와 편집/사운드 디자인 우선순위를 확정하고, 실제 제작을 위한 최종 요구사항 목록을 \n- Designer: 확정된 비주얼 시스템(Dark Blue/Yellow 및 Pain $\rightarrow$ Gain 구조)과 콘텐츠 표준 매뉴얼에 맞춰 첫 번째 영\n- Writer: youtube 에이전트가 제시한 최종 편집 및 사운드 디자인 우선순위를 반영하여, 영상에 들어갈 구체적인 컷 전환 및 사운드 디자인 지침을 작성\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 제작 표준 매뉴얼(v2.0)에 따라 첫 번째 영상의 스크립트와 편집/사운드 디자인 우선순위를 확정하고, 실제 제작을 위한 최종 요구사항 목록을 작성하라.\n> 🔧 **도구 실행**: `comment_harvester.py`, `my_vid",
+      "completedAt": "2026-05-23T20:27:30.738Z"
+    },
+    {
+      "id": "20260523202538-kezk",
+      "title": "사운드 효과와 컷 전환이 논리적 흐름을 보조하고 있는가? (몰입도 유지)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-05-23T20:25:38.324Z",
+      "status": "done",
+      "sessionDir": "2026-05-23T20-24",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-23T20-24/_report.md\n- 레오: 제작 표준 매뉴얼(v2.0)에 따라 첫 번째 영상의 스크립트와 편집/사운드 디자인 우선순위를 확정하고, 실제 제작을 위한 최종 요구사항 목록을 \n- Designer: 확정된 비주얼 시스템(Dark Blue/Yellow 및 Pain $\rightarrow$ Gain 구조)과 콘텐츠 표준 매뉴얼에 맞춰 첫 번째 영\n- Writer: youtube 에이전트가 제시한 최종 편집 및 사운드 디자인 우선순위를 반영하여, 영상에 들어갈 구체적인 컷 전환 및 사운드 디자인 지침을 작성\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 제작 표준 매뉴얼(v2.0)에 따라 첫 번째 영상의 스크립트와 편집/사운드 디자인 우선순위를 확정하고, 실제 제작을 위한 최종 요구사항 목록을 작성하라.\n> 🔧 **도구 실행**: `comment_harvester.py`, `my_vid",
+      "completedAt": "2026-05-23T20:27:30.738Z"
     }
   ]
 }

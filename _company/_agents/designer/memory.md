@@ -194,3 +194,7 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-23] 확정된 비주얼 시스템(Dark Blue/Accent Yellow, Pain $ightarrow$ Gain 구조)과 데이터 무결성 체크리스트(`design_data_integrity_checklist.md`)를 기반으로, 유튜브 및 릴스 콘텐츠에 적용될 일관된 디자인 템플릿을 생성하라. → 산출물 sessions/2026-05-23T19-09/designer.md
 - [2026-05-23] 이전 세션에서 확정된 Dark Blue/Accent Yellow 비주얼 시스템 및 Pain $ightarrow$ Gain 레이아웃 가이드라인을 기반으로, 위에서 작성된 스크립트의 핵심 메시지를 시각화할 최종 유튜브 썸네일 아트워크 초안(3분할 레이아웃)을 제작해줘. → 산출물 sessions/2026-05-23T19-24/designer.md
 - [2026-05-23] Writer와 레오가 합의한 Pain $\rightarrow$ Gain 흐름, Dark Blue/Accent Yellow 비주얼 시스템을 기반으로, 다음 영상에 적용할 최종 썸네일 아트워크 컨셉(1~3안 중 택 1)을 확정하고 디자인 작업을 시작할 수 있도록 구체적인 시각화 가이드라인을 최종 정리하라. → 산출물 sessions/2026-05-23T19-39/designer.md
+- [2026-05-23] 확정된 비주얼 시스템(Dark Blue/Yellow 및 Pain $ightarrow$ Gain 구조)과 콘텐츠 표준 매뉴얼에 맞춰 첫 번째 영상의 썸네일 아트워크를 제작하라. (Writer가 제공할 스크립트 기반으로) → 산출물 sessions/2026-05-23T20-24/designer.md
+- [2026-05-23] Writer와 Researcher가 산출한 최종 문구 및 진단 구조를 기반으로, '무료 진단 테스트' 페이지의 시각화된 와이어프레임(레이아웃 초안)을 제작하라. → 산출물 sessions/2026-05-23T20-54/designer.md
+- [2026-05-23] Writer와 Researcher가 확정한 Pain $ightarrow$ Gain 구조와 Dark Blue/Accent Yellow 비주얼 시스템을 기반으로, '무료 진단 테스트' 랜딩 페이지 와이어프레임 초안에 맞춰 실제 디자인 시안(Mockup) 및 최종 아트워크를 제작하여 배포 준비를 시작하라. → 산출물 sessions/2026-05-23T21-09/designer.md
+- [2026-05-23] Writer가 제공한 최종 스크립트와 핵심 메시지를 기반으로 유튜브 썸네일 아트워크 및 랜딩 페이지의 시각화 요소를 최종 디자인하고, Dark Blue/Yellow 비주얼 시스템을 엄격히 적용하여 시안을 완성하라. → 산출물 sessions/2026-05-23T21-24/designer.md
