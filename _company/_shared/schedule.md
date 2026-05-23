@@ -1,33 +1,33 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 23. 오후 1:47:46_
+_업데이트: 2026. 5. 23. 오후 2:17:47_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-05-23] my_videos_check 및 comment_harvester 실행 결과를 즉시 수집하고, 확보된 데이터를 기반으로 'Pain $\rightarrow$ Gain' 스토리보드와 제목 구조를 재작성하여 다음 콘텐츠 기획을 위한 기초 자료를 준비하라. → 산출물 sessions/2026-05-23T03-59/youtube.md
 - [2026-05-23] 최종 QA 프로세스 결과에 따라 다음 영상 기획 시 적용할 'Pain $\rightarrow$ Gain' 기반의 제목 구조, 후크 전략 및 핵심 메시지 프레임워크를 정의하고 초안을 작성하라. → 산출물 sessions/2026-05-23T04-29/youtube.md
 - [2026-05-23] 이전 단계에서 확정된 Pain $ightarrow$ Gain 기반의 콘텐츠 블루프린트(제목, 후크 스크립트, 본론 구조)를 즉시 바탕으로 다음 영상의 최종 제목, 후크 스크립트, 그리고 본론의 상세 스토리보드 구성을 완성하여 제시하라. → 산출물 sessions/2026-05-23T04-44/youtube.md
+- [2026-05-23] 최근 확보된 Pain $\rightarrow$ Gain 프레임워크를 기반으로 다음 영상의 최종 제목, 후크 스크립트, 본론 스토리보드를 완성하여 콘텐츠 제작을 시작할 수 있도록 구체적인 스크립트를 작성하라. → 산출물 sessions/2026-05-23T05-14/youtube.md
 ### 📷 Instagram
 - [2026-05-21] 최근 인게이지먼트 데이터와 트렌드 분석을 기반으로 다음 콘텐츠 제작 시 최적의 게시 시간, 해시태그 전략 및 포맷(릴스/피드)별 실행 방안을 구체적으로 제시하세요. → 산출물 sessions/2026-05-21T09-35/instagram.md
 - [2026-05-22] writer가 작성한 후크 버전을 기반으로, 가장 높은 인게이지먼트를 유도할 수 있는 최적의 게시 시간, 핵심 해시태그 전략 및 포맷(릴스/피드)별 구체적인 실행 방안을 제시하세요. → 산출물 sessions/2026-05-22T02-49/instagram.md
 - [2026-05-22] Writer가 제시한 후킹 문구들을 기반으로, 다음 콘텐츠 업로드에 최적화된 게시 시간, 핵심 해시태그 전략, 그리고 릴스/피드 포맷별 구체적인 실행 방안을 즉시 확정하여 보고하라. → 산출물 sessions/2026-05-22T19-12/instagram.md
 ### 🎨 Designer
-- [2026-05-23] 확정된 Visual Directives와 Pain $ightarrow$ Gain 프레임워크를 기반으로, 다음 영상에 사용될 핵심 시각화 요소(썸네일 디자인 가이드라인)의 최종 목업 디자인을 즉시 제작하고 콘텐츠 제작 단계에 투입할 수 있도록 완료하라. → 산출물 sessions/2026-05-23T02-59/designer.md
-- [2026-05-23] 최종 확정된 디자인 가이드라인(`Mockup Blueprint`)을 기반으로, 실제 영상 인트로 그래픽 및 썸네일 디자인을 제작하여 콘텐츠 제작 단계에 투입하십시오. (Dark Blue/Accent Yellow 팔레트 적용) → 산출물 sessions/2026-05-23T03-14/designer.md
 - [2026-05-23] 최종 확정된 Visual Directives(Dark Blue/Accent Yellow)와 Pain $ightarrow$ Gain 프레임워크를 적용하여, 다음 영상에 사용될 핵심 시각화 요소(썸네일 목업 및 인트로 그래픽)의 최종 디자인 가이드라인을 다시 한번 검토하고 제작을 준비하라. → 산출물 sessions/2026-05-23T03-44/designer.md
+- [2026-05-23] 코다리가 확보할 데이터 구조와 확정된 Visual Directives를 기반으로, 다음 영상에 사용될 핵심 시각화 요소(썸네일 목업 및 인트로 그래픽)의 최종 디자인 가이드라인을 다시 한번 검토하고 제작을 준비하라. → 산출물 sessions/2026-05-23T04-59/designer.md
+- [2026-05-23] 최종 확정된 Visual System 가이드라인(`Dark Blue`/`Accent Yellow`)과 콘텐츠 스토리보드(youtube 에이전트 산출물)를 기반으로 다음 영상의 인트로 그래픽 및 썸네일 목업 디자인을 즉시 제작하라. → 산출물 sessions/2026-05-23T05-14/designer.md
 ### 💻 코다리
-- [2026-05-23] 데이터 수집 실패의 근본 원인(API 연동 또는 데이터 구조 문제)을 진단하고, 'Pain $ightarrow$ Gain' 프레임워크를 적용하기 위한 최소한의 데이터 입력 스키마 및 안정적인 데이터 추출 루프(SOP)를 즉시 수정하여 실행할 준비를 하라. → 산출물 sessions/2026-05-23T04-14/developer.md
 - [2026-05-23] DataExtractorService 및 Validation Layer에 대한 최종 테스트 케이스를 작성하고, Pain $\rightarrow$ Gain 프레임워크 기반의 기술적 안정성 검증 체크리스트를 완성하라. → 산출물 sessions/2026-05-23T04-29/developer.md
 - [2026-05-23] 레오가 요청한 콘텐츠 제작에 필요한 데이터 요구사항(data_req_01_v2.md)과 API 매핑 로직(M-DRS 기반)이 현재 시스템에서 안정적으로 연동되는지 최종 점검하고, 만약 불안정하면 즉시 수정 사항을 보고하라. → 산출물 sessions/2026-05-23T04-44/developer.md
+- [2026-05-23] DataExtractorService 및 Validation Layer에 대한 Pain $ightarrow$ Gain 프레임워크 기반의 기술적 안정성 검증 체크리스트를 최종화하고, 레오가 요청한 콘텐츠 제작에 필요한 최소 테스트 케이스(Test Case)를 정의하여 실행 계획을 수립하라. → 산출물 sessions/2026-05-23T04-59/developer.md
 ### 💼 현빈
 - [2026-05-22] 선정된 단일 실행 과제(예: 영상 제작 준비, 개발 로드맵 재추정, 마케팅 전략 확정 중 택 1)에 대해 Pain $ightarrow$ Gain 프레임워크를 적용하여 자원 배분 우선순위를 제시하십시오. → 산출물 sessions/2026-05-22T22-12/business.md
 - [2026-05-22] 기술 안정성(Gap Score API)과 마케팅 자원(콘텐츠 기획)을 연결하여, 데이터 기반의 초기 수익화 모델(MVP 상품/서비스 구상) 및 가격 전략 초안을 작성해줘 → 산출물 sessions/2026-05-22T23-54/business.md
 - [2026-05-23] 개발팀이 정의한 테스트 케이스를 기반으로, 데이터 시스템 MVP가 달성해야 할 핵심 KPI(CTR 극대화에 기여하는 Pain $ightarrow$ Gain 시각화)와 기술적 안정성 목표를 명확히 설정하고 요구사항을 구체화하세요. → 산출물 sessions/2026-05-23T03-29/business.md
 ### 📱 영숙
-- [2026-05-23] 모든 산출물을 통합하여 최종 실행 계획을 바탕으로 즉시 다음 영상 업로드 일정을 확정하고 콘텐츠 배포를 준비하도록 전체 프로세스를 정리하고 보고하라. → 산출물 sessions/2026-05-23T02-59/secretary.md
 - [2026-05-23] Content_Production_Calendar.md에 명시된 대로, 오늘부터 시작되는 '콘텐츠 제작 마스터 스케줄(SOP)'을 매주 월요일 오전 10시에 업데이트하는 루틴을 즉시 확정하고 실행하십시오. → 산출물 sessions/2026-05-23T03-14/secretary.md
 - [2026-05-23] 최근 데이터 수집 시도(my_videos_check.py, comment_harvester.py) 실패 원인 및 누락된 데이터 항목을 분석하고, 다음 작업에 필요한 정확한 정보(예: WATCHED_CHANNELS 목록 또는 API 접근 권한)를 확보하기 위한 즉각적인 행동 계획을 수립하여 보고하라. → 산출물 sessions/2026-05-23T04-14/secretary.md
+- [2026-05-23] youtube와 designer가 작업하는 동안, 콘텐츠 배포 일정을 확정하고 다음 업로드 일정을 Google Calendar에 반영하여 실행 흐름을 관리하라. → 산출물 sessions/2026-05-23T05-14/secretary.md
 ### 🎵 루나
 - [2026-05-19] 📥 새 지식 입수 — **student_growth_report_generator_v_1.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-19/student_growth_report_generator_v_1.html)
 ### ✍️ Writer

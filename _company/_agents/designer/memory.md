@@ -163,3 +163,5 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-23] 확정된 Visual Directives와 Pain $ightarrow$ Gain 프레임워크를 기반으로, 다음 영상에 사용될 핵심 시각화 요소(썸네일 디자인 가이드라인)의 최종 목업 디자인을 즉시 제작하고 콘텐츠 제작 단계에 투입할 수 있도록 완료하라. → 산출물 sessions/2026-05-23T02-59/designer.md
 - [2026-05-23] 최종 확정된 디자인 가이드라인(`Mockup Blueprint`)을 기반으로, 실제 영상 인트로 그래픽 및 썸네일 디자인을 제작하여 콘텐츠 제작 단계에 투입하십시오. (Dark Blue/Accent Yellow 팔레트 적용) → 산출물 sessions/2026-05-23T03-14/designer.md
 - [2026-05-23] 최종 확정된 Visual Directives(Dark Blue/Accent Yellow)와 Pain $ightarrow$ Gain 프레임워크를 적용하여, 다음 영상에 사용될 핵심 시각화 요소(썸네일 목업 및 인트로 그래픽)의 최종 디자인 가이드라인을 다시 한번 검토하고 제작을 준비하라. → 산출물 sessions/2026-05-23T03-44/designer.md
+- [2026-05-23] 코다리가 확보할 데이터 구조와 확정된 Visual Directives를 기반으로, 다음 영상에 사용될 핵심 시각화 요소(썸네일 목업 및 인트로 그래픽)의 최종 디자인 가이드라인을 다시 한번 검토하고 제작을 준비하라. → 산출물 sessions/2026-05-23T04-59/designer.md
+- [2026-05-23] 최종 확정된 Visual System 가이드라인(`Dark Blue`/`Accent Yellow`)과 콘텐츠 스토리보드(youtube 에이전트 산출물)를 기반으로 다음 영상의 인트로 그래픽 및 썸네일 목업 디자인을 즉시 제작하라. → 산출물 sessions/2026-05-23T05-14/designer.md
