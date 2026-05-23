@@ -6,7 +6,7 @@ import { DiagnosisInput, DiagnosisResultSchema } from '../types/diagnosis.types'
  * 이 함수는 실제 DB 통신을 담당하는 Repository 패턴의 호출을 감싸며, 
  * 비즈니스 로직(KPI 가중치 적용, RBAC 검증 등)이 구동되는 곳입니다.
  */
-export class DiagnosisService {
+export class DiagnosisService { // 스키마 계약에 맞춰 데이터 구조를 강제함
 
     /**
      * @description 진단 입력 데이터를 받아 최종 Diagnostic Result를 계산합니다.

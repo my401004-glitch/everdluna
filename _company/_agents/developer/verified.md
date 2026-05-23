@@ -191,3 +191,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-23] 9	| `diagnosis_type` | Enum/String | 요청된 진단 유형 (e.g., 'VocalGrowth', 'Engagement'). | 미리 정의된 값만 허용 | | _(근거: sessions/2026-05-18T13:43/developer.md)_
 - [2026-05-23] 9	| `diagnosis_type` | Enum/String | 요청된 진단 유형 (e.g., 'VocalGrowth', 'Engagement'). | 미리 정의된 값만 허용 | | _(근거: sessions/2026-05-18T13:43/developer.md)_
 - [2026-05-23] 18	* **Factor Type:** Pain 또는 Gain. **(필수 필드)** _(근거: Designer의 P $\rightarrow$ G 흐름)_
+- [2026-05-23] CEO님의 지시사항을 검토했습니다. "디자인에 필요한 최소 데이터의 무결성 확보"는 단순히 스키마를 재확인하는 것을 넘어, **실제 비즈니스 로직이 설계된 계약(Contract)대로 안정적으로 작동함을 코드 레벨에서 증명**해야 합니다. _(근거: sessions/2026-05-18T14-34/developer.md, sessions/2026-05-23T15-39/developer.md)_
