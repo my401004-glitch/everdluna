@@ -171,3 +171,15 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-23] | **TC-004** | **RBAC Violation** | 현재 사용자 Role이 접근 권한을 가지지 못한 KPI(`Monetization`) 데이터가 요청된 경우. | Validation Layer에서 `PermissionDeniedError`를 반환하고, 해당 스코어는 0으로 처리되며 에러 로그를 남긴다. | ValidationLayer | _(근거: 코다리 검증된 지식)_
 - [2026-05-23] | **TC-005** | **KPI Out of Range** | KPI 값이 비즈니스적으로 불가능한 값(예: Growth Score가 -100%)인 경우. | Validation Layer에서 `InvalidDataRangeError`를 발생시키고, 시스템은 이전 유효 데이터로 폴백(Fallback) 처리하거나 해당 요청을 거부한다. | ValidationLayer | _(근거: 코다리 검증된 지식)_
 - [2026-05-23] CEO 지시사항을 확인했습니다. 핵심 지표(Gap Score)를 반환하는 더미 API 엔드포인트 구현과 최소 테스트 케이스 정의는 현재 저희가 가장 높은 우선순위를 두고 진행해야 할 '기술적 실존성 확보' 단계입니다. _(근거: sessions/2026-05-23T06-14)_
+- [2026-05-23] 현재까지의 지식()를 종합해 볼 때, 저희는 이미 `DiagnosisResult` 스키마와 API 구조(`GET /api/v1/diagnosis_score`)의 초안을 완성했습니다. 이제 이 가상의 백엔드 로직에 대한 **통합 테스트(Integration Test)**를 작성하고 실행하여, 데이터 추출 $\rightarrow$ 권한 검증(RBAC) $\rightarrow$ Gap Score 계산까지 전체 흐름이 끊기지 않는지 확인해야 합니다. _(근거: sessions/2026-05-18T14-34/developer.md, sessions/2026-05-19T09:57)_
+- [2026-05-23] 2. **RBAC Failure:** 무료 사용자가 유료 리포트 접근을 시도할 때, 적절한 에러 응답(403 Forbidden)이 반환되는지 확인. _(근거: sessions/2026-05-18T13:43)_
+- [2026-05-23] * **기술적 목표:** API 요청 시 단순히 진단 결과만 반환하는 것이 아니라, 해당 사용자의 최근 활동(예: '피치 불안정 구간'에서 3번 녹음 실패)을 요약해서 리포트의 근거 자료로 제공하도록 로직을 확장해야 합니다. _(근거: sessions/2026-05-18T15:04/developer.md)_
+- [2026-05-23] * **기술적 목표:** `DiagnosisScore` 컴포넌트에 API 응답 스키마를 완벽히 매핑하고, **데이터가 부족한 부분(Missing Data)**을 UX적으로 빈 공간으로 두지 않고 "이 부분이 약합니다. 다음 연습을 통해 개선하세요."와 같은 가이드로 채워야 합니다. _(근거: sessions/2026-05-18T16:04/developer.md)_
+- [2026-05-23] **테스트 목표:** 사용자 입력 데이터(Context)를 기반으로 `Growth`, `Engagement`, `Monetization` KPI가 포함된 진단 점수(`Gap Score`)를 계산하고, 이를 JSON 형태로 정확하게 반환하는지 검증. _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-05-23] * **요청 데이터 구조(Input):** Context ID, 사용자 레벨, 진단 타입 등 필수 파라미터가 정상적으로 검증되었습니다. _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-05-23] 1. 이 응답 JSON 구조를 기반으로 `DiagnosisScore` 시각화 컴포넌트를 즉시 개발할 수 있습니다. _(근거: sessions/2026-05-19T10:29)_
+- [2026-05-23] 2. 특히, `gap_score_value`와 세부 KPI(`kpis`)의 상태(Excellent/Needs Improvement 등)를 색상 코드(Dark Blue/Accent Yellow 활용)로 매핑하여 시각화하는 것이 핵심입니다. _(근거: sessions/2026-05-23T06:59)_
+- [2026-05-23] CEO 지시사항과 지난 의사결정 로그를 검토했습니다. 현재 가장 큰 기술적 리스크는 '핵심 지표(Gap Score)의 데이터 안정성 및 비즈니스 로직 연동 테스트'입니다 . _(근거: sessions/2026-05-23T14-16/developer.md)_
+- [2026-05-23] * **핵심 가정:** 백엔드는 DB의 `Diagnosis_Results` 테이블에 저장된 데이터를 기반으로 계산을 수행합니다 . _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-05-23] | **TC-02** | **권한 제한 오류 (RBAC)**: 무료 사용자가 'Growth' 리포트를 요청하는 경우. | `diagnosis_type: 'Growth'`, 권한 레벨: Free. | HTTP Status 403 Forbidden 또는 에러 메시지 반환. | 백엔드에서 사용자 Role을 확인하고, 접근 불가 시 즉시 응답해야 합니다 . | _(근거: sessions/2026-05-18T13:43/developer.md)_
+- [2026-05-23] | **TC-04** | **데이터 형식 오류 (Schema)**: `KPI_Metrics`의 특정 값이 문자열로 들어오는 경우. | 정상적인 Context ID와 함께 비정형 데이터 입력. | HTTP Status 500 Internal Server Error 및 구체적인 에러 메시지 반환. | DB 레벨에서 데이터 타입을 강제하고, 백엔드 로직이 이를 잡아내어 안정적으로 실패해야 합니다 . | _(근거: sessions/2026-05-18T14-34/developer.md)_

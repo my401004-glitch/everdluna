@@ -172,3 +172,6 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-23] 확정된 Visual System(Dark Blue/Accent Yellow)과 Writer가 제시한 스토리보드를 기반으로 다음 영상의 썸네일 아트워크 및 인트로 그래픽 목업 디자인을 즉시 제작하라. → 산출물 sessions/2026-05-23T06-44/designer.md
 - [2026-05-23] 확정된 Visual System(Dark Blue/Accent Yellow)과 Writer의 스토리보드를 기반으로, 다음 영상의 썸네일 아트워크 및 인트로 그래픽 목업 디자인을 즉시 제작하여 최종 가이드라인을 확정하라. → 산출물 sessions/2026-05-23T06-59/designer.md
 - [2026-05-23] 최종 선택된 썸네일 컨셉과 확정된 Visual System(Dark Blue/Accent Yellow)을 기반으로, 다음 영상의 실제 인트로 그래픽 및 썸네일 아트워크 제작을 즉시 착수하고 결과물을 제출하라. → 산출물 sessions/2026-05-23T07-44/designer.md
+- [2026-05-23] 다음 영상(파일럿 테스트 대상) 제작을 위해 확정된 Visual System(Dark Blue/Accent Yellow)과 Pain $ightarrow$ Gain 구조를 기반으로, 데이터 기반의 위기감(Pain)을 극대화하는 썸네일 아트워크와 인트로 그래픽 목업 디자인을 즉시 착수하라. → 산출물 sessions/2026-05-23T14-16/designer.md
+- [2026-05-23] Developer가 제공할 최종 데이터 구조와 Pain $ightarrow$ Gain 프레임워크를 기반으로, 가장 효과적인 썸네일 컨셉 3안과 인트로 그래픽 목업 디자인을 즉시 제작하라. → 산출물 sessions/2026-05-23T14-24/designer.md
+- [2026-05-23] 코다리로부터 검증된 `DiagnosisResult` JSON 구조와 Visual System(Dark Blue/Accent Yellow)을 기반으로, 다음 콘텐츠에 필요한 인트로 그래픽 및 썸네일 아트워크 제작에 필요한 최종 디자인 가이드라인을 준비하라. → 산출물 sessions/2026-05-23T14-39/designer.md
