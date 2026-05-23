@@ -188,3 +188,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-23] * **Process 2 (Schema):** 계산된 Gap Score는 최종적으로 `Diagnosis_Results` 테이블에 저장됩니다. 이 과정에서 **RBAC 검증**이 필수입니다. _(근거: `sessions/2026-05-18T13-43/developer.md`)_
 - [2026-05-23] | `diagnosis_type` | Enum/String | 요청된 진단 유형 (e.g., 'VocalGrowth', 'Engagement'). | 미리 정의된 값만 허용 | | _(근거: sessions/2026-05-18T13:43/developer.md)_
 - [2026-05-23] * **Factor Type:** Pain 또는 Gain. **(필수 필드)** _(근거: Designer의 P $\rightarrow$ G 흐름)_
+- [2026-05-23] 9	| `diagnosis_type` | Enum/String | 요청된 진단 유형 (e.g., 'VocalGrowth', 'Engagement'). | 미리 정의된 값만 허용 | | _(근거: sessions/2026-05-18T13:43/developer.md)_
+- [2026-05-23] 9	| `diagnosis_type` | Enum/String | 요청된 진단 유형 (e.g., 'VocalGrowth', 'Engagement'). | 미리 정의된 값만 허용 | | _(근거: sessions/2026-05-18T13:43/developer.md)_
+- [2026-05-23] 18	* **Factor Type:** Pain 또는 Gain. **(필수 필드)** _(근거: Designer의 P $\rightarrow$ G 흐름)_
