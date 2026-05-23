@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 23. 오후 6:56:43_
+_업데이트: 2026. 5. 23. 오후 11:15:09_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -21,13 +21,13 @@ _업데이트: 2026. 5. 23. 오후 6:56:43_
 - [2026-05-23] DataExtractorService 및 Validation Layer에 대한 기술적 안정성 검증 체크리스트를 바탕으로, 다음 영상 제작에 필요한 데이터 요구사항(`data_req_01_v2.md`) 연동 테스트를 최종 실행 계획으로 수립하고 진행하라. → 산출물 sessions/2026-05-23T05-59/developer.md
 - [2026-05-23] 핵심 지표(Gap Score)를 반환하는 더미(Dummy) API 엔드포인트를 즉시 구현하고, 데이터 추출 및 매핑 로직이 시스템에서 안정적으로 연동되는지 검증할 수 있는 최소 테스트 케이스(Test Case)를 정의하여 실행 계획을 수립하라. → 산출물 sessions/2026-05-23T06-29/developer.md
 ### 💼 현빈
-- [2026-05-22] 선정된 단일 실행 과제(예: 영상 제작 준비, 개발 로드맵 재추정, 마케팅 전략 확정 중 택 1)에 대해 Pain $ightarrow$ Gain 프레임워크를 적용하여 자원 배분 우선순위를 제시하십시오. → 산출물 sessions/2026-05-22T22-12/business.md
 - [2026-05-22] 기술 안정성(Gap Score API)과 마케팅 자원(콘텐츠 기획)을 연결하여, 데이터 기반의 초기 수익화 모델(MVP 상품/서비스 구상) 및 가격 전략 초안을 작성해줘 → 산출물 sessions/2026-05-22T23-54/business.md
 - [2026-05-23] 개발팀이 정의한 테스트 케이스를 기반으로, 데이터 시스템 MVP가 달성해야 할 핵심 KPI(CTR 극대화에 기여하는 Pain $ightarrow$ Gain 시각화)와 기술적 안정성 목표를 명확히 설정하고 요구사항을 구체화하세요. → 산출물 sessions/2026-05-23T03-29/business.md
+- [2026-05-23] 현재 진행 중인 콘텐츠 제작 사이클에서 가장 높은 ROI를 보장할 수 있는 다음 영상의 주제와 'Pain $ightarrow$ Gain' 프레임워크 적용 전략에 대한 최종 의견을 제시하라. → 산출물 sessions/2026-05-23T14-12/business.md
 ### 📱 영숙
-- [2026-05-23] 최근 데이터 수집 시도(my_videos_check.py, comment_harvester.py) 실패 원인 및 누락된 데이터 항목을 분석하고, 다음 작업에 필요한 정확한 정보(예: WATCHED_CHANNELS 목록 또는 API 접근 권한)를 확보하기 위한 즉각적인 행동 계획을 수립하여 보고하라. → 산출물 sessions/2026-05-23T04-14/secretary.md
 - [2026-05-23] youtube와 designer가 작업하는 동안, 콘텐츠 배포 일정을 확정하고 다음 업로드 일정을 Google Calendar에 반영하여 실행 흐름을 관리하라. → 산출물 sessions/2026-05-23T05-14/secretary.md
 - [2026-05-23] Designer와 Writer가 작업하는 동안 진행 상황을 모니터링하고, 필요한 경우 일정 및 피드백 요청 사항을 정리하여 보고할 준비를 하라. → 산출물 sessions/2026-05-23T06-14/secretary.md
+- [2026-05-23] 현재까지의 핵심 목표(유튜브 1만 구독자), 단기 목표(영상 4개), 그리고 최근 완료된 작업(다음 영상 스토리보드 및 디자인 가이드라인 확정)을 요약하여 보고하라. → 산출물 sessions/2026-05-23T14-12/secretary.md
 ### 🎵 루나
 - [2026-05-19] 📥 새 지식 입수 — **student_growth_report_generator_v_1.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-19/student_growth_report_generator_v_1.html)
 ### ✍️ Writer
