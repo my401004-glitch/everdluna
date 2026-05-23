@@ -147,3 +147,5 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-23] 코다리가 확정한 `Gap Score` 결과와 Pain $ightarrow$ Gain 프레임워크를 기반으로, 다음 콘텐츠 제작에 필요한 최종 스토리보드 및 스크립트(`storyboard_v3.md`)를 작성하여 제공하라. → 산출물 sessions/2026-05-23T14-54/writer.md
 - [2026-05-23] Youtube가 정리한 스토리보드와 Designer의 시각적 가이드라인을 바탕으로, 데이터 기반의 Pain $ightarrow$ Gain 구조를 극대화하는 영상 스크립트 및 핵심 카피라이팅 초안을 작성하라. → 산출물 sessions/2026-05-23T15-24/writer.md
 - [2026-05-23] 이전 작업에서 확정된 Pain $\rightarrow$ Gain 구조와 Visual System(Dark Blue/Accent Yellow) 가이드라인을 기반으로, 다음 콘텐츠 영상에 대한 구체적인 스토리보드 및 최종 스크립트를 작성하십시오. 특히 시청 지속 시간을 극대화하기 위해 초반 35초 내에 객관적 지표(Gap Score 등)를 제시하는 구조를 반드시 포함해야 합니다. → 산출물 sessions/2026-05-23T16-24/writer.md
+- [2026-05-23] 최근의 Pain $ightarrow$ Gain 구조를 적용하여 다음 영상 주제 3가지에 대한 핵심 스토리보드와 후킹 스크립트 초안을 작성하라. (데이터 기반으로 가장 전환율이 높을 것으로 예상되는 주제 선정 포함) → 산출물 sessions/2026-05-23T17-09/writer.md
+- [2026-05-23] Topic 1('객관적 주파수 진단')에 맞춰, Researcher의 트렌드 분석과 Designer의 시각 시스템(Dark Blue/Accent Yellow)을 반영하여 최종 스토리보드와 스크립트를 다듬어 확정하라. → 산출물 sessions/2026-05-23T17-24/writer.md
