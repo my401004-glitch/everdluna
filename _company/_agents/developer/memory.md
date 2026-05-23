@@ -165,3 +165,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-23] 레오가 요청한 콘텐츠 제작에 필요한 데이터 요구사항(data_req_01_v2.md)과 API 매핑 로직(M-DRS 기반)이 현재 시스템에서 안정적으로 연동되는지 최종 점검하고, 만약 불안정하면 즉시 수정 사항을 보고하라. → 산출물 sessions/2026-05-23T04-44/developer.md
 - [2026-05-23] DataExtractorService 및 Validation Layer에 대한 Pain $ightarrow$ Gain 프레임워크 기반의 기술적 안정성 검증 체크리스트를 최종화하고, 레오가 요청한 콘텐츠 제작에 필요한 최소 테스트 케이스(Test Case)를 정의하여 실행 계획을 수립하라. → 산출물 sessions/2026-05-23T04-59/developer.md
 - [2026-05-23] DataExtractorService 및 Validation Layer에 대한 기술적 안정성 검증 체크리스트를 바탕으로, 다음 영상 제작에 필요한 데이터 요구사항(`data_req_01_v2.md`) 연동 테스트를 최종 실행 계획으로 수립하고 진행하라. → 산출물 sessions/2026-05-23T05-59/developer.md
+- [2026-05-23] 핵심 지표(Gap Score)를 반환하는 더미(Dummy) API 엔드포인트를 즉시 구현하고, 데이터 추출 및 매핑 로직이 시스템에서 안정적으로 연동되는지 검증할 수 있는 최소 테스트 케이스(Test Case)를 정의하여 실행 계획을 수립하라. → 산출물 sessions/2026-05-23T06-29/developer.md

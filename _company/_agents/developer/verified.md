@@ -170,3 +170,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-23] ## 목표 및 배경 _(근거: CEO 지시)_
 - [2026-05-23] | **TC-004** | **RBAC Violation** | 현재 사용자 Role이 접근 권한을 가지지 못한 KPI(`Monetization`) 데이터가 요청된 경우. | Validation Layer에서 `PermissionDeniedError`를 반환하고, 해당 스코어는 0으로 처리되며 에러 로그를 남긴다. | ValidationLayer | _(근거: 코다리 검증된 지식)_
 - [2026-05-23] | **TC-005** | **KPI Out of Range** | KPI 값이 비즈니스적으로 불가능한 값(예: Growth Score가 -100%)인 경우. | Validation Layer에서 `InvalidDataRangeError`를 발생시키고, 시스템은 이전 유효 데이터로 폴백(Fallback) 처리하거나 해당 요청을 거부한다. | ValidationLayer | _(근거: 코다리 검증된 지식)_
+- [2026-05-23] CEO 지시사항을 확인했습니다. 핵심 지표(Gap Score)를 반환하는 더미 API 엔드포인트 구현과 최소 테스트 케이스 정의는 현재 저희가 가장 높은 우선순위를 두고 진행해야 할 '기술적 실존성 확보' 단계입니다. _(근거: sessions/2026-05-23T06-14)_
