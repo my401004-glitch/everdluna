@@ -122,3 +122,4 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-05-23] 코다리와 현빈이 제공한 API 응답 샘플과 디자인 가이드라인을 기반으로, 다음 영상의 'Pain $ightarrow$ Gain' 스토리보드와 제목/핵심 메시지 초안을 작성하라. → 산출물 sessions/2026-05-23T03-44/youtube.md
 - [2026-05-23] my_videos_check 및 comment_harvester 실행 결과를 즉시 수집하고, 확보된 데이터를 기반으로 'Pain $\rightarrow$ Gain' 스토리보드와 제목 구조를 재작성하여 다음 콘텐츠 기획을 위한 기초 자료를 준비하라. → 산출물 sessions/2026-05-23T03-59/youtube.md
 - [2026-05-23] 최종 QA 프로세스 결과에 따라 다음 영상 기획 시 적용할 'Pain $\rightarrow$ Gain' 기반의 제목 구조, 후크 전략 및 핵심 메시지 프레임워크를 정의하고 초안을 작성하라. → 산출물 sessions/2026-05-23T04-29/youtube.md
+- [2026-05-23] 이전 단계에서 확정된 Pain $ightarrow$ Gain 기반의 콘텐츠 블루프린트(제목, 후크 스크립트, 본론 구조)를 즉시 바탕으로 다음 영상의 최종 제목, 후크 스크립트, 그리고 본론의 상세 스토리보드 구성을 완성하여 제시하라. → 산출물 sessions/2026-05-23T04-44/youtube.md
