@@ -161,3 +161,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-22] Gap Score 기반 시뮬레이션 대시보드 위젯의 최소 기능 단위(MVP) 프로토타입 개발을 착수하고, 기술적 안정성 확보에 집중할 것. → 산출물 sessions/2026-05-22T23-42/developer.md
 - [2026-05-23] Writer가 완성한 스크립트(`final_script_content_01.md`)와 데이터 요구사항 명세서(`data_req_01_v2.md`)를 기반으로, Gap Score 시스템의 데이터 연동에 필요한 최소 3가지 유형의 시나리오 테스트 케이스(Test Case)를 구체적으로 정의하고 기술적 실행 가능성을 검증하세요. → 산출물 sessions/2026-05-23T03-29/developer.md
 - [2026-05-23] 데이터 수집 실패의 근본 원인(API 연동 또는 데이터 구조 문제)을 진단하고, 'Pain $ightarrow$ Gain' 프레임워크를 적용하기 위한 최소한의 데이터 입력 스키마 및 안정적인 데이터 추출 루프(SOP)를 즉시 수정하여 실행할 준비를 하라. → 산출물 sessions/2026-05-23T04-14/developer.md
+- [2026-05-23] DataExtractorService 및 Validation Layer에 대한 최종 테스트 케이스를 작성하고, Pain $\rightarrow$ Gain 프레임워크 기반의 기술적 안정성 검증 체크리스트를 완성하라. → 산출물 sessions/2026-05-23T04-29/developer.md
