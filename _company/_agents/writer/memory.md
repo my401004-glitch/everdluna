@@ -162,3 +162,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-24] 최근 확보한 Pain $ightarrow$ Gain 구조와 Dark Blue/Accent Yellow 비주얼 시스템을 적용하여, 가장 자극적인 유튜브 영상 주제 3가지에 대한 후킹 포인트 및 스크립트 초안을 작성하라. → 산출물 sessions/2026-05-24T00-09/writer.md
 - [2026-05-24] 이전에 확정된 Pain $ightarrow$ Gain 구조와 비주얼 시스템(Dark Blue/Accent Yellow)에 맞춰, 유튜브 영상의 핵심 후킹 포인트 3가지 및 최종 스크립트 초안을 작성하여 제공하라. → 산출물 sessions/2026-05-24T00-39/writer.md
 - [2026-05-24] 확정된 후킹 포인트를 바탕으로 Reels 및 피드 포맷별 구체적인 실행 방안(최종 게시 준비 단계)을 점검하고, 다음 콘텐츠 업로드에 필요한 모든 카피라이팅 요소를 최종 정리하라. → 산출물 sessions/2026-05-24T00-54/writer.md
+- [2026-05-24] landing_page_copybook.md에 기반하여 MVP 랜딩 페이지에 적용될 모든 마이크로카피(헤드라인, CTA)의 최종 버전을 검토하고 확정하여 Designer에게 전달할 준비를 하라. → 산출물 sessions/2026-05-24T02-24/writer.md
