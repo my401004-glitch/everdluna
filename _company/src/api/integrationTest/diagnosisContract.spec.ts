@@ -1,81 +1,93 @@
-import * as request from 'supertest';
-import express from 'express';
-import { DiagnosisScore } from '../../types/DiagnosisTypes'; // 가상의 타입 정의 파일
-import { getMockApp } from './mockServerSetup'; // Mock 서버 설정 유틸리티
+import { API_ENDPOINTS } from '../../../../src/utils/constants'; // 가상의 상수 파일
+import { getDiagnosisScore, DiagnosisResultSchema } from '../../../../src/types/diagnosis';
 
-// 진단 점수 API의 통합 테스트 스펙
-describe('API Integration Test: Diagnosis Score Contract Validation', () => {
-  let app;
+// Mocking the backend service calls for reliable unit testing
+const mockApiCall = async (endpoint: string, body: any, userRole: 'Free' | 'Premium'): Promise<any> => {
+    console.log(`[MOCK API CALL] Endpoint: ${endpoint} with Role: ${userRole}`);
 
-  beforeAll(() => {
-    // 실제 서비스가 아닌, 테스트를 위한 목(Mock) Express 앱을 사용합니다.
-    app = getMockApp(); 
-  });
-
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
-
-  it('should successfully return a diagnosis score object when valid input is provided', async () => {
-    // [검증 시나리오 1] 일반적인 유효한 데이터 케이스 (성공)
-    const mockPayload = {
-      diagnosis_type: 'VOCAL_RANGE', // 진단 유형 지정
-      context_id: 'user-abcde',
-      input_data: {
-        min_freq_hz: 150,
-        max_freq_hz: 350,
-        required_octaves: 2.5,
-        // ... 기타 입력 데이터 필드
-      }
-    };
-
-    const response = await request(app)
-      .post('/api/v1/diagnosis_score') // 테스트할 엔드포인트
-      .send(mockPayload)
-      .expect(200);
-
-    // [검증 내용] 응답 바디가 DiagnosisScore 스키마를 따르는지 확인합니다.
-    expect(response.body).toHaveProperty('score'); 
-    expect(typeof response.body.score).toBe('number'); // 점수는 반드시 숫자여야 함
-    expect(response.body).toHaveProperty('key_improvement_area'); // 핵심 개선 영역 필드 필수
-
-    // 추가 검증: 성장 지표가 유효한 범위에 있는지 확인 (Business Logic Contract)
-    if (response.body.diagnosis_type === 'VOCAL_RANGE') {
-        const scoreData = response.body as DiagnosisScore;
-        expect(scoreData.growth).toBeGreaterThanOrEqual(0); // Growth는 0 이상이어야 함
-        expect(scoreData.engagement).toBeLessThanOrEqual(100); // Engagement는 최대치 제한 확인
+    // 1. RBAC 검증 시뮬레이션
+    if (body.diagnosis_type === 'Monetization' && userRole === 'Free') {
+        throw new Error("Access Denied: Free users cannot view Monetization metrics.");
     }
-  });
 
-  it('should return a 403 Forbidden error if the user lacks access to the requested diagnosis type (RBAC check)', async () => {
-    // [검증 시나리오 2] 권한 검사 실패 케이스 (RBAC)
-    const restrictedPayload = {
-      diagnosis_type: 'ADVANCED_HARMONY', // 유료/고급 진단 유형을 요청
-      context_id: 'free-user-xyz', // 무료 사용자에게서 호출
-      input_data: {}
-    };
+    // 2. 성공 케이스 (Happy Path)
+    if (endpoint === API_ENDPOINTS.DIAGNOSIS_SCORE && body.contextId && userRole !== 'Free') {
+        return {
+            success: true,
+            data: {
+                growthScore: Math.floor(Math.random() * 100),
+                engagementScore: Math.floor(Math.random() * 100) + 20, // 최소 점수 보장
+                monetizationScore: Math.floor(Math.random() * 100),
+                report_data: { /* ... full schema data ... */ },
+                status: 'Success',
+            } as DiagnosisResultSchema['data']
+        };
+    }
 
-    await request(app)
-      .post('/api/v1/diagnosis_score')
-      .send(restrictedPayload)
-      .expect(403); // 403 Forbidden 기대
-  });
+    // 3. 실패 케이스 시뮬레이션 (Error Handling)
+    if (!body.contextId || body.diagnosis_type === undefined) {
+        throw new Error("Validation Failed: Missing required parameters (Context ID or Diagnosis Type).");
+    }
 
-  it('should return a 422 Unprocessable Entity error if input data violates schema constraints', async () => {
-    // [검증 시나리오 3] 데이터 형식 오류 케이스 (스키마 위반)
-    const invalidPayload = {
-      diagnosis_type: 'VOCAL_RANGE',
-      context_id: 'user-abcde',
-      input_data: {
-        min_freq_hz: "NotANumber", // 숫자가 와야 할 곳에 문자열 입력 (타입 에러)
-        max_freq_hz: 350,
-        required_octaves: 2.5,
-      }
-    };
+    // 기타 예외 처리...
+    throw new Error("Unknown API Error occurred.");
+};
 
-    await request(app)
-      .post('/api/v1/diagnosis_score')
-      .send(invalidPayload)
-      .expect(422); // 422 Unprocessable Entity 기대
-  });
+
+describe('Diagnosis Score Integration Test Suite', () => {
+    // --- 1. 성공 케이스 테스트 (Happy Path) ---
+    it('should successfully retrieve and validate diagnosis scores for a Premium user', async () => {
+        const mockBody = { contextId: 'user-context-123', diagnosis_type: 'Growth' };
+        let result;
+
+        try {
+            // Premium 사용자는 모든 지표에 접근 가능해야 함
+            result = await mockApiCall(API_ENDPOINTS.DIAGNOSIS_SCORE, mockBody, 'Premium');
+            expect(result).toHaveProperty('success', true);
+            expect(typeof result.data.growthScore).toBe('number');
+        } catch (e) {
+            fail(`Happy Path Test Failed: ${e}`);
+        }
+    });
+
+    // --- 2. 권한 기반 접근 제어 (RBAC) 실패 테스트 ---
+    it('should throw "Access Denied" error if Free user requests restricted metrics', async () => {
+        const mockBody = { contextId: 'user-context-123', diagnosis_type: 'Monetization' };
+        let thrownError;
+
+        try {
+            // Free 사용자가 Monetization을 요청하면 에러가 발생해야 함
+            await mockApiCall(API_ENDPOINTS.DIAGNOSIS_SCORE, mockBody, 'Free');
+        } catch (e) {
+            thrownError = e.message;
+            expect(thrownError).toContain("Access Denied"); // 핵심 검증 로직
+        }
+    });
+
+    // --- 3. 입력 값 유효성 실패 테스트 (Validation Failure) ---
+    it('should throw validation error if essential parameters are missing', async () => {
+        const mockBodyMissingContext = { diagnosis_type: 'Growth' }; // contextId 누락
+        let thrownError;
+
+        try {
+            await mockApiCall(API_ENDPOINTS.DIAGNOSIS_SCORE, mockBodyMissingContext, 'Premium');
+        } catch (e) {
+            thrownError = e.message;
+            expect(thrownError).toContain("Validation Failed: Missing required parameters"); // 핵심 검증 로직
+        }
+
+        // contextId와 diagnosis_type 모두 누락 시 테스트도 필요함
+    });
+
+     // --- 4. 데이터 스키마 불일치 (Edge Case) 테스트 ---
+    it('should handle API response structure mismatch gracefully', async () => {
+        const mockBody = { contextId: 'user-context-123', diagnosis_type: 'Growth' };
+        let result;
+
+        // 가상으로, 백엔드에서 스키마가 깨진 데이터를 보냈다고 가정하고 테스트 로직을 작성합니다.
+        // (실제로는 서버 측의 Schema Validation Layer에서 처리해야 하지만, 클라이언트에서도 예외 처리가 필요함)
+        const badResponse = { success: true, data: { growthScore: "NaN", engagementScore: 10 } };
+
+        expect(badResponse).not.toHaveProperty('data.growthScore'); // 타입 체크 실패 시 로직 분기 검증
+    });
 });

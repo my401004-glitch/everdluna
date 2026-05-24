@@ -186,3 +186,5 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-23] Designer가 제시한 아트워크 색상 코드 및 레이아웃 가이드라인이 백엔드 데이터 구조(`data_req_01_v2.md`)와 완벽히 일치하는지 최종 교차 검토하고, 이를 기반으로 API 연동 테스트 스크립트의 시각적 구현 가능성을 즉시 검증하라. → 산출물 sessions/2026-05-23T23-54/developer.md
 - [2026-05-24] Writer와 Designer가 작업하는 동안, 확정된 Pain $ightarrow$ Gain 구조 및 비주얼 시스템을 반영한 데이터 계약 검증 로직(`integration_test_api_contract.spec.ts` 등)의 구현 가능성을 재검토하고 기술적 안정성을 확보하라. → 산출물 sessions/2026-05-24T00-09/developer.md
 - [2026-05-24] Designer가 제시한 최종 아트워크 및 Figma 목업을 기반으로, 영상 제작에 필요한 사운드 디자인 및 컷 전환 우선순위표를 실제 적용하여 즉시 실행하라. → 산출물 sessions/2026-05-24T00-39/developer.md
+- [2026-05-24] Designer가 제시한 아트워크 및 Figma 목업을 기반으로, 영상 제작에 필요한 사운드 디자인 및 컷 전환 우선순위표를 실제로 적용하여 실행하도록 코다리에게 요청하고 진행 상황을 확인하라. → 산출물 sessions/2026-05-24T01-09/developer.md
+- [2026-05-24] Designer가 제시한 목업에 맞춰 실제 API 호출 성공/실패 케이스를 모두 보여주는 프론트엔드 연동 가상 스크립트(Mock API Call)의 구조를 설계하고, 기술적 안정성 확보를 위한 데이터 계약 검증 로직(`integration_test_api_contract.spec.ts` 등)에 반영할 Mock 데이터 구조를 구체화한다. → 산출물 sessions/2026-05-24T01-24/developer.md

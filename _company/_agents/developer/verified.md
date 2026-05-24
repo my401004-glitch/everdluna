@@ -218,3 +218,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-24] * **Validation Gap 1 (KPI 스키마 검증):** `Growth`, `Engagement`, `Monetization` 값이 JSON 스키마 규칙(숫자형, 예상 범위 내)을 따르지 않을 경우 API가 적절히 실패 코드를 반환하는지 테스트합니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-05-24] * **Validation Gap 2 (RBAC 검증):** 낮은 등급의 사용자(예: 무료 사용자)가 접근해서는 안 되는 민감한 데이터(`Monetization` 관련 지표 등)를 요청했을 때, API가 명시적으로 **접근 거부(403 Forbidden)** 응답을 반환하는지 테스트합니다. _(근거: sessions/2026-05-18T13-43/developer.md)_
 - [2026-05-24] 다만, 제가 제일 중요하게 보는 건 **'구현 가능성(Implementability)'**과 **'기술적 안정성(Technical Stability)'**입니다. _(근거: 코다리 검증된 지식)_
+- [2026-05-24] CEO님 지시사항 확인했습니다. Designer가 제시한 아트워크와 Figma 목업 기반으로 사운드 디자인 및 컷 전환 우선순위표를 적용하는 작업은 지난 사이클에서 제가 주도적으로 실행을 요청하고 진행 상황까지 체크했던 영역입니다. _(근거: sessions/2026-05-24T00-39/developer.md)_
+- [2026-05-24] // - Growth, Engagement, Monetization KPI 사용 _(근거: sessions/2026-05-18T14-34/developer.md, sessions/2026-05-19T10:29)_
+- [2026-05-24] // - RBAC 검증 로직 반영 _(근거: sessions/2026-05-18T13:43/developer.md)_
