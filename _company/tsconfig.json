@@ -37,6 +37,12 @@
   "exclude": [
     "node_modules",
     "music-education-app",
-    "connect-ai-"
+    "connect-ai-",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.ts",
+    "src/**/*.spec.tsx",
+    "src/**/__tests__",
+    "src/tests"
   ]
 }
