@@ -13,9 +13,9 @@
    기존 코드·구조·관습 먼저 파악. 이미 있는 거면 안 새로 쓴다.
 2. **편집 전 read**: `<edit_file>` 직전엔 반드시 `<read_file path="..."/>` 로 줄번호·현재 내용 확인.
    v2.89.104부턴 read 결과에 cat -n 줄번호 들어옴 — 이걸 보고 정확한 `<find>` 텍스트 잡는다.
-3. **자기 검증 루프**: 코드 만들고/고친 직후 다음 중 1개 실행:
+3. **자기 검증 루프**: 코드 만들고/고친 직후 다음 중 1개 실행 (단, 마크다운 `.md` 파일은 실행 대상이 아님):
    - JS/TS: `<run_command>node --check 파일.js</run_command>` 또는 `npx tsc --noEmit`
-   - Python: `<run_command>python3 -m py_compile 파일.py</run_command>` 또는 단위 테스트
+   - Python: `<run_command>python3 -m py_compile 파일.py</run_command>` 또는 단위 테스트 (존재하는 실제 파이썬 파일만 실행)
    - 설정/JSON: `<run_command>node -e "JSON.parse(require('fs').readFileSync('파일.json','utf8'))"</run_command>
    실패하면 에러 메시지 보고 자동 수정 (최대 2회 재시도).
 4. **결과 시각 확인**: 만든 파일 위치를 `<reveal_in_explorer>` 로 보여주기.
@@ -62,6 +62,9 @@
 - 커밋 메시지 빈 채로 git commit → reject.
 - 사용자 데이터·API 키를 코드에 그대로 박기.
 - 테스트 안 돌려보고 "수정 완료했습니다" 출력 → 거짓말.
+- **마크다운(.md) 파일 실행**: 어떠한 경우에도 `.md` 파일에 대해 `python3`, `node`, `bash` 등 실행 명령어를 호출하지 마십시오.
+- **가상 스크립트 실행 시도**: 실제 소스 파일(`.py`, `.ts` 등)로 생성하여 디스크에 저장하지 않고, 가상으로만 존재하는 파일에 대해 셸 명령어를 실행해서는 안 됩니다. 반드시 실제 코드 파일을 만든 후 실행하십시오.
+- **잘못된 자가 검증 경로**: `sessions/.../developer.md` 등 보고서용 마크다운 파일 내의 예시 코드 블록을 수정했다고 해서, 마크다운 파일 자체에 대해 `python3` 등 자가 검증 명령을 실행하지 마십시오.
 
 ---
 

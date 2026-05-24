@@ -1,1 +1,18 @@
-self.__BUILD_MANIFEST={polyfillFiles:["static/chunks/polyfills-42372ed130431b0a.js"],devFiles:[],ampDevFiles:[],lowPriorityFiles:[],rootMainFiles:["static/chunks/webpack-35b92941fc8726f9.js","static/chunks/fd9d1056-749e5812300142af.js","static/chunks/main-app-9167ffb4b107a8d7.js"],pages:{"/":["static/chunks/webpack-35b92941fc8726f9.js","static/chunks/framework-f0a59b5b099a4830.js","static/chunks/main-3c53703584d7aeb4.js","static/chunks/pages/index-3b75264fb19d0f17.js"],"/_app":["static/chunks/webpack-35b92941fc8726f9.js","static/chunks/framework-f0a59b5b099a4830.js","static/chunks/main-3c53703584d7aeb4.js","static/chunks/pages/_app-72b849fbd24ac258.js"],"/_error":["static/chunks/webpack-35b92941fc8726f9.js","static/chunks/framework-f0a59b5b099a4830.js","static/chunks/main-3c53703584d7aeb4.js","static/chunks/pages/_error-7ba65e1336b92748.js"],"/cafe-marketing":["static/chunks/webpack-35b92941fc8726f9.js","static/chunks/framework-f0a59b5b099a4830.js","static/chunks/main-3c53703584d7aeb4.js","static/css/608d9790918dced5.css","static/chunks/pages/cafe-marketing-5a74ce9ac09c1915.js"],"/challenge":["static/chunks/webpack-35b92941fc8726f9.js","static/chunks/framework-f0a59b5b099a4830.js","static/chunks/main-3c53703584d7aeb4.js","static/css/71872db4c74a8611.css","static/chunks/pages/challenge-a6ca9d7ba01b9ddc.js"]},ampFirstPages:[]},self.__BUILD_MANIFEST.lowPriorityFiles=["/static/"+process.env.__NEXT_BUILD_ID+"/_buildManifest.js",,"/static/"+process.env.__NEXT_BUILD_ID+"/_ssgManifest.js"];
+self.__BUILD_MANIFEST = {
+  "polyfillFiles": [
+    "static/chunks/polyfills.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/_app": []
+  },
+  "ampFirstPages": []
+};
+self.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+,"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
+
+];
