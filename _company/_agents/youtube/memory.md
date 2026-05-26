@@ -143,3 +143,4 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-05-24] 기술 검증이 완료되는 즉시, 확정된 영상 제작 블루프린트와 비주얼 가이드라인을 기반으로 실제 영상 제작팀에 최종 오퍼레이션 오더를 전달하고 촬영 및 편집을 즉시 착수하도록 지시하라. → 산출물 sessions/2026-05-24T04-21/youtube.md
 - [2026-05-24] 최종 오퍼레이션 마스터 플랜(`Final_Production_Master_Order_V1.0.md`)에 따라 영상 제작팀에 배포할 최종 스크립트 및 비주얼 가이드라인을 확정하고 실행 착수를 준비하라. → 산출물 sessions/2026-05-24T04-36/youtube.md
 - [2026-05-24] 최종 오퍼레이션 마스터 플랜 및 Designer가 확정한 비주얼 가이드라인을 기반으로, 영상 제작팀에 배포할 최종 스크립트와 시각적 실행 우선순위표를 통합하여 즉시 촬영/편집 착수를 지시할 준비를 완료하라. → 산출물 sessions/2026-05-24T04-51/youtube.md
+- [2026-05-26] 📥 새 지식 입수 — **sonicpass_seoul_arts_ad.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-26/sonicpass_seoul_arts_ad.html)

@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울예대 실용음악과 입시 화성학 — SonicPass 광고 교재</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #060E1F;
+    --navy2: #0D1B35;
+    --navy3: #122040;
+    --gold: #C9A84C;
+    --gold2: #E2C97E;
+    --gold3: #F0DFA3;
+    --silver: #B8C4D8;
+    --white: #F5F0E8;
+    --accent: #3D6EAA;
+    --accent2: #5A8DC7;
+    --red: #C0392B;
+    --page-w: 680px;
+    --page-h: 960px;
+  }
+
+  body {
+    background: #111827;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 0;
+  }
+
+  /* NAV */
+  .nav-bar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(6,14,31,0.97);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(201,168,76,0.3);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 10px 20px;
+  }
+  .nav-btn {
+    background: transparent;
+    border: 1px solid rgba(201,168,76,0.4);
+    color: var(--gold);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .nav-btn:hover, .nav-btn.active {
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .nav-logo {
+    color: var(--gold2);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-right: 16px;
+    font-family: 'Noto Serif KR', serif;
+  }
+
+  /* PAGES */
+  .pages-wrap {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .page {
+    width: var(--page-w);
+    height: var(--page-h);
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 20px 80px rgba(0,0,0,0.7);
+  }
+
+  .page-number {
+    position: absolute;
+    bottom: 24px;
+    right: 32px;
+    font-size: 11px;
+    color: rgba(201,168,76,0.5);
+    letter-spacing: 0.1em;
+    font-family: 'Noto Serif KR', serif;
+  }
+
+  /* ================================
+     PAGE 1 — COVER
+  ================================ */
+  .p1 {
+    background: var(--navy);
+  }
+  .p1-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 600px 400px at 50% 30%, rgba(61,110,170,0.18) 0%, transparent 70%),
+      radial-gradient(ellipse 400px 300px at 80% 70%, rgba(201,168,76,0.1) 0%, transparent 60%);
+  }
+  .p1-lines {
+    position: absolute; inset: 0;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 79px, rgba(201,168,76,0.06) 80px);
+  }
+  .p1-content {
+    position: relative; z-index: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 60px 64px;
+  }
+  .p1-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(201,168,76,0.12);
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 2px;
+    padding: 6px 16px;
+    width: fit-content;
+    margin-bottom: 48px;
+  }
+  .p1-badge span {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .p1-badge-dot {
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { opacity:1; } 50% { opacity:0.3; }
+  }
+  .p1-univ {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13px;
+    letter-spacing: 0.35em;
+    color: var(--silver);
+    margin-bottom: 12px;
+    font-weight: 300;
+  }
+  .p1-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+  .p1-title .gold-em {
+    color: var(--gold);
+    display: block;
+  }
+  .p1-sub {
+    font-size: 16px;
+    color: var(--silver);
+    letter-spacing: 0.08em;
+    margin-bottom: 56px;
+    font-weight: 300;
+  }
+  .p1-divider {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    margin-bottom: 40px;
+  }
+  .p1-desc {
+    font-size: 14px;
+    line-height: 2;
+    color: rgba(245,240,232,0.7);
+    max-width: 420px;
+    margin-bottom: 48px;
+  }
+  .p1-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: auto;
+  }
+  .p1-tag {
+    background: rgba(61,110,170,0.2);
+    border: 1px solid rgba(90,141,199,0.35);
+    border-radius: 2px;
+    padding: 5px 14px;
+    font-size: 11px;
+    color: var(--accent2);
+    letter-spacing: 0.1em;
+  }
+  .p1-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+    border-top: 1px solid rgba(201,168,76,0.15);
+  }
+  .p1-footer-brand {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+  }
+  .p1-footer-sub {
+    font-size: 11px;
+    color: var(--silver);
+    letter-spacing: 0.15em;
+  }
+  .p1-year {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: rgba(201,168,76,0.12);
+    letter-spacing: -0.02em;
+    position: absolute;
+    right: 40px;
+    top: 160px;
+  }
+  .p1-staff-deco {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 280px;
+    opacity: 0.06;
+  }
+
+  /* ================================
+     PAGE 2 — TABLE OF CONTENTS
+  ================================ */
+  .p2 {
+    background: var(--white);
+  }
+  .p2-header {
+    background: var(--navy);
+    padding: 40px 56px 36px;
+    position: relative;
+  }
+  .p2-header-label {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .p2-header-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--white);
+    letter-spacing: 0.02em;
+  }
+  .p2-header-deco {
+    position: absolute;
+    top: 0; right: 0;
+    width: 200px; height: 100%;
+    background: linear-gradient(135deg, transparent 60%, rgba(201,168,76,0.08));
+  }
+  .p2-body {
+    padding: 40px 56px;
+  }
+  .p2-eval-box {
+    background: #FFF9F0;
+    border-left: 4px solid var(--gold);
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    border-radius: 0 4px 4px 0;
+  }
+  .p2-eval-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .p2-eval-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .p2-eval-item {
+    background: var(--navy);
+    border-radius: 4px;
+    padding: 10px 16px;
+    flex: 1;
+    min-width: 180px;
+  }
+  .p2-eval-item-title {
+    font-size: 11px;
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 0.05em;
+  }
+  .p2-eval-item-desc {
+    font-size: 12px;
+    color: var(--silver);
+    line-height: 1.6;
+  }
+  .p2-toc-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .p2-toc-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #EEE;
+    gap: 16px;
+  }
+  .p2-toc-item:last-child { border-bottom: none; }
+  .p2-toc-num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gold);
+    min-width: 28px;
+  }
+  .p2-toc-badge {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    min-width: 44px;
+    text-align: center;
+  }
+  .badge-jazz {
+    background: #EBF5FF;
+    color: #1A6DB5;
+    border: 1px solid #B0D4F1;
+  }
+  .badge-classic {
+    background: #FFF3E0;
+    color: #B8740A;
+    border: 1px solid #F0C97A;
+  }
+  .badge-all {
+    background: #F0FBF4;
+    color: #1A7A3C;
+    border: 1px solid #8FD4A8;
+  }
+  .p2-toc-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1A1A1A;
+    flex: 1;
+  }
+  .p2-toc-sub {
+    font-size: 11px;
+    color: #888;
+    margin-top: 2px;
+  }
+  .p2-toc-page {
+    font-size: 12px;
+    color: #BBB;
+    font-family: 'Noto Serif KR', serif;
+  }
+
+  /* ================================
+     PAGE 3-9 — CONTENT PAGES
+  ================================ */
+  .content-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  /* Jazz pages: dark navy */
+  .theme-jazz {
+    background: var(--navy2);
+    color: var(--white);
+  }
+  /* Classic pages: warm cream */
+  .theme-classic {
+    background: #1A0F05;
+    color: var(--white);
+  }
+  /* Strategy page: deep teal */
+  .theme-strategy {
+    background: #0A1F1A;
+    color: var(--white);
+  }
+
+  .cp-header {
+    padding: 40px 56px 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .cp-chapter-badge {
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .cp-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+  .cp-title-en {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.4);
+    margin-top: 4px;
+    font-weight: 300;
+  }
+  .cp-badge {
+    font-size: 11px;
+    padding: 5px 14px;
+    border-radius: 2px;
+    font-weight: 700;
+    margin-top: 4px;
+    letter-spacing: 0.05em;
+    align-self: flex-start;
+  }
+  .cp-body {
+    flex: 1;
+    padding: 32px 56px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cp-footer {
+    padding: 16px 56px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cp-footer-brand {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gold);
+  }
+  .cp-footer-num {
+    font-size: 11px;
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 0.1em;
+  }
+
+  /* Content components */
+  .section-label {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .box-card {
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 4px;
+    padding: 16px 20px;
+    background: rgba(255,255,255,0.04);
+  }
+  .box-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gold2);
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+  }
+  .text-row {
+    font-size: 12px;
+    line-height: 2;
+    color: rgba(245,240,232,0.75);
+  }
+  .highlight-text {
+    color: var(--gold);
+    font-weight: 700;
+  }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+  }
+
+  /* Chord table */
+  .chord-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  .chord-table th {
+    background: rgba(201,168,76,0.15);
+    color: var(--gold);
+    padding: 8px 10px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border: 1px solid rgba(201,168,76,0.15);
+  }
+  .chord-table td {
+    padding: 8px 10px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.06);
+    color: rgba(245,240,232,0.8);
+    line-height: 1.5;
+  }
+  .chord-table tr:nth-child(even) td {
+    background: rgba(255,255,255,0.02);
+  }
+  .chord-symbol {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 700;
+    color: var(--gold2);
+    font-size: 13px;
+  }
+
+  /* Mode table */
+  .mode-row {
+    display: flex;
+    align-items: center;
+    padding: 9px 14px;
+    border-radius: 3px;
+    gap: 12px;
+    border-left: 3px solid transparent;
+    background: rgba(255,255,255,0.03);
+    margin-bottom: 6px;
+  }
+  .mode-name {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 90px;
+    color: var(--white);
+  }
+  .mode-degree {
+    font-size: 11px;
+    color: var(--gold);
+    min-width: 30px;
+    font-weight: 700;
+  }
+  .mode-type {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    min-width: 60px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .type-major { background: rgba(90,141,199,0.2); color: #7AABDF; border: 1px solid rgba(90,141,199,0.3); }
+  .type-minor { background: rgba(192,57,43,0.2); color: #E87B6E; border: 1px solid rgba(192,57,43,0.3); }
+  .type-dim { background: rgba(120,80,160,0.2); color: #B89ACF; border: 1px solid rgba(120,80,160,0.3); }
+  .mode-structure {
+    font-size: 11px;
+    color: rgba(245,240,232,0.6);
+    flex: 1;
+    font-family: 'Noto Serif KR', serif;
+  }
+  .mode-char {
+    font-size: 11px;
+    color: var(--gold2);
+    text-align: right;
+    min-width: 100px;
+  }
+
+  /* Tip box */
+  .tip-box {
+    background: rgba(201,168,76,0.08);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 4px;
+    padding: 14px 18px;
+  }
+  .tip-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .tip-text {
+    font-size: 12px;
+    line-height: 1.8;
+    color: rgba(245,240,232,0.7);
+  }
+
+  /* Alert box */
+  .alert-box {
+    background: rgba(192,57,43,0.1);
+    border: 1px solid rgba(192,57,43,0.3);
+    border-radius: 4px;
+    padding: 14px 18px;
+  }
+  .alert-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #E87B6E;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .alert-text {
+    font-size: 12px;
+    line-height: 1.8;
+    color: rgba(245,240,232,0.7);
+  }
+
+  /* Big stat */
+  .stat-row {
+    display: flex;
+    gap: 16px;
+  }
+  .stat-box {
+    flex: 1;
+    background: rgba(201,168,76,0.06);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 4px;
+    padding: 16px;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: rgba(245,240,232,0.5);
+    letter-spacing: 0.05em;
+  }
+
+  /* Progress indicator */
+  .progress-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .progress-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gold);
+    min-width: 20px;
+  }
+  .progress-text {
+    font-size: 12px;
+    color: rgba(245,240,232,0.75);
+    flex: 1;
+    line-height: 1.5;
+  }
+  .progress-bar {
+    height: 3px;
+    background: rgba(201,168,76,0.15);
+    border-radius: 2px;
+    margin-top: 4px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 2px;
+  }
+
+  /* Staff deco SVG lines */
+  .staff-lines {
+    position: absolute;
+    opacity: 0.04;
+    pointer-events: none;
+  }
+
+  /* ================================
+     PAGE 10 — STRATEGY
+  ================================ */
+  .strategy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .strategy-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 4px;
+    padding: 16px 18px;
+  }
+  .strategy-card-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .strategy-icon {
+    width: 32px; height: 32px;
+    border-radius: 3px;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  .strategy-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gold2);
+  }
+  .strategy-card-body {
+    font-size: 11px;
+    line-height: 1.9;
+    color: rgba(245,240,232,0.65);
+  }
+  .qna-item {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .qna-q {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--gold2);
+    margin-bottom: 4px;
+  }
+  .qna-q::before { content: "Q. "; color: var(--gold); }
+  .qna-a {
+    font-size: 11px;
+    color: rgba(245,240,232,0.6);
+    line-height: 1.7;
+    padding-left: 18px;
+  }
+
+  /* Augmented 6th table */
+  .aug6-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  .aug6-table th {
+    background: rgba(180,100,30,0.25);
+    color: #E2A96E;
+    padding: 8px 10px;
+    text-align: center;
+    font-weight: 700;
+    border: 1px solid rgba(180,100,30,0.2);
+    letter-spacing: 0.05em;
+  }
+  .aug6-table td {
+    padding: 8px 10px;
+    border: 1px solid rgba(255,255,255,0.06);
+    color: rgba(245,240,232,0.75);
+    text-align: center;
+    line-height: 1.6;
+  }
+  .aug6-name {
+    font-weight: 700;
+    color: #E2A96E;
+    font-size: 13px;
+  }
+
+  /* Voice leading grid */
+  .vl-rule {
+    background: rgba(255,255,255,0.03);
+    border-radius: 4px;
+    padding: 14px 16px;
+    border-left: 3px solid var(--gold);
+    margin-bottom: 10px;
+  }
+  .vl-rule-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--gold2);
+    margin-bottom: 6px;
+  }
+  .vl-rule-text {
+    font-size: 11px;
+    line-height: 1.8;
+    color: rgba(245,240,232,0.65);
+  }
+  .vl-forbidden {
+    border-left-color: #E87B6E;
+  }
+  .vl-forbidden .vl-rule-title { color: #E87B6E; }
+
+  @media print {
+    body { background: white; }
+    .nav-bar { display: none; }
+    .pages-wrap { margin-top: 0; }
+    .page { page-break-after: always; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav-bar">
+  <span class="nav-logo">SonicPass</span>
+  <button class="nav-btn active" onclick="scrollTo(0)">표지</button>
+  <button class="nav-btn" onclick="scrollToPage(1)">목차</button>
+  <button class="nav-btn" onclick="scrollToPage(2)">음정·음계</button>
+  <button class="nav-btn" onclick="scrollToPage(3)">다이아토닉</button>
+  <button class="nav-btn" onclick="scrollToPage(4)">II-V-I</button>
+  <button class="nav-btn" onclick="scrollToPage(5)">교회선법</button>
+  <button class="nav-btn" onclick="scrollToPage(6)">4성부</button>
+  <button class="nav-btn" onclick="scrollToPage(7)">전조</button>
+  <button class="nav-btn" onclick="scrollToPage(8)">고급화음</button>
+  <button class="nav-btn" onclick="scrollToPage(9)">실전전략</button>
+</nav>
+
+<div class="pages-wrap" id="pages">
+
+<!-- ============================
+     PAGE 1 — COVER
+============================ -->
+<div class="page p1" id="page-0">
+  <div class="p1-bg"></div>
+  <div class="p1-lines"></div>
+
+  <!-- Staff decoration SVG -->
+  <svg class="staff-lines" width="280" height="200" style="bottom:80px;right:0;" viewBox="0 0 280 200">
+    <line x1="0" y1="30" x2="280" y2="30" stroke="white" stroke-width="1.5"/>
+    <line x1="0" y1="50" x2="280" y2="50" stroke="white" stroke-width="1.5"/>
+    <line x1="0" y1="70" x2="280" y2="70" stroke="white" stroke-width="1.5"/>
+    <line x1="0" y1="90" x2="280" y2="90" stroke="white" stroke-width="1.5"/>
+    <line x1="0" y1="110" x2="280" y2="110" stroke="white" stroke-width="1.5"/>
+    <circle cx="40" cy="50" r="7" fill="white"/>
+    <circle cx="80" cy="70" r="7" fill="white"/>
+    <circle cx="120" cy="30" r="7" fill="white"/>
+    <circle cx="160" cy="90" r="7" fill="white"/>
+    <circle cx="200" cy="50" r="7" fill="white"/>
+    <circle cx="240" cy="70" r="7" fill="white"/>
+    <line x1="0" y1="150" x2="280" y2="150" stroke="white" stroke-width="1.5"/>
+    <line x1="0" y1="170" x2="280" y2="170" stroke="white" stroke-width="1.5"/>
+  </svg>
+
+  <div class="p1-year">2026</div>
+
+  <div class="p1-content">
+    <div class="p1-badge">
+      <div class="p1-badge-dot"></div>
+      <span>서울예술대학교 실용음악과 입시 대비</span>
+    </div>
+
+    <p class="p1-univ">SEOUL INSTITUTE OF THE ARTS · 실용음악과</p>
+    <h1 class="p1-title">
+      화성학
+      <span class="gold-em">표준지침서</span>
+    </h1>
+    <p class="p1-sub">실용음악통론 + 전통화성학 핵심 압축 가이드</p>
+
+    <div class="p1-divider"></div>
+
+    <p class="p1-desc">
+      서울예대 실용음악과 1차 합격자가 반드시 통과해야 하는<br>
+      2차 필답시험을 위한 완전 분석 학습 교재입니다.<br>
+      재즈 화성학부터 전통화성학까지, 출제 유형 중심으로<br>
+      핵심 개념을 집약했습니다.
+    </p>
+
+    <div class="p1-tags">
+      <span class="p1-tag">음정 · 음계</span>
+      <span class="p1-tag">다이아토닉 코드</span>
+      <span class="p1-tag">텐션 이론</span>
+      <span class="p1-tag">II-V-I 진행</span>
+      <span class="p1-tag">교회 선법</span>
+      <span class="p1-tag">4성부 배치</span>
+      <span class="p1-tag">전조 분석</span>
+      <span class="p1-tag">증6화음</span>
+      <span class="p1-tag">면접 대비</span>
+    </div>
+
+    <div class="p1-footer">
+      <div>
+        <div class="p1-footer-brand">SonicPass</div>
+        <div class="p1-footer-sub">입시전략연구소 · 2026</div>
+      </div>
+      <div style="text-align:right;">
+        <div style="font-size:11px;color:var(--gold);letter-spacing:0.1em;">PREP GUIDE</div>
+        <div style="font-size:11px;color:rgba(245,240,232,0.4);margin-top:2px;">10 Pages · Full Coverage</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-number">1 / 10</div>
+</div>
+
+
+<!-- ============================
+     PAGE 2 — TABLE OF CONTENTS
+============================ -->
+<div class="page p2" id="page-1">
+  <div class="p2-header">
+    <div class="p2-header-deco"></div>
+    <div class="p2-header-label">Contents &amp; Exam Overview</div>
+    <div class="p2-header-title">목차 및 평가 개요</div>
+  </div>
+  <div class="p2-body">
+    <div class="p2-eval-box">
+      <div class="p2-eval-title">📋 서울예대 2차 시험 평가 구조</div>
+      <div class="p2-eval-row">
+        <div class="p2-eval-item">
+          <div class="p2-eval-item-title">⏱ 공통 — 실용음악통론</div>
+          <div class="p2-eval-item-desc">1차 합격자 전원 응시<br>제한시간 <strong style="color:var(--gold)">40분</strong> · 20~30문항<br>재즈화성학 기초 + 음악 통론</div>
+        </div>
+        <div class="p2-eval-item">
+          <div class="p2-eval-item-title">🎼 작곡 전공 — 전통화성학</div>
+          <div class="p2-eval-item-desc">작곡 전공 지원자 추가 응시<br>제한시간 <strong style="color:var(--gold)">50~60분</strong> · 풀이형<br>백병동 저서 범위 클래식 화성학</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p2-toc-title">CURRICULUM</div>
+
+    <div class="p2-toc-item">
+      <span class="p2-toc-num">03</span>
+      <span class="p2-toc-badge badge-jazz">실용</span>
+      <div><div class="p2-toc-name">음정 및 음계</div><div class="p2-toc-sub">Interval · Major / Minor / Harmonic / Melodic Scale</div></div>
+      <span class="p2-toc-page">P.3</span>
+    </div>
+    <div class="p2-toc-item">
+      <span class="p2-toc-num">04</span>
+      <span class="p2-toc-badge badge-jazz">실용</span>
+      <div><div class="p2-toc-name">다이아토닉 및 텐션 코드</div><div class="p2-toc-sub">7가지 4화음 성질 · Available Tension 규칙</div></div>
+      <span class="p2-toc-page">P.4</span>
+    </div>
+    <div class="p2-toc-item">
+      <span class="p2-toc-num">05</span>
+      <span class="p2-toc-badge badge-jazz">실용</span>
+      <div><div class="p2-toc-name">도미넌트 모션 및 II-V-I</div><div class="p2-toc-sub">Secondary Dominant · SubV7 · 12키 보이싱</div></div>
+      <span class="p2-toc-page">P.5</span>
+    </div>
+    <div class="p2-toc-item">
+      <span class="p2-toc-num">06</span>
+      <span class="p2-toc-badge badge-jazz">실용</span>
+      <div><div class="p2-toc-name">교회 선법 (Church Mode)</div><div class="p2-toc-sub">7가지 모드 구조 · 특징음 (Characteristic Note)</div></div>
+      <span class="p2-toc-page">P.6</span>
+    </div>
+    <div class="p2-toc-item">
+      <span class="p2-toc-num">07</span>
+      <span class="p2-toc-badge badge-classic">전통</span>
+      <div><div class="p2-toc-name">4성부 배치 및 금지 진행</div><div class="p2-toc-sub">성부 배치 원칙 · 병진행 / 은복진행 금지</div></div>
+      <span class="p2-toc-page">P.7</span>
+    </div>
+    <div class="p2-toc-item">
+      <span class="p2-toc-num">08</span>
+      <span class="p2-toc-badge badge-classic">전통</span>
+      <div><div class="p2-toc-name">화음 진행 및 전조</div><div class="p2-toc-sub">화성 기능 흐름 · 공통화음/반음계적 전조</div></div>
+      <span class="p2-toc-page">P.8</span>
+    </div>
+    <div class="p2-toc-item">
+      <span class="p2-toc-num">09</span>
+      <span class="p2-toc-badge badge-classic">전통</span>
+      <div><div class="p2-toc-name">고급 화음법</div><div class="p2-toc-sub">변성화음 · 네아폴리탄 6화음 · 3대 증6화음</div></div>
+      <span class="p2-toc-page">P.9</span>
+    </div>
+    <div class="p2-toc-item">
+      <span class="p2-toc-num">10</span>
+      <span class="p2-toc-badge badge-all">공통</span>
+      <div><div class="p2-toc-name">입시 실전 전략 및 면접 가이드</div><div class="p2-toc-sub">시간 안배 매뉴얼 · 구두 문답 빈출 질문 대비</div></div>
+      <span class="p2-toc-page">P.10</span>
+    </div>
+  </div>
+  <div class="page-number" style="color:#999;">2 / 10</div>
+</div>
+
+
+<!-- ============================
+     PAGE 3 — 음정 & 음계
+============================ -->
+<div class="page theme-jazz" id="page-2">
+  <div class="content-page">
+    <div class="cp-header">
+      <div>
+        <div class="cp-chapter-badge">Chapter 01 · Interval &amp; Scale</div>
+        <div class="cp-title">음정 및 음계</div>
+        <div class="cp-title-en">Interval · Major / Minor Scale Systems</div>
+      </div>
+      <div class="cp-badge" style="background:rgba(90,141,199,0.2);color:#7AABDF;border:1px solid rgba(90,141,199,0.3);">실용음악통론</div>
+    </div>
+
+    <div class="cp-body">
+      <div class="two-col">
+        <div class="box-card">
+          <div class="box-card-title">▸ 음정 계산의 핵심 원칙</div>
+          <div class="text-row">
+            <span class="highlight-text">1·4·5·8도</span> → 완전(Perfect) 계열<br>
+            <span class="highlight-text">2·3·6·7도</span> → 장·단(Major/Minor) 계열<br>
+            완전음정에서 반음 ↑ = 증(Aug)<br>
+            완전음정에서 반음 ↓ = 감(Dim)<br>
+            장음정에서 반음 ↓ = 단(Min)<br>
+            단음정에서 반음 ↓ = 감(Dim)
+          </div>
+        </div>
+        <div class="box-card">
+          <div class="box-card-title">▸ 임시표 처리 순서</div>
+          <div class="text-row">
+            ① 조표(Key Signature) 먼저 확인<br>
+            ② 반음 개수로 기본 음정 산출<br>
+            ③ 임시표(♯/♭) 효과 가감산 적용<br>
+            ④ 오차율 0% 달성 목표<br><br>
+            <span class="highlight-text">계산 목표: 1초 이내 즉각 산출</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-label">Scale 구조 비교표</div>
+      <table class="chord-table">
+        <thead>
+          <tr>
+            <th>음계 종류</th>
+            <th>반음 위치</th>
+            <th>특이사항</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="chord-symbol">Major Scale</span></td>
+            <td>3-4음 / 7-8음</td>
+            <td>모든 조성의 기준</td>
+          </tr>
+          <tr>
+            <td><span class="chord-symbol">Natural Minor</span></td>
+            <td>2-3음 / 5-6음</td>
+            <td>자연단음계 · Aeolian 모드와 동일</td>
+          </tr>
+          <tr>
+            <td><span class="chord-symbol">Harmonic Minor</span></td>
+            <td>2-3 / 5-6 + ♯7</td>
+            <td>6-7음 사이 <span style="color:var(--gold)">증2도</span> 발생</td>
+          </tr>
+          <tr>
+            <td><span class="chord-symbol">Melodic Minor</span></td>
+            <td>2-3음 / 5-6음 (하행)</td>
+            <td>상행: ♯6 ♯7 / 하행: 자연단음계 복귀</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="tip-box">
+        <div class="tip-label">🎯 출제 유형 예시</div>
+        <div class="tip-text">
+          <strong style="color:var(--gold2)">Q. A♭ 음으로부터 위로 '증4도'인 음과 아래로 '단3도'인 음을 구하시오.</strong><br>
+          정답: 위로 증4도 = <span class="highlight-text">D</span> &nbsp;|&nbsp; 아래로 단3도 = <span class="highlight-text">F</span><br>
+          풀이: A♭에서 4도 위 = D♭(완전4도), 반음 ↑ = D(증4도) / A♭에서 3도 아래 = F♯(장3도), 반음 ↑ = F(단3도 해당 → F)
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-box">
+          <div class="stat-num">12</div>
+          <div class="stat-label">전 조성 조표 암기</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">4</div>
+          <div class="stat-label">음계 종류 완전 숙달</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">1초</div>
+          <div class="stat-label">음정 계산 목표 속도</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cp-footer">
+      <div class="cp-footer-brand">SonicPass</div>
+      <div class="cp-footer-num">3 / 10</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================
+     PAGE 4 — 다이아토닉 & 텐션
+============================ -->
+<div class="page theme-jazz" id="page-3">
+  <div class="content-page">
+    <div class="cp-header">
+      <div>
+        <div class="cp-chapter-badge">Chapter 02 · Diatonic &amp; Tension</div>
+        <div class="cp-title">다이아토닉 및 텐션 코드</div>
+        <div class="cp-title-en">7 Diatonic 7th Chords · Available Tension Rules</div>
+      </div>
+      <div class="cp-badge" style="background:rgba(90,141,199,0.2);color:#7AABDF;border:1px solid rgba(90,141,199,0.3);">실용음악통론</div>
+    </div>
+
+    <div class="cp-body">
+      <div class="section-label">Major Scale 다이아토닉 7화음 완전 암기표</div>
+      <table class="chord-table">
+        <thead>
+          <tr>
+            <th>도수</th><th>코드명</th><th>성질</th><th>기능</th><th>가용 텐션</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color:var(--gold)">I</td>
+            <td><span class="chord-symbol">IΔ7</span></td>
+            <td>Major 7th</td>
+            <td style="color:#7AABDF">Tonic</td>
+            <td>9, ♯11, 13 <span style="color:rgba(255,255,255,0.4)">(11 ✗)</span></td>
+          </tr>
+          <tr>
+            <td>II</td>
+            <td><span class="chord-symbol">IIm7</span></td>
+            <td>Minor 7th</td>
+            <td style="color:#A8D8A8">Sub-Dom</td>
+            <td>9, 11</td>
+          </tr>
+          <tr>
+            <td>III</td>
+            <td><span class="chord-symbol">IIIm7</span></td>
+            <td>Minor 7th</td>
+            <td style="color:#7AABDF">Tonic 대리</td>
+            <td>11 <span style="color:rgba(255,255,255,0.4)">(9 주의)</span></td>
+          </tr>
+          <tr>
+            <td>IV</td>
+            <td><span class="chord-symbol">IVΔ7</span></td>
+            <td>Major 7th</td>
+            <td style="color:#A8D8A8">Sub-Dom</td>
+            <td>9, <span style="color:var(--gold)">♯11</span>, 13</td>
+          </tr>
+          <tr>
+            <td style="color:var(--gold)">V</td>
+            <td><span class="chord-symbol">V7</span></td>
+            <td>Dominant 7th</td>
+            <td style="color:#E8A87B">Dominant</td>
+            <td style="color:var(--gold2)">9, ♭9, ♯9, ♯11, ♭13, 13 全수용</td>
+          </tr>
+          <tr>
+            <td>VI</td>
+            <td><span class="chord-symbol">VIm7</span></td>
+            <td>Minor 7th</td>
+            <td style="color:#7AABDF">Tonic 대리</td>
+            <td>9, 11</td>
+          </tr>
+          <tr>
+            <td>VII</td>
+            <td><span class="chord-symbol">VIIm7(♭5)</span></td>
+            <td>Half-Diminished</td>
+            <td style="color:#E8A87B">Dom 대리</td>
+            <td>11, ♭13</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="two-col">
+        <div class="tip-box">
+          <div class="tip-label">📌 텐션 가용 기본 규칙</div>
+          <div class="tip-text">
+            코드톤보다 <span class="highlight-text">온음(장2도) 위</span>의 음을 기본 가용 텐션으로 처리.<br>
+            단, 코드 성질에 따라 예외 규칙이 적용됨.<br><br>
+            • <strong style="color:var(--gold2)">IΔ7의 11</strong>: 코드톤 3도와 단2도 충돌 → 사용 불가<br>
+            • <strong style="color:var(--gold2)">V7</strong>: 가장 자유로운 코드, 반음계적 텐션 전수용
+          </div>
+        </div>
+        <div class="box-card">
+          <div class="box-card-title">▸ 기능(Function) 3분류</div>
+          <div class="text-row">
+            <span class="highlight-text" style="color:#7AABDF">Tonic (T)</span><br>
+            I, III(대리), VI(대리) — 안정감<br><br>
+            <span class="highlight-text" style="color:#A8D8A8">Sub-Dominant (SD)</span><br>
+            II, IV — 이동 준비<br><br>
+            <span class="highlight-text" style="color:#E8A87B">Dominant (D)</span><br>
+            V, VII(대리) — 긴장과 해결
+          </div>
+        </div>
+      </div>
+
+      <div class="alert-box">
+        <div class="alert-label">⚠ 시험 주의사항</div>
+        <div class="alert-text">
+          IΔ7과 IVΔ7 모두 Major 7th 성질이지만 <strong style="color:#E87B6E">가용 텐션이 다릅니다</strong>.<br>
+          IΔ7 = ♯11 (11 사용 불가) / IVΔ7 = ♯11 (자연스럽게 사용). 혼동하지 마세요!
+        </div>
+      </div>
+    </div>
+
+    <div class="cp-footer">
+      <div class="cp-footer-brand">SonicPass</div>
+      <div class="cp-footer-num">4 / 10</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================
+     PAGE 5 — 도미넌트 모션 & II-V-I
+============================ -->
+<div class="page theme-jazz" id="page-4">
+  <div class="content-page">
+    <div class="cp-header">
+      <div>
+        <div class="cp-chapter-badge">Chapter 03 · Dominant Motion</div>
+        <div class="cp-title">도미넌트 모션 및 II-V-I</div>
+        <div class="cp-title-en">Secondary Dominant · SubV7 · II-V-I in 12 Keys</div>
+      </div>
+      <div class="cp-badge" style="background:rgba(90,141,199,0.2);color:#7AABDF;border:1px solid rgba(90,141,199,0.3);">실용음악통론</div>
+    </div>
+
+    <div class="cp-body">
+      <div class="two-col">
+        <div>
+          <div class="section-label">세컨더리 도미넌트 (Secondary Dominant)</div>
+          <div class="box-card" style="margin-bottom:12px;">
+            <div class="box-card-title">▸ 원리</div>
+            <div class="text-row">
+              I도 제외한 다이아토닉 코드를 <span class="highlight-text">임시 토닉</span>으로 설정,<br>
+              그 앞 완전5도 위의 <span class="highlight-text">Dominant 7th 배치</span><br><br>
+              조건: 해결(Resolution)이 <strong style="color:var(--gold)">반드시</strong> 다이아토닉 코드로 이루어져야 인정
+            </div>
+          </div>
+          <div class="box-card">
+            <div class="box-card-title">▸ 5가지 종류</div>
+            <table style="width:100%;font-size:11px;border-collapse:collapse;">
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:5px 0;color:var(--gold2);font-weight:700;">I7</td>
+                <td style="padding:5px;color:rgba(245,240,232,0.6);">→ IV로 해결</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:5px 0;color:var(--gold2);font-weight:700;">II7</td>
+                <td style="padding:5px;color:rgba(245,240,232,0.6);">→ V로 해결</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:5px 0;color:var(--gold2);font-weight:700;">III7</td>
+                <td style="padding:5px;color:rgba(245,240,232,0.6);">→ VI로 해결</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.06);">
+                <td style="padding:5px 0;color:var(--gold2);font-weight:700;">VI7</td>
+                <td style="padding:5px;color:rgba(245,240,232,0.6);">→ II로 해결</td>
+              </tr>
+              <tr>
+                <td style="padding:5px 0;color:var(--gold2);font-weight:700;">VII7</td>
+                <td style="padding:5px;color:rgba(245,240,232,0.6);">→ III로 해결</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div>
+          <div class="section-label">증4도 대리 도미넌트 (SubV7)</div>
+          <div class="box-card" style="margin-bottom:12px;">
+            <div class="box-card-title">▸ 트리톤(Tritone) 치환 원리</div>
+            <div class="text-row">
+              도미넌트의 핵심 <span class="highlight-text">가이드톤(3도·7도) = 증4도 관계</span><br><br>
+              G7의 가이드톤: <strong style="color:var(--gold2)">B, F</strong><br>
+              D♭7의 가이드톤: <strong style="color:var(--gold2)">F, C♭(=B)</strong><br><br>
+              ∴ G7 대신 <span class="highlight-text">D♭7</span>으로 CΔ7에 반음 하행 해결 가능
+            </div>
+          </div>
+          <div class="box-card">
+            <div class="box-card-title">▸ II-V-I 분할 원리</div>
+            <div class="text-row">
+              모든 도미넌트 앞에<br>완전5도 위의 Minor 7th 배치<br><br>
+              <span style="font-size:16px;color:var(--gold);font-family:'Noto Serif KR',serif;font-weight:700;">IIm7 — V7 — IΔ7</span><br><br>
+              12개 전 Key에서 <span class="highlight-text">A Form / B Form</span><br>가이드톤 보이싱 즉각 연주
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-label">🎯 실전 훈련 과제</div>
+        <div class="tip-text">
+          <strong style="color:var(--gold2)">서울예대 2차 시험 + 구두 면접</strong>에서 즉각 반응이 요구됩니다.<br>
+          12개 Key 전체의 II-V-I 가이드톤 보이싱을 <span class="highlight-text">오선지 기보 + 건반 연주</span>를 동시에 오차 없이 수행할 수 있어야 합격권 진입!
+        </div>
+      </div>
+    </div>
+
+    <div class="cp-footer">
+      <div class="cp-footer-brand">SonicPass</div>
+      <div class="cp-footer-num">5 / 10</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================
+     PAGE 6 — 교회 선법
+============================ -->
+<div class="page theme-jazz" id="page-5">
+  <div class="content-page">
+    <div class="cp-header">
+      <div>
+        <div class="cp-chapter-badge">Chapter 04 · Church Mode</div>
+        <div class="cp-title">교회 선법 (Church Mode)</div>
+        <div class="cp-title-en">7 Modes · Characteristic Notes · Modal Color</div>
+      </div>
+      <div class="cp-badge" style="background:rgba(90,141,199,0.2);color:#7AABDF;border:1px solid rgba(90,141,199,0.3);">실용음악통론</div>
+    </div>
+
+    <div class="cp-body">
+      <div class="section-label">7가지 교회 선법 완전 분석표</div>
+
+      <div class="mode-row" style="border-left-color:#7AABDF;">
+        <span class="mode-name">Ionian</span>
+        <span class="mode-degree">I</span>
+        <span class="mode-type type-major">Major</span>
+        <span class="mode-structure">1 - 2 - 3 - 4 - 5 - 6 - 7</span>
+        <span class="mode-char">Major Scale과 동일</span>
+      </div>
+      <div class="mode-row" style="border-left-color:#E87B6E;">
+        <span class="mode-name">Dorian</span>
+        <span class="mode-degree">II</span>
+        <span class="mode-type type-minor">Minor</span>
+        <span class="mode-structure">1 - 2 - ♭3 - 4 - 5 - <strong style="color:var(--gold)">6</strong> - ♭7</span>
+        <span class="mode-char" style="color:var(--gold)">특징음: ♮6 (내추럴6)</span>
+      </div>
+      <div class="mode-row" style="border-left-color:#E87B6E;">
+        <span class="mode-name">Phrygian</span>
+        <span class="mode-degree">III</span>
+        <span class="mode-type type-minor">Minor</span>
+        <span class="mode-structure">1 - <strong style="color:var(--gold)">♭2</strong> - ♭3 - 4 - 5 - ♭6 - ♭7</span>
+        <span class="mode-char" style="color:var(--gold)">특징음: ♭2 (스페인풍)</span>
+      </div>
+      <div class="mode-row" style="border-left-color:#7AABDF;">
+        <span class="mode-name">Lydian</span>
+        <span class="mode-degree">IV</span>
+        <span class="mode-type type-major">Major</span>
+        <span class="mode-structure">1 - 2 - 3 - <strong style="color:var(--gold)">♯4</strong> - 5 - 6 - 7</span>
+        <span class="mode-char" style="color:var(--gold)">특징음: ♯4 (몽환적)</span>
+      </div>
+      <div class="mode-row" style="border-left-color:#7AABDF;">
+        <span class="mode-name">Mixolydian</span>
+        <span class="mode-degree">V</span>
+        <span class="mode-type type-major">Major</span>
+        <span class="mode-structure">1 - 2 - 3 - 4 - 5 - 6 - <strong style="color:var(--gold)">♭7</strong></span>
+        <span class="mode-char" style="color:var(--gold)">특징음: ♭7 (블루지)</span>
+      </div>
+      <div class="mode-row" style="border-left-color:#E87B6E;">
+        <span class="mode-name">Aeolian</span>
+        <span class="mode-degree">VI</span>
+        <span class="mode-type type-minor">Minor</span>
+        <span class="mode-structure">1 - 2 - ♭3 - 4 - 5 - ♭6 - ♭7</span>
+        <span class="mode-char">Natural Minor와 동일</span>
+      </div>
+      <div class="mode-row" style="border-left-color:#B89ACF;">
+        <span class="mode-name">Locrian</span>
+        <span class="mode-degree">VII</span>
+        <span class="mode-type type-dim">Dim</span>
+        <span class="mode-structure">1 - ♭2 - ♭3 - 4 - ♭5 - ♭6 - ♭7</span>
+        <span class="mode-char">VIIm7(♭5)에 대응</span>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-label">🔑 핵심 변별 포인트</div>
+        <div class="tip-text">
+          Dorian의 <span class="highlight-text">♮6</span> vs Aeolian의 <span class="highlight-text">♭6</span> — 이 차이가 시험 당락을 가릅니다!<br>
+          같은 마이너 계열이지만 6도 음이 다릅니다. Dorian의 내추럴6은 재즈·소울·펑크의 핵심 색채입니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="cp-footer">
+      <div class="cp-footer-brand">SonicPass</div>
+      <div class="cp-footer-num">6 / 10</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================
+     PAGE 7 — 4성부 배치
+============================ -->
+<div class="page theme-classic" id="page-6">
+  <div class="content-page">
+    <div class="cp-header">
+      <div>
+        <div class="cp-chapter-badge">Chapter 05 · Four-Part Voice Leading</div>
+        <div class="cp-title">4성부 배치 및 금지 진행</div>
+        <div class="cp-title-en">Soprano · Alto · Tenor · Bass Arrangement</div>
+      </div>
+      <div class="cp-badge" style="background:rgba(201,168,76,0.15);color:var(--gold2);border:1px solid rgba(201,168,76,0.3);">전통화성학</div>
+    </div>
+
+    <div class="cp-body">
+      <div class="section-label">성부 배치 기본 원칙</div>
+
+      <div class="two-col">
+        <div class="box-card">
+          <div class="box-card-title">▸ 성부 간격 제한</div>
+          <div class="text-row">
+            <span class="highlight-text">소프라노-알토</span>: 8도(옥타브) 이내<br>
+            <span class="highlight-text">알토-테너</span>: 8도(옥타브) 이내<br>
+            <span class="highlight-text">테너-베이스</span>: 12도 내외 허용<br><br>
+            각 성부의 고유 음역대를 반드시 준수하고 성부 간 간격 균형을 유지
+          </div>
+        </div>
+        <div class="box-card">
+          <div class="box-card-title">▸ 성부 교차 절대 금지</div>
+          <div class="text-row">
+            상성부의 음 <span class="highlight-text">↓</span> 하성부 음보다 낮아지는 것<br>
+            하성부의 음 <span class="highlight-text">↑</span> 상성부 음보다 높아지는 것<br><br>
+            성부 독립성이 완전히 무너지므로 어떤 경우에도 허용되지 않음
+          </div>
+        </div>
+      </div>
+
+      <div class="section-label">절대 금지 진행 (치명적 감점 요인)</div>
+
+      <div class="vl-rule vl-forbidden">
+        <div class="vl-rule-title">① 병진행 (Parallel Motion) 금지</div>
+        <div class="vl-rule-text">
+          두 성부가 <strong>완전5도</strong> 또는 <strong>완전8도</strong> 간격을 유지하며 <strong>같은 방향</strong>으로 진행하는 것.<br>
+          → 성부의 독립성을 완전히 파괴. 단 1회만 발견되어도 치명적 감점.
+        </div>
+      </div>
+
+      <div class="vl-rule vl-forbidden">
+        <div class="vl-rule-title">② 은복진행 (Hidden Motion) 금지</div>
+        <div class="vl-rule-text">
+          두 성부(특히 <strong>소프라노-베이스 외성</strong>)가 같은 방향으로 진행하여 완전5도나 완전8도에 도달하는 경우.<br>
+          → <strong style="color:#A8D8A8">예외 허용</strong>: 소프라노가 반음계가 아닌 <strong>순차 진행(2도 이동)</strong>으로 도달할 때는 허용.
+        </div>
+      </div>
+
+      <div class="alert-box">
+        <div class="alert-label">⚠ 작곡 전공 핵심 체크리스트</div>
+        <div class="alert-text">
+          풀이 완성 후 반드시 <strong style="color:#E87B6E">병5도 · 병8도 · 은복진행 · 성부교차</strong> 4가지를 순서대로 전부 검산하세요.<br>
+          전통화성학 50~60분 시험에서 <strong>최종 10분을 검산에 배정</strong>하는 것이 합격의 핵심입니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="cp-footer">
+      <div class="cp-footer-brand">SonicPass</div>
+      <div class="cp-footer-num">7 / 10</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================
+     PAGE 8 — 화음 진행 & 전조
+============================ -->
+<div class="page theme-classic" id="page-7">
+  <div class="content-page">
+    <div class="cp-header">
+      <div>
+        <div class="cp-chapter-badge">Chapter 06 · Modulation</div>
+        <div class="cp-title">화음 진행 및 전조</div>
+        <div class="cp-title-en">Harmonic Function Flow · Pivot Chord · Chromatic Modulation</div>
+      </div>
+      <div class="cp-badge" style="background:rgba(201,168,76,0.15);color:var(--gold2);border:1px solid rgba(201,168,76,0.3);">전통화성학</div>
+    </div>
+
+    <div class="cp-body">
+      <div class="section-label">화성 기능 진행 원칙</div>
+
+      <div class="box-card" style="margin-bottom:16px;">
+        <div class="box-card-title">▸ 정격 진행 흐름 (Authentic Cadence Flow)</div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:0;padding:12px 0;flex-wrap:wrap;">
+          <div style="text-align:center;padding:10px 16px;background:rgba(90,141,199,0.15);border:1px solid rgba(90,141,199,0.3);border-radius:4px;">
+            <div style="font-size:11px;color:#7AABDF;margin-bottom:4px;">Tonic</div>
+            <div style="font-family:'Noto Serif KR',serif;font-weight:700;color:var(--white);font-size:14px;">I · VI</div>
+          </div>
+          <div style="padding:0 10px;color:var(--gold);font-size:20px;">→</div>
+          <div style="text-align:center;padding:10px 16px;background:rgba(168,216,168,0.1);border:1px solid rgba(168,216,168,0.25);border-radius:4px;">
+            <div style="font-size:11px;color:#A8D8A8;margin-bottom:4px;">Sub-Dom</div>
+            <div style="font-family:'Noto Serif KR',serif;font-weight:700;color:var(--white);font-size:14px;">IV · II</div>
+          </div>
+          <div style="padding:0 10px;color:var(--gold);font-size:20px;">→</div>
+          <div style="text-align:center;padding:10px 16px;background:rgba(232,168,123,0.12);border:1px solid rgba(232,168,123,0.25);border-radius:4px;">
+            <div style="font-size:11px;color:#E8A87B;margin-bottom:4px;">Dominant</div>
+            <div style="font-family:'Noto Serif KR',serif;font-weight:700;color:var(--white);font-size:14px;">V · VII</div>
+          </div>
+          <div style="padding:0 10px;color:var(--gold);font-size:20px;">→</div>
+          <div style="text-align:center;padding:10px 16px;background:rgba(90,141,199,0.15);border:1px solid rgba(90,141,199,0.3);border-radius:4px;">
+            <div style="font-size:11px;color:#7AABDF;margin-bottom:4px;">Tonic</div>
+            <div style="font-family:'Noto Serif KR',serif;font-weight:700;color:var(--white);font-size:14px;">I</div>
+          </div>
+        </div>
+        <div class="text-row" style="margin-top:8px;">
+          <span class="highlight-text">금지 대역진행</span>: V → IV, V → II 역행 금지 (단, V → IV6 제한적 허용)
+        </div>
+      </div>
+
+      <div class="section-label">4종 종지법 (Cadence)</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;">
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:3px;padding:12px 14px;">
+          <div style="font-size:12px;font-weight:700;color:var(--gold2);margin-bottom:4px;">정격종지 (Authentic)</div>
+          <div style="font-size:12px;color:rgba(245,240,232,0.6);">V → I · 가장 강력한 완결감</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:3px;padding:12px 14px;">
+          <div style="font-size:12px;font-weight:700;color:var(--gold2);margin-bottom:4px;">위종지 (Deceptive)</div>
+          <div style="font-size:12px;color:rgba(245,240,232,0.6);">V → VI · 기대를 빗나간 해결</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:3px;padding:12px 14px;">
+          <div style="font-size:12px;font-weight:700;color:var(--gold2);margin-bottom:4px;">변격종지 (Plagal)</div>
+          <div style="font-size:12px;color:rgba(245,240,232,0.6);">IV → I · 아멘 종지, 부드러운 마무리</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:3px;padding:12px 14px;">
+          <div style="font-size:12px;font-weight:700;color:var(--gold2);margin-bottom:4px;">반종지 (Half)</div>
+          <div style="font-size:12px;color:rgba(245,240,232,0.6);">Any → V · 미완성의 긴장감 유지</div>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="box-card">
+          <div class="box-card-title">▸ 공통화음 전조 (Pivot)</div>
+          <div class="text-row">
+            원조와 이조(移調)가 <span class="highlight-text">공통으로 보유한 다이아토닉 코드</span>를 징검다리로 활용.<br>
+            근친조 전조에 주로 사용.<br>
+            정확한 피봇(Pivot) 기호 표기 필수.
+          </div>
+        </div>
+        <div class="box-card">
+          <div class="box-card-title">▸ 반음계적 전조 (Chromatic)</div>
+          <div class="text-row">
+            공통 화음 없이 성부의 음이 <span class="highlight-text">반음계적으로 변화</span>(C→C♯ 등)하며 새로운 조의 화음으로 직접 진입.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cp-footer">
+      <div class="cp-footer-brand">SonicPass</div>
+      <div class="cp-footer-num">8 / 10</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================
+     PAGE 9 — 고급 화음법
+============================ -->
+<div class="page theme-classic" id="page-8">
+  <div class="content-page">
+    <div class="cp-header">
+      <div>
+        <div class="cp-chapter-badge">Chapter 07 · Advanced Harmony</div>
+        <div class="cp-title">고급 화음법</div>
+        <div class="cp-title-en">Borrowed Chords · Neapolitan 6th · Augmented 6th Chords</div>
+      </div>
+      <div class="cp-badge" style="background:rgba(201,168,76,0.15);color:var(--gold2);border:1px solid rgba(201,168,76,0.3);">전통화성학 고난도</div>
+    </div>
+
+    <div class="cp-body">
+      <div class="two-col">
+        <div>
+          <div class="section-label">변성화음 (Borrowed Chords)</div>
+          <div class="box-card">
+            <div class="box-card-title">▸ 동주음조에서 빌려온 화음</div>
+            <div class="text-row">
+              C Major 키에서 C Minor 조의 화음 임시 차용<br><br>
+              <span class="highlight-text">대표 화음:</span> IVm, IVm6, IIm7(♭5), ♭VI, ♭VII<br><br>
+              단조 특유의 <span class="highlight-text">애절하고 깊은 색채</span>를 장조 곡에 주입.<br>
+              ♭6음의 하행 해결 성향을 적극 반영해야 함.
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section-label">네아폴리탄 6화음 (Neapolitan 6th)</div>
+          <div class="box-card">
+            <div class="box-card-title">▸ N6 구조와 진행</div>
+            <div class="text-row">
+              2도 음을 반음 ↓ 내린 단3화음의 <span class="highlight-text">1전위 형태</span><br><br>
+              C Key 기준: D♭ Major 화음(D♭-F-A♭)의<br>
+              1전위 → <strong style="color:var(--gold2)">베이스 F 배치</strong><br><br>
+              기능: Sub-Dominant 기능 수행<br>
+              해결: V 또는 I6/4로 강력하게 진행
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-label">3대 증6화음 (Augmented 6th Chords) — C Key 기준</div>
+      <table class="aug6-table">
+        <thead>
+          <tr>
+            <th>명칭</th><th>구성음 (C Key)</th><th>특징 및 해결 규칙</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="aug6-name">It+6<br><span style="font-size:10px;font-weight:400;">(이탈리아)</span></span></td>
+            <td style="color:var(--gold2);">A♭ - C - F♯<br><span style="font-size:10px;color:rgba(245,240,232,0.5);">3음 구성</span></td>
+            <td>가장 단순한 형태. 4성부 배치 시 3음(C)을 중복함.</td>
+          </tr>
+          <tr>
+            <td><span class="aug6-name">Fr+6<br><span style="font-size:10px;font-weight:400;">(프랑스)</span></span></td>
+            <td style="color:var(--gold2);">A♭ - C - D - F♯<br><span style="font-size:10px;color:rgba(245,240,232,0.5);">4음 구성</span></td>
+            <td>화음 내부 2도(D) 포함 → 이국적이고 날카로운 울림.</td>
+          </tr>
+          <tr>
+            <td><span class="aug6-name">Ger+6<br><span style="font-size:10px;font-weight:400;">(독일)</span></span></td>
+            <td style="color:var(--gold2);">A♭ - C - E♭ - F♯<br><span style="font-size:10px;color:rgba(245,240,232,0.5);">4음 구성</span></td>
+            <td>V 직접 해결 시 <span style="color:#E87B6E">병5도 발생!</span> 반드시 <strong>I6/4를 거쳐 해결</strong>하는 규칙 엄수.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="tip-box">
+        <div class="tip-label">💡 공통 원리</div>
+        <div class="tip-text">
+          3대 증6화음 모두: 베이스 <span class="highlight-text">♭6음</span>과 상성부 <span class="highlight-text">♯4음</span> 사이 '증6도' 형성 → 도미넌트(V) 근음(5도)으로 외성이 강력하게 수렴!
+        </div>
+      </div>
+    </div>
+
+    <div class="cp-footer">
+      <div class="cp-footer-brand">SonicPass</div>
+      <div class="cp-footer-num">9 / 10</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================
+     PAGE 10 — 입시 실전 전략
+============================ -->
+<div class="page theme-strategy" id="page-9">
+  <div class="content-page">
+    <div class="cp-header">
+      <div>
+        <div class="cp-chapter-badge">Chapter 08 · Exam Strategy</div>
+        <div class="cp-title">입시 실전 전략</div>
+        <div class="cp-title-en">Time Management · Oral Interview Q&amp;A Prep</div>
+      </div>
+      <div class="cp-badge" style="background:rgba(30,180,130,0.15);color:#5BCBA8;border:1px solid rgba(30,180,130,0.3);">공통 · 최종 마무리</div>
+    </div>
+
+    <div class="cp-body">
+      <div class="section-label">초단위 시간 안배 매뉴얼</div>
+      <div class="two-col" style="margin-bottom:16px;">
+        <div class="box-card">
+          <div class="box-card-title" style="color:#5BCBA8;">▸ 실용음악통론 (40분)</div>
+          <div class="text-row">
+            20~30문항 출제<br>
+            <span class="highlight-text">문항당 1분 10초 이내</span> 처리 필수<br><br>
+            스케일·조표 문제 = <strong style="color:var(--gold2)">손이 먼저 움직이는 수준</strong>의 기계적 반복 숙달<br>
+            → 생각 없이 즉각 기보가 가능해야 합격권
+          </div>
+        </div>
+        <div class="box-card">
+          <div class="box-card-title" style="color:#5BCBA8;">▸ 전통화성학 (50~60분)</div>
+          <div class="text-row">
+            <span class="highlight-text">초안 작성 10분</span>: 로마자 화성 기호<br>
+            <span class="highlight-text">성부 배치 30분</span>: 금지 진행 체크<br>
+            <span class="highlight-text">최종 검산 10분</span>: 병진행 전수 확인<br><br>
+            시간 배분 엄수가 만점의 핵심
+          </div>
+        </div>
+      </div>
+
+      <div class="section-label">구두 면접 — 실제 빈출 기습 질문 대비</div>
+      <div class="qna-item">
+        <div class="qna-q">연주한 곡 브릿지 코드 진행의 기능(Function)을 말해보세요.</div>
+        <div class="qna-a">T(토닉) → SD(서브도미넌트) → D(도미넌트) → T 흐름으로 즉각 분석 · 구술 훈련 필수</div>
+      </div>
+      <div class="qna-item">
+        <div class="qna-q">E Major Key의 가락단음계 상행 구성음을 건반으로 치면서 말하세요.</div>
+        <div class="qna-a">E - F♯ - G♯ - A - B - C♯ - D♯ - E / 건반 연주와 구술 동시 수행 능력 요구</div>
+      </div>
+      <div class="qna-item">
+        <div class="qna-q">G7 코드의 얼터드 텐션(Altered Tension) 종류와 구성음을 대답하세요.</div>
+        <div class="qna-a">♭9(A♭), ♯9(A♯), ♯11(C♯), ♭13(E♭) — V7의 모든 반음계적 텐션 즉각 열거</div>
+      </div>
+      <div class="qna-item" style="border-bottom:none;">
+        <div class="qna-q">프랑스 증6화음과 도미넌트 7th 텐션 코드의 구조적 차이점은?</div>
+        <div class="qna-a">Fr+6 = A♭-C-D-F♯ (증6도 외성) vs V7 = 근음 기반 단7화음 — 기원과 해결 방식의 차이</div>
+      </div>
+
+      <div class="tip-box" style="background:rgba(30,180,130,0.08);border-color:rgba(30,180,130,0.3);">
+        <div class="tip-label" style="color:#5BCBA8;">🏆 최종 합격 지침 — 4중 매칭 훈련</div>
+        <div class="tip-text">
+          화성학은 종이 위의 수학이 아닙니다. 공부하는 모든 코드와 진행을<br>
+          <strong style="color:#5BCBA8">👁 눈으로 보고</strong> &nbsp;|&nbsp; <strong style="color:#5BCBA8">✏️ 손으로 그리고</strong> &nbsp;|&nbsp; <strong style="color:#5BCBA8">👂 귀로 듣고</strong> &nbsp;|&nbsp; <strong style="color:#5BCBA8">🎹 건반으로 즉각 연주</strong><br>
+          이 4중 매칭 훈련을 매일 반복하는 것이 서울예대가 요구하는 실전형 음악 인재의 기준입니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="cp-footer">
+      <div class="cp-footer-brand">SonicPass &nbsp;|&nbsp; 입시전략연구소 2026</div>
+      <div class="cp-footer-num">10 / 10</div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end pages-wrap -->
+
+<script>
+  const pages = document.querySelectorAll('.page');
+  const btns = document.querySelectorAll('.nav-btn');
+
+  function scrollToPage(idx) {
+    pages[idx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    btns.forEach(b => b.classList.remove('active'));
+    btns[idx].classList.add('active');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting && e.intersectionRatio > 0.4) {
+        const idx = Array.from(pages).indexOf(e.target);
+        btns.forEach(b => b.classList.remove('active'));
+        if (btns[idx]) btns[idx].classList.add('active');
+      }
+    });
+  }, { threshold: 0.4 });
+
+  pages.forEach(p => observer.observe(p));
+</script>
+</body>
+</html>
