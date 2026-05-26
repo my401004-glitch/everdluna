@@ -1,0 +1,9 @@
+# Dependencies
+/node_modules
+/venv
+*.log
+
+# Secrets (환경변수는 여기에 명시하지 않습니다!)
+.env
+
+# 백엔드 (FastAPI)

@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: vocal_ai_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: vocaldb
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+
+  backend:
+    build: . # 프로젝트 루트의 backend 디렉토리 빌드 지시
+    container_name: vocal_ai_backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    volumes:
+      - ./backend:/app/backend # 코드 변경사항 반영을 위해 볼륨 마운트
+
+  frontend:
+    build: . # 프로젝트 루트의 frontend 디렉토리 빌드 지시
+    container_name: vocal_ai_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
