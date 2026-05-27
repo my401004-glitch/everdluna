@@ -1,12 +1,12 @@
 {
   "ceo": "google/gemma-4-e2b",
-  "youtube": "google/gemma-4-e4b",
-  "instagram": "google/gemma-4-e4b",
-  "designer": "google/gemma-4-e2b",
-  "developer": "google/gemma-4-e4b",
-  "business": "google/gemma-4-e4b",
+  "youtube": "qwen3.5-9b-deepseek-v4-flash",
+  "instagram": "qwen3.5-9b-deepseek-v4-flash",
+  "designer": "google/gemma-4-e4b",
+  "developer": "qwen3.5-9b-deepseek-v4-flash",
+  "business": "qwen3.5-9b-deepseek-v4-flash",
   "secretary": "google/gemma-4-e4b",
-  "editor": "google/gemma-4-e4b",
-  "writer": "google/gemma-4-e4b",
-  "researcher": "google/gemma-4-e4b"
+  "editor": "qwen3.5-9b-deepseek-v4-flash",
+  "writer": "qwen3.5-9b-deepseek-v4-flash",
+  "researcher": "qwen3.5-9b-deepseek-v4-flash"
 }
