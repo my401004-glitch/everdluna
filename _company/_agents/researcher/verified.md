@@ -310,3 +310,11 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-05-30] > – Music education industry data patterns from previous research. _(근거: sessions/2026-05-18T13-43/researcher.md)_
 - [2026-05-30] > – Music education industry data patterns from previous research. _(근거: sessions/2026-05-18T13-43/researcher.md)_
 - [2026-05-30] > – Music education industry data patterns from previous research. _(근거: sessions/2026-05-18T13-43/researcher.md)_
+- [2026-05-31] **** _(근거: MrBeast 유튜브 전략 분석 (00_Raw/2026-05-19/MrBeast_유튜브_전략.md))_
+- [2026-05-31] **** _(근거: sessions/2026-05-31T09-19/business.md)_
+- [2026-05-31] **** _(근거: sessions/2026-05-31T09-04/business.md)_
+- [2026-05-31] **** _(근거: Researcher 검증된 지식)_
+- [2026-05-31] **** _(근거: sessions/2026-05-18T13-01/researcher.md)_
+- [2026-05-31] **** _(근거: sessions/2026-05-18T13-43/researcher.md)_
+- [2026-05-31] **** _(근거: sessions/2026-05-18T13-34/researcher.md)_
+- [2026-05-31] **** _(근거: sessions/2026-05-18T13-43/researcher.md)_
