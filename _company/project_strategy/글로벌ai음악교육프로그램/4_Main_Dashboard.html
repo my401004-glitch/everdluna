@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600;700&amp;family=Playfair+Display&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=anton:wght@100..900&amp;family=inter:wght@100..900&amp;family=playfairDisplay:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #000000;
+            color: #e3e2e6;
+            font-family: 'Inter', sans-serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Custom animation for the progress bar pulse */
+        @keyframes pulse-raspberry {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .animate-pulse-raspberry {
+            animation: pulse-raspberry 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                "surface-container-high": "#292a2d",
+                "surface-container": "#1e2022",
+                "deep-slate": "#272c33",
+                "on-tertiary": "#3c2f00",
+                "on-secondary-container": "#5c6b00",
+                "on-primary-fixed": "#40000f",
+                "inverse-primary": "#be003d",
+                "error-container": "#93000a",
+                "on-secondary-fixed-variant": "#404c00",
+                "surface-bright": "#38393c",
+                "subtle-ash": "#191c21",
+                "on-primary-container": "#ffffff",
+                "graphite-base": "#0d0d0e",
+                "secondary-fixed-dim": "#b6d300",
+                "primary-container": "#e32652",
+                "on-tertiary-container": "#4e3e00",
+                "tertiary-fixed-dim": "#dfc572",
+                "surface-dim": "#121316",
+                "on-tertiary-fixed": "#231b00",
+                "surface-container-low": "#1a1b1e",
+                "on-primary-fixed-variant": "#91002c",
+                "surface-tint": "#ffb2b8",
+                "surface": "#121316",
+                "secondary-fixed": "#d0f100",
+                "secondary-container": "#d0f100",
+                "outline-variant": "#5b3f41",
+                "background": "#121316",
+                "primary": "#ffb2b8",
+                "pure-white": "#ffffff",
+                "primary-fixed-dim": "#ffb2b8",
+                "light-steel": "#d4d5d9",
+                "primary-fixed": "#ffdadb",
+                "pitch-black": "#000000",
+                "on-secondary": "#2c3400",
+                "tertiary-fixed": "#fce18b",
+                "tertiary": "#dfc573",
+                "on-tertiary-fixed-variant": "#564500",
+                "tertiary-container": "#c3aa5a",
+                "error": "#ffb4ab",
+                "silver-mist": "#9ea0a9",
+                "on-error": "#690005",
+                "surface-variant": "#343538",
+                "on-primary": "#67001d",
+                "on-surface": "#e3e2e6",
+                "on-surface-variant": "#e4bdbf",
+                "inverse-surface": "#e3e2e6",
+                "outline": "#ab888a",
+                "inverse-on-surface": "#2f3033",
+                "on-secondary-fixed": "#181e00",
+                "surface-container-lowest": "#0d0e11",
+                "secondary": "#ffffff",
+                "on-error-container": "#ffdad6",
+                "on-background": "#e3e2e6",
+                "surface-container-highest": "#343538"
+              },
+              "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+              },
+              "spacing": {
+                "xl": "64px",
+                "grid-margin": "24px",
+                "grid-gutter": "16px",
+                "sm": "16px",
+                "section-gap": "64px",
+                "unit": "4px",
+                "xs": "8px",
+                "md": "24px",
+                "lg": "48px"
+              },
+              "fontFamily": {
+                "display-lg": ["anton"],
+                "display-xl": ["anton"],
+                "display-serif": ["playfairDisplay"],
+                "headline-lg": ["inter"],
+                "headline-md": ["inter"],
+                "headline-sm": ["inter"],
+                "body-lg": ["inter"],
+                "body-md": ["inter"],
+                "body-sm": ["inter"],
+                "label-caps": ["inter"]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-pitch-black selection:bg-primary-container selection:text-white">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background/90 dark:bg-background/90 backdrop-blur-xl border-b border-deep-slate flex justify-between items-center px-grid-margin py-sm">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 active:scale-95 transition-all">menu</span>
+<h1 class="font-display-lg text-headline-sm tracking-tighter text-pure-white dark:text-pure-white uppercase">ALLEGRO</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-primary font-label-caps text-label-caps uppercase hover:opacity-80 transition-opacity">Join</button>
+<div class="w-8 h-8 rounded-full bg-deep-slate border border-silver-mist flex items-center justify-center cursor-pointer overflow-hidden active:scale-95 transition-transform">
+<img alt="User Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI2qpeBDXRnyDj75-D-bhLZcEMGapzSaPNC3ZfcKaAmIfpXIjCgVz2_kR2w779L17mcpdXkOwaPCdSY8zbTm6kkwdK5Z9NHVmemzjj9bp4Yw908RTe9JG2GK6bbKYV-ITm_IdxqbkpR4h6vvnPhsmM7-l6-Ua3qk-YDf-R72uQa1Po-A38FmXYL3ZK-mj5f0BjPUd0bUcf7lDDvvF0AhW43p64rt_2ys40OFVrH8A2Ink4iT_U-nxv6Ylky1nroxK3-nbQZG5Mdcpz"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 max-w-7xl mx-auto px-grid-margin space-y-xl">
+<!-- Continue Learning Section (Hero) -->
+<section>
+<h2 class="font-headline-sm text-headline-sm mb-6 text-silver-mist uppercase tracking-widest">Continue Learning</h2>
+<div class="relative group overflow-hidden rounded-lg bg-charcoal-canvas border border-deep-slate">
+<div class="aspect-[21/9] relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic wide shot of a futuristic music studio filled with glowing synthesizers and holographic displays. The lighting is dominated by deep blacks and dramatic shadows, with sharp highlights of Interactive Lime and Action Raspberry. In the center, a professional female conductor with elegant features orchestrates a complex visual representation of sound frequencies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeNbUpxPlsN2vXvBKkOddLJiedOeBbVdYjo-udhLSWuOeYUSu9SN9AaneymDosptyf7KzXfbrZOg4-uvjZU7AJmfF3E_lf8RZe1TJ-VB2klcMDetrkgmlp6HlXgUeHD8L7wgW-T3eZnUb0_SR98H80oh4SP0IebhRM2QaXMdlgFz6JZn2swV4dfPUJicMLSSkp05GajxdxfWK04NxifwPGf2EHxFGY47vw7hmKTyAfn7hZW4maHeUe8-ltHACX-MBFPuBxtQPIduU4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-pitch-black via-pitch-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+<div class="max-w-2xl">
+<span class="inline-block bg-primary-container text-pure-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4">Current Module</span>
+<h3 class="font-display-lg text-4xl md:text-6xl text-pure-white mb-2 uppercase">Mastering AI Orchestration</h3>
+<p class="font-body-md text-silver-mist">With Aria Maestro • 12 mins remaining</p>
+<div class="mt-6 w-full max-w-md h-1 bg-deep-slate rounded-full overflow-hidden">
+<div class="h-full bg-primary-container animate-pulse-raspberry" style="width: 65%;"></div>
+</div>
+</div>
+<button class="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 flex items-center justify-center bg-primary-container text-pure-white rounded-full hover:scale-110 active:scale-95 transition-all shadow-xl shadow-primary-container/20">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- AI Studio Quick Access -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-grid-gutter">
+<div class="md:col-span-2 relative group overflow-hidden bg-gradient-to-br from-deep-slate to-pitch-black p-lg border border-secondary-fixed/30 rounded-none cursor-pointer">
+<div class="relative z-10">
+<span class="text-secondary-fixed font-label-caps text-label-caps uppercase tracking-widest flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+                        AI Studio Laboratory
+                    </span>
+<h3 class="font-display-lg text-4xl text-pure-white mb-4 uppercase">Generate Next Movement</h3>
+<p class="font-body-md text-silver-mist max-w-md mb-8">Access our custom LLM trained on 400 years of classical and cinematic scores to augment your creative process.</p>
+<button class="bg-secondary-fixed text-pitch-black font-bold px-8 py-3 flex items-center gap-3 hover:gap-5 transition-all active:scale-95">
+                        Open Workspace
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Subtle Shader Background Placeholder -->
+
+</div>
+<div class="flex flex-col justify-between bg-subtle-ash p-lg border border-deep-slate group cursor-pointer hover:bg-deep-slate transition-colors">
+<div>
+<h4 class="font-headline-sm text-pure-white mb-2 uppercase">Neural Harmony Check</h4>
+<p class="font-body-sm text-silver-mist">Upload your MIDI or audio for a real-time AI theoretical analysis.</p>
+</div>
+<div class="mt-8 flex justify-end">
+<span class="material-symbols-outlined text-secondary-fixed group-hover:translate-x-2 transition-transform">analytics</span>
+</div>
+</div>
+</section>
+<!-- Recommended for You (Horizontal Slider) -->
+<section>
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-headline-sm text-headline-sm text-silver-mist uppercase tracking-widest">Recommended for You</h2>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full border border-deep-slate flex items-center justify-center text-pure-white hover:bg-deep-slate transition-colors"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="w-10 h-10 rounded-full border border-deep-slate flex items-center justify-center text-pure-white hover:bg-deep-slate transition-colors"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="flex gap-grid-gutter overflow-x-auto pb-4 hide-scrollbar">
+<!-- Course Card 1 -->
+<div class="min-w-[280px] md:min-w-[340px] flex-shrink-0 group">
+<div class="aspect-[4/5] bg-charcoal-canvas rounded-lg overflow-hidden relative border border-deep-slate mb-4">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="A portrait of a male musician with intense focus, wearing modern dark clothing, sitting at a glossy black grand piano in a dimly lit studio. The atmosphere is cinematic with soft smoke effects and a sharp rim light highlighting his silhouette in Interactive Lime tones. The overall aesthetic is high-end, professional, and mysterious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmREF5-lnJreH_slRKnxxjrcVEO9rEnKwcTxN3rlDw10OsPSUV77DccCe8Zkatij9CH2CNI-OecdCk0ljThS3va0nXRlNmzKXVv_vOpw87762ZVez9-215q1Qr5-8HrJBdDw_9hWqMCHyehf3ds66064FqQp-un9gz_uJ0dU4CEKHWzkHZru-bpjW4PvstgE0f92zgSV4010E_FRE719n8wdd7YLNTdwfyd6-kWe6K-3Ajj0lOp0lCd5Al7_ftN324zaTIEaatnyuh"/>
+<div class="absolute inset-0 bg-gradient-to-t from-pitch-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<div>
+<span class="bg-pure-white text-pitch-black px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-tighter">New Masterclass</span>
+<h4 class="font-headline-sm text-pure-white mt-1 uppercase text-lg">Piano Synthesis</h4>
+</div>
+<span class="text-primary-container material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+</div>
+</div>
+<p class="font-label-caps text-silver-mist uppercase tracking-widest text-[11px]">8 Chapters • Hans Thorne</p>
+</div>
+<!-- Course Card 2 -->
+<div class="min-w-[280px] md:min-w-[340px] flex-shrink-0 group">
+<div class="aspect-[4/5] bg-charcoal-canvas rounded-lg overflow-hidden relative border border-deep-slate mb-4">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="A close-up shot of a high-tech modular synthesizer with thousands of patch cables in a dark room. Glowing LED indicators in Action Raspberry and Interactive Lime create a vibrant, tech-sophisticated display. The shallow depth of field focuses on a single hand adjusting a metallic knob, evoking a sense of precise craftsmanship and futuristic musical experimentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOCumQ_xH4mI2-34MsGTrIB6JtuQQSOwLUD8uE38bKUBgZeXFgveGR0SIwHXA9KdL78ipdqQAnpGv9YQYFICNO5Q2z_mY_37WA3Fnwwd7TZTFjcw5NoTk8oS04kCCCUDUp_Xk358BFwJHadgO-sZzD25PZhBrUr1ESWDpO4m0v1GPFeseCMvQqzgTzMfFEvUMtxVq1mFmqji9GCdGc3Dntq-ulTFOgzWhmov_qM0j2RN1nA-l_vLm15uOXdfPWQeSI2Fu--BFaeXTg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-pitch-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<div>
+<span class="bg-pure-white text-pitch-black px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-tighter">Popular</span>
+<h4 class="font-headline-sm text-pure-white mt-1 uppercase text-lg">Electronic Roots</h4>
+</div>
+<span class="text-primary-container material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+</div>
+</div>
+<p class="font-label-caps text-silver-mist uppercase tracking-widest text-[11px]">15 Chapters • Dr. Synth</p>
+</div>
+<!-- Course Card 3 -->
+<div class="min-w-[280px] md:min-w-[340px] flex-shrink-0 group">
+<div class="aspect-[4/5] bg-charcoal-canvas rounded-lg overflow-hidden relative border border-deep-slate mb-4">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="A professional recording studio at night, featuring a massive mixing console reflecting soft magenta and cyan lights. The background is pitch black with subtle glimmers of silver from metallic studio equipment. The setting feels intimate, high-end, and deeply immersive, perfect for a professional masterclass environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyZ8WKsiaip-cE_FOY3nzL_zDhlqQm05_M6i-GfaXTXdMLqddKR5A7J0fp8AtKVaCTMVD_ta3R6weUGALlK_bNfgNMjXgScd1qVZawg0SQqNB4JN98EPT206C7ya6WXCk4a43Om63I7wHPFiq0gutVL2bCKOcdus9Ua-zryj1FnPZS9z4pzKWk2Dyo_AGuRIxTUq0jNQpAE19sLSWjwYJbXn03qcPVWSHF6KH5ebZAxXDeaWZskE3BFHyRmsZ-impTdBy7J358vsE8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-pitch-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<div>
+<span class="bg-pure-white text-pitch-black px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-tighter">Advanced</span>
+<h4 class="font-headline-sm text-pure-white mt-1 uppercase text-lg">Final Mixdown</h4>
+</div>
+<span class="text-primary-container material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+</div>
+</div>
+<p class="font-label-caps text-silver-mist uppercase tracking-widest text-[11px]">5 Chapters • Sarah Wave</p>
+</div>
+</div>
+</section>
+<!-- Community Trends -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-lg">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-silver-mist uppercase tracking-widest mb-6">Community Trends</h2>
+<div class="space-y-unit divide-y divide-deep-slate border-y border-deep-slate">
+<!-- Track 1 -->
+<div class="flex items-center gap-4 py-md group cursor-pointer hover:bg-subtle-ash px-2 transition-colors">
+<div class="w-12 h-12 bg-deep-slate flex-shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Abstract colorful music waveform representation in bright Interactive Lime and deep blues against a pitch-black background, symbolizing high-energy AI music generation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyQ4j6qSQ5EQjC6pq7CG0nNr0DvtRpKrzai5eogZubpzukm6DPL0ksnPtDk-DEzyzmUbYXn3dbpPs0I5mX4v0ltFA_C4lWKNtjbCv-f93dx-HoYsmzsecgidjY_7r7cmHcNpg4-sarru_pl0xxGRyR0hmiz_tLqSkWd-sJA0UzIZjPPu8WtVxKxard9qexO0pB1OsVVK3qj_L4yKkTYqI-hAoVULBfLQRZVQhR5UgmY6RVMjuzarGYE8OBVIoQPCFvo14tVKQrJLYg"/>
+</div>
+<div class="flex-grow">
+<h5 class="font-body-md font-bold text-pure-white">Cybernetic Symphony #4</h5>
+<p class="font-body-sm text-silver-mist">by User_9281 • Cinematic AI</p>
+</div>
+<div class="flex items-center gap-4 text-silver-mist">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">favorite</span><span class="text-xs">2.4k</span></div>
+<span class="material-symbols-outlined group-hover:text-primary-container transition-colors">play_arrow</span>
+</div>
+</div>
+<!-- Track 2 -->
+<div class="flex items-center gap-4 py-md group cursor-pointer hover:bg-subtle-ash px-2 transition-colors">
+<div class="w-12 h-12 bg-deep-slate flex-shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up of a classic vinyl record spinning under a laser needle, with sparks of Interactive Lime light dancing off the grooves. The mood is a fusion of vintage analog and futuristic technology." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiymJOA7_MakdJoHZNl9fAPVup9SHWYbk9ixaWuAfP9QQQN3jhNWovTl0nD50Wd6nbLJI__Jgr42GldNmkEhrH5Cj9Xw76KaKArJ1e3Yf1AqVWg4x53kc2szsPRPmusPXuXkrxEPAUy_bLY60_CIVUeV8s3phFOt5r_gj4HjEFVDYu5VxdkBRId4eb3HwpaoNmX8h0WkxC3zG2E5wgkRkBWwlMq8k3e6TXpq0ALls7TjWYAyryYOV9E-hA77QY9mibVknjSn2HsfZ2"/>
+</div>
+<div class="flex-grow">
+<h5 class="font-body-md font-bold text-pure-white">Vaporwave Glitch 01</h5>
+<p class="font-body-sm text-silver-mist">by Aria_Studio • Lo-Fi AI</p>
+</div>
+<div class="flex items-center gap-4 text-silver-mist">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">favorite</span><span class="text-xs">1.8k</span></div>
+<span class="material-symbols-outlined group-hover:text-primary-container transition-colors">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Promotional / Stats Sidebar -->
+<div class="bg-surface-container-low p-lg border border-deep-slate flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-pure-white uppercase mb-4">Your Impact</h3>
+<div class="grid grid-cols-2 gap-md">
+<div class="space-y-1">
+<span class="text-secondary-fixed text-3xl font-display-lg uppercase">42</span>
+<p class="text-silver-mist font-label-caps text-[10px] tracking-widest uppercase">Generations This Week</p>
+</div>
+<div class="space-y-1">
+<span class="text-primary-container text-3xl font-display-lg uppercase">12</span>
+<p class="text-silver-mist font-label-caps text-[10px] tracking-widest uppercase">Course Lessons Finished</p>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-deep-slate flex items-center justify-between">
+<p class="font-body-sm text-on-surface-variant">Elevate your membership to Pro for unlimited AI orchestrations.</p>
+<button class="flex-shrink-0 text-primary-container font-bold uppercase tracking-widest hover:underline active:opacity-70 transition-all">Upgrade Now</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 bg-pitch-black dark:bg-pitch-black border-t border-deep-slate flex justify-around items-center px-4 pb-safe pt-2">
+<!-- Explore -->
+<a class="flex flex-col items-center justify-center text-secondary-fixed dark:text-secondary-fixed bg-deep-slate rounded-lg p-2 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label-caps text-label-caps uppercase mt-1">Explore</span>
+</a>
+<!-- Studio -->
+<a class="flex flex-col items-center justify-center text-silver-mist dark:text-silver-mist p-2 hover:text-pure-white transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">music_note</span>
+<span class="font-label-caps text-label-caps uppercase mt-1">Studio</span>
+</a>
+<!-- Community -->
+<a class="flex flex-col items-center justify-center text-silver-mist dark:text-silver-mist p-2 hover:text-pure-white transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-label-caps text-label-caps uppercase mt-1">Community</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-silver-mist dark:text-silver-mist p-2 hover:text-pure-white transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-caps text-label-caps uppercase mt-1">Profile</span>
+</a>
+</nav>
+<script>
+        // Micro-interactions for course cards
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Potential hover effects logic
+            });
+        });
+    </script>
+</body></html>

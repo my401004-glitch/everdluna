@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ALLEGRO - AI Music Education</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-container": "#d0f100",
+                        "light-steel": "#d4d5d9",
+                        "primary-fixed": "#ffdadb",
+                        "surface-container-low": "#1a1b1e",
+                        "on-primary": "#67001d",
+                        "surface-dim": "#121316",
+                        "tertiary-fixed-dim": "#dfc572",
+                        "on-tertiary-container": "#4e3e00",
+                        "inverse-primary": "#be003d",
+                        "tertiary-fixed": "#fce18b",
+                        "surface-container": "#1e2022",
+                        "surface": "#121316",
+                        "primary-container": "#e32652",
+                        "on-tertiary-fixed": "#231b00",
+                        "surface-bright": "#38393c",
+                        "on-primary-fixed": "#40000f",
+                        "error-container": "#93000a",
+                        "deep-slate": "#272c33",
+                        "surface-variant": "#343538",
+                        "on-tertiary-fixed-variant": "#564500",
+                        "secondary-fixed-dim": "#b6d300",
+                        "tertiary-container": "#c3aa5a",
+                        "outline": "#ab888a",
+                        "tertiary": "#dfc573",
+                        "surface-tint": "#ffb2b8",
+                        "silver-mist": "#9ea0a9",
+                        "primary": "#ffb2b8",
+                        "primary-fixed-dim": "#ffb2b8",
+                        "on-error": "#690005",
+                        "on-background": "#e3e2e6",
+                        "pure-white": "#ffffff",
+                        "on-surface": "#e3e2e6",
+                        "on-secondary-fixed": "#181e00",
+                        "surface-container-highest": "#343538",
+                        "subtle-ash": "#191c21",
+                        "background": "#121316",
+                        "error": "#ffb4ab",
+                        "surface-container-high": "#292a2d",
+                        "on-secondary": "#2c3400",
+                        "on-primary-container": "#ffffff",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#404c00",
+                        "on-surface-variant": "#e4bdbf",
+                        "on-primary-fixed-variant": "#91002c",
+                        "graphite-base": "#0d0d0e",
+                        "secondary": "#ffffff",
+                        "secondary-fixed": "#d0f100",
+                        "on-secondary-container": "#5c6b00",
+                        "inverse-on-surface": "#2f3033",
+                        "on-tertiary": "#3c2f00",
+                        "surface-container-lowest": "#0d0e11",
+                        "pitch-black": "#000000",
+                        "outline-variant": "#5b3f41",
+                        "inverse-surface": "#e3e2e6"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "grid-gutter": "16px",
+                        "sm": "16px",
+                        "md": "24px",
+                        "lg": "48px",
+                        "xs": "8px",
+                        "unit": "4px",
+                        "grid-margin": "24px",
+                        "xl": "64px",
+                        "section-gap": "64px"
+                    },
+                    fontFamily: {
+                        "display-lg": ["anton"],
+                        "body-lg": ["inter"],
+                        "display-serif": ["playfairDisplay"],
+                        "body-sm": ["inter"],
+                        "label-caps": ["inter"],
+                        "headline-lg-mobile": ["inter"],
+                        "headline-lg": ["inter"],
+                        "display-xl": ["anton"],
+                        "headline-md": ["inter"],
+                        "headline-sm": ["inter"],
+                        "body-md": ["inter"]
+                    },
+                    fontSize: {
+                        "display-lg": ["64px", { lineHeight: "0.90", letterSpacing: "-0.02em", fontWeight: "500" }],
+                        "body-lg": ["20px", { lineHeight: "1.45", fontWeight: "400" }],
+                        "display-serif": ["64px", { lineHeight: "1.10", fontWeight: "400" }],
+                        "body-sm": ["14px", { lineHeight: "1.45", fontWeight: "400" }],
+                        "label-caps": ["12px", { lineHeight: "1.45", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "headline-lg-mobile": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+                        "headline-lg": ["48px", { lineHeight: "1.3", fontWeight: "600" }],
+                        "display-xl": ["80px", { lineHeight: "0.85", letterSpacing: "-0.04em", fontWeight: "500" }],
+                        "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+                        "headline-sm": ["24px", { lineHeight: "1.3", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "1.45", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #121316;
+            color: #e3e2e6;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24 md:pb-0 pt-20">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 border-b border-deep-slate bg-background/90 dark:bg-background/90 backdrop-blur-xl flex justify-between items-center px-grid-margin py-sm w-full">
+<div class="flex items-center gap-sm">
+<button class="text-primary dark:text-primary hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-display-lg text-headline-sm tracking-tighter text-pure-white dark:text-pure-white">ALLEGRO</h1>
+</div>
+<div class="hidden md:flex gap-md">
+<a class="text-primary font-bold" href="#">Explore</a>
+<a class="text-on-surface-variant hover:opacity-80 transition-opacity" href="#">Studio</a>
+<a class="text-on-surface-variant hover:opacity-80 transition-opacity" href="#">Community</a>
+<a class="text-on-surface-variant hover:opacity-80 transition-opacity" href="#">Profile</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg font-body-sm active:scale-95 transition-transform hover:opacity-80">Join</button>
+</header>
+<main class="max-w-[1440px] mx-auto">
+<!-- Hero Section -->
+<section class="relative min-h-[707px] flex items-center px-grid-margin py-xl overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-30" data-alt="A cinematic, moody shot of a futuristic music production studio. Deep pitch black shadows contrast with vibrant, glowing neon lime and subtle raspberry accents on high-tech mixing boards and instruments. The lighting creates a highly dramatic, focused stage-like atmosphere, perfect for a premium AI music platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx6OycaoyvfwRyVavgiJIFbR_7K3b91Y9QSFroZubcWrdYA7avJuCOdM76WgNHLFLam_t7XnA9K6nh4GJSxzfIl4kKxAJpQ7ZoV6hc88EPZURi6pNgclsCNzsmPpbtfTnodJXirj7W2Y36J6GfVZwNKuMkK1peW9FJB9q4SdGLFUX0QOBEH9o3tKRl6QHrbgq0YQelHG9MKgpuXiO9kvOrmoJqxbVR0fggCzZkzdDsoasmGeLJaM9Vyg8h3snsr6sHeCIPiGWiQF8s"/>
+<div class="absolute inset-0 bg-gradient-to-t from-pitch-black via-pitch-black/80 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full md:w-2/3 lg:w-1/2 flex flex-col gap-md">
+<h2 class="font-display-xl text-display-xl text-pure-white uppercase tracking-tighter">LEARN MUSIC FROM THE FUTURE</h2>
+<p class="font-body-lg text-body-lg text-light-steel mb-sm">Harness the power of AI to unlock your musical potential. World-class instructors meets bleeding-edge technology.</p>
+<div class="flex gap-sm">
+<button class="bg-primary-container text-on-primary-container font-body-md text-body-md px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">Start Learning</button>
+<button class="border border-pure-white text-pure-white font-body-md text-body-md px-6 py-3 rounded-lg hover:bg-pure-white/10 transition-colors">Explore Curriculum</button>
+</div>
+</div>
+</section>
+<!-- Featured Section -->
+<section class="px-grid-margin py-xl flex flex-col gap-lg">
+<div class="flex justify-between items-end">
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-pure-white">Masterclass Spotlight</h3>
+<a class="text-secondary-fixed hover:underline font-body-sm" href="#">View all classes</a>
+</div>
+<div class="bg-deep-slate rounded-lg p-lg grid grid-cols-1 md:grid-cols-2 gap-lg shadow-[inset_1px_1px_0_rgba(255,255,255,0.1)]">
+<div class="flex flex-col justify-center gap-md">
+<span class="bg-pure-white text-pitch-black font-label-caps text-label-caps px-3 py-1 rounded-full w-fit">AI COMPOSITION</span>
+<h4 class="font-display-serif text-display-serif text-pure-white">Mastering AI Composition</h4>
+<p class="font-body-md text-body-md text-light-steel">Join renowned composer Aria Maestro as she bridges the gap between traditional orchestration and generative AI models. Learn to direct AI tools like an orchestra.</p>
+<button class="bg-secondary-fixed text-pitch-black font-body-md text-body-md px-6 py-3 rounded-lg mt-sm w-fit hover:bg-secondary-fixed-dim transition-colors shadow-[inset_1px_1px_0_rgba(255,255,255,0.5)]">Start Masterclass</button>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container aspect-[4/3] md:aspect-auto">
+<img class="w-full h-full object-cover rounded shadow-[inset_1px_1px_0_rgba(255,255,255,0.1)]" data-alt="A dramatic portrait of a sophisticated music instructor in a high-tech studio environment. She is surrounded by glowing screens and sleek audio equipment. The lighting is cinematic, utilizing deep shadows and sharp highlights to emphasize her expertise and the advanced technological setting of this premium music education platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxM-xIiyaSBs2BDtlOrL5wKuubtrfgX4CEuIEaGYRupMx2DpSGMmYBTngIMNQ5bwjnt6X01smF-TkLcqpt8uqsvZSB3Y-9lgGWOsXXT7pnkOUTHvLCKgtmXKBHNpxEqLdnGll6fdvblbIReKjMHDkXGfFjECTjEaN-qeb6OebyEC_h1UeV63fBbmoDV090NItmRRUtTbvEVikqtR3kxuzOkMA7CnY2SHl_1x2K3A4TDKjeN3LE_ws3bRIMsnwnff4uyqCFIN3lRV3E"/>
+</div>
+</div>
+</section>
+<!-- AI Advantage Section -->
+<section class="px-grid-margin py-xl bg-graphite-base/50">
+<div class="text-center mb-xl">
+<h3 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-pure-white mb-xs">The AI Advantage</h3>
+<p class="font-body-md text-body-md text-light-steel">Your personal, highly-analytical practice companion.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Card 1 -->
+<div class="bg-surface-container rounded-lg p-md border-[1px] border-deep-slate hover:border-silver-mist transition-colors group">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center mb-md group-hover:bg-secondary-container/30 transition-colors">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">analytics</span>
+</div>
+<h5 class="font-headline-sm text-headline-sm text-pure-white mb-xs">Real-time Analysis</h5>
+<p class="font-body-sm text-body-sm text-light-steel">Instant feedback on pitch, timing, and dynamics as you play, identifying precise areas for improvement.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container rounded-lg p-md border-[1px] border-deep-slate hover:border-silver-mist transition-colors group">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center mb-md group-hover:bg-secondary-container/30 transition-colors">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<h5 class="font-headline-sm text-headline-sm text-pure-white mb-xs">Generative Practice</h5>
+<p class="font-body-sm text-body-sm text-light-steel">AI creates custom backing tracks and exercises tailored specifically to your current skill level and goals.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container rounded-lg p-md border-[1px] border-deep-slate hover:border-silver-mist transition-colors group">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center mb-md group-hover:bg-secondary-container/30 transition-colors">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">forum</span>
+</div>
+<h5 class="font-headline-sm text-headline-sm text-pure-white mb-xs">Intelligent Feedback</h5>
+<p class="font-body-sm text-body-sm text-light-steel">Detailed, actionable insights provided after every session, helping you understand the 'why' behind the technique.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 border-t border-deep-slate bg-pitch-black dark:bg-pitch-black flex justify-around items-center px-4 pb-safe pt-2 w-full h-[72px]">
+<a class="flex flex-col items-center justify-center text-secondary-fixed dark:text-secondary-fixed bg-deep-slate rounded-lg p-2 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-label-caps text-label-caps mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-silver-mist dark:text-silver-mist p-2 hover:text-pure-white transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">music_note</span>
+<span class="font-label-caps text-label-caps mt-1">Studio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-silver-mist dark:text-silver-mist p-2 hover:text-pure-white transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-label-caps text-label-caps mt-1">Community</span>
+</a>
+<a class="flex flex-col items-center justify-center text-silver-mist dark:text-silver-mist p-2 hover:text-pure-white transition-colors active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-caps text-label-caps mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

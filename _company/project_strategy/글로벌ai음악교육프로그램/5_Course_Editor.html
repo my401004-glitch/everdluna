@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600;700&amp;family=Playfair+Display&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .drag-handle:hover { cursor: grab; }
+        .drag-handle:active { cursor: grabbing; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #121316; }
+        ::-webkit-scrollbar-thumb { background: #272c33; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #343538; }
+        .glass-panel {
+            background: rgba(18, 19, 22, 0.8);
+            backdrop-filter: blur(32px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#231b00",
+                        "surface-container-high": "#292a2d",
+                        "surface-container-low": "#1a1b1e",
+                        "surface": "#121316",
+                        "surface-container": "#1e2022",
+                        "secondary-container": "#d0f100",
+                        "primary": "#ffb2b8",
+                        "surface-container-highest": "#343538",
+                        "primary-fixed": "#ffdadb",
+                        "pure-white": "#ffffff",
+                        "outline": "#ab888a",
+                        "on-secondary": "#2c3400",
+                        "surface-dim": "#121316",
+                        "on-secondary-fixed-variant": "#404c00",
+                        "error": "#ffb4ab",
+                        "pitch-black": "#000000",
+                        "on-primary-fixed-variant": "#91002c",
+                        "tertiary-container": "#c3aa5a",
+                        "on-background": "#e3e2e6",
+                        "tertiary": "#dfc573",
+                        "inverse-primary": "#be003d",
+                        "outline-variant": "#5b3f41",
+                        "primary-fixed-dim": "#ffb2b8",
+                        "secondary-fixed-dim": "#b6d300",
+                        "light-steel": "#d4d5d9",
+                        "on-surface": "#e3e2e6",
+                        "on-surface-variant": "#e4bdbf",
+                        "tertiary-fixed-dim": "#dfc572",
+                        "primary-container": "#e32652",
+                        "background": "#121316",
+                        "secondary-fixed": "#d0f100",
+                        "on-secondary-container": "#5c6b00",
+                        "error-container": "#93000a",
+                        "on-error": "#690005",
+                        "surface-tint": "#ffb2b8",
+                        "secondary": "#ffffff",
+                        "subtle-ash": "#191c21",
+                        "tertiary-fixed": "#fce18b",
+                        "surface-variant": "#343538",
+                        "on-primary-container": "#ffffff",
+                        "on-secondary-fixed": "#181e00",
+                        "inverse-on-surface": "#2f3033",
+                        "graphite-base": "#0d0d0e",
+                        "on-primary-fixed": "#40000f",
+                        "on-primary": "#67001d",
+                        "deep-slate": "#272c33",
+                        "on-tertiary-fixed-variant": "#564500",
+                        "surface-container-lowest": "#0d0e11",
+                        "inverse-surface": "#e3e2e6",
+                        "on-tertiary": "#3c2f00",
+                        "surface-bright": "#38393c",
+                        "silver-mist": "#9ea0a9",
+                        "on-tertiary-container": "#4e3e00",
+                        "on-error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "grid-margin": "24px",
+                        "grid-gutter": "16px",
+                        "md": "24px",
+                        "xl": "64px",
+                        "lg": "48px",
+                        "xs": "8px",
+                        "section-gap": "64px",
+                        "sm": "16px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["inter"],
+                        "headline-md": ["inter"],
+                        "display-xl": ["anton"],
+                        "body-lg": ["inter"],
+                        "display-serif": ["playfairDisplay"],
+                        "headline-lg-mobile": ["inter"],
+                        "display-lg": ["anton"],
+                        "headline-sm": ["inter"],
+                        "body-md": ["inter"],
+                        "label-caps": ["inter"],
+                        "headline-lg": ["inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", {"lineHeight": "1.45", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-xl": ["80px", {"lineHeight": "0.85", "letterSpacing": "-0.04em", "fontWeight": "500"}],
+                        "body-lg": ["20px", {"lineHeight": "1.45", "fontWeight": "400"}],
+                        "display-serif": ["64px", {"lineHeight": "1.10", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "0.90", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.45", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.45", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-pure-white">
+<!-- Top AppBar (from JSON) -->
+<header class="bg-background/90 dark:bg-background/90 backdrop-blur-xl text-primary dark:text-primary fixed top-0 w-full z-50 border-b border-deep-slate flex justify-between items-center px-grid-margin py-sm w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:opacity-80 transition-opacity active:scale-95 transition-transform" data-icon="menu">menu</span>
+<h1 class="font-display-lg text-headline-sm tracking-tighter text-pure-white dark:text-pure-white">ALLEGRO</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-6 font-label-caps text-label-caps">
+<a class="text-primary hover:opacity-80 transition-opacity" href="#">Studio</a>
+<a class="text-on-surface-variant hover:opacity-80 transition-opacity" href="#">Courses</a>
+<a class="text-on-surface-variant hover:opacity-80 transition-opacity" href="#">Community</a>
+</nav>
+<button class="bg-primary-container text-pure-white px-6 py-2 rounded-lg font-bold hover:opacity-80 transition-all active:scale-95">Join</button>
+</div>
+</header>
+<div class="pt-20 flex min-h-screen">
+<!-- Left Sidebar: Chapter List (Bento-style list) -->
+<aside class="w-80 shrink-0 border-r border-deep-slate bg-graphite-base overflow-y-auto hidden lg:block p-md">
+<div class="flex items-center justify-between mb-sm">
+<h2 class="font-headline-sm text-headline-sm">Curriculum</h2>
+<span class="material-symbols-outlined text-silver-mist cursor-pointer" data-icon="add_circle">add_circle</span>
+</div>
+<div class="space-y-unit" id="chapter-list">
+<!-- Chapter 1 -->
+<div class="group">
+<div class="p-3 bg-deep-slate rounded-lg border border-transparent hover:border-silver-mist transition-all mb-xs drag-handle flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-silver-mist text-sm" data-icon="drag_indicator">drag_indicator</span>
+<span class="font-bold text-body-sm">01 Introduction</span>
+</div>
+<span class="material-symbols-outlined text-xs" data-icon="expand_more">expand_more</span>
+</div>
+<div class="pl-6 space-y-1 mb-md">
+<div class="p-2 bg-subtle-ash rounded-lg text-body-sm flex items-center justify-between border border-transparent hover:border-primary transition-all cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="play_circle">play_circle</span>
+<span>Setting the Tone</span>
+</div>
+</div>
+<div class="p-2 bg-subtle-ash rounded-lg text-body-sm flex items-center justify-between border border-primary/50 transition-all cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="video_library">video_library</span>
+<span class="text-primary font-bold">Piano Basics AI</span>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-1.5 py-0.5 text-[10px] rounded uppercase font-black">Active</span>
+</div>
+</div>
+</div>
+<!-- Chapter 2 -->
+<div class="group">
+<div class="p-3 bg-deep-slate rounded-lg border border-transparent hover:border-silver-mist transition-all mb-xs drag-handle flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-silver-mist text-sm" data-icon="drag_indicator">drag_indicator</span>
+<span class="font-bold text-body-sm">02 Modal Theory</span>
+</div>
+<span class="material-symbols-outlined text-xs" data-icon="expand_more">expand_more</span>
+</div>
+<div class="pl-6 space-y-1 opacity-60">
+<div class="p-2 bg-subtle-ash rounded-lg text-body-sm flex items-center gap-2 cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="music_note">music_note</span>
+<span>The Dorian Secret</span>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 p-md lg:p-lg overflow-y-auto">
+<div class="max-w-5xl mx-auto space-y-lg">
+<!-- Section: Breadcrumbs and Primary Meta -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-md">
+<div>
+<nav class="flex items-center gap-2 text-silver-mist font-label-caps text-label-caps mb-xs">
+<span>Courses</span>
+<span class="material-symbols-outlined text-[12px]" data-icon="chevron_right">chevron_right</span>
+<span>Modern Piano</span>
+<span class="material-symbols-outlined text-[12px]" data-icon="chevron_right">chevron_right</span>
+<span class="text-primary">Chapter 01</span>
+</nav>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg tracking-tight">PIANO BASICS AI</h2>
+</div>
+<div class="flex gap-3">
+<button class="bg-transparent border border-pure-white/20 text-pure-white px-6 py-2.5 rounded-lg font-bold hover:bg-pure-white/10 transition-colors">Preview</button>
+<button class="bg-primary-container text-pure-white px-8 py-2.5 rounded-lg font-bold hover:opacity-90 shadow-lg shadow-primary-container/20 transition-all active:scale-95">Publish Lesson</button>
+</div>
+</div>
+<!-- Section: Video Upload / Preview -->
+<div class="relative group aspect-video bg-pitch-black rounded-xl overflow-hidden border border-deep-slate ring-1 ring-inset ring-pure-white/5 flex flex-col items-center justify-center">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-30 grayscale blur-sm" data-alt="A close up, cinematic shot of piano keys in a moody, low-lit studio environment. The lighting is focused, with sharp shadows and highlights on the ivory keys. The color palette is dominated by deep blacks and charcoal tones, with a touch of interactive lime light reflecting off the wood grain. The atmosphere is professional and focused, suitable for a high-end music production interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJgyFYMBxnce0rKjAaumc8qnhRksqX4tA70_lCQ_AIcc_mVFEO93djcTZl6YUzkxA8mFDl_QRWBDtjAyIuFCOryU8tuGrU5TNeObUdPIOdsU4Wh5t9MXt3kIZQ9n42TS303iZsMGTkw6iw9CCadOh8rrgqay7GAbGEHCIXLTIRCXg2KwTAiw205kaJaTustskaC5vXRSpf7ChnygruKN-pONqc31IXk8b1CfE6nlMzsxNDKEjzFWJKHhpHEzQEwsUFHGDaNJKC2Ikt"/>
+</div>
+<div class="z-10 flex flex-col items-center text-center p-lg">
+<div class="w-16 h-16 bg-deep-slate rounded-full flex items-center justify-center mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="cloud_upload">cloud_upload</span>
+</div>
+<p class="font-headline-sm mb-xs">Replace Lesson Video</p>
+<p class="text-silver-mist text-body-sm max-w-sm">Drag and drop high-resolution 4K content. Optimized for cinematic streaming.</p>
+<input class="absolute inset-0 opacity-0 cursor-pointer" type="file"/>
+</div>
+<!-- Status Bar Overlay -->
+<div class="absolute bottom-0 left-0 right-0 bg-deep-slate/80 backdrop-blur-md p-3 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="check_circle">check_circle</span>
+<span class="text-body-sm font-bold">lesson_01_master.mp4</span>
+</div>
+<span class="text-silver-mist text-body-sm">1.2 GB • 4K HDR</span>
+</div>
+</div>
+<!-- Section: Metadata Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Title & Desc -->
+<div class="md:col-span-2 bg-graphite-base p-lg border border-deep-slate rounded-xl space-y-md">
+<div>
+<label class="block font-label-caps text-label-caps text-silver-mist mb-2 uppercase">Lesson Title</label>
+<input class="w-full bg-transparent border-b border-deep-slate focus:border-primary outline-none py-2 text-headline-sm transition-colors rounded-none" type="text" value="Piano Basics AI"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-silver-mist mb-2 uppercase">Description</label>
+<textarea class="w-full bg-transparent border border-deep-slate rounded-none p-4 focus:ring-1 focus:ring-silver-mist outline-none text-body-md" rows="4">In this introductory module, we leverage generative AI to analyze your initial playing style and calibrate the course tempo to your personal finger dexterity and harmonic intuition.</textarea>
+</div>
+</div>
+<!-- Stats / Settings -->
+<div class="bg-deep-slate p-lg border border-pure-white/10 rounded-xl space-y-md">
+<div>
+<label class="block font-label-caps text-label-caps text-silver-mist mb-2 uppercase">Difficulty</label>
+<div class="flex gap-2">
+<button class="flex-1 py-2 bg-pitch-black border border-silver-mist text-body-sm font-bold rounded">Pro</button>
+<button class="flex-1 py-2 bg-subtle-ash text-silver-mist text-body-sm rounded hover:bg-deep-slate">Expert</button>
+</div>
+</div>
+<div class="pt-md border-t border-pure-white/5">
+<div class="flex justify-between items-center mb-2">
+<span class="text-body-sm text-silver-mist">Estimated Time</span>
+<span class="font-bold">24m 12s</span>
+</div>
+<div class="flex justify-between items-center mb-2">
+<span class="text-body-sm text-silver-mist">AI Intensity</span>
+<span class="text-secondary-fixed font-bold">Variable</span>
+</div>
+</div>
+<div class="pt-md">
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-10 h-5 bg-pitch-black rounded-full relative border border-deep-slate">
+<div class="absolute top-1 left-1 w-2.5 h-2.5 bg-secondary-container rounded-full translate-x-5 transition-transform"></div>
+</div>
+<span class="text-body-sm font-bold group-hover:text-pure-white transition-colors">Auto-Subtitle (AI)</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Right Sidebar: AI Tools Sidebar -->
+<aside class="w-80 shrink-0 border-l border-deep-slate bg-graphite-base p-md hidden xl:block space-y-lg sticky top-20 h-[calc(100vh-80px)]">
+<div class="flex items-center gap-2 mb-md">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">AI Studio Tools</h3>
+</div>
+<!-- MIDI Generation -->
+<div class="space-y-sm">
+<p class="text-body-sm font-bold">Practice MIDI Generator</p>
+<div class="p-4 bg-deep-slate rounded-lg border border-secondary-fixed/20 space-y-3">
+<p class="text-xs text-silver-mist leading-relaxed">Generate a customized MIDI exercise file based on the lesson's harmonic progression.</p>
+<div class="flex items-center gap-2 text-xs">
+<span class="px-2 py-1 bg-subtle-ash rounded text-pure-white">C-Minor</span>
+<span class="px-2 py-1 bg-subtle-ash rounded text-pure-white">120 BPM</span>
+</div>
+<button class="w-full bg-secondary-fixed text-pitch-black py-2 rounded font-black text-xs uppercase hover:brightness-110 active:scale-95 transition-all">Generate MIDI</button>
+</div>
+</div>
+<!-- Script Generation -->
+<div class="space-y-sm">
+<p class="text-body-sm font-bold">Script Auto-Script</p>
+<div class="p-4 bg-subtle-ash rounded-lg border border-deep-slate space-y-3">
+<p class="text-xs text-silver-mist leading-relaxed">Analyze the uploaded video to generate a draft script and timestamped highlights.</p>
+<div class="flex items-center justify-center py-4 border-2 border-dashed border-deep-slate rounded-md">
+<span class="material-symbols-outlined text-silver-mist" data-icon="history_edu">history_edu</span>
+</div>
+<button class="w-full border border-pure-white/10 text-pure-white py-2 rounded font-bold text-xs hover:bg-deep-slate transition-colors">Start Analysis</button>
+</div>
+</div>
+<!-- AI Status -->
+<div class="p-md bg-secondary-fixed/10 border border-secondary-fixed/30 rounded-xl">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></div>
+<span class="text-[10px] font-black uppercase text-secondary-fixed">Neural Engine Ready</span>
+</div>
+<p class="text-[11px] text-silver-mist leading-tight">Advanced finger-tracking and MIDI analysis are active for this workspace.</p>
+</div>
+</aside>
+</div>
+<!-- Mobile Navigation (from JSON) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-pitch-black dark:bg-pitch-black border-t border-deep-slate flex justify-around items-center px-4 pb-safe pt-2 w-full">
+<div class="flex flex-col items-center justify-center text-silver-mist dark:text-silver-mist p-2 hover:text-pure-white transition-colors active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-label-caps text-label-caps mt-1">Explore</span>
+</div>
+<div class="flex flex-col items-center justify-center text-secondary-fixed dark:text-secondary-fixed bg-deep-slate rounded-lg p-2 hover:text-pure-white transition-colors active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="music_note">music_note</span>
+<span class="font-label-caps text-label-caps mt-1">Studio</span>
+</div>
+<div class="flex flex-col items-center justify-center text-silver-mist dark:text-silver-mist p-2 hover:text-pure-white transition-colors active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="font-label-caps text-label-caps mt-1">Community</span>
+</div>
+<div class="flex flex-col items-center justify-center text-silver-mist dark:text-silver-mist p-2 hover:text-pure-white transition-colors active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-caps text-label-caps mt-1">Profile</span>
+</div>
+</nav>
+<script>
+        // Simple drag interaction simulation
+        document.querySelectorAll('.drag-handle').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.style.opacity = '0.5';
+                el.style.transform = 'scale(0.98)';
+            });
+            window.addEventListener('mouseup', () => {
+                el.style.opacity = '1';
+                el.style.transform = 'scale(1)';
+            });
+        });
+
+        // AI Generation feedback simulation
+        const genBtn = document.querySelector('button.bg-secondary-fixed');
+        if(genBtn) {
+            genBtn.addEventListener('click', () => {
+                const originalText = genBtn.innerText;
+                genBtn.innerText = 'PROCESSING...';
+                genBtn.disabled = true;
+                setTimeout(() => {
+                    genBtn.innerText = 'GENERATED ✓';
+                    genBtn.classList.replace('bg-secondary-fixed', 'bg-subtle-ash');
+                    genBtn.classList.add('text-secondary-fixed');
+                    setTimeout(() => {
+                        genBtn.innerText = originalText;
+                        genBtn.classList.replace('bg-subtle-ash', 'bg-secondary-fixed');
+                        genBtn.classList.remove('text-secondary-fixed');
+                        genBtn.disabled = false;
+                    }, 2000);
+                }, 1500);
+            });
+        }
+    </script>
+</body></html>

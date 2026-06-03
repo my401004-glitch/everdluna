@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cinematic Scoring 101 | ALLEGRO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600;700&amp;family=Playfair+Display&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton:wght@100..900&amp;family=Inter:wght@100..900&amp;family=Playfair+Display:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        body {
+            background-color: #121316;
+            color: #e3e2e6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Glassmorphism utility */
+        .glass-header {
+            background: rgba(18, 19, 22, 0.8);
+            backdrop-filter: blur(32px);
+            -webkit-backdrop-filter: blur(32px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #272c33;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9ea0a9;
+        }
+
+        .action-raspberry-gradient {
+            background: linear-gradient(135deg, #e32652 0%, #91002c 100%);
+        }
+
+        .technical-border {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+
+        .interactive-lime-glow {
+            box-shadow: 0 0 15px rgba(220, 255, 0, 0.3);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                "inverse-surface": "#e3e2e6",
+                "pure-white": "#ffffff",
+                "on-primary": "#67001d",
+                "on-secondary-fixed-variant": "#404c00",
+                "tertiary-fixed": "#fce18b",
+                "secondary": "#ffffff",
+                "inverse-on-surface": "#2f3033",
+                "outline": "#ab888a",
+                "primary-container": "#e32652",
+                "surface-container-highest": "#343538",
+                "on-tertiary-fixed-variant": "#564500",
+                "on-tertiary-fixed": "#231b00",
+                "on-secondary": "#2c3400",
+                "on-primary-fixed": "#40000f",
+                "secondary-fixed": "#d0f100",
+                "subtle-ash": "#191c21",
+                "on-tertiary-container": "#4e3e00",
+                "surface-container-lowest": "#0d0e11",
+                "silver-mist": "#9ea0a9",
+                "primary": "#ffb2b8",
+                "inverse-primary": "#be003d",
+                "tertiary": "#dfc573",
+                "outline-variant": "#5b3f41",
+                "on-tertiary": "#3c2f00",
+                "error-container": "#93000a",
+                "secondary-fixed-dim": "#b6d300",
+                "tertiary-fixed-dim": "#dfc572",
+                "on-error": "#690005",
+                "on-primary-fixed-variant": "#91002c",
+                "light-steel": "#d4d5d9",
+                "on-surface-variant": "#e4bdbf",
+                "tertiary-container": "#c3aa5a",
+                "on-primary-container": "#ffffff",
+                "on-secondary-fixed": "#181e00",
+                "surface-dim": "#121316",
+                "background": "#121316",
+                "secondary-container": "#d0f100",
+                "error": "#ffb4ab",
+                "graphite-base": "#0d0d0e",
+                "surface-bright": "#38393c",
+                "surface-tint": "#ffb2b8",
+                "primary-fixed": "#ffdadb",
+                "surface-container-high": "#292a2d",
+                "surface": "#121316",
+                "primary-fixed-dim": "#ffb2b8",
+                "deep-slate": "#272c33",
+                "on-error-container": "#ffdad6",
+                "pitch-black": "#000000",
+                "surface-container-low": "#1a1b1e",
+                "surface-container": "#1e2022",
+                "on-background": "#e3e2e6",
+                "on-secondary-container": "#5c6b00",
+                "surface-variant": "#343538",
+                "on-surface": "#e3e2e6"
+              },
+              "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+              },
+              "spacing": {
+                "lg": "48px",
+                "xs": "8px",
+                "sm": "16px",
+                "grid-margin": "24px",
+                "xl": "64px",
+                "md": "24px",
+                "unit": "4px",
+                "grid-gutter": "16px",
+                "section-gap": "64px"
+              },
+              "fontFamily": {
+                "body-sm": ["Inter"],
+                "body-md": ["Inter"],
+                "body-lg": ["Inter"],
+                "headline-lg-mobile": ["Inter"],
+                "display-xl": ["Anton"],
+                "display-serif": ["Playfair Display"],
+                "display-lg": ["Anton"],
+                "headline-md": ["Inter"],
+                "label-caps": ["Inter"],
+                "headline-sm": ["Inter"],
+                "headline-lg": ["Inter"]
+              },
+              "fontSize": {
+                "body-sm": ["14px", {"lineHeight": "1.45", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "1.45", "fontWeight": "400"}],
+                "body-lg": ["20px", {"lineHeight": "1.45", "fontWeight": "400"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "display-xl": ["80px", {"lineHeight": "0.85", "letterSpacing": "-0.04em", "fontWeight": "500"}],
+                "display-serif": ["64px", {"lineHeight": "1.10", "fontWeight": "400"}],
+                "display-lg": ["64px", {"lineHeight": "0.90", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "label-caps": ["12px", {"lineHeight": "1.45", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "headline-lg": ["48px", {"lineHeight": "1.3", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 glass-header border-b border-deep-slate flex justify-between items-center px-grid-margin py-sm">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity cursor-pointer">menu</span>
+<h1 class="font-display-lg text-headline-sm tracking-tighter text-pure-white">ALLEGRO</h1>
+</div>
+<div class="hidden md:flex items-center gap-lg">
+<nav class="flex gap-md font-label-caps text-label-caps tracking-widest text-silver-mist">
+<a class="text-primary hover:opacity-80 transition-opacity" href="#">COURSES</a>
+<a class="hover:text-pure-white transition-colors" href="#">WORKSHOPS</a>
+<a class="hover:text-pure-white transition-colors" href="#">LIBRARY</a>
+</nav>
+</div>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-on-surface cursor-pointer active:scale-95 transition-transform">search</span>
+<button class="bg-primary-container text-on-primary-container px-sm py-xs rounded-lg font-label-caps text-label-caps hover:opacity-80 active:scale-95 transition-all">Join</button>
+</div>
+</header>
+<main class="flex-grow pt-[72px] pb-xl md:pb-0">
+<!-- Hero Section: Cinematic Video Player -->
+<section class="relative w-full aspect-video md:h-[618px] bg-pitch-black overflow-hidden group">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000" data-alt="A high-contrast cinematic shot of a professional music studio at night with dim blue and amber ambient lighting. In the foreground, a large mixing console with glowing LEDs is visible, while a grand piano sits in the background of the dark charcoal room. A single spotlight highlights a conductor's baton resting on a musical score, evoking a mood of intense creative focus and technical sophistication." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqszPf-9h_JZKRRw77M1mIHdu6E7dAoQ8gQgsJpX6upNCkCOZjJJnZOvZCpb-I0ZAGjultxpSHkIOaDXDeeuU75P8ktombWQ1bLJV52xfyXSnciR6wHOovD8zFmppGSKEEGi5TRv9PHIbkqBuaQ6VkBnJEuFHK23RfsPysHD3aUqTNSk3xmSM9SlgYzk6Xj_uqhU45mxPPLxQCFqkNIW83y7GaQQiJNTDdk7toIOKiAIdLer2Y7pLB0If-OYA4Y02y4keWObWOmS99"/>
+<!-- Play Overlay -->
+<div class="absolute inset-0 flex items-center justify-center cursor-pointer">
+<div class="w-20 h-20 md:w-32 md:h-32 bg-pure-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-pure-white/20 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-pure-white text-[48px] md:text-[64px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<!-- Hero Content Overlay -->
+<div class="absolute bottom-0 left-0 w-full p-grid-margin bg-gradient-to-t from-pitch-black via-pitch-black/60 to-transparent">
+<div class="max-w-7xl mx-auto">
+<span class="inline-block bg-secondary-container text-on-secondary-container px-xs py-[2px] rounded-sm font-label-caps text-label-caps mb-sm">CURRENT LESSON: INTRO</span>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-pure-white leading-none uppercase tracking-tight mb-xs">Cinematic Scoring 101</h2>
+<div class="flex items-center gap-sm text-silver-mist">
+<img class="w-8 h-8 rounded-full border border-deep-slate" data-alt="A professional portrait of a distinguished male music composer with salt-and-pepper hair, wearing a sleek black turtleneck. He is in a dark, moody studio environment with soft rim lighting that emphasizes his creative authority. The background is a soft-focus arrangement of synthesizers and orchestral instruments, conveying a sense of world-class expertise and cinematic artistry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS6wBlSfhX4D4BtGBP52QrTS8fXlT8V5z32NV8XkeFZS_a3s9tlTWefPI654iaMhOSnmPojB267RZcnbWlwHxGw1HXi5aAoG8DDdkZhSP0zVpkta4xVKu2kVwxAY2w7IkBGvyZbYWnRV0lewDVv7btwrJuGwrdlbaWHSzSVfA4HcOh2TrqNP8y-IfHrNDqfx52owrthRxd2x93e4Nz4IoG6NoEQjgrndPdYacaXLKhOK5g-9zbMLDqYXzpdH_pTD79JEQ2QanfXfkP"/>
+<span class="font-body-md">Lead Instructor: <strong class="text-pure-white">Hans Thorne</strong></span>
+<span class="hidden md:inline">•</span>
+<span class="hidden md:inline">12 Chapters</span>
+<span class="hidden md:inline">•</span>
+<span class="hidden md:inline">18.5 Hours</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Area -->
+<div class="max-w-7xl mx-auto px-grid-margin grid grid-cols-1 lg:grid-cols-12 gap-lg py-lg">
+<!-- Left Column: Course Progress & Curriculum -->
+<div class="lg:col-span-8 space-y-lg">
+<!-- Mastery Progress -->
+<section class="bg-deep-slate p-md rounded-xl technical-border">
+<div class="flex justify-between items-end mb-sm">
+<div>
+<h3 class="font-headline-sm text-pure-white">Mastery Progress</h3>
+<p class="text-silver-mist font-body-sm">You've mastered 4 of 24 techniques in this course.</p>
+</div>
+<span class="text-secondary-fixed font-display-lg text-headline-md">16%</span>
+</div>
+<div class="w-full h-2 bg-pitch-black rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed w-[16%] interactive-lime-glow"></div>
+</div>
+</section>
+<!-- Curriculum -->
+<section class="space-y-sm">
+<h3 class="font-headline-md text-pure-white mb-md">Curriculum</h3>
+<!-- Chapter 01 -->
+<div class="rounded-lg overflow-hidden border border-deep-slate">
+<div class="bg-surface-container-high p-md flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-md">
+<span class="font-label-caps text-silver-mist">01</span>
+<h4 class="font-headline-sm text-pure-white">Chapter 01: The Emotional Palette</h4>
+</div>
+<span class="material-symbols-outlined text-silver-mist">expand_more</span>
+</div>
+<div class="bg-graphite-base divide-y divide-deep-slate">
+<div class="p-md flex items-center justify-between hover:bg-subtle-ash transition-colors">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-pure-white">Defining the Sonic Signature</span>
+</div>
+<span class="text-silver-mist font-label-caps">12:45</span>
+</div>
+<div class="p-md flex items-center justify-between hover:bg-subtle-ash transition-colors">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary">play_circle</span>
+<span class="text-pure-white font-bold">Introduction to Melodic Archetypes</span>
+</div>
+<span class="text-silver-mist font-label-caps">24:10</span>
+</div>
+<div class="p-md flex items-center justify-between hover:bg-subtle-ash transition-colors">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-silver-mist">lock</span>
+<span class="text-silver-mist">Minimalism vs. Maximalism</span>
+</div>
+<span class="text-silver-mist font-label-caps">18:30</span>
+</div>
+</div>
+</div>
+<!-- Chapter 02 -->
+<div class="rounded-lg overflow-hidden border border-deep-slate opacity-70">
+<div class="bg-surface-container-high p-md flex items-center justify-between">
+<div class="flex items-center gap-md">
+<span class="font-label-caps text-silver-mist">02</span>
+<h4 class="font-headline-sm text-pure-white">Chapter 02: Hybrid Orchestration</h4>
+</div>
+<span class="material-symbols-outlined text-silver-mist">lock</span>
+</div>
+</div>
+<!-- Chapter 03 -->
+<div class="rounded-lg overflow-hidden border border-deep-slate opacity-70">
+<div class="bg-surface-container-high p-md flex items-center justify-between">
+<div class="flex items-center gap-md">
+<span class="font-label-caps text-silver-mist">03</span>
+<h4 class="font-headline-sm text-pure-white">Chapter 03: The Rhythm of Tension</h4>
+</div>
+<span class="material-symbols-outlined text-silver-mist">lock</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Sidebar Widgets -->
+<div class="lg:col-span-4 space-y-lg">
+<!-- Primary CTA Card -->
+<section class="bg-deep-slate p-lg rounded-xl technical-border flex flex-col gap-md sticky top-[100px]">
+<div class="space-y-xs">
+<h4 class="font-headline-sm text-pure-white">Course Materials</h4>
+<p class="text-silver-mist font-body-sm">Unlock project files, MIDI stems, and the AI Analysis Tooling.</p>
+</div>
+<div class="flex flex-col gap-sm">
+<button class="bg-primary-container text-on-primary-container py-md rounded-lg font-headline-sm action-raspberry-gradient hover:opacity-90 active:scale-95 transition-all">Continue Learning</button>
+<button class="border border-pure-white/20 text-pure-white py-md rounded-lg font-headline-sm hover:bg-pure-white/5 active:scale-95 transition-all">Download Stems</button>
+</div>
+<!-- AI Learning Companion Widget -->
+<div class="mt-md p-md bg-pitch-black border border-secondary-fixed/30 rounded-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-2">
+<span class="material-symbols-outlined text-secondary-fixed text-sm animate-pulse" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<h5 class="text-secondary-fixed font-label-caps text-label-caps mb-xs">AI COMPANION TIP</h5>
+<p class="text-pure-white font-body-md italic leading-relaxed">"Focus on the string articulation in the second movement. Your previous exercise showed a tendency to over-compress the cellos."</p>
+<div class="mt-md flex items-center justify-between">
+<span class="text-silver-mist text-xs font-label-caps">ANALYZING YOUR PLAY STYLE...</span>
+<div class="flex gap-1">
+<div class="w-1 h-3 bg-secondary-fixed animate-bounce" style="animation-delay: 0s;"></div>
+<div class="w-1 h-3 bg-secondary-fixed animate-bounce" style="animation-delay: 0.2s;"></div>
+<div class="w-1 h-3 bg-secondary-fixed animate-bounce" style="animation-delay: 0.4s;"></div>
+</div>
+</div>
+</div>
+<div class="pt-md border-t border-white/10 flex flex-col gap-sm">
+<div class="flex items-center gap-sm text-silver-mist text-body-sm">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span>Lifetime access granted</span>
+</div>
+<div class="flex items-center gap-sm text-silver-mist text-body-sm">
+<span class="material-symbols-outlined text-sm">workspace_premium</span>
+<span>Earn "Cinematic Architect" Badge</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-pitch-black border-t border-deep-slate flex justify-around items-center px-4 pb-safe pt-2">
+<div class="flex flex-col items-center justify-center text-silver-mist p-2 hover:text-pure-white transition-colors cursor-pointer">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label-caps text-[10px] mt-1">Explore</span>
+</div>
+<div class="flex flex-col items-center justify-center text-secondary-fixed bg-deep-slate rounded-lg p-2 active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">music_note</span>
+<span class="font-label-caps text-[10px] mt-1">Studio</span>
+</div>
+<div class="flex flex-col items-center justify-center text-silver-mist p-2 hover:text-pure-white transition-colors cursor-pointer">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-label-caps text-[10px] mt-1">Community</span>
+</div>
+<div class="flex flex-col items-center justify-center text-silver-mist p-2 hover:text-pure-white transition-colors cursor-pointer">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-caps text-[10px] mt-1">Profile</span>
+</div>
+</nav>
+<script>
+        // Simple interaction for lesson items
+        document.querySelectorAll('.divide-y > div').forEach(item => {
+            item.addEventListener('click', () => {
+                if (!item.querySelector('.material-symbols-outlined').textContent.includes('lock')) {
+                    // Logic for switching lessons
+                    console.log('Navigating to lesson...');
+                }
+            });
+        });
+
+        // Sticky header behavior
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            const header = document.querySelector('header');
+            
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            header.style.transition = 'transform 0.3s ease-in-out';
+            lastScroll = currentScroll;
+        });
+    </script>
+</body></html>
