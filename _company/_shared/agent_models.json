@@ -1,8 +1,8 @@
 {
   "ceo": "google/gemma-4-e2b",
-  "youtube": "qwen3.5-9b-deepseek-v4-flash",
+  "youtube": "google/gemma-4-e4b",
   "instagram": "qwen3.5-9b-deepseek-v4-flash",
-  "designer": "google/gemma-4-e4b",
+  "designer": "google/gemma-4-e2b",
   "developer": "qwen3.5-9b-deepseek-v4-flash",
   "business": "qwen3.5-9b-deepseek-v4-flash",
   "secretary": "google/gemma-4-e4b",
