@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Global AI Music Education Program - Color Palette</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap');
+
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background-color: #0a0b0d;
+      color: #e3e2e6;
+      width: 210mm;
+      height: 297mm;
+      padding: 18mm 15mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    header {
+      border-bottom: 1px solid #272c33;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+    }
+
+    .brand {
+      font-family: 'Outfit', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #e32652; /* Action Raspberry */
+      margin-bottom: 4px;
+    }
+
+    .title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      font-weight: 400;
+      color: #9ea0a9;
+      font-family: 'Inter', sans-serif;
+      letter-spacing: 0.02em;
+      margin-top: 2px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 5px;
+    }
+
+    th {
+      font-family: 'Outfit', sans-serif;
+      text-align: left;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9ea0a9;
+      padding: 8px 8px;
+      border-bottom: 2px solid #272c33;
+    }
+
+    td {
+      padding: 7px 8px;
+      font-size: 11.5px;
+      color: #d4d5d9;
+      border-bottom: 1px solid #1e2022;
+      vertical-align: middle;
+    }
+
+    .no {
+      font-weight: 600;
+      color: #596170;
+      width: 30px;
+    }
+
+    .preview-cell {
+      width: 55px;
+    }
+
+    .color-preview {
+      width: 36px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+
+    .name-cell {
+      font-weight: 600;
+      color: #ffffff;
+      width: 130px;
+    }
+
+    .value-cell {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      color: #eed37f; /* Highlight Gold */
+      width: 80px;
+    }
+
+    .token-cell {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      color: #dcff00; /* Interactive Lime */
+      width: 175px;
+    }
+
+    .role-cell {
+      line-height: 1.35;
+      font-size: 11px;
+      color: #9ea0a9;
+    }
+
+    footer {
+      border-top: 1px solid #272c33;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 9px;
+      color: #596170;
+      margin-top: 10px;
+    }
+
+    .footer-left {
+      display: flex;
+      gap: 15px;
+    }
+
+    .footer-right {
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <header>
+      <div class="brand">Cinematic AI Music Academy — Style Reference</div>
+      <div class="title">
+        Midnight Stage Presence
+        <span class="subtitle">Design Tokens &bull; Color Palette Specifications</span>
+      </div>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="no">No</th>
+          <th class="preview-cell">Preview</th>
+          <th class="name-cell">Name</th>
+          <th class="value-cell">Value</th>
+          <th class="token-cell">Token</th>
+          <th class="role-cell">Role / Context</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="no">01</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #000000;"></div></td>
+          <td class="name-cell">Pitch Black</td>
+          <td class="value-cell">#000000</td>
+          <td class="token-cell">--color-pitch-black</td>
+          <td class="role-cell">Primary background for footers and expansive content sections, subtle borders, text for badges</td>
+        </tr>
+        <tr>
+          <td class="no">02</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #222326;"></div></td>
+          <td class="name-cell">Charcoal Canvas</td>
+          <td class="value-cell">#222326</td>
+          <td class="token-cell">--color-charcoal-canvas</td>
+          <td class="role-cell">Default page background, card backgrounds</td>
+        </tr>
+        <tr>
+          <td class="no">03</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #0d0d0e;"></div></td>
+          <td class="name-cell">Graphite Base</td>
+          <td class="value-cell">#0d0d0e</td>
+          <td class="token-cell">--color-graphite-base</td>
+          <td class="role-cell">Background for subtle surface differentiation, text buttons, and darker borders</td>
+        </tr>
+        <tr>
+          <td class="no">04</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #272c33;"></div></td>
+          <td class="name-cell">Deep Slate</td>
+          <td class="value-cell">#272c33</td>
+          <td class="token-cell">--color-deep-slate</td>
+          <td class="role-cell">Card backgrounds, button backgrounds for secondary actions</td>
+        </tr>
+        <tr>
+          <td class="no">05</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #191c21;"></div></td>
+          <td class="name-cell">Subtle Ash</td>
+          <td class="value-cell">#191c21</td>
+          <td class="token-cell">--color-subtle-ash</td>
+          <td class="role-cell">Secondary background color for body sections</td>
+        </tr>
+        <tr>
+          <td class="no">06</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #211d0d;"></div></td>
+          <td class="name-cell">Muted Stone</td>
+          <td class="value-cell">#211d0d</td>
+          <td class="token-cell">--color-muted-stone</td>
+          <td class="role-cell">Text color for muted elements, borders on certain components</td>
+        </tr>
+        <tr>
+          <td class="no">07</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #43454c;"></div></td>
+          <td class="name-cell">Iron Gray</td>
+          <td class="value-cell">#43454c</td>
+          <td class="token-cell">--color-iron-gray</td>
+          <td class="role-cell">Button backgrounds, inset shadow on interactive elements</td>
+        </tr>
+        <tr>
+          <td class="no">08</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #9ea0a9;"></div></td>
+          <td class="name-cell">Silver Mist</td>
+          <td class="value-cell">#9ea0a9</td>
+          <td class="token-cell">--color-silver-mist</td>
+          <td class="role-cell">Text color for secondary information, muted icons, disabled states</td>
+        </tr>
+        <tr>
+          <td class="no">09</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #d4d5d9;"></div></td>
+          <td class="name-cell">Light Steel</td>
+          <td class="value-cell">#d4d5d9</td>
+          <td class="token-cell">--color-light-steel</td>
+          <td class="role-cell">Subtle body text color, borders</td>
+        </tr>
+        <tr>
+          <td class="no">10</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #ffffff;"></div></td>
+          <td class="name-cell">Pure White</td>
+          <td class="value-cell">#ffffff</td>
+          <td class="token-cell">--color-pure-white</td>
+          <td class="role-cell">Primary text color, active states, badge backgrounds, clear button borders</td>
+        </tr>
+        <tr>
+          <td class="no">11</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #f4f4f5;"></div></td>
+          <td class="name-cell">Ghostly Gray</td>
+          <td class="value-cell">#f4f4f5</td>
+          <td class="token-cell">--color-ghostly-gray</td>
+          <td class="role-cell">Hover states for text and icons, borders for ghost buttons, light text</td>
+        </tr>
+        <tr>
+          <td class="no">12</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #e32652;"></div></td>
+          <td class="name-cell">Action Raspberry</td>
+          <td class="value-cell">#e32652</td>
+          <td class="token-cell">--color-action-raspberry</td>
+          <td class="role-cell">Primary action buttons, prominent icons — a vibrant pop against dark backgrounds for conversion</td>
+        </tr>
+        <tr>
+          <td class="no">13</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #dcff00;"></div></td>
+          <td class="name-cell">Interactive Lime</td>
+          <td class="value-cell">#dcff00</td>
+          <td class="token-cell">--color-interactive-lime</td>
+          <td class="role-cell">Green action color for filled buttons, selected navigation states, and focused conversion moments. Use as a supporting accent, not as a status color</td>
+        </tr>
+        <tr>
+          <td class="no">14</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #eed37f;"></div></td>
+          <td class="name-cell">Highlight Gold</td>
+          <td class="value-cell">#eed37f</td>
+          <td class="token-cell">--color-highlight-gold</td>
+          <td class="role-cell">Accent borders for interactive cards or highlighted content, decorative elements</td>
+        </tr>
+        <tr>
+          <td class="no">15</td>
+          <td class="preview-cell"><div class="color-preview" style="background-color: #596170;"></div></td>
+          <td class="name-cell">Subtle Cadet</td>
+          <td class="value-cell">#596170</td>
+          <td class="token-cell">--color-subtle-cadet</td>
+          <td class="role-cell">Background for small, less prominent interactive elements</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <div class="footer-left">
+      <span>Global AI Music Education Program</span>
+      <span>Confidential</span>
+    </div>
+    <div class="footer-right">
+      Page 1 of 1
+    </div>
+  </footer>
+</body>
+</html>
