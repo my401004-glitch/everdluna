@@ -146,3 +146,4 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-05-26] 📥 새 지식 입수 — **sonicpass_seoul_arts_ad.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-26/sonicpass_seoul_arts_ad.html)
 - [2026-05-28] 작성된 스크립트와 주제를 기반으로 최적의 유튜브 제목, 설명 및 태그 전략을 구체적으로 기획해줘 → 산출물 sessions/2026-05-28T07-46/youtube.md
 - [2026-06-09] 📥 새 지식 입수 — **_________________________________.html**: <!DOCTYPE html> (출처: 00_Raw/2026-06-09/_________________________________.html)
+- [2026-06-09] writer가 제공한 스크립트를 기반으로 유튜브 콘텐츠의 구체적인 주제, 제목 후보군, 그리고 해당 콘텐츠에 최적화된 시청자 유입 전략(후킹 포인트)을 3가지 옵션으로 기획하라. → 산출물 sessions/2026-06-09T07-16/youtube.md
