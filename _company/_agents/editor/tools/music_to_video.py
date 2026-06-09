@@ -37,6 +37,59 @@ def _init_env_path():
         pass
 
 
+def _find_latest_media():
+    search_dirs = [
+        os.path.abspath(os.path.join(HERE, "../../..")),
+        "/Users/iyeongjae/.gemini/antigravity-ide/brain",
+        os.path.expanduser("~/connect-ai-music/output")
+    ]
+    extensions = ('.mp4', '.mov', '.avi', '.mkv', '.png', '.jpg', '.jpeg', '.webp')
+    latest_file = None
+    latest_mtime = 0
+    for sd in search_dirs:
+        if not os.path.exists(sd):
+            continue
+        for root, dirs, files in os.walk(sd):
+            skip_dirs = {'.venv', 'node_modules', '.git', '.next', '.cursor', '.windsurf', '.opencode'}
+            dirs[:] = [d for d in dirs if d not in skip_dirs]
+            depth = root[len(sd):].count(os.sep)
+            if depth > 4:
+                dirs.clear()
+                continue
+            for file in files:
+                if file.startswith('.'):
+                    continue
+                if "_with_bgm" in file.lower() or "promo_10s" in file.lower():
+                    continue
+                if file.lower().endswith(extensions):
+                    full_path = os.path.join(root, file)
+                    try:
+                        mtime = os.path.getmtime(full_path)
+                        if os.path.getsize(full_path) < 5000:
+                            continue
+                        if mtime > latest_mtime:
+                            latest_mtime = mtime
+                            latest_file = full_path
+                    except Exception:
+                        pass
+    return latest_file
+
+
+def _has_audio(video_path):
+    cmd = [
+        "ffprobe", "-v", "error",
+        "-select_streams", "a",
+        "-show_entries", "stream=codec_type",
+        "-of", "csv=p=0",
+        video_path
+    ]
+    try:
+        res = subprocess.run(cmd, capture_output=True, text=True)
+        return "audio" in res.stdout.lower()
+    except Exception:
+        return True
+
+
 def main():
     _init_env_path()
     if not shutil.which("ffmpeg"):
@@ -50,12 +103,18 @@ def main():
 
     video_path = (cfg.get("VIDEO_PATH") or "").strip()
     if not video_path:
-        print("❌ VIDEO_PATH 미설정. ⚙️ 클릭해서 영상 파일 경로 입력해주세요.")
-        sys.exit(1)
-    video_path = os.path.abspath(os.path.expanduser(video_path))
-    if not os.path.exists(video_path):
-        print(f"❌ 영상 파일 없음: {video_path}")
-        sys.exit(1)
+        _log("VIDEO_PATH 미지정. 최근 생성된 미디어 파일을 검색합니다...")
+        video_path = _find_latest_media()
+        if video_path:
+            _log(f"자동 발견한 미디어 사용: {video_path}", "ok")
+        else:
+            print("❌ 미디어 파일을 찾을 수 없습니다. ⚙️ 클릭해서 VIDEO_PATH에 영상 또는 이미지 경로를 입력해주세요.")
+            sys.exit(1)
+    else:
+        video_path = os.path.abspath(os.path.expanduser(video_path))
+        if not os.path.exists(video_path):
+            print(f"❌ 파일 없음: {video_path}")
+            sys.exit(1)
 
     # BGM 파일: 명시적 또는 마지막 생성된 거 자동
     music_path = (cfg.get("MUSIC_PATH") or "").strip()
@@ -69,29 +128,67 @@ def main():
         sys.exit(1)
 
     bgm_volume = float(cfg.get("BGM_VOLUME", 0.3))  # 0.0~1.0, 디폴트 30%
-    output_path = cfg.get("OUTPUT_PATH") or video_path.rsplit(".", 1)[0] + "_with_bgm.mp4"
+    is_image = video_path.lower().endswith(('.png', '.jpg', '.jpeg', '.webp', '.bmp'))
+    
+    if is_image:
+        output_path = cfg.get("OUTPUT_PATH") or video_path.rsplit(".", 1)[0] + "_promo.mp4"
+    else:
+        output_path = cfg.get("OUTPUT_PATH") or video_path.rsplit(".", 1)[0] + "_with_bgm.mp4"
     output_path = os.path.abspath(os.path.expanduser(output_path))
 
-    _log(f"영상: {video_path}")
+    _log(f"입력 미디어: {video_path} ({'이미지' if is_image else '비디오'})")
     _log(f"BGM: {music_path}")
     _log(f"BGM 볼륨: {int(bgm_volume * 100)}%")
     _log(f"출력: {output_path}")
 
-    # ffmpeg: 영상 + BGM 믹싱. 영상 길이에 BGM 맞춤 (BGM이 짧으면 loop, 길면 자름)
-    cmd = [
-        "ffmpeg", "-y",
-        "-i", video_path,
-        "-stream_loop", "-1",  # BGM 무한 loop (영상 길이까지)
-        "-i", music_path,
-        "-filter_complex",
-        f"[0:a]volume=1.0[orig];[1:a]volume={bgm_volume}[bgm];[orig][bgm]amix=inputs=2:duration=first[a]",
-        "-map", "0:v",
-        "-map", "[a]",
-        "-c:v", "copy",  # 영상 코덱 그대로 (재인코딩 없음 = 빠름)
-        "-c:a", "aac",
-        "-shortest",
-        output_path,
-    ]
+    if is_image:
+        # 이미지의 크기가 홀수면 H.264 인코딩 실패하므로 짝수로 맞춤
+        cmd = [
+            "ffmpeg", "-y",
+            "-loop", "1",
+            "-i", video_path,
+            "-i", music_path,
+            "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2",
+            "-c:v", "libx264",
+            "-tune", "stillimage",
+            "-c:a", "aac",
+            "-b:a", "192k",
+            "-pix_fmt", "yuv420p",
+            "-shortest",
+            output_path,
+        ]
+    else:
+        has_aud = _has_audio(video_path)
+        if has_aud:
+            cmd = [
+                "ffmpeg", "-y",
+                "-i", video_path,
+                "-stream_loop", "-1",
+                "-i", music_path,
+                "-filter_complex",
+                f"[0:a]volume=1.0[orig];[1:a]volume={bgm_volume}[bgm];[orig][bgm]amix=inputs=2:duration=first[a]",
+                "-map", "0:v",
+                "-map", "[a]",
+                "-c:v", "copy",
+                "-c:a", "aac",
+                "-shortest",
+                output_path,
+            ]
+        else:
+            # 원본 비디오에 오디오 스트림이 없는 경우
+            cmd = [
+                "ffmpeg", "-y",
+                "-i", video_path,
+                "-stream_loop", "-1",
+                "-i", music_path,
+                "-map", "0:v",
+                "-map", "1:a",
+                "-c:v", "copy",
+                "-c:a", "aac",
+                "-shortest",
+                output_path,
+            ]
+
     _log("ffmpeg 실행 중...")
     proc = subprocess.run(cmd, capture_output=True, text=True)
     if proc.returncode != 0:
@@ -104,10 +201,9 @@ def main():
         sys.exit(1)
 
     size_mb = os.path.getsize(output_path) / (1024 * 1024)
-    print(f"✅ 영상 + BGM 합성 완료")
+    print(f"✅ 비디오 합성 완료")
     print(f"  📁 {output_path}")
     print(f"  📊 {size_mb:.1f} MB")
-    print(f"  🎵 BGM 볼륨 {int(bgm_volume * 100)}%로 믹싱됨")
 
 
 if __name__ == "__main__":
