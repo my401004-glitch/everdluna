@@ -1,95 +1,76 @@
-// src/services/DiagnosisService.ts
-import { DiagnosisInput, DiagnosisResultSchema } from '../types/diagnosis.types';
-import { DiagnosisResult } from '../types/diagnosis';
+import { DiagnosisInput, GapScoreResult } from "../types"; // 가상의 타입 정의 파일 가정
+import { UserContext } from "../../models/UserContext";
 
 /**
- * @description 핵심 진단 점수 계산 서비스 레이어 (Business Logic).
- * 이 함수는 실제 DB 통신을 담당하는 Repository 패턴의 호출을 감싸며, 
- * 비즈니스 로직(KPI 가중치 적용, RBAC 검증 등)이 구동되는 곳입니다.
+ * @description 사용자의 진단 데이터(경험, 지식)를 기반으로 핵심 KPI와 Gap Score를 계산합니다.
+ * 이 서비스는 시스템의 가장 중요한 비즈니스 로직을 담고 있습니다.
+ * [근거: 2026-05-18T14-39/developer.md (API 연동 로직 구현)]
+ * @param input - 사용자의 진단 요청 데이터와 컨텍스트를 포함합니다.
+ * @returns 계산된 Gap Score 및 결과를 담은 객체입니다.
  */
-export class DiagnosisService { // 스키마 계약에 맞춰 데이터 구조를 강제함
+export class DiagnosisService {
 
     /**
-     * @description 진단 입력 데이터를 받아 최종 Diagnostic Result를 계산합니다. (Non-static version for unit tests)
+     * 핵심 KPI(Growth, Engagement, Monetization)와 목표 대비 격차 점수를 산출하는 메서드.
+     * 이 로직은 외부 데이터 소스나 복잡한 알고리즘에 의존할 수 있습니다.
+     * @param input - 사용자 입력 및 컨텍스트 정보 (예: quiz_results).
+     * @returns GapScoreResult 객체.
      */
-    public calculateDiagnosisScore(userContext: any, input: any): Promise<any> {
-        const growthScore = Math.random() * 100;
-        const engagementScore = Math.min(100, growthScore + Math.random() * 20);
-        return Promise.resolve({
-            gapScore: Math.floor(growthScore / 1.5),
-            diagnosisType: input.diagnosisType || 'Growth',
-            kpis: {
-                growthScore: parseFloat(growthScore.toFixed(2)),
-                engagementScore: parseFloat(engagementScore.toFixed(2)),
-                monetizationPotential: Math.random() * 50,
-            }
-        });
-    }
+    public static async calculateGapScore(input: DiagnosisInput): Promise<GapScoreResult> {
+        console.log("--- [DiagnosisService] 핵심 KPI 계산 시작 ---");
 
-    /**
-     * @description 진단 입력 데이터를 받아 최종 Diagnostic Result를 계산합니다.
-     * @param input - 사용자로부터 받은 진단 테스트 결과 데이터.
-     * @returns 성공적으로 계산된 DiagnosisResultSchema 객체.
-     */
-    public static calculateDiagnosisScore(input: DiagnosisInput): Promise<DiagnosisResultSchema> {
-        console.log("--- [Service Layer] Starting Diagnosis Score Calculation ---");
-        
-        if (!input || !input.testData) {
-            throw new Error("Invalid input data provided for diagnosis calculation.");
+        // 1. 입력 데이터 유효성 검사 (가드)
+        if (!input || !input.quiz_results || input.quiz_results.length === 0) {
+            throw new Error("진단에 필요한 quiz 결과 데이터가 누락되었습니다.");
         }
 
-        // 1. KPI 계산 로직 (Growth, Engagement, Monetization) 수행 가정
-        const growthScore = Math.random() * 100; // Placeholder: 실제는 복잡한 DB 집계 필요
-        const engagementScore = Math.min(100, growthScore + Math.random() * 20); 
-        // Designer님이 강조한 'Gap Score'의 핵심 지표가 됩니다.
+        // 2. Growth Score 계산 로직 (예: 학습량 기반)
+        const growthScore = await this.calculateGrowth(input.quiz_results); // 실제 API 호출 또는 복잡한 계산 가정
 
-        // 2. 최종 결과 구조 확정 및 반환 (Data Contract 준수)
-        const result: DiagnosisResultSchema = {
-            diagnosisId: `DIAG-${Date.now()}`,
-            contextId: input.userId, // 사용자를 식별하는 ID
-            timestamp: new Date().toISOString(),
-            // 핵심 KPI 데이터
-            kpis: {
-                growthScore: parseFloat(growthScore.toFixed(2)),
-                engagementScore: parseFloat(engagementScore.toFixed(2)),
-                monetizationPotential: Math.random() * 50, // 임의 값
-            },
-            // 최종 진단 점수 (Gap Score) - Designer가 가장 강조하는 수치
-            diagnosisResult: {
-                score: Math.floor(growthScore / 1.5), // Growth 대비 가중치 적용 예시
-                summaryText: `당신의 현재 성장은 ${Math.floor(growthScore)}점 수준이며, 잠재적 격차(${Math.round((100 - engagementScore) / 3)})를 파악했습니다.`,
-                recommendation: "구체적인 학습 플랜을 수립하고 꾸준히 데이터를 기록하세요.",
-            }
+        // 3. Engagement Score 계산 로직 (예: 참여 빈도 및 깊이 기반)
+        const engagementScore = input.userContext?.last_interaction_depth || 0;
+
+        // 4. Monetization Potential 계산 로직 (예: 특정 모듈 관심도 기반)
+        let monetizationPotential = this.calculateMonetization(input.quiz_results);
+
+        // 5. 최종 Gap Score 및 결과 구조화
+        const gapScore = Math.max(0, 100 - growthScore * 0.2); // 예시 공식: 성장 점수가 높을수록 격차는 줄어듦
+
+        const result: GapScoreResult = {
+            gap_score: parseFloat(gapScore.toFixed(2)),
+            growth_kpi: Math.min(100, growthScore),
+            engagement_kpi: Math.min(100, engagementScore * 10), // 가중치 적용 예시
+            monetization_kpi: parseFloat(monetizationPotential.toFixed(2)),
+            summary_message: `현재 격차 점수는 ${gapScore}점입니다. 목표 달성을 위해 다음 모듈을 추천합니다.`
         };
 
-        console.log("--- [Service Layer] Calculation Complete. Contract Adhered. ---");
-        return Promise.resolve(result);
+        console.log("--- [DiagnosisService] KPI 계산 완료 ---");
+        return result;
+    }
+
+    // **************************************************
+    // Private Helper Methods (실제 복잡한 로직이 들어갈 곳)
+    // **************************************************
+
+    private static async calculateGrowth(results: any[]): Promise<number> {
+        // [WHY] 이 부분은 실제 교육 과정 데이터와 연동되어야 합니다.
+        // 예시로 간단히 평균 점수의 제곱근을 사용합니다.
+        const average = results.reduce((sum, result) => sum + (result.score || 0), 0) / results.length;
+        return Math.sqrt(average * 10);
+    }
+
+    private static calculateMonetization(results: any[]): number {
+        // [WHY] 특정 키워드 노출 빈도나 '유료' 관련 질문에 대한 응답 강도를 분석합니다.
+        let score = 0;
+        for (const result of results) {
+            if (result.topic === 'Premium Feature') {
+                score += 15; // 가중치 부여
+            } else if (result.confidence > 0.8) {
+                score += 5;
+            }
+        }
+        return score;
     }
 }
 
-/**
- * @description 진단 점수 계산 및 사용량 로직을 통합 처리하는 서비스 레이어 함수.
- */
-export async function processDiagnosisScore(userId: string, inputData: any): Promise<DiagnosisResult> {
-    const growthScore = Math.random();
-    const engagementScore = Math.random() * 0.8 + 0.2;
-    const monetizationPotential = Math.random() > 0.7 ? 0.9 : 0.3;
-
-    return {
-        overallGapScore: Math.floor(Math.random() * 100) + 30,
-        isSuccessful: true,
-        summaryMessage: "현재 화성학 지식 습득에 상당한 격차(Gap)가 발견되었습니다. 핵심은 병진행과 기능적 관계 재정립입니다.",
-        kpis: {
-            growthScore,
-            engagementScore,
-            monetizationPotential
-        },
-        detailedReportData: {
-            weakestAreas: [
-                { areaName: "화성 기능 이해", score: Math.floor(Math.random() * 20) + 60, recommendation: "도미넌트 코드의 해결 관계를 집중적으로 학습해야 합니다." },
-                { areaName: "음정 편차 패턴", score: Math.floor(Math.random() * 20) + 50, recommendation: "화성적 맥락에서의 음정을 재점검하세요." }
-            ],
-            scoreBreakdown: { Harmony: Math.floor(Math.random() * 30) + 60, PitchDeviation: Math.floor(Math.random() * 20) + 50 }
-        }
-    };
-}
+export * from "./types";
