@@ -1,70 +1,67 @@
-import { Request, Response } from 'express'; // Assuming Express framework for simplicity
-import { DiagnosisResult, KpiMetric } from '../types/diagnosisTypes'; 
-import { processDiagnosisScore } from '../services/DiagnosisService';
-
-// Mock DB Interaction Layer (실제로는 ORM/DB Client를 사용)
-const mockDbSave = async (result: DiagnosisResult, kpis: KpiMetric[]) => {
-    console.log("--- [DB Write Simulation] ---");
-    // 실제 트랜잭션 처리 로직이 들어갈 자리입니다.
-    console.log(`✅ ${result.contextId}의 진단 결과를 성공적으로 저장했습니다.`);
-    kpis.forEach(kpi => {
-        console.log(`   - KPI 기록: ${kpi.metricName} (${kpi.value})`);
-    });
-    return true;
-};
+// src/controllers/diagnosisController.ts - Diagnosis Score API Controller
+import { Request, Response } from 'express';
+import { dbClient } from '../config/dbClient'; // 데이터베이스 클라이언트 가정
+import * as UserService from '../services/userService';
 
 /**
- * @description Diagnosis Score API Endpoint Handler
- * 진단 점수 계산 및 결과를 반환하는 핵심 비즈니스 로직을 수행합니다.
- * [근거: sessions/2026-05-19T09:57, sessions/2026-05-18T14-34/developer.md]
+ * @description 진단 점수 계산 및 DB 트랜잭션 커밋 처리 (핵심 로직)
+ * @param req - 요청 객체. 반드시 user_id를 포함해야 함.
+ * @param res - 응답 객체.
  */
 export const getDiagnosisScore = async (req: Request, res: Response) => {
-    // 1. 필수 입력값 검증 및 추출
-    const { contextId, diagnosisType, userId } = req.body; // POST 방식 또는 Body 파라미터 가정
-
-    if (!contextId || !diagnosisType) {
-        return res.status(400).json({ message: "Context ID와 Diagnosis Type이 필수입니다." });
+    // 1. [Validation] 사용자 ID 필수 체크 및 인증 과정 시뮬레이션
+    const { user_id } = req.body; // 요청 바디에서 user_id를 받도록 수정 가정
+    if (!user_id || typeof user_id !== 'string' || !isValidUUID(user_id)) {
+        return res.status(401).json({ message: "Unauthorized: Missing or invalid User ID." });
     }
 
-    const targetUserId = userId || "mock-user-123";
-
-    // 2. [RBAC] 권한 기반 접근 제어 체크 (가장 먼저 실행되어야 함)
-    // 실제로는 req.user 객체에서 Role을 가져와서 검사합니다.
-    const userRole = "Premium"; // Mocking: 임시로 프리미엄 역할 부여
-    if (!['Basic', 'Premium'].includes(userRole) || (diagnosisType === 'Monetization' && userRole !== 'Premium')) {
-        return res.status(403).json({ message: `권한 부족: ${diagnosisType} 진단은 ${userRole} 사용자에게 제한됩니다.` });
-    }
-
+    // 2. [Service] 실제 진단 점수 계산 로직 호출 (Mock)
     try {
-        // 3. 실제 DiagnosisService 호출
-        const serviceResult = await processDiagnosisScore(targetUserId, { contextId, diagnosisType });
+        // 이 부분에서 복잡한 AI/데이터 분석 로직이 실행되어 scores 객체를 산출합니다.
+        const { gapScore, potentialPoints } = await calculateDiagnosisMetrics(req.body);
 
-        // 4. 서비스 레이어의 결과를 컨트롤러 API 계약 형식으로 매핑
-        const resultData: DiagnosisResult = {
-            contextId,
-            score: serviceResult.overallGapScore,
-            analysisSummary: serviceResult.summaryMessage,
-            recommendation: serviceResult.detailedReportData.weakestAreas[0]?.recommendation || "추천 사항이 없습니다."
-        };
+        if (!gapScore || !potentialPoints) {
+            return res.status(500).json({ message: "Failed to calculate diagnosis metrics." });
+        }
 
-        const kpis: KpiMetric[] = [
-            { metricName: 'Growth', value: Math.round(serviceResult.kpis.growthScore * 100), description: '성장 지수' },
-            { metricName: 'Engagement', value: Math.round(serviceResult.kpis.engagementScore * 100), description: '참여도' },
-            { metricName: 'Monetization', value: Math.round(serviceResult.kpis.monetizationPotential * 100), description: '수익화 점수' }
-        ];
+        // 3. [Transaction Start] DB 트랜잭션 시작 및 데이터 영구 기록 (핵심)
+        await dbClient.transaction(async (tx) => {
+            const resultId = uuidv4(); // 새로운 결과 ID 생성
 
-        // 5. DB 저장 시뮬레이션
-        await mockDbSave(resultData, kpis);
+            // A. Diagnosis_Results 테이블에 진단 로그 기록
+            await tx('diagnosis_results')
+                .insert({
+                    result_id: resultId,
+                    user_id: user_id, // <--- User ID 강제 삽입
+                    diagnosis_type: 'GapScore',
+                    context_id: req.body.content_source || 'unknown',
+                    score_data: JSON.stringify({ gapScore: gapScore, potentialPoints: potentialPoints }),
+                });
 
-        // 6. 최종 응답 반환
-        return res.status(200).json({
-            success: true,
-            diagnosisResult: resultData,
-            kpiMetrics: kpis
+            // B. KPI_Metrics 테이블에 Growth/Engagement 등 개별 지표 기록
+            await tx('kpi_metrics')
+                .insert([
+                    { user_id: user_id, diagnosis_result_id: resultId, kpi_type: 'Growth', value: Math.round(gapScore) },
+                    // ... 다른 KPI들 추가 가능 (Engagement, Monetization 등)
+                ]);
+
+            console.log(`[SUCCESS] User ${user_id}의 진단 결과가 성공적으로 트랜잭션 커밋됨.`);
+        });
+
+
+        res.status(200).json({ 
+            message: "Diagnosis score calculated and saved successfully.", 
+            data: { gapScore, potentialPoints } 
         });
 
     } catch (error) {
-        console.error("Diagnosis API 처리 중 치명적인 오류 발생:", error);
-        return res.status(500).json({ success: false, message: (error as Error).message || "진단 점수 계산 및 저장에 실패했습니다." });
+        console.error("Error during diagnosis processing:", error);
+        // 트랜잭션 실패 시 에러 로그 및 사용자에게 피드백 제공
+        res.status(500).json({ message: "Internal server error during scoring process." });
     }
 };
+
+// Mock 함수 정의 (실제 프로젝트에서는 별도 서비스 파일로 분리되어야 함)
+const isValidUUID = (uuid: string): boolean => { /* UUID 검증 로직 */ return true; };
+const uuidv4 = () => 'mock-uuid-123'; 
+const calculateDiagnosisMetrics = async (input: any) => ({ gapScore: Math.floor(Math.random() * 100), potentialPoints: Math.floor(Math.random() * 200) });
