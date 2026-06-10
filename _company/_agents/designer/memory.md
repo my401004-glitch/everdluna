@@ -264,3 +264,8 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-10] Writer가 제공할 Episode 3 스크립트와 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 기반으로, 가장 효과적인 컨셉을 선택하여 최종 썸네일 디자인 시안 및 레이아웃 초안을 즉시 제작하라. → 산출물 sessions/2026-06-10T20-18/designer.md
 - [2026-06-10] Concept B 디자인 브리프를 기반으로 최종 Episode 3 썸네일 시안을 즉시 제작하여 출시 준비를 완료하라. → 산출물 sessions/2026-06-10T20-33/designer.md
 - [2026-06-10] 코다리님이 정의한 API 출력 구조와 Pain Point 시나리오를 기반으로, 학원 운영자에게 충격을 줄 수 있는 '진단 결과 보고서' Mockup 제작을 주도하고 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 적용하여 최종 시안을 완성하라. → 산출물 sessions/2026-06-10T21-03/designer.md
+- [2026-06-10] 최종 확정된 콘텐츠 컨셉에 맞춰 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 적용한 썸네일 디자인 시안과 핵심 에셋 제작 브리프를 작성하라. → 산출물 sessions/2026-06-10T21-48/designer.md
+- [2026-06-10] Writer가 작성할 리드 마그넷 페이지의 핵심 CTA 배치 및 시각적 흐름에 대해 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 적용한 Mockup 구성을 제안하라. → 산출물 sessions/2026-06-10T22-03/designer.md
+- [2026-06-10] Writer가 제공한 데이터 기반 스토리를 바탕으로, 'Pain Amplification $ightarrow$ Data-Driven Diagnosis $ightarrow$ System Solution $ightarrow$ Action'의 흐름을 극대화하는 최종 디자인 목업(Mockup)에 적용할 시각적 레이아웃 가이드와 핵심 에셋 요구사항을 구체화하라. → 산출물 sessions/2026-06-10T22-18/designer.md
+- [2026-06-10] Episode 3의 비주얼 에셋 및 Funnel Mockup(Hook, Gap Score 시각화) 제작을 위해 Writer가 제공할 최종 가이드라인(`Episode3_DesignBrief.md`)에 맞춰 핵심 디자인 목업 초안을 준비하세요. → 산출물 sessions/2026-06-10T22-48/designer.md
+- [2026-06-10] Writer가 제공한 가이드라인(`Episode3_DesignBrief.md`)과 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 적용하여, Episode 3의 핵심 메시지('Hook' 및 'Gap Score 시각화')에 대한 최종 디자인 목업 초안을 확정하라. → 산출물 sessions/2026-06-10T23-03/designer.md

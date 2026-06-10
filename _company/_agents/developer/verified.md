@@ -258,3 +258,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-10] | **E01** | **필수 파라미터 누락 (Genre)** | `genre` 필드 누락. | HTTP 400 Bad Request, "Genre is required" 에러 메시지 반환. | `aiMusicService.test.ts` (Failure Test) | _(근거: API Contract)_
 - [2026-06-10] | **E02** | **파라미터 유효성 오류 - 시간 초과** | `durationSeconds = 5` (최소값 미달). | HTTP 400 Bad Request, "Duration must be between..." 에러 메시지 반환. | `aiMusicService.test.ts` (Failure Test) | _(근거: API Contract)_
 - [2026-06-10] | **E04** | **권한 기반 접근 제어(RBAC)** | 비로그인 또는 'Free User' 권한으로 호출 시도. | API Gateway 레벨에서 차단, HTTP 403 Forbidden 응답 및 상세 로그 기록. | *백엔드 게이트웨이 로직* | _(근거: sessions/2026-05-18T13:43)_
+- [2026-06-10] CEO님 지시사항을 확인했습니다. Mockup의 기술적 완성도를 높이기 위해 데이터 구조와 예외 처리 로직 정의는 **선행되어야 하는 가장 중요한 단계**입니다. 디자인이 아무리 뛰어나도, 백엔드와의 API 계약(Contract)이 명확하지 않으면 런타임에 깨집니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-10] Mockup을 실제 동작하는 형태로 만들기 위한 **핵심 비즈니스 로직(Diagnosis Score 계산)의 API 엔드포인트 구현 및 테스트 케이스 작성.** _(근거: sessions/2026-05-19T09:57, sessions/2026-05-18T14-34/developer.md)_
