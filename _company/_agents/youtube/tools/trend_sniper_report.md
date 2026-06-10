@@ -1850,3 +1850,33 @@ Recently uploaded 유튜브 영상은 생산성 툴과 마케팅 트렌드에 �
 *   후킹 오프닝(첫 5초): "online shopping의 미래를 예측하고, MZ세대의 미신에 대한 전환"
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-06-10 18:58:04
+## 📡 키워드: 유튜브 자동화, 마케팅 트렌드
+
+📊 유튜브 트렌드 해킹 보고서
+
+**🌍 트렌드 해킹 분석**
+
+ recent 30일의 유튜브 Automatically video는 몇 가지 패턴을 보여주고 있습니다.
+
+1.  **유튜브 자동화**: 유튜브自动화는 최근에 가장 인기를 끌고 있는 키워드로, 많은 채널들이 이 주제를 다루고 있습니다. channels such as "Danny Why", "RealGrow", "SAGAR THE TECH" 등이 이 주제를 다루고 있으며, 이 주제의 관련 키워드는 " Claude Code", "AI", "YouTube Shorts Automation" etc. 로 나뉘어 있습니다.
+2.  **마케팅 트렌드**: 마케팅 트렌드는 유튜브 automatic화와 유튜브 automatically video는 상관없는 두 분야입니다. 하지만, 최근에 가장 인기를 끌고 있는 마케팅 트렌드 중 하나인 "MZ세대"가 유튜브 automatic화와 관련되었습니다.
+3.  **트렌드 해킹**: recent 30일의 유튜브 automatically video에서 많은 채널들이 이 주제를 다루고 있지만, still few channels are exploring the depth of this topic. 예를 들어, "zapiwala ai"가 " Claude Code"에 대해 full tutorial을 제공했으며, "SAGAR THE TECH"가 "YouTube Shorts Automation"에 대해 full course를 제공했습니다.
+
+**🎯 빈집 털기 전략**
+
+ recent 30일의 유튜브 automatically video에서 몇 가지 차별화 가능한 틈새 주제가 나왔습니다.
+
+1.  **YouTube Shorts Automation**: 유튜브 Shorts automation은 아직 still relatively new한 분야입니다. channels such as "SAGAR THE TECH"가 YouTube Shorts automation에 대해 full course를 제공하고 있습니다.
+2.  **AI와 로봇自动화**: AI와 로봇 자동화를 topic으로 하는 채널이 vẫn relativey few exist합니다. channels such as "zapiwala ai"가 AI와 로봇自动화를 topic으로 하는 full tutorial을 제공했습니다.
+3.  **MZ세대 트렌드**: MZ세대는 최근에 가장 인기를 끌고 있는 마케팅 트렌드입니다. channels such as "gorwaengja"가 MZ세대에 대해 discussion를 해주었습니다.
+
+**🎬 파괴적 영상 기획안**
+
+ recent 30일의 유튜브 automatically video에서 몇 가지 파괴적 영상 기획안이 나왔습니다.
+
+1.  **썸네일 카피**: 썸네일 카피는 유튜브 automatically video에서 파괴적 영상 기획안으로는 excellent한 선택입니다. channels such as "SAGAR THE TECH"가 YouTube
+
+---
