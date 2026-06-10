@@ -254,3 +254,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-10] * `Diagnosis_Results` 테이블에 `overall_gap_score`, `context_id`, 사용자 ID와 함께 결과 기록. _(근거: sessions/2026-05-18T43/developer.md)_
 - [2026-06-10] * `KPI_Metrics` 테이블에 `growth_score`, `engagement_score`, `monetization_potential`을 별도 레코드(혹은 JSONB 필드)로 저장. _(근거: sessions/2026-05-18T43/developer.md)_
 - [2026-06-10] * (필요시) 사용자의 권한(Role)이 변경되었는지 확인하고, 만약 `monetization_potential`이 높아진 경우 다음 결제 단계로 유도하는 플래그를 설정해야 합니다. _(근거: sessions/2026-05-18T13:43/developer.md)_
+- [2026-06-10] | **P01** | **성공 케이스 (Happy Path)** | `genre`, `durationSeconds`(10~300), `key` 등 필수 파라미터 모두 유효. | HTTP 200 OK 응답, 합성 URL 및 메타데이터(BPM, Key) 포함. | `aiMusicService.test.ts` (Success Test) | _(근거: test_response_payload)_
+- [2026-06-10] | **E01** | **필수 파라미터 누락 (Genre)** | `genre` 필드 누락. | HTTP 400 Bad Request, "Genre is required" 에러 메시지 반환. | `aiMusicService.test.ts` (Failure Test) | _(근거: API Contract)_
+- [2026-06-10] | **E02** | **파라미터 유효성 오류 - 시간 초과** | `durationSeconds = 5` (최소값 미달). | HTTP 400 Bad Request, "Duration must be between..." 에러 메시지 반환. | `aiMusicService.test.ts` (Failure Test) | _(근거: API Contract)_
+- [2026-06-10] | **E04** | **권한 기반 접근 제어(RBAC)** | 비로그인 또는 'Free User' 권한으로 호출 시도. | API Gateway 레벨에서 차단, HTTP 403 Forbidden 응답 및 상세 로그 기록. | *백엔드 게이트웨이 로직* | _(근거: sessions/2026-05-18T13:43)_
