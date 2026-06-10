@@ -200,3 +200,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-10] Designer가 확정한 시각 가이드라인(Dark Blue/Accent Yellow)과 Developer가 제시한 VFX 사양(`video_vfx_specs.md`)을 통합하여, 최종적으로 'Impossible Score' 영상의 데이터 기반 후킹 언어와 스토리라인이 반영된 완성도 높은 스크립트 초안을 작성하고 제출하라. → 산출물 sessions/2026-06-10T16-18/writer.md
 - [2026-06-10] 코다리 및 Designer가 확정한 API 스키마와 시각적 플로우를 통합하여, 잠재 고객의 이목을 끌 수 있는 설득형 콘텐츠(LP 카피) 초안 작성을 시작하고, 영상 스크립트의 초기 구조를 작성하라. → 산출물 sessions/2026-06-10T17-33/writer.md
 - [2026-06-10] 이전 논의된 데이터 기반 후킹 언어와 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 통합하여 Episode 1 영상에 대한 최종 스크립트(Hook, Body, CTA 포함)를 완성하고 제출하라. → 산출물 sessions/2026-06-10T17-48/writer.md
+- [2026-06-10] 레오가 확정한 '데이터 프로세스' 후킹 전략에 맞춰 Episode 2의 최종 스크립트 및 쇼츠/릴스용 클립 초안을 작성하여 제출하라. → 산출물 sessions/2026-06-10T18-18/writer.md
