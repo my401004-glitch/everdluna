@@ -1,0 +1,11 @@
+{
+    "musicId": "mus_abc123xyz789",
+    "audioUrl": "https://cdn.artcomp.co/music/mus_abc123xyz789.mp3?token=XYZ...",
+    "metadata": {
+        "genre": "Cinematic Orchestral",
+        "moodTags": ["Tense", "Dramatic", "Optimistic"],
+        "tempoBPM": 105,
+        "keySignature": "C Minor"
+    },
+    "status": "SUCCESS"
+}

@@ -1,0 +1,10 @@
+{
+    "contextSummaryKeywords": ["좌절", "돌파", "성장"],
+    "primaryKpiFocus": "Growth",
+    "targetMoodAndGenre": "Cinematic, Uplifting Orchestral",
+    "requiredDurationSeconds": { 
+        "min": 45, 
+        "max": 60 
+    },
+    "optionalInstrumentFocus": "Piano"
+}
