@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 11. 오전 4:36:22_
+_업데이트: 2026. 6. 11. 오전 5:22:29_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,29 +13,29 @@ _업데이트: 2026. 6. 11. 오전 4:36:22_
 - [2026-05-24] 최종 확정된 후킹 포인트와 최적 게시 시간 전략을 바탕으로, 첫 번째 영상 콘텐츠에 대한 릴스 및 피드 포맷별 실행 방안(게시물 시안 포함)을 즉시 작성하고 준비하라. → 산출물 sessions/2026-05-24T04-06/instagram.md
 - [2026-05-26] 📥 새 지식 입수 — **sonicpass_seoul_arts_ad.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-26/sonicpass_seoul_arts_ad.html)
 ### 🎨 Designer
-- [2026-06-10] Writer가 제공할 스크립트를 기반으로, 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow 테마, Glitch VFX)을 적용하여 Episode 2의 최종 썸네일 디자인 시안을 제작할 것. → 산출물 sessions/2026-06-10T18-48/designer.md
-- [2026-06-10] Writer가 제공한 Episode 2 스크립트와 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 기반으로, 최종 Episode 2 썸네일 디자인 시안을 즉시 제작하여 출시 준비를 완료하라. → 산출물 sessions/2026-06-10T19-03/designer.md
 - [2026-06-10] Writer가 제공할 Episode 3 스크립트를 바탕으로, 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX) 중 가장 효과적인 컨셉을 선택하여 최종 썸네일 디자인 시안 및 레이아웃 초안을 제작할 것. → 산출물 sessions/2026-06-10T19-18/designer.md
+- [2026-06-10] Writer가 제공할 최종 스크립트와 Funnel Blueprint를 기반으로, 랜딩 페이지의 가장 충격적인 Pain Point 시각화 Mockup 제작을 위한 상세한 디자인 브리프를 준비하라. → 산출물 sessions/2026-06-10T20-03/designer.md
+- [2026-06-10] Writer가 제공할 Episode 3 스크립트와 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 기반으로, 가장 효과적인 컨셉을 선택하여 최종 썸네일 디자인 시안 및 레이아웃 초안을 즉시 제작하라. → 산출물 sessions/2026-06-10T20-18/designer.md
 ### 💻 코다리
-- [2026-06-10] 확정된 스크립트 및 디자인 사양을 기반으로, 다음 콘텐츠(Episode 2) 제작에 필요한 AI 음악 합성 파이프라인의 API 통합 테스트 시나리오와 시스템 안정성 검증 계획서를 즉시 수립하라. → 산출물 sessions/2026-06-10T18-03/developer.md
-- [2026-06-10] 코다리가 수립한 시스템 안정성 검증 계획서를 기반으로, Episode 2 제작에 필요한 AI 음악 합성 파이프라인의 API 통합 테스트 시나리오와 시스템 안정성 검증 계획서를 즉시 수립하고 제출하라. → 산출물 sessions/2026-06-10T18-18/developer.md
 - [2026-06-10] Writer와 Designer가 확정한 시각적 사양과 스크립트 구조를 기반으로, 다음 영상 제작에 필요한 AI 음악 합성 파이프라인의 API 통합 테스트 시나리오 및 시스템 안정성 검증 계획서를 즉시 수립할 것. → 산출물 sessions/2026-06-10T18-48/developer.md
+- [2026-06-10] Writer와 Designer가 확정한 스크립트/비주얼 요소를 기반으로, API 통합 테스트 환경 구축에 필요한 Mock 데이터셋(JSON 형태) 초안을 작성하여 시스템 안정성 검증의 기반을 마련하라. → 산출물 sessions/2026-06-10T20-03/developer.md
+- [2026-06-10] Writer가 제공할 스크립트와 Designer의 시각적 요소를 기반으로, API 통합 테스트 환경에 필요한 Mock 데이터셋(JSON 형태)의 최종 구조를 확정하고, 시스템 안정성 검증을 위한 세부 테스트 시나리오를 업데이트하라. → 산출물 sessions/2026-06-10T20-18/developer.md
 ### 💼 현빈
-- [2026-06-10] 현재까지 확보된 KPI 및 수익화 퍼널 지도를 바탕으로 Episode 2 영상 제작에 필요한 구체적인 수익화 전환 전략과 가격 책정 모델을 재검토하여 보고하라. → 산출물 sessions/2026-06-10T18-03/business.md
 - [2026-06-10] Writer가 작성한 스크립트와 Designer가 제시한 비주얼 방향성을 기반으로, Episode 3의 잠재 고객 유도(Funnel) 전략 및 예상 KPI를 재검토하고 다음 콘텐츠 배포 계획을 수립할 것. → 산출물 sessions/2026-06-10T19-18/business.md
 - [2026-06-10] Funnel Blueprint에 따라, Landing Page 및 결제 시스템의 전환율 최적화를 위한 A/B 테스트 항목과 KPI 상세 측정 기준을 설계하라. → 산출물 sessions/2026-06-10T19-33/business.md
+- [2026-06-10] Writer로부터 제공받은 스크립트와 블루프린트를 기반으로, Funnel Blueprint에 명시된 A/B 테스트 항목(특히 'Gap Score' 기반 CTA 전략)을 실제 영상 및 랜딩 페이지 디자인에 적용하기 위한 구체적인 시각적 목표를 정의할 것. → 산출물 sessions/2026-06-10T19-48/business.md
 ### 📱 영숙
-- [2026-06-10] 개발자 에이전트의 작업 진행 상황을 모니터링하고, 관련 보고를 준비한다. → 산출물 sessions/2026-06-10T16-48/secretary.md
 - [2026-06-10] developer가 작성할 시스템 안정성 검증 계획서(Test Plan)가 디자인 및 기획 단계의 요구사항과 일관성을 갖는지 최종적으로 검토하고 피드백을 준비하십시오. → 산출물 sessions/2026-06-10T17-03/secretary.md
 - [2026-06-10] 코다리의 기술 보고서와 함께, MVP 출시를 위한 주간 마일스톤 체크리스트를 확정하고 팀 전체의 실행 계획을 조율하라. → 산출물 sessions/2026-06-10T17-18/secretary.md
+- [2026-06-10] Writer에게 스크립트와 블루프린트 제공을 요청하고, Business 에이전트가 다음 단계(디자인/개발 연계)를 즉시 시작할 수 있도록 작업 흐름을 정리하여 보고할 것. → 산출물 sessions/2026-06-10T19-48/secretary.md
 ### 🎵 루나
 - [2026-06-10] Writer의 스크립트 흐름과 Designer의 비주얼 가이드를 참고하여, Pain -> Gain 구조에 맞는 BPM과 키 변화를 설정하고 10초 BGM 생성을 위한 사운드 디자인 초안을 준비하라. → 산출물 sessions/2026-06-10T08-23/editor.md
 - [2026-06-10] Luna가 제시한 Pain $ightarrow$ Gain 구조에 따른 BPM 및 키 변화 블루프린트를 사용하여, 영상의 핵심 분위기를 반영하는 음악을 생성하고 오디오를 합성한다. → 산출물 sessions/2026-06-10T08-38/editor.md
 - [2026-06-10] Luna가 생성한 오디오 파일(`temp_pain_bgm.wav`, `temp_transition_bgm.wav`, `temp_gain_bgm.wav`)과 Designer가 제시한 시각 컨셉을 기반으로, 'Cinematic Pop' 스타일의 30초 유튜브 쇼츠용 영상 합성 작업을 즉시 시작하고 오디오와 비주얼을 완벽하게 동기화하라. → 산출물 sessions/2026-06-10T08-53/editor.md
 ### ✍️ Writer
-- [2026-06-10] 이전 논의된 'Pain $ightarrow$ Gain' 프레임워크와 객관적 데이터 제시 원칙을 적용하여, 다음 영상(Episode 2)에 필요한 최종 스크립트 초안을 작성하고 핵심 후킹 문구를 포함할 것. → 산출물 sessions/2026-06-10T18-48/writer.md
-- [2026-06-10] Episode 3 제작을 위해, 기존 성공 전략(컨셉 2 또는 컨셉 3)에 기반하여 다음 영상의 최종 스크립트 초안을 작성하고, 디자인이 적용할 수 있도록 핵심 메시지 구성을 포함할 것. → 산출물 sessions/2026-06-10T19-18/writer.md
-- [2026-06-10] Funnel Blueprint에 맞춰 Episode 3 스크립트 내의 CTA(A, B, C, D)가 자연스럽게 녹아들도록 최종 스크립트를 수정하고 배포 준비를 완료하라. → 산출물 sessions/2026-06-10T19-33/writer.md
+- [2026-06-10] Episode 3의 최종 스크립트와 Funnel Blueprint 파일을 즉시 제공하여 콘텐츠 제작 및 다음 단계 실행을 위한 자료를 확보할 것. → 산출물 sessions/2026-06-10T19-48/writer.md
+- [2026-06-10] Episode 3 최종 스크립트의 Voice Over(VO) 파일을 녹음하고 관련 파일을 공유하여 디자인 및 개발 작업이 즉시 시작될 수 있도록 준비하라. → 산출물 sessions/2026-06-10T20-03/writer.md
+- [2026-06-10] Episode 3의 최종 스크립트를 작성하고, 코다리가 정의한 데이터 구조에 맞춰 핵심 메시지(Gap Score)를 명확히 포함하도록 수정하여 제공하라. → 산출물 sessions/2026-06-10T20-18/writer.md
 ### 🔍 Researcher
 - [2026-06-10] comment_harvester 실행 결과를 분석하여 확보된 Pain Point 데이터를 기반으로, 다음 영상의 후크(Hook) 및 썸네일 전략에 가장 효과적인 'Pain $ightarrow$ Gain' 흐름을 도출하고 최적화 방안을 제시하라. → 산출물 sessions/2026-06-10T08-08/researcher.md
 - [2026-06-10] 기존 시장 반응 데이터에서 핵심 Pain Point 키워드 세트(최소 10개 이상)를 추출하여 Writer에게 전달할 수 있도록 정리하고, 이를 기반으로 다음 단계의 후킹 전략에 필요한 데이터를 최종적으로 도출하라. → 산출물 sessions/2026-06-10T11-23/researcher.md

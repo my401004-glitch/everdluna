@@ -249,3 +249,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-10] CEO 지시사항 검토 완료했습니다. "API 연동 및 에러 핸들링 테스트 최종 완료"는 단순히 단위 테스트(Unit Test)가 통과하는 것을 넘어, 시스템이 **실제 배포 환경의 예측 불가능한 실패**에도 불구하고 안정적으로 동작함을 의미해야 합니다. _(근거: sessions/2026-05-18T16-10/)_
 - [2026-06-10] CEO의 지시와 현재까지 진행된 산출물(Writer의 스크립트 초안, Designer의 썸네일 시각 가이드)을 검토했습니다. 전체적인 방향성('데이터 충격'과 '객관적 증명')은 매우 명확하고 강력합니다. _(근거: sessions/2026-06-10T15-33/youtube.md, Designer의 썸네일 시안)_
 - [2026-06-10] CEO님의 지시사항은 명확하고 매우 중요합니다. AI 음악 합성 파이프라인의 시스템 안정성 검증(System Stability Verification)이야말로 지금 가장 높은 우선순위를 가져야 할 핵심 과제입니다. ⚙️ _(근거: 지난 의사결정 로그, 코다리 개인 목표)_
+- [2026-06-10] | **인증 (Auth)** | JWT Token 필요 (User ID 유효성 검사) | RBAC 구현을 위해 사용자 식별자 필수. | _(근거: sessions/2026-05-18T13:43/developer.md)_
+- [2026-06-10] | **요청 파라미터** | `test_type`: (string, 필수) e.g., "vocal_range", "pitch_accuracy" <br> `context_id`: (string, 필수) 현재 진단 세션 고유 ID. | 어떤 테스트를 수행했는지 추적하여 DB에 저장해야 함. | _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-06-10] * `Diagnosis_Results` 테이블에 `overall_gap_score`, `context_id`, 사용자 ID와 함께 결과 기록. _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-06-10] * `KPI_Metrics` 테이블에 `growth_score`, `engagement_score`, `monetization_potential`을 별도 레코드(혹은 JSONB 필드)로 저장. _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-06-10] * (필요시) 사용자의 권한(Role)이 변경되었는지 확인하고, 만약 `monetization_potential`이 높아진 경우 다음 결제 단계로 유도하는 플래그를 설정해야 합니다. _(근거: sessions/2026-05-18T13:43/developer.md)_

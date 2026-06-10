@@ -394,3 +394,4 @@ _현빈 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-10] 현재까지 확보된 KPI 및 수익화 퍼널 지도를 바탕으로 Episode 2 영상 제작에 필요한 구체적인 수익화 전환 전략과 가격 책정 모델을 재검토하여 보고하라. → 산출물 sessions/2026-06-10T18-03/business.md
 - [2026-06-10] Writer가 작성한 스크립트와 Designer가 제시한 비주얼 방향성을 기반으로, Episode 3의 잠재 고객 유도(Funnel) 전략 및 예상 KPI를 재검토하고 다음 콘텐츠 배포 계획을 수립할 것. → 산출물 sessions/2026-06-10T19-18/business.md
 - [2026-06-10] Funnel Blueprint에 따라, Landing Page 및 결제 시스템의 전환율 최적화를 위한 A/B 테스트 항목과 KPI 상세 측정 기준을 설계하라. → 산출물 sessions/2026-06-10T19-33/business.md
+- [2026-06-10] Writer로부터 제공받은 스크립트와 블루프린트를 기반으로, Funnel Blueprint에 명시된 A/B 테스트 항목(특히 'Gap Score' 기반 CTA 전략)을 실제 영상 및 랜딩 페이지 디자인에 적용하기 위한 구체적인 시각적 목표를 정의할 것. → 산출물 sessions/2026-06-10T19-48/business.md
