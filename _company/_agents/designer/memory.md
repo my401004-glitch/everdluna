@@ -251,3 +251,5 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-10] 확정된 최종 비주얼 마스터(Dark Blue/Accent Yellow 테마)를 기반으로, 첫 번째 영상의 편집 및 시각 효과(VFX) 적용을 위한 상세 가이드라인을 최종 점검하고 필요한 리소스를 확인하라. → 산출물 sessions/2026-06-10T11-08/designer.md
 - [2026-06-10] Writer가 제공할 최종 스크립트/Hook 및 고정형 비주얼 컴포넌트 세트를 기반으로, 'Dark Blue/Accent Yellow' 테마를 적용한 최종 썸네일 디자인을 완성하라. → 산출물 sessions/2026-06-10T11-38/designer.md
 - [2026-06-10] 코다리의 기술적 준비를 바탕으로, 영상 제작에 필요한 핵심 장면별 '데이터 충격 지표' VFX 가이드라인을 확정하고 편집 초안을 준비하라. → 산출물 sessions/2026-06-10T12-08/designer.md
+- [2026-06-10] Cinematic Pop 스타일과 Dark Blue/Accent Yellow 테마를 적용한 최종 디자인 가이드라인(썸네일, 비주얼 컴포넌트)을 최종 점검하고 다음 콘텐츠에 즉시 적용할 수 있도록 준비하라. → 산출물 sessions/2026-06-10T15-19/designer.md
+- [2026-06-10] Writer가 선택한 최종 후킹 요소(제목 및 핵심 메시지)를 바탕으로 'Dark Blue/Accent Yellow' 테마의 썸네일 디자인 시안을 즉시 제작하라. → 산출물 sessions/2026-06-10T15-48/designer.md
