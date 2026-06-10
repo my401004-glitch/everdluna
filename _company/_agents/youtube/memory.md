@@ -154,3 +154,5 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-06-09] Writer가 확정한 스크립트와 Designer가 완성한 비주얼 마스터 가이드(V1.0)를 기반으로 첫 번째 10초 AI 교육 콘텐츠의 영상 제작 착수를 즉시 시작하고, 최종 결과물을 생성하라. → 산출물 sessions/2026-06-09T12-07/youtube.md
 - [2026-06-10] 최종적으로 확정된 기술 안정성 및 비즈니스 모델을 바탕으로, 다음 콘텐츠 제작 전략(Pain $ 	o $ Gain 구조 최적화)을 수립하고, 1개월 내 영상 4개 목표 달성을 위한 구체적인 콘텐츠 기획안을 제시하라. → 산출물 sessions/2026-06-10T09-53/youtube.md
 - [2026-06-10] 확정된 스크립트와 비주얼 가이드라인에 맞춰 첫 번째 영상의 실제 편집 및 시각 효과(VFX) 적용을 즉시 시작한다. → 산출물 sessions/2026-06-10T11-53/youtube.md
+- [2026-06-10] 레오가 제작하는 첫 번째 영상의 기획 의도와 목표(Pain $ightarrow$ Gain 구조)를 명확히 반영하여, 콘텐츠 배포 전략 및 제목/설명 초안을 준비하라. → 산출물 sessions/2026-06-10T12-23/youtube.md
+- [2026-06-10] youtube_account.json에 채널 핸들 목록을 정확히 입력하여 데이터 수집이 가능하도록 준비하고, comment_harvester 및 competitor_brief 실행에 필요한 환경을 확보하라. → 산출물 sessions/2026-06-10T12-38/youtube.md
