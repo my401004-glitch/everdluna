@@ -158,3 +158,4 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-06-10] youtube_account.json에 채널 핸들 목록을 정확히 입력하여 데이터 수집이 가능하도록 준비하고, comment_harvester 및 competitor_brief 실행에 필요한 환경을 확보하라. → 산출물 sessions/2026-06-10T12-38/youtube.md
 - [2026-06-10] youtube_account.json 파일에 채널 핸들 목록을 즉시 업데이트하여 데이터 수집 환경을 확보하고, comment_harvester 및 competitor_brief 실행 준비를 완료하라. → 산출물 sessions/2026-06-10T15-19/youtube.md
 - [2026-06-10] Writer가 확정한 데이터 기반 후킹 언어와 시장 트렌드(`memory.md`)를 바탕으로, 영상 제목 및 설명 초안을 최종 검토하고 콘텐츠 배포 전략을 즉시 적용하라. → 산출물 sessions/2026-06-10T16-33/youtube.md
+- [2026-06-10] 시스템 안정성 검증이 완료되는 대로, 랜딩 페이지 목업 및 필요한 모든 마케팅 에셋 취합 작업을 즉시 시작하여 출시 준비에 착수하라. → 산출물 sessions/2026-06-10T17-18/youtube.md

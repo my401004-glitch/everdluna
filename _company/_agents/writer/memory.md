@@ -198,3 +198,5 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-10] Researcher가 확보한 데이터를 바탕으로, 가장 클릭률 높은 영상 제목과 초반 후크 문구 3가지 안 중 최적의 조합을 선택하고, 이를 기반으로 상세한 영상 스크립트(후크/본문 분리) 초안을 작성하라. → 산출물 sessions/2026-06-10T15-48/writer.md
 - [2026-06-10] Designer가 확정한 'Dark Blue/Accent Yellow' 테마와 시각 가이드라인에 맞춰, 최종 스크립트의 각 섹션(Hook, 본론, CTA)에 필요한 시각적 강조 포인트를 재확인하고 텍스트를 최종 검토하라. → 산출물 sessions/2026-06-10T16-03/writer.md
 - [2026-06-10] Designer가 확정한 시각 가이드라인(Dark Blue/Accent Yellow)과 Developer가 제시한 VFX 사양(`video_vfx_specs.md`)을 통합하여, 최종적으로 'Impossible Score' 영상의 데이터 기반 후킹 언어와 스토리라인이 반영된 완성도 높은 스크립트 초안을 작성하고 제출하라. → 산출물 sessions/2026-06-10T16-18/writer.md
+- [2026-06-10] 코다리 및 Designer가 확정한 API 스키마와 시각적 플로우를 통합하여, 잠재 고객의 이목을 끌 수 있는 설득형 콘텐츠(LP 카피) 초안 작성을 시작하고, 영상 스크립트의 초기 구조를 작성하라. → 산출물 sessions/2026-06-10T17-33/writer.md
+- [2026-06-10] 이전 논의된 데이터 기반 후킹 언어와 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 통합하여 Episode 1 영상에 대한 최종 스크립트(Hook, Body, CTA 포함)를 완성하고 제출하라. → 산출물 sessions/2026-06-10T17-48/writer.md
