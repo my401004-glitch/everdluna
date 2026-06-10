@@ -257,3 +257,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-10] Writer가 제공할 것으로 예상되는 최종 스크립트 구조(Hook, Body, CTA)를 미리 시뮬레이션하여, 모든 챕터에 적용될 핵심 비주얼 콘셉트와 타이포그래피 규칙을 확정하고 디자인 준비를 시작하라. → 산출물 sessions/2026-06-10T16-18/designer.md
 - [2026-06-10] 코다리 및 Writer가 확정한 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX 지침)을 기반으로, Episode 1 영상에 사용할 최종 썸네일 디자인 시안 제작에 착수하라. → 산출물 sessions/2026-06-10T17-33/designer.md
 - [2026-06-10] Writer가 제공할 것으로 예상되는 최종 스크립트를 기반으로, 확정된 브랜드 비주얼 시스템과 Glitch VFX 지침을 적용하여 Episode 1 영상의 최종 썸네일 디자인 시안을 제작하라. → 산출물 sessions/2026-06-10T17-48/designer.md
+- [2026-06-10] Writer가 제공할 스크립트를 기반으로, 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow 테마, Glitch VFX)을 적용하여 Episode 2의 최종 썸네일 디자인 시안을 제작할 것. → 산출물 sessions/2026-06-10T18-48/designer.md

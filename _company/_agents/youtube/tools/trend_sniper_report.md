@@ -1880,3 +1880,65 @@ Recently uploaded 유튜브 영상은 생산성 툴과 마케팅 트렌드에 �
 1.  **썸네일 카피**: 썸네일 카피는 유튜브 automatically video에서 파괴적 영상 기획안으로는 excellent한 선택입니다. channels such as "SAGAR THE TECH"가 YouTube
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-06-11 03:35:22
+## 📡 키워드: 유튜브 자동화, AI 비즈니스
+
+**유튜브 트렌드 해킹 분석 보고서**
+
+### 1. 🌍 트렌드 해킹 분석
+
+*   **유튜브 자동화**: 유튜브 자동화와 AI 비즈니스와 관련된 채널이 많은 수 را 차지하고 있습니다.
+    *   channels: 
+        -   Danny Why, 유미카, RealGrow, SAGAR THE TECH, zapiwala ai
+        *   제목은 YouTube automation, AI business, Claude Code 등과 관련된 주제입니다. 
+        *   조회수는 상당히 높고, 이 채널들을 참고하기 좋은 트렌드입니다.
+*   **AI 비즈니스**: AI 비즈니스와 관련된 채널이 많은 수 را 차지하고 있습니다.
+    *   channels: 
+        -   Dan Martell, Bloomberg Television, Economy Media, Raj Shamani, The Economist
+        *   제목은 AI에 관한 다양한 주제가 있습니다. 
+        *   조회수는 상당히 높고, 이 채널들을 참고하기 좋은 트렌드입니다.
+*   **유튜브 자동화와 AI 비즈니스**: 두 가지 트렌드를 함께 참고하면 다양한 영역에 대한 지식을 얻을 수 있습니다.
+
+### 2. 🎯 빈집 털기 전략
+
+*   **차별화 가능한 틈새 주제**: 
+    *   유튜브自动화: 
+        -   YouTube automation
+        -   AI business
+        -   Claude Code
+        *   AI 비즈니스:
+            -   AI
+            -   Energy
+            -   Tech
+*   **빈집 털기 전략**:
+
+1.  **썸네일 카피**: 
+    *   유튜브 automatically
+    *   AI business
+2.  **제목 3개**:
+    1.  "AI Revolutionizing YouTube"
+    2.  "Automating Your YouTube Career"
+    3.  "Unlocking AI Business Opportunities"
+3.  **후킹 오프닝(첫 5초)**: 
+    *   animated logo
+    *   "Get Ready to Automate Your YouTube"
+
+### 3. 🎬 파괴적 영상 기획안
+
+*   **제목 1**:
+    *   "AI Revolutionizing YouTube"
+*   **제목 2**:
+    *   "Automating Your YouTube Career"
+*   **제목 3**:
+    *   "Unlocking AI Business Opportunities"
+
+*   **썸네일 카피 1**: 
+    *   유튜브 자동화
+*   **썸네일 카피 2**: 
+    *   AI 비즈니스
+*   **썸네일 카피 3**:
+    *   클라우
+
+---
