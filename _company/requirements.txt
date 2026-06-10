@@ -1,0 +1,5 @@
+requests==2.31.0
+pydantic>=2.0
+# AI API 연동 및 비디오 처리에 필요한 가상의 라이브러리들을 포함합니다.
+moviepy==1.0.3
+python-dotenv
