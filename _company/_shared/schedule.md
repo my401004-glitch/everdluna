@@ -1,25 +1,25 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 11. 오전 7:51:11_
+_업데이트: 2026. 6. 11. 오전 8:20:08_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-06-10] Episode 2의 조회수, 시청 지속 시간, 이탈률 등 핵심 데이터를 분석하고, 이를 기반으로 다음 콘텐츠(Episode 3)에서 구독자 유지율을 극대화하기 위한 후킹 전략과 영상 포맷별 배포 계획을 구체적으로 수립하라. → 산출물 sessions/2026-06-10T18-33/youtube.md
 - [2026-06-10] 연구 결과와 기획에 따라 다음 영상의 전체 배포 전략(업로드 시간, 제목, 태그)을 수립하고, 콘텐츠 제작 및 업로드 프로세스를 시작할 준비를 완료하라. → 산출물 sessions/2026-06-10T21-48/youtube.md
 - [2026-06-10] Episode 3 영상에 대한 구체적인 후킹 전략(Hook)과 타겟 시청자 행동 유도 플로우를 설계하고, 최적의 업로드 시간 및 배포 계획을 수립하여 즉시 실행 가능한 콘텐츠 제작 프로세스를 시작하라. → 산출물 sessions/2026-06-10T22-33/youtube.md
+- [2026-06-10] Writer가 작성한 Episode 3 스크립트 초안을 기반으로 실제 영상 제작에 필요한 Scene-by-Scene Breakdown(장면별 상세 구성) 및 편집 시퀀스 계획을 즉시 설계하고 실행 가능한 제작 로드맵을 확정하라. → 산출물 sessions/2026-06-10T23-03/youtube.md
 ### 📷 Instagram
 - [2026-05-24] 최근 추출된 후킹 포인트와 최적 게시 시간 전략을 바탕으로, 다음 콘텐츠 업로드에 필요한 Reels/피드 포맷별 구체적인 실행 방안을 최종적으로 제시하여 즉시 실행 가능한 계획을 작성하라. → 산출물 sessions/2026-05-24T02-09/instagram.md
 - [2026-05-24] 최종 확정된 후킹 포인트와 최적 게시 시간 전략을 바탕으로, 첫 번째 영상 콘텐츠에 대한 릴스 및 피드 포맷별 실행 방안(게시물 시안 포함)을 즉시 작성하고 준비하라. → 산출물 sessions/2026-05-24T04-06/instagram.md
 - [2026-05-26] 📥 새 지식 입수 — **sonicpass_seoul_arts_ad.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-26/sonicpass_seoul_arts_ad.html)
 ### 🎨 Designer
-- [2026-06-10] Writer가 작성할 리드 마그넷 페이지의 핵심 CTA 배치 및 시각적 흐름에 대해 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 적용한 Mockup 구성을 제안하라. → 산출물 sessions/2026-06-10T22-03/designer.md
 - [2026-06-10] Writer가 제공한 데이터 기반 스토리를 바탕으로, 'Pain Amplification $ightarrow$ Data-Driven Diagnosis $ightarrow$ System Solution $ightarrow$ Action'의 흐름을 극대화하는 최종 디자인 목업(Mockup)에 적용할 시각적 레이아웃 가이드와 핵심 에셋 요구사항을 구체화하라. → 산출물 sessions/2026-06-10T22-18/designer.md
 - [2026-06-10] Episode 3의 비주얼 에셋 및 Funnel Mockup(Hook, Gap Score 시각화) 제작을 위해 Writer가 제공할 최종 가이드라인(`Episode3_DesignBrief.md`)에 맞춰 핵심 디자인 목업 초안을 준비하세요. → 산출물 sessions/2026-06-10T22-48/designer.md
+- [2026-06-10] Writer가 제공한 가이드라인(`Episode3_DesignBrief.md`)과 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 적용하여, Episode 3의 핵심 메시지('Hook' 및 'Gap Score 시각화')에 대한 최종 디자인 목업 초안을 확정하라. → 산출물 sessions/2026-06-10T23-03/designer.md
 ### 💻 코다리
-- [2026-06-10] AI 음악 합성 파이프라인의 Mock 데이터셋 생성 및 API 통합 테스트 환경 구축을 즉시 실행하고, 시스템 안정성 검증을 위한 세부 테스트 시나리오를 확정하라. → 산출물 sessions/2026-06-10T20-48/developer.md
-- [2026-06-10] Designer가 요청한 Mockup 구현 가능성 및 예외 케이스(Failure Case) 데이터를 제공하여, 디자인이 기술적으로 정확하게 구현되도록 필요한 데이터 구조와 예외 처리에 대한 최종 검증 정보를 즉시 제공하라. → 산출물 sessions/2026-06-10T21-03/developer.md
 - [2026-06-10] Writer와 Designer가 정의한 데이터 구조(Gap Score, Mockup 요구사항)를 기반으로 AI 음악 합성 파이프라인의 API 통합 테스트 환경 구축 계획에 필요한 최종 데이터 스키마 및 예외 케이스 처리 로직을 확정하고 실행 준비를 완료하라. → 산출물 sessions/2026-06-10T22-18/developer.md
+- [2026-06-10] Designer가 제시한 비주얼 목업의 기술적 구현 가능성을 검증하고, AI 음악 합성 파이프라인에 적용할 데이터 스키마 및 예외 케이스 테스트 환경 구축 계획을 즉시 실행하라. → 산출물 sessions/2026-06-10T23-03/developer.md
+- [2026-06-10] 정의된 `schema.sql`을 기반으로 API 구조를 구현하고, 제시된 예외 케이스(`test_diagnosis.py`)를 실행하여 데이터 파이프라인의 기술적 안정성을 1차 검증합니다. → 산출물 sessions/2026-06-10T23-18/developer.md
 ### 💼 현빈
 - [2026-06-10] Writer로부터 제공받은 스크립트와 블루프린트를 기반으로, Funnel Blueprint에 명시된 A/B 테스트 항목(특히 'Gap Score' 기반 CTA 전략)을 실제 영상 및 랜딩 페이지 디자인에 적용하기 위한 구체적인 시각적 목표를 정의할 것. → 산출물 sessions/2026-06-10T19-48/business.md
 - [2026-06-10] 코다리와 Designer가 제공한 최종 기술 사양 및 디자인 가이드라인을 기반으로, Episode 3 콘텐츠의 잠재 고객 유도(Funnel) 전략과 예상 KPI를 재검토하고 즉시 실행 가능한 배포 계획을 수립하라. → 산출물 sessions/2026-06-10T21-18/business.md
