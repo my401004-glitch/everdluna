@@ -258,3 +258,5 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-10] 코다리 및 Writer가 확정한 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX 지침)을 기반으로, Episode 1 영상에 사용할 최종 썸네일 디자인 시안 제작에 착수하라. → 산출물 sessions/2026-06-10T17-33/designer.md
 - [2026-06-10] Writer가 제공할 것으로 예상되는 최종 스크립트를 기반으로, 확정된 브랜드 비주얼 시스템과 Glitch VFX 지침을 적용하여 Episode 1 영상의 최종 썸네일 디자인 시안을 제작하라. → 산출물 sessions/2026-06-10T17-48/designer.md
 - [2026-06-10] Writer가 제공할 스크립트를 기반으로, 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow 테마, Glitch VFX)을 적용하여 Episode 2의 최종 썸네일 디자인 시안을 제작할 것. → 산출물 sessions/2026-06-10T18-48/designer.md
+- [2026-06-10] Writer가 제공한 Episode 2 스크립트와 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 기반으로, 최종 Episode 2 썸네일 디자인 시안을 즉시 제작하여 출시 준비를 완료하라. → 산출물 sessions/2026-06-10T19-03/designer.md
+- [2026-06-10] Writer가 제공할 Episode 3 스크립트를 바탕으로, 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX) 중 가장 효과적인 컨셉을 선택하여 최종 썸네일 디자인 시안 및 레이아웃 초안을 제작할 것. → 산출물 sessions/2026-06-10T19-18/designer.md
