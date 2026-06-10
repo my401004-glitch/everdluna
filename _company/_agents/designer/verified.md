@@ -160,3 +160,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-09] | **Accent Color (행동 유도/기회)** | `#FFD700` (Accent Yellow) | Gap Score의 위험(Pain) 수치 강조, 최종 Gain(이득) 및 CTA 버튼에 사용. 즉각적인 시선 집중 유도. | | _(근거: Designer 검증된 지식)_
 - [2026-06-09] | **Body Color (가독성)** | `#F5F5F5` (Neutral Grey) | 본문 텍스트 배경으로 사용하여 어두운 배경과 대비시키고 가독성을 극대화합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-06-09] <create_file path="sessions/2026-06-09T08-37/designer.md"><content># 최종 편집 템플릿 레이아웃 구조 (V1.0): Gap Score 미션 브리핑\n\n## 디자인 컨셉: 미션 브리핑 (Mission Briefing)\n* **톤앤매너:** 어둡고, 진지하며, 긴박한 느낌. 데이터의 중요성을 강조하여 시청자의 즉각적인 주의를 사로잡음.\n* **핵심 비주얼 요소:** Pain $\rightarrow$ Gain 흐름을 극대화하여 시각적 긴장감과 해결의 명확성을 동시에 제공.\n\n## 컬러 시스템 적용\n| 요소 | 색상 코드 | 역할 및 효과 | 근거 |\n| :--- | :--- | _(근거: Designer 검증된 지식)_
+- [2026-06-09] | **Primary Color (신뢰/안정)** | Dark Blue (`#0A2463`) | 배경, 주요 정보 섹션. 전문성과 신뢰감을 극대화하여 데이터에 대한 신뢰를 구축합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-06-09] | **Accent Color (행동 유도/기회)** | Accent Yellow (`#FFD700`) | Pain(위험) 표시, Gain(이득), 최종 CTA 버튼에 사용. 즉각적인 시선 집중 및 행동 유도를 위해 사용합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-06-09] | **Background Color (가독성)** | Neutral Grey (`#F5F5F5`) | 본문 텍스트 배경으로 사용하여 Dark Blue와의 명확한 대비를 통해 가독성을 극대화합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-06-09] | **Title Typography** | Montserrat Bold | 모든 핵심 헤드라인(Pain, Gain)에 사용되어 강력한 메시지 전달력을 확보합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-06-09] | **Body Typography** | Noto Sans KR | 구체적인 데이터 및 상세 설명 텍스트에 사용하여 높은 가독성을 보장합니다. | | _(근거: Designer 검증된 지식)_
