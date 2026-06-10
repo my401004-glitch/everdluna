@@ -263,3 +263,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-10] Writer가 제공할 최종 스크립트와 Funnel Blueprint를 기반으로, 랜딩 페이지의 가장 충격적인 Pain Point 시각화 Mockup 제작을 위한 상세한 디자인 브리프를 준비하라. → 산출물 sessions/2026-06-10T20-03/designer.md
 - [2026-06-10] Writer가 제공할 Episode 3 스크립트와 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 기반으로, 가장 효과적인 컨셉을 선택하여 최종 썸네일 디자인 시안 및 레이아웃 초안을 즉시 제작하라. → 산출물 sessions/2026-06-10T20-18/designer.md
 - [2026-06-10] Concept B 디자인 브리프를 기반으로 최종 Episode 3 썸네일 시안을 즉시 제작하여 출시 준비를 완료하라. → 산출물 sessions/2026-06-10T20-33/designer.md
+- [2026-06-10] 코다리님이 정의한 API 출력 구조와 Pain Point 시나리오를 기반으로, 학원 운영자에게 충격을 줄 수 있는 '진단 결과 보고서' Mockup 제작을 주도하고 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 적용하여 최종 시안을 완성하라. → 산출물 sessions/2026-06-10T21-03/designer.md

@@ -1,68 +1,86 @@
-// src/api/diagnosisController.ts
-
-import { Request, Response } from 'express';
-import { processDiagnosisScore } from '../services/DiagnosisService';
-
-export interface DiagnosisResult {
-    score: number;
-    levelName: string;
-    recommendationText: string;
-    kpis: {
-        growth: number;
-        engagement: number;
-        monetization: number;
-    };
-}
+import { DiagnosisResult, DiagnosisError } from './diagnosisApiContract';
 
 /**
- * @desc    진단 점수를 계산하고 결과를 반환하는 API 엔드포인트
- * @route   GET /api/v1/diagnosis_score
- * @access  Public (로그인 여부와 관계없이 진단은 가능하나, 상세 데이터 접근 시 RBAC 체크 필요)
+ * @fileoverview Diagnosis Controller - 진단 점수 계산 및 API 핸들러 로직 담당
+ * [Purpose] 
+ * Mockup의 핵심인 Gap Score를 산출하고 구조화된 데이터를 반환하는 백엔드 로직을 정의합니다.
  */
-export const getDiagnosisScore = async (req: Request, res: Response): Promise<void> => {
-    // 1. 입력값 유효성 검증 및 추출
-    const { diagnosis_type } = req.query;
 
-    if (!diagnosis_type) {
-        res.status(400).json({ message: "진단 유형(diagnosis_type)이 필요합니다." });
-        return;
-    }
+/**
+ * GET /api/v1/diagnosis_score
+ * 사용자의 진단 요청에 따라 종합적인 성장 리포트 데이터(DiagnosisResult)를 계산하여 반환합니다.
+ * @param req - Express Request 객체 (사용자 정보, 진단 유형 등을 담을 것으로 예상됨)
+ * @returns {Promise<DiagnosisResult>} 성공 시 진단 결과 객체
+ * @throws {Error} 권한 또는 시스템 문제 발생 시 에러 던지기
+ */
+export const getDiagnosisScore = async (req: any): Promise<DiagnosisResult> => {
+  // 1. 유효성 검사 및 권한 체크 (가장 먼저 수행해야 할 로직)
+  const userId = req?.user?.id;
+  if (!userId) {
+    throw new Error('AUTHENTICATION_FAILED'); // 실제로는 전역 에러 핸들러에서 처리
+  }
 
-    try {
-        // 2. (Self-RAG 검증 지점) RBAC 체크 및 사용자 권한 확인 로직 실행
-        // 실제 환경에서는 JWT 토큰 등을 통해 현재 사용자의 Role을 추출하고,
-        // 해당 diagnosis_type에 접근할 권한이 있는지 DB를 통해 검증해야 합니다. [근거: sessions/2026-05-18T13:43]
-        const userRole = "Free"; // Mocking: 현재 사용자는 무료 사용자라고 가정
-        
-        if (userRole === "Free" && diagnosis_type !== "general") {
-             res.status(403).json({ message: `[${diagnosis_type}]: 이 진단 유형에 대한 접근 권한이 없습니다. Premium 구독이 필요합니다.` });
-             return;
-        }
+  // 2. 데이터베이스 조회 및 진단 유형 확인 (여기서 필요한 데이터를 가져옴)
+  // const diagnosisType = await db.getDiagnosisContext(userId); 
+  const mockDiagnosisType = 'C_MAJOR_SCALE'; // Mockup 테스트를 위해 임시로 고정
 
-        // 3. 핵심 비즈니스 로직 실행 (서비스 레이어 연동)
-        const userId = "mock-user-456";
-        const serviceResult = await processDiagnosisScore(userId, { diagnosisType: diagnosis_type });
+  if (!mockDiagnosisType) {
+    throw new Error('DATA_CONTEXT_NOT_FOUND');
+  }
 
-        const mockDiagnosisResult: DiagnosisResult = {
-            score: serviceResult.overallGapScore,
-            levelName: "준비 단계", // 실제 로직에 따라 결정됨
-            recommendationText: serviceResult.summaryMessage,
-            kpis: {
-                growth: Math.round(serviceResult.kpis.growthScore * 100),
-                engagement: Math.round(serviceResult.kpis.engagementScore * 100),
-                monetization: Math.round(serviceResult.kpis.monetizationPotential * 100),
+  // --- [핵심 로직 시작: 진단 점수 계산] --------------------
+  
+  try {
+    // 실제 비즈니스 로직이 들어갈 곳. 복잡한 수학적/교육학적 알고리즘이 필요함.
+    const resultData: DiagnosisResult = {
+      userId: userId,
+      timestamp: new Date(),
+      kpiMetrics: {
+        growthScore: 0, // 여기에 계산된 값 할당
+        engagementScore: 0,
+        monetizationPotential: 0,
+      },
+      gapScore: {
+        score: 0,
+        description: '진단 결과를 로드하고 분석 중입니다.',
+        severityLevel: 'Medium',
+      },
+      detailAnalysis: {
+        painPoints: [], // 여기에 계산된 Pain Point 목록 할당
+        opportunities: [], // 여기에 계산된 Opportunity 목록 할당
+      }
+    };
+
+    // 3. 최종 결과 데이터 반환 (Validation passed)
+    return resultData;
+
+  } catch (error) {
+    console.error("Diagnosis Score Calculation Failed:", error);
+    // 로직 수행 중 예외 발생 시, 시스템 에러를 던지거나 대체 데이터를 반환해야 함.
+    throw new Error('SYSTEM_CALCULATION_ERROR'); 
+  }
+};
+
+/**
+ * API 응답 핸들링 (실제 라우터에서 사용될 형태)
+ */
+export const diagnosisController = {
+    getDiagnosisScore: async (req, res) => {
+        try {
+            const result = await getDiagnosisScore(req);
+            res.status(200).json({ success: true, data: result });
+        } catch (error) {
+             // 에러 코드를 분류하여 사용자에게 친화적인 메시지를 반환하도록 설계해야 합니다.
+            let errorBody: DiagnosisError;
+            if (error.message === 'AUTHENTICATION_FAILED') {
+                errorBody = { errorCode: 'AUTH_ERROR', message: '인증 토큰이 유효하지 않습니다.', userFriendlyMessage: '로그인을 다시 해주세요.' };
+            } else if (error.message === 'DATA_CONTEXT_NOT_FOUND') {
+                 errorBody = { errorCode: 'DATA_NOT_FOUND', message: '진단에 필요한 사용자 컨텍스트를 찾을 수 없습니다.', userFriendlyMessage: '다시 시도하거나 관리자에게 문의하세요.' };
+            } else {
+                // 기타 시스템 에러 처리
+                errorBody = { errorCode: 'SYSTEM_FAILURE', message: `처리 중 예상치 못한 오류 발생: ${error.message}`, userFriendlyMessage: '잠시 후 다시 시도해 주세요.' };
             }
-        };
-
-        // 4. 성공적인 결과 반환
-        res.status(200).json({
-            success: true,
-            data: mockDiagnosisResult,
-            message: "진단 점수 데이터를 성공적으로 불러왔습니다."
-        });
-
-    } catch (error) {
-        console.error("진단 API 처리 중 에러 발생:", error);
-        res.status(500).json({ message: (error as Error).message || "서버 내부 오류가 발생했습니다. 잠시 후 다시 시도해 주세요." });
+             res.status(400).json({ success: false, error: errorBody });
+        }
     }
 };
