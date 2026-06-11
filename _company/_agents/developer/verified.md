@@ -264,3 +264,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-10] 1. `./src/database/schema.sql`: Diagnosis와 Music Synthesis 데이터를 통합 관리하기 위한 확장된 SQL 스키마를 정의했습니다. 특히 `MusicSynthesisData` 테이블을 추가하여 데이터 흐름의 최종 목표 지점을 명확히 했습니다. _(근거: sessions/2026-05-18T43/developer.md, CEO 지시)_
 - [2026-06-10] 2. `./src/api/diagnosis_controller.py`: 진단 점수 산출 및 음악 합성 요청을 처리하는 핵심 API 엔드포인트(Python/FastAPI)를 설계했습니다. 이 로직에 RBAC 체크와 필수 예외 케이스(`INACTIVE` 사용자, 누락된 ID 등)를 명시적으로 추가하여 안정성을 확보했습니다. _(근거: sessions/2026-05-18T13:43/developer.md, CEO 지시)_
 - [2026-06-10] 3. `./src/types/interfaces.ts`: 프론트엔드와 백엔드의 데이터 통일성(Single Source of Truth)을 위한 TypeScript 인터페이스를 정의했습니다. _(근거: 코딩 원칙 - 타입 엄격화)_
+- [2026-06-11] CEO님의 지시와 전체적인 프로젝트 흐름을 검토했습니다. _(근거: sessions/2026-06-11T01-13/developer.md)_
+- [2026-06-11] 1. **비주얼 가이드 확정:** Designer가 Gap Score 기반의 Pain $\rightarrow$ Gain 시각적 지침을 완료했습니다. _(근거: sessions/2026-06-11T01-13/designer.md)_
+- [2026-06-11] 2. **데이터 스키마 정의:** AI 음악 파이프라인에 필요한 데이터 필드와 관계를 담은 `music_directives.sql`을 생성했습니다. _(근거: sessions/2026-06-11T00-18/music_directives.sql)_
+- [2026-06-11] 3. **서비스 스켈레톤 구축:** 핵심 비즈니스 로직을 담을 TypeScript 서비스 파일(`MusicGeneratorService.ts`)의 구조를 마련했습니다. _(근거: sessions/2026-06-11T00-18/MusicGeneratorService.ts)_
+- [2026-06-11] 가장 중요한 것은, 이 스켈레톤 코드를 실제로 구동 가능한 상태로 만드는 것입니다. 단순히 데이터베이스에 스키마만 정의하는 것과, 그 데이터를 받아서 *의미 있는 음악적 지시어*를 만들어내는 것은 완전히 다른 문제입니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
