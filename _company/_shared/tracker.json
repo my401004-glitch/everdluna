@@ -676,6 +676,57 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-06-11T05-47/_report.md\n- 영숙: 최종 Go-Live 일정(6월 13일 금요일 오전 10시)에 맞춰 youtube, designer, editor의 최종 산출물 진행 상황을 일일\n- 루나: 영상 제작팀(내부 프로세스)이 '최종 A/V 제작 시작 지시문'에 따라 콘텐츠 제작을 즉시 실행하도록 최종 확인하고, 진행 상황 모니터링 계획을\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 최종 Go-Live 일정(6월 13일 금요일 오전 10시)에 맞춰 youtube, designer, editor의 최종 산출물 진행 상황을 일일로 취합하고 위험 신호를 파악하여 보고할 준비를 시작하라\n> 🔧 **도구 실행*",
       "completedAt": "2026-06-11T06:05:42.148Z"
+    },
+    {
+      "id": "20260611062236-kd6b",
+      "title": "**환경 변수 검증**: `MUSIC_API_KEY`, `DIAGNOSIS_SCHEMA_VERSION` 등이 환경에 정확히 설정되었는가?",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-06-11T06:22:36.205Z",
+      "status": "done",
+      "sessionDir": "2026-06-11T06-20",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-11T06-20/_report.md\n- Designer: 마스터 에셋 패키지(#0A2463, #FFD700)를 모든 영상 콘텐츠에 강제 적용했는지 최종 크로스 체크하고 시각적 품질 통일성을 확보했는지 \n- 코다리: `MusicGeneratorService`의 로직 보강 및 단위 테스트 환경 구축 완료 여부와 Go-Live 전 API 호출 및 데이터 동기화 \n- 영숙: 디자이너와 개발자의 최종 검토 결과를 바탕으로 'PRC 통합 검토 체크리스트'를 활용하여 전체 제작 프로세스의 안전장치(Go-Live 준비)가 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 마스터 에셋 패키지(#0A2463, #FFD700)를 모든 영상 콘텐츠에 강제 적용했는지 최종 크로스 체크하고 시각적 품질 통일성을 확보했는지 확인하여 보고하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 ",
+      "completedAt": "2026-06-11T06:24:35.739Z"
+    },
+    {
+      "id": "20260611062236-wpk4",
+      "title": "**DB 스키마 연동 확인**: 서비스가 참조하는 최소 필수 테이블(`Diagnosis_Results`)의 존재 및 접근 권한을 확인했는가?",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-06-11T06:22:36.206Z",
+      "status": "done",
+      "sessionDir": "2026-06-11T06-20",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-11T06-20/_report.md\n- Designer: 마스터 에셋 패키지(#0A2463, #FFD700)를 모든 영상 콘텐츠에 강제 적용했는지 최종 크로스 체크하고 시각적 품질 통일성을 확보했는지 \n- 코다리: `MusicGeneratorService`의 로직 보강 및 단위 테스트 환경 구축 완료 여부와 Go-Live 전 API 호출 및 데이터 동기화 \n- 영숙: 디자이너와 개발자의 최종 검토 결과를 바탕으로 'PRC 통합 검토 체크리스트'를 활용하여 전체 제작 프로세스의 안전장치(Go-Live 준비)가 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 마스터 에셋 패키지(#0A2463, #FFD700)를 모든 영상 콘텐츠에 강제 적용했는지 최종 크로스 체크하고 시각적 품질 통일성을 확보했는지 확인하여 보고하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 ",
+      "completedAt": "2026-06-11T06:24:35.740Z"
+    },
+    {
+      "id": "20260611062236-ba5y",
+      "title": "**모니터링 설정**: API 응답 지연(Latency)에 대한 경고 임계치(Threshold)를 설정하고, 5xx 에러 발생 시 알림 시스템이 활성화되었는가?",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-06-11T06:22:36.206Z",
+      "status": "done",
+      "sessionDir": "2026-06-11T06-20",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-11T06-20/_report.md\n- Designer: 마스터 에셋 패키지(#0A2463, #FFD700)를 모든 영상 콘텐츠에 강제 적용했는지 최종 크로스 체크하고 시각적 품질 통일성을 확보했는지 \n- 코다리: `MusicGeneratorService`의 로직 보강 및 단위 테스트 환경 구축 완료 여부와 Go-Live 전 API 호출 및 데이터 동기화 \n- 영숙: 디자이너와 개발자의 최종 검토 결과를 바탕으로 'PRC 통합 검토 체크리스트'를 활용하여 전체 제작 프로세스의 안전장치(Go-Live 준비)가 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 마스터 에셋 패키지(#0A2463, #FFD700)를 모든 영상 콘텐츠에 강제 적용했는지 최종 크로스 체크하고 시각적 품질 통일성을 확보했는지 확인하여 보고하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 ",
+      "completedAt": "2026-06-11T06:24:35.741Z"
     }
   ]
 }
