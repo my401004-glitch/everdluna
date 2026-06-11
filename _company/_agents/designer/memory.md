@@ -269,3 +269,7 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-10] Writer가 제공한 데이터 기반 스토리를 바탕으로, 'Pain Amplification $ightarrow$ Data-Driven Diagnosis $ightarrow$ System Solution $ightarrow$ Action'의 흐름을 극대화하는 최종 디자인 목업(Mockup)에 적용할 시각적 레이아웃 가이드와 핵심 에셋 요구사항을 구체화하라. → 산출물 sessions/2026-06-10T22-18/designer.md
 - [2026-06-10] Episode 3의 비주얼 에셋 및 Funnel Mockup(Hook, Gap Score 시각화) 제작을 위해 Writer가 제공할 최종 가이드라인(`Episode3_DesignBrief.md`)에 맞춰 핵심 디자인 목업 초안을 준비하세요. → 산출물 sessions/2026-06-10T22-48/designer.md
 - [2026-06-10] Writer가 제공한 가이드라인(`Episode3_DesignBrief.md`)과 브랜드 비주얼 시스템(Dark Blue/Accent Yellow, Glitch VFX)을 적용하여, Episode 3의 핵심 메시지('Hook' 및 'Gap Score 시각화')에 대한 최종 디자인 목업 초안을 확정하라. → 산출물 sessions/2026-06-10T23-03/designer.md
+- [2026-06-10] 코다리 및 Writer가 제공한 'Gap Score' 데이터 스키마와 시각적 가이드라인(`Episode3_DesignBrief.md`)을 기반으로, 사용자 불안감을 극대화하고 해결책(Gap Score)을 제시하는 최종 영상 썸네일 및 핵심 인포그래픽 Mockup 초안을 디자인하라. → 산출물 sessions/2026-06-10T23-33/designer.md
+- [2026-06-10] Leo가 확정한 스토리보드와 핵심 후킹 카피를 기반으로, 실제 영상 내에서 시각적 요소(Mockup)가 어떻게 배치되어야 하는지 구체적인 비주얼 시퀀스(Scene-by-Scene)를 최종 점검하고 수정하라. → 산출물 sessions/2026-06-10T23-48/designer.md
+- [2026-06-11] Writer가 제공한 최종 후킹 카피 및 데이터 구조(`Episode3_DesignBrief.md`)를 기반으로, 영상의 'Pain $ightarrow$ Gain' 프레임워크에 맞는 최종 시각적 목업(썸네일 포함) 초안을 확정하라. → 산출물 sessions/2026-06-11T00-03/designer.md
+- [2026-06-11] 최종 썸네일 컨셉 중 가장 강력한 '객관적 증거 제시' 컨셉을 선택하고, Writer의 카피와 결합된 최종 디자인 목업을 제작하도록 지시할 것. → 산출물 sessions/2026-06-11T00-18/designer.md
