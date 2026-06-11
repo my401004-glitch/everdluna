@@ -237,3 +237,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-11] Designer가 확정한 시각적 지침(Gap Score 시각화)을 AI 음악 합성 파이프라인에 적용하기 위한 데이터 스키마 및 예외 케이스 테스트 환경 구축 계획을 즉시 실행하도록 지시할 것. → 산출물 sessions/2026-06-11T00-18/developer.md
 - [2026-06-11] Designer가 확정한 시각적 지침(Gap Score 시각화)을 AI 음악 합성 파이프라인에 적용하기 위한 데이터 스키마 및 예외 케이스 테스트 환경 구축 계획을 즉시 실행하도록 코다리에게 최종 지시하고 기술적 구현 로드맵 확인 → 산출물 sessions/2026-06-11T01-13/developer.md
 - [2026-06-11] Designer가 확정한 시각적 지침(Gap Score 시각화)에 따라 AI 음악 합성 파이프라인 적용을 위한 데이터 스키마 구현 및 Phase 2 핵심 비즈니스 로직(`MusicGeneratorService`) 개발을 시작할 것. → 산출물 sessions/2026-06-11T01-28/developer.md
+- [2026-06-11] 확정된 시각적 지침(Visual Execution Guide)을 AI 음악 합성 파이프라인에 적용하기 위한 데이터 스키마를 즉시 통합하고, Phase 2 핵심 비즈니스 로직(`MusicGeneratorService`) 개발의 기술적 구현 로드맵을 확인하라. → 산출물 sessions/2026-06-11T02-13/developer.md
