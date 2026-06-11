@@ -182,3 +182,4 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-06-11] Writer가 설계한 5부작 Funnel Blueprint를 기반으로 다음 영상(1부)의 구체적인 스크립트 초안 및 A/V 제작을 즉시 시작하고 진행 상황을 모니터링하라. → 산출물 sessions/2026-06-11T07-35/youtube.md
 - [2026-06-11] Writer가 작성한 스크립트(Part 2)를 기반으로 실제 A/V 제작팀에게 최종 작업 지시 및 콘텐츠 제작 진행 상황을 실시간으로 모니터링하도록 즉시 명령하고 실행하라. → 산출물 sessions/2026-06-11T08-05/youtube.md
 - [2026-06-11] 레오가 제시한 5부작 Funnel Blueprint의 1부(첫 번째 영상)에 대한 최종 목표 및 핵심 메시지를 재확인하고, 이를 기반으로 영상 제작을 위한 구체적인 실행 로드맵(스크립트/A/V 지시사항 포함)을 작성하라. → 산출물 sessions/2026-06-11T08-50/youtube.md
+- [2026-06-11] Writer와 Designer가 제공한 'Kickoff 매뉴얼'을 바탕으로 첫 번째 영상(Part 1)의 소스 확보 및 촬영에 필요한 구체적인 A/V 제작 지시사항을 즉시 확정하고 실행 단계로 전환하라. → 산출물 sessions/2026-06-11T15-09/youtube.md

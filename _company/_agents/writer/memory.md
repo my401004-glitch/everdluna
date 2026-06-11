@@ -220,3 +220,6 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-11] Funnel Blueprint Part 1을 기반으로 나머지 영상(Part 2, 3, 4)에 대한 구체적인 스크립트 초안 및 Pain $ightarrow$ Gain 프레임워크를 적용하여 작성 시작 → 산출물 sessions/2026-06-11T09-05/writer.md
 - [2026-06-11] Designer가 제공한 마스터 에셋 가이드라인과 스토리보드 초안을 검토하고, 전체 스크립트의 내러티브 흐름(Pain $ightarrow$ Gain 강조)이 시각적으로 완벽하게 구현될 수 있도록 최종 톤앤매너를 미세 조정하고 제작팀 전달용 최종 스크립트 버전을 확정하라. → 산출물 sessions/2026-06-11T09-20/writer.md
 - [2026-06-11] 5부작 Funnel Blueprint의 1부 영상에 대한 최종 스크립트를 확정하고, Pain $ightarrow$ Gain 프레임워크를 적용하여 감성적 후킹과 행동 유도(CTA)가 명확한 최종 버전을 작성하라. → 산출물 sessions/2026-06-11T09-35/writer.md
+- [2026-06-11] 5부작 Funnel Blueprint에 기반하여 다음 영상(Part 2)에 필요한 구체적인 스크립트 초안을 작성하고, Pain $ ightarrow $ Gain 프레임워크를 명확히 적용할 것. → 산출물 sessions/2026-06-11T14-39/writer.md
+- [2026-06-11] 확정된 스크립트 및 스토리보드(Part 2)를 기반으로 A/V 제작팀에 전달할 최종 촬영 지침과 소스 확보 요구사항을 즉시 정리하고 배포하라. → 산출물 sessions/2026-06-11T14-54/writer.md
+- [2026-06-11] 확정된 디자인 시스템(#0A2463, #FFD700)을 기반으로, 모든 영상에 적용될 핵심 메시지 및 Pain $ightarrow$ Gain 프레임워크를 시각적으로 강조하는 텍스트 오버레이(Text Overlay)의 스타일 가이드라인 초안을 작성하라. → 산출물 sessions/2026-06-11T15-24/writer.md
