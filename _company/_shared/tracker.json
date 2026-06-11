@@ -574,6 +574,57 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-05-31T22-19/_report.md\n- 영숙: 회사 목표, 각 에이전트의 개인 목표(_agents/{id}/goal.md), 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작\n- 현빈: Secretary의 분석 결과를 바탕으로, 현재 가장 가치 있는 단일 작업 1개를 결정하고 해당 작업을 실행하기 위한 최소한의 다음 단계(실행 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 회사 목표, 각 에이전트의 개인 목표(_agents/{id}/goal.md), 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 이를 요약하여 보고할 준비를 하라.\n> 🔧 **도구 실행**",
       "completedAt": "2026-05-31T22:22:45.829Z"
+    },
+    {
+      "id": "20260611014534-r8oi",
+      "title": "**Sound Design:** 긴장감과 전문성을 유지하는 배경음악을 사용하고, 통계 제시 부분에서 사운드 이펙트(SFX)를 반드시 활용한다. (웅장함/긴박감 조절)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-11T01:45:34.942Z",
+      "status": "done",
+      "sessionDir": "2026-06-11T01-43",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-11T01-43/_report.md\n- 레오: 레오가 확정한 A/V 지침서(Master Production Guide)와 Designer의 디자인 목업을 통합하여 실제 영상 편집팀이 즉시 제\n- Designer: 레오의 A/V 지침서와 통합된 디자인 목업을 기반으로, 영상 편집팀이 실제 콘텐츠 제작을 시작할 수 있도록 시각적 프레임워크를 최종적으로 확정하\n- 영숙: 최종 패키지(A/V 지침서 및 디자인 목업)가 완성되는 즉시, 영상 제작팀의 일정에 맞추어 다음 단계 실행 일정을 최우선으로 설정하고 모든 팀원\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 레오가 확정한 A/V 지침서(Master Production Guide)와 Designer의 디자인 목업을 통합하여 실제 영상 편집팀이 즉시 제작 로드맵을 실행하도록 최종 패키지를 배포하고, 이 로드맵에 따른 영상 제작 순서를 최우선으로 ",
+      "completedAt": "2026-06-11T01:47:35.708Z"
+    },
+    {
+      "id": "20260611014534-qqk8",
+      "title": "**그래픽 일관성:** '경고'와 '데이터 증명' 색상 팔레트(Red-Black-Blue 계열 권장)를 모든 챕터에서 통일하여 사용한다.",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-11T01:45:34.943Z",
+      "status": "done",
+      "sessionDir": "2026-06-11T01-43",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-11T01-43/_report.md\n- 레오: 레오가 확정한 A/V 지침서(Master Production Guide)와 Designer의 디자인 목업을 통합하여 실제 영상 편집팀이 즉시 제\n- Designer: 레오의 A/V 지침서와 통합된 디자인 목업을 기반으로, 영상 편집팀이 실제 콘텐츠 제작을 시작할 수 있도록 시각적 프레임워크를 최종적으로 확정하\n- 영숙: 최종 패키지(A/V 지침서 및 디자인 목업)가 완성되는 즉시, 영상 제작팀의 일정에 맞추어 다음 단계 실행 일정을 최우선으로 설정하고 모든 팀원\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 레오가 확정한 A/V 지침서(Master Production Guide)와 Designer의 디자인 목업을 통합하여 실제 영상 편집팀이 즉시 제작 로드맵을 실행하도록 최종 패키지를 배포하고, 이 로드맵에 따른 영상 제작 순서를 최우선으로 ",
+      "completedAt": "2026-06-11T01:47:35.708Z"
+    },
+    {
+      "id": "20260611014534-w59f",
+      "title": "**자막/캡션:** 영상의 핵심 키워드는 반드시 크고 명확한 자막으로 처리하여, 사운드가 꺼진 환경에서도 정보가 전달되도록 한다.",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-11T01:45:34.943Z",
+      "status": "done",
+      "sessionDir": "2026-06-11T01-43",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-11T01-43/_report.md\n- 레오: 레오가 확정한 A/V 지침서(Master Production Guide)와 Designer의 디자인 목업을 통합하여 실제 영상 편집팀이 즉시 제\n- Designer: 레오의 A/V 지침서와 통합된 디자인 목업을 기반으로, 영상 편집팀이 실제 콘텐츠 제작을 시작할 수 있도록 시각적 프레임워크를 최종적으로 확정하\n- 영숙: 최종 패키지(A/V 지침서 및 디자인 목업)가 완성되는 즉시, 영상 제작팀의 일정에 맞추어 다음 단계 실행 일정을 최우선으로 설정하고 모든 팀원\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 레오가 확정한 A/V 지침서(Master Production Guide)와 Designer의 디자인 목업을 통합하여 실제 영상 편집팀이 즉시 제작 로드맵을 실행하도록 최종 패키지를 배포하고, 이 로드맵에 따른 영상 제작 순서를 최우선으로 ",
+      "completedAt": "2026-06-11T01:47:35.709Z"
     }
   ]
 }

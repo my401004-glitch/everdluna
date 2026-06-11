@@ -168,3 +168,4 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-06-11] Writer와 Designer가 산출한 결과물을 기반으로, 가장 높은 클릭률(CTR)과 시청 지속 시간을 확보할 수 있는 영상의 최종 스토리보드(Scene-by-Scene Breakdown)를 완성하라. → 산출물 sessions/2026-06-11T00-03/youtube.md
 - [2026-06-11] 레오에게 이전 메모리 기반의 확정된 스토리보드를 기반으로 실제 영상 편집에 필요한 Scene-by-Scene 상세 시퀀스 계획(A/V 지침서)을 즉시 실행하여 제작 로드맵을 구체화하도록 지시할 것. → 산출물 sessions/2026-06-11T00-18/youtube.md
 - [2026-06-11] 레오에게 확정된 스토리보드를 기반으로 A/V 지침서와 디자인 목업(Designer 산출물)을 통합하여 실제 영상 편집에 필요한 Scene-by-Scene 상세 시퀀스 계획(A/V 지침서)을 즉시 실행하도록 최종 지시하고 제작 로드맵을 구체화하도록 요청 → 산출물 sessions/2026-06-11T01-13/youtube.md
+- [2026-06-11] 레오가 확정한 A/V 지침서(Master Production Guide)와 Designer의 디자인 목업을 통합하여 실제 영상 편집팀이 즉시 제작 로드맵을 실행하도록 최종 패키지를 배포하고, 이 로드맵에 따른 영상 제작 순서를 최우선으로 설정하라. → 산출물 sessions/2026-06-11T01-43/youtube.md
