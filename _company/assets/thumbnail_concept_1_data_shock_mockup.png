@@ -1,0 +1,16 @@
+# Thumbnail Concept 1 Mockup (Data Shock)
+## Visual Description:
+This mockup follows Concept 1, focusing on high-contrast data visualization to evoke the "Pain $\rightarrow$ Gain" narrative immediately.
+
+**Background:** Dark Blue (`#0A2463`).
+**Main Graphic:** A large, semi-transparent red area representing 'Risk/Loss' occupying the top third of the frame. Overlay this with a sharp, upward-pointing arrow graphic in Accent Yellow (`#FFD700`) to symbolize the potential gain emerging from the loss.
+**Title Area (Montserrat Bold):** Positioned centrally below the graphic. The main title should be in White for maximum contrast against Dark Blue. Example: "당신의 실력, 왜 멈춰있는가?"
+**Subtitle Area (Noto Sans KR):** Placed below the title, clearly stating the solution premise. Example: "실용음악 AI 활용의 숨겨진 ROI 분석"
+**CTA Box:** A prominent button shape using Accent Yellow (`#FFD700`) with Dark Blue text for a strong Call to Action.
+
+**Layout Coordinates (Relative):**
+*   Top 30%: Red/Yellow Data Visualization Area
+*   Middle 40%: Main Title (Montserrat Bold, White) and Subtitle (Noto Sans KR)
+*   Bottom 30%: Accent Yellow CTA Button
+
+**Visual Quality Check:** The use of Dark Blue for trust and Accent Yellow for urgent action ensures the visual system is strictly applied. The Montserrat/Noto Sans pairing ensures high readability.
