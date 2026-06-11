@@ -167,3 +167,4 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-06-10] Designer가 완성한 시각적 목업을 기반으로, '불안감 극대화(Hook) $ightarrow$ 객관적 증거 제시(Proof)'의 플로우를 가장 효과적으로 전달하는 1분 내외의 영상 스토리보드와 핵심 후킹 카피(제목/썸네일 문구 초안)를 작성하라. → 산출물 sessions/2026-06-10T23-33/youtube.md
 - [2026-06-11] Writer와 Designer가 산출한 결과물을 기반으로, 가장 높은 클릭률(CTR)과 시청 지속 시간을 확보할 수 있는 영상의 최종 스토리보드(Scene-by-Scene Breakdown)를 완성하라. → 산출물 sessions/2026-06-11T00-03/youtube.md
 - [2026-06-11] 레오에게 이전 메모리 기반의 확정된 스토리보드를 기반으로 실제 영상 편집에 필요한 Scene-by-Scene 상세 시퀀스 계획(A/V 지침서)을 즉시 실행하여 제작 로드맵을 구체화하도록 지시할 것. → 산출물 sessions/2026-06-11T00-18/youtube.md
+- [2026-06-11] 레오에게 확정된 스토리보드를 기반으로 A/V 지침서와 디자인 목업(Designer 산출물)을 통합하여 실제 영상 편집에 필요한 Scene-by-Scene 상세 시퀀스 계획(A/V 지침서)을 즉시 실행하도록 최종 지시하고 제작 로드맵을 구체화하도록 요청 → 산출물 sessions/2026-06-11T01-13/youtube.md
