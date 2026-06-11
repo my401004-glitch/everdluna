@@ -625,6 +625,57 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-06-11T01-43/_report.md\n- 레오: 레오가 확정한 A/V 지침서(Master Production Guide)와 Designer의 디자인 목업을 통합하여 실제 영상 편집팀이 즉시 제\n- Designer: 레오의 A/V 지침서와 통합된 디자인 목업을 기반으로, 영상 편집팀이 실제 콘텐츠 제작을 시작할 수 있도록 시각적 프레임워크를 최종적으로 확정하\n- 영숙: 최종 패키지(A/V 지침서 및 디자인 목업)가 완성되는 즉시, 영상 제작팀의 일정에 맞추어 다음 단계 실행 일정을 최우선으로 설정하고 모든 팀원\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 레오가 확정한 A/V 지침서(Master Production Guide)와 Designer의 디자인 목업을 통합하여 실제 영상 편집팀이 즉시 제작 로드맵을 실행하도록 최종 패키지를 배포하고, 이 로드맵에 따른 영상 제작 순서를 최우선으로 ",
       "completedAt": "2026-06-11T01:47:35.709Z"
+    },
+    {
+      "id": "20260611054848-i4v5",
+      "title": "**브랜드 통일성:** 모든 에셋이 브랜드 비주얼 시스템(#0A2463, #FFD700)에 맞춰졌는가? (O/X)",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-06-11T05:48:48.189Z",
+      "status": "done",
+      "sessionDir": "2026-06-11T05-47",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-11T05-47/_report.md\n- 영숙: 최종 Go-Live 일정(6월 13일 금요일 오전 10시)에 맞춰 youtube, designer, editor의 최종 산출물 진행 상황을 일일\n- 루나: 영상 제작팀(내부 프로세스)이 '최종 A/V 제작 시작 지시문'에 따라 콘텐츠 제작을 즉시 실행하도록 최종 확인하고, 진행 상황 모니터링 계획을\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 최종 Go-Live 일정(6월 13일 금요일 오전 10시)에 맞춰 youtube, designer, editor의 최종 산출물 진행 상황을 일일로 취합하고 위험 신호를 파악하여 보고할 준비를 시작하라\n> 🔧 **도구 실행*",
+      "completedAt": "2026-06-11T06:05:42.146Z"
+    },
+    {
+      "id": "20260611054848-w42q",
+      "title": "**기술적 안정성:** 핵심 API 호출 및 데이터 동기화 프로세스가 100% 작동하는가? (O/X)",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-06-11T05:48:48.190Z",
+      "status": "done",
+      "sessionDir": "2026-06-11T05-47",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-11T05-47/_report.md\n- 영숙: 최종 Go-Live 일정(6월 13일 금요일 오전 10시)에 맞춰 youtube, designer, editor의 최종 산출물 진행 상황을 일일\n- 루나: 영상 제작팀(내부 프로세스)이 '최종 A/V 제작 시작 지시문'에 따라 콘텐츠 제작을 즉시 실행하도록 최종 확인하고, 진행 상황 모니터링 계획을\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 최종 Go-Live 일정(6월 13일 금요일 오전 10시)에 맞춰 youtube, designer, editor의 최종 산출물 진행 상황을 일일로 취합하고 위험 신호를 파악하여 보고할 준비를 시작하라\n> 🔧 **도구 실행*",
+      "completedAt": "2026-06-11T06:05:42.147Z"
+    },
+    {
+      "id": "20260611054848-ra17",
+      "title": "**콘텐츠 완성도:** 모든 에이전트의 산출물이 최종 'Go-Live' 버전에 맞춰졌는가? (O/X)",
+      "description": "자동 등록 (영숙 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "secretary"
+      ],
+      "createdAt": "2026-06-11T05:48:48.190Z",
+      "status": "done",
+      "sessionDir": "2026-06-11T05-47",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-11T05-47/_report.md\n- 영숙: 최종 Go-Live 일정(6월 13일 금요일 오전 10시)에 맞춰 youtube, designer, editor의 최종 산출물 진행 상황을 일일\n- 루나: 영상 제작팀(내부 프로세스)이 '최종 A/V 제작 시작 지시문'에 따라 콘텐츠 제작을 즉시 실행하도록 최종 확인하고, 진행 상황 모니터링 계획을\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 최종 Go-Live 일정(6월 13일 금요일 오전 10시)에 맞춰 youtube, designer, editor의 최종 산출물 진행 상황을 일일로 취합하고 위험 신호를 파악하여 보고할 준비를 시작하라\n> 🔧 **도구 실행*",
+      "completedAt": "2026-06-11T06:05:42.148Z"
     }
   ]
 }
