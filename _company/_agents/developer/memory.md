@@ -244,3 +244,6 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-11] MusicGeneratorService의 Mock API 환경을 구축하고, 'Happy Path', 'Missing Data', 'Invalid Input' 세 가지 예외 시나리오에 대한 End-to-End 검증을 즉시 실행하여 AI 음악 합성 파이프라인의 기술적 안정성을 확보할 것. → 산출물 sessions/2026-06-11T06-35/developer.md
 - [2026-06-11] MusicGeneratorService의 Mock 테스트 결과 및 기술적 안정성 항목(Mock 테스트 결과)을 'PRC 통합 검토 체크리스트 v2.0'에 삽입할 수 있도록 최종 증거 자료를 준비하라. → 산출물 sessions/2026-06-11T06-50/developer.md
 - [2026-06-11] 실제 서비스 트래픽을 가정하여 `monitor_sync.sh`에 대한 성능 부하 테스트(Stress Test)를 즉시 진행하고, 결과 보고서를 준비하라. → 산출물 sessions/2026-06-11T07-05/developer.md
+- [2026-06-11] Writer가 제시한 Gap Score 진단 테스트의 데이터 수집 프로세스에 대한 기술적 안정성 점검을 수행하여 시스템 신뢰도를 확보하고 보고서를 준비하라. → 산출물 sessions/2026-06-11T08-05/developer.md
+- [2026-06-11] Gap Score 진단 파이프라인 통합 감사 체크리스트를 최종 완성하고, 이를 기반으로 실제 서비스 트래픽에 대한 부하 테스트(`monitor_sync.sh`) 준비 작업을 즉시 시작하라. → 산출물 sessions/2026-06-11T08-20/developer.md
+- [2026-06-11] 최근 계획된 대로 `monitor_sync.sh` 스크립트의 성능 부하 테스트(`Stress Test`)를 즉시 진행하고, Gap Score 진단 파이프라인 체크리스트에 기반하여 로직 검증을 수행한 후 결과 보고서를 작성하라. → 산출물 sessions/2026-06-11T08-35/developer.md
