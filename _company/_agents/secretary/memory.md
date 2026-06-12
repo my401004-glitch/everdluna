@@ -763,3 +763,8 @@ _영숙 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-12] Writer의 스크립트 완료 일정을 모니터링하고, Designer가 작업에 착수할 수 있도록 전체 콘텐츠 제작 흐름(`AV_Production_Tracker`)을 점검하며 다음 실행 단계를 준비하라. → 산출물 sessions/2026-06-12T02-02/secretary.md
 - [2026-06-12] Writer가 제공한 스크립트와 Designer가 준비 중인 시각 자료 제작 계획(Visual Guide)을 통합하여 `AV_Production_Tracker` 파일을 최종 업데이트하고, 다음 단계의 촬영/편집 마일스톤 및 자원 할당을 확정하라. → 산출물 sessions/2026-06-12T02-10/secretary.md
 - [2026-06-12] AV_Production_Tracker에 명시된 촬영 스케줄(T-7일, T+0일~T+3일)에 맞춰 외부 촬영팀 및 편집 인력의 최종 자원 할당을 확정하고 예약하는 작업을 즉시 시작하라. → 산출물 sessions/2026-06-12T02-25/secretary.md
+- [2026-06-12] AV_Production_Tracker.md 파일에 Designer와 Writer의 최근 산출물(시각 자료 초안, 스토리텔링 가이드)을 반영하고, 다음 촬영/편집 마일스톤 및 자원 할당을 확정하여 업데이트하라. → 산출물 sessions/2026-06-12T02-55/secretary.md
+- [2026-06-12] AV_Production_Tracker.md 파일을 검토하여 Writer와 Designer가 제공한 모든 산출물(스크립트, 샷 리스트, 시각 자료 초안)을 기반으로 실제 촬영 및 편집 마일스톤에 맞춰 외부 자원 할당 및 촬영 일정을 최종 확정하고 Production Tracker를 업데이트하라. → 산출물 sessions/2026-06-12T03-10/secretary.md
+- [2026-06-12] 외부 촬영팀 및 편집팀에게 확정된 마일스톤(T+3 Days 본 촬영 실행)에 맞춰 자원을 최종 할당하고 예약하며, 전체 제작 일정을 확정하여 업데이트하라 → 산출물 sessions/2026-06-12T03-25/secretary.md
+- [2026-06-12] Writer가 진행하는 외부 커뮤니케이션 및 서명 확보 작업의 일정과 마일스톤을 추적하고, 모든 관련 기록을 통합하여 Production Tracker를 업데이트하라. → 산출물 sessions/2026-06-12T03-40/secretary.md
+- [2026-06-12] Writer가 준비한 리스크 관리 및 일정 정보를 바탕으로 외부 관계자 미팅 일정 초안을 작성하고, Google Calendar에 등록하는 작업을 진행하라. → 산출물 sessions/2026-06-12T03-55/secretary.md
