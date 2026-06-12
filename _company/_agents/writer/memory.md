@@ -236,3 +236,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-12] 이전 작업에서 정의된 'Pain $\rightarrow$ System $\rightarrow$ Proof' 스토리텔링 가이드라인에 맞춰, 다음 영상(Part 2)에 필요한 시각화 요소와 핵심 메시지를 명확히 정의하고 Designer가 즉시 비주얼 에셋 제작을 시작할 수 있도록 구체적인 샷 리스트 및 비주얼 요구사항을 최종 확정하라. → 산출물 sessions/2026-06-12T04-10/writer.md
 - [2026-06-12] Designer가 요청한 'Pain $ightarrow$ Proof' 스토리텔링 가이드라인과 코다리의 기술적 안정성 요구사항을 반영하여, 다음 영상 제작에 필요한 구체적인 시각화 데이터(주파수 그래프, 수치 비교 등)의 흐름 및 포맷을 정의하고 예비 자료를 준비하라. → 산출물 sessions/2026-06-12T08-52/writer.md
 - [2026-06-12] 코다리로부터 확보된 Technical_Specification과 Designer가 완성한 시각적 시스템 목업을 기반으로, 다음 영상 제작 로드맵(`AV_Production_Tracker.md`)에 맞춰 실제 영상 스크립트 및 핵심 메시지를 구체화하고 콘텐츠 실행 계획을 수립하라. → 산출물 sessions/2026-06-12T09-22/writer.md
+- [2026-06-12] AV_Production_Tracker.md를 기반으로 다음 영상의 구체적인 스토리라인, 감성적 후킹(Pain) 및 데이터 기반 신뢰(Proof) 구조를 최종 확정하고, 필요한 스크립트 초안을 작성하라. → 산출물 sessions/2026-06-12T09-37/writer.md
