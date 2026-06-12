@@ -187,3 +187,4 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-06-11] 통합 Funnel Blueprint의 첫 번째 영상(Part 1) 목표와 핵심 메시지를 명확히 정의하고, 이를 바탕으로 Writer가 작업할 구체적인 스토리라인 및 영상 흐름을 확정하도록 지시하라. → 산출물 sessions/2026-06-11T15-54/youtube.md
 - [2026-06-11] Writer와 Designer가 준비한 결과물을 바탕으로 콘텐츠 제작 실행 로드맵(`AV_Production_Tracker.md`)에 따라 다음 영상의 소스 확보 및 녹화 일정을 최종 점검하고 실행 단계로 전환할 것. → 산출물 sessions/2026-06-11T16-09/youtube.md
 - [2026-06-12] 최종 제작 로드맵과 리스크 로그를 기반으로, 다음 영상 제작에 필요한 마케팅 자산(썸네일 방향성 등)의 우선순위를 재조정하고 외부팀 요구사항을 반영할 준비를 하라. → 산출물 sessions/2026-06-12T04-40/youtube.md
+- [2026-06-12] Writer가 구체화한 스토리라인과 데이터 흐름을 바탕으로, 'Pain $ightarrow$ Proof' 프레임워크를 극대화하는 유튜브 영상의 최종 기획안(제목, 훅, 구성)을 작성하고 제작 일정을 확정하라. → 산출물 sessions/2026-06-12T09-22/youtube.md
