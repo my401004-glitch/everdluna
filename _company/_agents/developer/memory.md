@@ -252,3 +252,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-12] Designer와 Writer가 요청한 시각적 시스템 목업 가이드라인에 기반하여, AI 분석 로직에 대한 법률 검토 마크 통합을 위한 DB 스키마 및 API 엔드포인트 요구사항 초안을 정리하고, 이것이 콘텐츠 제작 파이프라인에 어떻게 통합되어야 하는지에 대한 기술적 흐름(Data Flow)을 구체화하라. → 산출물 sessions/2026-06-12T08-52/developer.md
 - [2026-06-12] Designer와 Writer가 요청한 시각적 시스템 목업 가이드라인(DB 스키마 및 API 요구사항)을 기반으로, AI 분석 로직의 신뢰도 확보를 위한 DB 스키마 설계(Part 1)를 완성하고, 이를 실제 콘텐츠 제작 파이프라인에 통합하기 위한 기술적 흐름(Data Flow)을 최종 확정하여 개발팀에 전달할 준비를 완료하라. → 산출물 sessions/2026-06-12T09-07/developer.md
 - [2026-06-12] 명령어에 따라 python3 video_uploader.py 스크립트를 실행하고, 제공된 인자(--file "/path/to/video.mp4", --title "영상 제목", --description "영상 설명", --category "gaming", --privacy-status "private")를 정확히 적용하여 비디오 업로드 작업을 수행하라. → 산출물 sessions/2026-06-12T09-32/developer.md
+- [2026-06-12] Designer가 확정한 시각적 시스템 요구사항과 콘텐츠 제작 파이프라인을 통합하여, AI 분석 로직에 대한 법률 검토 마크를 포함한 DB 스키마 설계(Part 1) 및 API 엔드포인트 요구사항 초안을 최종 정리하라. → 산출물 sessions/2026-06-12T09-37/developer.md
