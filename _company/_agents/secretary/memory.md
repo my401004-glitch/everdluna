@@ -760,3 +760,6 @@ _영숙 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-11] AV_Production_Tracker.md에 명문화된 녹화 필수 자원(Gap Score 시각화, Before/After 데이터 그래프)의 확보 계획을 최종 확정하고, 다음 영상 제작을 위한 실행 로드맵을 최종 점검하라. → 산출물 sessions/2026-06-11T16-24/secretary.md
 - [2026-06-11] AV_Production_Tracker.md 파일에 명시된 실행 로드맵을 기반으로, Writer와 Designer 간의 작업 진행 상황을 모니터링하고 다음 단계(소스 확보 및 녹화)를 위한 일정 조율을 준비하십시오. → 산출물 sessions/2026-06-11T16-39/secretary.md
 - [2026-06-12] Writer와 Designer의 산출물을 통합하여 '통합 Pre-Production Checklist'를 최종 확정하고, 실제 녹화 일정을 확정하는 미팅(또는 작업 분배)을 주관하라. → 산출물 sessions/2026-06-11T16-54/secretary.md
+- [2026-06-12] Writer의 스크립트 완료 일정을 모니터링하고, Designer가 작업에 착수할 수 있도록 전체 콘텐츠 제작 흐름(`AV_Production_Tracker`)을 점검하며 다음 실행 단계를 준비하라. → 산출물 sessions/2026-06-12T02-02/secretary.md
+- [2026-06-12] Writer가 제공한 스크립트와 Designer가 준비 중인 시각 자료 제작 계획(Visual Guide)을 통합하여 `AV_Production_Tracker` 파일을 최종 업데이트하고, 다음 단계의 촬영/편집 마일스톤 및 자원 할당을 확정하라. → 산출물 sessions/2026-06-12T02-10/secretary.md
+- [2026-06-12] AV_Production_Tracker에 명시된 촬영 스케줄(T-7일, T+0일~T+3일)에 맞춰 외부 촬영팀 및 편집 인력의 최종 자원 할당을 확정하고 예약하는 작업을 즉시 시작하라. → 산출물 sessions/2026-06-12T02-25/secretary.md
