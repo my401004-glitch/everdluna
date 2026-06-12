@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 12. 오후 7:10:15_
+_업데이트: 2026. 6. 12. 오후 7:40:18_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,9 +13,9 @@ _업데이트: 2026. 6. 12. 오후 7:10:15_
 - [2026-05-26] 📥 새 지식 입수 — **sonicpass_seoul_arts_ad.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-26/sonicpass_seoul_arts_ad.html)
 - [2026-06-11] Designer가 확정한 디자인 가이드라인과 스토리보드를 활용하여, 다음 영상(Part 2)에 필요한 Reels 및 피드 포맷별 시각 자료를 즉시 준비하라. → 산출물 sessions/2026-06-11T08-05/instagram.md
 ### 🎨 Designer
-- [2026-06-12] Writer가 정의한 데이터 흐름(Phase 1, 2, 3)과 Pain $ightarrow$ Proof 시각화 규칙에 맞춰 최종 메인 스틸컷 마스터 에셋의 시각적 목업 및 애니메이션 구체화를 즉시 착수하고, 코다리로부터 확보된 시스템 안정성 요구사항을 디자인 규칙에 통합하여 최종 목업을 완성하라. → 산출물 sessions/2026-06-12T09-07/designer.md
 - [2026-06-12] Writer가 확정한 스토리텔링 가이드라인과 코다리로부터 확보된 시스템 안정성 요구사항을 통합하여, 다음 영상에 필요한 메인 스틸컷 및 시각적 목업 마스터 에셋의 최종 디자인 규칙(Visual System Mockup Guideline)을 완성하라. → 산출물 sessions/2026-06-12T09-37/designer.md
 - [2026-06-12] Visual System Mockup Guideline을 기반으로 다음 영상에 필요한 메인 스틸컷 마스터 에셋 제작을 즉시 착수하라. → 산출물 sessions/2026-06-12T09-52/designer.md
+- [2026-06-12] Writer가 제공할 스토리라인과 데이터 흐름 요구사항을 바탕으로 다음 영상의 메인 스틸컷 및 시각적 목업에 필요한 디자인 규칙(Visual System Mockup Guideline)을 즉시 구체화하고 시각적 방향성을 제시하라. → 산출물 sessions/2026-06-12T10-37/designer.md
 ### 💻 코다리
 - [2026-06-12] Designer와 Writer가 요청한 시각적 시스템 목업 가이드라인(DB 스키마 및 API 요구사항)을 기반으로, AI 분석 로직의 신뢰도 확보를 위한 DB 스키마 설계(Part 1)를 완성하고, 이를 실제 콘텐츠 제작 파이프라인에 통합하기 위한 기술적 흐름(Data Flow)을 최종 확정하여 개발팀에 전달할 준비를 완료하라. → 산출물 sessions/2026-06-12T09-07/developer.md
 - [2026-06-12] 명령어에 따라 python3 video_uploader.py 스크립트를 실행하고, 제공된 인자(--file "/path/to/video.mp4", --title "영상 제목", --description "영상 설명", --category "gaming", --privacy-status "private")를 정확히 적용하여 비디오 업로드 작업을 수행하라. → 산출물 sessions/2026-06-12T09-32/developer.md
@@ -33,11 +33,11 @@ _업데이트: 2026. 6. 12. 오후 7:10:15_
 - [2026-06-11] 영상 제작팀(내부 프로세스)이 '최종 A/V 제작 시작 지시문'에 따라 콘텐츠 제작을 즉시 실행하도록 최종 확인하고, 진행 상황 모니터링 계획을 수립하라 → 산출물 sessions/2026-06-11T05-47/editor.md
 - [2026-06-11] Writer가 제공할 스크립트의 톤과 메시지에 맞춰 BGM 및 사운드 디자인 방향성을 제시하고, 영상 시각 자료와 오디오 요소 간의 조화(Sync)를 위한 초기 사운드 가이드라인을 설정할 것. → 산출물 sessions/2026-06-11T14-39/editor.md
 ### ✍️ Writer
-- [2026-06-12] 코다리로부터 확보된 Technical_Specification과 Designer가 완성한 시각적 시스템 목업을 기반으로, 다음 영상 제작 로드맵(`AV_Production_Tracker.md`)에 맞춰 실제 영상 스크립트 및 핵심 메시지를 구체화하고 콘텐츠 실행 계획을 수립하라. → 산출물 sessions/2026-06-12T09-22/writer.md
 - [2026-06-12] AV_Production_Tracker.md를 기반으로 다음 영상의 구체적인 스토리라인, 감성적 후킹(Pain) 및 데이터 기반 신뢰(Proof) 구조를 최종 확정하고, 필요한 스크립트 초안을 작성하라. → 산출물 sessions/2026-06-12T09-37/writer.md
 - [2026-06-12] Researcher가 제시한 주제 중 최적의 주제를 선택하고, 'Pain $\rightarrow$ Gain' 구조에 맞춰 영상의 핵심 스토리라인과 후킹 문구(제목 및 도입부) 초안을 작성해 주세요. → 산출물 sessions/2026-06-12T10-07/writer.md
+- [2026-06-12] 이전 논의된 'Pain $\rightarrow$ Proof' 프레임워크를 기반으로 다음 영상에 대한 구체적인 스토리라인, 핵심 메시지(Hook), 그리고 상세 스크립트 초안을 작성하여 제출하라. → 산출물 sessions/2026-06-12T10-37/writer.md
 ### 🔍 Researcher
-- [2026-06-11] 현재 실용음악 입시생 타겟의 유튜브 및 인스타그램에서 가장 반응이 좋은 최신 트렌드와 경쟁사 콘텐츠 소재를 리서치하여 5가지 잠재적 주제 아이디어를 제시하라. → 산출물 sessions/2026-06-11T03-58/researcher.md
 - [2026-06-11] 실용음악 입시생 타깃 시장에서 현재 가장 높은 잠재력을 가지는 영상 주제 3가지를 경쟁사 데이터 및 트렌드를 기반으로 심층 분석하고 우선순위를 결정하라. → 산출물 sessions/2026-06-11T07-20/researcher.md
 - [2026-06-12] 경쟁사 분석(`competitor_brief`) 및 자사 성과 진단(`my_videos_check`) 결과를 바탕으로 가장 매력적인 콘텐츠 주제와 Pain Point를 도출하여 3가지 후보를 제시해 주세요. → 산출물 sessions/2026-06-12T10-07/researcher.md
+- [2026-06-12] 이전 메모리에서 언급된 'competitor_brief' 및 'my_videos_check' 파일의 경로를 즉시 확인하고, 해당 데이터가 시스템에 존재하지 않을 경우 이를 생성하거나 필요한 데이터를 요청할 준비를 하라. → 산출물 sessions/2026-06-12T10-22/researcher.md
 
