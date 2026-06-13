@@ -254,3 +254,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-12] 명령어에 따라 python3 video_uploader.py 스크립트를 실행하고, 제공된 인자(--file "/path/to/video.mp4", --title "영상 제목", --description "영상 설명", --category "gaming", --privacy-status "private")를 정확히 적용하여 비디오 업로드 작업을 수행하라. → 산출물 sessions/2026-06-12T09-32/developer.md
 - [2026-06-12] Designer가 확정한 시각적 시스템 요구사항과 콘텐츠 제작 파이프라인을 통합하여, AI 분석 로직에 대한 법률 검토 마크를 포함한 DB 스키마 설계(Part 1) 및 API 엔드포인트 요구사항 초안을 최종 정리하라. → 산출물 sessions/2026-06-12T09-37/developer.md
 - [2026-06-12] Designer가 확정한 시각적 시스템 요구사항과 콘텐츠 제작 파이프라인(DB 스키마/API)을 통합하여, 영상 업로드 및 데이터 흐름에 필요한 기술적 준비 사항을 검토하고 다음 단계 구현 계획을 수립하라. → 산출물 sessions/2026-06-12T10-52/developer.md
+- [2026-06-13] 핵심 KPI인 '잠재적 Gap' 계산 로직(`diagnosis_score` API)을 구현하고, 웹 프론트엔드에 전달할 수 있는 테스트 엔드포인트를 구축하여 시스템 기반을 마련한다. → 산출물 sessions/2026-06-13T12-11/developer.md
