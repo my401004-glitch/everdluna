@@ -210,3 +210,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-13] | **Background Color** | Neutral Grey | `#F5F5F5` | 본문 영역 배경으로, Dark Blue와의 대비를 통해 가독성 극대화. | | _(근거: Designer 검증된 지식)_
 - [2026-06-13] | **Title Typography** | Montserrat Bold | N/A | 핵심 메시지(Pain, Gain)에 사용. 강력한 임팩트 제공. | | _(근거: Designer 검증된 지식)_
 - [2026-06-13] | **Body Typography** | Noto Sans KR | N/A | 데이터 및 상세 설명 텍스트에 사용. 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Primary Color (신뢰/안정)** | Dark Blue | `#0A2463` | 배경, 헤더, 주요 정보 섹션. 전문성과 신뢰감 확보. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Accent Color (행동 유도/기회)** | Accent Yellow | `#FFD700` | Pain(위험), Gain(이득), 최종 CTA 버튼 강조. 즉각적인 시선 집중 및 행동 유도. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Background Color (가독성)** | Neutral Grey | `#F5F5F5` | 본문 텍스트 배경, 데이터 영역. Dark Blue와의 명확한 대비를 통해 가독성 극대화. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Title Typography** | Montserrat Bold | - | 핵심 메시지(Pain, Gain) 강조. 강력한 시각적 임팩트 제공. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Body Typography** | Noto Sans KR | - | 구체적인 데이터 및 상세 설명 텍스트. 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
