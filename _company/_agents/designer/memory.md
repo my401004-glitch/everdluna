@@ -329,3 +329,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-13] 개발팀이 제공할 데이터 구조(Gap Score 등)를 미리 고려하여, MVP 화면에 필요한 핵심 와이어프레임 및 디자인 스펙(`diagnosis_report_mvp_spec.md`)의 초기 프레임워크를 준비한다. → 산출물 sessions/2026-06-13T12-11/designer.md
 - [2026-06-14] Writer가 제공할 스토리라인과 개발팀이 정의한 시각 시스템 가이드라인(Dark Blue/Accent Yellow)을 기반으로, 첫 번째 영상에 사용될 메인 스틸컷 에셋 제작을 위한 가장 구체적인 디자인 브리프와 레이아웃 요구사항을 최종적으로 정리하라. → 산출물 sessions/2026-06-14T06-53/designer.md
 - [2026-06-14] 개발팀이 제시할 Mock JSON 구조를 기반으로, 사용자 경험(UX)과 데이터 흐름이 완벽하게 반영된 최종 목업 스펙(`diagnosis_report_mvp_spec.md`)을 확정하고 디자인 가이드라인에 맞춰 시각 자료의 레이아웃 요구사항을 정리합니다. → 산출물 sessions/2026-06-14T07-23/designer.md
+- [2026-06-14] UserFlow_CriticalPath_V2.pdf와 Module_UX_Blueprint.pdf를 기반으로, Critical Path의 UI/UX 흐름과 실패 지점(Pain Point)을 시각화하고 학습 인터페이스(`Module_UX_Blueprint.pdf`)를 디자인하여 실행 계획을 준비하라. → 산출물 sessions/2026-06-14T08-08/designer.md
