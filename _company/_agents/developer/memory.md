@@ -264,3 +264,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-14] Designer가 확정한 '실패 화면(Error State Screen)' 목업에 맞춰, Diagnosis_Failure_Log 데이터를 기반으로 실제 API 호출 및 데이터 흐름 로직이 정확히 반영되는 MVP 수준의 프론트엔드 테스트 모듈 코드를 즉시 구현하고, 필요한 DB 스키마 확장안을 최종 검증하여 제공하라. → 산출물 sessions/2026-06-14T09-53/developer.md
 - [2026-06-14] Designer가 확정한 '실패 화면(Error State Screen)' 목업 및 필요한 모든 에셋 사양을 기반으로, `Diagnosis_Failure_Log` 데이터 필드 명세(`API_Failure_TestCases.md`, `API_Content_Feasibility_Check.md` 분석 결과)를 최종 확정하고, 프론트엔드 구현에 필요한 API 엔드포인트와 DB 스키마 확장안을 즉시 코드로 구체화하여 제공하라. → 산출물 sessions/2026-06-14T10-38/developer.md
 - [2026-06-14] Data Contract 확정(`Diagnosis_Failure_Log` 스키마)을 기반으로 End-to-End 테스트용 Mock API 스크립트 및 데이터 흐름 검증 모듈 코드를 작성하여 개발 착수를 준비하라. → 산출물 sessions/2026-06-14T10-53/developer.md
+- [2026-06-14] Designer가 제공한 최종 에셋 패키지를 기반으로, '실패 화면(Error State Screen)' 목업에 연동되는 핵심 플로우의 프론트엔드 프로토타입 코드를 즉시 구현하고 데이터 흐름을 통합 테스트를 진행할 준비를 한다. → 산출물 sessions/2026-06-14T11-23/developer.md
