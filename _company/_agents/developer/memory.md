@@ -276,3 +276,6 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-14] Designer가 확정한 브랜드 시스템(Dark Blue/Accent Yellow)과 Writer가 확정한 스크립트를 기반으로, 모션 그래픽 에셋 제작을 즉시 시작하여 콘텐츠 제작을 병렬화하라. → 산출물 sessions/2026-06-14T18-38/developer.md
 - [2026-06-14] 코다리에게 확정된 마스터 스케줄에 맞춰 Diagnosis Score Component의 안정화된 API Mockup 기반 UI/UX를 최종 완성하도록 지시하라. → 산출물 sessions/2026-06-14T18-53/developer.md
 - [2026-06-14] 현빈이 정의할 PoC 성공 기준과 시나리오를 바탕으로, 사용자 상태 변화에 따른 UI 동적 시뮬레이션 로직(Pain $ightarrow$ Proof $ightarrow$ Solution 흐름)을 통합할 수 있도록 개발 환경 및 API Mockup 기반의 Test Shell 구현을 준비하라. → 산출물 sessions/2026-06-14T19-23/developer.md
+- [2026-06-14] Designer가 확정한 Pain $ightarrow$ Gain 애니메이션 가이드라인과 코다리의 UI/UX 설계(DiagnosisFlowSimulator.tsx)를 기반으로, 사용자 상태 변화에 따른 UI 동적 시뮬레이션 로직을 구현하고 Mock API 통합 환경을 구축하라. → 산출물 sessions/2026-06-14T19-38/developer.md
+- [2026-06-14] 코다리에게 Mock API 결과를 UI 흐름에 동적으로 매핑하는 로직 구현을 시작하고, 안정화된 API Mockup과 UI 동적 시뮬레이션 로직 통합 작업을 진행하라. → 산출물 sessions/2026-06-14T19-53/developer.md
+- [2026-06-14] 코다리에게 `DiagnosisFlowSimulator.tsx`에 API 호출 상태(Loading, Success, Error)에 따라 UI가 동적으로 변하는 실제 코드를 구현하고, Mock API 결과를 UI 상태에 정확히 매핑하는 로직 통합 작업을 즉시 시작하도록 지시하라. → 산출물 sessions/2026-06-14T20-08/developer.md
