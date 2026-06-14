@@ -1,25 +1,25 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 15. 오전 5:12:11_
+_업데이트: 2026. 6. 15. 오전 5:28:17_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-06-14] 코다리와 Designer가 준비한 '진단 과정'을 핵심 스토리라인으로 하는 첫 번째 숏폼 콘텐츠 최종 스크립트(후킹 포인트 포함)를 확정하고, 업로드 준비 계획을 수립하라. → 산출물 sessions/2026-06-14T18-23/youtube.md
 - [2026-06-14] 확정된 마스터 제작 로드맵에 따른 영상 촬영 및 편집 분배 계획을 최종 실행하고 관리하며, 코다리의 에셋 제작과 동기화되도록 진행하라. → 산출물 sessions/2026-06-14T18-38/youtube.md
 - [2026-06-14] 레오에게 마스터 제작 로드맵에 따른 영상 촬영 및 편집 분배 계획을 최종 실행하고 관리하도록 지시하며, 코다리의 에셋 제작과 동기화되도록 진행할 것을 요청하라. → 산출물 sessions/2026-06-14T18-53/youtube.md
+- [2026-06-14] 코다리와 Designer가 완성한 PoC 통합 결과물을 바탕으로, 영상 콘텐츠 제작 로드맵(레오의 계획)에 맞춰 가장 효과적인 후킹 포인트와 시각 자료를 확정하고 다음 영상 제작을 위한 최종 스토리라인을 정리하라. → 산출물 sessions/2026-06-14T20-23/youtube.md
 ### 📷 Instagram
 - [2026-05-26] 📥 새 지식 입수 — **sonicpass_seoul_arts_ad.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-26/sonicpass_seoul_arts_ad.html)
 - [2026-06-11] Designer가 확정한 디자인 가이드라인과 스토리보드를 활용하여, 다음 영상(Part 2)에 필요한 Reels 및 피드 포맷별 시각 자료를 즉시 준비하라. → 산출물 sessions/2026-06-11T08-05/instagram.md
 - [2026-06-14] writer와 designer가 준비한 콘텐츠 초안에 맞춰, 가장 효과적인 후킹 포인트와 최적 게시 시간 전략을 반영하여 첫 번째 영상에 대한 릴스 및 피드 포맷별 게시물 시안(캡션 포함)을 즉시 작성하라. → 산출물 sessions/2026-06-14T15-23/instagram.md
 ### 🎨 Designer
-- [2026-06-14] Developer가 구현할 시뮬레이터의 핵심 흐름(Animation Flow)에 맞춰, Pain $ightarrow$ Gain 프레임워크를 극대화하는 최종 UI/UX 디자인 프로토타입을 제작하여 개발 환경에 즉시 적용 가능한 형태로 제공하라. → 산출물 sessions/2026-06-14T19-38/designer.md
 - [2026-06-14] 코다리가 제공할 데이터(ScoreResult)를 기반으로, 확정된 Pain $ightarrow$ Gain 애니메이션 흐름에 맞춰 최종 인터랙션 디자인을 적용하고 시각적 완성도를 높여라. → 산출물 sessions/2026-06-14T19-53/designer.md
 - [2026-06-14] 디자이너에게 최종 통합된 데이터 흐름과 기술적 제약사항을 반영하여 Pain $ightarrow$ Gain 애니메이션 흐름에 대한 시각적 완성도를 높이는 디자인 수정 및 프로토타입 최종 검토를 요청하라. → 산출물 sessions/2026-06-14T20-08/designer.md
+- [2026-06-14] 확정된 시각 시스템(Pain $ightarrow$ Gain 애니메이션 흐름)을 기반으로 개발된 기능에 디자인을 완전히 적용하여 UX/UI 완성도를 최고 수준으로 높여라. → 산출물 sessions/2026-06-14T20-23/designer.md
 ### 💻 코다리
-- [2026-06-14] Designer가 확정한 Pain $ightarrow$ Gain 애니메이션 가이드라인과 코다리의 UI/UX 설계(DiagnosisFlowSimulator.tsx)를 기반으로, 사용자 상태 변화에 따른 UI 동적 시뮬레이션 로직을 구현하고 Mock API 통합 환경을 구축하라. → 산출물 sessions/2026-06-14T19-38/developer.md
 - [2026-06-14] 코다리에게 Mock API 결과를 UI 흐름에 동적으로 매핑하는 로직 구현을 시작하고, 안정화된 API Mockup과 UI 동적 시뮬레이션 로직 통합 작업을 진행하라. → 산출물 sessions/2026-06-14T19-53/developer.md
 - [2026-06-14] 코다리에게 `DiagnosisFlowSimulator.tsx`에 API 호출 상태(Loading, Success, Error)에 따라 UI가 동적으로 변하는 실제 코드를 구현하고, Mock API 결과를 UI 상태에 정확히 매핑하는 로직 통합 작업을 즉시 시작하도록 지시하라. → 산출물 sessions/2026-06-14T20-08/developer.md
+- [2026-06-14] Mock API 결과와 UI 흐름을 통합한 PoC 환경에서 데이터 매핑 로직의 End-to-End 테스트를 실행하고 안정화하여 최종 프로토타입의 기술적 안정성을 확보하라. → 산출물 sessions/2026-06-14T20-23/developer.md
 ### 💼 현빈
 - [2026-06-14] Writer와 Designer가 도출한 시장 검증 프레임워크 및 시각화 요소를 바탕으로, 파일럿 그룹 대상의 KPI 측정 방식과 ROI 증명에 가장 효과적인 데이터 수집 방법을 정의하고 마케팅 액션 플랜을 최종 확정하라. → 산출물 sessions/2026-06-14T16-08/business.md
 - [2026-06-14] Writer와 Designer가 제출한 KPI/ROI 기반 가설 및 측정 도구(Gap Score, 감성 지수 등)를 통합하여 최종 Tiered Pricing Model을 확정하고 개발팀에 전달할 준비를 시작하라. → 산출물 sessions/2026-06-14T16-23/business.md

@@ -279,3 +279,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-14] Designer가 확정한 Pain $ightarrow$ Gain 애니메이션 가이드라인과 코다리의 UI/UX 설계(DiagnosisFlowSimulator.tsx)를 기반으로, 사용자 상태 변화에 따른 UI 동적 시뮬레이션 로직을 구현하고 Mock API 통합 환경을 구축하라. → 산출물 sessions/2026-06-14T19-38/developer.md
 - [2026-06-14] 코다리에게 Mock API 결과를 UI 흐름에 동적으로 매핑하는 로직 구현을 시작하고, 안정화된 API Mockup과 UI 동적 시뮬레이션 로직 통합 작업을 진행하라. → 산출물 sessions/2026-06-14T19-53/developer.md
 - [2026-06-14] 코다리에게 `DiagnosisFlowSimulator.tsx`에 API 호출 상태(Loading, Success, Error)에 따라 UI가 동적으로 변하는 실제 코드를 구현하고, Mock API 결과를 UI 상태에 정확히 매핑하는 로직 통합 작업을 즉시 시작하도록 지시하라. → 산출물 sessions/2026-06-14T20-08/developer.md
+- [2026-06-14] Mock API 결과와 UI 흐름을 통합한 PoC 환경에서 데이터 매핑 로직의 End-to-End 테스트를 실행하고 안정화하여 최종 프로토타입의 기술적 안정성을 확보하라. → 산출물 sessions/2026-06-14T20-23/developer.md
