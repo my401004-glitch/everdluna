@@ -226,3 +226,13 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-14] | **Background/Data** | Neutral Grey | `#F5F5F5` | 본문 텍스트 배경, 데이터 그래프 영역. Dark Blue와의 명확한 대비를 통해 가독성을 극대화합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-06-14] | **Title (헤드라인)** | Montserrat Bold | 대문자/강조 | 핵심 메시지(Pain, Gain)에 사용. 강력하고 즉각적인 시각적 임팩트 제공. | | _(근거: Designer 검증된 지식)_
 - [2026-06-14] | **Body (본문/데이터)** | Noto Sans KR | Regular/Medium | 구체적인 데이터 설명 및 상세 정보 제시. 높은 가독성을 보장합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Primary Color (신뢰/안정)** | Dark Blue (`#0A2463`) | 대시보드 배경, 주요 데이터 영역, 헤더. 전문성과 데이터에 대한 신뢰감 극대화. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Accent Color (행동 유도/기회)** | Accent Yellow (`#FFD700`) | Pain(위험) 표시, Gain(이득), 최종 CTA 버튼, 핵심 성과 수치 강조. 즉각적인 시선 집중 및 행동 유도. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Background Color (가독성)** | Neutral Grey (`#F5F5F5`) | 데이터 영역의 배경으로 사용. Dark Blue와의 명확한 대비를 통해 텍스트 가독성을 극대화합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Title Typography** | Montserrat Bold | 핵심 메시지(Pain, Gain) 및 대시보드 제목에 사용하여 강력한 헤드라인 강조. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Body Typography** | Noto Sans KR (Medium/Regular) | 데이터 수치, 상세 설명 텍스트에 사용하여 높은 가독성을 보장합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Primary Color (신뢰)** | Dark Blue | `#0A2463` | 배경, 주요 정보 영역, 신뢰성 확보. 전문성과 안정감 극대화. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Accent Color (행동 유도)** | Accent Yellow | `#FFD700` | Pain(위험), Gain(기회), 최종 CTA 버튼에 사용. 즉각적인 시선 집중 및 행동 유도. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Background/Data** | Neutral Grey | `#F5F5F5` | 본문 텍스트 배경으로 사용하여 Dark Blue와의 명확한 대비를 통해 가독성 극대화. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Title Typography** | Montserrat Bold | N/A | 핵심 메시지(Pain, Gain) 강조. 강력한 시각적 임팩트 제공. | | _(근거: Designer 검증된 지식)_
+- [2026-06-14] | **Body Typography** | Noto Sans KR | N/A | 데이터 및 상세 설명 텍스트에 사용. 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_

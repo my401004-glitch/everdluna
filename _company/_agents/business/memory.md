@@ -411,3 +411,5 @@ _현빈 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-14] 파일럿 ICP 및 ROI 기반의 Tiered Pricing Model(구독/패키지 옵션 2~3안)을 즉시 설계하여 제시하라. → 산출물 sessions/2026-06-14T13-53/business.md
 - [2026-06-14] secretary가 제공한 정보를 바탕으로, 현재 가장 가치 있는 단일 작업을 최종적으로 결정하고 해당 작업에 대한 우선순위와 KPI 목표를 설정하세요. → 산출물 sessions/2026-06-14T14-23/business.md
 - [2026-06-14] 지난 사이클에서 논의된 파일럿 그룹(Pilot Group)에 대한 구체적인 ICP(Ideal Customer Profile)와 예상되는 핵심 ROI 지표(Key ROI Metrics)를 정의하고, 이를 바탕으로 시장 검증 기준을 설정하라. → 산출물 sessions/2026-06-14T14-38/business.md
+- [2026-06-14] Writer와 Designer가 도출한 시장 검증 프레임워크 및 시각화 요소를 바탕으로, 파일럿 그룹 대상의 KPI 측정 방식과 ROI 증명에 가장 효과적인 데이터 수집 방법을 정의하고 마케팅 액션 플랜을 최종 확정하라. → 산출물 sessions/2026-06-14T16-08/business.md
+- [2026-06-14] Writer와 Designer가 제출한 KPI/ROI 기반 가설 및 측정 도구(Gap Score, 감성 지수 등)를 통합하여 최종 Tiered Pricing Model을 확정하고 개발팀에 전달할 준비를 시작하라. → 산출물 sessions/2026-06-14T16-23/business.md
