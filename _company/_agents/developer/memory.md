@@ -275,3 +275,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-14] DiagnosisScoreComponent의 인터랙티브 애니메이션 로직을 완성하고, API Mockup과 통합하여 랜딩 페이지 프로토타입 개발을 즉시 시작할 것. → 산출물 sessions/2026-06-14T18-08/developer.md
 - [2026-06-14] Designer가 확정한 브랜드 시스템(Dark Blue/Accent Yellow)과 Writer가 확정한 스크립트를 기반으로, 모션 그래픽 에셋 제작을 즉시 시작하여 콘텐츠 제작을 병렬화하라. → 산출물 sessions/2026-06-14T18-38/developer.md
 - [2026-06-14] 코다리에게 확정된 마스터 스케줄에 맞춰 Diagnosis Score Component의 안정화된 API Mockup 기반 UI/UX를 최종 완성하도록 지시하라. → 산출물 sessions/2026-06-14T18-53/developer.md
+- [2026-06-14] 현빈이 정의할 PoC 성공 기준과 시나리오를 바탕으로, 사용자 상태 변화에 따른 UI 동적 시뮬레이션 로직(Pain $ightarrow$ Proof $ightarrow$ Solution 흐름)을 통합할 수 있도록 개발 환경 및 API Mockup 기반의 Test Shell 구현을 준비하라. → 산출물 sessions/2026-06-14T19-23/developer.md
