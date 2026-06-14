@@ -259,3 +259,5 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-14] 시스템 아키텍처 기반으로 'Pain $ightarrow$ Proof' 프레임워크를 통합한 DB 스키마(`schema.sql`)와 핵심 API 엔드포인트 요구사항 초안을 즉시 구현 계획으로 작성하고 착수하라. → 산출물 sessions/2026-06-14T06-53/developer.md
 - [2026-06-14] 비즈니스 메시지가 담긴 구조화된 JSON(Mock API)을 반환하도록 API 로직을 개선하고, 이 구조가 '유료 전환 퍼널의 시작점'이 될 수 있도록 데이터 흐름에 대한 최종 명세를 작성합니다. → 산출물 sessions/2026-06-14T07-23/developer.md
 - [2026-06-14] API_Failure_TestCases.md와 API_Content_Feasibility_Check.md를 기반으로, 정의된 모듈들이 기술적으로 구현 가능한지 검증하고 필요한 DB 스키마(`schema.sql`) 확장을 제안하여 MVP 구현 가능성을 검증하라. → 산출물 sessions/2026-06-14T08-08/developer.md
+- [2026-06-14] API_Failure_TestCases.md와 API_Content_Feasibility_Check.md 파일의 내용을 즉시 확보하고, 이를 기반으로 DB 스키마 확장 및 API 로직 수정 계획을 구체화하여 실행하라. → 산출물 sessions/2026-06-14T08-23/developer.md
+- [2026-06-14] API_Failure_TestCases.md와 API_Content_Feasibility_Check.md 파일 분석 결과를 바탕으로, DB 스키마 확장(`Diagnosis_Failure_Log`)에 필요한 구체적인 SQL 및 API 로직 수정안을 즉시 구현하고 코드를 작성한다. → 산출물 sessions/2026-06-14T08-38/developer.md

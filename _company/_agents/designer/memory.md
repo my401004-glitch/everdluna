@@ -330,3 +330,6 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-14] Writer가 제공할 스토리라인과 개발팀이 정의한 시각 시스템 가이드라인(Dark Blue/Accent Yellow)을 기반으로, 첫 번째 영상에 사용될 메인 스틸컷 에셋 제작을 위한 가장 구체적인 디자인 브리프와 레이아웃 요구사항을 최종적으로 정리하라. → 산출물 sessions/2026-06-14T06-53/designer.md
 - [2026-06-14] 개발팀이 제시할 Mock JSON 구조를 기반으로, 사용자 경험(UX)과 데이터 흐름이 완벽하게 반영된 최종 목업 스펙(`diagnosis_report_mvp_spec.md`)을 확정하고 디자인 가이드라인에 맞춰 시각 자료의 레이아웃 요구사항을 정리합니다. → 산출물 sessions/2026-06-14T07-23/designer.md
 - [2026-06-14] UserFlow_CriticalPath_V2.pdf와 Module_UX_Blueprint.pdf를 기반으로, Critical Path의 UI/UX 흐름과 실패 지점(Pain Point)을 시각화하고 학습 인터페이스(`Module_UX_Blueprint.pdf`)를 디자인하여 실행 계획을 준비하라. → 산출물 sessions/2026-06-14T08-08/designer.md
+- [2026-06-14] 개발팀이 제공할 실패 유형(Failure Type) 목록과 에러 메시지 정의를 기반으로, 사용자에게 교육적 지침을 제공하는 '실패 화면(Error State Screen)'의 목업 디자인을 시작한다. → 산출물 sessions/2026-06-14T08-38/designer.md
+- [2026-06-14] writer가 제시한 킬러 콘텐츠 시나리오와 확정된 프리미엄 요소를 반영하여, 랜딩 페이지 및 마케팅 자료의 시각적 목업(Visual Mockup) 업데이트를 시작할 것 → 산출물 sessions/2026-06-14T09-08/designer.md
+- [2026-06-14] Writer가 제공한 최종 스크립트와 콘텐츠 전략('Pain $$\rightarrow$$ Proof' 프레임워크)을 기반으로, 영상에 필요한 모든 시각 자료 목록(visual_asset_list.md)과 디자인 가이드라인 준수 여부를 검토하여 에셋 준비 계획을 확정하라. → 산출물 sessions/2026-06-14T09-23/designer.md
