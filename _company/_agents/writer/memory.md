@@ -256,3 +256,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-14] 디자이너가 제시할 UX 흐름에 맞춰, 사용자의 감정 변화(Pain $ightarrow$ Hope $ightarrow$ Action)를 극대화하는 핵심 카피라이팅 초안을 작성하라. → 산출물 sessions/2026-06-14T12-38/writer.md
 - [2026-06-14] Curriculum Engine의 설계 원칙(A, B 단계)을 반영하여, 다음 영상의 최종 스토리라인, 핵심 메시지, 영상 제목 및 후킹 포인트를 구체화하고 제작 로드맵을 확정하라. → 산출물 sessions/2026-06-14T13-08/writer.md
 - [2026-06-14] Model A(MVP 검증형)에 대한 초기 사용자 유입 마케팅 카피와 랜딩 페이지 초안 작성을 시작하고, Designer가 확정한 디자인 시스템(`Dark Blue`, `Accent Yellow`) 및 감성적 서사를 반영하여 작성하라. → 산출물 sessions/2026-06-14T14-08/writer.md
+- [2026-06-14] 현빈 및 Researcher의 분석을 기반으로, 실용음악 입시생이 느끼는 가장 큰 불안감(Pain Point)을 자극하여 즉각적인 행동을 유도하는 숏폼 영상(Reels/Shorts) 도입부 스크립트 초안 3가지를 작성하라. → 산출물 sessions/2026-06-14T15-23/writer.md
