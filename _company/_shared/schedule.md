@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 14. 오후 4:56:35_
+_업데이트: 2026. 6. 14. 오후 5:12:40_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,17 +13,17 @@ _업데이트: 2026. 6. 14. 오후 4:56:35_
 - [2026-05-26] 📥 새 지식 입수 — **sonicpass_seoul_arts_ad.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-26/sonicpass_seoul_arts_ad.html)
 - [2026-06-11] Designer가 확정한 디자인 가이드라인과 스토리보드를 활용하여, 다음 영상(Part 2)에 필요한 Reels 및 피드 포맷별 시각 자료를 즉시 준비하라. → 산출물 sessions/2026-06-11T08-05/instagram.md
 ### 🎨 Designer
-- [2026-06-13] 개발팀이 제공할 데이터 구조(Gap Score 등)를 미리 고려하여, MVP 화면에 필요한 핵심 와이어프레임 및 디자인 스펙(`diagnosis_report_mvp_spec.md`)의 초기 프레임워크를 준비한다. → 산출물 sessions/2026-06-13T12-11/designer.md
 - [2026-06-14] Writer가 제공할 스토리라인과 개발팀이 정의한 시각 시스템 가이드라인(Dark Blue/Accent Yellow)을 기반으로, 첫 번째 영상에 사용될 메인 스틸컷 에셋 제작을 위한 가장 구체적인 디자인 브리프와 레이아웃 요구사항을 최종적으로 정리하라. → 산출물 sessions/2026-06-14T06-53/designer.md
 - [2026-06-14] 개발팀이 제시할 Mock JSON 구조를 기반으로, 사용자 경험(UX)과 데이터 흐름이 완벽하게 반영된 최종 목업 스펙(`diagnosis_report_mvp_spec.md`)을 확정하고 디자인 가이드라인에 맞춰 시각 자료의 레이아웃 요구사항을 정리합니다. → 산출물 sessions/2026-06-14T07-23/designer.md
+- [2026-06-14] UserFlow_CriticalPath_V2.pdf와 Module_UX_Blueprint.pdf를 기반으로, Critical Path의 UI/UX 흐름과 실패 지점(Pain Point)을 시각화하고 학습 인터페이스(`Module_UX_Blueprint.pdf`)를 디자인하여 실행 계획을 준비하라. → 산출물 sessions/2026-06-14T08-08/designer.md
 ### 💻 코다리
-- [2026-06-14] 앞으로 진행할 시스템 구축(MVP 프로토타입 제작)을 위한 데이터 구조 설계와 API 엔드포인트 요구사항 초안을, 기존의 시각 시스템 가이드라인과 통합하여 초기 프레임워크를 준비하세요. → 산출물 sessions/2026-06-14T06-38/developer.md
 - [2026-06-14] 시스템 아키텍처 기반으로 'Pain $ightarrow$ Proof' 프레임워크를 통합한 DB 스키마(`schema.sql`)와 핵심 API 엔드포인트 요구사항 초안을 즉시 구현 계획으로 작성하고 착수하라. → 산출물 sessions/2026-06-14T06-53/developer.md
 - [2026-06-14] 비즈니스 메시지가 담긴 구조화된 JSON(Mock API)을 반환하도록 API 로직을 개선하고, 이 구조가 '유료 전환 퍼널의 시작점'이 될 수 있도록 데이터 흐름에 대한 최종 명세를 작성합니다. → 산출물 sessions/2026-06-14T07-23/developer.md
+- [2026-06-14] API_Failure_TestCases.md와 API_Content_Feasibility_Check.md를 기반으로, 정의된 모듈들이 기술적으로 구현 가능한지 검증하고 필요한 DB 스키마(`schema.sql`) 확장을 제안하여 MVP 구현 가능성을 검증하라. → 산출물 sessions/2026-06-14T08-08/developer.md
 ### 💼 현빈
-- [2026-06-14] 수집된 데이터를 바탕으로 현재 비즈니스 목표(구매 퍼널 전환율)에 맞춰 콘텐츠 전략의 KPI와 수익화 방향성에 대한 초기 분석 및 전략 프레임워크를 제시하세요. → 산출물 sessions/2026-06-14T06-38/business.md
 - [2026-06-14] secretary가 제시한 최고 가치 작업을 바탕으로 수익화 및 KPI 관점에서 해당 작업의 우선순위와 예상 ROI를 분석하여 실행 전략을 제안하라. → 산출물 sessions/2026-06-14T07-08/business.md
 - [2026-06-14] 현재 회사 목표와 에이전트 활동을 기반으로 가장 가치 있는 단일 작업의 우선순위를 분석하고 제안하라. → 산출물 sessions/2026-06-14T07-53/business.md
+- [2026-06-14] Designer와 Developer의 결과물을 통합하여, Monetization_Product_Map.md에 따른 최종 가격 패키징 로직과 유료 전환을 극대화하는 비즈니스 메시지(`Business_KPI_ValidationScript.md`)를 확정하고 실행 가능한 전략을 제시하라. → 산출물 sessions/2026-06-14T08-08/business.md
 ### 📱 영숙
 - [2026-06-14] 최근 24시간 동안의 모든 메모리, 의사결정 기록 및 에이전트 목표(_agents/{id}/goal.md)를 검토하여 현재 가장 가치 있는 단일 작업 1개를 결정하고, 이를 실행하기 위한 최적의 계획을 수립하라. → 산출물 sessions/2026-06-14T07-08/secretary.md
 - [2026-06-14] 최근 의사결정, 회사 목표, 각 에이전트의 개인 목표 및 메모리를 종합적으로 요약하여 현재 가장 가치 있는 단일 작업 1개를 도출하고 실행 계획을 수립할 준비를 하세요. → 산출물 sessions/2026-06-14T07-38/secretary.md

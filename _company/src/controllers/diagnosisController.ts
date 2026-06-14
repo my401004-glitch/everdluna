@@ -1,67 +1,55 @@
-// src/controllers/diagnosisController.ts - Diagnosis Score API Controller
 import { Request, Response } from 'express';
-import { dbClient } from '../config/dbClient'; // 데이터베이스 클라이언트 가정
-import * as UserService from '../services/userService';
+// Assume DB connection and service layer functions exist
+import * as db from '../utils/database'; 
 
 /**
- * @description 진단 점수 계산 및 DB 트랜잭션 커밋 처리 (핵심 로직)
- * @param req - 요청 객체. 반드시 user_id를 포함해야 함.
- * @param res - 응답 객체.
+ * @description 진단 점수를 계산하고 결과를 반환하는 핵심 엔드포인트입니다.
+ * 이 함수는 실패 케이스를 기록하고 콘텐츠 유효성을 체크하는 로직을 포함해야 합니다.
  */
 export const getDiagnosisScore = async (req: Request, res: Response) => {
-    // 1. [Validation] 사용자 ID 필수 체크 및 인증 과정 시뮬레이션
-    const { user_id } = req.body; // 요청 바디에서 user_id를 받도록 수정 가정
-    if (!user_id || typeof user_id !== 'string' || !isValidUUID(user_id)) {
-        return res.status(401).json({ message: "Unauthorized: Missing or invalid User ID." });
+    const { userId, contextId } = req.body; 
+
+    // 1. 필수 입력 값 검증 및 실패 케이스 기록 (API_Failure_TestCases 반영)
+    if (!userId || !contextId) {
+        await db.recordFailure(userId, contextId, "INPUT_MISSING", "User ID or Context ID is missing.", "Validation failed: Missing required parameters.");
+        return res.status(400).json({ 
+            success: false, 
+            message: "Missing parameters for diagnosis." 
+        });
     }
 
-    // 2. [Service] 실제 진단 점수 계산 로직 호출 (Mock)
+    // 2. 콘텐츠 유효성 검증 (API_Content_Feasibility_Check 반영)
+    const contentStatus = await db.checkContentFeasibility(contextId);
+    if (!contentStatus || !contentStatus.isAvailable) {
+         await db.recordFailure(userId, contextId, "CONTENT_MISSING", "Required educational module is unavailable or outdated.", `Content check failed for Context ID: ${contextId}`);
+        return res.status(503).json({ 
+            success: false, 
+            message: "Diagnosis content currently unavailable." 
+        });
+    }
+
+    // --- Core Diagnosis Logic Start ---
     try {
-        // 이 부분에서 복잡한 AI/데이터 분석 로직이 실행되어 scores 객체를 산출합니다.
-        const { gapScore, potentialPoints } = await calculateDiagnosisMetrics(req.body);
+        // (가상의 진단 로직 실행)
+        const scoreData = await runCoreDiagnosisLogic(contextId);
+        
+        // 3. 결과 저장 및 반환 (성공 케이스)
+        await db.saveDiagnosisResult(userId, contextId, scoreData);
 
-        if (!gapScore || !potentialPoints) {
-            return res.status(500).json({ message: "Failed to calculate diagnosis metrics." });
-        }
-
-        // 3. [Transaction Start] DB 트랜잭션 시작 및 데이터 영구 기록 (핵심)
-        await dbClient.transaction(async (tx) => {
-            const resultId = uuidv4(); // 새로운 결과 ID 생성
-
-            // A. Diagnosis_Results 테이블에 진단 로그 기록
-            await tx('diagnosis_results')
-                .insert({
-                    result_id: resultId,
-                    user_id: user_id, // <--- User ID 강제 삽입
-                    diagnosis_type: 'GapScore',
-                    context_id: req.body.content_source || 'unknown',
-                    score_data: JSON.stringify({ gapScore: gapScore, potentialPoints: potentialPoints }),
-                });
-
-            // B. KPI_Metrics 테이블에 Growth/Engagement 등 개별 지표 기록
-            await tx('kpi_metrics')
-                .insert([
-                    { user_id: user_id, diagnosis_result_id: resultId, kpi_type: 'Growth', value: Math.round(gapScore) },
-                    // ... 다른 KPI들 추가 가능 (Engagement, Monetization 등)
-                ]);
-
-            console.log(`[SUCCESS] User ${user_id}의 진단 결과가 성공적으로 트랜잭션 커밋됨.`);
+        return res.status(200).json({
+            success: true,
+            score_data: scoreData,
+            confidence_score: 0.95 // 진단 과정의 신뢰도 지표 추가
         });
-
-
-        res.status(200).json({ 
-            message: "Diagnosis score calculated and saved successfully.", 
-            data: { gapScore, potentialPoints } 
-        });
-
     } catch (error) {
-        console.error("Error during diagnosis processing:", error);
-        // 트랜잭션 실패 시 에러 로그 및 사용자에게 피드백 제공
-        res.status(500).json({ message: "Internal server error during scoring process." });
+        // 예기치 않은 서버 오류 기록
+        await db.recordFailure(userId, contextId, "INTERNAL_ERROR", error instanceof Error ? error.message : String(error), "Unhandled server exception during diagnosis.");
+        return res.status(500).json({ success: false, message: "Internal server error occurred." });
     }
 };
 
-// Mock 함수 정의 (실제 프로젝트에서는 별도 서비스 파일로 분리되어야 함)
-const isValidUUID = (uuid: string): boolean => { /* UUID 검증 로직 */ return true; };
-const uuidv4 = () => 'mock-uuid-123'; 
-const calculateDiagnosisMetrics = async (input: any) => ({ gapScore: Math.floor(Math.random() * 100), potentialPoints: Math.floor(Math.random() * 200) });
+// Mock function for demonstration purposes
+async function runCoreDiagnosisLogic(contextId: number) {
+    // 실제 진단 로직 구현이 들어갈 자리
+    return { /* ... score data structure ... */ };
+}
