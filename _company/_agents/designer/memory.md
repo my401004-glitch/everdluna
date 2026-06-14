@@ -333,3 +333,5 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-14] 개발팀이 제공할 실패 유형(Failure Type) 목록과 에러 메시지 정의를 기반으로, 사용자에게 교육적 지침을 제공하는 '실패 화면(Error State Screen)'의 목업 디자인을 시작한다. → 산출물 sessions/2026-06-14T08-38/designer.md
 - [2026-06-14] writer가 제시한 킬러 콘텐츠 시나리오와 확정된 프리미엄 요소를 반영하여, 랜딩 페이지 및 마케팅 자료의 시각적 목업(Visual Mockup) 업데이트를 시작할 것 → 산출물 sessions/2026-06-14T09-08/designer.md
 - [2026-06-14] Writer가 제공한 최종 스크립트와 콘텐츠 전략('Pain $$\rightarrow$$ Proof' 프레임워크)을 기반으로, 영상에 필요한 모든 시각 자료 목록(visual_asset_list.md)과 디자인 가이드라인 준수 여부를 검토하여 에셋 준비 계획을 확정하라. → 산출물 sessions/2026-06-14T09-23/designer.md
+- [2026-06-14] Developer가 요구하는 구체적인 데이터 필드(Error State Screen에 표시될 모든 메시지 및 그래프 데이터)의 최종 명세서를 즉시 확정하고, 개발팀이 테스트에 필요한 모든 고해상도 에셋과 사용 가이드라인을 최우선으로 제공하라. → 산출물 sessions/2026-06-14T09-53/designer.md
+- [2026-06-14] Writer가 제공한 'Pain $\rightarrow$ Proof' 스토리라인과 데이터 포인트를 기반으로, 학원 운영자의 리스크를 가장 효과적으로 시각화하는 최종 실패 화면(Error State Screen) 목업을 제작하고, 필요한 모든 에셋의 최종 사양을 확정하라. → 산출물 sessions/2026-06-14T10-23/designer.md

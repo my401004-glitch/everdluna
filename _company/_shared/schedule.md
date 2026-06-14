@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 14. 오후 6:39:49_
+_업데이트: 2026. 6. 14. 오후 7:41:55_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,31 +13,31 @@ _업데이트: 2026. 6. 14. 오후 6:39:49_
 - [2026-05-26] 📥 새 지식 입수 — **sonicpass_seoul_arts_ad.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-26/sonicpass_seoul_arts_ad.html)
 - [2026-06-11] Designer가 확정한 디자인 가이드라인과 스토리보드를 활용하여, 다음 영상(Part 2)에 필요한 Reels 및 피드 포맷별 시각 자료를 즉시 준비하라. → 산출물 sessions/2026-06-11T08-05/instagram.md
 ### 🎨 Designer
-- [2026-06-14] 개발팀이 제공할 실패 유형(Failure Type) 목록과 에러 메시지 정의를 기반으로, 사용자에게 교육적 지침을 제공하는 '실패 화면(Error State Screen)'의 목업 디자인을 시작한다. → 산출물 sessions/2026-06-14T08-38/designer.md
-- [2026-06-14] writer가 제시한 킬러 콘텐츠 시나리오와 확정된 프리미엄 요소를 반영하여, 랜딩 페이지 및 마케팅 자료의 시각적 목업(Visual Mockup) 업데이트를 시작할 것 → 산출물 sessions/2026-06-14T09-08/designer.md
 - [2026-06-14] Writer가 제공한 최종 스크립트와 콘텐츠 전략('Pain $$\rightarrow$$ Proof' 프레임워크)을 기반으로, 영상에 필요한 모든 시각 자료 목록(visual_asset_list.md)과 디자인 가이드라인 준수 여부를 검토하여 에셋 준비 계획을 확정하라. → 산출물 sessions/2026-06-14T09-23/designer.md
+- [2026-06-14] Developer가 요구하는 구체적인 데이터 필드(Error State Screen에 표시될 모든 메시지 및 그래프 데이터)의 최종 명세서를 즉시 확정하고, 개발팀이 테스트에 필요한 모든 고해상도 에셋과 사용 가이드라인을 최우선으로 제공하라. → 산출물 sessions/2026-06-14T09-53/designer.md
+- [2026-06-14] Writer가 제공한 'Pain $\rightarrow$ Proof' 스토리라인과 데이터 포인트를 기반으로, 학원 운영자의 리스크를 가장 효과적으로 시각화하는 최종 실패 화면(Error State Screen) 목업을 제작하고, 필요한 모든 에셋의 최종 사양을 확정하라. → 산출물 sessions/2026-06-14T10-23/designer.md
 ### 💻 코다리
-- [2026-06-14] API_Failure_TestCases.md와 API_Content_Feasibility_Check.md를 기반으로, 정의된 모듈들이 기술적으로 구현 가능한지 검증하고 필요한 DB 스키마(`schema.sql`) 확장을 제안하여 MVP 구현 가능성을 검증하라. → 산출물 sessions/2026-06-14T08-08/developer.md
-- [2026-06-14] API_Failure_TestCases.md와 API_Content_Feasibility_Check.md 파일의 내용을 즉시 확보하고, 이를 기반으로 DB 스키마 확장 및 API 로직 수정 계획을 구체화하여 실행하라. → 산출물 sessions/2026-06-14T08-23/developer.md
 - [2026-06-14] API_Failure_TestCases.md와 API_Content_Feasibility_Check.md 파일 분석 결과를 바탕으로, DB 스키마 확장(`Diagnosis_Failure_Log`)에 필요한 구체적인 SQL 및 API 로직 수정안을 즉시 구현하고 코드를 작성한다. → 산출물 sessions/2026-06-14T08-38/developer.md
+- [2026-06-14] Designer가 확정한 '실패 화면(Error State Screen)' 목업에 맞춰, Diagnosis_Failure_Log 데이터를 기반으로 실제 API 호출 및 데이터 흐름 로직이 정확히 반영되는 MVP 수준의 프론트엔드 테스트 모듈 코드를 즉시 구현하고, 필요한 DB 스키마 확장안을 최종 검증하여 제공하라. → 산출물 sessions/2026-06-14T09-53/developer.md
+- [2026-06-14] Designer가 확정한 '실패 화면(Error State Screen)' 목업 및 필요한 모든 에셋 사양을 기반으로, `Diagnosis_Failure_Log` 데이터 필드 명세(`API_Failure_TestCases.md`, `API_Content_Feasibility_Check.md` 분석 결과)를 최종 확정하고, 프론트엔드 구현에 필요한 API 엔드포인트와 DB 스키마 확장안을 즉시 코드로 구체화하여 제공하라. → 산출물 sessions/2026-06-14T10-38/developer.md
 ### 💼 현빈
 - [2026-06-14] 현재 회사 목표와 에이전트 활동을 기반으로 가장 가치 있는 단일 작업의 우선순위를 분석하고 제안하라. → 산출물 sessions/2026-06-14T07-53/business.md
 - [2026-06-14] Designer와 Developer의 결과물을 통합하여, Monetization_Product_Map.md에 따른 최종 가격 패키징 로직과 유료 전환을 극대화하는 비즈니스 메시지(`Business_KPI_ValidationScript.md`)를 확정하고 실행 가능한 전략을 제시하라. → 산출물 sessions/2026-06-14T08-08/business.md
 - [2026-06-14] 회사 목표, 각 에이전트의 개인 목표(goal.md), 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 우선순위를 결정하시오. → 산출물 sessions/2026-06-14T08-53/business.md
 ### 📱 영숙
-- [2026-06-14] 개발팀(코다리)과 디자인팀(Designer) 간의 협업 진행 상황을 모니터링하고, 다음 단계로 넘어가기 위한 병목 현상을 즉시 파악하여 조율한다. → 산출물 sessions/2026-06-14T08-38/secretary.md
-- [2026-06-14] 최근 일정, 의사결정 기록 및 메모리를 정리하여 현재 가장 중요한 실행 항목을 도출하고, 이 작업을 위한 시간적 제약을 확인하시오. → 산출물 sessions/2026-06-14T08-53/secretary.md
 - [2026-06-14] 회사 목표, 각 에이전트의 개인 목표(goal.md), 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 결정하고, 이를 실행할 최적의 에이전트 1~2명을 선정하여 분배 계획을 수립하라. → 산출물 sessions/2026-06-14T09-38/secretary.md
+- [2026-06-14] 회사 목표, 각 에이전트의 개인 목표(_agents/{id}/goal.md), 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 결정하고, 해당 작업에 대한 실행 계획을 수립하세요. → 산출물 sessions/2026-06-14T10-08/secretary.md
+- [2026-06-14] Developer 및 Designer 간의 데이터 계약(API 명세) 최종 확정 작업이 완료될 때까지 필요한 모든 내부 커뮤니케이션 일정과 마일스톤을 정리하고, 다음 개발 단계에 필요한 리소스를 준비하라. → 산출물 sessions/2026-06-14T10-38/secretary.md
 ### 🎵 루나
 - [2026-06-11] 영상 편집팀이 시작하는 콘텐츠의 스크립트와 디자인 가이드라인을 기반으로, AI 음악 파이프라인에서 생성된 오디오 에셋을 통합하고 사운드 디자인 및 최종 합성 작업을 즉시 진행하라. → 산출물 sessions/2026-06-11T04-13/editor.md
 - [2026-06-11] 영상 제작팀(내부 프로세스)이 '최종 A/V 제작 시작 지시문'에 따라 콘텐츠 제작을 즉시 실행하도록 최종 확인하고, 진행 상황 모니터링 계획을 수립하라 → 산출물 sessions/2026-06-11T05-47/editor.md
 - [2026-06-11] Writer가 제공할 스크립트의 톤과 메시지에 맞춰 BGM 및 사운드 디자인 방향성을 제시하고, 영상 시각 자료와 오디오 요소 간의 조화(Sync)를 위한 초기 사운드 가이드라인을 설정할 것. → 산출물 sessions/2026-06-11T14-39/editor.md
 ### ✍️ Writer
-- [2026-06-14] 'Pain $ightarrow$ Proof' 프레임워크를 적용하여 다음 영상에 사용될 최종 스토리라인, 핵심 메시지, 그리고 후킹 포인트를 시스템 구조와 연동하여 구체적으로 작성하라. → 산출물 sessions/2026-06-14T06-53/writer.md
 - [2026-06-14] 현빈 에이전트의 ROI 분석 결과를 바탕으로, 잠재 고객의 Pain Point를 극대화하는 '킬러 콘텐츠 시나리오' 초안을 작성하고 영상 제목 및 후킹 포인트를 구체화할 것 → 산출물 sessions/2026-06-14T09-08/writer.md
 - [2026-06-14] 이전 세션에서 확정된 Hook 1을 기반으로, 다음 영상에 필요한 모든 장면별 상세 스크립트(대본)를 작성하고 촬영에 바로 사용할 수 있도록 최종안을 완성하라. → 산출물 sessions/2026-06-14T09-23/writer.md
+- [2026-06-14] Designer가 제시한 '실패 화면' 디자인 컨셉에 맞춰, 학원 운영자의 Pain Point(리스크)를 극대화하고 Gain(기회)으로 전환하는 충격적인 Voice Over 스크립트 및 최종 발표 대본을 작성하라. → 산출물 sessions/2026-06-14T10-23/writer.md
 ### 🔍 Researcher
-- [2026-06-12] 이전 메모리에서 언급된 'competitor_brief' 및 'my_videos_check' 파일의 경로를 즉시 확인하고, 해당 데이터가 시스템에 존재하지 않을 경우 이를 생성하거나 필요한 데이터를 요청할 준비를 하라. → 산출물 sessions/2026-06-12T10-22/researcher.md
 - [2026-06-13] 현재 채널 성과와 목표(유튜브 1만 구독자)를 바탕으로 다음 영상 주제에 대한 시장 니즈 및 경쟁사 트렌드를 재분석하고, 'Pain $ightarrow$ Gain' 프레임워크에 적용할 수 있는 구체적인 스토리라인 방향을 제시하라. → 산출물 sessions/2026-06-13T11-41/researcher.md
 - [2026-06-14] 현재 채널 및 경쟁사 데이터를 분석하여 유튜브 1만 구독자 목표 달성을 위한 시장 니즈와 콘텐츠 트렌드를 심층적으로 조사하고, 객관적인 성과 진단 자료를 수집할 계획을 세우세요. → 산출물 sessions/2026-06-14T06-38/researcher.md
+- [2026-06-14] Designer와 Writer가 요구하는 시각 자료에 필요한 핵심 데이터 포인트 목록과, 학원 운영자의 리스크를 가장 극대화할 수 있는 통계/데이터 해석 방안을 정리하여 최종 산출물 분배를 준비하라. → 산출물 sessions/2026-06-14T10-23/researcher.md
 
