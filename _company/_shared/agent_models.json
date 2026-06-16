@@ -6,7 +6,7 @@
   "developer": "google/gemma-4-e4b",
   "business": "google/gemma-4-e4b:2",
   "secretary": "google/gemma-4-e4b",
-  "editor": "google/gemma-4-e4b:2",
+  "editor": "google/gemma-4-e4b",
   "writer": "google/gemma-4-e2b",
   "researcher": "google/gemma-4-e2b"
 }
