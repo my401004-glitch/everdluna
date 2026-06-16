@@ -315,3 +315,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-14] | **필수 필드 2: KPI** | `kpis`: `{ growth: number, engagement: number, monetization: number }` | 비즈니스 성과 추적 (투자 대비 수익 증명). | | _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-06-14] | **필수 필드 3: 서사 요약** | `narrativeSummary`: `string[]` | 데이터가 말해주는 스토리. (예: "Pitch 안정화 필요") Designer의 시각 자료 기획 근거. | | _(근거: sessions/2026-05-18T16-34/developer.md)_
 - [2026-06-14] | **필수 필드 4: 액션 플랜** | `actionableRecommendations`: `string[]` | 사용자가 즉시 할 수 있는 다음 단계(CTA). 시스템의 가치를 '도구'에서 '컨설턴트'로 전환. | | _(근거: sessions/2026-05-18T17-09/developer.md)_
+- [2026-06-16] CEO님의 지시사항을 검토했습니다. 현재까지 가장 중요한 병목 지점은 '복잡한 비즈니스 로직(FinancialService)'이 정의되었지만, 이것이 실제 API 레이어에 통합되고 안정적으로 테스트되지 않은 상태라는 것입니다. _(근거: sessions/2026-06-14T23-23/developer.md)_
