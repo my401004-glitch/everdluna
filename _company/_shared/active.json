@@ -36,5 +36,9 @@
   "_migrated_v3": true,
   "editor": {
     "activatedAt": "2026-06-09T04:01:22.973Z"
+  },
+  "musician": {
+    "activatedAt": "2026-06-16T17:08:00.000Z",
+    "seeded": true
   }
 }
