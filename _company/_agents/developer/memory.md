@@ -291,3 +291,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-16] ROI 기반 수익 기회 측정 시뮬레이션 API 엔드포인트(`financial_impact_simulation/{user_id}`)의 컨트롤러 함수(`diagnosisController.ts`)와 복잡한 계산 로직을 최종적으로 구현하고, 정의된 데이터 모델(marketing_activities, user_subscription_history)에 맞춰 테스트를 완료할 것. → 산출물 sessions/2026-06-16T03-39/developer.md
 - [2026-06-16] 확정된 KPI 가이드라인(`FINAL_KPI_Logic_Weighting_Map.md`)에 맞춰 `FinancialService`의 복잡한 계산 로직을 실제 데이터 기반으로 구현하고 최종 테스트를 완료할 것. → 산출물 sessions/2026-06-16T03-54/developer.md
 - [2026-06-16] 구현된 API 로직에 실제 모킹 데이터를 연결하여 End-to-End 테스트를 수행하고, 시스템 안정성을 확보할 것. → 산출물 sessions/2026-06-16T04-09/developer.md
+- [2026-06-17] 데이터 기반 성장 서사(Pain $ightarrow$ Gain)가 시각적 흐름과 완벽하게 동기화되도록, 진단 리포트와 수익 기회 예측 API의 연동 흐름을 매뉴얼 전용 다이어그램으로 작성하시오. → 산출물 sessions/2026-06-17T02-38/developer.md
