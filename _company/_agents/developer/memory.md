@@ -296,3 +296,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-17] 핵심진단서비스(Pain $ightarrow$ Gain)의 백엔드 로직(RBAC, KPI 연동) 및 단위 테스트 코드를 즉시 시작하여 시스템 신뢰성을 확보하라. → 산출물 sessions/2026-06-17T03-38/developer.md
 - [2026-06-17] Writer와 Designer가 요청한 콘텐츠 요구사항(Pain $ightarrow$ Gain 스토리보드, 최종 비주얼 가이드라인)을 검토하여, 시스템의 데이터 흐름과 시각적 결과물이 완벽하게 동기화되는지 최종적으로 확인하는 통합 점검표(Checklist)를 작성하라. → 산출물 sessions/2026-06-17T03-53/developer.md
 - [2026-06-17] 핵심진단서비스의 백엔드 로직(`is_premium_trigger` 및 권한 분리)에 대한 단위 테스트 코드를 즉시 실행하고 결과를 보고하라. → 산출물 sessions/2026-06-17T04-08/developer.md
+- [2026-06-17] Writer와 Designer가 요청한 콘텐츠 요구사항(Pain -> Gain 스토리보드, 최종 비주얼 가이드라인)을 검토하여, 시스템의 데이터 흐름과 시각적 결과물이 완벽하게 동기화되는지 확인하는 통합 점검표(Checklist)를 작성하고, 이 Checklist에 기반한 API/DB 구조 요구사항을 명확히 하라. → 산출물 sessions/2026-06-17T04-58/developer.md
