@@ -958,3 +958,10 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-16] * **현재 검토안:** 월 단위 구독(₩39,000) + 분기 할인 패키지 (Starter Pack - 3개월 결제 시 10% 할인). _(근거: Self-RAG)_
 - [2026-06-16] 1. **Free (Funnel):** 진단 테스트 (Gap Score 맛보기). _(근거: Self-RAG)_
 - [2026-06-16] 3. **High Tier (LTV Maximization):** 프리미엄 구독/Starter Pack (전체 기능 개방 + 코치 피드백 연동). _(근거: Self-RAG)_
+- [2026-06-17] CEO 지시사항은 현재 개발 중인 시스템의 기술적 아키텍처가 회사의 **수익화 가설**을 성공적으로 담아내고 있는지 검증하는 가장 중요한 단계입니다. _(근거: 💼 현빈 개인 메모리, 세션/2026-05-18T13-08/business.md)_
+- [2026-06-17] 1. `is_premium_trigger`: (Boolean) 진단 결과가 유료 모듈 구매를 강력하게 권유할 만한 상태인 경우 `True`. _(근거: 💼 현빈 검증된 지식 - Gap Score 극대화)_
+- [2026-06-17] 2. `recommended_module_ids`: (List[String]) 현재 부족하여 추천되는 최소 단위의 학습 모듈 ID 목록. _(근거: sessions/2026-05-18T13:08/business.md)_
+- [2026-06-17] | **Pitch Deviation Index** (정확성) | `PDI > 0.15` 이고, *かつ* 과제 점수가 '보통' 이하일 경우. | `is_premium_trigger = True`, `recommended_module_ids`에 <Interval Training> 추가. | 낮은 정확도는 즉각적인 코칭/훈련 모듈 구매 유도 (가장 높은 전환 가능성). | _(근거: 💼 현빈 검증된 지식 - Gap Score 산출)_
+- [2026-06-17] | **Breath Efficiency Score** (호흡) | `BES` 점수가 최하위 25%에 속함. | `is_premium_trigger = True`, `recommended_module_ids`에 <Respiration Module> 추가. | 호흡 문제는 '기술적 어려움'으로 인식되어, 전문가의 도움이 필요하다는 인식을 심어줌. (LTV 증대). | _(근거: sessions/2026-05-18T13:08/business.md)_
+- [2026-06-17] | **Emotional Consistency Score** (감성) | 진단 결과가 '기술적' 문제와 '감성적 해석력' 문제를 동시에 지적함. | `is_premium_trigger = True`, *그리고* 코치와의 1:1 컨설팅(프리미엄 서비스) 필요성을 명시적으로 플래그화. | AI만으로는 채울 수 없는 영역을 강조하며, 고단가 인간 코칭 모듈로 유도 (최종 매출액 확보). | _(근거: sessions/2026-05-18T13:53/business.md)_
+- [2026-06-17] * **AVD 40% 목표와의 연관성:** 이 진단 리포트는 사용자에게 **'Pain Point (Gap Score)'**를 명확하게 시각화하여 제공합니다. 이 'Pain'의 강도가 높을수록, 사용자는 해결책(Premium Module)에 대한 필요성을 강력히 느끼게 되고, 이는 영상 시청 중 몰입도와 집중력(AVD)을 극대화하는 서사적 장치로 활용됩니다. _(근거: sessions/2026-05-18T13:43/business.md)_
