@@ -274,3 +274,5 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-17] Designer가 확정한 시각 스타일(Dark Blue/Accent Yellow)과 Pain $\rightarrow$ Gain 프레임워크를 기반으로, 다음 영상에 필요한 스토리보드 및 Shot List의 초안을 작성하고, AI 이미지 프롬프트를 구체화하여 제작 워크북에 채워 넣기 → 산출물 sessions/2026-06-17T03-23/writer.md
 - [2026-06-17] 코다리와 현빈이 정의한 '유료 전환 트리거 로직' 및 KPI를 기반으로, 다음 콘텐츠 영상에 필요한 Pain $ightarrow$ Gain 스토리텔링과 내레이션 스크립트의 초안을 작성하고, 시각적 흐름(Pain $ightarrow$ Gain)을 명확히 반영하도록 구성하라. → 산출물 sessions/2026-06-17T03-53/writer.md
 - [2026-06-17] 최종 확정된 'Pain -> Gain' 프레임워크와 시각 가이드라인(Dark Blue/Accent Yellow)을 기반으로, 다음 영상에 필요한 스토리보드 및 Shot List의 초안을 작성하고, 개발자가 구현할 핵심 데이터 흐름 요구사항을 명시하라. → 산출물 sessions/2026-06-17T04-58/writer.md
+- [2026-06-17] 최종 확정된 'Pain -> Gain' 프레임워크와 시각 가이드라인(Dark Blue/Accent Yellow)을 기반으로, 다음 영상에 필요한 스토리보드 및 Shot List 초안을 작성하고, 코다리가 요구한 데이터 흐름과 시각적 결과물이 동기화되는지 검토할 수 있도록 스크립트의 흐름을 명확히 구성하라. → 산출물 sessions/2026-06-17T06-38/writer.md
+- [2026-06-17] Researcher가 제시한 주제 카테고리를 바탕으로, 'Pain $ightarrow$ Gain' 프레임워크를 적용하여 잠재적으로 클릭을 유도할 수 있는 영상 컨셉 5가지의 초안을 작성해줘. 각 컨셉은 명확한 후킹 포인트와 핵심 메시지를 포함해야 해. → 산출물 sessions/2026-06-17T07-30/writer.md

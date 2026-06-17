@@ -377,3 +377,5 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-17] Writer가 작성할 스토리보드/Shot List 초안에 맞춰, Dark Blue/Accent Yellow 디자인 매뉴얼을 적용하여 다음 콘텐츠에 필요한 최종 시각 자료(썸네일 및 인트로 그래픽)의 초안을 제작하기 → 산출물 sessions/2026-06-17T03-23/designer.md
 - [2026-06-17] 코다리가 구현할 새로운 `Report Object`의 구조(`is_premium_trigger`, `recommended_module_ids`)를 반영하여, Writer가 작성할 스크립트와 시각적 흐름에 최적화된 최종 썸네일 및 인트로 그래픽의 레이아웃 초안을 디자인 매뉴얼에 따라 제작하라. → 산출물 sessions/2026-06-17T03-53/designer.md
 - [2026-06-17] Writer가 작성할 스토리보드/Shot List 초안을 검토하여, Dark Blue/Accent Yellow 디자인 매뉴얼을 적용한 최종 썸네일 및 인트로 그래픽의 레이아웃 초안을 제작하라. → 산출물 sessions/2026-06-17T04-58/designer.md
+- [2026-06-17] Writer가 준비할 스토리보드/Shot List 초안을 기반으로, Dark Blue/Accent Yellow 디자인 매뉴얼을 적용하여 다음 콘텐츠에 필요한 최종 썸네일 및 인트로 그래픽의 레이아웃 초안을 제작하라. 특히 개발자가 요구한 데이터 흐름(Pain -> Gain)이 시각적으로 명확하게 반영되도록 디자인한다. → 산출물 sessions/2026-06-17T06-38/designer.md
+- [2026-06-17] Writer가 작성한 5가지 컨셉에 대해, 회사 디자인 가이드라인(Dark Blue/Accent Yellow)을 적용하여 각 영상의 도입부 썸네일 및 핵심 비주얼 흐름(Pain $ightarrow$ Gain 시각화)에 대한 초기 레이아웃 아이디어를 구상해줘. → 산출물 sessions/2026-06-17T07-30/designer.md

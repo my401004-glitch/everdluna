@@ -364,3 +364,14 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-17] * **후킹 포인트:** **'불안함(Pain)'을 데이터로 번역하는 즉각적인 증거 제시.** "음정이 불안해요"라는 주관적 피드백 대신, "평균 피치가 목표 구간보다 3세미톤 낮게 측정됨"과 같이 감정적 상태의 근본 원인을 객관적 지표(데이터)로 역전시켜 보여줍니다. _(근거: sessions/2026-05-18T13-43/researcher.md)_
 - [2026-06-17] * **시장 수요:** 입시생들은 단순한 피드백을 넘어, **객관적이고 반복 가능한 기술(Technical Skill)**을 원하며, 인간 코치에게는 주관적 경험과 감성 표현을 맡기고 AI에게는 정밀한 데이터 분석 및 로드맵 제시를 맡기는 분업화된 코칭을 선호합니다. _(근거: sessions/2026-05-18T13-43/researcher.md)_
 - [2026-06-17] * **후킹 포인트:** **AI(객관적 기술)와 인간 코치(감성적 경험)의 하이브리드 코칭 구조**를 강조합니다. AI가 복잡한 데이터 분석을 통해 최적의 학습 로드맵을 제공하고, 인간 코치는 그 여정에 대한 동기 부여와 감성적 지지(Storytelling)를 담당한다는 점을 명확히 제시하여 프로그램의 차별성을 부각합니다. _(근거: sessions/2026-05-18T13-43/researcher.md)_
+- [2026-06-17] | **1** | 주관적인 피드백의 불확실성 ("음정이 불안해요") | 객관적이고 수치화된 성장 증명 | **데이터 기반 진단 (Data-Driven Diagnosis)** | | _(근거: sessions/2026-05-18T13-08/researcher.md)_
+- [2026-06-17] | **2** | 학습 과정의 비가시성 및 좌절감 ("노력은 어디로 갔지?") | 노력의 가시화 및 성장의 증명 (Visualization) | **성장 리포트 시스템 (Growth Report System)** | | _(근거: sessions/2026-05-18T13-43/researcher.md)_
+- [2026-06-17] | **3** | 비효율적인 개인 맞춤 학습 경로 설정 ("어디서부터 시작해야 할지 모름") | 최적화된 개인별 로드맵 제시 (Personalized Roadmap) | **AI 기반 코칭 로드맵 (AI Coaching Roadmap)** | | _(근거: sessions/2026-05-18T13-43/researcher.md)_
+- [2026-06-17] | **4** | 피드백의 단편성과 연속성 부족 ("왜 이렇게 해야 하는지 모름") | 심층적이고 구조화된 해결책 제공 (Structured Solutions) | **Pain $\rightarrow$ Gain 스토리텔링 (Narrative Flow)** | | _(근거: sessions/2026-05-18T13-01/researcher.md)_
+- [2026-06-17] | **5** | 시간 대비 결과의 불확실성 ("시간을 투자해도 성장이 보장되지 않음") | 효율적인 연습 및 피드백 루프 (Efficient Feedback Loop) | **AI 기반 학습 최적화 (Learning Optimization)** | | _(근거: sessions/2026-05-17T17-18/researcher.md)_
+- [2026-06-17] | **6** | 학부모에게 성장을 설득하기 어려움 ("객관적인 증거가 없음") | 학부모를 위한 명확한 결과 보고 (Parental Proof) | **ROI 기반 리포팅 (ROI-based Reporting)** | | _(근거: sessions/2026-05-18T13-43/researcher.md)_
+- [2026-06-17] | **7** | 복잡하고 방대한 이론의 이해 부족 | 핵심 개념의 직관적 시각화 및 요약 (Conceptual Visualization) | **핵심 개념 압축 (Concept Compression)** | | _(근거: sessions/2026-05-19T02-05/researcher.md)_
+- [2026-06-17] | **8** | 동기 부여 유지의 어려움 ("지속적인 학습의 어려움") | 감성적 몰입을 유도하는 성장 서사 (Emotional Journey) | **감성적 동기 부여 설계 (Emotional Motivation Design)** | | _(근거: sessions/2026-05-18T13-01/researcher.md)_
+- [2026-06-17] | **9** | AI 활용의 막연함 ("어떻게 써야 효과적인지 모름") | 구체적이고 실행 가능한 프롬프트 및 방법론 제공 (Actionable Prompting) | **AI 활용 실전 방법론 (Practical AI Methodology)** | | _(근거: sessions/2026-05-18T13-43/researcher.md)_
+- [2026-06-17] | **10** | 경쟁자 대비 차별화 포인트 부재 | 독창적이고 차별화된 학습 경험 제공 (Unique Experience) | **차별화된 AI 코칭 (Differentiated AI Coaching)** | | _(근거: sessions/2026-05-19T06-59/researcher.md)_
+- [2026-06-17] | **11** | 이론과 실습의 괴리감 | 이론을 즉시 적용하는 실시간 피드백 환경 (Real-time Application) | **하이브리드 코칭 (Hybrid Coaching)** | | _(근거: sessions/2026-05-18T13-43/researcher.md)_
