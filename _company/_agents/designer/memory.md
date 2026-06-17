@@ -375,3 +375,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-17] 최종 확정된 'Dark Blue/Accent Yellow' 시각 스타일 가이드라인을 적용하여, 첫 번째 영상에 최적화된 썸네일 레이아웃과 인트로 그래픽의 최종 시각 자료 초안을 즉시 제작하라. → 산출물 sessions/2026-06-17T02-53/designer.md
 - [2026-06-17] 최종 확정된 시각 스타일(Dark Blue/Accent Yellow) 가이드라인과 기존 산출물을 통합하여, 다음 콘텐츠 제작에 즉시 적용 가능한 최종 디자인 매뉴얼(템플릿 포함)을 점검하고 보완하라. → 산출물 sessions/2026-06-17T03-08/designer.md
 - [2026-06-17] Writer가 작성할 스토리보드/Shot List 초안에 맞춰, Dark Blue/Accent Yellow 디자인 매뉴얼을 적용하여 다음 콘텐츠에 필요한 최종 시각 자료(썸네일 및 인트로 그래픽)의 초안을 제작하기 → 산출물 sessions/2026-06-17T03-23/designer.md
+- [2026-06-17] 코다리가 구현할 새로운 `Report Object`의 구조(`is_premium_trigger`, `recommended_module_ids`)를 반영하여, Writer가 작성할 스크립트와 시각적 흐름에 최적화된 최종 썸네일 및 인트로 그래픽의 레이아웃 초안을 디자인 매뉴얼에 따라 제작하라. → 산출물 sessions/2026-06-17T03-53/designer.md
