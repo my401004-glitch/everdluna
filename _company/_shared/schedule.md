@@ -1,21 +1,21 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 17. 오전 10:27:52_
+_업데이트: 2026. 6. 17. 오전 10:41:11_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-06-14] Writer와 Designer가 확정한 최종 스토리라인을 바탕으로, 영상 촬영 및 편집 분배 계획(레오의 로드맵)에 맞춰 실제 콘텐츠 제작 일정을 구체적으로 실행하고 관리하라. → 산출물 sessions/2026-06-14T21-53/youtube.md
 - [2026-06-16] 보고서에 포함될 영상 콘텐츠 제작 로드맵과 시각 자료 요구사항을 분석하여, 다음 단계의 콘텐츠 제작 계획(레오의 로드맵)과의 연관성을 검토하고 보강할 부분을 제안하라. → 산출물 sessions/2026-06-16T02-54/youtube.md
 - [2026-06-17] 작성된 스크립트와 디자인 가이드라인을 바탕으로, 유튜브 영상 제작 로드맵(촬영/편집 분배 계획)의 첫 단계를 구체화하여 제안해 주세요. → 산출물 sessions/2026-06-17T01-23/youtube.md
+- [2026-06-17] Writer와 Designer가 제공한 산출물(스크립트 초안 및 시각 가이드라인)을 통합하여, 최종 'Shot List'를 확정하고 영상 제작의 실행 가능한 분배 계획을 수립하라. → 산출물 sessions/2026-06-17T01-38/youtube.md
 ### 📷 Instagram
 - [2026-05-26] 📥 새 지식 입수 — **sonicpass_seoul_arts_ad.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-26/sonicpass_seoul_arts_ad.html)
 - [2026-06-11] Designer가 확정한 디자인 가이드라인과 스토리보드를 활용하여, 다음 영상(Part 2)에 필요한 Reels 및 피드 포맷별 시각 자료를 즉시 준비하라. → 산출물 sessions/2026-06-11T08-05/instagram.md
 - [2026-06-14] writer와 designer가 준비한 콘텐츠 초안에 맞춰, 가장 효과적인 후킹 포인트와 최적 게시 시간 전략을 반영하여 첫 번째 영상에 대한 릴스 및 피드 포맷별 게시물 시안(캡션 포함)을 즉시 작성하라. → 산출물 sessions/2026-06-14T15-23/instagram.md
 ### 🎨 Designer
-- [2026-06-17] 선택된 콘텐츠의 주제와 목표에 맞춰 유튜브 썸네일 및 인스타그램 릴스 포맷에 적용할 핵심 시각적 스타일 가이드라인(컬러, 타이포, 레이아웃)을 제안하세요. → 산출물 sessions/2026-06-17T01-08/designer.md
 - [2026-06-17] 교육 콘텐츠의 목표 달성을 위해 시각적으로 가장 임팩트 있는 학습 로드맵, 핵심 개념을 시각화하는 디자인 가이드라인, 그리고 타깃 청중에게 신뢰를 줄 수 있는 브랜드 비주얼 컨셉을 구체화하라. → 산출물 sessions/2026-06-17T01-19/designer.md
 - [2026-06-17] 확정된 시각 스타일(Dark Blue/Accent Yellow)과 성장 서사 프레임워크를 기반으로, 첫 번째 영상에 적용할 핵심 비주얼 가이드라인 및 썸네일 레이아웃 초안을 제시해 주세요. → 산출물 sessions/2026-06-17T01-23/designer.md
+- [2026-06-17] 확정된 시각 스타일(Dark Blue/Accent Yellow)과 성장 서사 프레임워크를 기반으로, 최종 'Shot List'에 맞춰 영상의 Scene별 비주얼 목업(Storyboard Draft)을 구체화하라. → 산출물 sessions/2026-06-17T01-38/designer.md
 ### 💻 코다리
 - [2026-06-16] ROI 기반 수익 기회 측정 시뮬레이션 API 엔드포인트(`financial_impact_simulation/{user_id}`)의 컨트롤러 함수(`diagnosisController.ts`)와 복잡한 계산 로직을 최종적으로 구현하고, 정의된 데이터 모델(marketing_activities, user_subscription_history)에 맞춰 테스트를 완료할 것. → 산출물 sessions/2026-06-16T03-39/developer.md
 - [2026-06-16] 확정된 KPI 가이드라인(`FINAL_KPI_Logic_Weighting_Map.md`)에 맞춰 `FinancialService`의 복잡한 계산 로직을 실제 데이터 기반으로 구현하고 최종 테스트를 완료할 것. → 산출물 sessions/2026-06-16T03-54/developer.md
