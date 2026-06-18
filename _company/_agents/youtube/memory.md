@@ -214,3 +214,4 @@ cd /Users/iyeongjae/Desktop/초보프로젝트/_company/_agents/youtube/tools &&
 - [2026-06-17] 레오가 제안한 '영상 제작 로드맵'에 따라, 확정된 Shot List와 디자인 가이드라인을 통합하여 실제 촬영/편집 분배 계획(Production Flow Map)을 구체적으로 작성하고 다음 단계의 실행 일정을 제시하라. → 산출물 sessions/2026-06-17T01-53/youtube.md
 - [2026-06-17] Designer가 제작한 최종 시각 자료를 기반으로, 영상 도입부(인트로)에 최적화된 썸네일 및 영상 내 핵심 비주얼 흐름에 대한 최종 검토와 피드백을 제공하라. → 산출물 sessions/2026-06-17T02-08/youtube.md
 - [2026-06-17] 최종 확정된 'Pain -> Gain' 프레임워크와 시각 가이드라인(Dark Blue/Accent Yellow)을 적용하여, 다음 영상에 필요한 스토리보드 및 Shot List의 초안을 Writer와 Designer에게 전달할 준비를 하라. → 산출물 sessions/2026-06-17T03-08/youtube.md
+- [2026-06-18] 지난 영상 제작 로드맵 및 데이터 분석 결과를 바탕으로, 다음 영상 4개를 위한 'Pain $\rightarrow$ Gain' 스토리텔링 컨셉의 초안을 Writer와 Designer에게 전달할 준비를 하라. → 산출물 sessions/2026-06-18T01-50/youtube.md
