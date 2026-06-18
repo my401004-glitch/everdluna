@@ -1,0 +1,6 @@
+**[폴더 내용물 구조]**
+*   `01_System_Guide.figma`: 위에서 생성된 디자인 시스템 마스터 파일.
+*   `02_Thumbnail_Template`: (최종 수정된 썸네일 에셋) 다양한 주제에 적용 가능한 템플릿 폴더.
+    *   `[Temp] - Impossible Score`: 현재 완성도 높은 버전.
+    *   `[Temp] - Vocal Analysis`: 다음 영상(발성 분석)용 기본 레이아웃 준비.
+*   `03_Intro_Template`: (최종 수정된 인트로 애니메이션 클립) 15초 분량 마스터 클립.

@@ -1,0 +1,25 @@
+**[Figma 디자인 시스템 가이드 (텍스트 기반 목업)]**
+
+**📂 1. 마스터 컴포넌트 정의 (Reusable Components)**
+*   **A. Gap Score 시각화 위젯:**
+    *   형태: 원 그래프 또는 게이지 바 형태.
+    *   기능: 현재 점수(Pain)와 목표 점수(Gain)의 격차를 색상 변화로 극대화하여 보여줍니다. (0%~100%)
+    *   색상 로직: Pain 영역은 Accent Yellow (`#FFD700`)로 경고 표시, Gain 영역은 Dark Blue (`#0A2463`) 배경 위에 Yellow 포인트로 긍정적 변화를 강조합니다.
+    *   애니메이션 가이드: 'Pain' 값이 낮은 상태에서 시작하여 (불안감 유발), 점차 빠르게 'Gain' 값으로 수렴하는 애니메이션 트랜지션이 필수입니다. (속도감을 주어 몰입도를 높임)
+*   **B. 타이포그래피 컴포넌트:**
+    *   Headline (Pain/Gain): Montserrat Bold, 72pt~120pt (영상 도입부에서 임팩트 극대화). 색상: Dark Blue 또는 White.
+    *   Body/Data: Noto Sans KR, 36pt~54pt (객관적 데이터 제시용). 색상: Neutral Grey.
+
+**🎨 2. 컬러 팔레트 및 레이아웃 규칙 (Visual Rules)**
+| 요소 | 목적 | HEX 코드 | 활용 범위 | 근거 |
+| :--- | :--- | :--- | :--- | :--- |
+| Primary Trust | 신뢰, 전문성 | `#0A2463` (Dark Blue) | 배경, 시스템 프레임, 메인 헤더. | [근거: Designer 검증된 지식] |
+| Accent Action/Gap | 경고, 기회, CTA | `#FFD700` (Yellow) | Gap Score의 Pain 영역, 강조 수치, 최종 CTA 버튼. | [근거: Designer 검증된 지식] |
+| Background Data | 가독성 확보 | `#F5F5F5` (Neutral Grey) | 데이터 차트 배경, 본문 텍스트가 놓일 공간. | [근거: Designer 검증된 지식] |
+
+**🎬 3. 인트로 그래픽 Flowmap 마스터 클립 정의**
+*   **구조:** 3단계 애니메이션 구조 채택 (Pain $\rightarrow$ Question $\rightarrow$ Gain).
+*   **Timing:** 총 길이 10~15초 분량의 루프 가능한 클립으로 설계합니다.
+    *   **[Step 1: Pain Hook (0-4s)]**: 어둡고 불안한 배경(Dark Blue/Black)에서, "당신의 노력이 안 들리는 이유?"와 같은 질문을 Yellow 경고 사인과 함께 빠르게 플래시하며 등장. (강렬한 사운드 이펙트 필수).
+    *   **[Step 2: System Introduction (4-8s)]**: 화면이 Dark Blue 프레임으로 전환되며, 중앙에 'AI Gap Score System' 로고가 전문적으로 애니메이션 되며 나타남. 신뢰감을 주는 미니멀한 모션 그래픽 사용.
+    *   **[Step 3: CTA Transition (8-15s)]**: 핵심 주제(주파수/음정 편차)와 함께 최종 목표를 제시하는 메시지("측정 가능한 데이터로 성장의 변곡점을 찾다.")가 Yellow 액센트 색상으로 부각되며, 영상 본편으로 넘어가는 트랜지션 아웃이 자연스럽게 설계됨.
