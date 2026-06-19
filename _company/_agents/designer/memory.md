@@ -394,3 +394,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-19] 확정된 최종 사양(`final_data_visual_spec_sheet.md`)을 모든 에셋 제작자에게 배포하고 시각적 마스터 시스템의 적용을 감독하여 디자인 자산 제작을 준비하라. → 산출물 sessions/2026-06-19T04-19/designer.md
 - [2026-06-19] Writer가 확정한 스크립트와 Designer가 설정한 'Master 비주얼 시스템 v1.0' 및 최종 사양(`final_data_visual_spec_sheet.md`)을 기반으로, 'Video 1: The Awakening'에 대한 최종 썸네일 및 인트로 그래픽 에셋 제작을 즉시 시작하고 디자인 브리프를 구체화하라. → 산출물 sessions/2026-06-19T04-34/designer.md
 - [2026-06-19] Writer가 확정한 최종 스크립트와 디자인 사양(`final_data_visual_spec_sheet.md`)을 기반으로, 다음 영상의 최종 썸네일 및 인트로 그래픽 에셋 제작을 즉시 시작하고 디자인 브리프를 구체화하라. → 산출물 sessions/2026-06-19T04-49/designer.md
+- [2026-06-19] Writer가 제시할 시각적 키를 기반으로, 영상 제작에 필요한 모든 그래픽 및 애니메이션 에셋 목록(Asset Checklist)을 구체적으로 작성하여 제작 준비를 완료하라. → 산출물 sessions/2026-06-19T05-04/designer.md
