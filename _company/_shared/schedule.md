@@ -1,25 +1,25 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 19. 오후 3:23:40_
+_업데이트: 2026. 6. 19. 오후 4:46:48_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-06-18] 지난 영상 제작 로드맵 및 데이터 분석 결과를 바탕으로, 다음 영상 4개를 위한 'Pain $\rightarrow$ Gain' 스토리텔링 컨셉의 초안을 Writer와 Designer에게 전달할 준비를 하라. → 산출물 sessions/2026-06-18T01-50/youtube.md
 - [2026-06-19] Writer와 Designer가 준비한 최종 스크립트와 디자인 에셋을 기반으로, 다음 영상의 최종 포맷(영상 길이 및 톤앤매너)을 확정하고 업로드 일정을 설정하라. → 산출물 sessions/2026-06-19T02-49/youtube.md
 - [2026-06-19] Writer와 Designer가 제공한 최종 자료를 기반으로 다음 영상의 포맷(길이, 톤앤매너)과 업로드 일정을 확정하여 마케팅 로드맵에 반영하라. → 산출물 sessions/2026-06-19T06-19/youtube.md
+- [2026-06-19] 에셋 제작 및 시스템 검증이 진행되는 동안, 실시간 참여자 반응 데이터(`comment_harvester.py`) 수집을 시작하고 마케팅 로드맵 실행의 기초 데이터를 확보하라. → 산출물 sessions/2026-06-19T06-48/youtube.md
 ### 📷 Instagram
 - [2026-05-26] 📥 새 지식 입수 — **sonicpass_seoul_arts_ad.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-26/sonicpass_seoul_arts_ad.html)
 - [2026-06-11] Designer가 확정한 디자인 가이드라인과 스토리보드를 활용하여, 다음 영상(Part 2)에 필요한 Reels 및 피드 포맷별 시각 자료를 즉시 준비하라. → 산출물 sessions/2026-06-11T08-05/instagram.md
 - [2026-06-14] writer와 designer가 준비한 콘텐츠 초안에 맞춰, 가장 효과적인 후킹 포인트와 최적 게시 시간 전략을 반영하여 첫 번째 영상에 대한 릴스 및 피드 포맷별 게시물 시안(캡션 포함)을 즉시 작성하라. → 산출물 sessions/2026-06-14T15-23/instagram.md
 ### 🎨 Designer
-- [2026-06-19] Master Asset Checklist v1.0에 명시된 A-001부터 A-013까지의 모든 핵심 에셋(불안 음파 시각화, 데이터 그래프 등) 제작을 즉시 착수하고, 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)을 완벽히 준수하여 제작하라. → 산출물 sessions/2026-06-19T05-34/designer.md
 - [2026-06-19] Master Asset Checklist v1.0과 `final_data_visual_spec_sheet.md`에 명시된 디자인 사양을 기반으로, 다음 영상 제작에 필요한 모든 핵심 에셋(A-001~A-013)의 실제 시각적 제작을 즉시 착수하라. → 산출물 sessions/2026-06-19T05-49/designer.md
 - [2026-06-19] 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)과 Writer의 스크립트를 기반으로 다음 영상에 필요한 모든 핵심 에셋(A-001~A-013) 제작을 위한 최종 Asset Checklist를 업데이트하고 제작 착수를 준비하라. → 산출물 sessions/2026-06-19T06-19/designer.md
+- [2026-06-19] Master Asset Checklist v2.0 사양에 맞춰 핵심 시각 자료(A-001~A-013)의 실제 제작을 즉시 착수하고, 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)을 완벽히 준수하라. → 산출물 sessions/2026-06-19T06-48/designer.md
 ### 💻 코다리
-- [2026-06-19] Writer/Designer가 제시한 'Master 비주얼 시스템 v1.0'과 API/DB 구조 요구사항(Checklist) 간의 데이터 흐름 동기화 여부를 최종 점검하고, 로직 제안을 완료하여 영상 제작의 기술적 기반을 확정하라. → 산출물 sessions/2026-06-19T05-19/developer.md
 - [2026-06-19] Master 비주얼 시스템 v1.0과 API/DB 구조 요구사항(Checklist) 간의 데이터 흐름 동기화를 최종적으로 점검하고, 실제 코딩 착수를 위한 모든 기술적 기반이 완벽히 일치하는지 마지막으로 확인하고 보고하라. → 산출물 sessions/2026-06-19T05-34/developer.md
 - [2026-06-19] Master Visual System Prototype 가이드에 명시된 데이터 흐름과 실제 API/DB 구조 간의 동기화 여부를 최종 점검하고, 코딩 착수를 위한 기술적 기반을 완벽히 확정하여 보고하라. → 산출물 sessions/2026-06-19T06-04/developer.md
+- [2026-06-19] Master Visual System Prototype 가이드와 API/DB 구조 간의 데이터 흐름 동기화 여부를 최종 점검하고, 코딩 착수를 위한 기술적 기반이 완벽히 일치하는지 최종 확인하여 보고하라. → 산출물 sessions/2026-06-19T06-48/developer.md
 ### 💼 현빈
 - [2026-06-17] 수집된 지식을 바탕으로 실용음악 교육 분야에서 학부모와 학생에게 어필할 수 있는 핵심 가치 제안(Value Proposition), 수익화 모델, 그리고 성공적인 교육 프로그램의 KPI 기준을 정의하라. → 산출물 sessions/2026-06-17T01-19/business.md
 - [2026-06-17] 개발된 핵심진단서비스의 데이터 흐름이 수익화 전략(AVD 40%, CTR 8% 목표)과 어떻게 연결되는지 검증하고, KPI 연동 로직에 대한 기술적 타당성을 확인하라. → 산출물 sessions/2026-06-17T03-38/business.md
