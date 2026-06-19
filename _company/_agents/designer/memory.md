@@ -400,3 +400,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-19] Master Asset Checklist v1.0과 `final_data_visual_spec_sheet.md`에 명시된 디자인 사양을 기반으로, 다음 영상 제작에 필요한 모든 핵심 에셋(A-001~A-013)의 실제 시각적 제작을 즉시 착수하라. → 산출물 sessions/2026-06-19T05-49/designer.md
 - [2026-06-19] 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)과 Writer의 스크립트를 기반으로 다음 영상에 필요한 모든 핵심 에셋(A-001~A-013) 제작을 위한 최종 Asset Checklist를 업데이트하고 제작 착수를 준비하라. → 산출물 sessions/2026-06-19T06-19/designer.md
 - [2026-06-19] Master Asset Checklist v2.0 사양에 맞춰 핵심 시각 자료(A-001~A-013)의 실제 제작을 즉시 착수하고, 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)을 완벽히 준수하라. → 산출물 sessions/2026-06-19T06-48/designer.md
+- [2026-06-19] 확정된 영상 포맷과 톤앤매너를 기반으로 다음 영상에 필요한 모든 핵심 시각 자료(Asset Checklist)의 우선순위를 재조정하고, 디자인 에셋 제작 로드맵을 확정하라. → 산출물 sessions/2026-06-19T11-54/designer.md
