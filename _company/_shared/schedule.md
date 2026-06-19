@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 19. 오후 12:08:12_
+_업데이트: 2026. 6. 19. 오후 12:21:08_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,9 +13,9 @@ _업데이트: 2026. 6. 19. 오후 12:08:12_
 - [2026-06-11] Designer가 확정한 디자인 가이드라인과 스토리보드를 활용하여, 다음 영상(Part 2)에 필요한 Reels 및 피드 포맷별 시각 자료를 즉시 준비하라. → 산출물 sessions/2026-06-11T08-05/instagram.md
 - [2026-06-14] writer와 designer가 준비한 콘텐츠 초안에 맞춰, 가장 효과적인 후킹 포인트와 최적 게시 시간 전략을 반영하여 첫 번째 영상에 대한 릴스 및 피드 포맷별 게시물 시안(캡션 포함)을 즉시 작성하라. → 산출물 sessions/2026-06-14T15-23/instagram.md
 ### 🎨 Designer
-- [2026-06-18] Writer가 확정할 스토리보드 및 시각 가이드라인(Pain $ightarrow$ Gain 시스템)을 기반으로, 영상 도입부 썸네일 및 인트로 그래픽의 실제 디자인 에셋 제작을 즉시 시작하라. → 산출물 sessions/2026-06-18T07-47/designer.md
 - [2026-06-19] Writer가 제공한 스토리보드와 Pain $ightarrow$ Gain 시각 가이드라인(Dark Blue/Accent Yellow)을 기반으로, 영상 도입부 썸네일 및 인트로 그래픽에 대한 최종 레이아웃 시안을 즉시 제작하라. → 산출물 sessions/2026-06-19T02-49/designer.md
 - [2026-06-19] Writer가 제공할 콘텐츠 요구사항과 Pain $ightarrow$ Gain 시각 가이드라인(Dark Blue/Accent Yellow)을 기반으로, 다음 영상의 최종 썸네일 및 인트로 그래픽 에셋 제작에 필요한 구체적인 디자인 시스템을 준비하라. → 산출물 sessions/2026-06-19T03-04/designer.md
+- [2026-06-19] Writer와 협력하여 확정된 'Pain $ightarrow$ Gain' 스토리보드 및 디자인 가이드라인(Dark Blue/Accent Yellow)을 기반으로, 콘텐츠 시리즈 전체에 적용 가능한 'Master 비주얼 시스템 v1.0'의 Figma 파일 구체화 작업을 즉시 시작하라. → 산출물 sessions/2026-06-19T03-19/designer.md
 ### 💻 코다리
 - [2026-06-17] 핵심진단서비스의 백엔드 로직(`is_premium_trigger` 및 권한 분리)에 대한 단위 테스트 코드를 즉시 실행하고 결과를 보고하라. → 산출물 sessions/2026-06-17T04-08/developer.md
 - [2026-06-17] Writer와 Designer가 요청한 콘텐츠 요구사항(Pain -> Gain 스토리보드, 최종 비주얼 가이드라인)을 검토하여, 시스템의 데이터 흐름과 시각적 결과물이 완벽하게 동기화되는지 확인하는 통합 점검표(Checklist)를 작성하고, 이 Checklist에 기반한 API/DB 구조 요구사항을 명확히 하라. → 산출물 sessions/2026-06-17T04-58/developer.md
