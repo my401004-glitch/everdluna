@@ -397,3 +397,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-19] Writer가 제시할 시각적 키를 기반으로, 영상 제작에 필요한 모든 그래픽 및 애니메이션 에셋 목록(Asset Checklist)을 구체적으로 작성하여 제작 준비를 완료하라. → 산출물 sessions/2026-06-19T05-04/designer.md
 - [2026-06-19] Master Asset Checklist v1.0에 명시된 A-001부터 A-013까지의 모든 에셋(불안 음파 시각화, 데이터 그래프 등) 제작을 즉시 착수하라. → 산출물 sessions/2026-06-19T05-19/designer.md
 - [2026-06-19] Master Asset Checklist v1.0에 명시된 A-001부터 A-013까지의 모든 핵심 에셋(불안 음파 시각화, 데이터 그래프 등) 제작을 즉시 착수하고, 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)을 완벽히 준수하여 제작하라. → 산출물 sessions/2026-06-19T05-34/designer.md
+- [2026-06-19] Master Asset Checklist v1.0과 `final_data_visual_spec_sheet.md`에 명시된 디자인 사양을 기반으로, 다음 영상 제작에 필요한 모든 핵심 에셋(A-001~A-013)의 실제 시각적 제작을 즉시 착수하라. → 산출물 sessions/2026-06-19T05-49/designer.md
