@@ -1,21 +1,21 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 19. 오후 3:06:39_
+_업데이트: 2026. 6. 19. 오후 3:23:40_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-06-17] 최종 확정된 'Pain -> Gain' 프레임워크와 시각 가이드라인(Dark Blue/Accent Yellow)을 적용하여, 다음 영상에 필요한 스토리보드 및 Shot List의 초안을 Writer와 Designer에게 전달할 준비를 하라. → 산출물 sessions/2026-06-17T03-08/youtube.md
 - [2026-06-18] 지난 영상 제작 로드맵 및 데이터 분석 결과를 바탕으로, 다음 영상 4개를 위한 'Pain $\rightarrow$ Gain' 스토리텔링 컨셉의 초안을 Writer와 Designer에게 전달할 준비를 하라. → 산출물 sessions/2026-06-18T01-50/youtube.md
 - [2026-06-19] Writer와 Designer가 준비한 최종 스크립트와 디자인 에셋을 기반으로, 다음 영상의 최종 포맷(영상 길이 및 톤앤매너)을 확정하고 업로드 일정을 설정하라. → 산출물 sessions/2026-06-19T02-49/youtube.md
+- [2026-06-19] Writer와 Designer가 제공한 최종 자료를 기반으로 다음 영상의 포맷(길이, 톤앤매너)과 업로드 일정을 확정하여 마케팅 로드맵에 반영하라. → 산출물 sessions/2026-06-19T06-19/youtube.md
 ### 📷 Instagram
 - [2026-05-26] 📥 새 지식 입수 — **sonicpass_seoul_arts_ad.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-26/sonicpass_seoul_arts_ad.html)
 - [2026-06-11] Designer가 확정한 디자인 가이드라인과 스토리보드를 활용하여, 다음 영상(Part 2)에 필요한 Reels 및 피드 포맷별 시각 자료를 즉시 준비하라. → 산출물 sessions/2026-06-11T08-05/instagram.md
 - [2026-06-14] writer와 designer가 준비한 콘텐츠 초안에 맞춰, 가장 효과적인 후킹 포인트와 최적 게시 시간 전략을 반영하여 첫 번째 영상에 대한 릴스 및 피드 포맷별 게시물 시안(캡션 포함)을 즉시 작성하라. → 산출물 sessions/2026-06-14T15-23/instagram.md
 ### 🎨 Designer
-- [2026-06-19] Master Asset Checklist v1.0에 명시된 A-001부터 A-013까지의 모든 에셋(불안 음파 시각화, 데이터 그래프 등) 제작을 즉시 착수하라. → 산출물 sessions/2026-06-19T05-19/designer.md
 - [2026-06-19] Master Asset Checklist v1.0에 명시된 A-001부터 A-013까지의 모든 핵심 에셋(불안 음파 시각화, 데이터 그래프 등) 제작을 즉시 착수하고, 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)을 완벽히 준수하여 제작하라. → 산출물 sessions/2026-06-19T05-34/designer.md
 - [2026-06-19] Master Asset Checklist v1.0과 `final_data_visual_spec_sheet.md`에 명시된 디자인 사양을 기반으로, 다음 영상 제작에 필요한 모든 핵심 에셋(A-001~A-013)의 실제 시각적 제작을 즉시 착수하라. → 산출물 sessions/2026-06-19T05-49/designer.md
+- [2026-06-19] 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)과 Writer의 스크립트를 기반으로 다음 영상에 필요한 모든 핵심 에셋(A-001~A-013) 제작을 위한 최종 Asset Checklist를 업데이트하고 제작 착수를 준비하라. → 산출물 sessions/2026-06-19T06-19/designer.md
 ### 💻 코다리
 - [2026-06-19] Writer/Designer가 제시한 'Master 비주얼 시스템 v1.0'과 API/DB 구조 요구사항(Checklist) 간의 데이터 흐름 동기화 여부를 최종 점검하고, 로직 제안을 완료하여 영상 제작의 기술적 기반을 확정하라. → 산출물 sessions/2026-06-19T05-19/developer.md
 - [2026-06-19] Master 비주얼 시스템 v1.0과 API/DB 구조 요구사항(Checklist) 간의 데이터 흐름 동기화를 최종적으로 점검하고, 실제 코딩 착수를 위한 모든 기술적 기반이 완벽히 일치하는지 마지막으로 확인하고 보고하라. → 산출물 sessions/2026-06-19T05-34/developer.md
@@ -33,9 +33,9 @@ _업데이트: 2026. 6. 19. 오후 3:06:39_
 - [2026-06-18] 루나 들리나! → 산출물 sessions/2026-06-18T07-27/editor.md
 - [2026-06-18] Writer가 확정할 스크립트 흐름에 맞춰, 핵심 전환점(Pain $ightarrow$ Gain)에 필요한 사운드 이펙트 및 브릿지 BGM의 사운드 블루프린트를 구체화하여 톤 일관성을 확보하라. → 산출물 sessions/2026-06-18T07-47/editor.md
 ### ✍️ Writer
-- [2026-06-19] 확정된 스크립트와 디자인 사양을 기반으로, 영상의 흐름에 맞춰 각 시각 요소(Visual Key)를 시간 순서대로 재정리하여 '마스터 스토리보드' 초안을 즉시 제작하라. → 산출물 sessions/2026-06-19T05-04/writer.md
 - [2026-06-19] 최종 제작 브리프를 기반으로, 각 섹션별 스크립트와 비주얼 키 간의 완벽한 동기화를 위한 세부 검토 및 수정 작업을 진행하고 최종본을 확정하라. → 산출물 sessions/2026-06-19T05-19/writer.md
 - [2026-06-19] Designer가 제시한 배치 가이드라인과 스토리보드 스펙을 최종 반영하여, 다음 영상에 대한 포맷(영상 길이 및 톤앤매너)에 최적화된 최종 스토리보드와 스크립트 다듬기를 즉시 진행하라. → 산출물 sessions/2026-06-19T05-49/writer.md
+- [2026-06-19] Master 스토리보드를 기반으로 다음 영상(Part 2)에 대한 최종 스크립트와 구체적인 Shot List를 확정하여 제공하라. → 산출물 sessions/2026-06-19T06-19/writer.md
 ### 🔍 Researcher
 - [2026-06-18] 지난 영상 데이터 및 트렌드를 분석하여, 다음 영상 컨셉 5개를 'Pain $\rightarrow$ Gain' 프레임워크 기반으로 도출하고 가장 잠재적 CTR이 높은 컨셉을 선정해 주세요. → 산출물 sessions/2026-06-18T06-19/researcher.md
 - [2026-06-18] 이전 영상 제작 로드맵 및 데이터 분석 결과를 바탕으로, 다음 영상 4개를 위한 'Pain $ightarrow$ Gain' 스토리텔링 컨셉의 초안을 Writer와 Designer에게 전달할 준비를 위해, 현재 시장 트렌드 및 경쟁사 데이터를 분석하여 가장 높은 CTR 잠재력을 가질 핵심 무드 키워드 5가지를 도출하고 그 근거를 제시하라 → 산출물 sessions/2026-06-18T07-32/researcher.md

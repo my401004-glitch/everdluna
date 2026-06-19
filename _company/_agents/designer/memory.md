@@ -398,3 +398,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-19] Master Asset Checklist v1.0에 명시된 A-001부터 A-013까지의 모든 에셋(불안 음파 시각화, 데이터 그래프 등) 제작을 즉시 착수하라. → 산출물 sessions/2026-06-19T05-19/designer.md
 - [2026-06-19] Master Asset Checklist v1.0에 명시된 A-001부터 A-013까지의 모든 핵심 에셋(불안 음파 시각화, 데이터 그래프 등) 제작을 즉시 착수하고, 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)을 완벽히 준수하여 제작하라. → 산출물 sessions/2026-06-19T05-34/designer.md
 - [2026-06-19] Master Asset Checklist v1.0과 `final_data_visual_spec_sheet.md`에 명시된 디자인 사양을 기반으로, 다음 영상 제작에 필요한 모든 핵심 에셋(A-001~A-013)의 실제 시각적 제작을 즉시 착수하라. → 산출물 sessions/2026-06-19T05-49/designer.md
+- [2026-06-19] 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)과 Writer의 스크립트를 기반으로 다음 영상에 필요한 모든 핵심 에셋(A-001~A-013) 제작을 위한 최종 Asset Checklist를 업데이트하고 제작 착수를 준비하라. → 산출물 sessions/2026-06-19T06-19/designer.md
