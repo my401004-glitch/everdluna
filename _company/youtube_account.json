@@ -2,10 +2,18 @@
   "API_KEY": "***SET***",
   "YOUTUBE_CHANNEL_ID": "https://www.youtube.com/channel/UC92YSjmyX0Url5noAXPPojQ",
   "WATCHED_CHANNELS": [
-    // 향후 감시할 학원/교육기관 관련 채널 ID 추가 예정
+    "@vocalfriends",
+    "@KwakYul",
+    "@Bubble-dia",
+    "@3옥타브장인",
+    "@belcantoshin"
   ],
   "COMPETITOR_CHANNELS": [
-    // 경쟁사 분석을 위해 업계 선두 교육 콘텐츠 채널 2~3개 ID 추가 필요
+    "@vocalfriends",
+    "@KwakYul",
+    "@Bubble-dia",
+    "@3옥타브장인",
+    "@belcantoshin"
   ],
   "CORE_NARRATIVE": {
     "primary_topic": "데이터 기반 학원 운영 ROI 극대화 및 학생 이탈 예측",
