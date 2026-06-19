@@ -254,3 +254,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-18] | Primary Trust | 신뢰, 전문성 | `#0A2463` (Dark Blue) | 배경, 시스템 프레임, 메인 헤더. | | _(근거: Designer 검증된 지식)_
 - [2026-06-18] | Accent Action/Gap | 경고, 기회, CTA | `#FFD700` (Yellow) | Gap Score의 Pain 영역, 강조 수치, 최종 CTA 버튼. | | _(근거: Designer 검증된 지식)_
 - [2026-06-18] | Background Data | 가독성 확보 | `#F5F5F5` (Neutral Grey) | 데이터 차트 배경, 본문 텍스트가 놓일 공간. | | _(근거: Designer 검증된 지식)_
+- [2026-06-19] | **전체 구성** | 좌우 분할 (Split Screen) 구조. 왼쪽(Pain), 오른쪽(Gain). 중앙의 화살표가 '변곡점'을 상징하며, 가장 큰 주목도를 확보합니다. | `` | _(근거: Designer 검증된 지식)_
