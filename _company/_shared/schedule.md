@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 19. 오후 12:52:14_
+_업데이트: 2026. 6. 19. 오후 1:08:17_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 6. 19. 오후 12:52:14_
 - [2026-06-11] Designer가 확정한 디자인 가이드라인과 스토리보드를 활용하여, 다음 영상(Part 2)에 필요한 Reels 및 피드 포맷별 시각 자료를 즉시 준비하라. → 산출물 sessions/2026-06-11T08-05/instagram.md
 - [2026-06-14] writer와 designer가 준비한 콘텐츠 초안에 맞춰, 가장 효과적인 후킹 포인트와 최적 게시 시간 전략을 반영하여 첫 번째 영상에 대한 릴스 및 피드 포맷별 게시물 시안(캡션 포함)을 즉시 작성하라. → 산출물 sessions/2026-06-14T15-23/instagram.md
 ### 🎨 Designer
-- [2026-06-19] Writer와 협력하여 확정된 'Pain $ightarrow$ Gain' 스토리보드 및 디자인 가이드라인(Dark Blue/Accent Yellow)을 기반으로, 콘텐츠 시리즈 전체에 적용 가능한 'Master 비주얼 시스템 v1.0'의 Figma 파일 구체화 작업을 즉시 시작하라. → 산출물 sessions/2026-06-19T03-19/designer.md
 - [2026-06-19] Writer가 제공할 콘텐츠 요구사항과 Pain $ightarrow$ Gain 시각 가이드라인(Dark Blue/Accent Yellow)을 기반으로, 다음 영상의 최종 썸네일 및 인트로 그래픽 에셋 제작에 필요한 구체적인 디자인 시스템 적용안을 즉시 시작하라. → 산출물 sessions/2026-06-19T03-34/designer.md
 - [2026-06-19] 확정된 Master 비주얼 시스템(Dark Blue/Accent Yellow)과 'Pain $ightarrow$ Gain' 프레임워크를 기반으로, 'Video 1: The Awakening'에 대한 최종 썸네일 에셋 제작을 즉시 시작하고 디자인 브리프를 구체화하라. → 산출물 sessions/2026-06-19T03-49/designer.md
+- [2026-06-19] Developer가 제시한 데이터 구조 요구사항과 현재의 시각 가이드라인(Dark Blue/Accent Yellow)이 최종적으로 완벽하게 일치하는지 검토하고, 시스템 통합 점검표에 기반하여 디자인 자산 제작에 필요한 마지막 사양을 확정하라. → 산출물 sessions/2026-06-19T04-04/designer.md
 ### 💻 코다리
-- [2026-06-17] 핵심진단서비스의 백엔드 로직(`is_premium_trigger` 및 권한 분리)에 대한 단위 테스트 코드를 즉시 실행하고 결과를 보고하라. → 산출물 sessions/2026-06-17T04-08/developer.md
 - [2026-06-17] Writer와 Designer가 요청한 콘텐츠 요구사항(Pain -> Gain 스토리보드, 최종 비주얼 가이드라인)을 검토하여, 시스템의 데이터 흐름과 시각적 결과물이 완벽하게 동기화되는지 확인하는 통합 점검표(Checklist)를 작성하고, 이 Checklist에 기반한 API/DB 구조 요구사항을 명확히 하라. → 산출물 sessions/2026-06-17T04-58/developer.md
 - [2026-06-18] Writer와 Designer가 준비한 콘텐츠 요구사항(Pain $ightarrow$ Gain 스토리보드, 최종 비주얼 가이드라인)을 검토하여, 시스템의 데이터 흐름과 시각적 결과물이 완벽하게 동기화되는지 확인하는 통합 점검표(Checklist)를 최종적으로 검토하고, 이 Checklist에 기반한 API/DB 구조 요구사항이 명확히 반영되었는지 점검하라. → 산출물 sessions/2026-06-18T07-02/developer.md
+- [2026-06-19] 코다리가 요구한 API/DB 구조 요구사항(Checklist)과 Designer가 확정한 'Master 비주얼 시스템 v1.0' 간의 데이터 흐름 동기화 여부를 최종 점검하고, 불일치 사항이 있다면 수정할 수 있는 구체적인 로직 제안을 제시하라. → 산출물 sessions/2026-06-19T04-04/developer.md
 ### 💼 현빈
 - [2026-06-17] 수집된 지식을 바탕으로 실용음악 교육 분야에서 학부모와 학생에게 어필할 수 있는 핵심 가치 제안(Value Proposition), 수익화 모델, 그리고 성공적인 교육 프로그램의 KPI 기준을 정의하라. → 산출물 sessions/2026-06-17T01-19/business.md
 - [2026-06-17] 개발된 핵심진단서비스의 데이터 흐름이 수익화 전략(AVD 40%, CTR 8% 목표)과 어떻게 연결되는지 검증하고, KPI 연동 로직에 대한 기술적 타당성을 확인하라. → 산출물 sessions/2026-06-17T03-38/business.md
