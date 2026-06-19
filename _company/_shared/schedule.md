@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 19. 오후 1:23:15_
+_업데이트: 2026. 6. 19. 오후 1:37:45_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,9 +13,9 @@ _업데이트: 2026. 6. 19. 오후 1:23:15_
 - [2026-06-11] Designer가 확정한 디자인 가이드라인과 스토리보드를 활용하여, 다음 영상(Part 2)에 필요한 Reels 및 피드 포맷별 시각 자료를 즉시 준비하라. → 산출물 sessions/2026-06-11T08-05/instagram.md
 - [2026-06-14] writer와 designer가 준비한 콘텐츠 초안에 맞춰, 가장 효과적인 후킹 포인트와 최적 게시 시간 전략을 반영하여 첫 번째 영상에 대한 릴스 및 피드 포맷별 게시물 시안(캡션 포함)을 즉시 작성하라. → 산출물 sessions/2026-06-14T15-23/instagram.md
 ### 🎨 Designer
-- [2026-06-19] 확정된 Master 비주얼 시스템(Dark Blue/Accent Yellow)과 'Pain $ightarrow$ Gain' 프레임워크를 기반으로, 'Video 1: The Awakening'에 대한 최종 썸네일 에셋 제작을 즉시 시작하고 디자인 브리프를 구체화하라. → 산출물 sessions/2026-06-19T03-49/designer.md
 - [2026-06-19] Developer가 제시한 데이터 구조 요구사항과 현재의 시각 가이드라인(Dark Blue/Accent Yellow)이 최종적으로 완벽하게 일치하는지 검토하고, 시스템 통합 점검표에 기반하여 디자인 자산 제작에 필요한 마지막 사양을 확정하라. → 산출물 sessions/2026-06-19T04-04/designer.md
 - [2026-06-19] 확정된 최종 사양(`final_data_visual_spec_sheet.md`)을 모든 에셋 제작자에게 배포하고 시각적 마스터 시스템의 적용을 감독하여 디자인 자산 제작을 준비하라. → 산출물 sessions/2026-06-19T04-19/designer.md
+- [2026-06-19] Writer가 확정한 스크립트와 Designer가 설정한 'Master 비주얼 시스템 v1.0' 및 최종 사양(`final_data_visual_spec_sheet.md`)을 기반으로, 'Video 1: The Awakening'에 대한 최종 썸네일 및 인트로 그래픽 에셋 제작을 즉시 시작하고 디자인 브리프를 구체화하라. → 산출물 sessions/2026-06-19T04-34/designer.md
 ### 💻 코다리
 - [2026-06-18] Writer와 Designer가 준비한 콘텐츠 요구사항(Pain $ightarrow$ Gain 스토리보드, 최종 비주얼 가이드라인)을 검토하여, 시스템의 데이터 흐름과 시각적 결과물이 완벽하게 동기화되는지 확인하는 통합 점검표(Checklist)를 최종적으로 검토하고, 이 Checklist에 기반한 API/DB 구조 요구사항이 명확히 반영되었는지 점검하라. → 산출물 sessions/2026-06-18T07-02/developer.md
 - [2026-06-19] 코다리가 요구한 API/DB 구조 요구사항(Checklist)과 Designer가 확정한 'Master 비주얼 시스템 v1.0' 간의 데이터 흐름 동기화 여부를 최종 점검하고, 불일치 사항이 있다면 수정할 수 있는 구체적인 로직 제안을 제시하라. → 산출물 sessions/2026-06-19T04-04/developer.md
@@ -33,9 +33,9 @@ _업데이트: 2026. 6. 19. 오후 1:23:15_
 - [2026-06-18] 루나 들리나! → 산출물 sessions/2026-06-18T07-27/editor.md
 - [2026-06-18] Writer가 확정할 스크립트 흐름에 맞춰, 핵심 전환점(Pain $ightarrow$ Gain)에 필요한 사운드 이펙트 및 브릿지 BGM의 사운드 블루프린트를 구체화하여 톤 일관성을 확보하라. → 산출물 sessions/2026-06-18T07-47/editor.md
 ### ✍️ Writer
-- [2026-06-19] Master 비주얼 시스템 v1.0과 'Pain $ightarrow$ Gain' 스토리보드 가이드라인을 기반으로, 첫 번째 영상에 필요한 최종 스크립트와 핵심 CTA 문구를 확정하라. → 산출물 sessions/2026-06-19T03-34/writer.md
 - [2026-06-19] Designer가 준비한 시각 가이드라인과 Pain $ightarrow$ Gain 프레임워크를 활용하여, 'Video 1'의 최종 스크립트 및 CTA 문구를 디자인 에셋에 최적화되도록 최종 검토하고 수정하라. → 산출물 sessions/2026-06-19T03-49/writer.md
 - [2026-06-19] 확정된 Pain $ightarrow$ Gain 스토리텔링 프레임워크를 기반으로 다음 영상에 대한 스토리보드 및 스크립트 초안 작성을 시작하라. → 산출물 sessions/2026-06-19T04-19/writer.md
+- [2026-06-19] Designer가 준비한 최종 사양과 코다리의 로직 명세서(데이터 흐름)를 검토하여, 스토리보드와 스크립트의 데이터 흐름이 시각적 결과물에 완벽하게 동기화되는지 최종적으로 확인하고, 필요하다면 CTA 문구를 조정하라. → 산출물 sessions/2026-06-19T04-34/writer.md
 ### 🔍 Researcher
 - [2026-06-18] 지난 영상 데이터 및 트렌드를 분석하여, 다음 영상 컨셉 5개를 'Pain $\rightarrow$ Gain' 프레임워크 기반으로 도출하고 가장 잠재적 CTR이 높은 컨셉을 선정해 주세요. → 산출물 sessions/2026-06-18T06-19/researcher.md
 - [2026-06-18] 이전 영상 제작 로드맵 및 데이터 분석 결과를 바탕으로, 다음 영상 4개를 위한 'Pain $ightarrow$ Gain' 스토리텔링 컨셉의 초안을 Writer와 Designer에게 전달할 준비를 위해, 현재 시장 트렌드 및 경쟁사 데이터를 분석하여 가장 높은 CTR 잠재력을 가질 핵심 무드 키워드 5가지를 도출하고 그 근거를 제시하라 → 산출물 sessions/2026-06-18T07-32/researcher.md
