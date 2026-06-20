@@ -305,3 +305,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-19] Master Visual System Prototype 가이드에 명시된 데이터 흐름과 실제 API/DB 구조 간의 동기화 여부를 최종 점검하고, 코딩 착수를 위한 기술적 기반을 완벽히 확정하여 보고하라. → 산출물 sessions/2026-06-19T06-04/developer.md
 - [2026-06-19] Master Visual System Prototype 가이드와 API/DB 구조 간의 데이터 흐름 동기화 여부를 최종 점검하고, 코딩 착수를 위한 기술적 기반이 완벽히 일치하는지 최종 확인하여 보고하라. → 산출물 sessions/2026-06-19T06-48/developer.md
 - [2026-06-20] Master Visual System Prototype 가이드와 API/DB 구조 간의 데이터 흐름 동기화 상태를 최종적으로 점검하고, Writer/Designer가 요청한 에셋 목록(`Asset Checklist`)을 구현하기 위한 기술적 병목점 및 필요한 코드를 선행 검토하여 보고하라. → 산출물 sessions/2026-06-20T06-01/developer.md
+- [2026-06-20] Designer가 요청한 최종 Asset List와 기술 명세서(`Master Visual System Prototype 가이드`)를 기반으로, 필요한 API/DB 연동 및 데이터 흐름에 대한 기술적 병목점과 코딩 착수를 위한 선행 검토 보고서를 작성하라. → 산출물 sessions/2026-06-20T07-25/developer.md
