@@ -354,3 +354,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-20] 1. **데이터 유효성 검사:** 사용자 Role 및 입력 데이터(`diagnosis_type`) 기반의 권한(RBAC) 체크 수행 . _(근거: sessions/2026-05-18T13:43)_
 - [2026-06-20] 2. **스코어 계산 로직:** `KPI_Metrics`와 `Diagnosis_Results` 스키마를 참조하여 점수를 산출하는 순수 함수 구현 . _(근거: sessions/2026-05-18T14-34)_
 - [2026-06-20] 3. **트랜잭션 관리:** 진단 과정의 모든 단계(Input Validation $\rightarrow$ Score Calculation $\rightarrow$ DB Write)를 하나의 트랜잭션으로 묶어 원자성을 확보합니다 . _(근거: sessions/2026-05-18T43)_
+- [2026-06-20] ### 1. 개요 및 목표 달성 현황 _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-20] ### 2. 기술 구현 상세 (DiagnosisService) _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-20] ### 3. 기술적 검증 결과 및 병목점 해소 _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-20] ### 4. 다음 단계 제안 (기술적 우선순위) _(근거: sessions/2026-05-18T16-34/developer.md)_
