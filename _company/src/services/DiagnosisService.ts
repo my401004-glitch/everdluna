@@ -1,76 +1,96 @@
-import { DiagnosisInput, GapScoreResult } from "../types"; // 가상의 타입 정의 파일 가정
-import { UserContext } from "../../models/UserContext";
+// src/services/diagnosisService.ts
 
 /**
- * @description 사용자의 진단 데이터(경험, 지식)를 기반으로 핵심 KPI와 Gap Score를 계산합니다.
- * 이 서비스는 시스템의 가장 중요한 비즈니스 로직을 담고 있습니다.
- * [근거: 2026-05-18T14-39/developer.md (API 연동 로직 구현)]
- * @param input - 사용자의 진단 요청 데이터와 컨텍스트를 포함합니다.
- * @returns 계산된 Gap Score 및 결과를 담은 객체입니다.
+ * @typedef {Object} DiagnosisInputData
+ * @description 진단 시스템에 입력되는 원시 데이터 구조 (실제 사용자 피드백 또는 API 연동 값)
+ * @property {string} contextId - 진단 결과의 컨텍스트를 식별하는 ID (e.g., session_id).
+ * @property {'Growth'|'Engagement'|'Monetization'} diagnosisType - 수행된 진단의 유형.
+ * @property {Object.<string, number>} rawMetrics - 다양한 지표명과 수치 값의 맵.
+ */
+
+/**
+ * DiagnosisService는 핵심 비즈니스 로직을 담고 있는 서비스 레이어입니다.
+ * 데이터베이스 접근이나 외부 API 호출 등 Side Effect를 격리하여 테스트 용이성을 높였습니다.
  */
 export class DiagnosisService {
 
+    private readonly dbClient: any; // 실제 DB 클라이언트 (TypeORM/Prisma 등을 사용한다고 가정)
+
+    constructor(dbClient) {
+        this.dbClient = dbClient; 
+        // 초기화 시점에 필요한 의존성 주입 및 연결 검증 로직 수행
+    }
+
     /**
-     * 핵심 KPI(Growth, Engagement, Monetization)와 목표 대비 격차 점수를 산출하는 메서드.
-     * 이 로직은 외부 데이터 소스나 복잡한 알고리즘에 의존할 수 있습니다.
-     * @param input - 사용자 입력 및 컨텍스트 정보 (예: quiz_results).
-     * @returns GapScoreResult 객체.
+     * 진단 프로세스의 핵심 흐름을 관리하는 트랜잭션 함수입니다.
+     * @param {DiagnosisInputData} input - 사용자로부터 받은 원시 입력 데이터.
+     * @returns {Promise<{score: number, results: any}>} 계산된 최종 점수와 결과 객체.
      */
-    public static async calculateGapScore(input: DiagnosisInput): Promise<GapScoreResult> {
-        console.log("--- [DiagnosisService] 핵심 KPI 계산 시작 ---");
-
-        // 1. 입력 데이터 유효성 검사 (가드)
-        if (!input || !input.quiz_results || input.quiz_results.length === 0) {
-            throw new Error("진단에 필요한 quiz 결과 데이터가 누락되었습니다.");
+    public async runDiagnosis(input) {
+        // 1. Input Validation & RBAC Check (가장 먼저 수행되어야 하는 게이트)
+        if (!this.isUserAuthorized(input.diagnosisType, input.contextId)) {
+            throw new Error("UnauthorizedAccess: 해당 진단 유형에 접근할 권한이 없습니다.");
         }
 
-        // 2. Growth Score 계산 로직 (예: 학습량 기반)
-        const growthScore = await this.calculateGrowth(input.quiz_results); // 실제 API 호출 또는 복잡한 계산 가정
+        // 2. 핵심 스코어 계산 (순수 로직)
+        const calculatedScore = this.calculateGapScore(input);
 
-        // 3. Engagement Score 계산 로직 (예: 참여 빈도 및 깊이 기반)
-        const engagementScore = input.userContext?.last_interaction_depth || 0;
+        // 3. 결과 저장 및 트랜잭션 커밋 (Side Effect)
+        await this.saveDiagnosisResult(input, calculatedScore);
 
-        // 4. Monetization Potential 계산 로직 (예: 특정 모듈 관심도 기반)
-        let monetizationPotential = this.calculateMonetization(input.quiz_results);
-
-        // 5. 최종 Gap Score 및 결과 구조화
-        const gapScore = Math.max(0, 100 - growthScore * 0.2); // 예시 공식: 성장 점수가 높을수록 격차는 줄어듦
-
-        const result: GapScoreResult = {
-            gap_score: parseFloat(gapScore.toFixed(2)),
-            growth_kpi: Math.min(100, growthScore),
-            engagement_kpi: Math.min(100, engagementScore * 10), // 가중치 적용 예시
-            monetization_kpi: parseFloat(monetizationPotential.toFixed(2)),
-            summary_message: `현재 격차 점수는 ${gapScore}점입니다. 목표 달성을 위해 다음 모듈을 추천합니다.`
+        return {
+            score: calculatedScore,
+            results: { /* ... 최종 구조화된 리포트 데이터 ... */ }
         };
-
-        console.log("--- [DiagnosisService] KPI 계산 완료 ---");
-        return result;
     }
 
-    // **************************************************
-    // Private Helper Methods (실제 복잡한 로직이 들어갈 곳)
-    // **************************************************
-
-    private static async calculateGrowth(results: any[]): Promise<number> {
-        // [WHY] 이 부분은 실제 교육 과정 데이터와 연동되어야 합니다.
-        // 예시로 간단히 평균 점수의 제곱근을 사용합니다.
-        const average = results.reduce((sum, result) => sum + (result.score || 0), 0) / results.length;
-        return Math.sqrt(average * 10);
-    }
-
-    private static calculateMonetization(results: any[]): number {
-        // [WHY] 특정 키워드 노출 빈도나 '유료' 관련 질문에 대한 응답 강도를 분석합니다.
-        let score = 0;
-        for (const result of results) {
-            if (result.topic === 'Premium Feature') {
-                score += 15; // 가중치 부여
-            } else if (result.confidence > 0.8) {
-                score += 5;
-            }
+    /** 
+     * RBAC 검증 로직 (가정)
+     * @param {'Growth'|'Engagement'|'Monetization'} type - 진단 유형.
+     * @param {string} contextId - 사용자 ID 또는 컨텍스트 ID.
+     * @returns {boolean} 권한 유무.
+     */
+    private isUserAuthorized(type, contextId) {
+        // TODO: 실제로는 DB에서 UserRole을 조회하여 권한 체크 수행 필요.
+        console.log(`[DEBUG] Checking RBAC for type: ${type}, Context: ${contextId}`);
+        // 예시: 'Monetization'은 유료 사용자만 접근 가능하게 설정
+        if (type === 'Monetization') {
+            return contextId.includes('premium'); // 임시 Mock 체크 로직
         }
-        return score;
+        return true; 
+    }
+
+    /** 
+     * Gap Score 계산 알고리즘의 핵심 구현부 (Pure Function)
+     * 이 함수는 외부 DB나 API 호출 없이, 오직 입력된 데이터를 기반으로 점수를 산출해야 합니다.
+     */
+    private calculateGapScore(input) {
+        const rawMetrics = input.rawMetrics;
+
+        // [가설 1] 핵심 지표 A와 B의 표준편차 차이를 계산하여 가중치 부여
+        const varianceA = rawMetrics['variance_a'] || 0; // 예시 키
+        const varianceB = rawMetrics['variance_b'] || 0;
+
+        // [가설 2] 진단 유형별 기본 점수 설정 (예: Growth는 Engagement보다 높은 가중치)
+        let baseScore = 50; 
+        if (input.diagnosisType === 'Growth') {
+            baseScore = 70;
+        } else if (input.diagnosisType === 'Engagement') {
+            baseScore = 60;
+        }
+
+        // 최종 스코어 계산: 기본 점수 + 가중치 * 지표 간 차이
+        const score = baseScore + Math.floor((varianceA * 0.5) - (varianceB * 0.3));
+        return Math.max(1, score); // 최소 1점 보장
+    }
+
+    /** 
+     * DB에 결과 데이터를 저장하는 Side Effect 함수 (가정)
+     */
+    private async saveDiagnosisResult(input, score) {
+        console.log(`[DB] Saving Diagnosis Result: Context ${input.contextId}, Score ${score}`);
+        // TODO: await this.dbClient.diagnosisResults.create({ ... });
     }
 }
 
-export * from "./types";
+export { DiagnosisService };
