@@ -403,3 +403,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-19] 확정된 영상 포맷과 톤앤매너를 기반으로 다음 영상에 필요한 모든 핵심 시각 자료(Asset Checklist)의 우선순위를 재조정하고, 디자인 에셋 제작 로드맵을 확정하라. → 산출물 sessions/2026-06-19T11-54/designer.md
 - [2026-06-20] Writer가 제공한 최종 스크립트 및 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)을 기반으로 다음 영상에 필요한 모든 핵심 시각 자료(Asset Checklist)의 우선순위를 재조정하고, 제작 착수를 위한 최종 Asset List를 완성하라. → 산출물 sessions/2026-06-20T06-01/designer.md
 - [2026-06-20] Writer가 제공한 최종 스크립트와 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)을 기반으로 다음 영상에 필요한 모든 핵심 시각 자료(Asset Checklist)의 우선순위를 재조정하고, 제작 착수를 위한 최종 Asset List를 완성하라. → 산출물 sessions/2026-06-20T07-25/designer.md
+- [2026-06-20] 최종 Asset Specification List(`Master Asset Specification List`)에 따라 A-001부터 B-002까지의 시각 자료 제작을 최우선으로 착수하고, 코다리(developer)가 요구하는 기술적 명세서와 시각적 결과물이 완벽히 동기화되도록 작업하라. → 산출물 sessions/2026-06-20T07-40/designer.md
