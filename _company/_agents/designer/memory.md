@@ -410,3 +410,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-21] Writer와 Designer가 확정한 '최종 시각 실행 계획서(Visual Execution Plan)'를 기반으로, 개발 단계에서 정의된 핵심 데이터 구조(Gap Score 결과)를 반영한 영상 에셋 제작을 병행하여 착수하라. → 산출물 sessions/2026-06-21T06-33/designer.md
 - [2026-06-21] 코다리가 제공한 Mock JSON 구조와 정의된 비주얼 메타포(붉은 필드 $ightarrow$ 푸른 연결 고리)를 기반으로, 영상 에셋 제작에 필요한 최종 Asset Checklist 및 시각 실행 계획을 확정하고 즉시 제작을 시작하라. → 산출물 sessions/2026-06-21T06-48/designer.md
 - [2026-06-21] Writer가 완성한 최종 스크립트와 Designer가 확정한 DataViz Style Guide를 기반으로, Asset Checklist에 명시된 핵심 시각 자료(애니메이션) 제작을 즉시 착수하고 진행 상황을 보고하라. → 산출물 sessions/2026-06-21T07-03/designer.md
+- [2026-06-21] Koda-ri로부터 받은 Mock JSON 데이터를 활용하여, 정의된 시각 실행 계획서(Visual Execution Plan)에 따라 핵심 애니메이션 에셋의 프로토타입 제작을 착수하라. → 산출물 sessions/2026-06-21T07-18/designer.md
