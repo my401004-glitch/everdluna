@@ -1,48 +1,41 @@
-// src/controllers/diagnosisController.ts
-import { Request, Response } from 'express'; // Assuming express framework structure
-import * as FinancialService from '../services/FinancialService';
+/**
+ * API 게이트웨이 역할을 수행하며, 비즈니스 로직(Service)을 호출합니다.
+ */
+
+import { getDiagnosisService } from '../services/DiagnosisService';
+import { ApiResponse } from '../types/schemas'; 
+
+// 실제 환경에서는 Express나 FastAPI의 Request 객체를 받습니다.
+interface ApiRequest {
+    rawData: any[]; // 요청 본문에서 받아온 원본 데이터
+    contextId: string; // 헤더 또는 파라미터로 받은 컨텍스트 ID
+}
+
 
 /**
- * @description 사용자 ID를 기반으로 재무적 영향 시뮬레이션 보고서를 생성합니다.
- * 이 함수는 핵심 비즈니스 로직이 담긴 FinancialService를 호출하여 복잡한 계산을 수행하고,
- * 최종 결과를 API 응답 포맷에 맞춰 반환하는 역할을 합니다.
+ * GET /api/v1/diagnosis_score 엔드포인트 핸들러 (Mock)
+ * 실제 API 호출 흐름을 시뮬레이션합니다.
  */
-export const getFinancialImpactSimulation = async (req: Request, res: Response) => {
-    // 1. 요청 유효성 검증 (Guard Clause)
-    const userId = req.params.userId;
-
-    if (!userId) {
-        console.error("Missing User ID in request parameters.");
-        return res.status(400).json({ error: "User ID is required for simulation." });
-    }
-
+export const getDiagnosisScoreHandler = async (req: ApiRequest): Promise<ApiResponse> => {
     try {
-        // 2. 서비스 계층 호출 (핵심 로직 분리)
-        // FinancialService는 데이터 모델을 기반으로 복잡한 계산을 수행합니다.
-        const result = await FinancialService.calculateFinancialImpact(userId);
+        // 1. 데이터 유효성 검증 (Guard Clause)
+        if (!req.rawData || req.rawData.length === 0) {
+            return { status: 'error', data: undefined, message: "API Error: Raw data payload is missing or empty." };
+        }
+        if (!req.contextId) {
+             return { status: 'error', data: undefined, message: "API Error: Context ID (session_id) must be provided." };
+        }
 
-        // 3. 성공 응답 반환
-        res.status(200).json({
-            success: true,
-            data: {
-                user_id: userId,
-                reportTitle: "AI 기반 학원 재무 영향 시뮬레이션 보고서",
-                simulationResult: result // 최종 계산 결과를 그대로 노출
-            }
-        });
+        // 2. 서비스 로직 호출 및 트랜잭션 처리
+        const service = getDiagnosisService();
+        const diagnosisResult = service.calculateGapScore(req.rawData, req.contextId);
 
-    } catch (error) {
-        console.error(`Error processing financial simulation for user ${userId}:`, error);
-        // 4. 에러 응답 반환
-        res.status(500).json({ success: false, message: "Internal server error during simulation calculation." });
+        // 3. 성공 응답 반환 (클라이언트/프론트엔드에 전달될 포맷)
+        return { status: 'success', data: diagnosisResult, message: "Diagnosis score calculated successfully." };
+
+    } catch (error: any) {
+        console.error("Critical Error during diagnosis:", error.message);
+        // 4. 오류 처리 및 로깅 (Logging/Monitoring Integration Point)
+        return { status: 'error', data: undefined, message: `Internal Server Error: ${error.message}` };
     }
-};
-
-/**
- * @description (선택적) 진단 결과의 구조를 검증하는 미들웨어 역할을 수행합니다.
- */
-export const validateDiagnosisInput = (req: Request, res: Response, next: () => void) => {
-    // 실제 구현 시, req.body 또는 req.params가 필요한 데이터 스키마와 맞는지 체크하는 로직을 여기에 추가해야 합니다.
-    console.log("--- [Validation Middleware]: Input parameters validated successfully. ---");
-    next();
 };

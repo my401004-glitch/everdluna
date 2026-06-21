@@ -1,96 +1,72 @@
-// src/services/diagnosisService.ts
-
 /**
- * @typedef {Object} DiagnosisInputData
- * @description 진단 시스템에 입력되는 원시 데이터 구조 (실제 사용자 피드백 또는 API 연동 값)
- * @property {string} contextId - 진단 결과의 컨텍스트를 식별하는 ID (e.g., session_id).
- * @property {'Growth'|'Engagement'|'Monetization'} diagnosisType - 수행된 진단의 유형.
- * @property {Object.<string, number>} rawMetrics - 다양한 지표명과 수치 값의 맵.
+ * DiagnosisService: Gap Score 계산 및 진단 데이터 처리 핵심 로직
+ * 
+ * 이 서비스는 Raw 데이터를 KPI(Key Performance Indicators)로 변환하고,
+ * 이를 기반으로 사용자의 현재 상태와 목표 간의 격차(Gap Score)를 산출합니다.
+ * @param rawData - 원본 측정 데이터 (예: Pitch Deviation, Frequency Stability 등)
+ * @param contextId - 진단 컨텍스트 ID (어떤 세션에 대한 분석인지 추적)
+ * @returns DiagnosisResult 객체
  */
 
+import { KPI_Metrics } from '../types/kpi'; // 가정된 타입 정의 파일
+import { DiagnosisResultSchema, GapScore } from '../types/schemas'; 
+
 /**
- * DiagnosisService는 핵심 비즈니스 로직을 담고 있는 서비스 레이어입니다.
- * 데이터베이스 접근이나 외부 API 호출 등 Side Effect를 격리하여 테스트 용이성을 높였습니다.
+ * Raw 데이터를 기반으로 핵심 지표(KPI)를 계산합니다.
+ * 이 로직은 실제 AI 분석 결과를 반영하는 가장 중요한 부분입니다.
+ * @param rawData - 원본 측정 데이터 배열
+ * @returns KPI_Metrics 객체
  */
-export class DiagnosisService {
+function calculateKpisFromRawData(rawData: any[]): KPI_Metrics {
+    // TODO: 실제 복잡한 ML/통계 로직이 들어갈 영역 (예: Regression Analysis, Feature Extraction)
+    // 현재는 Mock 데이터로 대체합니다.
+    console.log("--- [INFO] Running complex KPI calculation logic...");
 
-    private readonly dbClient: any; // 실제 DB 클라이언트 (TypeORM/Prisma 등을 사용한다고 가정)
+    const mockKPIs: KPI_Metrics = {
+        growth: Math.random() * 0.8 + 0.2, // 0.2 ~ 1.0 사이 값 가정
+        engagement: (Math.random() * 0.7 + 0.3).toFixed(4) as string,
+        monetization: (Math.random() * 0.5 + 0.1).toFixed(4) as string,
+    };
 
-    constructor(dbClient) {
-        this.dbClient = dbClient; 
-        // 초기화 시점에 필요한 의존성 주입 및 연결 검증 로직 수행
-    }
-
-    /**
-     * 진단 프로세스의 핵심 흐름을 관리하는 트랜잭션 함수입니다.
-     * @param {DiagnosisInputData} input - 사용자로부터 받은 원시 입력 데이터.
-     * @returns {Promise<{score: number, results: any}>} 계산된 최종 점수와 결과 객체.
-     */
-    public async runDiagnosis(input) {
-        // 1. Input Validation & RBAC Check (가장 먼저 수행되어야 하는 게이트)
-        if (!this.isUserAuthorized(input.diagnosisType, input.contextId)) {
-            throw new Error("UnauthorizedAccess: 해당 진단 유형에 접근할 권한이 없습니다.");
-        }
-
-        // 2. 핵심 스코어 계산 (순수 로직)
-        const calculatedScore = this.calculateGapScore(input);
-
-        // 3. 결과 저장 및 트랜잭션 커밋 (Side Effect)
-        await this.saveDiagnosisResult(input, calculatedScore);
-
-        return {
-            score: calculatedScore,
-            results: { /* ... 최종 구조화된 리포트 데이터 ... */ }
-        };
-    }
-
-    /** 
-     * RBAC 검증 로직 (가정)
-     * @param {'Growth'|'Engagement'|'Monetization'} type - 진단 유형.
-     * @param {string} contextId - 사용자 ID 또는 컨텍스트 ID.
-     * @returns {boolean} 권한 유무.
-     */
-    private isUserAuthorized(type, contextId) {
-        // TODO: 실제로는 DB에서 UserRole을 조회하여 권한 체크 수행 필요.
-        console.log(`[DEBUG] Checking RBAC for type: ${type}, Context: ${contextId}`);
-        // 예시: 'Monetization'은 유료 사용자만 접근 가능하게 설정
-        if (type === 'Monetization') {
-            return contextId.includes('premium'); // 임시 Mock 체크 로직
-        }
-        return true; 
-    }
-
-    /** 
-     * Gap Score 계산 알고리즘의 핵심 구현부 (Pure Function)
-     * 이 함수는 외부 DB나 API 호출 없이, 오직 입력된 데이터를 기반으로 점수를 산출해야 합니다.
-     */
-    private calculateGapScore(input) {
-        const rawMetrics = input.rawMetrics;
-
-        // [가설 1] 핵심 지표 A와 B의 표준편차 차이를 계산하여 가중치 부여
-        const varianceA = rawMetrics['variance_a'] || 0; // 예시 키
-        const varianceB = rawMetrics['variance_b'] || 0;
-
-        // [가설 2] 진단 유형별 기본 점수 설정 (예: Growth는 Engagement보다 높은 가중치)
-        let baseScore = 50; 
-        if (input.diagnosisType === 'Growth') {
-            baseScore = 70;
-        } else if (input.diagnosisType === 'Engagement') {
-            baseScore = 60;
-        }
-
-        // 최종 스코어 계산: 기본 점수 + 가중치 * 지표 간 차이
-        const score = baseScore + Math.floor((varianceA * 0.5) - (varianceB * 0.3));
-        return Math.max(1, score); // 최소 1점 보장
-    }
-
-    /** 
-     * DB에 결과 데이터를 저장하는 Side Effect 함수 (가정)
-     */
-    private async saveDiagnosisResult(input, score) {
-        console.log(`[DB] Saving Diagnosis Result: Context ${input.contextId}, Score ${score}`);
-        // TODO: await this.dbClient.diagnosisResults.create({ ... });
-    }
+    return mockKPIs;
 }
 
-export { DiagnosisService };
+/**
+ * Gap Score를 계산하는 메인 로직입니다.
+ * Growth 지표가 가장 중요한 변수이며, 나머지 KPI들은 이를 보조합니다.
+ * @param rawData - 원본 데이터
+ * @param contextId - 컨텍스트 ID
+ * @returns 최종 진단 결과 객체
+ */
+export const calculateGapScore: (rawData: any[], contextId: string): DiagnosisResultSchema => {
+    if (!rawData || rawData.length === 0) {
+        throw new Error("Validation Failed: Raw data cannot be empty.");
+    }
+
+    // 1. KPI 계산 (데이터 변환 단계)
+    const kpis = calculateKpisFromRawData(rawData);
+
+    // 2. Gap Score 산출 (핵심 비즈니스 로직)
+    // 공식 예시: GapScore = Weight_G * Growth - Weight_E * Engagement + Weight_M * Monetization
+    // 가중치와 수학적 관계는 비즈니스 목표에 따라 결정되어야 합니다.
+    const gapScore: GapScore = Math.max(0, (kpis.growth * 3.5) - (parseFloat(kpis.engagement) * 2) + (parseFloat(kpis.monetization) * 1));
+
+    // 3. 최종 결과 구조화
+    return {
+        contextId: contextId,
+        score: parseFloat(gapScore.toFixed(4)), // Gap Score는 소수점 4자리까지 제한
+        reportData: {
+            growth_metric: kpis.growth.toFixed(4),
+            engagement_metric: kpis.engagement,
+            monetization_metric: kpis.monetization,
+            gap_score_description: gapScore > 1.5 ? "High Potential Gap" : "Needs Improvement",
+        }
+    };
+}
+
+// 테스트용 Mock 함수 (실제 환경에서는 DB 커넥션이 필요)
+export const getDiagnosisService = () => {
+    return {
+        calculateGapScore,
+    };
+}
