@@ -1,4 +1,4 @@
-// diagnosisService.test.ts - 통합 테스트 스위트 뼈대
+ㅇ// diagnosisService.test.ts - 통합 테스트 스위트 뼈대
 
 import { DiagnosisService } from '../DiagnosisService'; // 실제 서비스 파일 경로 수정 필요
 import { mockDbClient, MockDBTransaction } from '../../utils/mockDb'; // 가짜 DB 클라이언트 임포트 가정
@@ -16,22 +16,22 @@ describe('E2E Diagnosis Report Flow Test', () => {
     // 각 테스트 케이스 실행 전에 환경 리셋
     beforeEach(async () => {
         // 모든 더미 데이터 및 DB 상태를 초기화하여 독립성을 보장합니다.
-        await dbClient.clearAllTables(); 
+        await dbClient.clearAllTables();
     });
 
     // -----------------------------------------------------------
     // Scenario 1: 성공적인 진단 결과 생성 및 저장 (Happy Path)
     // -----------------------------------------------------------
     it('should successfully calculate and save diagnosis results with all KPIs', async () => {
-        const mockInputData = { 
+        const mockInputData = {
             pitchAccuracyScore: 0.85, // 예시 데이터
             frequencyStabilityIndex: 0.72,
             sessionContextId: 'TEST-SESSION-123'
         };
 
         // 트랜잭션 시작 및 실행 (가짜 DB를 사용)
-        const transaction: MockDBTransaction = await dbClient.beginTransaction(); 
-        
+        const transaction: MockDBTransaction = await dbClient.beginTransaction();
+
         try {
             // 1. 진단 서비스 호출 (핵심 로직 검증)
             const resultData = await diagnosisService.calculateScore(mockInputData);
@@ -54,8 +54,8 @@ describe('E2E Diagnosis Report Flow Test', () => {
             });
 
             // 4. 커밋 및 최종 결과 확인
-            await transaction.commit(); 
-            
+            await transaction.commit();
+
         } catch (error) {
             await transaction.rollback(); // 실패 시 롤백
             throw error;
@@ -69,7 +69,7 @@ describe('E2E Diagnosis Report Flow Test', () => {
         const restrictedInput = { /* ... */ }; // 특정 고가치 데이터 요청 시나리오
 
         // 가짜 DB 클라이언트에 권한을 '무료 사용자'로 설정합니다.
-        await dbClient.setRole('FreeUser'); 
+        await dbClient.setRole('FreeUser');
 
         // DiagnosisService 내부에 RBAC 로직이 포함되어 있다고 가정하고 테스트합니다.
         await expect(diagnosisService.calculateScore(restrictedInput)).rejects.toThrow('Access Denied: Requires Premium Subscription.');
