@@ -173,20 +173,18 @@ def _generate_gemini(prompt, duration_sec, output_path, api_key):
             {
                 "parts": [
                     {
-                        "text": f"Please generate a {duration_sec}-second background music or audio track based on this prompt: {prompt}. Return ONLY the audio output."
+                        "text": (
+                            f"Generate a {duration_sec}-second pure instrumental background music track based on this description: {prompt}. "
+                            "It must be a complete musical composition with a clear melody, rhythm, and harmony. "
+                            "CRITICAL: Do NOT include any human speaking, whispering, singing, voiceovers, or vocal sounds. "
+                            "It must be 100% instrumental music focusing on musical instruments like piano, guitar, or synthesizers."
+                        )
                     }
                 ]
             }
         ],
         "generationConfig": {
-            "responseModalities": ["AUDIO"],
-            "speechConfig": {
-                "voiceConfig": {
-                    "prebuiltVoiceConfig": {
-                        "voiceName": "Puck"
-                    }
-                }
-            }
+            "responseModalities": ["AUDIO", "TEXT"]
         }
     }
     
@@ -195,11 +193,16 @@ def _generate_gemini(prompt, duration_sec, output_path, api_key):
         "Content-Type": "application/json"
     }
     
+    import ssl
+    context = ssl._create_unverified_context()
     req = urllib.request.Request(url, data=req_data, headers=headers, method='POST')
     
     try:
-        with urllib.request.urlopen(req) as res:
+        with urllib.request.urlopen(req, context=context) as res:
             res_data = json.loads(res.read().decode('utf-8'))
+    except urllib.error.HTTPError as e:
+        err_body = e.read().decode('utf-8')
+        return False, f"Gemini API 호출 실패 (HTTP {e.code}): {err_body}"
     except Exception as e:
         return False, f"Gemini API 호출 실패: {str(e)}"
         
