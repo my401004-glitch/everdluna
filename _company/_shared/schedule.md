@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 21. 오후 1:53:00_
+_업데이트: 2026. 6. 21. 오후 2:07:47_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,9 +17,9 @@ _업데이트: 2026. 6. 21. 오후 1:53:00_
 - [2026-06-20] Writer가 제공한 최종 스크립트와 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)을 기반으로 다음 영상에 필요한 모든 핵심 시각 자료(Asset Checklist)의 우선순위를 재조정하고, 제작 착수를 위한 최종 Asset List를 완성하라. → 산출물 sessions/2026-06-20T07-25/designer.md
 - [2026-06-20] 최종 Asset Specification List(`Master Asset Specification List`)에 따라 A-001부터 B-002까지의 시각 자료 제작을 최우선으로 착수하고, 코다리(developer)가 요구하는 기술적 명세서와 시각적 결과물이 완벽히 동기화되도록 작업하라. → 산출물 sessions/2026-06-20T07-40/designer.md
 ### 💻 코다리
-- [2026-06-20] Designer가 요청한 최종 Asset List와 기술 명세서(`Master Visual System Prototype 가이드`)를 기반으로, 필요한 API/DB 연동 및 데이터 흐름에 대한 기술적 병목점과 코딩 착수를 위한 선행 검토 보고서를 작성하라. → 산출물 sessions/2026-06-20T07-25/developer.md
 - [2026-06-20] Master Visual System Prototype 가이드와 최종 Asset List를 기반으로, 핵심 비즈니스 로직인 Gap Score 계산(`DiagnosisService`)을 TypeScript로 즉시 구현하여 기술적 기반을 완성하고 코딩 착수를 위한 선행 검토 보고서를 작성하라. → 산출물 sessions/2026-06-20T07-40/developer.md
 - [2026-06-20] 코다리(Koda-ri)는 현빈(Business)이 설계한 KPI($CTR_{goal} 	imes Traffic_{estimate} = Leads$)를 검증하기 위한 트래픽 추적 및 데이터 흐름 시스템의 최종 점검을 선행하고, 측정 준비 상태를 보고하라. → 산출물 sessions/2026-06-20T08-10/developer.md
+- [2026-06-21] 구현된 API Skeleton에 실제 데이터를 연결하여, '진단 리포트 생성 $ightarrow$ 웹페이지 표시'까지의 전체 흐름을 컴파일 및 런타임 검증하고, 데이터 흐름의 최종 안정성을 확보하라. → 산출물 sessions/2026-06-21T05-05/developer.md
 ### 💼 현빈
 - [2026-06-18] 올해 핵심 목표(유튜브 1만 구독자)와 단기 목표(영상 4개)를 기준으로, 현재 진행 중인 콘텐츠 제작 파이프라인의 병목 지점과 수익화 전략에 대한 초기 점검을 수행하라. → 산출물 sessions/2026-06-18T01-50/business.md
 - [2026-06-19] 확정된 영상 포맷과 마케팅 로드맵을 기반으로 다음 콘텐츠의 예상 수익화 전략 및 KPI(구독자 목표 포함)를 재검토하고, 제작 병목 지점을 분석하라. → 산출물 sessions/2026-06-19T11-54/business.md
