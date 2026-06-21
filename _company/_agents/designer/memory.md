@@ -413,3 +413,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-21] Koda-ri로부터 받은 Mock JSON 데이터를 활용하여, 정의된 시각 실행 계획서(Visual Execution Plan)에 따라 핵심 애니메이션 에셋의 프로토타입 제작을 착수하라. → 산출물 sessions/2026-06-21T07-18/designer.md
 - [2026-06-21] Gap Score 기반의 시각화 핵심 애니메이션 스토리보드 상세 기획서(`Storyboard_GapScore_Master.md`)를 즉시 착수하여 영상 제작팀에 전달할 수 있도록 최종 시각 실행 계획을 완성하고 초안을 제작하라. → 산출물 sessions/2026-06-21T07-33/designer.md
 - [2026-06-21] 코다리로부터 받은 데이터 구조의 안정성 보고서와 기존 스토리보드(`Storyboard_GapScore_Master.md`)를 기반으로, 실제 애니메이션 에셋 제작을 위한 최종 Asset Checklist 및 시각 실행 계획(Visual Execution Plan)을 확정하라. → 산출물 sessions/2026-06-21T07-48/designer.md
+- [2026-06-21] 최종 확정된 시각 실행 계획서(VEP)와 데이터 스타일 가이드라인을 기반으로, 다음 영상에 필요한 핵심 애니메이션 에셋의 제작 우선순위를 설정하고 디자인 브리프를 최종 확정하라. → 산출물 sessions/2026-06-21T08-08/designer.md
