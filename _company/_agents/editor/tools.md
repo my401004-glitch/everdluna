@@ -22,7 +22,20 @@ AUTONOMY_LEVEL: 2
 
 ## 사용 가능한 도구
 
-### 영상/오디오 편집 관련 도구는 추후 추가 예정입니다.
+### 1. 🎵 BGM 생성 (`tools/music_generate.py`)
+- **설명**: 텍스트 프롬프트를 기반으로 BGM(음악)을 생성합니다. 로컬 모델(MusicGen/ACE-Step) 또는 Google Gemini API(클라우드 오디오 생성)를 자동으로 분기하여 실행합니다.
+- **설정 파일**: `tools/music_generate.json`
+- **사용법**: `tools/music_generate.json` 설정 편집 후 스크립트 실행.
+
+
+### 2. 🎼 오디오 장비/모델 설정 (`tools/music_studio_setup.py`)
+- **설명**: 로컬 음악 생성에 필요한 가상환경 및 AI 모델(MusicGen, ACE-Step)을 설치하고 환경을 구축합니다.
+- **설정 파일**: `tools/music_studio_setup.json`
+
+### 3. 🎬 오디오-영상 병합 (`tools/music_to_video.py`)
+- **설명**: 생성된 BGM 오디오와 비디오 템플릿 파일을 결합하여 최종 MP4 비디오를 렌더링합니다. 페이드 아웃 및 볼륨 믹싱을 자동으로 처리합니다.
+- **설정 파일**: `tools/music_to_video.json`
+
 
 ---
 

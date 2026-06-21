@@ -11,7 +11,7 @@ config:
   GENRE — 장르 힌트 (lo-fi, ambient, cinematic, edm 등)
   OUTPUT_DIR — 저장 위치 (디폴트 ~/connect-ai-music/output/)
 """
-import os, sys, json, subprocess, time
+import os, sys, json, subprocess, time, urllib.request, base64
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SETUP_CONFIG = os.path.join(HERE, "music_studio_setup.json")
@@ -136,21 +136,147 @@ def _init_env_path():
         pass
 
 
+def _load_config_md():
+    config_path = os.path.join(HERE, "..", "config.md")
+    cfg = {}
+    if os.path.exists(config_path):
+        try:
+            with open(config_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith("#"):
+                        continue
+                    if "=" in line:
+                        k, v = line.split("=", 1)
+                        k = k.strip()
+                        v = v.strip().strip('"').strip("'")
+                        cfg[k] = v
+        except Exception:
+            pass
+    return cfg
+
+
+def _generate_gemini(prompt, duration_sec, output_path, api_key):
+    """Google Gemini API를 사용해 오디오(BGM/효과음) 생성 및 저장"""
+    _log("Google Gemini API를 통해 오디오 생성을 요청합니다...")
+    if not api_key:
+        return False, "Gemini API Key가 누락되었습니다."
+
+    # Gemini 2.0 Flash 모델을 사용하여 오디오 생성
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
+    
+    payload = {
+        "contents": [
+            {
+                "parts": [
+                    {
+                        "text": f"Please generate a {duration_sec}-second background music or audio track based on this prompt: {prompt}. Return ONLY the audio output."
+                    }
+                ]
+            }
+        ],
+        "generationConfig": {
+            "responseModalities": ["AUDIO"],
+            "speechConfig": {
+                "voiceConfig": {
+                    "prebuiltVoiceConfig": {
+                        "voiceName": "Puck"
+                    }
+                }
+            }
+        }
+    }
+    
+    req_data = json.dumps(payload).encode('utf-8')
+    headers = {
+        "Content-Type": "application/json"
+    }
+    
+    req = urllib.request.Request(url, data=req_data, headers=headers, method='POST')
+    
+    try:
+        with urllib.request.urlopen(req) as res:
+            res_data = json.loads(res.read().decode('utf-8'))
+    except Exception as e:
+        return False, f"Gemini API 호출 실패: {str(e)}"
+        
+    try:
+        candidates = res_data.get("candidates", [])
+        if not candidates:
+            return False, f"Gemini API 응답에 candidates가 없습니다: {res_data}"
+            
+        parts = candidates[0].get("content", {}).get("parts", [])
+        if not parts:
+            return False, "Gemini API 응답에 parts가 없습니다."
+            
+        audio_part = None
+        for part in parts:
+            if "inlineData" in part and "audio" in part["inlineData"].get("mimeType", ""):
+                audio_part = part
+                break
+            if "inlineData" in part:
+                audio_part = part
+                break
+                
+        if not audio_part:
+            return False, f"Gemini API 응답에서 오디오 데이터를 찾을 수 없습니다. (텍스트 응답일 가능성 있음): {res_data}"
+            
+        inline_data = audio_part["inlineData"]
+        mime_type = inline_data.get("mimeType", "audio/mp3")
+        base64_data = inline_data.get("data", "")
+        
+        if not base64_data:
+            return False, "오디오 데이터가 비어있습니다."
+            
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        audio_bytes = base64.b64decode(base64_data)
+        
+        with open(output_path, "wb") as f:
+            f.write(audio_bytes)
+            
+        _log(f"Gemini 오디오 파일 저장 완료 (MimeType: {mime_type})")
+        return True, output_path
+        
+    except Exception as e:
+        return False, f"오디오 파싱 및 저장 실패: {str(e)}"
+
+
 def main():
     _init_env_path()
-    setup = _load(SETUP_CONFIG)
-    if not setup.get("INSTALLED_AT"):
-        print("❌ 음악 모델 미설치.")
-        print("  먼저 같은 폴더의 'music_studio_setup.py' 실행해주세요 (▶ 클릭).")
-        print("  기본은 MusicGen Small (300MB) — 가벼움.")
-        sys.exit(1)
-
-    venv_python = setup.get("VENV_PYTHON")
-    if not (venv_python and os.path.exists(venv_python)):
-        print("❌ 설치 정보 손상. music_studio_setup.py 다시 실행해주세요.")
-        sys.exit(1)
-
+    
+    # config.md에서 Gemini API 설정 로드
+    suno_config = _load_config_md()
+    gemini_key = suno_config.get("GEMINI_API_KEY", "")
+    
     cfg = _load(GEN_CONFIG)
+    
+    # Gemini 사용 여부 확인
+    setup = _load(SETUP_CONFIG)
+    model_kind = cfg.get("MODEL") or ""
+    is_gemini_mode = False
+    
+    if model_kind.lower() == "gemini":
+        is_gemini_mode = True
+    elif not setup.get("INSTALLED_AT") and gemini_key:
+        is_gemini_mode = True
+        
+    if is_gemini_mode:
+        if not gemini_key:
+            print("❌ Gemini API Key가 필요합니다.")
+            print("  _company/_agents/editor/config.md 파일에 GEMINI_API_KEY를 입력해주세요.")
+            sys.exit(1)
+    else:
+        if not setup.get("INSTALLED_AT"):
+            print("❌ 음악 모델 미설치.")
+            print("  Google Gemini를 사용하려면 config.md에 API 키를 입력하시거나,")
+            print("  로컬 모델을 사용하려면 같은 폴더의 'music_studio_setup.py'를 실행해주세요.")
+            sys.exit(1)
+            
+        venv_python = setup.get("VENV_PYTHON")
+        if not (venv_python and os.path.exists(venv_python)):
+            print("❌ 설치 정보 손상. music_studio_setup.py 다시 실행해주세요.")
+            sys.exit(1)
+
     prompt = (cfg.get("PROMPT") or "calm korean YouTube intro music, gentle piano, hopeful").strip()
     duration = int(cfg.get("DURATION_SEC") or 30)
     genre = (cfg.get("GENRE") or "").strip()
@@ -162,20 +288,23 @@ def main():
     timestamp = time.strftime("%Y%m%d_%H%M%S")
     output_path = os.path.join(output_dir, f"bgm_{timestamp}.mp3")
 
-    model_label = setup.get("INSTALLED_MODEL", "unknown")
+    model_label = "Google Gemini API" if is_gemini_mode else setup.get("INSTALLED_MODEL", "unknown")
     _log(f"모델: {model_label}")
     _log(f"프롬프트: {prompt}")
     _log(f"길이: {duration}초")
     _log(f"출력: {output_path}")
 
-    install_kind = setup.get("INSTALL_KIND", "transformers")
-    if install_kind == "transformers":
-        ok, result = _generate_musicgen(setup, prompt, duration, output_path)
-    elif install_kind == "acestep":
-        ok, result = _generate_acestep(setup, prompt, duration, output_path)
+    if is_gemini_mode:
+        ok, result = _generate_gemini(prompt, duration, output_path, gemini_key)
     else:
-        print(f"❌ 알 수 없는 INSTALL_KIND: {install_kind}")
-        sys.exit(1)
+        install_kind = setup.get("INSTALL_KIND", "transformers")
+        if install_kind == "transformers":
+            ok, result = _generate_musicgen(setup, prompt, duration, output_path)
+        elif install_kind == "acestep":
+            ok, result = _generate_acestep(setup, prompt, duration, output_path)
+        else:
+            print(f"❌ 알 수 없는 INSTALL_KIND: {install_kind}")
+            sys.exit(1)
 
     if not ok:
         print(f"❌ {result}")
