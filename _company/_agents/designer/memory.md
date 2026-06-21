@@ -409,3 +409,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-21] Writer가 작성할 스크립트를 기반으로, 콘텐츠의 핵심 감성(냉철한 데이터 컨설팅 + 공감적 위기감)을 시각적으로 구현하기 위한 영상의 톤앤매너, 주요 장면 구성, 그리고 필요한 비주얼 에셋 목록(Asset Checklist)의 우선순위를 최종 확정하여 제작 착수 지침을 마련하라. → 산출물 sessions/2026-06-21T06-18/designer.md
 - [2026-06-21] Writer와 Designer가 확정한 '최종 시각 실행 계획서(Visual Execution Plan)'를 기반으로, 개발 단계에서 정의된 핵심 데이터 구조(Gap Score 결과)를 반영한 영상 에셋 제작을 병행하여 착수하라. → 산출물 sessions/2026-06-21T06-33/designer.md
 - [2026-06-21] 코다리가 제공한 Mock JSON 구조와 정의된 비주얼 메타포(붉은 필드 $ightarrow$ 푸른 연결 고리)를 기반으로, 영상 에셋 제작에 필요한 최종 Asset Checklist 및 시각 실행 계획을 확정하고 즉시 제작을 시작하라. → 산출물 sessions/2026-06-21T06-48/designer.md
+- [2026-06-21] Writer가 완성한 최종 스크립트와 Designer가 확정한 DataViz Style Guide를 기반으로, Asset Checklist에 명시된 핵심 시각 자료(애니메이션) 제작을 즉시 착수하고 진행 상황을 보고하라. → 산출물 sessions/2026-06-21T07-03/designer.md
