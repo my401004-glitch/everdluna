@@ -1,33 +1,33 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 20. 오후 4:59:06_
+_업데이트: 2026. 6. 21. 오후 1:53:00_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-06-19] Writer와 Designer가 제공한 최종 자료를 기반으로 다음 영상의 포맷(길이, 톤앤매너)과 업로드 일정을 확정하여 마케팅 로드맵에 반영하라. → 산출물 sessions/2026-06-19T06-19/youtube.md
 - [2026-06-19] 에셋 제작 및 시스템 검증이 진행되는 동안, 실시간 참여자 반응 데이터(`comment_harvester.py`) 수집을 시작하고 마케팅 로드맵 실행의 기초 데이터를 확보하라. → 산출물 sessions/2026-06-19T06-48/youtube.md
 - [2026-06-19] Writer와 Designer가 확정한 콘텐츠 포맷과 마케팅 전략에 맞춰 다음 영상의 최종 업로드 일정(Date) 및 목표 KPI를 설정하고, 초기 마케팅 계획 초안을 작성하라. → 산출물 sessions/2026-06-19T11-54/youtube.md
+- [2026-06-20] 레오(LeO)는 유튜브 영상 로드맵에 따라 최종 CTA 스크립트를 작성하여 시청자들의 '진단 테스트 참여 유도' 목표를 명확히 하도록 준비하라. → 산출물 sessions/2026-06-20T08-10/youtube.md
 ### 📷 Instagram
-- [2026-05-26] 📥 새 지식 입수 — **sonicpass_seoul_arts_ad.html**: <!DOCTYPE html> (출처: 00_Raw/2026-05-26/sonicpass_seoul_arts_ad.html)
 - [2026-06-11] Designer가 확정한 디자인 가이드라인과 스토리보드를 활용하여, 다음 영상(Part 2)에 필요한 Reels 및 피드 포맷별 시각 자료를 즉시 준비하라. → 산출물 sessions/2026-06-11T08-05/instagram.md
 - [2026-06-14] writer와 designer가 준비한 콘텐츠 초안에 맞춰, 가장 효과적인 후킹 포인트와 최적 게시 시간 전략을 반영하여 첫 번째 영상에 대한 릴스 및 피드 포맷별 게시물 시안(캡션 포함)을 즉시 작성하라. → 산출물 sessions/2026-06-14T15-23/instagram.md
+- [2026-06-20] 인스타그램 에이전트는 정의된 수익화 퍼널 목표(유튜브 시청/링크 클릭)에 맞춰, 모든 SNS 콘텐츠의 최종 목표와 전환 경로를 최적화하는 전략을 수립하라. → 산출물 sessions/2026-06-20T08-10/instagram.md
 ### 🎨 Designer
 - [2026-06-20] Writer가 제공한 최종 스크립트 및 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)을 기반으로 다음 영상에 필요한 모든 핵심 시각 자료(Asset Checklist)의 우선순위를 재조정하고, 제작 착수를 위한 최종 Asset List를 완성하라. → 산출물 sessions/2026-06-20T06-01/designer.md
 - [2026-06-20] Writer가 제공한 최종 스크립트와 확정된 디자인 사양(`final_data_visual_spec_sheet.md`)을 기반으로 다음 영상에 필요한 모든 핵심 시각 자료(Asset Checklist)의 우선순위를 재조정하고, 제작 착수를 위한 최종 Asset List를 완성하라. → 산출물 sessions/2026-06-20T07-25/designer.md
 - [2026-06-20] 최종 Asset Specification List(`Master Asset Specification List`)에 따라 A-001부터 B-002까지의 시각 자료 제작을 최우선으로 착수하고, 코다리(developer)가 요구하는 기술적 명세서와 시각적 결과물이 완벽히 동기화되도록 작업하라. → 산출물 sessions/2026-06-20T07-40/designer.md
 ### 💻 코다리
-- [2026-06-20] Master Visual System Prototype 가이드와 API/DB 구조 간의 데이터 흐름 동기화 상태를 최종적으로 점검하고, Writer/Designer가 요청한 에셋 목록(`Asset Checklist`)을 구현하기 위한 기술적 병목점 및 필요한 코드를 선행 검토하여 보고하라. → 산출물 sessions/2026-06-20T06-01/developer.md
 - [2026-06-20] Designer가 요청한 최종 Asset List와 기술 명세서(`Master Visual System Prototype 가이드`)를 기반으로, 필요한 API/DB 연동 및 데이터 흐름에 대한 기술적 병목점과 코딩 착수를 위한 선행 검토 보고서를 작성하라. → 산출물 sessions/2026-06-20T07-25/developer.md
 - [2026-06-20] Master Visual System Prototype 가이드와 최종 Asset List를 기반으로, 핵심 비즈니스 로직인 Gap Score 계산(`DiagnosisService`)을 TypeScript로 즉시 구현하여 기술적 기반을 완성하고 코딩 착수를 위한 선행 검토 보고서를 작성하라. → 산출물 sessions/2026-06-20T07-40/developer.md
+- [2026-06-20] 코다리(Koda-ri)는 현빈(Business)이 설계한 KPI($CTR_{goal} 	imes Traffic_{estimate} = Leads$)를 검증하기 위한 트래픽 추적 및 데이터 흐름 시스템의 최종 점검을 선행하고, 측정 준비 상태를 보고하라. → 산출물 sessions/2026-06-20T08-10/developer.md
 ### 💼 현빈
 - [2026-06-18] 올해 핵심 목표(유튜브 1만 구독자)와 단기 목표(영상 4개)를 기준으로, 현재 진행 중인 콘텐츠 제작 파이프라인의 병목 지점과 수익화 전략에 대한 초기 점검을 수행하라. → 산출물 sessions/2026-06-18T01-50/business.md
 - [2026-06-19] 확정된 영상 포맷과 마케팅 로드맵을 기반으로 다음 콘텐츠의 예상 수익화 전략 및 KPI(구독자 목표 포함)를 재검토하고, 제작 병목 지점을 분석하라. → 산출물 sessions/2026-06-19T11-54/business.md
 - [2026-06-20] 식별된 최우선 작업에 대해 수익화 전략 및 KPI 측면에서 즉각적인 분석과 검토 의견을 제시하라. → 산출물 sessions/2026-06-20T07-55/business.md
 ### 📱 영숙
-- [2026-06-19] Writer와 Designer의 산출물 취합 상황을 보고받아 'Video 1: The Awakening' 최종 제작 브리프를 완성하고, 다음 주 마케팅 일정에 반영할 수 있도록 최종 액션 플랜을 정리하라. → 산출물 sessions/2026-06-19T05-04/secretary.md
 - [2026-06-20] 최근 에이전트 활동 로그와 CEO의 '다음 액션 (Top 3)'을 바탕으로 현재 진행 상황을 요약하여 보고하라. → 산출물 sessions/2026-06-20T07-51/secretary.md
 - [2026-06-20] 회사 목표, 각 에이전트 개인 목표(goal.md), 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고, 해당 작업을 실행하기 위한 초기 계획을 요약하라. → 산출물 sessions/2026-06-20T07-55/secretary.md
+- [2026-06-21] 모든 이전 의사결정 로그, 회사 목표(유튜브 1만 구독자, 영상 4개), 그리고 에이전트들의 최근 활동을 종합하여 핵심 전략과 현재 진행 상황을 구조화된 형태로 요약 보고서를 작성하라. → 산출물 sessions/2026-06-21T04-51/secretary.md
 ### 🎵 루나
 - [2026-06-18] 루나 들리니 ? → 자격증명 부족으로 차단됨
 - [2026-06-18] 루나 들리나! → 산출물 sessions/2026-06-18T07-27/editor.md
