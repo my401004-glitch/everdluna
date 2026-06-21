@@ -143,13 +143,16 @@ def _load_config_md():
         try:
             with open(config_path, "r", encoding="utf-8") as f:
                 for line in f:
+                    # 라인 끝에 붙은 주석 제거
+                    if "#" in line:
+                        line = line.split("#", 1)[0]
                     line = line.strip()
-                    if not line or line.startswith("#"):
+                    if not line:
                         continue
                     if "=" in line:
                         k, v = line.split("=", 1)
                         k = k.strip()
-                        v = v.strip().strip('"').strip("'")
+                        v = v.strip().strip('"').strip("'").strip()
                         cfg[k] = v
         except Exception:
             pass
@@ -252,10 +255,12 @@ def main():
     
     # Gemini 사용 여부 확인
     setup = _load(SETUP_CONFIG)
-    model_kind = cfg.get("MODEL") or ""
+    model_kind = (cfg.get("MODEL") or "").strip().lower()
     is_gemini_mode = False
     
-    if model_kind.lower() == "gemini":
+    if gemini_key and (model_kind == "" or model_kind == "gemini"):
+        is_gemini_mode = True
+    elif model_kind == "gemini":
         is_gemini_mode = True
     elif not setup.get("INSTALLED_AT") and gemini_key:
         is_gemini_mode = True
