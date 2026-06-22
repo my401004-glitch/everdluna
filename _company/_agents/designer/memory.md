@@ -423,3 +423,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-22] Writer가 제시한 컨셉 1과 2, 그리고 Researcher가 제안한 트렌드(Process Visualization)를 반영하여, 영상 제작에 필요한 구체적인 시각 스토리보드 및 디자인 브리프를 즉시 작성하고 승인 준비를 하라. → 산출물 sessions/2026-06-22T02-33/designer.md
 - [2026-06-22] Writer가 제시한 스토리보드를 바탕으로, 'Pain $ightarrow$ Process $ightarrow$ Gain' 구조를 시각적으로 구현하기 위한 디자인 브리프(애니메이션 에셋의 우선순위 포함)를 즉시 작성하라. → 산출물 sessions/2026-06-22T02-48/designer.md
 - [2026-06-22] 레오가 제시한 'Pain $\rightarrow$ Process $\rightarrow$ Gain' 구조를 시각화하는 핵심 애니메이션 에셋 제작을 위한 최종 디자인 브리프와 우선순위 자료를 완성하고 승인 준비를 하라. → 산출물 sessions/2026-06-22T11-30/designer.md
+- [2026-06-22] 최종 디자인 브리프(애니메이션 에셋 우선순위 포함)를 바탕으로, 다음 영상 제작에 필요한 핵심 애니메이션 에셋의 최종 사양서를 확정하고 개발팀에 전달할 준비를 하라. → 산출물 sessions/2026-06-22T12-15/designer.md
