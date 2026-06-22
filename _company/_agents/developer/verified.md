@@ -368,3 +368,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-22] 1. **문제:** 현재 `Diagnosis_Results`는 단순히 "사용자가 언제, 어떤 종류의 진단을 받았는지"만 기록합니다. _(근거: sessions/2026-05-18T43/developer.md)_
 - [2026-06-22] 2. **필요 기능:** 영상 시청 완료(Video View Completion) $\rightarrow$ 특정 KPI에 대한 **인식 변화 유도 (Pain Point)** $\rightarrow$ 시스템 진단 실행(Diagnosis Run). 이 3단계의 인과관계를 데이터로 연결해야 합니다. _(근거: Writer 산출물 - 후킹 전략)_
 - [2026-06-22] | **1. Core KPI Service 구현** | `DiagnosisService`를 재구축하여, Growth/Engagement/Monetization 3가지 KPI의 계산 및 트랜잭션 로직을 단일화합니다. | 데이터 무결성 확보 및 비즈니스 로직 중앙 집중화. | 코다리 (나) | **에 정의된 핵심 KPI 저장 구조를 실제 서비스 계층으로 구현해야 합니다. | _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-22] 1. **데이터 의존성:** 현재 가장 큰 병목은 **KPI 계산을 위한 수학적 모델 정의**입니다. 단순히 데이터를 저장하는 것을 넘어, 'Gap Score', 'Growth', 'Engagement'가 어떤 변수와 가중치로 연결되어야 하는지에 대한 명확한 비즈니스 로직(혹은 통계학적 근거)이 필요합니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-22] 2. **보안 및 안정성:** RBAC (Role-Based Access Control)를 초기에 통합해야 합니다. 진단 결과 데이터는 민감하므로, API 게이트웨이 레벨에서 권한 검증을 최우선으로 설계해야 합니다. _(근거: sessions/2026-05-18T13:43/developer.md)_
