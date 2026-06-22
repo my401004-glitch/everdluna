@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 22. 오후 8:34:10_
+_업데이트: 2026. 6. 22. 오후 8:48:45_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,17 +17,17 @@ _업데이트: 2026. 6. 22. 오후 8:34:10_
 - [2026-06-22] Writer가 제시한 스토리보드를 바탕으로, 'Pain $ightarrow$ Process $ightarrow$ Gain' 구조를 시각적으로 구현하기 위한 디자인 브리프(애니메이션 에셋의 우선순위 포함)를 즉시 작성하라. → 산출물 sessions/2026-06-22T02-48/designer.md
 - [2026-06-22] 레오가 제시한 'Pain $\rightarrow$ Process $\rightarrow$ Gain' 구조를 시각화하는 핵심 애니메이션 에셋 제작을 위한 최종 디자인 브리프와 우선순위 자료를 완성하고 승인 준비를 하라. → 산출물 sessions/2026-06-22T11-30/designer.md
 ### 💻 코다리
-- [2026-06-22] 현빈이 정의한 데이터 모델(User, DiagnosisSession, EngagementEvent, Transaction)과 API 요구사항을 기반으로, KpiEventLoggerService 구현에 필요한 백엔드 개발 목록 및 예상 개발 시간을 확정하고 보고하라. → 산출물 sessions/2026-06-22T10-45/developer.md
 - [2026-06-22] Business 에이전트가 정의한 핵심 KPI 및 Funnel 구조(Gap_Score_V1.0_Definition)를 기반으로, MVP에 필요한 최소한의 데이터 모델 스키마(`MVP_Required_Schema_V1.0`)와 핵심 API 엔드포인트 목록을 산출하라. → 산출물 sessions/2026-06-22T11-00/developer.md
 - [2026-06-22] 현빈이 정의한 MVP 데이터 모델(`MVP_Required_Schema_V1.0`)과 KPI 구조를 기반으로, KpiEventLoggerService 구현에 필요한 백엔드 개발 목록 및 예상 개발 시간을 최종 확정하고 보고하라. → 산출물 sessions/2026-06-22T11-15/developer.md
+- [2026-06-22] 확정된 MVP 데이터 모델과 KPI 구조를 기반으로, KpiEventLoggerService 구현에 필요한 백엔드 개발 목록 및 예상 개발 시간을 최종 확정하고 보고할 것. → 산출물 sessions/2026-06-22T11-45/developer.md
 ### 💼 현빈
-- [2026-06-22] 개발자로부터 받은 검토 결과를 바탕으로, 현재 기술 구현 단계에서 수익화 퍼널(Pain $ightarrow$ Proof $ightarrow$ Gain)의 각 단계에 필요한 데이터 모델 및 API 요구사항을 구체적으로 정의하고 개발 우선순위를 재조정하라. → 산출물 sessions/2026-06-22T10-30/business.md
 - [2026-06-22] 개발자로부터 받은 예상 개발 시간을 검토하여, MVP 성공을 위한 KPI 달성 목표(전환율 10%, 참여도 60%)와 기술 구현 로드맵 간의 현실적인 병목 지점을 분석하고 우선순위를 재조정하라. → 산출물 sessions/2026-06-22T10-45/business.md
 - [2026-06-22] Gap_Score_V1.0_Definition 파일을 최종 검토하고, MVP 성공을 위해 가장 핵심적인 3가지 KPI와 이들을 연결하는 사용자 행동 Funnel 구조를 명확히 정의하라. → 산출물 sessions/2026-06-22T11-00/business.md
+- [2026-06-22] MVP 성공을 위해 전환율 10%, 참여도 60%를 목표로 설정한 핵심 KPI 이벤트(Gap Score 연동)와 데이터 모델(`MVP_Required_Schema_V1.0`)의 최종 검토 및 승인 완료. → 산출물 sessions/2026-06-22T11-45/business.md
 ### 📱 영숙
-- [2026-06-22] 회사 목표, 에이전트 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 선정하고, 이를 실행하기 위한 최적의 분배 계획을 수립하여 보고하라. → 산출물 sessions/2026-06-22T03-03/secretary.md
 - [2026-06-22] 위 두 에이전트의 보고 결과를 바탕으로, 다음 주에 실행할 핵심 개발 작업(KPI 파이프라인 구축)의 상세 일정과 마일스톤을 수립하고 팀원들에게 공유할 준비를 하라. → 산출물 sessions/2026-06-22T10-45/secretary.md
 - [2026-06-22] youtube 및 designer의 작업 완료 시점에 맞춰, 다음 영상의 최종 업로드 일정과 제작 마일스톤을 Google Calendar에 반영하여 실행 계획을 확정하라. → 산출물 sessions/2026-06-22T11-30/secretary.md
+- [2026-06-22] 상기 작업의 최종 산출물을 바탕으로 다음 주 마일스톤을 설정하고, 관련 팀(특히 코다리)에게 실행 계획을 배포하도록 준비할 것. → 산출물 sessions/2026-06-22T11-45/secretary.md
 ### 🎵 루나
 - [2026-06-21] Writer와 Designer가 제공할 스크립트 및 시각 방향을 바탕으로, 교육 콘텐츠의 주제에 맞는 BGM 스타일(긴장감, 분석적 분위기 등)과 사운드 디자인 전략을 수립하고, MusicGen/ACE-Step을 활용할 음악 생성 프롬프트 초안과 영상 내 오디오 흐름 계획을 제시해줘. → 산출물 sessions/2026-06-21T05-12/editor.md
 - [2026-06-21] Writer가 확정한 스크립트와 Designer가 정리한 Asset Checklist를 기반으로, 다음 영상에 필요한 음악 및 영상의 톤앤매너(감성적 위기감 + 데이터 기반 논리)를 반영하여 초기 오디오/비주얼 컨셉을 구체화하라. → 산출물 sessions/2026-06-21T05-35/editor.md
