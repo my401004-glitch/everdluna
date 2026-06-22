@@ -319,3 +319,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-22] 현빈이 제시한 MVP KPI(전환율 10%, 참여도 60%)와 코다리의 기존 백엔드 로드맵을 검토하여, 현재 진행 중인 Diagnosis Core Engine 개발에 있어 KPI 계산 로직 및 데이터 파이프라인 설계의 현실적인 병목 지점과 예상 개발 시간을 재검증하고 보고하라. → 산출물 sessions/2026-06-22T10-30/developer.md
 - [2026-06-22] 현빈이 정의한 데이터 모델(User, DiagnosisSession, EngagementEvent, Transaction)과 API 요구사항을 기반으로, KpiEventLoggerService 구현에 필요한 백엔드 개발 목록 및 예상 개발 시간을 확정하고 보고하라. → 산출물 sessions/2026-06-22T10-45/developer.md
 - [2026-06-22] Business 에이전트가 정의한 핵심 KPI 및 Funnel 구조(Gap_Score_V1.0_Definition)를 기반으로, MVP에 필요한 최소한의 데이터 모델 스키마(`MVP_Required_Schema_V1.0`)와 핵심 API 엔드포인트 목록을 산출하라. → 산출물 sessions/2026-06-22T11-00/developer.md
+- [2026-06-22] 현빈이 정의한 MVP 데이터 모델(`MVP_Required_Schema_V1.0`)과 KPI 구조를 기반으로, KpiEventLoggerService 구현에 필요한 백엔드 개발 목록 및 예상 개발 시간을 최종 확정하고 보고하라. → 산출물 sessions/2026-06-22T11-15/developer.md

@@ -374,3 +374,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-22] 현재 진단 엔진(Diagnosis Core Engine) 자체의 비즈니스 로직(어떤 점수가 높은지)은 이미 구조화되어 있습니다 . 하지만 말씀해주신 MVP KPI(전환율 10%, 참여도 60%)를 추적하고, 이 데이터가 **'실시간으로 안정적인 파이프라인을 통해 쌓여서 최종 리포트에 반영되는 과정'**에 병목이 존재합니다. _(근거: sessions/2026-05-18T17-09/developer.md)_
 - [2026-06-22] 현빈 에이전트가 정의한 KPI와 Funnel 구조를 기반으로 MVP의 핵심 아키텍처를 설계하는 것은 가장 중요한 단계입니다. _(근거: sessions/2026-06-22T10-45/developer.md, Gap_Score_V1.0_Definition.md)_
 - [2026-06-22] | Endpoint | Method | 기능 설명 (Funnel 단계) | 요청 Body (Input) | 응답 (Output) | | _(근거: KPI/Funnel)_
+- [2026-06-22] | **1** | **DB 스키마 확장 (`schema.sql`)** | `kpi_event_logs` 테이블 추가. 필수 필드: `user_id`, `timestamp`, `event_type` (enum), `payload` (JSONB), `source_module`. 데이터 무결성을 위해 외래 키(FK) 및 적절한 인덱스(`idx_event_time`)를 반드시 설정해야 합니다. | 코다리 | 0.5 Day | _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-22] | **2** | **API 엔드포인트 설계 (Backend)** | `POST /api/v1/log_event` 정의. 요청 본문은 유연한 JSON 구조를 허용하며, 필수 파라미터(사용자 인증 토큰 등) 검증 로직을 추가합니다. | 코다리 | 1 Day | _(근거: sessions/2026-05-18T14-38/developer.md)_
+- [2026-06-22] | **3** | **이벤트 수신 및 유효성 검사 (Service Layer)** | 이벤트 페이로드(Payload)를 받으면, `event_type`과 필수 필드를 기반으로 스키마 유효성을 즉시 검증합니다. 잘못된 데이터는 로그에 기록하고 실패 응답을 반환해야 합니다. **가드 로직 구현 필수.** | 코다리 | 1 Day | _(근거: sessions/2026-05-18T14-34/developer.md)_
