@@ -1,72 +1,66 @@
-/**
- * DiagnosisService: Gap Score 계산 및 진단 데이터 처리 핵심 로직
- * 
- * 이 서비스는 Raw 데이터를 KPI(Key Performance Indicators)로 변환하고,
- * 이를 기반으로 사용자의 현재 상태와 목표 간의 격차(Gap Score)를 산출합니다.
- * @param rawData - 원본 측정 데이터 (예: Pitch Deviation, Frequency Stability 등)
- * @param contextId - 진단 컨텍스트 ID (어떤 세션에 대한 분석인지 추적)
- * @returns DiagnosisResult 객체
- */
-
-import { KPI_Metrics } from '../types/kpi'; // 가정된 타입 정의 파일
-import { DiagnosisResultSchema, GapScore } from '../types/schemas'; 
-
-/**
- * Raw 데이터를 기반으로 핵심 지표(KPI)를 계산합니다.
- * 이 로직은 실제 AI 분석 결과를 반영하는 가장 중요한 부분입니다.
- * @param rawData - 원본 측정 데이터 배열
- * @returns KPI_Metrics 객체
- */
-function calculateKpisFromRawData(rawData: any[]): KPI_Metrics {
-    // TODO: 실제 복잡한 ML/통계 로직이 들어갈 영역 (예: Regression Analysis, Feature Extraction)
-    // 현재는 Mock 데이터로 대체합니다.
-    console.log("--- [INFO] Running complex KPI calculation logic...");
-
-    const mockKPIs: KPI_Metrics = {
-        growth: Math.random() * 0.8 + 0.2, // 0.2 ~ 1.0 사이 값 가정
-        engagement: (Math.random() * 0.7 + 0.3).toFixed(4) as string,
-        monetization: (Math.random() * 0.5 + 0.1).toFixed(4) as string,
-    };
-
-    return mockKPIs;
+import { PrismaClient } from '@prisma/client'; // 예시 ORM 사용
+// 필요한 타입 정의 (실제 프로젝트에 맞게 조정 필요)
+interface DiagnosisResultInput {
+    contextId: string;
+    score: number; // 0~100 스코어
+    diagnosisType: 'Growth' | 'Engagement' | 'Monetization';
+    kpiValue: number;
 }
 
+// PrismaClient 인스턴스는 전역 또는 컨테이너에서 주입받는 것이 일반적입니다.
+const prisma = new PrismaClient(); 
+
 /**
- * Gap Score를 계산하는 메인 로직입니다.
- * Growth 지표가 가장 중요한 변수이며, 나머지 KPI들은 이를 보조합니다.
- * @param rawData - 원본 데이터
- * @param contextId - 컨텍스트 ID
- * @returns 최종 진단 결과 객체
+ * @description 진단 결과를 DB에 기록하고, 핵심 KPI를 원자적으로 업데이트하는 서비스 함수.
+ * @param results - 진단 결과 배열 (Growth, Engagement, Monetization 등)
  */
-export const calculateGapScore: (rawData: any[], contextId: string): DiagnosisResultSchema => {
-    if (!rawData || rawData.length === 0) {
-        throw new Error("Validation Failed: Raw data cannot be empty.");
+export async function saveDiagnosisResultAndKPIs(results: DiagnosisResultInput[]): Promise<any> {
+    if (!results || results.length === 0) {
+        throw new Error("진단 결과를 제공해야 합니다.");
     }
 
-    // 1. KPI 계산 (데이터 변환 단계)
-    const kpis = calculateKpisFromRawData(rawData);
+    // 트랜잭션 시작 (가장 중요! 모든 작업이 성공하거나 모두 실패하도록 보장)
+    const transactionResult = await prisma.$transaction(async (tx) => {
+        let diagnosisRecordId: string | null = null;
 
-    // 2. Gap Score 산출 (핵심 비즈니스 로직)
-    // 공식 예시: GapScore = Weight_G * Growth - Weight_E * Engagement + Weight_M * Monetization
-    // 가중치와 수학적 관계는 비즈니스 목표에 따라 결정되어야 합니다.
-    const gapScore: GapScore = Math.max(0, (kpis.growth * 3.5) - (parseFloat(kpis.engagement) * 2) + (parseFloat(kpis.monetization) * 1));
+        // 1. 진단 결과 기록 및 핵심 KPI 업데이트를 병렬로 처리
+        for (const result of results) {
+            try {
+                // 1-A. Diagnosis_Results 테이블에 주 데이터 삽입
+                await tx.diagnosis_results.create({
+                    data: {
+                        contextId: result.contextId,
+                        score: result.score,
+                        diagnosisType: result.diagnosisType, // 진단 유형 명시
+                        resultDataJson: JSON.stringify({ /* ... 상세 데이터 로직 ... */ }), 
+                        createdAt: new Date(),
+                    }
+                });
 
-    // 3. 최종 결과 구조화
-    return {
-        contextId: contextId,
-        score: parseFloat(gapScore.toFixed(4)), // Gap Score는 소수점 4자리까지 제한
-        reportData: {
-            growth_metric: kpis.growth.toFixed(4),
-            engagement_metric: kpis.engagement,
-            monetization_metric: kpis.monetization,
-            gap_score_description: gapScore > 1.5 ? "High Potential Gap" : "Needs Improvement",
+                // 1-B. KPI_Metrics 테이블에 개별 KPI 값 업데이트 (원자적 쓰기)
+                await tx.kpi_metrics.upsert({ // upsert를 사용하여 값이 이미 존재하면 업데이트, 아니면 생성
+                    where: { type: result.diagnosisType, contextId: result.contextId },
+                    update: { 
+                        value: result.kpiValue, 
+                        updatedAt: new Date() 
+                    },
+                    create: { 
+                        type: result.diagnosisType, 
+                        contextId: result.contextId, 
+                        value: result.kpiValue,
+                        createdAt: new Date(),
+                    }
+                });
+
+            } catch (error) {
+                // 트랜잭션 내에서 오류 발생 시 즉시 실패 처리
+                console.error(`KPI 저장 실패 (${result.diagnosisType}):`, error);
+                throw new Error("데이터베이스 쓰기 과정 중 치명적인 에러가 발생했습니다."); 
+            }
         }
-    };
-}
 
-// 테스트용 Mock 함수 (실제 환경에서는 DB 커넥션이 필요)
-export const getDiagnosisService = () => {
-    return {
-        calculateGapScore,
-    };
+        return { success: true, message: "모든 데이터 저장이 트랜잭션에 성공적으로 완료되었습니다." };
+    });
+
+    return transactionResult;
 }

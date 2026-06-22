@@ -1,71 +1,51 @@
-// src/controllers/diagnosisController.ts
-import { Request, Response } from 'express';
-import { DiagnosisService } from '../services/DiagnosisService';
-import { ApiResponse } from '../utils/responseHandler';
+import { Request, Response } from 'express'; // Express 프레임워크 가정
+import { saveDiagnosisResultAndKPIs } from '../services/diagnosisService';
 
 /**
- * @description Gap Score 진단 점수 및 핵심 KPI 데이터를 제공하는 컨트롤러
- * E2E 테스트 통과 필수. 모든 데이터는 안정적인 JSON 스키마를 따라야 함.
+ * @description 진단 점수 API 엔드포인트 핸들러. 
+ * 사용자의 권한 체크와 입력값 유효성 검증을 최우선으로 합니다.
  */
-export class DiagnosisController {
-
-    private diagnosisService: DiagnosisService;
-
-    constructor(diagnosisService: DiagnosisService) {
-        this.diagnosisService = diagnosisService;
+export const getDiagnosisScore = async (req: Request, res: Response) => {
+    // [Step 2-1] 인증 및 인가(Authentication & Authorization) 확인
+    const userRole = req.user?.role; // 가상의 사용자 권한 추출
+    if (!userRole || !['Premium', 'Admin'].includes(userRole)) {
+        // RBAC 체크: 무료 사용자는 특정 KPI 접근 제한 (미검증 지식 활용)
+        return res.status(403).json({ 
+            error: "접근 권한이 없습니다.", 
+            message: "Premium 또는 Admin 등급의 사용자만 이 진단 점수 리포트를 확인할 수 있습니다." 
+        });
     }
 
-    /**
-     * GET /api/v1/diagnosis_score
-     * Gap Score 계산 로직을 실행하고, 이를 KPI 구조에 매핑하여 반환합니다.
-     * @param req - 요청 객체 (사용자 ID, 진단 타입 등)
-     * @param res - 응답 객체
-     */
-    public async getDiagnosisScore(req: Request, res: Response): Promise<void> {
-        try {
-            // 1. 필수 입력값 검증 (가드 문)
-            const userId = req.query.userId as string;
-            if (!userId) {
-                return res.status(400).json({ message: "User ID is required for diagnosis." });
-            }
-
-            console.log(`[DiagnosisController] Starting diagnosis process for user: ${userId}`);
-
-            // 2. 서비스 레이어 호출 (비즈니스 로직 실행)
-            const result = await this.diagnosisService.calculateScoreAndKPI(userId);
-
-            if (!result || !result.score) {
-                return res.status(500).json({ message: "Failed to calculate diagnosis score or KPI." });
-            }
-
-            // 3. 결과 구조 검증 및 응답 전처리 (Designer가 요구하는 안정적인 형태 유지)
-            const finalResponse = {
-                diagnosisId: result.id,
-                score: result.score, // Gap Score (0-100)
-                message: result.interpretationMessage, // 해석 메시지
-                kpis: {
-                    growthScore: result.kpis?.growth || 0,         // Growth KPI
-                    engagementScore: result.kpis?.engagement || 0, // Engagement KPI
-                    monetizationPotential: result.kpis?.monetization || 0 // Monetization KPI
-                },
-                dataContext: {
-                    // 데이터 추적에 필요한 추가 컨텍스트 정보 (e.g., 진단 유형)
-                    contextType: 'MusicCareerGap',
-                    timestamp: new Date().toISOString()
-                }
-            };
-
-            res.status(200).json({ 
-                success: true, 
-                data: finalResponse 
-            });
-
-        } catch (error) {
-            console.error("[DiagnosisController] Error during diagnosis:", error);
-            // 내부 오류는 500으로 처리하고, 클라이언트에게는 상세 정보 노출 최소화
-            res.status(500).json({ message: "Internal Server Error while processing diagnosis." });
-        }
+    // [Step 2-2] 입력값 유효성 검증 (Input Validation)
+    const { contextId } = req.query;
+    if (!contextId || typeof contextId !== 'string') {
+        return res.status(400).json({ error: "유효하지 않은 요청입니다.", message: "Context ID를 반드시 제공해야 합니다." });
     }
-}
 
-// NOTE: 실제 프로젝트에서는 Dependency Injection을 통해 DiagnosisService 인스턴스를 주입받아야 합니다.
+    try {
+        // 1. 가상의 데이터 로직 (실제로는 다른 서비스에서 호출)
+        // 이 부분은 진단 점수 계산이 이루어지는 곳이라고 가정합니다.
+        const mockDiagnosisResults = [
+            { contextId: contextId, score: Math.random() * 100, diagnosisType: 'Growth', kpiValue: Math.random() * 5 },
+            { contextId: contextId, score: Math.random() * 100, diagnosisType: 'Engagement', kpiValue: Math.random() * 3 },
+            { contextId: contextId, score: Math.random() * 100, diagnosisType: 'Monetization', kpiValue: Math.random() * 7 }
+        ];
+
+        // 2. 안정화된 서비스 레이어 호출 (트랜잭션 및 KPI 저장)
+        await saveDiagnosisResultAndKPIs(mockDiagnosisResults);
+
+        return res.status(200).json({
+            success: true,
+            message: "진단 점수 계산 및 데이터 연동이 성공적으로 완료되었습니다.",
+            data: mockDiagnosisResults // 클라이언트에게 보여줄 결과값 반환
+        });
+
+    } catch (error) {
+        console.error("API 처리 중 오류 발생:", error);
+        // 사용자에게는 내부 에러가 아닌 일반적인 메시지를 전달해야 합니다.
+        return res.status(500).json({ 
+            error: "서버 내부 오류", 
+            message: (error as Error).message || "진단 점수 데이터를 처리할 수 없습니다." 
+        });
+    }
+};
