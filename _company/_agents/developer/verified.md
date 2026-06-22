@@ -365,3 +365,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-21] 현재 `Storyboard_GapScore_Master.md`가 존재하지만(), 이 스토리보드를 채울 '살아있는 데이터(Live Data)'의 출처와 안정성이 확보되어야만 다음 단계로 넘어갈 수 있습니다. [근거: 코딩 원칙 - 테스트 가능하게] _(근거: Designer 산출물)_
 - [2026-06-21] 우선, API의 최종 진입점 역할을 할 `diagnosisController.ts` 파일을 만들겠습니다. 이는 이전 메모리에서 정의했던 Backend API 설계()를 구체화하는 단계입니다. _(근거: sessions/2026-05-19T09:57)_
 - [2026-06-21] // 확정된 Gap Score Depth 포함 필드 _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-22] 1. **문제:** 현재 `Diagnosis_Results`는 단순히 "사용자가 언제, 어떤 종류의 진단을 받았는지"만 기록합니다. _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-06-22] 2. **필요 기능:** 영상 시청 완료(Video View Completion) $\rightarrow$ 특정 KPI에 대한 **인식 변화 유도 (Pain Point)** $\rightarrow$ 시스템 진단 실행(Diagnosis Run). 이 3단계의 인과관계를 데이터로 연결해야 합니다. _(근거: Writer 산출물 - 후킹 전략)_
