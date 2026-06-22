@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 22. 오후 7:49:34_
+_업데이트: 2026. 6. 22. 오후 8:02:50_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,13 +17,13 @@ _업데이트: 2026. 6. 22. 오후 7:49:34_
 - [2026-06-22] Writer가 제시한 컨셉 1과 2, 그리고 Researcher가 제안한 트렌드(Process Visualization)를 반영하여, 영상 제작에 필요한 구체적인 시각 스토리보드 및 디자인 브리프를 즉시 작성하고 승인 준비를 하라. → 산출물 sessions/2026-06-22T02-33/designer.md
 - [2026-06-22] Writer가 제시한 스토리보드를 바탕으로, 'Pain $ightarrow$ Process $ightarrow$ Gain' 구조를 시각적으로 구현하기 위한 디자인 브리프(애니메이션 에셋의 우선순위 포함)를 즉시 작성하라. → 산출물 sessions/2026-06-22T02-48/designer.md
 ### 💻 코다리
-- [2026-06-22] MVP 구현에 필요한 백엔드 개발 목록과 예상 개발 시간을 산출하여, 콘텐츠 제작 병목 지점 대비 리소스 가용성을 검토하고 현실적인 로드맵을 제시하라. → 산출물 sessions/2026-06-22T10-15/developer.md
 - [2026-06-22] 현빈이 제시한 MVP KPI(전환율 10%, 참여도 60%)와 코다리의 기존 백엔드 로드맵을 검토하여, 현재 진행 중인 Diagnosis Core Engine 개발에 있어 KPI 계산 로직 및 데이터 파이프라인 설계의 현실적인 병목 지점과 예상 개발 시간을 재검증하고 보고하라. → 산출물 sessions/2026-06-22T10-30/developer.md
 - [2026-06-22] 현빈이 정의한 데이터 모델(User, DiagnosisSession, EngagementEvent, Transaction)과 API 요구사항을 기반으로, KpiEventLoggerService 구현에 필요한 백엔드 개발 목록 및 예상 개발 시간을 확정하고 보고하라. → 산출물 sessions/2026-06-22T10-45/developer.md
+- [2026-06-22] Business 에이전트가 정의한 핵심 KPI 및 Funnel 구조(Gap_Score_V1.0_Definition)를 기반으로, MVP에 필요한 최소한의 데이터 모델 스키마(`MVP_Required_Schema_V1.0`)와 핵심 API 엔드포인트 목록을 산출하라. → 산출물 sessions/2026-06-22T11-00/developer.md
 ### 💼 현빈
-- [2026-06-22] 최초 유료 진단 베타 프로그램의 가격 구조와 핵심 KPI를 포함한 MVP 제안서를 작성하고, 수익화 퍼널(Pain $ ightarrow $ Proof $ ightarrow $ Gain)을 구체적으로 정의하라. → 산출물 sessions/2026-06-22T10-15/business.md
 - [2026-06-22] 개발자로부터 받은 검토 결과를 바탕으로, 현재 기술 구현 단계에서 수익화 퍼널(Pain $ightarrow$ Proof $ightarrow$ Gain)의 각 단계에 필요한 데이터 모델 및 API 요구사항을 구체적으로 정의하고 개발 우선순위를 재조정하라. → 산출물 sessions/2026-06-22T10-30/business.md
 - [2026-06-22] 개발자로부터 받은 예상 개발 시간을 검토하여, MVP 성공을 위한 KPI 달성 목표(전환율 10%, 참여도 60%)와 기술 구현 로드맵 간의 현실적인 병목 지점을 분석하고 우선순위를 재조정하라. → 산출물 sessions/2026-06-22T10-45/business.md
+- [2026-06-22] Gap_Score_V1.0_Definition 파일을 최종 검토하고, MVP 성공을 위해 가장 핵심적인 3가지 KPI와 이들을 연결하는 사용자 행동 Funnel 구조를 명확히 정의하라. → 산출물 sessions/2026-06-22T11-00/business.md
 ### 📱 영숙
 - [2026-06-22] 회사 목표, 각 에이전트의 개인 목표(_agents/{id}/goal.md), 최근 의사결정 및 모든 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 선정하고, 실행 계획을 수립하세요. → 산출물 sessions/2026-06-22T02-18/secretary.md
 - [2026-06-22] 회사 목표, 에이전트 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 선정하고, 이를 실행하기 위한 최적의 분배 계획을 수립하여 보고하라. → 산출물 sessions/2026-06-22T03-03/secretary.md
