@@ -377,3 +377,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-22] | **1** | **DB 스키마 확장 (`schema.sql`)** | `kpi_event_logs` 테이블 추가. 필수 필드: `user_id`, `timestamp`, `event_type` (enum), `payload` (JSONB), `source_module`. 데이터 무결성을 위해 외래 키(FK) 및 적절한 인덱스(`idx_event_time`)를 반드시 설정해야 합니다. | 코다리 | 0.5 Day | _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-06-22] | **2** | **API 엔드포인트 설계 (Backend)** | `POST /api/v1/log_event` 정의. 요청 본문은 유연한 JSON 구조를 허용하며, 필수 파라미터(사용자 인증 토큰 등) 검증 로직을 추가합니다. | 코다리 | 1 Day | _(근거: sessions/2026-05-18T14-38/developer.md)_
 - [2026-06-22] | **3** | **이벤트 수신 및 유효성 검사 (Service Layer)** | 이벤트 페이로드(Payload)를 받으면, `event_type`과 필수 필드를 기반으로 스키마 유효성을 즉시 검증합니다. 잘못된 데이터는 로그에 기록하고 실패 응답을 반환해야 합니다. **가드 로직 구현 필수.** | 코다리 | 1 Day | _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-22] * **서비스 목적:** 사용자 인터랙션(클릭, 진단 완료, 결제 시도 등)을 실시간으로 수집하고, 이를 정의된 KPI 모델(`Growth`, `Engagement`, `Monetization`)에 매핑하여 데이터베이스에 저장하는 것. _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-22] 기존 `schema.sql`을 바탕으로, 이벤트 로깅의 추적 가능성을 극대화하는 방향으로 테이블 구조를 정의하고 필요한 마이그레이션을 설계해야 합니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-22] 가장 핵심적인 진입점입니다. 모든 이벤트는 이 단일 지점을 통해 들어와야 합니다. _(근거: sessions/2026-05-19T09:57)_
+- [2026-06-22] | **2.** | **RBAC Gatekeeper** | 해당 `user_id`가 요청된 `event_type`에 대한 접근 권한(Role-Based Access Control)을 가지고 있는지 DB에서 조회/검증한다. | `user_roles` 테이블과 연결하여, 데이터 민감도에 따른 접근 제어 로직 구현. | _(근거: sessions/2026-05-18T13:43/developer.md)_
