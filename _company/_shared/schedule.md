@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 23. 오전 11:36:06_
+_업데이트: 2026. 6. 23. 오전 11:50:47_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,13 +17,13 @@ _업데이트: 2026. 6. 23. 오전 11:36:06_
 - [2026-06-23] A-01 및 A-02 에셋에 대한 기술적 사양서(`Final_Asset_Handover_Spec_v1.md`)를 기반으로, 데이터 추적의 핵심이 될 것으로 예상되는 사용자 상호작용 지점(Interaction Points) 목록을 정의하고, 이를 개발팀에게 명확히 전달할 수 있는 시각적/구조적 요구사항을 정리하라. → 산출물 sessions/2026-06-23T02-01/designer.md
 - [2026-06-23] A-01 및 A-02 에셋의 상호작용 포인트(IP) 목록과 시각적 요구사항을 바탕으로, 데이터 추적을 위한 최종 디자인 컴포넌트 & 상호작용 스펙(Interaction Spec)을 개발팀이 즉시 활용할 수 있도록 구조화하고 확정하라. → 산출물 sessions/2026-06-23T02-16/designer.md
 ### 💻 코다리
-- [2026-06-23] KpiEventLoggerService 구현을 위한 미세 상호작용 이벤트(Micro-Interaction Events) 기록을 위한 최종 데이터 모델(테이블 구조)을 확정하고, Designer가 제공한 애니메이션 에셋 ID 및 상호작용 데이터를 완벽하게 매핑할 수 있는 API 계약(Schema)을 정의하라. → 산출물 sessions/2026-06-23T02-01/developer.md
 - [2026-06-23] Designer가 제공한 상호작용 스펙을 기반으로, `MicroInteractionLog` 테이블에 필요한 최종 데이터베이스 스키마(테이블 구조)와 API 계약(Schema)을 정의하고, KpiEventLoggerService 구현에 필요한 백엔드 개발 목록 및 예상 시간을 재확정하라. → 산출물 sessions/2026-06-23T02-16/developer.md
 - [2026-06-23] KpiEventLoggerService 구현을 위한 백엔드 개발 목록과 예상 시간을 재검토하여, youtube 및 secretary가 요청한 최종 콘텐츠 제작 일정과의 연동 가능성을 보고하라. → 산출물 sessions/2026-06-23T02-31/developer.md
+- [2026-06-23] KpiEventLoggerService 및 Designer가 정의한 Interaction Spec을 기반으로, KPI Aggregation Service의 Proof of Concept(PoC) 구현에 필요한 핵심 데이터 모델과 초기 API 계약(Schema)을 설계하고 코드를 시작하라. → 산출물 sessions/2026-06-23T02-46/developer.md
 ### 💼 현빈
-- [2026-06-22] 확정된 실행 계획과 KPI를 바탕으로, 다음 콘텐츠 제작을 통해 달성할 예상 수익화 경로 및 전환율 목표(10%, 60%)를 재검토하고 리스크 요소를 분석하라. → 산출물 sessions/2026-06-22T12-00/business.md
 - [2026-06-22] 최종 확정된 애니메이션 에셋의 시각적 요구사항을 기반으로, 사용자 행동 유도 Funnel(Gap Score)에서 전환율 10% 및 참여도 60% 목표 달성을 위한 KPI 로깅 구조를 최종 점검하고 개발 우선순위를 조정하라. → 산출물 sessions/2026-06-22T12-15/business.md
 - [2026-06-23] 현재 설정된 MVP 목표(전환율 10%, 참여도 60%)와 KPI 측정 로직을 기반으로, 다음 영상에서 달성하고자 하는 구체적인 목표(Gap Score)를 재설정하고 콘텐츠 주제의 우선순위를 결정하라. → 산출물 sessions/2026-06-23T01-16/business.md
+- [2026-06-23] KPI Aggregation Service의 PoC 구현 시, 영상 성공에 가장 직접적으로 기여하는 핵심 KPI 지표(예: Gap Score 관련 이벤트 로깅 방식)를 정의하고 개발팀에게 명확한 요구사항을 전달하라. → 산출물 sessions/2026-06-23T02-46/business.md
 ### 📱 영숙
 - [2026-06-22] 레오, Designer, 코다리의 산출물(이벤트 시퀀스 로직, 디자인 브리프, API 요구사항)을 취합하여 다음 영상 제작에 필요한 최종 실행 일정 및 팀별 작업 배분 계획을 수립하고 텔레그램 보고를 준비하라. → 산출물 sessions/2026-06-22T12-00/secretary.md
 - [2026-06-23] 레오가 제시한 KPI(Gap Score 기반)와 코다리의 개발 예상 시간을 통합하여, 다음 영상의 최종 업로드 날짜와 제작 일정을 확정하고 캘린더에 반영할 준비를 하라. → 산출물 sessions/2026-06-23T01-31/secretary.md
