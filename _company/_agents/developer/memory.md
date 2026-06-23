@@ -339,3 +339,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-23] Writer와 Designer가 요청한 데이터 흐름 및 시각화 요구사항(Gap Score의 영상 내 표현 방식)을 반영하여 'Hook 1' 애니메이션 제작에 필요한 API 계약(`gapScore.ts`)과 기술적 구현 방안을 최종 검증하고 코드를 준비하라. → 산출물 sessions/2026-06-23T11-53/developer.md
 - [2026-06-23] Writer와 Designer가 요청한 데이터 흐름 및 시각화 요구사항(`gapScore.ts`)을 반영하여, 최종 영상 마스터 로드맵에 필요한 기술적 구현 범위(API 계약 및 서비스 로직)를 확정하고 코다리 업무를 완료할 수 있도록 지원하라. → 산출물 sessions/2026-06-23T12-08/developer.md
 - [2026-06-23] Writer가 작성한 스토리보드 및 Designer의 시각화 지침을 바탕으로 'Hook 1' 애니메이션 제작에 필요한 API 계약(`gapScore.ts`)과 기술적 구현 방안에 대한 최종 코드를 준비하라. → 산출물 sessions/2026-06-23T12-38/developer.md
+- [2026-06-23] Writer와 Designer가 확정한 데이터 흐름 및 시각화 요구사항(`gapScore.ts`)을 바탕으로, `gapScoreService.test.ts`에 정의된 모든 경계 조건 테스트(실패 조건, 경계 조건, 복합 상호작용, RBAC 실패, Zero Data 상태 등)를 즉시 구현하여 시스템의 강건성(Robustness)을 100% 확보하라. → 산출물 sessions/2026-06-23T12-53/developer.md
