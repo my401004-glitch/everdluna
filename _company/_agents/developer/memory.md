@@ -325,3 +325,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-23] KpiEventLoggerService 구현에 필요한 백엔드 개발 목록과 예상 시간을 재확정하고, 확정된 콘텐츠 제작 일정과의 연동 가능성을 최종 검토하여 보고하라. → 산출물 sessions/2026-06-23T01-31/developer.md
 - [2026-06-23] API_Contract_V1.0.md 및 Master_Asset_Spec.pdf의 요구사항을 기반으로, KpiEventLoggerService 구현에 필요한 백엔드 개발 목록과 예상 시간을 최종 재검토하고 콘텐츠 제작 일정과의 연동 가능성을 보고하라. → 산출물 sessions/2026-06-23T01-46/developer.md
 - [2026-06-23] KpiEventLoggerService 구현을 위한 미세 상호작용 이벤트(Micro-Interaction Events) 기록을 위한 최종 데이터 모델(테이블 구조)을 확정하고, Designer가 제공한 애니메이션 에셋 ID 및 상호작용 데이터를 완벽하게 매핑할 수 있는 API 계약(Schema)을 정의하라. → 산출물 sessions/2026-06-23T02-01/developer.md
+- [2026-06-23] Designer가 제공한 상호작용 스펙을 기반으로, `MicroInteractionLog` 테이블에 필요한 최종 데이터베이스 스키마(테이블 구조)와 API 계약(Schema)을 정의하고, KpiEventLoggerService 구현에 필요한 백엔드 개발 목록 및 예상 시간을 재확정하라. → 산출물 sessions/2026-06-23T02-16/developer.md
