@@ -328,3 +328,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-23] Designer가 제공한 상호작용 스펙을 기반으로, `MicroInteractionLog` 테이블에 필요한 최종 데이터베이스 스키마(테이블 구조)와 API 계약(Schema)을 정의하고, KpiEventLoggerService 구현에 필요한 백엔드 개발 목록 및 예상 시간을 재확정하라. → 산출물 sessions/2026-06-23T02-16/developer.md
 - [2026-06-23] KpiEventLoggerService 구현을 위한 백엔드 개발 목록과 예상 시간을 재검토하여, youtube 및 secretary가 요청한 최종 콘텐츠 제작 일정과의 연동 가능성을 보고하라. → 산출물 sessions/2026-06-23T02-31/developer.md
 - [2026-06-23] KpiEventLoggerService 및 Designer가 정의한 Interaction Spec을 기반으로, KPI Aggregation Service의 Proof of Concept(PoC) 구현에 필요한 핵심 데이터 모델과 초기 API 계약(Schema)을 설계하고 코드를 시작하라. → 산출물 sessions/2026-06-23T02-46/developer.md
+- [2026-06-23] KpiEventLoggerService 구현 결과를 바탕으로, 영상에서 제시된 'Gap Score' 데이터가 실제로 어떻게 추적되고 로깅되는지 시스템 연동 상태를 최종 확인하고, 다음 콘텐츠 제작 일정과의 연동 가능성을 보고하라. → 산출물 sessions/2026-06-23T03-16/developer.md
