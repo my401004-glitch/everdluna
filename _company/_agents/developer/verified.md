@@ -403,3 +403,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-23] throw new Error("Input data cannot be null or undefined."); // _(근거: 테스트 케이스 요구)_
 - [2026-06-23] return { score: "N/A", message: "Data is insufficient for diagnosis." }; // _(근거: 테스트 케이스 요구)_
 - [2026-06-23] throw new Error("Data point must contain 'growth', 'engagement', and 'monetization'."); // _(근거: 테스트 케이스 요구)_
+- [2026-06-23] * @description 사용자의 역할과 구독 레벨을 기반으로 데이터 접근 권한을 확인합니다. _(근거: sessions/2026-05-18T13:43)_
+- [2026-06-23] 1. **코드 완성**: `gapScoreService.ts`에 비즈니스 로직을 구현했습니다. _(근거: Designer의 시각화 요구사항)_
+- [2026-06-23] 2. **안정성 확보**: 모든 외부 입력(API 호출, 데이터 값)에 대한 가드 클로저와 예외 처리를 추가하여 강건성을 높였습니다. _(근거: 코다리 검증된 지식 - 시스템 안정성과 비즈니스 가치를 고려하여...)_
+- [2026-06-23] 68 * @description 사용자의 역할과 구독 레벨을 기반으로 데이터 접근 권한을 확인합니다. _(근거: sessions/2026-05-18T13:43)_
