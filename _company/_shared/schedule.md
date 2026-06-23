@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 23. 오후 8:26:19_
+_업데이트: 2026. 6. 23. 오후 8:40:57_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,9 +17,9 @@ _업데이트: 2026. 6. 23. 오후 8:26:19_
 - [2026-06-23] 개발팀이 제시할 새로운 데이터 필드(예: `resonanceFrequency`)를 활용하여 썸네일 컨셉 3안을 실제 시각 자료로 제작하고, 디자인 시스템(`Dark Blue`, `Accent Yellow`)을 적용하여 최종 마스터 파일을 완성한다. → 산출물 sessions/2026-06-23T05-01/designer.md
 - [2026-06-23] Writer가 제시한 최종 스토리보드와 데이터 기반 후킹 포인트를 바탕으로, 'Hook 1: 예측형 경고'의 시각 자료(썸네일 및 인트로 애니메이션)에 대한 최종 디자인 리소스 요구사항을 확정하고 제작 착수 준비를 완료하라 → 산출물 sessions/2026-06-23T10-23/designer.md
 ### 💻 코다리
-- [2026-06-23] Writer와 Designer의 요구사항을 충족시키기 위해, 'Gap Score' 데이터 시각화를 위한 API 계약(`gapScore.ts`)이 실제 콘텐츠 흐름에 맞게 충분한 데이터 포인트를 제공하는지 검토하고 필요한 경우 즉시 보완하세요. → 산출물 sessions/2026-06-23T04-46/developer.md
 - [2026-06-23] 확정된 API 계약(`gapScore.ts`)에 맞춰 KPI Aggregation Service PoC 구현을 즉시 착수하고, 데이터 흐름의 기술적 검증 및 안정성 확보에 집중한다. → 산출물 sessions/2026-06-23T05-01/developer.md
 - [2026-06-23] Writer가 요구한 실시간 시각화 로직(Gap Score 데이터의 영상 내 표현 방식)이 API 계약(`gapScore.ts`) 및 KPI Aggregation Service와 기술적으로 완벽하게 연동될 수 있는지 최종 검증하고, 필요한 데이터 흐름에 대한 기술적 안정성을 보장하라. → 산출물 sessions/2026-06-23T10-38/developer.md
+- [2026-06-23] Gap Score 데이터 시각화를 위한 API 계약(`gapScore.ts`)과 KPI Aggregation Service PoC 구현에 대해, 모든 요구사항(Writer/Designer의 스토리보드 및 시각화 지침)을 반영하여 최종 테스트 케이스를 작성하고 기술적 안정성을 100% 확보하라. → 산출물 sessions/2026-06-23T11-38/developer.md
 ### 💼 현빈
 - [2026-06-23] KPI Aggregation Service PoC가 성공적으로 완료될 수 있도록, Gap Score 데이터와 최종 수익화 퍼널(Pain Point $ ightarrow $ Data Diagnosis $ ightarrow $ Solution) 간의 KPI 변환 로직 및 측정 기준을 최종 확정하고 개발팀에게 명확한 요구사항을 전달하라. → 산출물 sessions/2026-06-23T03-46/business.md
 - [2026-06-23] 정의된 '진단-수익화 연결 매핑 스펙'을 기반으로, 추후 개발될 모듈(`BREATHE_ADVANCED` 등)에 적용할 구체적인 수익 모델(LTV 예측) 수식을 설계하라. → 산출물 sessions/2026-06-23T04-01/business.md
