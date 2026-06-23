@@ -330,3 +330,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-23] KpiEventLoggerService 및 Designer가 정의한 Interaction Spec을 기반으로, KPI Aggregation Service의 Proof of Concept(PoC) 구현에 필요한 핵심 데이터 모델과 초기 API 계약(Schema)을 설계하고 코드를 시작하라. → 산출물 sessions/2026-06-23T02-46/developer.md
 - [2026-06-23] KpiEventLoggerService 구현 결과를 바탕으로, 영상에서 제시된 'Gap Score' 데이터가 실제로 어떻게 추적되고 로깅되는지 시스템 연동 상태를 최종 확인하고, 다음 콘텐츠 제작 일정과의 연동 가능성을 보고하라. → 산출물 sessions/2026-06-23T03-16/developer.md
 - [2026-06-23] KpiEventLoggerService 및 Designer가 정의한 Interaction Spec을 기반으로, KPI Aggregation Service의 Proof of Concept(PoC) 구현에 필요한 핵심 데이터 모델과 초기 API 계약(Schema)을 설계하고 코드를 시작하여 데이터 추적 시스템의 기술적 검증을 즉시 착수하라. → 산출물 sessions/2026-06-23T03-46/developer.md
+- [2026-06-23] KPI Aggregation Service PoC에 대해 최종 타입 체크 및 실행 가능성을 검증하고, 실제 데이터 흐름에 맞춘 통합 테스트 케이스를 작성하여 시스템 안정성을 확보하라. → 산출물 sessions/2026-06-23T04-01/developer.md
