@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 23. 오후 1:19:45_
+_업데이트: 2026. 6. 23. 오후 1:35:11_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 6. 23. 오후 1:19:45_
 - [2026-06-14] writer와 designer가 준비한 콘텐츠 초안에 맞춰, 가장 효과적인 후킹 포인트와 최적 게시 시간 전략을 반영하여 첫 번째 영상에 대한 릴스 및 피드 포맷별 게시물 시안(캡션 포함)을 즉시 작성하라. → 산출물 sessions/2026-06-14T15-23/instagram.md
 - [2026-06-20] 인스타그램 에이전트는 정의된 수익화 퍼널 목표(유튜브 시청/링크 클릭)에 맞춰, 모든 SNS 콘텐츠의 최종 목표와 전환 경로를 최적화하는 전략을 수립하라. → 산출물 sessions/2026-06-20T08-10/instagram.md
 ### 🎨 Designer
-- [2026-06-23] A-01 및 A-02 에셋에 대한 기술적 사양서(`Final_Asset_Handover_Spec_v1.md`)를 기반으로, 데이터 추적의 핵심이 될 것으로 예상되는 사용자 상호작용 지점(Interaction Points) 목록을 정의하고, 이를 개발팀에게 명확히 전달할 수 있는 시각적/구조적 요구사항을 정리하라. → 산출물 sessions/2026-06-23T02-01/designer.md
 - [2026-06-23] A-01 및 A-02 에셋의 상호작용 포인트(IP) 목록과 시각적 요구사항을 바탕으로, 데이터 추적을 위한 최종 디자인 컴포넌트 & 상호작용 스펙(Interaction Spec)을 개발팀이 즉시 활용할 수 있도록 구조화하고 확정하라. → 산출물 sessions/2026-06-23T02-16/designer.md
 - [2026-06-23] Writer와 KPI 분석 결과를 바탕으로 다음 영상(Part 2)에 필요한 Reels 및 피드 포맷별 시각 자료의 구체적인 요구사항을 확정하고, 코다리에게 전달할 최종 디자인 리소스 목록과 우선순위를 정리하라. → 산출물 sessions/2026-06-23T03-16/designer.md
+- [2026-06-23] Writer 및 CEO 메모리에 기반하여 'Hook 1: 예측형 경고'의 시각 자료(썸네일 및 인트로 애니메이션)에 대한 최종 디자인 리소스 요구사항을 확정하고 제작 착수 준비를 완료하세요. → 산출물 sessions/2026-06-23T04-31/designer.md
 ### 💻 코다리
-- [2026-06-23] KpiEventLoggerService 구현 결과를 바탕으로, 영상에서 제시된 'Gap Score' 데이터가 실제로 어떻게 추적되고 로깅되는지 시스템 연동 상태를 최종 확인하고, 다음 콘텐츠 제작 일정과의 연동 가능성을 보고하라. → 산출물 sessions/2026-06-23T03-16/developer.md
 - [2026-06-23] KpiEventLoggerService 및 Designer가 정의한 Interaction Spec을 기반으로, KPI Aggregation Service의 Proof of Concept(PoC) 구현에 필요한 핵심 데이터 모델과 초기 API 계약(Schema)을 설계하고 코드를 시작하여 데이터 추적 시스템의 기술적 검증을 즉시 착수하라. → 산출물 sessions/2026-06-23T03-46/developer.md
 - [2026-06-23] KPI Aggregation Service PoC에 대해 최종 타입 체크 및 실행 가능성을 검증하고, 실제 데이터 흐름에 맞춘 통합 테스트 케이스를 작성하여 시스템 안정성을 확보하라. → 산출물 sessions/2026-06-23T04-01/developer.md
+- [2026-06-23] Writer가 제시한 스토리보드와 Designer의 시각적 요구사항을 바탕으로, 'Gap Score' 데이터 시각화를 위한 기술적 구현 방안 및 API 계약 설계를 즉시 시작하세요. → 산출물 sessions/2026-06-23T04-31/developer.md
 ### 💼 현빈
 - [2026-06-23] KPI Aggregation Service PoC가 성공적으로 완료될 수 있도록, Gap Score 데이터와 최종 수익화 퍼널(Pain Point $ ightarrow $ Data Diagnosis $ ightarrow $ Solution) 간의 KPI 변환 로직 및 측정 기준을 최종 확정하고 개발팀에게 명확한 요구사항을 전달하라. → 산출물 sessions/2026-06-23T03-46/business.md
 - [2026-06-23] 정의된 '진단-수익화 연결 매핑 스펙'을 기반으로, 추후 개발될 모듈(`BREATHE_ADVANCED` 등)에 적용할 구체적인 수익 모델(LTV 예측) 수식을 설계하라. → 산출물 sessions/2026-06-23T04-01/business.md
