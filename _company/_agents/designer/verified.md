@@ -308,3 +308,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-23] * *(예시: 10점 만점에 현재 3점 $\rightarrow$ Gap Visualization: 배경의 70% 영역이 희미하게 사라진 것처럼 처리)* _(근거: Designer 검증된 지식)_
 - [2026-06-23] * `Accent Yellow (#FFD700)`: **위험(Pain)**, 아직 도달하지 못한 목표(Gap), 그리고 최종 **기회/CTA**. 이 색상의 사용 빈도와 강도를 조절하여 긴장감과 희망을 동시에 유발해야 합니다. _(근거: Designer 검증된 지식)_
 - [2026-06-23] * ****: Pain $\rightarrow$ Gain 프레임워크를 데이터로 증명해야 함. _(근거: Designer 검증된 지식)_
+- [2026-06-23] | **Primary Color (신뢰)** | Dark Blue (`#0A2463`) | 배경, 구조적 신뢰 부여. 시스템의 전문성을 강조하는 영역에 사용. | | _(근거: Self-RAG)_
+- [2026-06-23] | **Accent Yellow (위험/기회)** | Accent Yellow (`#FFD700`) | 1. Gap Score 수치 하이라이트. 2. 경고(Pain) 표시, 최종 CTA 강조. 즉각적인 시선 집중 유도. | | _(근거: Self-RAG)_
+- [2026-06-23] | **Background Color (데이터)** | Neutral Grey (`#F5F5F5`) | 데이터 영역의 명확성 확보 및 Dark Blue와의 대비 유지. | | _(근거: Self-RAG)_
+- [2026-06-23] | **Title Typography** | Montserrat Bold | 모든 핵심 헤드라인(Pain, Gain)에 사용되어 강력한 메시지 전달력 확보. | | _(근거: Self-RAG)_
+- [2026-06-23] | **Body Typography** | Noto Sans KR (Medium/Bold) | 데이터 수치 및 상세 설명 텍스트에 사용. 높은 가독성 보장. | | _(근거: Self-RAG)_
