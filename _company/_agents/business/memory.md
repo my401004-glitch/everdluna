@@ -443,3 +443,4 @@ _현빈 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-23] 작성된 스토리보드와 후킹 포인트가 설정한 유료 전환 퍼널 전략(Pain Point $ightarrow$ Gap Score $ightarrow$ 유료 모듈)에 정확히 부합하는지 검토하고, KPI 달성을 위한 콘텐츠의 비즈니스 목표를 최종 점검하라. → 산출물 sessions/2026-06-23T03-01/business.md
 - [2026-06-23] KPI Aggregation Service PoC가 성공적으로 완료될 수 있도록, Gap Score 데이터와 최종 수익화 퍼널(Pain Point $ ightarrow $ Data Diagnosis $ ightarrow $ Solution) 간의 KPI 변환 로직 및 측정 기준을 최종 확정하고 개발팀에게 명확한 요구사항을 전달하라. → 산출물 sessions/2026-06-23T03-46/business.md
 - [2026-06-23] 정의된 '진단-수익화 연결 매핑 스펙'을 기반으로, 추후 개발될 모듈(`BREATHE_ADVANCED` 등)에 적용할 구체적인 수익 모델(LTV 예측) 수식을 설계하라. → 산출물 sessions/2026-06-23T04-01/business.md
+- [2026-06-23] 현빈이 확정한 LTV 수익화 모델($	ext{LTV} = R_{base} + (	ext{Conversion Rate}_{	ext{Advanced}} 	imes 	ext{Average Revenue per Advanced Module})$)에 따라, 다음 영상의 예상 목표 수입 및 가격 옵션(A/B/C)을 기반으로 콘텐츠 제작 우선순위를 최종 확정해줘. → 산출물 sessions/2026-06-23T04-16/business.md
