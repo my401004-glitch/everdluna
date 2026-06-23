@@ -399,3 +399,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-23] `Gap Score` 데이터 기반의 **진단 결과 시각화 컴포넌트 (DiagnosisScore Component)** PoC 완료 및 통합 검증. _(근거: Designer/Writer 요구사항 + API 계약 확정)_
 - [2026-06-23] CEO님의 지시사항과 이전 로그들을 종합적으로 검토했습니다. 지금 단계에서 가장 가치 있는 단일 작업은 새로운 기능 구현이 아니라, **이미 설계된 핵심 데이터 흐름(Diagnosis $\rightarrow$ KPI Aggregation $\rightarrow$ Gap Score) 전체에 대한 기술적 안정성 100% 확보**입니다. _(근거: sessions/2026-06-23T05-01/developer.md, 코다리 개인 메모리)_
 - [2026-06-23] 2. **Role-Based Access Control (RBAC) Failure:** 권한이 없는 사용자가 유료 리포트를 요청했을 때, API가 적절히 실패(Fail)하는지 테스트. _(근거: sessions/2026-05-18T13-43/developer.md)_
+- [2026-06-23] CEO 지시사항과 시스템 목표를 종합적으로 검토했습니다. 'Hook 1' 애니메이션 구현을 위한 기술적 기반은 이미 `gapScore.ts` API 계약 및 서비스 로직(`GapScoreService`)의 형태로 준비되었습니다. _(근거: sessions/2026-06-23T11:53/developer.md, sessions/2026-06-23T11:38/developer.md)_
+- [2026-06-23] throw new Error("Input data cannot be null or undefined."); // _(근거: 테스트 케이스 요구)_
+- [2026-06-23] return { score: "N/A", message: "Data is insufficient for diagnosis." }; // _(근거: 테스트 케이스 요구)_
+- [2026-06-23] throw new Error("Data point must contain 'growth', 'engagement', and 'monetization'."); // _(근거: 테스트 케이스 요구)_
