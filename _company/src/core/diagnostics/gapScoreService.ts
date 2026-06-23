@@ -1,77 +1,102 @@
-import { RawDiagnosisData, DiagnosisResult, AllDiagnosisResults } from './gapScoreTypes';
+// src/core/diagnostics/gapScoreService.ts
+import { DiagnosisInputData, GapScoreResult } from './gapScoreTypes';
 
 /**
- * Gap Score 계산 및 종합 진단 로직을 담당하는 서비스 레이어입니다.
- * [WHY]: 이 함수는 비즈니스 규칙(Business Rule)이 집약되어 있어 외부 노출 없이, 테스트 가능한 순수 로직으로 분리해야 합니다.
+ * @description 주어진 사용자 데이터로부터 실시간 진단 점수와 변화 추이(Context)를 계산합니다.
+ * 이 서비스는 비즈니스 로직의 핵심이며, 모든 예외 및 경계 조건을 처리해야 합니다.
+ * 
+ * @param userData - 진단을 수행하는 사용자의 기본 정보 (예: 사용자 타입, 구독 레벨 등).
+ * @param diagnosisData - 분석할 기간 동안 수집된 KPI 데이터 (Growth, Engagement, Monetization).
+ * @returns 계산된 Gap Score 결과 객체.
  */
-export class GapScoreService {
-
-    /**
-     * 주어진 원본 데이터 배열을 받아 종합 진단 결과를 생성합니다.
-     * @param rawDataList - 처리할 RawDiagnosisData 객체 리스트.
-     * @returns AllDiagnosisResults - 각 유형별 최종 진단 결과 배열.
-     */
-    public static calculate(rawDataList: RawDiagnosisData[]): AllDiagnosisResults {
-        if (!rawDataList || rawDataList.length === 0) {
-            console.warn("GapScoreService: 처리할 원본 데이터가 없습니다.");
-            return [];
-        }
-
-        const resultsMap = new Map<string, DiagnosisResult>(); // SessionId 기준 결과 통합 관리
-
-        for (const rawData of rawDataList) {
-            // 1. 권한 검증 및 필터링 (RBAC Check - 최우선 방어 로직)
-            if (rawData.userLevel === 'Free' && rawData.diagnosisType === 'Monetization') {
-                console.warn(`[${rawData.sessionId}] Free 사용자에게는 Monetization 진단 접근이 제한됩니다.`);
-                // 에러를 던지기보다, 빈 결과 또는 경고 메시지를 반환하여 시스템이 멈추지 않게 합니다.
-                continue;
-            }
-
-            // 2. 핵심 KPI 계산 및 로직 수행
-            const result = this.calculateSingleDiagnosis(rawData);
-            resultsMap.set(`${rawData.sessionId}_${rawData.diagnosisType}`, result);
-        }
-
-        return Array.from(resultsMap.values());
+export const getDiagnosisScore = async (userData: { role: 'free' | 'premium'; subscriptionLevel: 'none' | 'basic' | 'pro' }, diagnosisData: DiagnosisInputData): Promise<GapScoreResult> => {
+    // 1. 입력 유효성 검증 (Guard Clauses)
+    if (!diagnosisData || Object.keys(diagnosisData).length === 0) {
+        throw new Error("Diagnosis data cannot be empty.");
     }
 
-    /**
-     * 단일 진단 데이터에 대한 KPI 계산 및 종합 점수 도출 로직입니다. (핵심 비즈니스 로직)
-     * @param rawData - 단일 RawDiagnosisData 객체.
-     * @returns DiagnosisResult - 해당 유형의 최종진단결과.
-     */
-    private static calculateSingleDiagnosis(rawData: RawDiagnosisData): DiagnosisResult {
-        // [가정] 실제 KPI 계산은 복잡한 통계 모델을 거치지만, 여기서는 로직 흐름만 구현합니다.
+    let score = 0;
+    const result: GapScoreResult = {
+        score: 0,
+        status: 'Stable', // Default status
+        details: { growth: 0, engagement: 0, monetization: 0 },
+        contextMessage: "데이터 분석을 위한 충분한 데이터가 수집되었습니다.",
+        isCritical: false,
+    };
 
-        let kpiGrowth = rawData.rawMetrics['pitch_accuracy'] || 0;
-        let kpiEngagement = rawData.rawMetrics['vocal_range'] || 0;
-        let kpiMonetization = rawData.rawMetrics['consistency'] || 0;
-
-        // 진단 유형에 따라 어떤 KPI를 주력으로 볼지 결정
-        let primaryScore: number;
-        let suggestedAction: string;
-        let isCritical: boolean;
-
-        if (rawData.diagnosisType === 'Growth') {
-            primaryScore = Math.min(100, kpiGrowth * 1.5 + kpiEngagement * 0.5); // Growth는 Pitch Accuracy가 중요
-            suggestedAction = "개별 주파수 구간의 정밀한 트레이닝을 추천합니다.";
-            isCritical = primaryScore < 40;
-        } else if (rawData.diagnosisType === 'Engagement') {
-            primaryScore = Math.min(100, kpiEngagement * 1.2 + kpiGrowth * 0.3); // Engagement는 Range가 중요
-            suggestedAction = "다양한 난이도의 레퍼토리를 통해 음역 확장 연습을 병행하세요.";
-            isCritical = primaryScore < 45;
-        } else { // Monetization (또는 Default)
-            primaryScore = Math.min(100, kpiMonetization * 2); // Consistency가 가장 중요
-            suggestedAction = "일관성을 높이기 위해 매일 루틴한 연습을 습관화해야 합니다.";
-            isCritical = primaryScore < 35;
-        }
-
-        return {
-            diagnosisType: rawData.diagnosisType,
-            scoreValue: parseFloat(primaryScore.toFixed(2)), // 최종 점수 (시각화용)
-            kpiMetrics: { Growth: kpiGrowth, Engagement: kpiEngagement, Monetization: kpiMonetization },
-            isCritical: isCritical,
-            suggestedAction: suggestedAction
-        };
+    // 2. 권한 기반 접근 제어 (RBAC) 로직 구현
+    const canAccessDiagnosis = checkUserRole(userData);
+    if (!canAccessDiagnosis) {
+        result.status = 'Restricted';
+        result.contextMessage = `현재 계정 (${userData.role})으로는 진단 분석에 필요한 데이터에 접근할 수 없습니다.`;
+        return result;
     }
-}
+
+    // 3. KPI 기반 점수 계산 로직 (가상의 복잡한 비즈니스 규칙)
+    try {
+        const growthScore = calculateMetric(diagnosisData, 'growth');
+        const engagementScore = calculateMetric(diagnosisData, 'engagement');
+        const monetizationScore = calculateMetric(diagnosisData, 'monetization');
+
+        // 가중치 적용 및 종합 점수 산출 (Example: Growth가 가장 중요하다고 가정)
+        score = Math.round((growthScore * 0.5 + engagementScore * 0.3 + monetizationScore * 0.2));
+
+        result.details.growth = growthScore;
+        result.details.engagement = engagementScore;
+        result.details.monetization = monetizationScore;
+        result.score = score;
+        
+        // 4. 상태 판별 및 메시지 생성 (Critical/Potential/Stable)
+        const statusMap = determineStatus(score, growthScore);
+        result.status = statusMap.status;
+        result.contextMessage = statusMap.message;
+
+        if (statusMap.isCritical) {
+            result.isCritical = true;
+        }
+    } catch (error) {
+        // 런타임 오류 처리: 데이터 포맷 불일치 등
+        console.error("Error during score calculation:", error);
+        result.status = 'Failed';
+        result.contextMessage = "데이터 계산 중 기술적 오류가 발생했습니다. 관리자에게 문의하세요.";
+    }
+
+    return result;
+};
+
+/**
+ * @description 사용자의 역할과 구독 레벨을 기반으로 데이터 접근 권한을 확인합니다. [근거: sessions/2026-05-18T13:43]
+ */
+const checkUserRole = (userData: { role: 'free' | 'premium'; subscriptionLevel: 'none' | 'basic' | 'pro' }): boolean => {
+    // 예시 로직: 무료 사용자는 특정 진단 유형에 접근 불가
+    if (userData.role === 'free' && userData.subscriptionLevel !== 'none') {
+        return false; // 가상의 권한 제한 시나리오
+    }
+    return true;
+};
+
+/**
+ * @description 단일 KPI 메트릭을 계산합니다. (실제로는 복잡한 통계 모델이 들어갑니다.)
+ */
+const calculateMetric = (data: DiagnosisInputData, type: 'growth' | 'engagement' | 'monetization'): number => {
+    // 실제 구현에서는 데이터의 추세(Trend)와 변화율을 분석합니다. 
+    // 여기서는 간단히 합산된 평균값을 사용한다고 가정합니다.
+    const metricValues = data[type];
+    if (!metricValues || typeof metricValues !== 'number') return 0;
+
+    return Math.round(metricValues); // 임시 반환 값
+};
+
+
+/**
+ * @description 종합 점수와 주요 KPI를 바탕으로 시각화 상태 (Critical/Potential)를 결정합니다.
+ */
+const determineStatus = (score: number, growthScore: number): { status: 'Critical' | 'Potential' | 'Stable'; message: string; isCritical: boolean } => {
+    if (score < 30 && growthScore < 5) {
+        return { status: 'Critical', message: "⚠️ 경고: 성장이 정체되고 있습니다. 주요 학습 영역의 재점검이 필요합니다.", isCritical: true };
+    } else if (score >= 30 && score <= 60) {
+        return { status: 'Potential', message: "📈 잠재력 발견: 특정 분야에 강점이 보입니다. 이 부분을 강화해 보세요.", isCritical: false };
+    } else {
+        return { status: 'Stable', message: "✅ 안정적 성장 추세가 유지되고 있습니다. 현재의 학습 루틴을 지속하는 것이 좋습니다.", isCritical: false };
+    }
+};
