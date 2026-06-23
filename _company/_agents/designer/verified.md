@@ -313,3 +313,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-23] | **Background Color (데이터)** | Neutral Grey (`#F5F5F5`) | 데이터 영역의 명확성 확보 및 Dark Blue와의 대비 유지. | | _(근거: Self-RAG)_
 - [2026-06-23] | **Title Typography** | Montserrat Bold | 모든 핵심 헤드라인(Pain, Gain)에 사용되어 강력한 메시지 전달력 확보. | | _(근거: Self-RAG)_
 - [2026-06-23] | **Body Typography** | Noto Sans KR (Medium/Bold) | 데이터 수치 및 상세 설명 텍스트에 사용. 높은 가독성 보장. | | _(근거: Self-RAG)_
+- [2026-06-23] * **좌절 $\rightarrow$ 승리 흐름:** 모든 썸네일은 시선을 왼쪽(Pain/위험)에서 오른쪽(Gain/해결책)으로 이동시키도록 강제합니다. _(근거: Designer 검증된 지식)_
+- [2026-06-23] * **핵심 데이터 강조:** 신규 필드인 `resonanceFrequency`는 '현재 상태의 취약성'을 나타내는 핵심 Pain 포인트로 취급하여, 반드시 **Accent Yellow (`#FFD700`)**를 사용하여 경고 톤으로 처리합니다. _(근거: Designer 검증된 지식)_
+- [2026-06-23] * **배경 및 신뢰:** Dark Blue (`#0A2463`)는 전체적인 전문성과 채널의 권위(Trust)를 유지하는 데 사용하며, 배경이나 주요 타이틀 블록에 깊이를 더합니다. _(근거: Designer 검증된 지식)_
+- [2026-06-23] (썸네일 컨셉 3안 구체화) _(근거: sessions/2026-06-23T04-46/designer.md)_
