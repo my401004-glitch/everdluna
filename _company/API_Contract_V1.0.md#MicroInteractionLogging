@@ -1,0 +1,33 @@
+## 🆕 Micro-Interaction Logging (Engagement Core)
+
+**Purpose:** 사용자의 미세한 행동 흐름(Flow)을 기록하여 '참여도' KPI의 깊이를 확보합니다. 이 데이터는 실시간으로 수집되어 세션별로 집계됩니다.
+
+**Endpoint:** `POST /api/v1/micro_interactions`
+**Rate Limit:** High (이벤트 로그가 빈번하게 발생하므로)
+
+**Request Body Schema (JSON Payload):**
+```json
+{
+    "user_id": "string",         // 사용자 고유 ID
+    "session_id": "string",     // 현재 세션 고유 ID
+    "timestamp": "ISO 8601 string", // 이벤트 발생 시점 (필수)
+    "interaction": {
+        "asset_id": "string",       // Designer가 정의한 애니메이션 에셋 ID (e.g., A-03_PITCH_WAVEFORM) - ★매핑의 핵심★
+        "type": "enum(hover, click, scroll_depth, dwell)", // 상호작용 유형
+        "duration_ms": "integer",   // 지속 시간 (밀리초). 'dwell' 측정에 사용.
+        "context_data": {           // 추가 맥락 정보 (e.g., value: 0.8, target_element: #pitch-slider)
+            "key1": "value1",
+            "key2": "value2"
+        }
+    }
+}
+```
+
+**Response Body Schema:**
+(성공 시에는 로깅 성공 여부만 반환합니다.)
+```json
+{
+    "status": "success",
+    "message": "Micro-interaction logged successfully."
+}
+```
