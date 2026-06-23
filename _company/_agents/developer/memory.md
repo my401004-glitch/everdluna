@@ -322,3 +322,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-22] 현빈이 정의한 MVP 데이터 모델(`MVP_Required_Schema_V1.0`)과 KPI 구조를 기반으로, KpiEventLoggerService 구현에 필요한 백엔드 개발 목록 및 예상 개발 시간을 최종 확정하고 보고하라. → 산출물 sessions/2026-06-22T11-15/developer.md
 - [2026-06-22] 확정된 MVP 데이터 모델과 KPI 구조를 기반으로, KpiEventLoggerService 구현에 필요한 백엔드 개발 목록 및 예상 개발 시간을 최종 확정하고 보고할 것. → 산출물 sessions/2026-06-22T11-45/developer.md
 - [2026-06-22] 디자이너가 확정한 디자인 브리프(애니메이션 에셋 사양서)와 Business/KPI 목표(Gap Score 기반)를 기반으로, KpiEventLoggerService 및 진단 스크립트 연동에 필요한 최소한의 백엔드 개발 목록과 예상 시간을 재확정하라. → 산출물 sessions/2026-06-22T12-15/developer.md
+- [2026-06-23] KpiEventLoggerService 구현에 필요한 백엔드 개발 목록과 예상 시간을 재확정하고, 확정된 콘텐츠 제작 일정과의 연동 가능성을 최종 검토하여 보고하라. → 산출물 sessions/2026-06-23T01-31/developer.md
