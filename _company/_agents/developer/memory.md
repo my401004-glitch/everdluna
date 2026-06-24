@@ -348,3 +348,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-24] Gap Score 로직(`GapScoreVisualizationComponent`)의 최종 구현 및 테스트 환경 구축을 완료하여 시스템 강건성을 확보해야 합니다. (이전 작업의 최우선 순위) → 산출물 sessions/2026-06-24T02-40/developer.md
 - [2026-06-24] GapScoreVisualizationComponent의 최종 구현 및 테스트 환경 구축 계획을 마스터 로드맵에 반영하고 즉시 실행하라. → 산출물 sessions/2026-06-24T03-10/developer.md
 - [2026-06-24] GapScoreVisualizationComponent의 최종 구현 및 테스트 환경 구축을 완료하고, Designer가 요구하는 실시간 데이터 흐름 애니메이션 스펙 시트를 최종 확정하여 전달하라. → 산출물 sessions/2026-06-24T03-40/developer.md
+- [2026-06-24] GapScoreVisualizationComponent 로직에 대한 Latency Simulation 및 Edge Case Test(`4212-egfo`, `4212-9wor`)를 실제로 구현하고 검증하여 시스템 강건성을 확보하라. → 산출물 sessions/2026-06-24T03-55/developer.md

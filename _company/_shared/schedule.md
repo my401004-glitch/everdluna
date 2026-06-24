@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 24. 오후 12:43:43_
+_업데이트: 2026. 6. 24. 오후 12:57:17_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,9 +17,9 @@ _업데이트: 2026. 6. 24. 오후 12:43:43_
 - [2026-06-24] 개발될 Gap Score 데이터 흐름에 대한 실시간 애니메이션 스펙 시트를 바탕으로 'Hook 1' 영상 인트로 제작에 필요한 핵심 Mockup 및 애니메이션 디자인 리소스를 개발 완료 시점에 맞춰 준비하라. → 산출물 sessions/2026-06-24T03-10/designer.md
 - [2026-06-24] 개발될 Gap Score 데이터 흐름에 대한 실시간 애니메이션 스펙 시트를 기반으로 'Hook 1' 영상 인트로 제작에 필요한 핵심 Mockup 및 애니메이션 디자인 리소스를 즉시 착수하라. → 산출물 sessions/2026-06-24T03-40/designer.md
 ### 💻 코다리
-- [2026-06-24] Gap Score 로직(`GapScoreVisualizationComponent`)의 최종 구현 및 테스트 환경 구축을 완료하여 시스템 강건성을 확보해야 합니다. (이전 작업의 최우선 순위) → 산출물 sessions/2026-06-24T02-40/developer.md
 - [2026-06-24] GapScoreVisualizationComponent의 최종 구현 및 테스트 환경 구축 계획을 마스터 로드맵에 반영하고 즉시 실행하라. → 산출물 sessions/2026-06-24T03-10/developer.md
 - [2026-06-24] GapScoreVisualizationComponent의 최종 구현 및 테스트 환경 구축을 완료하고, Designer가 요구하는 실시간 데이터 흐름 애니메이션 스펙 시트를 최종 확정하여 전달하라. → 산출물 sessions/2026-06-24T03-40/developer.md
+- [2026-06-24] GapScoreVisualizationComponent 로직에 대한 Latency Simulation 및 Edge Case Test(`4212-egfo`, `4212-9wor`)를 실제로 구현하고 검증하여 시스템 강건성을 확보하라. → 산출물 sessions/2026-06-24T03-55/developer.md
 ### 💼 현빈
 - [2026-06-23] 정의된 '진단-수익화 연결 매핑 스펙'을 기반으로, 추후 개발될 모듈(`BREATHE_ADVANCED` 등)에 적용할 구체적인 수익 모델(LTV 예측) 수식을 설계하라. → 산출물 sessions/2026-06-23T04-01/business.md
 - [2026-06-23] 현빈이 확정한 LTV 수익화 모델($	ext{LTV} = R_{base} + (	ext{Conversion Rate}_{	ext{Advanced}} 	imes 	ext{Average Revenue per Advanced Module})$)에 따라, 다음 영상의 예상 목표 수입 및 가격 옵션(A/B/C)을 기반으로 콘텐츠 제작 우선순위를 최종 확정해줘. → 산출물 sessions/2026-06-23T04-16/business.md
