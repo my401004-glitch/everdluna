@@ -1,0 +1,37 @@
+{
+  "component": "GapScoreVisualization",
+  "sequence_id": "Hook1_Intro_V2",
+  "duration_seconds": 10,
+  "keyframes": [
+    {
+      "time_s": 0.0,
+      "event": "Start: Gap Detected",
+      "action": "Dark Blue line breaks with glitch effect.",
+      "color_code": "#FFD700 (Yellow)",
+      "opacity": 1.0,
+      "duration_ms": 300
+    },
+    {
+      "time_s": 3.0,
+      "event": "Process Start: Data Stream Activation",
+      "action": "Multiple data points converge towards central score.",
+      "color_code": "#0A2463 (Dark Blue)",
+      "opacity": 0.8,
+      "duration_ms": 1500
+    },
+    {
+      "time_s": 7.0,
+      "event": "Solution Found: ROI Breakthrough",
+      "action": "Graph line stabilizes and flashes bright yellow/green.",
+      "color_code": "#FFD700 (Yellow) & #4CAF50 (Green)",
+      "opacity": 1.0,
+      "duration_ms": 1000
+    }
+  ],
+  "global_rules": {
+    "font_family": "Montserrat Bold",
+    "primary_color": "#0A2463",
+    "accent_color": "#FFD700",
+    "background_style": "Gradient transition from Dark Blue to Neutral Grey."
+  }
+}
