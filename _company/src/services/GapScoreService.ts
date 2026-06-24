@@ -1,108 +1,102 @@
-import { DiagnosisResult, GapScoreMetrics } from '../api/gapScore';
+// src/services/gapScoreService.ts
+
+import { GapScoreData, DiagnosisResult } from '../components/GapScoreVisualization/types';
 
 /**
- * @class GapScoreService
- * KPI Aggregation Service의 핵심 로직을 담당합니다. 
- * 외부 데이터(DB 조회)를 받아 정제하고, 비즈니스 규칙에 따라 Gap Score를 산출하여 DTO를 생성합니다.
+ * @description 진단 결과를 기반으로 실시간 Gap Score를 계산하고 시각화에 필요한 데이터를 반환합니다.
+ * 이 함수는 비즈니스 로직의 핵심이며, 모든 경계 조건 테스트가 필요합니다.
+ * @param diagnosisResult - 백엔드에서 받은 전체 진단 결과 객체
+ * @returns GapScoreData | null - 계산된 점수 데이터 또는 실패 시 null
  */
-export class GapScoreService {
+export const calculateGapScore = (diagnosisResult: DiagnosisResult): GapScoreData | null => {
+    if (!diagnosisResult || !diagnosisResult.kpiMetrics) {
+        console.error("Diagnosis Result is invalid or missing KPI metrics.");
+        return null; 
+    }
 
-    /**
-     * Mock Data Source (실제로는 DB Repository 계층이 이 역할을 수행해야 함)
-     * @param rawData - 진단 테스트 결과를 담은 가상의 원시 데이터 객체.
-     */
-    public async calculate(rawData: Record<string, any>, contextId: string): Promise<DiagnosisResult> {
-        console.log(`[Service] Calculating Gap Score for Context ID: ${contextId}`);
+    const kpis = diagnosisResult.kpiMetrics;
+    let totalGapScore: number = 0;
+    
+    // 예외 처리: 필요한 KPI가 부족할 경우, 기본값으로 설정하거나 로직을 중단해야 합니다.
+    if (typeof kpis.growth === 'undefined' || typeof kpis.engagement === 'undefined') {
+        console.warn("Missing critical KPI metrics (Growth or Engagement). Cannot calculate Gap Score.");
+        return null; // 데이터 불충분으로 계산 실패 처리
+    }
 
-        // 1. Input Validation & RBAC Check (최우선 검증)
-        if (!this.isValidContext(rawData)) {
-            throw new Error("Invalid or incomplete raw data provided.");
-        }
+    // 핵심 로직: 각 지표에 가중치를 부여하여 총 Gap Score를 산출합니다.
+    // 예시 가중치: Growth (40%), Engagement (40%), Monetization (20%)
+    const growthWeight = 0.4;
+    const engagementWeight = 0.4;
+    const monetizationWeight = 0.2;
 
-        // 2. Core KPI Calculation Logic (Business Rule Application)
-        const metrics = this.calculateMetrics(rawData);
+    totalGapScore = (kpis.growth * growthWeight) + 
+                     (kpis.engagement * engagementWeight) + 
+                     (kpis.monetization * monetizationWeight);
 
-        // 3. Storytelling Hint Generation (Writer/Designer 요구 반영)
-        const hints = this.generateHints(metrics);
-        
-        // 4. Final DTO Assembly
+    // Gap Score의 상태를 정의하고 경계값 처리를 합니다.
+    let status: 'Critical' | 'Potential' | 'Stable';
+    if (totalGapScore < 30) {
+        status = 'Critical'; // 점수가 낮으면(갭이 크면) 위험도가 높음 -> Critical
+    } else if (totalGapScore >= 30 && totalGapScore < 70) {
+        status = 'Potential'; // 중간 범위
+    } else {
+        status = 'Stable'; // 점수가 높으면(갭이 작으면) 안정적임
+    }
+
+    // 시각화에 필요한 최종 데이터를 구조화하여 반환합니다.
+    return {
+        score: parseFloat(totalGapScore.toFixed(2)),
+        status: status,
+        message: getStatusMessage(status), // 상태별 메시지 함수 호출
+        kpisUsed: kpis 
+    };
+};
+
+// 내부 도우미 함수 (비즈니스 로직 분리)
+const getStatusMessage = (status: 'Critical' | 'Potential' | 'Stable'): string => {
+    switch(status) {
+        case 'Critical': return "경고: 핵심 영역의 격차가 큽니다. 즉각적인 개입이 필요합니다.";
+        case 'Potential': return "주의: 개선 여지가 있습니다. 추가 분석을 통해 전략을 수립하세요.";
+        case 'Stable': return "안정적: 현재 목표 대비 충분한 성과를 보이고 있습니다.";
+    }
+};
+
+/**
+ * @description Mock API 호출 시뮬레이션 함수 (실제 백엔드 연동 시 대체 필요)
+ */
+export const fetchMockDiagnosisResult = async (contextId: string): Promise<any> => {
+    // 이 부분은 실제 네트워크 지연 및 에러 처리를 포함해야 함.
+    console.log(`[API Mock] Context ID ${contextId} 기반 진단 결과 요청 중...`);
+    await new Promise(resolve => setTimeout(resolve, 50)); // 50ms delay simulation
+
+    // Mock Data Set: Stable (가장 좋은 경우)
+    if (contextId === "mock-stable") {
         return {
-            metadata: {
-                contextId: contextId,
-                userRole: rawData.userRole || 'free', // 안전하게 기본값 사용
-            },
-            metrics: {
-                ...metrics,
-                storytellingHints: hints
-            },
-            timestamp: new Date().toISOString(),
+            id: 123,
+            contextId: contextId,
+            kpiMetrics: { growth: 85, engagement: 90, monetization: 75 }, // High scores = Stable Gap
+            timestamp: new Date().toISOString()
+        };
+    } 
+    // Mock Data Set: Critical (가장 나쁜 경우)
+    else if (contextId === "mock-critical") {
+        return {
+            id: 456,
+            contextId: contextId,
+            kpiMetrics: { growth: 20, engagement: 15, monetization: 30 }, // Low scores = Critical Gap
+            timestamp: new Date().toISOString()
         };
     }
-
-    /**
-     * Mock Validation Logic
-     */
-    private isValidContext(rawData: Record<string, any>): boolean {
-        // 예시: 필수 필드가 누락되었는지 확인하는 로직 (Edge Case 처리)
-        return !!rawData.pitchDeviation && !!rawData.resonanceFrequency;
-    }
-
-    /**
-     * 핵심 KPI 산출 로직
-     */
-    private calculateMetrics(rawData: Record<string, any>): GapScoreMetrics {
-        // 가상의 복잡한 계산 로직을 단순화하여 구현합니다. 
-        // 실제로는 통계적 모델링이나 머신러닝 결과가 사용될 것입니다.
-
-        const pitchDev = rawData.pitchDeviation || 0;
-        const resFreqGap = rawData.resonanceFrequency || 0;
-
-        // Gap Score는 기술적 결함(Pitch)과 잠재력 부족(Resonance)의 가중 평균으로 정의합니다.
-        const overallScore = Math.min(1.0, (pitchDev * 0.4 + resFreqGap * 0.6) / 10);
-
-        // Warning State 결정: Pitch Deviation이 임계치를 넘을 때 경고 상태로 설정합니다.
-        const isWarningState = pitchDev > 5; // 예시 기준
-
-        return {
-            growthScore: rawData.growth || 0,
-            engagementScore: rawData.engagement || 0,
-            monetizationScore: rawData.money || 0,
-            overallGapScore: parseFloat(overallScore.toFixed(4)),
-            technicalGaps: {
-                pitchDeviationPercent: parseFloat(pitchDev.toFixed(2)),
-                resonanceFrequencyGapRatio: parseFloat(resFreqGap.toFixed(2)),
-                isWarningState: isWarningState,
-            },
-            storytellingHints: {} as any, // 나중에 채워질 예정
-            dataSourcesVerified: true, // 일단 임시로 True 처리
+     // Mock Data Set: Potential (중간 경우)
+    else if (contextId === "mock-potential") {
+         return {
+            id: 789,
+            contextId: contextId,
+            kpiMetrics: { growth: 50, engagement: 60, monetization: 40 }, // Medium scores = Potential Gap
+            timestamp: new Date().toISOString()
         };
+    } else {
+        // 실패 케이스 시뮬레이션 (Null/Undefined 처리 테스트용)
+         return null;
     }
-
-    /**
-     * 스토리텔링 힌트 생성 로직 (Writer/Designer 협업 영역)
-     */
-    private generateHints(metrics: GapScoreMetrics): { painPointMessage: string; improvementArea: string; suggestedModule: 'Pitching' | 'Rhythm' | 'Harmony'; } {
-        let suggestion: 'Pitching' | 'Rhythm' | 'Harmony';
-        let message: string;
-
-        if (metrics.technicalGaps.pitchDeviationPercent > 5) {
-            suggestion = 'Pitching';
-            message = "음정 편차(Pitch Deviation)가 높습니다. 가장 먼저 기초 음정 훈련에 집중해야 합니다.";
-        } else if (metrics.overallGapScore < 0.3) {
-             suggestion = 'Harmony';
-             message = "전반적인 구조적 이해도가 낮습니다. 화성학 기본 개념부터 복습이 필요합니다.";
-        } else {
-            suggestion = 'Rhythm';
-            message = "리듬과 박자의 정확성을 높이는 훈련이 다음 단계의 핵심입니다.";
-        }
-
-        return {
-            painPointMessage: `당신의 노력은 아직 객관적인 수치로 증명되지 않고 있습니다. (Gap Score: ${metrics.overallGapScore * 100}%)`,
-            improvementArea: message,
-            suggestedModule: suggestion,
-        };
-    }
-}
-
-// 간단한 테스트 코드 추가 및 모듈 익스포트
-export const gapScoreServiceInstance = new GapScoreService();
+};
