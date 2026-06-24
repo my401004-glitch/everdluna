@@ -445,3 +445,4 @@ _현빈 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-23] 정의된 '진단-수익화 연결 매핑 스펙'을 기반으로, 추후 개발될 모듈(`BREATHE_ADVANCED` 등)에 적용할 구체적인 수익 모델(LTV 예측) 수식을 설계하라. → 산출물 sessions/2026-06-23T04-01/business.md
 - [2026-06-23] 현빈이 확정한 LTV 수익화 모델($	ext{LTV} = R_{base} + (	ext{Conversion Rate}_{	ext{Advanced}} 	imes 	ext{Average Revenue per Advanced Module})$)에 따라, 다음 영상의 예상 목표 수입 및 가격 옵션(A/B/C)을 기반으로 콘텐츠 제작 우선순위를 최종 확정해줘. → 산출물 sessions/2026-06-23T04-16/business.md
 - [2026-06-24] Writer가 작성한 스토리텔링 흐름과 예상되는 성과(KPI)를 바탕으로, 'Hook 1' 영상의 제목, 핵심 키워드, 그리고 잠재적인 수익화 경로에 대한 전략적 제안을 수립하라. → 산출물 sessions/2026-06-24T01-25/business.md
+- [2026-06-24] secretary가 제시한 가장 가치 있는 작업에 대해 수익화 목표와 KPI를 기준으로 우선순위 및 실행 전략을 분석하세요. → 산출물 sessions/2026-06-24T10-33/business.md
