@@ -363,3 +363,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-25] | **Primary Color** | `#0A2463` | Dark Blue | 배경, 헤더, 신뢰성 확보 영역. 전문성과 안정감 부여 (신뢰). | | _(근거: Self-RAG)_
 - [2026-06-25] | **Accent Yellow** | `#FFD700` | Gold/Yellow | CTA 버튼, Gap Score의 '경고/기회' 표시, 핵심 수치 강조 (행동 유도). | | _(근거: Self-RAG)_
 - [2026-06-25] | **Neutral Grey** | `#F5F5F5` | Light Grey | 데이터 및 본문 텍스트 배경. Dark Blue와의 명확한 대비 유지. | | _(근거: Self-RAG)_
+- [2026-06-25] * **프레임워크:** Pain $\rightarrow$ Gap $\rightarrow$ Gain (위험 제시 $\rightarrow$ 객관적 데이터 증명 $\rightarrow$ 솔루션 기반 이득). 모든 시각 요소는 이 논리 흐름을 강화해야 합니다. _(근거: Designer 검증된 지식)_
