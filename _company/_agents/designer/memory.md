@@ -453,3 +453,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-25] 확정된 Production Bible 및 Animation_Spec_Sheet를 기반으로 애니메이터에게 최종 제작 가이드라인을 전달하고, 'Hook 1' 영상 인트로의 시각화 작업을 즉시 착수하도록 지시하라. → 산출물 sessions/2026-06-25T03-31/designer.md
 - [2026-06-25] Developer로부터 전달받은 기술적 통합 검증 결과를 바탕으로, 시각적 요구사항과 기능 구현 간의 잠재적인 병목 구간을 확인하고 수정할 부분을 제시하라. → 산출물 sessions/2026-06-25T03-46/designer.md
 - [2026-06-25] Writer의 최종 스크립트와 Production Bible에 따라, 'Hook 1' 영상 인트로에 필요한 핵심 장면(Key Visuals)의 모션 그래픽 및 디자인 리소스를 즉시 제작 지시를 완료하라. → 산출물 sessions/2026-06-25T04-16/designer.md
+- [2026-06-25] 확정된 Production Bible 및 Animation_Spec_Sheet를 기반으로, 'Hook 1' 영상 인트로에 필요한 핵심 장면(Key Visuals)의 모션 그래픽 및 디자인 리소스를 즉시 제작 지시를 완료하라. → 산출물 sessions/2026-06-25T04-31/designer.md
