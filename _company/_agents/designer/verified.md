@@ -351,3 +351,9 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-24] 2. API 요청/응답 과정이 시뮬레이션되듯, 데이터 파라미터들이 화면을 따라 흐르는 애니메이션(`Data Stream`)을 구현한다. _(근거: 코다리 스펙)_
 - [2026-06-24] 2. "좌절에서 승리로의 변곡점"이라는 핵심 슬로건이 폰트 애니메이션 효과와 함께 임팩트를 준다. _(근거: Designer 검증된 지식)_
 - [2026-06-24] * **[ ] Typography Hierarchy**: Montserrat Bold는 Pain/Gain의 제목(Headline)에, Noto Sans KR은 Process 단계의 상세 데이터 캡션 및 본문에만 사용하도록 명확히 분리하여 가독성을 확보한다. _(근거: Designer 검증된 지식)_
+- [2026-06-25] | **Primary Color (신뢰)** | Dark Blue (`#0A2463`) | 헤더, 배경의 주요 섹션 분할. 전반적인 신뢰감 조성. 데이터 분석 모듈의 기본 색상으로 사용. | | _(근거: Designer 검증된 지식)_
+- [2026-06-25] | **Accent Color (CTA/Gain)** | Accent Yellow (`#FFD700`) | Gap Score의 '위험 영역' 강조, 최종 솔루션(AI 시스템) 제시 부분, CTA 버튼에만 국한하여 사용. *과용 금지.* | | _(근거: Designer 검증된 지식)_
+- [2026-06-25] | **Error/Pain Color** | Muted Red (`#B03A2E`) | 데이터가 목표치에서 크게 이탈했음을 나타내는 시각적 경고(Warning)에만 사용. (Yellow와 분리하여 위험도 강조). | | _(근거: 추측)_
+- [2026-06-25] | **Background/Data Area** | Neutral Grey (`#F5F5F5`) | 모든 데이터 그래프, 수치 제시 영역의 배경으로 고정하여 가독성을 극대화한다. | | _(근거: Designer 검증된 지식)_
+- [2026-06-25] | **Title Typography (H1)** | Montserrat Bold (72pt ~ 96pt) | 강력한 문제 제기(Pain Point) 시, 화면 중앙에 크고 빠르게 등장하며 충격감을 부여. | | _(근거: Designer 검증된 지식)_
+- [2026-06-25] | **Body Typography** | Noto Sans KR (30pt ~ 48pt) | 설명, 데이터 수치 등 모든 상세 정보 전달 영역에 사용. 가독성을 최우선으로 함. | | _(근거: Designer 검증된 지식)_
