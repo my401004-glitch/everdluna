@@ -357,3 +357,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-25] | **Background/Data Area** | Neutral Grey (`#F5F5F5`) | 모든 데이터 그래프, 수치 제시 영역의 배경으로 고정하여 가독성을 극대화한다. | | _(근거: Designer 검증된 지식)_
 - [2026-06-25] | **Title Typography (H1)** | Montserrat Bold (72pt ~ 96pt) | 강력한 문제 제기(Pain Point) 시, 화면 중앙에 크고 빠르게 등장하며 충격감을 부여. | | _(근거: Designer 검증된 지식)_
 - [2026-06-25] | **Body Typography** | Noto Sans KR (30pt ~ 48pt) | 설명, 데이터 수치 등 모든 상세 정보 전달 영역에 사용. 가독성을 최우선으로 함. | | _(근거: Designer 검증된 지식)_
+- [2026-06-25] CEO의 지시를 최우선으로 반영하여, 현재 가장 시급하고 가치 있는 단일 작업은 **'Hook 1 영상 인트로 및 Gap Score 핵심 데이터 애니메이션 리소스 제작을 위한 최종 마스터 스펙트럼(Master Spec-Spectrum) 배포'**입니다. _(근거: CEO 지시사항)_
+- [2026-06-25] **핵심 메시지 (Pain $\rightarrow$ Gain):** "현재의 지식 격차(Pain)는 데이터로 증명 가능하며, 이 점수(Gain)가 학습 동기를 부여한다." _(근거: Designer 검증된 지식)_
