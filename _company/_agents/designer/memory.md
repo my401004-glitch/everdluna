@@ -466,3 +466,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-26] 코다리(developer)가 제공한 API Mockup 스펙과 '통합 프로덕션 키트(v3.0)'를 기반으로, 다음 영상('Hook 2')에 필요한 최종 Key Visuals 제작 지시서를 확정하고 애니메이터에게 전달할 시각적 요구사항을 명확히 정리하라. → 산출물 sessions/2026-06-26T04-50/designer.md
 - [2026-06-26] 코다리(developer)가 정의한 API Mockup 스펙과 '통합 프로덕션 키트(v3.0)'를 기반으로, 다음 영상('Hook 2')에 필요한 최종 Key Visuals 제작 지시서를 확정하고 애니메이터에게 전달할 시각적 요구사항을 명확히 정리하라. → 산출물 sessions/2026-06-26T05-05/designer.md
 - [2026-06-26] 최종 확정된 Key Visuals Production Guide (v3.1)와 기술적 제약 사항을 반영하여, 다음 영상('Hook 2')에 필요한 최종 시각 요구사항을 명확히 정리하고, Dark Blue 및 Accent Yellow 색상 규칙이 적용된 Key Visuals 초안 제작 지시서를 확정하라. → 산출물 sessions/2026-06-26T05-20/designer.md
+- [2026-06-26] Developer가 확정한 '통합 프로덕션 키트(v3.0)'와 기술 검증 결과를 바탕으로, 다음 영상('Hook 2')에 필요한 최종 Key Visuals 제작 지시서 및 시각 요구사항을 명확히 정리하여 애니메이터에게 전달할 최종 제작 지시서를 확정하라. → 산출물 sessions/2026-06-26T05-43/designer.md
