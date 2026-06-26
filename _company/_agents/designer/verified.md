@@ -394,3 +394,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-26] **** _(근거: Designer 검증된 지식)_
 - [2026-06-26] * **Title (헤드라인):** Montserrat Bold (``). 강력하고 단호한 느낌으로 Pain/Gain의 전환점을 명시. _(근거: Designer 검증된 지식)_
 - [2026-06-26] * **Body (데이터/설명):** Noto Sans KR Regular (``). 데이터와 설명 텍스트는 가독성 최우선. _(근거: Designer 검증된 지식)_
+- [2026-06-26] 1. **Color Palette:** Dark Blue, Accent Yellow, Neutral Grey의 비율을 **Blue:Yellow:Grey = 60%:35%:5%**로 유지하며, Yellow는 오직 '변화'와 '성장'에만 사용한다. _(근거: Designer 검증된 지식)_
+- [2026-06-26] 2. **Typography:** 모든 헤드라인은 Montserrat Bold를 사용하여 강력하고 단호한 메시지를 전달하게 한다. _(근거: Designer 검증된 지식)_
