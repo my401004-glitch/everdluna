@@ -463,3 +463,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-26] 개발팀이 제시한 기술적 제약 사항(API 스펙, 구현 가능성)을 반영하여, 다음 영상에 대한 최종 Key Visuals 제작 지시서를 확정하고 애니메이터에게 전달할 시각적 요구사항을 명확히 정리하라. → 산출물 sessions/2026-06-26T03-08/designer.md
 - [2026-06-26] 확정된 'Key Visuals Production Guide' 및 기술 검증 결과를 기반으로 다음 영상('Hook 2')에 필요한 최종 Key Visuals 제작 지시서를 즉시 확정하고 애니메이터에게 전달할 준비를 완료하라. → 산출물 sessions/2026-06-26T04-03/designer.md
 - [2026-06-26] ‘Key Visuals Production Guide’ 및 코다리(developer)의 기술 검증 결과를 통합하여, 다음 영상('Hook 2') 제작에 필요한 최종 Key Visuals 제작 지시서와 애니메이터에게 전달할 시각적 요구사항을 즉시 확정하고 보고하라. → 산출물 sessions/2026-06-26T04-35/designer.md
+- [2026-06-26] 코다리(developer)가 제공한 API Mockup 스펙과 '통합 프로덕션 키트(v3.0)'를 기반으로, 다음 영상('Hook 2')에 필요한 최종 Key Visuals 제작 지시서를 확정하고 애니메이터에게 전달할 시각적 요구사항을 명확히 정리하라. → 산출물 sessions/2026-06-26T04-50/designer.md
