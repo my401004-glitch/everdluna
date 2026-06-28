@@ -454,3 +454,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-28] 1. **API Call (Critical)**: **`GET /api/v1/diagnosis_score/{user_id}/{session_token}`** _(근거: sessions/2026-05-19T09:57)_
 - [2026-06-28] * **Pre-Check (RBAC Guard)**: `AuthService.checkAccess(requesting_role, "DiagnosisScore")`를 먼저 호출하여 접근 권한을 확인합니다. **권한이 없으면 즉시 에러 응답.** _(근거: sessions/2026-05-18T13:43)_
 - [2026-06-28] * **Visuals**: Gap Score 차트(Dark Blue/Accent Yellow), 개선 로드맵 그래프, 명확한 버튼 디자인. _(근거: sessions/2026-06-26T04-03)_
+- [2026-06-28] CEO 지시사항을 확인했습니다. 'Hook 2'의 기술적 스토리보드를 단순히 *완성*하는 것을 넘어, **영상 시간 흐름(Time-bound)**에 맞춰 API 호출 시퀀스와 데이터 처리를 조정해야 하는 것이 핵심이네요. _(근거: CEO 지시)_
