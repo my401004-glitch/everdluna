@@ -403,3 +403,13 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-28] | **Body Typography** | Noto Sans KR (Regular) | **사용처:** 데이터 수치, 설명 텍스트, 인터페이스 내 상세 정보. 가독성 최우선입니다. | _(근거: Designer 검증된 지식)_
 - [2026-06-28] * **메인 컬러 팔레트**: Dark Blue (#0A2463), Accent Yellow (#FFD700), Neutral Grey (#F5F5F5). _(근거: Designer 검증된 지식)_
 - [2026-06-28] * **타이포그래피 계층 구조**: Title (Montserrat Bold) $\rightarrow$ Subtitle (Montserrat Regular) $\rightarrow$ Body (Noto Sans KR). _(근거: Designer 검증된 지식)_
+- [2026-06-28] | 이름 | HEX Code | 사용 목적 및 의미 | 적용 예시 | | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Primary Trust** (신뢰/안정) | `#0A2463` | 브랜드의 신뢰성, 전문성을 상징. 배경, 헤더, 주요 정보 섹션 테두리 등에 사용. | 타이틀 박스 배경, 중요한 수치 그래프 라인. | | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Accent CTA** (행동 유도/기회) | `#FFD700` | 기회(Gain), 경고(Pain), 핵심 행동 유도 버튼(CTA). 시청자의 시선이 가장 먼저 머물러야 할 곳. | 'Gap Score'의 이득 수치, 최종 CTA 버튼 색상. | | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Neutral Base** (배경/데이터) | `#F5F5F5` | 본문 텍스트 및 데이터 영역 배경. Primary Trust와의 명확한 대비를 통해 가독성을 극대화합니다. | 그래프의 그리드 라인, 상세 설명 텍스트 배경. | | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Text/Body** (본문 색상) | `#333333` | 본문 및 데이터 텍스트에 사용되는 주조색. 높은 가독성 확보를 위해 Neutral Base 위에서 대비가 높아야 함. | 설명 문구, 그래프의 레이블. | | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Warning/Loss** (손실/위험) | `#E74C3C` | Pain Point, 위험 신호, 개선이 필요한 영역을 시각적으로 경고할 때 사용합니다. | 진단 결과의 '미흡' 항목 배경색. | | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | 역할 | 폰트 패밀리 | 스타일/가중치 | 용도 및 목적 | | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Headline (H1, H2)** | Montserrat Bold | 크고 강렬하게 | 핵심 메시지(Pain/Gain)와 영상의 주제를 전달하는 헤드라인. 시선을 사로잡는 역할이 최우선입니다. | | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Body Text (본문)** | Noto Sans KR | Regular / Medium | 구체적인 데이터, 설명 텍스트 등 높은 가독성이 요구되는 모든 본문에 사용합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Data Label** (데이터 라벨) | Noto Sans KR | SemiBold | 그래프의 축(Axis), 수치 레이블 등 정밀한 데이터 전달에 초점을 맞춥니다. | | _(근거: Designer 검증된 지식)_
