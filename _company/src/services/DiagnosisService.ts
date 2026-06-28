@@ -1,66 +1,43 @@
-import { PrismaClient } from '@prisma/client'; // 예시 ORM 사용
-// 필요한 타입 정의 (실제 프로젝트에 맞게 조정 필요)
-interface DiagnosisResultInput {
-    contextId: string;
-    score: number; // 0~100 스코어
-    diagnosisType: 'Growth' | 'Engagement' | 'Monetization';
-    kpiValue: number;
-}
+/**
+ * @fileoverview 핵심 비즈니스 로직을 처리하는 서비스 계층 (Business Logic Layer).
+ * 이 곳에 실제 데이터베이스 트랜잭션, 복잡한 계산 로직이 구현됩니다.
+ */
 
-// PrismaClient 인스턴스는 전역 또는 컨테이너에서 주입받는 것이 일반적입니다.
-const prisma = new PrismaClient(); 
+import { DiagnosisRequestInput, DiagnosisScoreOutput } from '../types/DiagnosisTypes';
+// Assume DB connection and utility functions exist: 
+// import { dbClient } from '../db/dbClient'; 
 
 /**
- * @description 진단 결과를 DB에 기록하고, 핵심 KPI를 원자적으로 업데이트하는 서비스 함수.
- * @param results - 진단 결과 배열 (Growth, Engagement, Monetization 등)
+ * 진단 점수를 계산하고 구조화된 결과를 반환합니다.
+ * 이 함수는 데이터베이스 접근 및 복잡한 KPI 계산을 포함하는 핵심 로직입니다.
+ * @param input - 클라이언트로부터 받은 진단 요청 입력 값.
+ * @returns DiagnosisScoreOutput 타입의 결과 객체.
  */
-export async function saveDiagnosisResultAndKPIs(results: DiagnosisResultInput[]): Promise<any> {
-    if (!results || results.length === 0) {
-        throw new Error("진단 결과를 제공해야 합니다.");
-    }
+export async function calculateDiagnosisScore(input: DiagnosisRequestInput): Promise<DiagnosisScoreOutput> {
+    // [TODO] 1. DB 조회 및 권한 체크 (RBAC)
+    // const userRole = await getRoleByContextId(input.contextId);
+    // if (!isAuthorized(input.diagnosisType, userRole)) {
+    //     throw new Error("Authorization Failed: Insufficient rights.");
+    // }
 
-    // 트랜잭션 시작 (가장 중요! 모든 작업이 성공하거나 모두 실패하도록 보장)
-    const transactionResult = await prisma.$transaction(async (tx) => {
-        let diagnosisRecordId: string | null = null;
+    console.log(`[Service] Calculating score for type: ${input.diagnosisType} and context: ${input.contextId}`);
 
-        // 1. 진단 결과 기록 및 핵심 KPI 업데이트를 병렬로 처리
-        for (const result of results) {
-            try {
-                // 1-A. Diagnosis_Results 테이블에 주 데이터 삽입
-                await tx.diagnosis_results.create({
-                    data: {
-                        contextId: result.contextId,
-                        score: result.score,
-                        diagnosisType: result.diagnosisType, // 진단 유형 명시
-                        resultDataJson: JSON.stringify({ /* ... 상세 데이터 로직 ... */ }), 
-                        createdAt: new Date(),
-                    }
-                });
-
-                // 1-B. KPI_Metrics 테이블에 개별 KPI 값 업데이트 (원자적 쓰기)
-                await tx.kpi_metrics.upsert({ // upsert를 사용하여 값이 이미 존재하면 업데이트, 아니면 생성
-                    where: { type: result.diagnosisType, contextId: result.contextId },
-                    update: { 
-                        value: result.kpiValue, 
-                        updatedAt: new Date() 
-                    },
-                    create: { 
-                        type: result.diagnosisType, 
-                        contextId: result.contextId, 
-                        value: result.kpiValue,
-                        createdAt: new Date(),
-                    }
-                });
-
-            } catch (error) {
-                // 트랜잭션 내에서 오류 발생 시 즉시 실패 처리
-                console.error(`KPI 저장 실패 (${result.diagnosisType}):`, error);
-                throw new Error("데이터베이스 쓰기 과정 중 치명적인 에러가 발생했습니다."); 
-            }
+    // [TODO] 2. 핵심 KPI 계산 로직 구현 (가장 복잡한 부분)
+    // 이 로직은 Growth, Engagement, Monetization 세 가지 축을 기반으로 점수를 도출해야 합니다.
+    
+    // --- 가상 성공 반환 값 ---
+    return {
+        scoreLevel: 'Intermediate',
+        overallScore: 78,
+        kpis: {
+            growthIndex: Math.random() * 100, // 임시값
+            engagementRate: Math.random() * 100, // 임시값
+            monetizationPotential: Math.random() * 100, // 임시값
+        },
+        recommendationText: "꾸준함이 가장 큰 무기입니다. 다음 단계를 진행하세요.",
+        recommendedAction: {
+            componentName: 'DataFlowModule',
+            instruction: "다음 단계에 필요한 핵심 기술 요소 3가지를 집중적으로 학습하십시오."
         }
-
-        return { success: true, message: "모든 데이터 저장이 트랜잭션에 성공적으로 완료되었습니다." };
-    });
-
-    return transactionResult;
+    };
 }
