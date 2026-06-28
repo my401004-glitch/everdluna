@@ -420,3 +420,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-28] | **Danger/Pain** (위험/경고) | Red-Orange 계열 | `#D9534F` | 현재 상태의 문제점, 놓치고 있는 위험(Risk), 부정적인 진단 수치를 표시할 때 제한적으로 사용합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-06-28] | **Background/Data** (가독성) | Neutral Grey | `#F5F5F5` | 본문 텍스트와 데이터 테이블의 배경색으로 사용하여 Dark Blue와의 명확한 대비를 유지하고 가독성을 극대화합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-06-28] 1. **헤드라인 (Title):** Montserrat Bold, 최대 8글자 이내로 임팩트 있는 질문 또는 주장 던지기. (``) _(근거: Designer 검증된 지식)_
+- [2026-06-28] <create_file path="~/Downloads/지식메모리/_company/DesignSystem_Master_Library_V1.md"># ✨ 아지트아트컴페니 통합 디자인 시스템 라이브러리 v1.0\n\n## 🌟 I. 브랜드 아이덴티티 및 철학 (Brand Core)\n\n**1. 핵심 컨셉:** Pain $\rightarrow$ Gain 변곡점 (좌절에서 승리로의 여정).\n**2. 목표:** 시청자에게 감성적 몰입과 데이터 기반의 명확한 '가치'를 전달하는 것이 최우선.\n**3. 톤앤매너:** 전문적, 신뢰감, 희망적(Professional, Trustworthy, Hopeful).\n\n## 🎨 II. 디자인 시스템  _(근거: Designer 검증된 지식)_
