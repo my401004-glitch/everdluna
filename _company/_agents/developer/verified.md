@@ -446,3 +446,11 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-26] * 사용자에게 특정 기능(Hook 2)에 대한 접근 권한이 있는지 DB를 통해 검증한다. _(근거: sessions/2026-05-18T13:43/)_
 - [2026-06-26] 1. **구조적 안정성 확보**: 기존 컨트롤러의 핵심 역할을 유지하면서, 새로운 비즈니스 요구사항(Hook 2 Progress)에 맞춘 독립적인 엔드포인트를 분리했습니다. _(근거: 원칙 - SRP (단일 책임))_
 - [2026-06-26] 2. **기술 부채 최소화**: `generateProgressDataSequence`와 같은 핵심 로직을 별도의 함수로 추출하여, API 계층(Controller)과 비즈니스 로직(Service/Helper)의 분리를 명확히 했습니다. _(근거: 코딩 원칙 - 테스트 가능하게)_
+- [2026-06-28] CEO 지시사항을 확인했습니다. Writer가 확정한 감성적 서사(Narrative)와 Designer가 정의한 Key Visuals 요구사항은 결국 **"사용자가 어떤 시점에, 어떤 데이터를 받아서, 어떻게 변화를 느끼게 할 것인가?"**라는 질문으로 수렴됩니다. _(근거: sessions/2026-05-18T16:34)_
+- [2026-06-28] 이것을 기술적 스토리보드(Story-Driven Tech Flowchart)로 정의하는 것은 단순히 스크립트와 디자인 요소를 나열하는 것이 아니라, **시스템의 상태 변화(State Change)**를 중심으로 API 호출 시퀀스, 데이터 파이프라인, 그리고 그 결과가 사용자 경험에 미치는 영향을 매핑하는 작업입니다. _(근거: sessions/2026-05-18T15:04)_
+- [2026-06-28] 3. **Data Validation**: 모든 외부 입력(Mockup/API)에는 강력한 가드 로직이 필요합니다. _(근거: sessions/2026-05-18T14-34)_
+- [2026-06-28] * **Visuals**: 깔끔하고 미스터리함을 주는 초기 화면, '테스트 시작' 버튼 노출. _(근거: sessions/2026-05-19T10:29)_
+- [2026-06-28] * **Processing**: 서버는 데이터를 수집하고, 데이터 유효성 및 형식 검증(Schema Validation)을 수행합니다. _(근거: sessions/2026-05-18T14-34)_
+- [2026-06-28] 1. **API Call (Critical)**: **`GET /api/v1/diagnosis_score/{user_id}/{session_token}`** _(근거: sessions/2026-05-19T09:57)_
+- [2026-06-28] * **Pre-Check (RBAC Guard)**: `AuthService.checkAccess(requesting_role, "DiagnosisScore")`를 먼저 호출하여 접근 권한을 확인합니다. **권한이 없으면 즉시 에러 응답.** _(근거: sessions/2026-05-18T13:43)_
+- [2026-06-28] * **Visuals**: Gap Score 차트(Dark Blue/Accent Yellow), 개선 로드맵 그래프, 명확한 버튼 디자인. _(근거: sessions/2026-06-26T04-03)_

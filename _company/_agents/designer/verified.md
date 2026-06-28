@@ -401,3 +401,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-28] | **Neutral Background** | Neutral Grey (`#F5F5F5`) | **사용처:** 데이터 테이블 배경, 본문 텍스트 영역. Dark Blue와의 대비를 통해 가독성을 높입니다. | _(근거: Designer 검증된 지식)_
 - [2026-06-28] | **Title Typography** | Montserrat Bold | **사용처:** 모든 핵심 헤드라인(Pain/Gain). 강력한 메시지 전달력이 필수적입니다. | _(근거: Designer 검증된 지식)_
 - [2026-06-28] | **Body Typography** | Noto Sans KR (Regular) | **사용처:** 데이터 수치, 설명 텍스트, 인터페이스 내 상세 정보. 가독성 최우선입니다. | _(근거: Designer 검증된 지식)_
+- [2026-06-28] * **메인 컬러 팔레트**: Dark Blue (#0A2463), Accent Yellow (#FFD700), Neutral Grey (#F5F5F5). _(근거: Designer 검증된 지식)_
+- [2026-06-28] * **타이포그래피 계층 구조**: Title (Montserrat Bold) $\rightarrow$ Subtitle (Montserrat Regular) $\rightarrow$ Body (Noto Sans KR). _(근거: Designer 검증된 지식)_
