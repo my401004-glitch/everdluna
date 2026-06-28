@@ -455,3 +455,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-28] * **Pre-Check (RBAC Guard)**: `AuthService.checkAccess(requesting_role, "DiagnosisScore")`를 먼저 호출하여 접근 권한을 확인합니다. **권한이 없으면 즉시 에러 응답.** _(근거: sessions/2026-05-18T13:43)_
 - [2026-06-28] * **Visuals**: Gap Score 차트(Dark Blue/Accent Yellow), 개선 로드맵 그래프, 명확한 버튼 디자인. _(근거: sessions/2026-06-26T04-03)_
 - [2026-06-28] CEO 지시사항을 확인했습니다. 'Hook 2'의 기술적 스토리보드를 단순히 *완성*하는 것을 넘어, **영상 시간 흐름(Time-bound)**에 맞춰 API 호출 시퀀스와 데이터 처리를 조정해야 하는 것이 핵심이네요. _(근거: CEO 지시)_
+- [2026-06-28] CEO 지시사항과 Writer가 완성한 최종 스크립트(`[좌절에서 승리로의 변곡점]`)를 검토했습니다. 기술적 스토리보드 관점에서 볼 때, 이전 세션들에서 정의된 **데이터 모델링(스키마)**은 충분히 견고합니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-28] * 새로운 모듈 `DiagnosisService`를 정의하고, 위에서 제안한 3개의 서브 엔드포인트(`raw_metrics`, `optimal_range`, `kpi_tracking`)를 구현합니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-06-28] * `DiagnosisService`는 모든 호출에서 **사용자의 권한(RBAC)**을 최우선으로 검증해야 합니다. (예: 진단 보고서 조회 시 유료 구독 여부 체크) _(근거: sessions/2026-05-18T13:43)_
