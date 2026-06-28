@@ -373,3 +373,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-27] Key Visuals 제작 지시서의 시각적 요구사항(Designer가 확정한 내용)과 API Mockup 구현 로직 간의 기술적 병목 구간을 최종 검토하고, 감성 목표와 객관적 데이터 증명을 연결하는 데 필요한 기술적 실행 가능성을 최종 점검 → 산출물 sessions/2026-06-27T21-38/developer.md
 - [2026-06-28] 다음 영상('Hook 2')에 필요한 핵심 API Mockup 및 구현 로직의 기술적 병목 구간 검토를 완료하고, Designer가 확정한 '통합 프로덕션 키트(v3.0)'와의 일관성을 최종 점검하여 실행 가능성을 확보하라. → 산출물 sessions/2026-06-28T02-06/developer.md
 - [2026-06-28] Writer가 확정한 스크립트 흐름과 Designer가 정의한 Key Visuals 요구사항을 통합하여, 'Hook 2' 영상에 필요한 핵심 API 호출 시퀀스, 데이터 흐름(Flowchart), 그리고 화면 전환 로직을 상세히 정의하는 기술적 스토리보드(Story-Driven Tech Flowchart)를 작성하라. → 산출물 sessions/2026-06-28T14-11/developer.md
+- [2026-06-28] 다음 영상('Hook 2')에 필요한 핵심 API Mockup 구현 로직과 데이터 처리 파이프라인을 개발팀에 전달하고 즉시 구현을 시작할 것. → 산출물 sessions/2026-06-28T14-34/developer.md
