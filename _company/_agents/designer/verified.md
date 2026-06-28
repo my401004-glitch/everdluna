@@ -396,3 +396,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-26] * **Body (데이터/설명):** Noto Sans KR Regular (``). 데이터와 설명 텍스트는 가독성 최우선. _(근거: Designer 검증된 지식)_
 - [2026-06-26] 1. **Color Palette:** Dark Blue, Accent Yellow, Neutral Grey의 비율을 **Blue:Yellow:Grey = 60%:35%:5%**로 유지하며, Yellow는 오직 '변화'와 '성장'에만 사용한다. _(근거: Designer 검증된 지식)_
 - [2026-06-26] 2. **Typography:** 모든 헤드라인은 Montserrat Bold를 사용하여 강력하고 단호한 메시지를 전달하게 한다. _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Primary Color (신뢰)** | Dark Blue (`#0A2463`) | **사용처:** 배경, 시스템 프레임, 헤더, 주요 텍스트. 전문성과 신뢰성을 구축하는 핵심 컬러입니다. | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Accent Color (CTA/Gain)** | Accent Yellow (`#FFD700`) | **사용처:** Gap Score의 *개선 영역*, 최종 CTA 버튼, 성공적인 데이터 수치 강조. 시선을 즉각적으로 사로잡아 행동을 유도합니다. | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Neutral Background** | Neutral Grey (`#F5F5F5`) | **사용처:** 데이터 테이블 배경, 본문 텍스트 영역. Dark Blue와의 대비를 통해 가독성을 높입니다. | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Title Typography** | Montserrat Bold | **사용처:** 모든 핵심 헤드라인(Pain/Gain). 강력한 메시지 전달력이 필수적입니다. | _(근거: Designer 검증된 지식)_
+- [2026-06-28] | **Body Typography** | Noto Sans KR (Regular) | **사용처:** 데이터 수치, 설명 텍스트, 인터페이스 내 상세 정보. 가독성 최우선입니다. | _(근거: Designer 검증된 지식)_
