@@ -507,3 +507,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-29] 코다리 개발팀이 구축한 환경 위에서, 'Pain $ightarrow$ Gain'의 감정적 시각 흐름(Emotional Funnel)이 의도대로 작동하는지 최종 UX/Visual 검증 체크리스트를 기반으로 디자인 시스템을 적용하고, 기술 구현 상태에 따른 시각적 요소의 Dev Status를 확정할 것. → 산출물 sessions/2026-06-29T07-30/designer.md
 - [2026-06-29] Writer와 레오가 확정한 'YouTube 콘텐츠 마스터 로드맵(Blueprint)'과 시각적 연출 지침(시간별 화면 구성)을 기반으로, 첫 번째 영상에 사용될 최종 Key Visual 및 썸네일 목업을 제작하여 시각적 일관성을 즉시 검증하라. → 산출물 sessions/2026-06-29T09-05/designer.md
 - [2026-06-29] Brand_Design_System_Guidebook_v1.0.md에 정의된 컬러 팔레트, 타이포그래피 시스템을 적용하여, Writer가 제시한 스크립트 흐름에 맞는 최종 YouTube 썸네일 및 영상 화면의 Master Template(와이어프레임)를 제작하라. → 산출물 sessions/2026-06-29T09-20/designer.md
+- [2026-06-29] Writer가 제시한 최종 스크립트 흐름에 맞춰, Master Template를 실제 영상 제작에 바로 적용할 수 있도록 최종 Key Visual 및 썸네일 시안을 구체화하고, 시각적 일관성 가이드라인을 재확인하라. → 산출물 sessions/2026-06-29T09-35/designer.md
