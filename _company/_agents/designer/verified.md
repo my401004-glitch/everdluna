@@ -534,3 +534,9 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-29] * Accent Color (CTA/Gain): Accent Yellow (`#FFD700`) _(근거: Designer 검증된 지식)_
 - [2026-06-29] * Background/Data: Neutral Grey (`#F5F5F5`) _(근거: Designer 검증된 지식)_
 - [2026-06-29] * 폰트: Title - Montserrat Bold / Body - Noto Sans KR _(근거: Designer 검증된 지식)_
+- [2026-06-29] | 요소 | 코드/폰트 | 역할 및 사용 지침 | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Primary (신뢰)** | `#0A2463` (Dark Blue) | 배경, 헤더, 주된 설명 텍스트. 신뢰성 확보. | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Accent (CTA/Pain/Gain)** | `#FFD700` (Yellow) | 모든 CTA 버튼, Pain 발생 시 위험 수치 강조, 최종 Gain 수치. 즉각적 행동 유도. | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Body Background** | `#F5F5F5` (Neutral Grey) | 본문 텍스트 배경. 가독성 극대화. | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Title Font** | Montserrat Bold | 핵심 헤드라인(Pain, Gain). 강력한 시각적 임팩트 제공. | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Body Font** | Noto Sans KR | 데이터 및 상세 설명 텍스트. 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
