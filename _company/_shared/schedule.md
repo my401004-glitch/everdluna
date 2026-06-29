@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 29. 오후 7:23:35_
+_업데이트: 2026. 6. 29. 오후 7:38:55_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 6. 29. 오후 7:23:35_
 - [2026-06-29] 새로 구축된 모듈 라이브러리를 활용하여 다음 영상 콘텐츠에 대한 Reels 및 피드 포맷별 게시물 시안(캡션 포함)을 제작하고, 최적 게시 시간 전략을 반영한 마케팅 콘텐츠를 즉시 발행 준비를 완료하라. → 산출물 sessions/2026-06-28T23-40/instagram.md
 - [2026-06-29] 최종 확정된 영상 콘텐츠를 기반으로, Reels 및 피드 포맷별 게시물 시안(캡션 포함)을 제작하고, 기술적 신뢰도를 강조하는 최적의 해시태그 전략과 게재 시간 전략을 반영하여 발행 준비를 완료하라. → 산출물 sessions/2026-06-29T05-52/instagram.md
 ### 🎨 Designer
-- [2026-06-29] Writer가 확정한 스크립트 흐름과 Brand_Design_System_Guidebook_v1.0을 기반으로, 최종 Key Visual 및 썸네일 시안 제작을 즉시 완료하고 시각적 일관성을 확보하라. → 산출물 sessions/2026-06-29T09-50/designer.md
 - [2026-06-29] Brand_Design_System_Guidebook_v1.0.md에 정의된 시스템을 적용하여, Writer가 제시한 다음 영상 스크립트 흐름에 맞는 최종 Key Visual 및 썸네일 시안 제작을 즉시 완료하고 시각적 일관성을 확보하라. → 산출물 sessions/2026-06-29T10-05/designer.md
 - [2026-06-29] Writer가 제공할 스크립트를 바탕으로 Brand_Design_System_Guidebook_v1.0을 적용하여 다음 영상의 최종 Key Visual 및 썸네일 시안을 제작하라. → 산출물 sessions/2026-06-29T10-20/designer.md
+- [2026-06-29] Writer가 제공할 스크립트와 Brand_Design_System_Guidebook_v1.0을 적용하여, 최종 Key Visual 및 썸네일 시안을 제작함으로써 데이터 증명형 서사를 시각적으로 극대화하라. → 산출물 sessions/2026-06-29T10-35/designer.md
 ### 💻 코다리
-- [2026-06-29] Writer와 Designer가 정의한 기술적 계약(API Mockup, JSON 응답 구조)을 기반으로 MVP 기능의 실제 데이터 흐름과 UI 연동 테스트를 즉시 시작할 것. → 산출물 sessions/2026-06-29T05-37/developer.md
 - [2026-06-29] Writer와 Designer가 확정한 기술 계약(API Mockup, JSON 응답 구조)과 KVS/UX 가이드라인을 기반으로, diagnosis_test_env의 핵심 기능(진단 결과 도출 및 사용자 상호작용)이 오류 없이 작동하는지 최종 검증하고, 실제 데이터 흐름 구현을 시작할 것. → 산출물 sessions/2026-06-29T07-30/developer.md
 - [2026-06-29] Writer와 Designer가 확정한 기술 계약(API Mockup, JSON 응답 구조)과 KVS/UX 가이드라인을 기반으로, AI 코칭 시스템의 데이터 흐름 및 시각적 요구사항에 대한 최종 작동 여부를 검증하고 안정성을 확보하라. → 산출물 sessions/2026-06-29T09-50/developer.md
+- [2026-06-29] Writer와 Designer가 확정한 기술 계약(API Mockup, JSON 응답 구조)과 KVS/UX 가이드라인을 기반으로, AI 코칭 시스템의 데이터 흐름 및 시각적 요구사항이 오류 없이 작동하는지 최종 검증하고 안정성을 확보하라. → 산출물 sessions/2026-06-29T10-35/developer.md
 ### 💼 현빈
 - [2026-06-29] 최근 데이터 및 목표를 바탕으로 현재 진행 중인 프로젝트들의 KPI를 검토하고, 다음 주 집중해야 할 수익화 또는 성장 전략 방향을 제시하라. → 산출물 sessions/2026-06-29T04-52/business.md
 - [2026-06-29] 선정된 단일 작업에 대해 수익화 전략, KPI 달성 관점에서의 우선순위를 분석하고 실행 방안을 제시하라. → 산출물 sessions/2026-06-29T05-07/business.md
