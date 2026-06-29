@@ -1046,3 +1046,9 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-29] Video 4는 단순한 교육 영상이 아니라, 'Gap Score 진단 테스트'로 연결되는 유료 파이프라인이어야 합니다. _(근거: 현빈 검증된 지식 - MVP 목표)_
 - [2026-06-29] * **목표:** 시청자의 현재 기술적/감성적 한계를 객관적으로 인식하게 만듭니다. '나도 저런 문제가 있구나'라는 공감과 불안감을 유발합니다. _(근거: 현빈 검증된 지식 - Pain Point 극대화)_
 - [2026-06-29] * **목표:** 우리의 플랫폼만이 이 문제를 해결해 줄 유일한 방법임을 확신시키고, 즉각적인 행동(Free Trial 가입)으로 연결합니다. _(근거: 현빈 검증된 지식 - Value Ladder)_
+- [2026-06-29] * **핵심 전환점(Conversion Points) 정의:** 단순한 페이지 뷰가 아니라, '자료 다운로드 시도', '진단 테스트 시작 버튼 클릭', '유료 모듈 미리보기 시청 시간 증가' 등 **실제 결제 직전의 행동을 이벤트로 재정의**해야 합니다. _(근거: sessions/2026-05-18T13-43/business.md)_
+- [2026-06-29] * **KPI 세분화:** 일반적인 CTR, CVR 외에 '진단 결과 Gap Score 확인율'과 같은 **제품 고유의 지표를 KPI로 승격**시켜야 합니다. _(근거: sessions/2026-05-18T13-08/business.md)_
+- [2026-06-29] | **Awareness** (유튜브 노출) | `Video_View` / `WatchTime` | **Average Watch Time (AWT)** | 단순히 조회수(Views)를 넘어, 핵심 가치 전달 구간(예: 03:00~04:30의 AI 진단 부분)에서의 평균 시청 지속 시간을 측정하여 몰입도를 파악. | `segment_id`, `avg_watch_time_seconds` | _(근거: sessions/2026-05-18T13-08/business.md)_
+- [2026-06-29] | **Interest** (사이트 진입) | `Module_Browse` / `Feature_Check` | **Engagement Depth Score (EDS)** | 사용자가 몇 개의 모듈(Pitch, Breath, Timbre 등)을 확인했는지의 다양성과 깊이를 측정. *높은 EDS는 높은 학습 니즈를 의미.* | `unique_module_count`, `total_module_viewed` | _(근거: sessions/2026-05-18T13-43/developer.md)_
+- [2026-06-29] | **Desire** (진단 테스트 시작) | `Test_Start` / `Data_Input_Attempt` | **Pre-Conversion Funnel Rate (PCFR)** | 사용자가 '무료 진단 테스트'를 시작하는 비율. 이 단계는 유료 결제 직전의 가장 중요한 지표입니다. | `test_start_count`, `pre_conversion_rate` (Ratio) | _(근거: sessions/2026-05-18T14-19/business.md)_
+- [2026-06-29] | **Action** (결제 퍼널 진입) | `GapScore_View` / `Pricing_Page_Visit` | **Value Recognition Rate (VRR)** | 사용자가 '개선 과제 3가지'와 '성장 폭(Potential Gap)'을 확인한 후, 바로 유료 플랜 페이지로 이동하는 비율. 이 지표가 곧 매출 전환의 핵심 증명입니다. | `gap_score_view_count`, `vrr` (Ratio) | _(근거: sessions/2026-05-18T13-43/designer.md)_
