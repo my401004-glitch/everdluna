@@ -1,78 +1,63 @@
-import { diagnosisScoreService } from '../diagnosisScoreService'; // Assuming service layer exists
-import * as db from '../../db'; // Mock DB dependency
+/**
+ * @fileoverview Diagnosis Controller Unit Tests
+ * 이 파일은 diagnosisController가 처리할 수 있는 모든 유효/무효 입력 케이스를 테스트합니다.
+ */
 
-// --- MOCK SETUP ---
-// 실제 테스트 시에는 DB 연결 및 API 호출을 모킹(mocking)해야 합니다.
-jest.mock('../../db', () => ({
-    default: {
-        getUserRole: jest.fn(),
-        getDiagnosisResults: jest.fn(),
-    }
-}));
+import { diagnoseScore, DiagnosisInput } from '../diagnosisController'; 
+// 실제 경로에 맞춰 임포트해야 함. (예: ./src/api/v1/diagnosisController)
 
-describe('Gap Score Logic & RBAC Integration Tests', () => {
-    const mockContextId = "USER_CONTEXT_123";
-    const userMockData = { userId: 1, role: 'FREE' }; // 기본값 설정
-    let diagnosisScoreService: any;
+describe('Diagnosis Score Calculation Logic', () => {
+    // Test Case 1: 정상적인 핵심 입력값으로 진단 점수 계산 (Happy Path)
+    it('should calculate a valid score given all required inputs', async () => {
+        const mockInput: DiagnosisInput = {
+            readingExperience: 'Advanced', // 예시 값
+            rhythmSkillScore: 85,         // 예시 값
+            vocalTonicLevel: 7.5          // 예시 값
+        };
 
-    beforeEach(() => {
-        // 매 테스트 전에 모킹된 함수 초기화
-        jest.clearAllMocks();
-        diagnosisScoreService = require('../diagnosisController').diagnosisScoreService;
+        const score = await diagnoseScore(mockInput);
+
+        // 결과값이 필수적으로 존재하고 유효한 범위에 있는지 검증
+        expect(score).toBeDefined();
+        expect(score.overallGrade).toMatch(/A|B|C/); // Grade가 알파벳 형태여야 함 (비즈니스 규칙)
+        expect(score.diagnosisScore).toBeGreaterThanOrEqual(0);
+        expect(score.diagnosisScore).toBeLessThanOrEqual(100); 
+    });
+
+    // Test Case 2: 필수 필드 누락 시 처리 검증 (Missing Data - Edge Case)
+    it('should throw an error if a mandatory field is missing from input', async () => {
+        const incompleteInput: Partial<DiagnosisInput> = {
+            readingExperience: 'Intermediate'
+            // rhythmSkillScore나 vocalTonicLevel 누락 가정
+        };
+
+        // 비동기 함수가 에러를 던지는지 확인
+        await expect(diagnoseScore(incompleteInput as DiagnosisInput)).rejects.toThrow('Mandatory field missing'); 
+    });
+
+    // Test Case 3: 데이터 타입 오류 검증 (Type Safety - Edge Case)
+    it('should throw an error if non-numeric data is provided for score fields', async () => {
+        const invalidTypeInput: DiagnosisInput = {
+            readingExperience: 'Advanced',
+            rhythmSkillScore: "EightyFive", // <-- 문자열을 넣음 (오류 유발 지점)
+            vocalTonicLevel: 7.5
+        };
+
+        // 숫자가 아닌 값이 들어왔을 때, 타입 강제 오류를 던지는지 확인
+        await expect(diagnoseScore(invalidTypeInput)).rejects.toThrow(/Invalid data type for score/); 
+    });
+
+    // Test Case 4: 경계 조건 테스트 (Boundary Condition) - 극단적인 값 입력 검증
+    it('should handle boundary values (e.g., zero or max scores)', async () => {
+        const boundaryInput: DiagnosisInput = {
+            readingExperience: 'Beginner', // 최저 레벨로 가정
+            rhythmSkillScore: 0,           // 최소 점수
+            vocalTonicLevel: 0             // 최소 값
+        };
+
+        const score = await diagnoseScore(boundaryInput);
         
-        // 기본 권한은 무료 사용자(FREE)로 설정하고 시작합니다.
-        db.default.getUserRole.mockResolvedValue('FREE'); 
-    });
-
-    test('1. [SUCCESS] Free User: Valid diagnosis data and successful score calculation', async () => {
-        const mockDiagnosisData = { growth_score: 75, engagement_score: 60 }; // Growth와 Engagement만 제공된 케이스
-        // db 모킹: 권한 체크 통과 및 결과 데이터 반환
-        db.default.getUserRole.mockResolvedValue('FREE');
-        db.default.getDiagnosisResults.mockResolvedValue([{ context_id: mockContextId, kpis: { Growth: 75, Engagement: 60 } }]);
-
-        const result = await diagnosisScoreService(mockContextId, mockDiagnosisData);
-
-        // 결과 유효성 검사
-        expect(result).toHaveProperty('diagnosis_score');
-        expect(typeof result.diagnosis_score).toBe('number');
-        expect(db.default.getDiagnosisResults).toHaveBeenCalledWith(mockContextId); 
-    });
-
-    test('2. [FAILURE] RBAC Check: Free user attempting to access restricted KPI (Monetization)', async () => {
-        // 사용자가 Monetization 점수를 필요로 하는 상황 가정
-        const mockDiagnosisData = { growth_score: 80, monetization_needed: true }; 
-
-        db.default.getUserRole.mockResolvedValue('FREE'); // 무료 사용자 역할 할당
-        // API가 권한 체크를 통해 실패해야 함을 시뮬레이션
-        jest.spyOn(db.default, 'checkAccess').mockRejectedValue(new Error("Permission Denied: Monetization KPI requires PRO subscription."));
-
-        const result = await diagnosisScoreService(mockContextId, mockDiagnosisData);
-
-        // 에러 메시지 확인 및 서비스가 실패를 올바르게 처리했는지 검증
-        expect(result).toHaveProperty('error');
-        expect(result.error).toContain("Permission Denied"); 
-    });
-
-
-    test('3. [FAILURE] Data Integrity: Missing or invalid KPI data in input payload', async () => {
-        // Growth Score가 누락되거나, 숫자가 아닌 문자열로 들어온 경우
-        const mockDiagnosisData = { growth_score: "N/A", engagement_score: 50 };
-
-        const result = await diagnosisScoreService(mockContextId, mockDiagnosisData);
-
-        // 데이터 유효성 검증 실패가 적절한 에러를 반환해야 함
-        expect(result).toHaveProperty('error');
-        expect(result.error).toContain("Invalid data type or missing KPI"); 
-    });
-
-    test('4. [SUCCESS] Pro User: Full access and comprehensive score calculation', async () => {
-        // PRO 사용자 역할 할당 (모든 권한 보유)
-        db.default.getUserRole.mockResolvedValue('PRO');
-        const mockDiagnosisData = { growth_score: 95, engagement_score: 80 };
-
-        const result = await diagnosisScoreService(mockContextId, mockDiagnosisData);
-
-        // 모든 KPI를 성공적으로 처리하고 점수가 계산되었는지 확인
-        expect(result).toHaveProperty('diagnosis_score');
+        // 가장 낮은 조합일 때도 시스템이 무한 루프나 에러 없이 예측 가능한 기본 점수를 반환하는지 검증
+        expect(score.overallGrade).toBe('D'); 
     });
 });
