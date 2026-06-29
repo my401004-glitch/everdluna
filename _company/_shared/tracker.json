@@ -628,6 +628,57 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-06-29T18-06/_report.md\n- 레오: 확정된 SEO 전략과 편집 흐름(Timeline)에 따라 Phase 1 영상 제작을 즉시 시작하고, 다음 주 발행 일정을 확정하여 보고하라.\n- Instagram: 최종 확정된 디자인 시스템(KV/썸네일)과 카피를 기반으로 Reels 및 피드용 마케팅 콘텐츠 시안을 제작하고, 최적의 게시 시간 전략을 반영하\n- Designer: 확정된 Key Visual 및 디자인 시스템을 활용하여 유튜브 썸네일과 Instagram 포맷별 마케팅 비주얼을 최종 점검하고 발행에 적합한 상\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 확정된 SEO 전략과 편집 흐름(Timeline)에 따라 Phase 1 영상 제작을 즉시 시작하고, 다음 주 발행 일정을 확정하여 보고하라.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 *",
       "completedAt": "2026-06-29T18:11:03.256Z"
+    },
+    {
+      "id": "20260629185311-9vjt",
+      "title": "**영상 길이:** 최대 5분 이내 유지 (집중도 유지를 위해).",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-29T18:53:11.323Z",
+      "status": "done",
+      "sessionDir": "2026-06-29T18-51",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-29T18-51/_report.md\n- 레오: Writer와 Designer의 산출물을 기반으로 Phase 1 영상 초안(스크립트 및 편집 타임라인)을 즉시 제작하고, 다음 주 발행 일정을 \n- Writer: YouTube 영상에 필요한 핵심 메시지 중심으로 스크립트 초안을 작성하고, 영상의 스토리 흐름과 SEO 전략을 반영하여 구체적인 실행 계획을 \n- Designer: 확정된 Key Visual 및 디자인 시스템을 활용하여 다음 영상에 필요한 모든 마케팅 비주얼 에셋(썸네일 포함) 제작을 즉시 시작하고, 유튜브\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Writer와 Designer의 산출물을 기반으로 Phase 1 영상 초안(스크립트 및 편집 타임라인)을 즉시 제작하고, 다음 주 발행 일정을 최종 확정하여 보고하라.\n> 🔧 **도구 실행**: `my_videos_check.py (pr",
+      "completedAt": "2026-06-29T18:56:40.386Z"
+    },
+    {
+      "id": "20260629185311-rlv9",
+      "title": "**톤앤매너:** 컨설턴트의 권위적이고 냉철한 어조 유지. (절대 감성팔이 금지).",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-29T18:53:11.323Z",
+      "status": "done",
+      "sessionDir": "2026-06-29T18-51",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-29T18-51/_report.md\n- 레오: Writer와 Designer의 산출물을 기반으로 Phase 1 영상 초안(스크립트 및 편집 타임라인)을 즉시 제작하고, 다음 주 발행 일정을 \n- Writer: YouTube 영상에 필요한 핵심 메시지 중심으로 스크립트 초안을 작성하고, 영상의 스토리 흐름과 SEO 전략을 반영하여 구체적인 실행 계획을 \n- Designer: 확정된 Key Visual 및 디자인 시스템을 활용하여 다음 영상에 필요한 모든 마케팅 비주얼 에셋(썸네일 포함) 제작을 즉시 시작하고, 유튜브\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Writer와 Designer의 산출물을 기반으로 Phase 1 영상 초안(스크립트 및 편집 타임라인)을 즉시 제작하고, 다음 주 발행 일정을 최종 확정하여 보고하라.\n> 🔧 **도구 실행**: `my_videos_check.py (pr",
+      "completedAt": "2026-06-29T18:56:40.387Z"
+    },
+    {
+      "id": "20260629185311-nk5h",
+      "title": "**CTA 배치:** 영상 중반부(1:30 지점)에 자연스러운 궁금증 유발 후, 설명란과 댓글에서 진단 프로그램으로 연결한다.",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-29T18:53:11.324Z",
+      "status": "done",
+      "sessionDir": "2026-06-29T18-51",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-29T18-51/_report.md\n- 레오: Writer와 Designer의 산출물을 기반으로 Phase 1 영상 초안(스크립트 및 편집 타임라인)을 즉시 제작하고, 다음 주 발행 일정을 \n- Writer: YouTube 영상에 필요한 핵심 메시지 중심으로 스크립트 초안을 작성하고, 영상의 스토리 흐름과 SEO 전략을 반영하여 구체적인 실행 계획을 \n- Designer: 확정된 Key Visual 및 디자인 시스템을 활용하여 다음 영상에 필요한 모든 마케팅 비주얼 에셋(썸네일 포함) 제작을 즉시 시작하고, 유튜브\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Writer와 Designer의 산출물을 기반으로 Phase 1 영상 초안(스크립트 및 편집 타임라인)을 즉시 제작하고, 다음 주 발행 일정을 최종 확정하여 보고하라.\n> 🔧 **도구 실행**: `my_videos_check.py (pr",
+      "completedAt": "2026-06-29T18:56:40.388Z"
     }
   ]
 }

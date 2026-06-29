@@ -516,3 +516,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-29] 3. **CTA 유도:** 구독 버튼은 가장 대비되는 색상(Accent Yellow)과 Montserrat Bold 타이포로 강력하게 배치됩니다. _(근거: Designer 검증된 지식)_
 - [2026-06-29] | **필수 타이포** | *Headline (Montserrat Bold):* "진짜 Gap은 여기에 있다."<br>*Subhead (Noto Sans KR):* "AI 분석의 한계, 유료 모듈로 극복하세요." | *Headline:* "Free vs PRO: 당신의 성장 격차는?"<br>*Callout:* "[월 39,000원]으로 해결 가능" | *Headline:* "**STOP.** 이대로 연습하면 안 됩니다. " | _(근거: Gap Score Gauge)_
 - [2026-06-29] * 그래프의 **'성장 목표 영역(Goal)'**은 완벽한 진한 파란색으로 채워져 있음. _(근거: Designer 검증된 지식)_
+- [2026-06-29] **핵심 원칙:** Pain $\rightarrow$ Gain 프레임워크 극대화 적용. _(근거: Designer 검증된 지식)_
