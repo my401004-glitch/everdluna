@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 29. 오후 8:25:17_
+_업데이트: 2026. 6. 29. 오후 8:36:59_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,9 +17,9 @@ _업데이트: 2026. 6. 29. 오후 8:25:17_
 - [2026-06-29] Writer가 제공할 스크립트 흐름과 핵심 메시지를 기반으로, Brand_Design_System_Guidebook_v1.0을 적용하여 다음 영상의 최종 Key Visual 및 썸네일 시안 제작에 필요한 디자인 브리프를 작성하라. → 산출물 sessions/2026-06-29T10-50/designer.md
 - [2026-06-29] Writer가 제공할 스크립트 초안을 기반으로, Brand_Design_System_Guidebook_v1.0을 즉시 적용하여 영상의 시각적 흐름과 핵심 메시지를 반영한 Key Visual 및 썸네일 디자인 시안을 준비하라. → 산출물 sessions/2026-06-29T11-05/designer.md
 ### 💻 코다리
-- [2026-06-29] Writer와 Designer가 확정한 기술 계약(API Mockup, JSON 응답 구조)과 KVS/UX 가이드라인을 기반으로, AI 코칭 시스템의 데이터 흐름 및 시각적 요구사항에 대한 최종 작동 여부를 검증하고 안정성을 확보하라. → 산출물 sessions/2026-06-29T09-50/developer.md
 - [2026-06-29] Writer와 Designer가 확정한 기술 계약(API Mockup, JSON 응답 구조)과 KVS/UX 가이드라인을 기반으로, AI 코칭 시스템의 데이터 흐름 및 시각적 요구사항이 오류 없이 작동하는지 최종 검증하고 안정성을 확보하라. → 산출물 sessions/2026-06-29T10-35/developer.md
 - [2026-06-29] Writer와 Designer가 확정한 기술 계약과 KVS 가이드라인에 맞춰, AI 진단 결과가 실시간으로 시각화되는 핵심 기능(`diagnosis_test_env`)의 데이터 흐름 안정성을 최종 검증하고 구현을 시작하라. → 산출물 sessions/2026-06-29T11-20/developer.md
+- [2026-06-29] Writer와 Designer가 확정한 기술 계약(API Mockup, JSON 응답 구조)을 기반으로 `diagnosisController`의 핵심 로직을 TypeScript로 구현하고, 데이터 흐름 및 트랜잭션 안정성을 확보하여 단위 테스트를 진행하라. → 산출물 sessions/2026-06-29T11-35/developer.md
 ### 💼 현빈
 - [2026-06-29] 최근 데이터 및 목표를 바탕으로 현재 진행 중인 프로젝트들의 KPI를 검토하고, 다음 주 집중해야 할 수익화 또는 성장 전략 방향을 제시하라. → 산출물 sessions/2026-06-29T04-52/business.md
 - [2026-06-29] 선정된 단일 작업에 대해 수익화 전략, KPI 달성 관점에서의 우선순위를 분석하고 실행 방안을 제시하라. → 산출물 sessions/2026-06-29T05-07/business.md
