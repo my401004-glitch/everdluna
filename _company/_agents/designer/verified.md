@@ -530,3 +530,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-29] **** _(근거: Designer 개인 메모리 & Researcher의 최적 Hook 전략)_
 - [2026-06-29] * **구현 지침:** ``의 '변곡점' 컨셉을 극대화하여, 시선이 중앙으로 모이는 역동적인 구조를 만듭니다. _(근거: sessions/2026-05-18T14-34/designer.md)_
 - [2026-06-29] * **구현 지침:** ``에서 정의한 '시스템적 컨셉'을 따라, 페이지 단위의 통일성을 유지합니다. _(근거: sessions/2026-05-18T13-49/designer.md)_
+- [2026-06-29] * Primary Color (신뢰): Dark Blue (`#0A2463`) _(근거: Designer 검증된 지식)_
+- [2026-06-29] * Accent Color (CTA/Gain): Accent Yellow (`#FFD700`) _(근거: Designer 검증된 지식)_
+- [2026-06-29] * Background/Data: Neutral Grey (`#F5F5F5`) _(근거: Designer 검증된 지식)_
+- [2026-06-29] * 폰트: Title - Montserrat Bold / Body - Noto Sans KR _(근거: Designer 검증된 지식)_
