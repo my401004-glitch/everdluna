@@ -520,3 +520,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-29] Writer가 제공한 핵심 메시지와 Brand_Design_System_Guidebook_v2.0의 시각적 규칙을 기반으로, 5부작 시리즈 전체에 적용 가능한 최종 Key Visual 및 썸네일 목업(Mockup) 세트를 즉시 제작하라. → 산출물 sessions/2026-06-29T13-41/designer.md
 - [2026-06-29] Writer가 제시한 스토리보드 및 핵심 메시지에 맞춰, 다음 콘텐츠에 적용할 최종 Key Visual 및 썸네일 목업 세트를 즉시 제작하라. → 산출물 sessions/2026-06-29T15-21/designer.md
 - [2026-06-29] Writer와 Researcher가 확정한 'Gap Score Gauge' 및 데이터 증명형 성장 서사를 반영하여, 다음 영상 콘텐츠에 적용할 최종 Key Visual 및 썸네일 목업 세트를 즉시 제작하라. → 산출물 sessions/2026-06-29T15-36/designer.md
+- [2026-06-29] writer가 작성한 핵심 메시지 및 데이터 증명형 서사를 반영하여, 유료화 단계에 최적화된 최종 Key Visual 및 썸네일 목업 세트를 제작하라. → 산출물 sessions/2026-06-29T16-06/designer.md

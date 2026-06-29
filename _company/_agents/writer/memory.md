@@ -382,3 +382,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-29] Designer가 확정한 최종 Key Visual 및 썸네일 목업 세트(Brand_Design_System_Guidebook_v2.0 기반)를 활용하여 유튜브 5부작 시리즈의 각 에피소드별 데이터 증명형 서사(Data-Proof Narrative)를 극대화하는 후크 문구 초안을 작성하고, 영상 스크립트 초안을 즉시 시작하라. → 산출물 sessions/2026-06-29T14-36/writer.md
 - [2026-06-29] Researcher의 분석과 Designer의 최종 Key Visual 가이드라인을 기반으로, 데이터 증명형 성장 서사를 극대화하는 유튜브 영상 스크립트와 핵심 메시지를 작성하라. → 산출물 sessions/2026-06-29T15-21/writer.md
 - [2026-06-29] Designer가 제공한 디자인 시스템 가이드라인(Brand Design System v2.0)을 완벽히 준수하여, 다음 영상 콘텐츠에 필요한 스크립트와 핵심 메시지를 최종 확정하라. → 산출물 sessions/2026-06-29T15-36/writer.md
+- [2026-06-29] business 에이전트가 제시한 가격 모델과 유료화 시나리오를 기반으로, 마케팅 콘텐츠에 사용될 핵심 가치 제안(Value Proposition) 및 데이터 증명형 성장 서사(Gap Score Gauge 활용 방안)를 작성하라. → 산출물 sessions/2026-06-29T16-06/writer.md
