@@ -375,3 +375,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-29] Brand_Design_System_Guidebook_v1.0.md를 기반으로, 첫 번째 영상의 스토리 흐름(Pain $\rightarrow$ Gain)에 맞춰 가장 임팩트 있는 스크립트 초안을 작성하고, 각 씬별로 필요한 시각적 요소(Key Visual 및 데이터 강조 위치)를 명시해달라. → 산출물 sessions/2026-06-29T09-20/writer.md
 - [2026-06-29] 이전 단계에서 확정된 '데이터 증명형 서사(Pain -> Gain)' 흐름과 Master Template를 기반으로, 첫 번째 영상에 사용할 최종 스크립트 초안을 작성하고, 각 씬별로 필요한 시각적 강조 위치와 핵심 후크 문구를 명확히 지시하라. → 산출물 sessions/2026-06-29T09-35/writer.md
 - [2026-06-29] 지난 사이클에서 확정된 영상 Flow를 기반으로, 'ROI 증명'에 초점을 맞춘 다음 영상의 최종 스크립트와 후크(Hook) 문구를 작성하라. → 산출물 sessions/2026-06-29T10-20/writer.md
+- [2026-06-29] 코다리/Designer가 확보한 최종 가이드라인(Brand_Design_System_Guidebook_v1.0.md 및 Video_Design_System_Specification_v1.0.md)을 기반으로, 다음 영상의 핵심 메시지, 스크립트 흐름, 후크(Hook) 문구를 작성하라. → 산출물 sessions/2026-06-29T10-50/writer.md
