@@ -426,3 +426,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-29] | **Accent Color (행동 유도/기회)** | Accent Yellow (`#FFD700`) | Pain(위험) 표시와 Gain(이득), 최종 CTA 버튼에 사용하여 즉각적인 시선 집중을 유도합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-06-29] | **Title Typography** | Montserrat Bold | 모든 핵심 헤드라인(Pain, Gain)에 사용되어 강력한 메시지 전달력을 확보합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-06-29] | **Body Typography** | Noto Sans KR | 구체적인 데이터 및 설명 텍스트에 사용하여 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] **기반 원칙:** Pain $\rightarrow$ Gain 프레임워크 (손실 제시 $\rightarrow$ 이득 증명) _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **A. 메인 헤드라인 (Title Block)** | 영상의 핵심 주제와 논지를 가장 강력하게 전달. 시청자의 즉각적 주목 유도. | **폰트:** Montserrat Bold (72pt ~ 96pt) <br>**색상:** Dark Blue (`#0A2463`) 또는 흰색(배경에 따라) | 가장 높은 시각적 무게감 부여. 최대 5단어 제한 권고. | _(근거: Designer 검증된 지식)_

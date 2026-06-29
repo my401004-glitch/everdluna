@@ -52,4 +52,3 @@ def get_diagnosis_score(context_id: str, user_role: str) -> DiagnosisResult:
 if __name__ == '__main__':
     print("--- Diagnosis Controller Initialized ---")
     # Test Call: get_diagnosis_score("test-user-123", "STUDENT")
-<|"|>

@@ -99,4 +99,48 @@ SAMPLE_INVALID_DATA = {
         "MonetizationScore": None # 필수 값 누락
     }
 }
-#
+
+def validate_diagnosis_data(raw_input: Dict[str, Any], context_id: str, user_role: str) -> Dict[str, Any]:
+    """
+    [E2E/API Helper] API 입력 데이터를 받아 유효성 검사 및 데이터 구조화를 담당합니다.
+    """
+    if not context_id:
+        raise ValueError("context_id가 필요합니다.")
+
+    # 1. raw_input 검증
+    for field in ["pitch_stability", "frequency_variance", "harmonic_alignment"]:
+        if field not in raw_input or raw_input[field] is None:
+            raise ValueError(f"필수 필드 누락: {field}")
+        
+        val = raw_input[field]
+        if not isinstance(val, (int, float)):
+            raise ValueError(f"필드 {field}는 숫자여야 합니다.")
+        
+        if not (0.0 <= val <= 1.0):
+            raise ValueError(f"필드 {field}는 0.0과 1.0 사이여야 합니다: {val}")
+
+    # 2. 계산된 지표 구성
+    pitch = raw_input["pitch_stability"]
+    freq = raw_input["frequency_variance"]
+    harmonic = raw_input["harmonic_alignment"]
+    
+    # overall_gap 예시 계산
+    overall_gap = 1.0 - (pitch + freq + harmonic) / 3.0
+    
+    growth = pitch
+    engagement = freq
+    monetization = harmonic
+    
+    # 3. RBAC 제한 처리 (무료 사용자일 경우 monetization 제한)
+    if user_role == "Free":
+        monetization = 0.0
+
+    return {
+        "success": True,
+        "calculated_metrics": {
+            "overall_gap": overall_gap,
+            "growth": growth,
+            "engagement": engagement,
+            "monetization": monetization
+        }
+    }

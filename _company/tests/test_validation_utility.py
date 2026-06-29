@@ -38,9 +38,14 @@ class TestValidationUtility(unittest.TestCase):
 
     def test_05_business_rule_violation_kpi_range(self):
         """KPI 점수가 비즈니스 규칙(예: GrowthScore > 100)을 위반하는 경우 예외가 발생해야 한다."""
-        # SAMPLE_INVALID_DATA는 이미 범위 초과를 포함하고 있음.
+        invalid_data = SAMPLE_VALID_DATA.copy()
+        invalid_data["kpi_metrics"] = {
+            "GrowthScore": 120.5, # 범위 초과 (Business Rule)
+            "EngagementScore": 60.1,
+            "MonetizationScore": 45.0
+        }
         with self.assertRaisesRegex(DataValidationError, r".*Growth Score.*"):
-            ValidationUtility.validate_diagnosis_result(SAMPLE_INVALID_DATA, "PaidUser")
+            ValidationUtility.validate_diagnosis_result(invalid_data, "PaidUser")
 
     def test_06_kpi_validation(self):
         """KPI 유효성 검사 함수가 필수 항목 누락 시 실패해야 한다."""
