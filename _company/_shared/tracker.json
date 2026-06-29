@@ -1,91 +1,6 @@
 {
   "tasks": [
     {
-      "id": "20260528042922-puy2",
-      "title": "MVP 프로토타입 코드 완성 (코다리)",
-      "description": "자동 등록 (현빈 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "business"
-      ],
-      "createdAt": "2026-05-28T04:29:22.954Z",
-      "status": "done",
-      "sessionDir": "2026-05-28T04-26",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-05-28T04-26/_report.md\n- 영숙: 회사 목표, 에이전트 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 실행 계획을 수립하세요.\n- 현빈: 식별된 최우선 작업을 바탕으로 수익화 전략과 KPI를 고려하여 구체적인 실행 로드맵을 제시하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 회사 목표, 에이전트 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 실행 계획을 수립하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출",
-      "completedAt": "2026-05-28T04:29:37.557Z"
-    },
-    {
-      "id": "20260528042922-3oud",
-      "title": "'성장 리포트' 템플릿 디자인 완료 (Designer)",
-      "description": "자동 등록 (현빈 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "business"
-      ],
-      "createdAt": "2026-05-28T04:29:22.956Z",
-      "status": "done",
-      "sessionDir": "2026-05-28T04-26",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-05-28T04-26/_report.md\n- 영숙: 회사 목표, 에이전트 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 실행 계획을 수립하세요.\n- 현빈: 식별된 최우선 작업을 바탕으로 수익화 전략과 KPI를 고려하여 구체적인 실행 로드맵을 제시하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 회사 목표, 에이전트 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 실행 계획을 수립하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출",
-      "completedAt": "2026-05-28T04:29:37.557Z"
-    },
-    {
-      "id": "20260528042922-3jol",
-      "title": "유튜브/인스타그램 'AI 진단 챌린지' 콘텐츠 스케줄링",
-      "description": "자동 등록 (현빈 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "business"
-      ],
-      "createdAt": "2026-05-28T04:29:22.956Z",
-      "status": "done",
-      "sessionDir": "2026-05-28T04-26",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-05-28T04-26/_report.md\n- 영숙: 회사 목표, 에이전트 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 실행 계획을 수립하세요.\n- 현빈: 식별된 최우선 작업을 바탕으로 수익화 전략과 KPI를 고려하여 구체적인 실행 로드맵을 제시하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 회사 목표, 에이전트 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 실행 계획을 수립하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출",
-      "completedAt": "2026-05-28T04:29:37.558Z"
-    },
-    {
-      "id": "20260528042922-x6bh",
-      "title": "MVP 공식 배포 (웹사이트 + 앱 스토어 링크 준비)",
-      "description": "자동 등록 (현빈 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "business"
-      ],
-      "createdAt": "2026-05-28T04:29:22.956Z",
-      "status": "done",
-      "sessionDir": "2026-05-28T04-26",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-05-28T04-26/_report.md\n- 영숙: 회사 목표, 에이전트 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 실행 계획을 수립하세요.\n- 현빈: 식별된 최우선 작업을 바탕으로 수익화 전략과 KPI를 고려하여 구체적인 실행 로드맵을 제시하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 회사 목표, 에이전트 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 실행 계획을 수립하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출",
-      "completedAt": "2026-05-28T04:29:37.558Z"
-    },
-    {
-      "id": "20260528042922-cbhw",
-      "title": "초기 유입 사용자 (50 명) 대상 '베타 테스트' 오픈",
-      "description": "자동 등록 (현빈 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "business"
-      ],
-      "createdAt": "2026-05-28T04:29:22.957Z",
-      "status": "done",
-      "sessionDir": "2026-05-28T04-26",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-05-28T04-26/_report.md\n- 영숙: 회사 목표, 에이전트 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 실행 계획을 수립하세요.\n- 현빈: 식별된 최우선 작업을 바탕으로 수익화 전략과 KPI를 고려하여 구체적인 실행 로드맵을 제시하세요.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 회사 목표, 에이전트 개인 목표, 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 실행 계획을 수립하세요.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출",
-      "completedAt": "2026-05-28T04:29:37.559Z"
-    },
-    {
       "id": "20260531222233-rj23",
       "title": "수익화 모델 및 가격 전략 초안 작성 완료 (`sessions/2026-05-31T21-48/business.md`)",
       "description": "자동 등록 (현빈 산출물에서 추출)",
@@ -594,6 +509,51 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-06-26T04-03/_report.md\n- Designer: 확정된 'Key Visuals Production Guide' 및 기술 검증 결과를 기반으로 다음 영상('Hook 2')에 필요한 최종 Key \n- 코다리: Designer가 확정한 '통합 프로덕션 키트(v3.0)' 및 기술 검증 결과를 바탕으로, 다음 영상('Hook 2')에 필요한 핵심 API M\n- Writer: 데이터 시각화 최우선 원칙을 바탕으로, 다음 영상('Hook 1')의 콘텐츠 마스터 로드맵과 시청 지속 시간 극대화 전략을 재점검하고 구체적인 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 확정된 'Key Visuals Production Guide' 및 기술 검증 결과를 기반으로 다음 영상('Hook 2')에 필요한 최종 Key Visuals 제작 지시서를 즉시 확정하고 애니메이터에게 전달할 준비를 완료하라.\n> \ud83d",
       "completedAt": "2026-06-26T04:22:28.048Z"
+    },
+    {
+      "id": "20260629030856-izys",
+      "title": "모든 핵심 헤드라인에 Montserrat Bold가 사용되었는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-06-29T03:08:56.064Z",
+      "status": "pending",
+      "sessionDir": "2026-06-29T03-07",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": []
+    },
+    {
+      "id": "20260629030856-f1xt",
+      "title": "Pain 구간에서 Dark Blue/Red-Orange 톤이 충분히 활용되었는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-06-29T03:08:56.065Z",
+      "status": "pending",
+      "sessionDir": "2026-06-29T03-07",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": []
+    },
+    {
+      "id": "20260629030856-kbfd",
+      "title": "최종 Gain 수치와 CTA 버튼은 Accent Yellow로 가장 강력하게 강조되었는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-06-29T03:08:56.066Z",
+      "status": "pending",
+      "sessionDir": "2026-06-29T03-07",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": []
     }
   ]
 }
