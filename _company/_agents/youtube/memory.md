@@ -638,3 +638,4 @@ https://youtu.be/Hd4tOX7fGho
 그런데 정말 이해하기 쉬운 설명 찐감사요 👍
 
 - [2026-06-29] Writer와 Editor의 산출물을 기반으로 Video 3의 최종 편집 타임라인을 확정하고 즉시 제작을 시작하라. → 산출물 sessions/2026-06-29T19-51/youtube.md
+- [2026-06-29] Video 3의 확정된 편집 타임라인에 맞춰 Writer와 Editor의 산출물(스크립트 및 사운드 디자인)을 기반으로 최종 영상 제작을 즉시 실행하고 발행 일정을 확정하라. → 산출물 sessions/2026-06-29T20-06/youtube.md
