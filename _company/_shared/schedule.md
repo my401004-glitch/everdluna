@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 6. 30. 오전 7:38:18_
+_업데이트: 2026. 6. 30. 오전 8:11:53_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,9 +13,9 @@ _업데이트: 2026. 6. 30. 오전 7:38:18_
 - [2026-06-29] 최종 확정된 디자인 시스템(KV/썸네일)과 카피를 기반으로 Reels 및 피드용 마케팅 콘텐츠 시안을 제작하고, 최적의 게시 시간 전략을 반영하여 발행 준비를 완료하라. → 산출물 sessions/2026-06-29T18-06/instagram.md
 - [2026-06-29] Designer가 제작한 콘텐츠 템플릿 패키지(`Content_Templates_Package_V1.zip`)를 활용하여 수립된 마케팅 운영 플레이북에 따라 첫 주 마케팅 콘텐츠 발행을 준비하라. → 산출물 sessions/2026-06-29T18-21/instagram.md
 ### 🎨 Designer
-- [2026-06-29] Writer가 작성할 스크립트의 CTA 지점과 감정 흐름에 맞춰, VADP(비주얼 시스템 배포 프로토콜)에 따른 최종 디자인/기술 가이드라인(`Video4_CTA_DesignSpec_V1.md`)을 확정하여 개발팀의 검증 준비를 마칩니다. → 산출물 sessions/2026-06-29T21-51/designer.md
 - [2026-06-29] 확정된 VADP 규칙과 감정 흐름(Pain $ightarrow$ Gain)에 기반하여 Video 4의 핵심 마케팅 비주얼 에셋 제작을 위한 초기 디자인 브리프를 준비하라. → 산출물 sessions/2026-06-29T22-21/designer.md
 - [2026-06-29] 확정된 마케팅 비주얼 시스템 표준(Template Specification V2)과 컬러 가이드라인을 기반으로, Video 4에 사용될 최종 썸네일 및 인스타그램용 Reels 포맷별 Mockup 디자인을 즉시 제작하라. → 산출물 sessions/2026-06-29T22-36/designer.md
+- [2026-06-29] 확정된 마케팅 비주얼 시스템 표준(VADP)을 기반으로 Writer의 스크립트와 Editor의 사운드 디자인 방향성을 반영한 Video 4의 최종 편집 타임라인 및 시각적 가이드라인 초안을 제작하라. → 산출물 sessions/2026-06-29T22-51/designer.md
 ### 💻 코다리
 - [2026-06-29] Designer가 정의한 시각적 규칙(`Video4_VADP_Design_Protocol.md`)에 따라, 핵심 비주얼 에셋의 기술적 무결성(`Video4_VADP_Technical_Checklist.md`)을 검증할 준비를 합니다. → 산출물 sessions/2026-06-29T21-51/developer.md
 - [2026-06-29] 확정된 편집 타임라인 및 사운드 디자인을 기반으로, 시스템 안정성을 재확인하는 E2E 테스트 케이스 워크플로우를 실행하여 영상 제작의 기술적 무결성을 보장하라. → 산출물 sessions/2026-06-29T22-06/developer.md
@@ -29,13 +29,13 @@ _업데이트: 2026. 6. 30. 오전 7:38:18_
 - [2026-06-29] youtube, instagram, designer 에이전트 간의 콘텐츠 제작 및 디자인 작업의 진행 상황을 추적하고, 다음 주 목표 달성을 위한 통합 일정을 관리하여 보고하라. → 산출물 sessions/2026-06-29T18-06/secretary.md
 - [2026-06-29] 최근 활동(Video 4 Hook 기획서 검토 및 Visual Asset Mockup 제작)을 기반으로, 다음 주 마케팅 콘텐츠 발행 일정(YouTube/Instagram)을 확정하고 전체 작업 흐름에 맞춰 일정을 조정하라. → 산출물 sessions/2026-06-29T21-36/secretary.md
 ### 🎵 루나
-- [2026-06-29] Video 3의 확정된 편집 타임라인에 맞춰 수집된 트렌드와 감정선을 결합하여 사운드를 최적화하고 영상-음악 합성을 실행하라. → 산출물 sessions/2026-06-29T20-06/editor.md
 - [2026-06-29] Writer와 Editor의 산출물을 기반으로 Video 4에 대한 최종 영상 편집 타임라인과 사운드 디자인을 확정하고 제작을 즉시 시작하라. → 산출물 sessions/2026-06-29T22-06/editor.md
 - [2026-06-29] Writer가 제공할 주제를 기반으로 최적화된 BGM 프롬프트 템플릿을 생성하고 사운드 디자인 작업을 즉시 시작할 준비를 하라. → 산출물 sessions/2026-06-29T22-21/editor.md
+- [2026-06-29] Writer가 제공한 스크립트 초안 및 확정된 VADP 규칙(Visual Adaptation Protocol)을 기반으로 Video 4에 최적화된 BGM 프롬프트 템플릿과 사운드 디자인 방향성을 즉시 생성하라. → 산출물 sessions/2026-06-29T22-51/editor.md
 ### ✍️ Writer
-- [2026-06-29] Designer가 제공한 시각적 결과물을 참고하여, 최종적으로 각 마케팅 채널(Reels, Thumbnail)에 최적화된 카피와 비주얼 배치를 확정하고, 콘텐츠 발행 준비를 완료하라. → 산출물 sessions/2026-06-29T21-06/writer.md
 - [2026-06-29] Video 4의 Funnel 구조(문제 제기 $$\rightarrow$$ 충격적 지표 제시 $$\rightarrow$$ 해결책 제시)에 맞춰 시청자의 불안감을 극대화하고 유료 진단 테스트로 유도하는 스크립트(`Video4_FunnelScript_V1.md`)를 작성합니다. → 산출물 sessions/2026-06-29T21-51/writer.md
 - [2026-06-29] Video 4의 주제와 '문제 제기 $ightarrow$ 데이터 충격 $ightarrow$ 해결책' 구조에 맞는 Hook 스토리라인 초안을 작성하여 제공하라. → 산출물 sessions/2026-06-29T22-21/writer.md
+- [2026-06-29] Video 4의 Hook 전략에 맞춰 최적화된 스토리라인과 최종 스크립트 초안을 작성하여 제공하라. → 산출물 sessions/2026-06-29T22-51/writer.md
 ### 🔍 Researcher
 - [2026-06-29] 식별된 잠재력 있는 콘텐츠 유형에 대해 경쟁사 및 최신 트렌드 데이터를 수집하여, 해당 전략의 실행 가능성과 차별화 포인트를 분석하라. → 산출물 sessions/2026-06-29T16-51/researcher.md
 - [2026-06-29] 분석된 시청 지속 시간 데이터와 현재 시장 트렌드를 비교하여, 다음 영상의 Hook 전략에 대한 실행 가능한 3가지 대안을 제시하고 그 근거를 명확히 하라. → 산출물 sessions/2026-06-29T20-21/researcher.md

@@ -538,3 +538,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-29] Writer가 작성할 스크립트의 CTA 지점과 감정 흐름에 맞춰, VADP(비주얼 시스템 배포 프로토콜)에 따른 최종 디자인/기술 가이드라인(`Video4_CTA_DesignSpec_V1.md`)을 확정하여 개발팀의 검증 준비를 마칩니다. → 산출물 sessions/2026-06-29T21-51/designer.md
 - [2026-06-29] 확정된 VADP 규칙과 감정 흐름(Pain $ightarrow$ Gain)에 기반하여 Video 4의 핵심 마케팅 비주얼 에셋 제작을 위한 초기 디자인 브리프를 준비하라. → 산출물 sessions/2026-06-29T22-21/designer.md
 - [2026-06-29] 확정된 마케팅 비주얼 시스템 표준(Template Specification V2)과 컬러 가이드라인을 기반으로, Video 4에 사용될 최종 썸네일 및 인스타그램용 Reels 포맷별 Mockup 디자인을 즉시 제작하라. → 산출물 sessions/2026-06-29T22-36/designer.md
+- [2026-06-29] 확정된 마케팅 비주얼 시스템 표준(VADP)을 기반으로 Writer의 스크립트와 Editor의 사운드 디자인 방향성을 반영한 Video 4의 최종 편집 타임라인 및 시각적 가이드라인 초안을 제작하라. → 산출물 sessions/2026-06-29T22-51/designer.md
