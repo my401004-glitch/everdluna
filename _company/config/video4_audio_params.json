@@ -1,0 +1,40 @@
+{
+  "title": "Video 4: AI 보컬 분석 - 오디오 파라미터",
+  "source_blueprint": "/Users/iyeongjae/Desktop/Video4_Audio_Blueprint_V2.txt",
+  "overall_mood": {
+    "primary": "Cinematic Documentary",
+    "secondary": "Tech-Pop Hybrid",
+    "emotional_arc": "Tension -> Shift -> Relief"
+  },
+  "acts": [
+    {
+      "act_name": "Act I: 문제 제기 및 공감대 형성 (The Struggle)",
+      "script_context": "노력하는 과정의 애쓰는 느낌, 미스터리하고 따뜻한 불안정함.",
+      "music_goal": {
+        "key": "Minor Key",
+        "instrumentation": ["Acoustic Piano", "Strings"],
+        "tempo_range": "70-90 BPM (느린 템포)",
+        "emotional_focus": "Warm Tension, 불안정함 증폭"
+      }
+    },
+    {
+      "act_name": "Act II: 데이터 충격 및 전환 (The Shock & Shift)",
+      "script_context": "AI 분석 결과 수치 제시 ($\pm 8\text{Hz}$), 기존 상식의 파괴.",
+      "music_goal": {
+        "key": "Transitional Key (e.g., C Major -> F# Minor)",
+        "instrumentation": ["Digital Synth", "Pulsing Bass", "Metallic Elements"],
+        "tempo_range": "100-120 BPM (빠른 변화)",
+        "emotional_focus": "Sharpness, 객관성, 긴장감 최고조"
+      }
+    },
+    {
+      "act_name": "Act III: 해결책 제시 및 안도 (The Solution & Relief)",
+      "script_context": "AI 시스템의 역할 강조, 최적화된 보컬 성장 경로 제시.",
+      "music_goal": {
+        "key": "Major Key (Optimistic resolution)",
+        "instrumentation": ["Full Orchestra", "Bright Synth Pad", "Uplifting Chords"],
+        "tempo_range": "90-110 BPM (안정적, 웅장함)",
+        "emotional_focus": "Relief, 희망, 기술적 확신"
+      }
+  ]
+}
