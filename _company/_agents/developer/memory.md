@@ -385,3 +385,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-29] Design-to-Code Tech Spec을 최종 완성하고, 애니메이션 구현에 필요한 API 명세를 확정하여 기술적 안정성을 확보하세요. → 산출물 sessions/2026-06-29T01-52/developer.md
 - [2026-06-29] Designer가 요청하는 Mockup에 필요한 데이터(`diagnosis_score` 등)를 담는 임시 더미 API 엔드포인트(`/temp/diagnosis_mock`)의 구조와 테스트용 JSON 응답을 즉시 구성하여 제공하십시오. → 산출물 sessions/2026-06-29T02-37/developer.md
 - [2026-06-29] 최종 영상 구현을 위한 Design-to-Code Tech Spec을 기반으로 API 명세를 확정하고, 애니메이션 구현에 필요한 기술적 안정성을 확보하여 디자인 시스템 적용의 기술적 병목 지점을 해소하라. → 산출물 sessions/2026-06-29T03-07/developer.md
+- [2026-06-29] Writer와 Designer가 정의한 데이터 흐름과 시각적 요구사항에 맞춰, API Mockup(`diagnosis_score` 등) 및 디자인 시스템 연동을 위한 기술적 계약(Endpoint 및 테스트용 JSON 응답 구조)을 최종적으로 확정하고 구현 준비를 완료하라. → 산출물 sessions/2026-06-29T03-22/developer.md

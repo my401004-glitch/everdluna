@@ -466,3 +466,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-29] 7 description: string; // e.g., "현실적인 보컬 레슨의 부재" _(근거: Designer's Need)_
 - [2026-06-29] 7 description: string; // e.g., "현실적인 보컬 레슨의 부재" _(근거: Designer's Need)_
 - [2026-06-29] 14 value: number; // 측정 가능한 개선 수치 (예: +5톤) _(근거: Template A)_
+- [2026-06-29] * **문제:** 기존의 더미 API(`diagnosis_score`)는 구조만 잡혀있을 뿐, 실제 비즈니스 로직이나 복잡한 데이터 흐름을 반영하지 못하고 있습니다. (단순 하드코딩 값 반환). _(근거: Self-RAG 검증 지식)_
+- [2026-06-29] * **필요성:** Designer가 Mockup에 넣으려는 '진단 결과'는 단순히 점수(Score)만 주는 것이 아니라, **사용자 권한 체크(RBAC)**와 **다양한 KPI(`Growth`, `Engagement`, `Monetization`) 산출 로직**을 거쳐야 합니다. _(근거: Self-RAG 검증 지식)_
