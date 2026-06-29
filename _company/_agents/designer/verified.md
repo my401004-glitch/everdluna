@@ -523,3 +523,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-29] | **Neutral (배경)** | `#F5F5F5` (Grey) | 정보 제시 영역, 배경. 대비 효과 극대화. | 데이터 차트의 기본 배경색, 본문 텍스트의 가독성 확보. | | _(근거: Designer 검증된 지식)_
 - [2026-06-29] * **Visual System Guideline V2.0:** `#0A2463` (신뢰), `#FFD700` (기회/위험) 컬러와 Montserrat Bold 타이포그래피 사용 원칙을 따릅니다. _(근거: Design_Assets/.../Visual_System_Guideline_V2.md)_
 - [2026-06-29] * **핵심 메시지:** Pain $\rightarrow$ Gain 프레임워크를 적용하여, 시청자가 *무엇을 잃고 있는지(Pain)*와 *무엇을 얻게 될지(Gain)*를 극명하게 대비시킵니다. _(근거: Designer 검증된 지식)_
+- [2026-06-29] * 의 Pain $\rightarrow$ Gain 프레임워크를 텍스트가 아닌 **색상과 구조**로 구현하여 시각적 설득력을 높입니다. _(근거: sessions/2026-05-19T04:14/designer.md)_
