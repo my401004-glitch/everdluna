@@ -392,3 +392,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-29] Designer가 제공한 시각적 결과물을 참고하여, 최종적으로 각 마케팅 채널(Reels, Thumbnail)에 최적화된 카피와 비주얼 배치를 확정하고, 콘텐츠 발행 준비를 완료하라. → 산출물 sessions/2026-06-29T21-06/writer.md
 - [2026-06-29] Video 4의 Funnel 구조(문제 제기 $$\rightarrow$$ 충격적 지표 제시 $$\rightarrow$$ 해결책 제시)에 맞춰 시청자의 불안감을 극대화하고 유료 진단 테스트로 유도하는 스크립트(`Video4_FunnelScript_V1.md`)를 작성합니다. → 산출물 sessions/2026-06-29T21-51/writer.md
 - [2026-06-29] Video 4의 주제와 '문제 제기 $ightarrow$ 데이터 충격 $ightarrow$ 해결책' 구조에 맞는 Hook 스토리라인 초안을 작성하여 제공하라. → 산출물 sessions/2026-06-29T22-21/writer.md
+- [2026-06-29] Video 4의 Hook 전략에 맞춰 최적화된 스토리라인과 최종 스크립트 초안을 작성하여 제공하라. → 산출물 sessions/2026-06-29T22-51/writer.md
