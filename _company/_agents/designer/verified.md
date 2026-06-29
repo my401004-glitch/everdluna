@@ -490,3 +490,13 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-29] | **Primary Background** | Neutral Grey (`#F5F5F5`) | Noto Sans KR | 데이터 영역의 가독성 극대화. | _(근거: Designer 검증된 지식)_
 - [2026-06-29] | **Trust/Problem Area** | Dark Blue (`#0A2463`) | Montserrat Bold (Pain) | 신뢰성 확보 및 초기 문제 제기 배경. | _(근거: Designer 검증된 지식)_
 - [2026-06-29] | **CTA/Gain Point** | Accent Yellow (`#FFD700`) | Montserrat Bold | 모든 수치적 성과, CTA 버튼, '획득'의 순간 강조. 즉각적인 행동 유도. | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | 요소 | 설정 값 | 코드/규칙 | 사용 목적 및 효과 | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Primary Color (신뢰)** | Dark Blue | `#0A2463` | 배경, 헤더, 신뢰 기반 정보 섹션. 전문성 및 안정감 부여. | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Accent Color (행동/기회)** | Accent Yellow | `#FFD700` | CTA 버튼, Gap Score의 'Gain' 영역, 핵심 성과 수치 강조. 시선 집중 유도. | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Neutral Color (배경/데이터)**| Light Grey | `#F5F5F5` | 데이터 및 본문 텍스트 배경. Dark Blue와의 명확한 대비로 가독성 극대화. | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Title Typography** | Montserrat Bold | N/A | 모든 핵심 헤드라인(Pain, Gain)에 사용되어 강력한 메시지 전달력 확보. | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Body Typography** | Noto Sans KR | Regular/Medium | 데이터 및 상세 설명 텍스트. 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | 타입 | 목적 | 시각적 비중 (가중치) | 배치 규칙 및 예시 | | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Type 1. 문제 제기형** | Pain Point 극대화 (클릭 유도 1순위) | Pain Area (60%) > Gauge Visualization (30%) > Gain CTA (10%) | 🔴 배경을 어둡게 처리하고, 중앙에 큰 질문 형태의 헤드라인(Montserrat Bold) 배치. 구체적인 데이터 그래프를 좌측/우측 상단에 작게 삽입하여 근거 제시. | | _(근거: sessions/2026-05-18T14-34/designer.md)_
+- [2026-06-29] | **Type 2. 해결책 제시형** | Gain Point 강조 (솔루션의 가치 증명) | Gauge Visualization (40%) > Gain CTA (40%) > Pain Area (20%) | 📊 배경을 밝고 깨끗하게 유지하며, 중앙에 '변화 전/후'를 비교하는 그래프를 크게 배치. 해결책(AI 코칭 시스템) 이미지를 삽입하고 `Accent Yellow`로 가이드라인을 처리합니다. | | _(근거: sessions/2026-05-18T13-49/designer.md)_
+- [2026-06-29] | **Type 3. 데이터 예측형** | 구체적인 방법론 제시 (신뢰도 확보) | Gauge Visualization (70%) > Title (20%) > Pain Area/Gain CTA (10%) | 복잡한 수치나 단계별 플로우차트를 중심으로 배치합니다. 시선이 분산되지 않도록 정보 블록(Block)을 명확히 구분하고, 핵심 단어만 `Montserrat Bold`로 강조합니다. | | _(근거: sessions/2026-05-18T21-30/designer.md)_
