@@ -396,3 +396,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-29] Writer와 Designer가 확정한 기술 계약과 KVS 가이드라인에 맞춰, AI 진단 결과가 실시간으로 시각화되는 핵심 기능(`diagnosis_test_env`)의 데이터 흐름 안정성을 최종 검증하고 구현을 시작하라. → 산출물 sessions/2026-06-29T11-20/developer.md
 - [2026-06-29] Writer와 Designer가 확정한 기술 계약(API Mockup, JSON 응답 구조)을 기반으로 `diagnosisController`의 핵심 로직을 TypeScript로 구현하고, 데이터 흐름 및 트랜잭션 안정성을 확보하여 단위 테스트를 진행하라. → 산출물 sessions/2026-06-29T11-35/developer.md
 - [2026-06-29] Writer와 Designer가 확정한 기술 계약 및 KVS 가이드라인을 기반으로, AI 진단 결과가 실시간으로 시각화되는 핵심 기능(`diagnosis_test_env`)의 데이터 흐름 안정성을 최종 검증하고 구현을 시작하라. → 산출물 sessions/2026-06-29T14-51/developer.md
+- [2026-06-29] 데이터가 시각화되는 최소 기능 단위의 데모 영상 제작을 위한 최종 기술 구현 및 결과물 패키징을 완료하고, 이를 마케팅에 활용할 수 있는 형태로 준비하라. → 산출물 sessions/2026-06-29T15-06/developer.md
