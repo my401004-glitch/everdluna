@@ -518,3 +518,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-29] 확립된 'Gap Score Gauge' 시스템을 실제 영상 편집 흐름(Timeline)에 완벽하게 적용하는 데모 플로우를 제작하고, 이를 기반으로 다음 영상의 최종 Key Visual 및 썸네일 시안을 즉시 제작하라. → 산출물 sessions/2026-06-29T12-05/designer.md
 - [2026-06-29] 확정된 디자인 시스템(Brand_Design_System_Guidebook_v1.0)과 'Gap Score Gauge' 컨셉을 기반으로 유튜브 5부작 시리즈 전체의 최종 Key Visual 및 썸네일 시안 제작을 즉시 시작하고, 각 영상의 흐름에 맞춰 일관성을 유지하도록 작업하라. → 산출물 sessions/2026-06-29T12-20/designer.md
 - [2026-06-29] Writer가 제공한 핵심 메시지와 Brand_Design_System_Guidebook_v2.0의 시각적 규칙을 기반으로, 5부작 시리즈 전체에 적용 가능한 최종 Key Visual 및 썸네일 목업(Mockup) 세트를 즉시 제작하라. → 산출물 sessions/2026-06-29T13-41/designer.md
+- [2026-06-29] Writer가 제시한 스토리보드 및 핵심 메시지에 맞춰, 다음 콘텐츠에 적용할 최종 Key Visual 및 썸네일 목업 세트를 즉시 제작하라. → 산출물 sessions/2026-06-29T15-21/designer.md

@@ -380,3 +380,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-29] 지난 의사결정 로그 및 데이터 증명형 서사 원칙에 따라, 가장 잠재력이 높은 주제를 선택하여 다음 영상의 최종 스크립트 초안을 작성하고, 시청 지속 시간을 극대화하는 후크와 데이터 증명 요소를 포함해야 함. → 산출물 sessions/2026-06-29T11-50/writer.md
 - [2026-06-29] Brand_Design_System_Guidebook_v2.0을 기반으로 유튜브 5부작 시리즈 각 에피소드별 핵심 메시지를 추출하고, 데이터 증명형 서사(Data-Proof Narrative)를 극대화하는 후크 문구 초안을 작성하라. → 산출물 sessions/2026-06-29T13-41/writer.md
 - [2026-06-29] Designer가 확정한 최종 Key Visual 및 썸네일 목업 세트(Brand_Design_System_Guidebook_v2.0 기반)를 활용하여 유튜브 5부작 시리즈의 각 에피소드별 데이터 증명형 서사(Data-Proof Narrative)를 극대화하는 후크 문구 초안을 작성하고, 영상 스크립트 초안을 즉시 시작하라. → 산출물 sessions/2026-06-29T14-36/writer.md
+- [2026-06-29] Researcher의 분석과 Designer의 최종 Key Visual 가이드라인을 기반으로, 데이터 증명형 성장 서사를 극대화하는 유튜브 영상 스크립트와 핵심 메시지를 작성하라. → 산출물 sessions/2026-06-29T15-21/writer.md
