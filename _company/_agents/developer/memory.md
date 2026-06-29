@@ -383,3 +383,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-29] Writer와 Designer가 확정한 스토리보드 흐름과 디자인 시스템 규칙에 맞춰, API 시퀀스와 데이터 처리에 대한 기술적 실행 가능성(Bottleneck)을 최종 검토하고 보고하여 콘텐츠 제작의 기술적 안정성을 확보하라. → 산출물 sessions/2026-06-29T01-07/developer.md
 - [2026-06-29] Designer가 요청한 시각 자산 제작 지시서(JSON)가 API 시퀀스 및 기술적 실행 가능성(Bottleneck)에 미치는 영향을 최종적으로 재검토하고, 애니메이션 구현의 기술적 안정성을 확보하라. → 산출물 sessions/2026-06-29T01-37/developer.md
 - [2026-06-29] Design-to-Code Tech Spec을 최종 완성하고, 애니메이션 구현에 필요한 API 명세를 확정하여 기술적 안정성을 확보하세요. → 산출물 sessions/2026-06-29T01-52/developer.md
+- [2026-06-29] Designer가 요청하는 Mockup에 필요한 데이터(`diagnosis_score` 등)를 담는 임시 더미 API 엔드포인트(`/temp/diagnosis_mock`)의 구조와 테스트용 JSON 응답을 즉시 구성하여 제공하십시오. → 산출물 sessions/2026-06-29T02-37/developer.md
