@@ -488,3 +488,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-28] 최종 제작 표준 매뉴얼(`final_animator_specsheet.md`)을 기반으로 애니메이터에게 전달할 Key Visuals 및 썸네일 제작에 필요한 모든 시각적 요구사항(컬러 코드, 타이포그래피 규칙 포함)을 최종 정리하여 즉시 전달 준비를 완료하라. → 산출물 sessions/2026-06-28T22-18/designer.md
 - [2026-06-28] Writer가 제공한 스크립트와 확정된 디자인 시스템 규칙(컬러, 타이포그래피, Pain/Gain 대비 구조)을 기반으로 다음 영상에 필요한 Key Visuals 및 썸네일 제작 지시서를 최종적으로 업데이트하고 시각 자산 제작을 위한 준비를 완료하라. → 산출물 sessions/2026-06-28T22-50/designer.md
 - [2026-06-29] Writer가 제공한 최종 시각 지시서(`final_animator_specsheet.md` 기반)를 바탕으로 Key Visuals 및 썸네일 제작을 즉시 시작하고, 디자인 시스템 규칙(Pain $ightarrow$ Gain 색상/레이아웃)을 철저히 반영하여 자산 제작을 개시하라. → 산출물 sessions/2026-06-29T01-07/designer.md
+- [2026-06-29] 새로 정의된 디자인 시스템 모듈(`DesignSystem_Modular_Templates_V2.md`)을 기반으로, 확정된 스토리보드 흐름에 맞춰 다음 영상의 Key Visuals 및 썸네일 제작 지시서를 즉시 업데이트하고 시각 자산 제작을 시작하라. → 산출물 sessions/2026-06-29T01-22/designer.md
