@@ -487,3 +487,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-29] | **Neutral Grey** | Neutral Grey (`#F5F5F5`) | 데이터 영역 배경, 본문 텍스트 가독성을 위한 분리 공간. 그래프의 축(Axis). | `` | _(근거: Designer 검증된 지식)_
 - [2026-06-29] | **Title Type** | Montserrat Bold | 제목, 핵심 질문, 극적인 수치 강조 (Pain/Gain) | 강력한 임팩트 제공 (``) | _(근거: Designer 검증된 지식)_
 - [2026-06-29] | **Body Type** | Noto Sans KR | 데이터 설명 텍스트, 그래프의 상세 레이블. 가독성 확보. | 높은 가독성 보장 (``) | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Primary Background** | Neutral Grey (`#F5F5F5`) | Noto Sans KR | 데이터 영역의 가독성 극대화. | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **Trust/Problem Area** | Dark Blue (`#0A2463`) | Montserrat Bold (Pain) | 신뢰성 확보 및 초기 문제 제기 배경. | _(근거: Designer 검증된 지식)_
+- [2026-06-29] | **CTA/Gain Point** | Accent Yellow (`#FFD700`) | Montserrat Bold | 모든 수치적 성과, CTA 버튼, '획득'의 순간 강조. 즉각적인 행동 유도. | _(근거: Designer 검증된 지식)_
