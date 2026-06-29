@@ -1,36 +1,34 @@
-# 🎨 아지트아트컴페니 디자인 시스템 가이드 V3: 콘텐츠 시리즈 표준화
+# 아지트아트컴페니 - 핵심 시각 자산 가이드라인 V3
 
-## 🎯 목표
-모든 미디어(유튜브, 인스타그램)에 걸쳐 'Pain $\rightarrow$ Gain'의 감성적 여정을 시각적으로 일관되게 전달하고, 제작 효율성을 극대화합니다.
+## 🎯 프로젝트 목표: Pain $\rightarrow$ Gain 프레임워크의 시각화 및 표준화
+모든 콘텐츠는 '불안정성(Pain)'을 극복하고 '객관적인 가능성(Gain)'을 발견하는 서사 구조를 따라야 합니다. 모든 디자인 요소는 이 흐름을 강화해야 합니다.
 
-## ✨ 핵심 원칙 (The Golden Rule)
-*   **Pain First:** 콘텐츠 초반 3초는 반드시 **위험(Risk)**을 강조하는 Pain Point로 시작해야 합니다. (강렬한 대비와 경고의 Yellow 사용).
-*   **Data-Driven Proof:** 추상적인 감성적 설명 대신, AI 진단 결과 같은 **객관적인 데이터 시각화**를 통해 설득력을 확보합니다.
-*   **Gain CTA:** 모든 콘텐츠는 마지막에 해결책(Solution)과 다음 행동(CTA)을 명확한 Yellow 강조로 제시하며 마무리됩니다.
-
-## 🌈 컬러 팔레트 (Color Palette)
-| 이름 | HEX Code | 용도 및 의미 | 근거 |
-| :--- | :--- | :--- | :--- |
-| **Primary Trust** | `#0A2463` | 신뢰, 전문성 확보. 배경, 헤더, 주요 정보 섹션. (Dark Blue) | [Designer 검증된 지식] |
-| **Accent Risk/Gain** | `#FFD700` | 경고(Pain), 기회(Gain), CTA 버튼. 시선 집중 및 즉각적 행동 유도. (Yellow) | [Designer 검증된 지식] |
-| **Background Neutral** | `#F5F5F5` | 데이터 영역의 명확성 확보, 본문 텍스트 배경. (Light Grey) | [Designer 검증된 지식] |
-| **Danger/Error** | `#CC3333` | 극심한 Pain Point 발생 시 사용되는 강렬한 강조색 (Red-Orange 계열). | [추측: 감정적 서사 강화] |
+## 🎨 브랜드 컬러 시스템 (Color Palette)
+*   **Primary Trust Color (신뢰):** Dark Blue (`#0A2463`) - 배경, 헤더, 주요 정보 영역. 전문성 및 안정감 부여.
+*   **Accent Alert/Gain (기회/CTA):** Accent Yellow (`#FFD700`) - **'경고 수치', '개선 가능 지점(Pain)', '최종 성과(Gain)'**에 사용. 즉각적인 시선 집중 유도.
+*   **Neutral Background:** Neutral Grey (`#F5F5F5`) - 본문 데이터 배경, 높은 가독성 확보.
 
 ## 🔡 타이포그래피 시스템 (Typography)
-*   **Title/Headline:** Montserrat Bold (강력함, 핵심 메시지(Pain/Gain)에 사용).
-*   **Body Text/Data:** Noto Sans KR Regular/Medium (가독성 극대화, 데이터 제시).
+1.  **헤드라인/강조:** Montserrat Bold (모든 핵심 메시지: Pain / Gain) - 강력한 시각적 임팩트와 중요도 강조.
+2.  **본문/데이터:** Noto Sans KR Regular/Medium (구체적인 데이터 수치, 설명 텍스트) - 높은 가독성 및 정보 전달력 확보.
 
-## 🖼️ 플랫폼별 표준 레이아웃 (Template Guidelines)
+## 📐 레이아웃 규칙 (Layout Rule)
+1.  **Pain 시각화:** Dark Blue 배경 + Red 계열(강조용만 사용)의 부정적 그래프나 낮은 점수 수치를 배치하여 **'위험 감지'** 느낌을 극대화합니다.
+2.  **Gain 시각화:** Accent Yellow로 강조된 최종 성과 지표와 함께, 청량하고 넓은 공간감(White Space)을 확보하여 **'확실한 가능성'**의 여유를 전달합니다.
+3.  **CTA (Call To Action):** 모든 콘텐츠에서 가장 눈에 띄는 위치에 Accent Yellow 배경의 명확한 버튼 형태 (`[AI 진단 시작하기]`)를 배치해야 합니다.
 
-### 1. YouTube Thumbnail (1280x720px 권장)
-*   **구조:** 좌측(Pain Point - Yellow 강조), 중앙(핵심 문구/데이터 시각화 - Montserrat Bold), 우측(Gain/CTA 버튼 - Trust Blue 배경).
-*   **레이아웃 유의사항:** 텍스트는 최소한의 단어로, 가장 충격적인 데이터 수치만 크게 배치합니다.
+## 📺 플랫폼별 Key Visual Guideline (Mockup 기준)
 
-### 2. Instagram Carousel (1080x1350px)
-*   **구조:** 총 7장 구조 고정. [Problem(P1) $\rightarrow$ Evidence(P2/P3) $\rightarrow$ Solution(G1) $\rightarrow$ Action(CTA)]의 흐름을 유지합니다.
-*   **디자인 모듈:** P 단계에서는 배경에 불규칙한 파형 패턴과 Red-Orange 계열을 사용하고, G 단계에서는 Dark Blue와 Yellow를 활용하여 '정리된 시스템' 느낌을 강조합니다.
+### A. 유튜브 영상 내부 Key Visual Mockup
+*   **스타일:** 모듈형(Modular). 한 화면에 데이터, 그래프, 설명이 동시에 존재해야 함.
+*   **구성:**
+    1.  **Pain Zone (상단 20%):** Dark Blue 배경 + Montserrat Bold로 '현재의 문제점'을 충격적으로 제시.
+    2.  **Diagnosis Data (중앙 60%):** Neutral Grey 배경 + Noto Sans KR로 AI 진단 결과(그래프/수치)를 객관적이고 세부적으로 보여줌. (가장 많은 공간 할애).
+    3.  **Gain Zone (하단 20%):** Dark Blue 또는 Accent Yellow 포인트 컬러 사용 + '이것을 통해 얻을 수 있는 목표'를 간결하게 요약 및 CTA 배치.
 
-### 3. Reels/Shorts Cover Image (1080x1920px)
-*   **구조:** 영상의 핵심 후크(Hook) 문구를 가장 크게 배치하고, 배경에 모션 그래픽이 될 메인 이미지를 압축적으로 표현할 수 있는 비주얼을 넣습니다.
+### B. 유튜브/인스타그램 썸네일 표준 레이아웃 (통합)
+*   **좌측 (Pain 영역, 약 40%):** 좌절하는 모습의 인물 이미지 + '현실 점수'나 '막연한 불안감'을 Montserrat Bold로 강조. (Dark Blue 필터 적용)
+*   **우측 (Gain 영역, 약 60%):** 자신감 있는 미래의 모습 또는 시스템 Mockup UI 스크린샷 배치. 가장 높은 수치(Accent Yellow)를 크게 표시.
+*   **헤드라인:** 중앙 상단에 가장 큰 글씨로 핵심 질문/결과 제시.
 
 ---
