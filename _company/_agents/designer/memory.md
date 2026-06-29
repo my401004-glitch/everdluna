@@ -509,3 +509,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-29] Brand_Design_System_Guidebook_v1.0.md에 정의된 컬러 팔레트, 타이포그래피 시스템을 적용하여, Writer가 제시한 스크립트 흐름에 맞는 최종 YouTube 썸네일 및 영상 화면의 Master Template(와이어프레임)를 제작하라. → 산출물 sessions/2026-06-29T09-20/designer.md
 - [2026-06-29] Writer가 제시한 최종 스크립트 흐름에 맞춰, Master Template를 실제 영상 제작에 바로 적용할 수 있도록 최종 Key Visual 및 썸네일 시안을 구체화하고, 시각적 일관성 가이드라인을 재확인하라. → 산출물 sessions/2026-06-29T09-35/designer.md
 - [2026-06-29] Writer가 확정한 스크립트 흐름과 Brand_Design_System_Guidebook_v1.0을 기반으로, 최종 Key Visual 및 썸네일 시안 제작을 즉시 완료하고 시각적 일관성을 확보하라. → 산출물 sessions/2026-06-29T09-50/designer.md
+- [2026-06-29] Brand_Design_System_Guidebook_v1.0.md에 정의된 시스템을 적용하여, Writer가 제시한 다음 영상 스크립트 흐름에 맞는 최종 Key Visual 및 썸네일 시안 제작을 즉시 완료하고 시각적 일관성을 확보하라. → 산출물 sessions/2026-06-29T10-05/designer.md
