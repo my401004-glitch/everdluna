@@ -1,21 +1,23 @@
-// TypeScript Interface Definition - 프론트엔드 및 서비스 간 데이터 통일성 유지 목적
-export type DiagnosisScore = {
-    Growth: number; // 성장 잠재력 (0.0 ~ 1.0)
-    Engagement: number; // 참여도 (0.0 ~ 1.0)
-    Monetization: number; // 수익화 가능성 (0.0 ~ 1.0)
+// src/types/interfaces.ts
+/**
+ * @description Funnel 추적에 사용되는 모든 공통 타입을 정의합니다. 
+ */
+
+export type UserContext = {
+    userId: string;
+    userType: 'FREE' | 'PREMIUM'; // RBAC (Role-Based Access Control) 기준
 };
 
-export interface DiagnosisResult {
-    resultId: string;
-    contextId: string;
-    score: DiagnosisScore;
-    analysisData: any;
-    isProcessed: boolean;
+/**
+ * Funnel의 각 단계(Stage)와 사용자 행동(Action), 그리고 추가 메타데이터를 포함하는 이벤트 객체.
+ */
+export type FunnelEvent = {
+    stage: 'HERO_VIEW' | 'FEATURES_REVIEW' | 'PRICING_CHECKOUT' | 'ANALYSIS_REPORT';
+    action: string; // 예: click_cta, scroll_depth_70%, video_play_complete
+    metadata: Record<string, any>; 
 }
 
-export interface MusicSynthesisParams {
-    resultId: string;
-    genre: 'Pop Ballad' | 'Jazz Swing' | 'Rock';
-    mood: 'Optimistic' | 'Tense' | 'Calm';
-    tempoRange: [number, number]; // 예: [80, 120] BPM
+export type FunnelStage = {
+    name: string;
+    funnelOrder: number;
 }
