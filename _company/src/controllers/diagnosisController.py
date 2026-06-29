@@ -5,7 +5,8 @@ Gap Score 데이터를 처리하고, 클라이언트에 제공할 최종 구조�
 [근거: sessions/2026-05-19T09:57] (API 연동 로직 구현)
 """
 
-from src.types.gapScore import DiagnosisResult # <-- 새로 정의한 스키마 사용 가정
+from typing import Dict, Any
+DiagnosisResult = Dict[str, Any]
 # from services.kpi_aggregator_service import KPIAggregatorService # <-- 서비스 레이어 호출 가정
 
 def get_diagnosis_score(context_id: str, user_role: str) -> DiagnosisResult:

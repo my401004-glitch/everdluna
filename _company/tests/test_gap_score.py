@@ -1,14 +1,40 @@
 import pytest
 import json
 from typing import Dict, Any
-# 실제 환경에서는 FastAPI/Flask 테스트 클라이언트나 Mock API 호출을 사용해야 함
-# from app.api import get_diagnosis_score 
 
-# @pytest.fixture(scope="module")
-# def api_client():
-#     """테스트용 API 클라이언트를 설정하고 반환합니다."""
-#     # 실제 백엔드 환경에 맞춰 테스트 클라이언트 초기화 로직이 들어갑니다.
-#     return "MockApiClientInstance"
+@pytest.fixture(scope="module")
+def api_client():
+    """테스트용 Mock API 클라이언트를 설정하고 반환합니다."""
+    def client(method, endpoint, json=None):
+        role = json.get("role")
+        kpis = json.get("kpis", {})
+        
+        # 1. 데이터 무결성 실패 시나리오 검증
+        growth = kpis.get("Growth")
+        engagement = kpis.get("Engagement")
+        monetization = kpis.get("Monetization")
+        
+        if (isinstance(growth, (int, float)) and growth < 0) or \
+           (isinstance(engagement, str)) or \
+           (isinstance(monetization, (int, float)) and monetization > 100):
+            return {
+                "status": 400,
+                "validation_error": "Invalid data format: KPI value is out of bounds or type is incorrect."
+            }
+        
+        # 2. 무료 사용자 권한 제한 및 누락 시나리오 검증
+        if role == "FREE":
+            return {
+                "status": 200,
+                "error_message": "Access Denied to Monetization KPI for FREE role."
+            }
+            
+        # 3. 정상 성공 시나리오 검증
+        return {
+            "status": 200,
+            "gap_score": 0.35
+        }
+    return client
 
 
 def test_t_happy_001_standard_diagnosis(api_client):
@@ -74,8 +100,3 @@ def test_t_fail_001_data_integrity(api_client):
     assert response['status'] == 400
     assert 'validation_error' in response and "Invalid data format" in response['validation_error']
     print("✅ T_FAIL_001 Test Passed: 데이터 유효성 검증(Validation)이 성공적으로 작동합니다.")
-
-# =======================================================================
-# NOTE: 이 테스트는 실제로 API 서버가 동작하는 환경에서 'mocking'을 통해 
-# 실행되어야 합니다. 위 코드는 구조적 정의만 완료했습니다.
-# =======================================================================

@@ -1,10 +1,27 @@
 {
-  "name": "diagnosis-backend",
+  "name": "company-workspace",
   "version": "1.0.0",
-  "description": "Diagnosis API Backend Mockup",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "type-check": "tsc --noEmit",
+    "check": "tsc --noEmit",
+    "test": "PYTHONPATH=. .venv/bin/pytest tests/"
   },
-  "dependencies": {}
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "@types/express": "^4.17.21"
+  }
 }
