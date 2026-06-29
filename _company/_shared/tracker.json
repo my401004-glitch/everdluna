@@ -519,11 +519,13 @@
         "designer"
       ],
       "createdAt": "2026-06-29T03:08:56.064Z",
-      "status": "pending",
+      "status": "done",
       "sessionDir": "2026-06-29T03-07",
       "nudges": 0,
       "priority": "normal",
-      "preAlarmsSent": []
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-29T03-07/_report.md\n- Designer: 확정된 디자인 시스템 모듈(`DesignSystem_Modular_Templates_V2.md`)을 기반으로, YouTube 및 Instagra\n- 코다리: 최종 영상 구현을 위한 Design-to-Code Tech Spec을 기반으로 API 명세를 확정하고, 애니메이션 구현에 필요한 기술적 안정성을\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 확정된 디자인 시스템 모듈(`DesignSystem_Modular_Templates_V2.md`)을 기반으로, YouTube 및 Instagram에 즉시 적용 가능한 고해상도 템플릿 파일(Figma 등) 제작을 시작하여 시각 자산의",
+      "completedAt": "2026-06-29T03:10:57.539Z"
     },
     {
       "id": "20260629030856-f1xt",
@@ -534,11 +536,13 @@
         "designer"
       ],
       "createdAt": "2026-06-29T03:08:56.065Z",
-      "status": "pending",
+      "status": "done",
       "sessionDir": "2026-06-29T03-07",
       "nudges": 0,
       "priority": "normal",
-      "preAlarmsSent": []
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-29T03-07/_report.md\n- Designer: 확정된 디자인 시스템 모듈(`DesignSystem_Modular_Templates_V2.md`)을 기반으로, YouTube 및 Instagra\n- 코다리: 최종 영상 구현을 위한 Design-to-Code Tech Spec을 기반으로 API 명세를 확정하고, 애니메이션 구현에 필요한 기술적 안정성을\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 확정된 디자인 시스템 모듈(`DesignSystem_Modular_Templates_V2.md`)을 기반으로, YouTube 및 Instagram에 즉시 적용 가능한 고해상도 템플릿 파일(Figma 등) 제작을 시작하여 시각 자산의",
+      "completedAt": "2026-06-29T03:10:57.541Z"
     },
     {
       "id": "20260629030856-kbfd",
@@ -549,11 +553,13 @@
         "designer"
       ],
       "createdAt": "2026-06-29T03:08:56.066Z",
-      "status": "pending",
+      "status": "done",
       "sessionDir": "2026-06-29T03-07",
       "nudges": 0,
       "priority": "normal",
-      "preAlarmsSent": []
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-29T03-07/_report.md\n- Designer: 확정된 디자인 시스템 모듈(`DesignSystem_Modular_Templates_V2.md`)을 기반으로, YouTube 및 Instagra\n- 코다리: 최종 영상 구현을 위한 Design-to-Code Tech Spec을 기반으로 API 명세를 확정하고, 애니메이션 구현에 필요한 기술적 안정성을\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 확정된 디자인 시스템 모듈(`DesignSystem_Modular_Templates_V2.md`)을 기반으로, YouTube 및 Instagram에 즉시 적용 가능한 고해상도 템플릿 파일(Figma 등) 제작을 시작하여 시각 자산의",
+      "completedAt": "2026-06-29T03:10:57.541Z"
     }
   ]
 }
