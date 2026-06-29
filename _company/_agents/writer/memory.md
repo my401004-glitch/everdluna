@@ -393,3 +393,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-29] Video 4의 Funnel 구조(문제 제기 $$\rightarrow$$ 충격적 지표 제시 $$\rightarrow$$ 해결책 제시)에 맞춰 시청자의 불안감을 극대화하고 유료 진단 테스트로 유도하는 스크립트(`Video4_FunnelScript_V1.md`)를 작성합니다. → 산출물 sessions/2026-06-29T21-51/writer.md
 - [2026-06-29] Video 4의 주제와 '문제 제기 $ightarrow$ 데이터 충격 $ightarrow$ 해결책' 구조에 맞는 Hook 스토리라인 초안을 작성하여 제공하라. → 산출물 sessions/2026-06-29T22-21/writer.md
 - [2026-06-29] Video 4의 Hook 전략에 맞춰 최적화된 스토리라인과 최종 스크립트 초안을 작성하여 제공하라. → 산출물 sessions/2026-06-29T22-51/writer.md
+- [2026-06-29] Business가 수립한 KPI와 트렌드에 맞춰, 가장 강력한 Hook 전략 3가지 중 하나를 선택하여 Video 4의 최종 스크립트 및 인스타그램용 캡션 초안을 작성하라. → 산출물 sessions/2026-06-29T23-51/writer.md
