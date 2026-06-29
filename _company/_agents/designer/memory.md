@@ -523,3 +523,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-29] writer가 작성한 핵심 메시지 및 데이터 증명형 서사를 반영하여, 유료화 단계에 최적화된 최종 Key Visual 및 썸네일 목업 세트를 제작하라. → 산출물 sessions/2026-06-29T16-06/designer.md
 - [2026-06-29] Writer가 제시한 'Gap Score' 기반의 스토리 구조(The Awakening & The Proof)와 확정된 디자인 시스템(컨셉 A: 데이터 부족 강조형)을 반영하여, Starter Pack 가격 모델 중 하나에 최적화된 유료 랜딩 페이지 Key Visual 및 레이아웃 목업 세트를 즉시 제작하라. → 산출물 sessions/2026-06-29T16-21/designer.md
 - [2026-06-29] Writer가 제공하는 핵심 메시지 및 티어 구조를 바탕으로, 기술적 신뢰도를 유지하면서도 구매 전환을 극대화하는 최종 Paywall Key Visual 목업 세트를 제작하라. → 산출물 sessions/2026-06-29T17-36/designer.md
+- [2026-06-29] 확정된 Key Visual 및 디자인 시스템을 활용하여 유튜브 썸네일과 Instagram 포맷별 마케팅 비주얼을 최종 점검하고 발행에 적합한 상태로 정리하라. → 산출물 sessions/2026-06-29T18-06/designer.md

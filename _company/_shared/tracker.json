@@ -560,6 +560,74 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-06-29T03-07/_report.md\n- Designer: 확정된 디자인 시스템 모듈(`DesignSystem_Modular_Templates_V2.md`)을 기반으로, YouTube 및 Instagra\n- 코다리: 최종 영상 구현을 위한 Design-to-Code Tech Spec을 기반으로 API 명세를 확정하고, 애니메이션 구현에 필요한 기술적 안정성을\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 확정된 디자인 시스템 모듈(`DesignSystem_Modular_Templates_V2.md`)을 기반으로, YouTube 및 Instagram에 즉시 적용 가능한 고해상도 템플릿 파일(Figma 등) 제작을 시작하여 시각 자산의",
       "completedAt": "2026-06-29T03:10:57.541Z"
+    },
+    {
+      "id": "20260629180801-vnlo",
+      "title": "스크립트 최종 검토 완료 (Writer)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-29T18:08:01.234Z",
+      "status": "done",
+      "sessionDir": "2026-06-29T18-06",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-29T18-06/_report.md\n- 레오: 확정된 SEO 전략과 편집 흐름(Timeline)에 따라 Phase 1 영상 제작을 즉시 시작하고, 다음 주 발행 일정을 확정하여 보고하라.\n- Instagram: 최종 확정된 디자인 시스템(KV/썸네일)과 카피를 기반으로 Reels 및 피드용 마케팅 콘텐츠 시안을 제작하고, 최적의 게시 시간 전략을 반영하\n- Designer: 확정된 Key Visual 및 디자인 시스템을 활용하여 유튜브 썸네일과 Instagram 포맷별 마케팅 비주얼을 최종 점검하고 발행에 적합한 상\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 확정된 SEO 전략과 편집 흐름(Timeline)에 따라 Phase 1 영상 제작을 즉시 시작하고, 다음 주 발행 일정을 확정하여 보고하라.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 *",
+      "completedAt": "2026-06-29T18:11:03.254Z"
+    },
+    {
+      "id": "20260629180801-uqd1",
+      "title": "영상 시각화 자산 라이브러리 구축 (Designer/편집자)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-29T18:08:01.235Z",
+      "status": "done",
+      "sessionDir": "2026-06-29T18-06",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-29T18-06/_report.md\n- 레오: 확정된 SEO 전략과 편집 흐름(Timeline)에 따라 Phase 1 영상 제작을 즉시 시작하고, 다음 주 발행 일정을 확정하여 보고하라.\n- Instagram: 최종 확정된 디자인 시스템(KV/썸네일)과 카피를 기반으로 Reels 및 피드용 마케팅 콘텐츠 시안을 제작하고, 최적의 게시 시간 전략을 반영하\n- Designer: 확정된 Key Visual 및 디자인 시스템을 활용하여 유튜브 썸네일과 Instagram 포맷별 마케팅 비주얼을 최종 점검하고 발행에 적합한 상\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 확정된 SEO 전략과 편집 흐름(Timeline)에 따라 Phase 1 영상 제작을 즉시 시작하고, 다음 주 발행 일정을 확정하여 보고하라.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 *",
+      "completedAt": "2026-06-29T18:11:03.255Z"
+    },
+    {
+      "id": "20260629180801-w6dp",
+      "title": "녹음 세션 예약 및 진행 (출연진)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-29T18:08:01.235Z",
+      "status": "done",
+      "sessionDir": "2026-06-29T18-06",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-29T18-06/_report.md\n- 레오: 확정된 SEO 전략과 편집 흐름(Timeline)에 따라 Phase 1 영상 제작을 즉시 시작하고, 다음 주 발행 일정을 확정하여 보고하라.\n- Instagram: 최종 확정된 디자인 시스템(KV/썸네일)과 카피를 기반으로 Reels 및 피드용 마케팅 콘텐츠 시안을 제작하고, 최적의 게시 시간 전략을 반영하\n- Designer: 확정된 Key Visual 및 디자인 시스템을 활용하여 유튜브 썸네일과 Instagram 포맷별 마케팅 비주얼을 최종 점검하고 발행에 적합한 상\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 확정된 SEO 전략과 편집 흐름(Timeline)에 따라 Phase 1 영상 제작을 즉시 시작하고, 다음 주 발행 일정을 확정하여 보고하라.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 *",
+      "completedAt": "2026-06-29T18:11:03.255Z"
+    },
+    {
+      "id": "20260629180801-o4ko",
+      "title": "1차 편집본 제작 시작 (편집자)",
+      "description": "자동 등록 (레오 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "youtube"
+      ],
+      "createdAt": "2026-06-29T18:08:01.236Z",
+      "status": "done",
+      "sessionDir": "2026-06-29T18-06",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-06-29T18-06/_report.md\n- 레오: 확정된 SEO 전략과 편집 흐름(Timeline)에 따라 Phase 1 영상 제작을 즉시 시작하고, 다음 주 발행 일정을 확정하여 보고하라.\n- Instagram: 최종 확정된 디자인 시스템(KV/썸네일)과 카피를 기반으로 Reels 및 피드용 마케팅 콘텐츠 시안을 제작하고, 최적의 게시 시간 전략을 반영하\n- Designer: 확정된 Key Visual 및 디자인 시스템을 활용하여 유튜브 썸네일과 Instagram 포맷별 마케팅 비주얼을 최종 점검하고 발행에 적합한 상\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 확정된 SEO 전략과 편집 흐름(Timeline)에 따라 Phase 1 영상 제작을 즉시 시작하고, 다음 주 발행 일정을 확정하여 보고하라.\n> 🔧 **도구 실행**: `my_videos_check.py (prefetch)`\n> 📊 *",
+      "completedAt": "2026-06-29T18:11:03.256Z"
     }
   ]
 }
