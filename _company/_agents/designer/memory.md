@@ -490,3 +490,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-29] Writer가 제공한 최종 시각 지시서(`final_animator_specsheet.md` 기반)를 바탕으로 Key Visuals 및 썸네일 제작을 즉시 시작하고, 디자인 시스템 규칙(Pain $ightarrow$ Gain 색상/레이아웃)을 철저히 반영하여 자산 제작을 개시하라. → 산출물 sessions/2026-06-29T01-07/designer.md
 - [2026-06-29] 새로 정의된 디자인 시스템 모듈(`DesignSystem_Modular_Templates_V2.md`)을 기반으로, 확정된 스토리보드 흐름에 맞춰 다음 영상의 Key Visuals 및 썸네일 제작 지시서를 즉시 업데이트하고 시각 자산 제작을 시작하라. → 산출물 sessions/2026-06-29T01-22/designer.md
 - [2026-06-29] Writer와 코다리가 확정한 최종 시각 지시서(`final_animator_specsheet.md`)와 디자인 시스템 규칙(Pain $ightarrow$ Gain 색상/레이아웃)을 철저히 반영하여, 다음 콘텐츠에 필요한 Key Visuals 및 썸네일 제작을 즉시 시작하고 자산 제작을 개시하라. → 산출물 sessions/2026-06-29T01-37/designer.md
+- [2026-06-29] 구축된 디자인 시스템 모듈(Pain $ightarrow$ Gain 프레임워크 적용)을 기반으로 다음 콘텐츠의 Key Visuals 및 썸네일 제작을 즉시 시작하세요. → 산출물 sessions/2026-06-29T01-52/designer.md

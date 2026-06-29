@@ -463,3 +463,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-06-29] * **병목 지점 (Bottleneck):** 현재의 `diagnosisController`는 **"하나의 진단 점수(Single Score)"**를 산출하는 데 초점을 맞추고 있습니다 . 하지만 Designer가 제안한 3가지 모듈은 각각 다른 구조와 데이터 패턴을 요구합니다. _(근거: sessions/2026-05-19T09:57)_
 - [2026-06-29] description: string; // e.g., "현실적인 보컬 레슨의 부재" _(근거: Designer's Need)_
 - [2026-06-29] value: number; // 측정 가능한 개선 수치 (예: +5톤) _(근거: Template A)_
+- [2026-06-29] 7 description: string; // e.g., "현실적인 보컬 레슨의 부재" _(근거: Designer's Need)_
+- [2026-06-29] 7 description: string; // e.g., "현실적인 보컬 레슨의 부재" _(근거: Designer's Need)_
+- [2026-06-29] 14 value: number; // 측정 가능한 개선 수치 (예: +5톤) _(근거: Template A)_
