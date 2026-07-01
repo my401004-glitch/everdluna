@@ -419,3 +419,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-01] Video 4에 대한 사운드 디자인 및 비주얼 가이드라인(VADP)에 기반하여 E2E 테스트 케이스를 실행하고 사운드 무결성을 최종 검증하라. → 산출물 sessions/2026-07-01T05-25/developer.md
 - [2026-07-01] 레오가 확보한 시장 데이터(Pain Point)를 바탕으로 `schema.sql`의 데이터 스키마 확장 및 RBAC 검증 로직을 즉시 구현하고 테스트할 것. → 산출물 sessions/2026-07-01T05-40/developer.md
 - [2026-07-01] Video 5에 적용될 콘텐츠의 KPI(CTR, 시청 지속 시간 등) 추적 로직이 시스템에 정확히 반영되었는지 최종 검증하고, 해당 데이터 수집 및 보고 기능의 무결성을 확인하라. → 산출물 sessions/2026-07-01T06-10/developer.md
+- [2026-07-01] Video 5의 KPI 추적 로직(Hook Shock Factor CTR, Gap Acknowledgment Rate 등)을 반영한 DB 스키마 확장(`user_activity`, `kpi_metrics` 테이블)을 즉시 구현하고 테스트를 완료하라. → 산출물 sessions/2026-07-01T06-25/developer.md
