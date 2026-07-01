@@ -544,3 +544,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-01] Video 4의 최종 편집 타임라인 및 VADP 규칙을 준수하여 최종 비주얼 에셋 제작(썸네일, Reels Mockup 등)을 즉시 착수하라. → 산출물 sessions/2026-07-01T04-14/designer.md
 - [2026-07-01] 선정된 최적의 콘텐츠 컨셉에 맞춰, 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)과 VADP 규칙을 적용한 최종 마케팅 에셋(썸네일 및 Reels Mockup) 제작을 위한 디자인 브리프를 준비하라. → 산출물 sessions/2026-07-01T04-55/designer.md
 - [2026-07-01] Writer가 완성할 스크립트의 핵심 메시지와 Researcher의 근거를 기반으로, 브랜드 비주얼 시스템(Dark Blue/Accent Yellow) 및 VADP 규칙을 적용한 유튜브 썸네일과 Instagram Reels Mockup 디자인을 즉시 제작하라. → 산출물 sessions/2026-07-01T05-10/designer.md
+- [2026-07-01] 최종 확정된 전략과 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)을 적용하여 Video 5에 필요한 최종 유튜브 썸네일 및 Instagram Reels Mockup 디자인 브리프를 준비하라. → 산출물 sessions/2026-07-01T05-55/designer.md
