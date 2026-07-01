@@ -540,3 +540,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-06-29] 확정된 마케팅 비주얼 시스템 표준(Template Specification V2)과 컬러 가이드라인을 기반으로, Video 4에 사용될 최종 썸네일 및 인스타그램용 Reels 포맷별 Mockup 디자인을 즉시 제작하라. → 산출물 sessions/2026-06-29T22-36/designer.md
 - [2026-06-29] 확정된 마케팅 비주얼 시스템 표준(VADP)을 기반으로 Writer의 스크립트와 Editor의 사운드 디자인 방향성을 반영한 Video 4의 최종 편집 타임라인 및 시각적 가이드라인 초안을 제작하라. → 산출물 sessions/2026-06-29T22-51/designer.md
 - [2026-06-30] Writer가 제공한 스토리라인과 VADP 규칙을 기반으로 Video 4의 최종 썸네일 및 인스타그램 Reels Mockup 디자인을 즉시 제작하고, 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)을 엄격히 준수하라. → 산출물 sessions/2026-06-30T00-21/designer.md
+- [2026-07-01] writer가 작성한 스크립트를 기반으로, 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)과 VADP 규칙을 적용하여 해당 영상의 최종 썸네일 및 인스타그램 Reels Mockup 디자인 시안을 제작하라. → 산출물 sessions/2026-07-01T03-45/designer.md
