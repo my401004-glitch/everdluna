@@ -546,3 +546,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-01] Writer가 완성할 스크립트의 핵심 메시지와 Researcher의 근거를 기반으로, 브랜드 비주얼 시스템(Dark Blue/Accent Yellow) 및 VADP 규칙을 적용한 유튜브 썸네일과 Instagram Reels Mockup 디자인을 즉시 제작하라. → 산출물 sessions/2026-07-01T05-10/designer.md
 - [2026-07-01] 최종 확정된 전략과 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)을 적용하여 Video 5에 필요한 최종 유튜브 썸네일 및 Instagram Reels Mockup 디자인 브리프를 준비하라. → 산출물 sessions/2026-07-01T05-55/designer.md
 - [2026-07-01] 최종 확정된 비주얼 시스템(Dark Blue/Accent Yellow)과 Video 5의 스토리라인을 기반으로 유튜브 썸네일 및 Instagram Reels Mockup 디자인을 즉시 완성하여 제공하라. → 산출물 sessions/2026-07-01T06-10/designer.md
+- [2026-07-01] Video 5에 필요한 최종 유튜브 썸네일 및 Instagram Reels Mockup 디자인 에셋을, 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)과 스토리라인을 기반으로 즉시 제작하라. → 산출물 sessions/2026-07-01T06-25/designer.md

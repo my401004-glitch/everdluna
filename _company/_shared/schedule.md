@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 1. 오후 3:15:19_
+_업데이트: 2026. 7. 1. 오후 3:28:25_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 7. 1. 오후 3:15:19_
 - [2026-06-29] Designer가 제작한 콘텐츠 템플릿 패키지(`Content_Templates_Package_V1.zip`)를 활용하여 수립된 마케팅 운영 플레이북에 따라 첫 주 마케팅 콘텐츠 발행을 준비하라. → 산출물 sessions/2026-06-29T18-21/instagram.md
 - [2026-07-01] Designer가 제작한 Mockup을 활용하여 확정된 마케팅 운영 플레이북에 따라 첫 주 마케팅 콘텐츠 발행(Reels 및 피드)을 즉시 실행하라. → 산출물 sessions/2026-07-01T05-25/instagram.md
 ### 🎨 Designer
-- [2026-07-01] Writer가 완성할 스크립트의 핵심 메시지와 Researcher의 근거를 기반으로, 브랜드 비주얼 시스템(Dark Blue/Accent Yellow) 및 VADP 규칙을 적용한 유튜브 썸네일과 Instagram Reels Mockup 디자인을 즉시 제작하라. → 산출물 sessions/2026-07-01T05-10/designer.md
 - [2026-07-01] 최종 확정된 전략과 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)을 적용하여 Video 5에 필요한 최종 유튜브 썸네일 및 Instagram Reels Mockup 디자인 브리프를 준비하라. → 산출물 sessions/2026-07-01T05-55/designer.md
 - [2026-07-01] 최종 확정된 비주얼 시스템(Dark Blue/Accent Yellow)과 Video 5의 스토리라인을 기반으로 유튜브 썸네일 및 Instagram Reels Mockup 디자인을 즉시 완성하여 제공하라. → 산출물 sessions/2026-07-01T06-10/designer.md
+- [2026-07-01] Video 5에 필요한 최종 유튜브 썸네일 및 Instagram Reels Mockup 디자인 에셋을, 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)과 스토리라인을 기반으로 즉시 제작하라. → 산출물 sessions/2026-07-01T06-25/designer.md
 ### 💻 코다리
-- [2026-07-01] Video 4에 대한 사운드 디자인 및 비주얼 가이드라인(VADP)에 기반하여 E2E 테스트 케이스를 실행하고 사운드 무결성을 최종 검증하라. → 산출물 sessions/2026-07-01T05-25/developer.md
 - [2026-07-01] 레오가 확보한 시장 데이터(Pain Point)를 바탕으로 `schema.sql`의 데이터 스키마 확장 및 RBAC 검증 로직을 즉시 구현하고 테스트할 것. → 산출물 sessions/2026-07-01T05-40/developer.md
 - [2026-07-01] Video 5에 적용될 콘텐츠의 KPI(CTR, 시청 지속 시간 등) 추적 로직이 시스템에 정확히 반영되었는지 최종 검증하고, 해당 데이터 수집 및 보고 기능의 무결성을 확인하라. → 산출물 sessions/2026-07-01T06-10/developer.md
+- [2026-07-01] Video 5의 KPI 추적 로직(Hook Shock Factor CTR, Gap Acknowledgment Rate 등)을 반영한 DB 스키마 확장(`user_activity`, `kpi_metrics` 테이블)을 즉시 구현하고 테스트를 완료하라. → 산출물 sessions/2026-07-01T06-25/developer.md
 ### 💼 현빈
 - [2026-06-29] Researcher가 제시한 트렌드 분석 결과를 바탕으로, Video 4의 목표 조회수 및 전환율 달성을 위한 구체적인 KPI와 수익화 전략(Pain $ ightarrow $ Gain 프레임워크 적용)을 수립하라. → 산출물 sessions/2026-06-29T23-51/business.md
 - [2026-06-30] Researcher가 제공한 Gap Score 데이터를 바탕으로 Video 4의 수익화 전략에 대한 초기 가설과 KPI 목표를 설정하고, 이를 Writer와 Designer에게 전달할 마케팅 프레임워크 초안을 준비하라. → 산출물 sessions/2026-06-30T00-06/business.md
