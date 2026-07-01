@@ -1,0 +1,27 @@
+# Video 5 Master Design Template V1.0 (For Thumbnail & Reels)
+
+## I. 시스템 정의 및 원칙
+*   **Primary Color (신뢰):** Dark Blue (#0A2463)
+*   **Accent Color (행동/경고):** Accent Yellow (#FFD700)
+*   **Typography:** Title: Montserrat Bold / Body: Noto Sans KR
+*   **핵심 원칙:** Pain $\rightarrow$ Gain 서사 구조를 시각적으로 분리하고, 데이터 기반의 증명을 핵심 가치로 한다.
+
+## II. 🖼️ YouTube Thumbnail Template (16:9) Spec
+**목표 후크:** [데이터 충격형] "당신이 지금 '노력'에만 집중한다면..."
+*   **레이아웃:** 좌측 Pain Zone(30%) | 중앙 Transition Zone(10%) | 우측 Gain Zone(60%).
+*   **[Pain Zone] (좌측):**
+    *   배경: 어두운 그라데이션 Dark Blue.
+    *   요소 1: 경고 아이콘 + "⚠️ 위험 신호" (Accent Yellow).
+    *   요소 2: 충격 수치 (예: 90% 에너지 낭비) - Montserrat Bold, Size 60pt+, Accent Yellow. [근거: Designer 검증된 지식]
+    *   카피: "이대로는 안 됩니다." (White/Montserrat).
+*   **[Gain Zone] (우측):**
+    *   배경: Dark Blue와 대비되는 밝은 그라데이션 영역 (#1E489D).
+    *   요소 1: 핵심 키워드 (예: AI 공명 주파수 진단) - Montserrat Bold, Size 70pt+, White.
+    *   요소 2: 이득 수치 (예: ROI +3배 성장) - Montserrat Bold, Size 80pt+, Accent Yellow. [근거: Designer 검증된 지식]
+
+## III. 📱 Instagram Reels Template (9:16) Spec
+**목표 후크:** 단일 강력한 질문 제시로 시선 고정.
+*   **레이아웃:** 상단 Hook Title(30%) $\rightarrow$ 중앙 내용 설명(50%) $\rightarrow$ 하단 CTA 바(20%).
+*   **[상단] (Hook):** "당신의 목소리는 지금 위험합니다." - Montserrat Bold, Size 80pt+, Accent Yellow. [근거: Designer 검증된 지식]
+*   **[중앙] (Content):** Pain $\rightarrow$ Gain을 간결한 리스트(3~4줄)로 구조화. Noto Sans KR 사용. Dark Blue 배경에 흰색으로 배치하여 가독성을 극대화.
+*   **[하단] (CTA):** "👉 프로필에서 진단을 확인하세요" - Accent Yellow 배경, Dark Blue 텍스트.
