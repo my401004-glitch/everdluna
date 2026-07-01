@@ -402,3 +402,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-07-01] 선정된 '[Impossible Score] - '감각' vs '데이터'의 충돌' 컨셉에 맞춰, 시청자의 감성적 고통(Pain)을 데이터 기반 성장 증명(Gain)으로 치환하는 스토리텔링이 극대화된 최종 영상 스크립트를 완성하라. → 산출물 sessions/2026-07-01T05-10/writer.md
 - [2026-07-01] 확정된 Hook 및 스토리텔링 전략을 기반으로 Pain $ightarrow$ Gain 프레임워크를 완벽하게 적용하여 Video 5의 스크립트 및 핵심 카피 초안을 작성하라. → 산출물 sessions/2026-07-01T05-55/writer.md
 - [2026-07-01] Video 5의 최종 스크립트와 핵심 카피를 확정된 Pain $ightarrow$ Gain 프레임워크에 따라 영상 제작에 최적화되도록 최종 검토하고, 필요한 경우 Hook 및 전환 문구를 강화하여 수정하라. → 산출물 sessions/2026-07-01T06-10/writer.md
+- [2026-07-01] 확정된 비주얼 시스템과 Pain $ightarrow$ Gain 스토리텔링 구조에 맞춰, Designer가 완성할 마스터 에셋에 들어갈 모든 썸네일 및 Instagram Reels 카피라이팅을 최적화하여 제작하라. → 산출물 sessions/2026-07-01T06-40/writer.md
