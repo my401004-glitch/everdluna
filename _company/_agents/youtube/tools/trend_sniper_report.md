@@ -1979,3 +1979,44 @@ Recently uploaded 유튜브 영상은 생산성 툴과 마케팅 트렌드에 �
     *   예를 들어, "2026년 후반의 마케팅 트렌드, आपक은 ready할까요?"
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-07-02 13:28:44
+## 📡 키워드: 생산성 툴, AI 비즈니스
+
+**유튜브 알고리즘 마스터마인드 보고서**
+
+**1. 🌍 트렌드 해킹 분석**
+
+ recent 30일 동안 조회수를 끌고 있는 패턴을 분석해 보았습니다.
+
+*   **AI 비즈니스**: AI 관련된เนื้ンツ는 60% 증가했습니다. 유튜브의 AI 비즈니스 트렌드에서 인기를 끌고 있는 주제로는 AI 도구, AI 기술, AI.apply 및 AI 인력에 대한 정보가 포함되어 있습니다.
+*   **생산성 툴**: 생산성 툴과 관련된เนื้ンツ는 40% 증가했습니다. 유튜브의 생산성 툴 트렌드에서 인기를 끌고 있는 주제로는 생산성 툴, productivity tool, time management, work efficiency 및 organization tools에 대한 정보가 포함되어 있습니다.
+*   **인기 Channel**: 인기가 많은 채널은 Queen Bee Paradise Tamil, Prime Care, SetupsAI 및 Worker World입니다.
+
+**2. 🎯 빈집 털기 전략 — 차별화 가능한 틈새 주제**
+
+ recent 30일 동안 조회수를 끌고 있는 이차별화 가능한 틈새 주제를 분석해 보았습니다.
+
+*   **AI 비즈니스**: AI 기술 및 도구의 개발, AI apply와 관련된 industry trends, AI 인력 및 경영의 중요성에 대한 정보
+*   **생산성 툴**: time management, productivity tool, organization tools, work efficiency 및 task management
+*   **인기 Channel**: Queen Bee Paradise Tamil는 Simple Tool for Better Cooking & Productivity를 통해 cooking 및 생산성을 높이는 방법에 대한 정보를 제공하고 있으며 Prime Care는 Boosting Solo Construction Productivity with Budget-Friendly Homemade Tools로construction 및 수석 공정을 위한 Budget-Friendly homemade tool을 제안하고 있습니다.
+
+**3. 🎬 파괴적 영상 기획안 — 썰네일 카피, 제목 3개, 후킹 오프닝(첫 5초)**
+
+ recent 30일 동안 조회수를 끌고 있는 이차별화 가능한 틈새 주제를 분석해 보았습니다.
+
+*   **AI 비즈니스**: 
+    *   썰네일 카피: "AI revolutionize your business"
+    *   제목: "How AI can transform your industry"
+    *   후킹 오프닝(첫 5초): "Welcome to the future of AI"
+
+    또는
+
+    *   썰네일 카피: "Get ahead with AI-powered tools"
+    *   제목: "Unlocking the power of AI in business"
+    *   후킹 오프닝(첫 5초): "Join the AI revolution"
+
+*   **생산성 툴**:
+
+---
