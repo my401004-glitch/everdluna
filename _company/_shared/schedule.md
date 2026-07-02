@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 2. 오전 1:04:44_
+_업데이트: 2026. 7. 2. 오전 10:42:45_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -21,9 +21,9 @@ _업데이트: 2026. 7. 2. 오전 1:04:44_
 - [2026-07-01] Video 5에 적용될 콘텐츠의 KPI(CTR, 시청 지속 시간 등) 추적 로직이 시스템에 정확히 반영되었는지 최종 검증하고, 해당 데이터 수집 및 보고 기능의 무결성을 확인하라. → 산출물 sessions/2026-07-01T06-10/developer.md
 - [2026-07-01] Video 5의 KPI 추적 로직(Hook Shock Factor CTR, Gap Acknowledgment Rate 등)을 반영한 DB 스키마 확장(`user_activity`, `kpi_metrics` 테이블)을 즉시 구현하고 테스트를 완료하라. → 산출물 sessions/2026-07-01T06-25/developer.md
 ### 💼 현빈
-- [2026-06-29] Researcher가 제시한 트렌드 분석 결과를 바탕으로, Video 4의 목표 조회수 및 전환율 달성을 위한 구체적인 KPI와 수익화 전략(Pain $ ightarrow $ Gain 프레임워크 적용)을 수립하라. → 산출물 sessions/2026-06-29T23-51/business.md
 - [2026-06-30] Researcher가 제공한 Gap Score 데이터를 바탕으로 Video 4의 수익화 전략에 대한 초기 가설과 KPI 목표를 설정하고, 이를 Writer와 Designer에게 전달할 마케팅 프레임워크 초안을 준비하라. → 산출물 sessions/2026-06-30T00-06/business.md
 - [2026-07-01] Video 5 제작을 위한 수익화 목표(Pain $ightarrow$ Gain 증명) 달성 여부를 측정할 핵심 KPI 지표를 설정하고, 이 지표들이 현재 시스템 데이터와 연동되는지 검토하라. → 산출물 sessions/2026-07-01T06-10/business.md
+- [2026-07-02] 이전 영상들의 KPI(CTR, 시청 지속 시간 등) 데이터를 분석하여, 다음 콘텐츠에 적용할 수익화 전략 및 목표 설정안을 도출하라. → 자격증명 부족으로 차단됨
 ### 📱 영숙
 - [2026-06-29] 현재까지의 자율 사이클 및 CEO의 최신 액션 목록을 정리하여 다음 명령을 기다리는 상태로 보고할 것 → 산출물 sessions/2026-06-29T17-06/secretary.md
 - [2026-06-29] youtube, instagram, designer 에이전트 간의 콘텐츠 제작 및 디자인 작업의 진행 상황을 추적하고, 다음 주 목표 달성을 위한 통합 일정을 관리하여 보고하라. → 산출물 sessions/2026-06-29T18-06/secretary.md
