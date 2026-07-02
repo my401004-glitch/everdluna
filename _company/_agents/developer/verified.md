@@ -514,3 +514,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-01] 2. **데이터 모델 (KPI):** Growth, Engagement, Monetization KPI를 추적하기 위한 `schema.sql`과 데이터 수집 로직의 구조는 이미 설계되었습니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-07-01] 3. **시스템 상태:** 시스템 아키텍처와 핵심 API 엔드포인트(`GET /api/v1/diagnosis_score`)의 뼈대는 준비되었습니다. _(근거: sessions/2026-05-19T09:57)_
 - [2026-07-01] 36: # 3. result_data 스키마 검증 및 KPI 범위 체크 _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-07-02] 지난 세션 기록과 코다리 개인 메모리에 따르면, `Growth`, `Engagement`, `Monetization` KPI는 `Diagnosis_Results`와 별도의 `KPI_Metrics` 테이블에 연관되어 저장하도록 설계되었습니다 . _(근거: sessions/2026-05-18T43/developer.md)_

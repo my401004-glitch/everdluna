@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 2. 오후 3:23:16_
+_업데이트: 2026. 7. 2. 오후 3:37:22_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 7. 2. 오후 3:23:16_
 - [2026-06-29] Designer가 제작한 콘텐츠 템플릿 패키지(`Content_Templates_Package_V1.zip`)를 활용하여 수립된 마케팅 운영 플레이북에 따라 첫 주 마케팅 콘텐츠 발행을 준비하라. → 산출물 sessions/2026-06-29T18-21/instagram.md
 - [2026-07-01] Designer가 제작한 Mockup을 활용하여 확정된 마케팅 운영 플레이북에 따라 첫 주 마케팅 콘텐츠 발행(Reels 및 피드)을 즉시 실행하라. → 산출물 sessions/2026-07-01T05-25/instagram.md
 ### 🎨 Designer
-- [2026-07-02] Writer가 제공한 기고문을 바탕으로 확정된 랜딩 페이지 핵심 카피라이팅과 Dark Blue/Accent Yellow 시스템을 적용한 디자인 Mockup 파일(PSD/Figma)을 최종 출력하라. → 산출물 sessions/2026-07-02T05-27/designer.md
 - [2026-07-02] Writer가 제공한 스크립트와 확정된 마스터 디자인 에셋 패키지(`video5_master_asset_package_v1.zip`)를 활용하여 실제 영상 콘텐츠 제작에 최적화된 최종 편집 가이드라인(Final Editing Guideline)을 완성하라. → 산출물 sessions/2026-07-02T05-42/designer.md
 - [2026-07-02] Designer님은 Video 5의 최종 스크립트와 마스터 디자인 에셋 패키지를 기반으로 실제 영상 콘텐츠 제작에 최적화된 최종 편집 가이드라인(Final Editing Guideline)을 확정하고 모든 비주얼 규칙을 명문화하라. → 산출물 sessions/2026-07-02T06-19/designer.md
+- [2026-07-02] Video 5에 적용될 최종 스크립트 및 마스터 디자인 에셋 패키지(`video5_master_asset_package_v1.zip`)를 기반으로 실제 영상 콘텐츠 제작에 최적화된 최종 편집 가이드라인(Final Editing Guideline)을 확정하고 모든 비주얼 규칙을 명문화하라. → 산출물 sessions/2026-07-02T06-34/designer.md
 ### 💻 코다리
-- [2026-07-01] Video 5의 KPI 추적 로직(Hook Shock Factor CTR, Gap Acknowledgment Rate 등)을 반영한 DB 스키마 확장(`user_activity`, `kpi_metrics` 테이블)을 즉시 구현하고 테스트를 완료하라. → 산출물 sessions/2026-07-01T06-25/developer.md
 - [2026-07-02] Video 5에 적용될 KPI 추적 로직(Hook Shock Factor CTR 등)이 시스템에 정확히 반영되었는지 최종 검증하고, 해당 데이터 수집 및 보고 기능의 무결성을 확인하라. → 산출물 sessions/2026-07-02T04-42/developer.md
 - [2026-07-02] Video 5에 적용될 KPI 추적 로직(Hook Shock Factor CTR 등)이 시스템에 정확히 반영되었는지 최종 무결성을 점검하고, 영상 제작 시 데이터 연동 및 보고 기능의 준비 상태를 확인하라. → 산출물 sessions/2026-07-02T05-42/developer.md
+- [2026-07-02] Video 5에 적용될 KPI 추적 로직(`user_activity`, `kpi_metrics` 테이블)이 시스템에 정확히 반영되었는지 최종 무결성을 점검하고, 영상 제작 시 데이터 연동 및 보고 기능의 준비 상태를 확인하라. → 산출물 sessions/2026-07-02T06-34/developer.md
 ### 💼 현빈
 - [2026-06-30] Researcher가 제공한 Gap Score 데이터를 바탕으로 Video 4의 수익화 전략에 대한 초기 가설과 KPI 목표를 설정하고, 이를 Writer와 Designer에게 전달할 마케팅 프레임워크 초안을 준비하라. → 산출물 sessions/2026-06-30T00-06/business.md
 - [2026-07-01] Video 5 제작을 위한 수익화 목표(Pain $ightarrow$ Gain 증명) 달성 여부를 측정할 핵심 KPI 지표를 설정하고, 이 지표들이 현재 시스템 데이터와 연동되는지 검토하라. → 산출물 sessions/2026-07-01T06-10/business.md
