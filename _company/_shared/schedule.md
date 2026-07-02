@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 2. 오후 4:37:27_
+_업데이트: 2026. 7. 2. 오후 4:50:43_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,9 +13,9 @@ _업데이트: 2026. 7. 2. 오후 4:37:27_
 - [2026-06-29] Designer가 제작한 콘텐츠 템플릿 패키지(`Content_Templates_Package_V1.zip`)를 활용하여 수립된 마케팅 운영 플레이북에 따라 첫 주 마케팅 콘텐츠 발행을 준비하라. → 산출물 sessions/2026-06-29T18-21/instagram.md
 - [2026-07-01] Designer가 제작한 Mockup을 활용하여 확정된 마케팅 운영 플레이북에 따라 첫 주 마케팅 콘텐츠 발행(Reels 및 피드)을 즉시 실행하라. → 산출물 sessions/2026-07-01T05-25/instagram.md
 ### 🎨 Designer
-- [2026-07-02] Video 5에 적용될 최종 스크립트 및 마스터 디자인 에셋 패키지(`video5_master_asset_package_v1.zip`)를 기반으로 실제 영상 콘텐츠 제작에 최적화된 최종 편집 가이드라인(Final Editing Guideline)을 확정하고 모든 비주얼 규칙을 명문화하라. → 산출물 sessions/2026-07-02T06-34/designer.md
 - [2026-07-02] Writer가 제공할 다양한 카피 변주(Variation)에 맞춰, 랜딩 페이지 핵심 요소(CTA 배경색, 헤드라인 배치 등)의 모듈형 시각 변주(3가지 최소)를 디자인 시스템 내에서 즉시 구현 가능한 Figma/PSD 형태로 설계하라. → 산출물 sessions/2026-07-02T07-19/designer.md
 - [2026-07-02] A/B 테스트를 통해 도출된 비주얼 변수(Variation A, B, C)가 실제 영상 편집 단계에서 적용될 때의 최종 편집 가이드라인(`Final Editing Guideline`)을 완성하고 모든 시각적 규칙을 명문화하라. → 산출물 sessions/2026-07-02T07-34/designer.md
+- [2026-07-02] 레오가 제공한 후크와 최종 편집 가이드라인(Final Editing Guideline V1.0)을 통합하여, 첫 번째 영상 제작에 즉시 투입 가능한 마스터 템플릿(Figma/PSD 기반)을 완성하라. → 산출물 sessions/2026-07-02T07-49/designer.md
 ### 💻 코다리
 - [2026-07-02] Video 5에 적용될 KPI 추적 로직(Hook Shock Factor CTR 등)이 시스템에 정확히 반영되었는지 최종 검증하고, 해당 데이터 수집 및 보고 기능의 무결성을 확인하라. → 산출물 sessions/2026-07-02T04-42/developer.md
 - [2026-07-02] Video 5에 적용될 KPI 추적 로직(Hook Shock Factor CTR 등)이 시스템에 정확히 반영되었는지 최종 무결성을 점검하고, 영상 제작 시 데이터 연동 및 보고 기능의 준비 상태를 확인하라. → 산출물 sessions/2026-07-02T05-42/developer.md

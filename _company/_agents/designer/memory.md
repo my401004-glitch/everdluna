@@ -559,3 +559,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-02] Video 5에 적용될 최종 스크립트 및 마스터 디자인 에셋 패키지(`video5_master_asset_package_v1.zip`)를 기반으로 실제 영상 콘텐츠 제작에 최적화된 최종 편집 가이드라인(Final Editing Guideline)을 확정하고 모든 비주얼 규칙을 명문화하라. → 산출물 sessions/2026-07-02T06-34/designer.md
 - [2026-07-02] Writer가 제공할 다양한 카피 변주(Variation)에 맞춰, 랜딩 페이지 핵심 요소(CTA 배경색, 헤드라인 배치 등)의 모듈형 시각 변주(3가지 최소)를 디자인 시스템 내에서 즉시 구현 가능한 Figma/PSD 형태로 설계하라. → 산출물 sessions/2026-07-02T07-19/designer.md
 - [2026-07-02] A/B 테스트를 통해 도출된 비주얼 변수(Variation A, B, C)가 실제 영상 편집 단계에서 적용될 때의 최종 편집 가이드라인(`Final Editing Guideline`)을 완성하고 모든 시각적 규칙을 명문화하라. → 산출물 sessions/2026-07-02T07-34/designer.md
+- [2026-07-02] 레오가 제공한 후크와 최종 편집 가이드라인(Final Editing Guideline V1.0)을 통합하여, 첫 번째 영상 제작에 즉시 투입 가능한 마스터 템플릿(Figma/PSD 기반)을 완성하라. → 산출물 sessions/2026-07-02T07-49/designer.md
