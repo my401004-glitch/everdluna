@@ -1,21 +1,21 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 2. 오후 4:23:48_
+_업데이트: 2026. 7. 2. 오후 4:37:27_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-07-02] Writer가 제공한 Video 5 스크립트와 Designer의 Blueprint를 기반으로 실제 영상 콘텐츠 제작을 위한 최종 제작 일정(Timeline) 및 세부 단계(Step-by-Step Plan)를 수립하라. → 산출물 sessions/2026-07-02T05-42/youtube.md
 - [2026-07-02] 레오님은 Writer와 Designer가 제공한 최종 스크립트 및 가이드라인을 바탕으로 Video 5의 최종 제작 일정(Timeline)과 세부 단계(Step-by-Step Plan)를 확정하고, 이를 기반으로 유튜브 콘텐츠 발행 계획을 수립하라. → 산출물 sessions/2026-07-02T06-19/youtube.md
 - [2026-07-02] Writer와 Designer가 제작할 A/B 테스트용 카피 및 비주얼 모듈을 기반으로, 유튜브 쇼츠/릴스 3개 채널에 대한 구체적인 A/B 테스트 실행 계획과 콘텐츠 배포 체크리스트를 수립하라. → 산출물 sessions/2026-07-02T07-19/youtube.md
+- [2026-07-02] Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목 및 후크 초안을 세 가지 페르소나별로 제작하고 배포를 시작할 준비를 완료하라. → 산출물 sessions/2026-07-02T07-34/youtube.md
 ### 📷 Instagram
 - [2026-06-29] 최종 확정된 디자인 시스템(KV/썸네일)과 카피를 기반으로 Reels 및 피드용 마케팅 콘텐츠 시안을 제작하고, 최적의 게시 시간 전략을 반영하여 발행 준비를 완료하라. → 산출물 sessions/2026-06-29T18-06/instagram.md
 - [2026-06-29] Designer가 제작한 콘텐츠 템플릿 패키지(`Content_Templates_Package_V1.zip`)를 활용하여 수립된 마케팅 운영 플레이북에 따라 첫 주 마케팅 콘텐츠 발행을 준비하라. → 산출물 sessions/2026-06-29T18-21/instagram.md
 - [2026-07-01] Designer가 제작한 Mockup을 활용하여 확정된 마케팅 운영 플레이북에 따라 첫 주 마케팅 콘텐츠 발행(Reels 및 피드)을 즉시 실행하라. → 산출물 sessions/2026-07-01T05-25/instagram.md
 ### 🎨 Designer
-- [2026-07-02] Designer님은 Video 5의 최종 스크립트와 마스터 디자인 에셋 패키지를 기반으로 실제 영상 콘텐츠 제작에 최적화된 최종 편집 가이드라인(Final Editing Guideline)을 확정하고 모든 비주얼 규칙을 명문화하라. → 산출물 sessions/2026-07-02T06-19/designer.md
 - [2026-07-02] Video 5에 적용될 최종 스크립트 및 마스터 디자인 에셋 패키지(`video5_master_asset_package_v1.zip`)를 기반으로 실제 영상 콘텐츠 제작에 최적화된 최종 편집 가이드라인(Final Editing Guideline)을 확정하고 모든 비주얼 규칙을 명문화하라. → 산출물 sessions/2026-07-02T06-34/designer.md
 - [2026-07-02] Writer가 제공할 다양한 카피 변주(Variation)에 맞춰, 랜딩 페이지 핵심 요소(CTA 배경색, 헤드라인 배치 등)의 모듈형 시각 변주(3가지 최소)를 디자인 시스템 내에서 즉시 구현 가능한 Figma/PSD 형태로 설계하라. → 산출물 sessions/2026-07-02T07-19/designer.md
+- [2026-07-02] A/B 테스트를 통해 도출된 비주얼 변수(Variation A, B, C)가 실제 영상 편집 단계에서 적용될 때의 최종 편집 가이드라인(`Final Editing Guideline`)을 완성하고 모든 시각적 규칙을 명문화하라. → 산출물 sessions/2026-07-02T07-34/designer.md
 ### 💻 코다리
 - [2026-07-02] Video 5에 적용될 KPI 추적 로직(Hook Shock Factor CTR 등)이 시스템에 정확히 반영되었는지 최종 검증하고, 해당 데이터 수집 및 보고 기능의 무결성을 확인하라. → 산출물 sessions/2026-07-02T04-42/developer.md
 - [2026-07-02] Video 5에 적용될 KPI 추적 로직(Hook Shock Factor CTR 등)이 시스템에 정확히 반영되었는지 최종 무결성을 점검하고, 영상 제작 시 데이터 연동 및 보고 기능의 준비 상태를 확인하라. → 산출물 sessions/2026-07-02T05-42/developer.md

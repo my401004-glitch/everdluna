@@ -1,40 +1,6 @@
 {
   "tasks": [
     {
-      "id": "20260531222233-rj23",
-      "title": "수익화 모델 및 가격 전략 초안 작성 완료 (`sessions/2026-05-31T21-48/business.md`)",
-      "description": "자동 등록 (현빈 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "business"
-      ],
-      "createdAt": "2026-05-31T22:22:33.055Z",
-      "status": "done",
-      "sessionDir": "2026-05-31T22-19",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-05-31T22-19/_report.md\n- 영숙: 회사 목표, 각 에이전트의 개인 목표(_agents/{id}/goal.md), 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작\n- 현빈: Secretary의 분석 결과를 바탕으로, 현재 가장 가치 있는 단일 작업 1개를 결정하고 해당 작업을 실행하기 위한 최소한의 다음 단계(실행 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 회사 목표, 각 에이전트의 개인 목표(_agents/{id}/goal.md), 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 이를 요약하여 보고할 준비를 하라.\n> 🔧 **도구 실행**",
-      "completedAt": "2026-05-31T22:22:45.828Z"
-    },
-    {
-      "id": "20260531222233-obiu",
-      "title": "경쟁사 분석 및 ROI 데이터 수집 진행 중",
-      "description": "자동 등록 (현빈 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "business"
-      ],
-      "createdAt": "2026-05-31T22:22:33.056Z",
-      "status": "done",
-      "sessionDir": "2026-05-31T22-19",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-05-31T22-19/_report.md\n- 영숙: 회사 목표, 각 에이전트의 개인 목표(_agents/{id}/goal.md), 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작\n- 현빈: Secretary의 분석 결과를 바탕으로, 현재 가장 가치 있는 단일 작업 1개를 결정하고 해당 작업을 실행하기 위한 최소한의 다음 단계(실행 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 회사 목표, 각 에이전트의 개인 목표(_agents/{id}/goal.md), 최근 의사결정 및 메모리를 검토하여 현재 가장 가치 있는 단일 작업 1개를 식별하고 이를 요약하여 보고할 준비를 하라.\n> 🔧 **도구 실행**",
-      "completedAt": "2026-05-31T22:22:45.829Z"
-    },
-    {
       "id": "20260611014534-r8oi",
       "title": "**Sound Design:** 긴장감과 전문성을 유지하는 배경음악을 사용하고, 통계 제시 부분에서 사운드 이펙트(SFX)를 반드시 활용한다. (웅장함/긴박감 조절)",
       "description": "자동 등록 (레오 산출물에서 추출)",
@@ -730,6 +696,57 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-06-29T22-51/_report.md\n- Writer: Video 4의 Hook 전략에 맞춰 최적화된 스토리라인과 최종 스크립트 초안을 작성하여 제공하라.\n- 루나: Writer가 제공한 스크립트 초안 및 확정된 VADP 규칙(Visual Adaptation Protocol)을 기반으로 Video 4에 최적화\n- Designer: 확정된 마케팅 비주얼 시스템 표준(VADP)을 기반으로 Writer의 스크립트와 Editor의 사운드 디자인 방향성을 반영한 Video 4의 최\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: Video 4의 Hook 전략에 맞춰 최적화된 스토리라인과 최종 스크립트 초안을 작성하여 제공하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ✍️ Writer: 작업 시작합니다. / 📊 평가:",
       "completedAt": "2026-06-29T23:11:53.918Z"
+    },
+    {
+      "id": "20260702073655-v8hh",
+      "title": "모든 텍스트는 Noto Sans KR (본문) 또는 Montserrat Bold (제목)을 따르는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-07-02T07:36:55.997Z",
+      "status": "done",
+      "sessionDir": "2026-07-02T07-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-02T07-34/_report.md\n- 레오: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목\n- Designer: A/B 테스트를 통해 도출된 비주얼 변수(Variation A, B, C)가 실제 영상 편집 단계에서 적용될 때의 최종 편집 가이드라인(`Fin\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목 및 후크 초안을 세 가지 페르소나별로 제작하고 배포를 시작할 준비를 완료하라.\n> 🔧 **도",
+      "completedAt": "2026-07-02T07:37:27.963Z"
+    },
+    {
+      "id": "20260702073655-m0x1",
+      "title": "Pain 지표를 제시할 때는 반드시 `Accent Yellow`로 하이라이팅하고, 그 옆에 `#0A2463` 기반의 '원인 분석' 박스를 배치하는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-07-02T07:36:55.999Z",
+      "status": "done",
+      "sessionDir": "2026-07-02T07-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-02T07-34/_report.md\n- 레오: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목\n- Designer: A/B 테스트를 통해 도출된 비주얼 변수(Variation A, B, C)가 실제 영상 편집 단계에서 적용될 때의 최종 편집 가이드라인(`Fin\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목 및 후크 초안을 세 가지 페르소나별로 제작하고 배포를 시작할 준비를 완료하라.\n> 🔧 **도",
+      "completedAt": "2026-07-02T07:37:27.965Z"
+    },
+    {
+      "id": "20260702073656-na27",
+      "title": "최종 CTA는 모든 변주(A/B/C)에서 **Dark Blue 배경 + Accent Yellow 버튼** 조합을 유지하여 시각적 일관성을 확보했는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-07-02T07:36:56.000Z",
+      "status": "done",
+      "sessionDir": "2026-07-02T07-34",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-02T07-34/_report.md\n- 레오: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목\n- Designer: A/B 테스트를 통해 도출된 비주얼 변수(Variation A, B, C)가 실제 영상 편집 단계에서 적용될 때의 최종 편집 가이드라인(`Fin\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목 및 후크 초안을 세 가지 페르소나별로 제작하고 배포를 시작할 준비를 완료하라.\n> 🔧 **도",
+      "completedAt": "2026-07-02T07:37:27.966Z"
     }
   ]
 }
