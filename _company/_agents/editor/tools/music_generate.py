@@ -61,8 +61,12 @@ MAX_TOKENS = {max_tokens}
 
 print('🔧 모델 로드 중...', file=sys.stderr, flush=True)
 from transformers import MusicgenForConditionalGeneration, AutoProcessor
-processor = AutoProcessor.from_pretrained(HF_ID)
-model = MusicgenForConditionalGeneration.from_pretrained(HF_ID)
+try:
+    processor = AutoProcessor.from_pretrained(HF_ID, local_files_only=True)
+    model = MusicgenForConditionalGeneration.from_pretrained(HF_ID, local_files_only=True)
+except Exception:
+    processor = AutoProcessor.from_pretrained(HF_ID)
+    model = MusicgenForConditionalGeneration.from_pretrained(HF_ID)
 device = 'mps' if torch.backends.mps.is_available() else ('cuda' if torch.cuda.is_available() else 'cpu')
 model = model.to(device)
 print('🎵 디바이스: ' + str(device), file=sys.stderr, flush=True)
@@ -74,10 +78,7 @@ sr = model.config.audio_encoder.sampling_rate
 scipy.io.wavfile.write(WAV_PATH, sr, audio_np)
 print('✅ wav: ' + WAV_PATH, file=sys.stderr, flush=True)
 """
-    proc = subprocess.run([venv_python, "-c", script], capture_output=True, text=True)
-    if proc.stderr.strip():
-        for line in proc.stderr.splitlines():
-            _log(f"  {line}")
+    proc = subprocess.run([venv_python, "-c", script])
     if proc.returncode != 0:
         return False, f"MusicGen 추론 실패 (exit {proc.returncode})"
 
@@ -115,10 +116,7 @@ def _generate_acestep(setup, prompt, duration_sec, output_path):
 
     cmd = [venv_python, infer_script,
            "--prompt", prompt, "--duration", str(duration_sec), "--output", output_path]
-    proc = subprocess.run(cmd, cwd=repo_dir, capture_output=True, text=True)
-    if proc.stderr.strip():
-        for line in proc.stderr.splitlines()[-30:]:
-            _log(f"  {line}")
+    proc = subprocess.run(cmd, cwd=repo_dir)
     if proc.returncode != 0:
         return False, f"ACE-Step 실패 (exit {proc.returncode}). README의 명령 형식 확인 필요"
     if not os.path.exists(output_path):

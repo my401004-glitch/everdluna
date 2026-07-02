@@ -404,3 +404,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-07-01] Video 5의 최종 스크립트와 핵심 카피를 확정된 Pain $ightarrow$ Gain 프레임워크에 따라 영상 제작에 최적화되도록 최종 검토하고, 필요한 경우 Hook 및 전환 문구를 강화하여 수정하라. → 산출물 sessions/2026-07-01T06-10/writer.md
 - [2026-07-01] 확정된 비주얼 시스템과 Pain $ightarrow$ Gain 스토리텔링 구조에 맞춰, Designer가 완성할 마스터 에셋에 들어갈 모든 썸네일 및 Instagram Reels 카피라이팅을 최적화하여 제작하라. → 산출물 sessions/2026-07-01T06-40/writer.md
 - [2026-07-01] 앞서 확정된 Pain $ightarrow$ Gain 프레임워크와 Video 5의 새로운 Hook 전략을 기반으로, 고성능 스크립트 초안 및 영상 도입부 카피를 작성하라. → 산출물 sessions/2026-07-01T15-15/writer.md
+- [2026-07-02] 선정된 최적의 주제와 재확정된 Hook 전략을 기반으로 다음 영상(Video 5)에 대한 Pain $ightarrow$ Gain 프레임워크가 완벽하게 적용된 스크립트 및 핵심 카피 초안을 작성하라. → 산출물 sessions/2026-07-02T04-12/writer.md
