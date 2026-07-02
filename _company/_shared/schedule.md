@@ -1,25 +1,25 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 2. 오후 2:30:38_
+_업데이트: 2026. 7. 2. 오후 2:46:28_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-07-02] 최근 'my_videos_check' 데이터와 확정된 Hook 전략을 기반으로 다음 영상(Video 5)의 최종 제목, 스토리라인, 그리고 구체적인 제작 일정을 수립하라. → 산출물 sessions/2026-07-02T02-43/youtube.md
 - [2026-07-02] 최종 추천 주제('AI 기반 성장 지표로 입시 경쟁의 비효율성을 해소하고, 단기간에 실력을 증명하는 로드맵')를 바탕으로 Video 5의 구체적인 기획안을 업데이트하고 제작 일정을 수립하라. → 산출물 sessions/2026-07-02T04-27/youtube.md
 - [2026-07-02] Video 5('AI 기반 성장 지표로 입시 경쟁의 비효율성 해소')의 최종 제목, 스토리라인, 그리고 제작 일정을 확정하고, 이 계획에 따른 마케팅 실행 계획을 수립하라. → 산출물 sessions/2026-07-02T04-42/youtube.md
+- [2026-07-02] Writer가 제공한 Video 5 스크립트와 Designer의 Blueprint를 기반으로 실제 영상 콘텐츠 제작을 위한 최종 제작 일정(Timeline) 및 세부 단계(Step-by-Step Plan)를 수립하라. → 산출물 sessions/2026-07-02T05-42/youtube.md
 ### 📷 Instagram
 - [2026-06-29] 최종 확정된 디자인 시스템(KV/썸네일)과 카피를 기반으로 Reels 및 피드용 마케팅 콘텐츠 시안을 제작하고, 최적의 게시 시간 전략을 반영하여 발행 준비를 완료하라. → 산출물 sessions/2026-06-29T18-06/instagram.md
 - [2026-06-29] Designer가 제작한 콘텐츠 템플릿 패키지(`Content_Templates_Package_V1.zip`)를 활용하여 수립된 마케팅 운영 플레이북에 따라 첫 주 마케팅 콘텐츠 발행을 준비하라. → 산출물 sessions/2026-06-29T18-21/instagram.md
 - [2026-07-01] Designer가 제작한 Mockup을 활용하여 확정된 마케팅 운영 플레이북에 따라 첫 주 마케팅 콘텐츠 발행(Reels 및 피드)을 즉시 실행하라. → 산출물 sessions/2026-07-01T05-25/instagram.md
 ### 🎨 Designer
-- [2026-07-02] 마스터 디자인 에셋 패키지(`video5_master_asset_package_v1.zip`)를 활용하여 최종 YouTube 썸네일 및 Instagram Reels Mockup을 실제 콘텐츠 발행에 최적화된 고해상도 파일(PSD/Figma)로 변환하여 출력하라. → 산출물 sessions/2026-07-02T04-57/designer.md
 - [2026-07-02] Writer가 제공할 전문 기고문을 바탕으로 잠재 고객의 신뢰를 얻고 행동을 유도할 수 있는 랜딩 페이지 핵심 카피라이팅 작업을 진행하라. → 산출물 sessions/2026-07-02T05-12/designer.md
 - [2026-07-02] Writer가 제공한 기고문을 바탕으로 확정된 랜딩 페이지 핵심 카피라이팅과 Dark Blue/Accent Yellow 시스템을 적용한 디자인 Mockup 파일(PSD/Figma)을 최종 출력하라. → 산출물 sessions/2026-07-02T05-27/designer.md
+- [2026-07-02] Writer가 제공한 스크립트와 확정된 마스터 디자인 에셋 패키지(`video5_master_asset_package_v1.zip`)를 활용하여 실제 영상 콘텐츠 제작에 최적화된 최종 편집 가이드라인(Final Editing Guideline)을 완성하라. → 산출물 sessions/2026-07-02T05-42/designer.md
 ### 💻 코다리
-- [2026-07-01] Video 5에 적용될 콘텐츠의 KPI(CTR, 시청 지속 시간 등) 추적 로직이 시스템에 정확히 반영되었는지 최종 검증하고, 해당 데이터 수집 및 보고 기능의 무결성을 확인하라. → 산출물 sessions/2026-07-01T06-10/developer.md
 - [2026-07-01] Video 5의 KPI 추적 로직(Hook Shock Factor CTR, Gap Acknowledgment Rate 등)을 반영한 DB 스키마 확장(`user_activity`, `kpi_metrics` 테이블)을 즉시 구현하고 테스트를 완료하라. → 산출물 sessions/2026-07-01T06-25/developer.md
 - [2026-07-02] Video 5에 적용될 KPI 추적 로직(Hook Shock Factor CTR 등)이 시스템에 정확히 반영되었는지 최종 검증하고, 해당 데이터 수집 및 보고 기능의 무결성을 확인하라. → 산출물 sessions/2026-07-02T04-42/developer.md
+- [2026-07-02] Video 5에 적용될 KPI 추적 로직(Hook Shock Factor CTR 등)이 시스템에 정확히 반영되었는지 최종 무결성을 점검하고, 영상 제작 시 데이터 연동 및 보고 기능의 준비 상태를 확인하라. → 산출물 sessions/2026-07-02T05-42/developer.md
 ### 💼 현빈
 - [2026-06-30] Researcher가 제공한 Gap Score 데이터를 바탕으로 Video 4의 수익화 전략에 대한 초기 가설과 KPI 목표를 설정하고, 이를 Writer와 Designer에게 전달할 마케팅 프레임워크 초안을 준비하라. → 산출물 sessions/2026-06-30T00-06/business.md
 - [2026-07-01] Video 5 제작을 위한 수익화 목표(Pain $ightarrow$ Gain 증명) 달성 여부를 측정할 핵심 KPI 지표를 설정하고, 이 지표들이 현재 시스템 데이터와 연동되는지 검토하라. → 산출물 sessions/2026-07-01T06-10/business.md
