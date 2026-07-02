@@ -555,3 +555,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-02] Writer가 제공할 전문 기고문을 바탕으로 잠재 고객의 신뢰를 얻고 행동을 유도할 수 있는 랜딩 페이지 핵심 카피라이팅 작업을 진행하라. → 산출물 sessions/2026-07-02T05-12/designer.md
 - [2026-07-02] Writer가 제공한 기고문을 바탕으로 확정된 랜딩 페이지 핵심 카피라이팅과 Dark Blue/Accent Yellow 시스템을 적용한 디자인 Mockup 파일(PSD/Figma)을 최종 출력하라. → 산출물 sessions/2026-07-02T05-27/designer.md
 - [2026-07-02] Writer가 제공한 스크립트와 확정된 마스터 디자인 에셋 패키지(`video5_master_asset_package_v1.zip`)를 활용하여 실제 영상 콘텐츠 제작에 최적화된 최종 편집 가이드라인(Final Editing Guideline)을 완성하라. → 산출물 sessions/2026-07-02T05-42/designer.md
+- [2026-07-02] Designer님은 Video 5의 최종 스크립트와 마스터 디자인 에셋 패키지를 기반으로 실제 영상 콘텐츠 제작에 최적화된 최종 편집 가이드라인(Final Editing Guideline)을 확정하고 모든 비주얼 규칙을 명문화하라. → 산출물 sessions/2026-07-02T06-19/designer.md
