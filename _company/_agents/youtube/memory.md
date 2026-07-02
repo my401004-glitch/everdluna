@@ -809,3 +809,4 @@ https://youtu.be/Hq6L9pyjhoY
 - [2026-07-02] Writer가 제공한 Video 5 스크립트와 Designer의 Blueprint를 기반으로 실제 영상 콘텐츠 제작을 위한 최종 제작 일정(Timeline) 및 세부 단계(Step-by-Step Plan)를 수립하라. → 산출물 sessions/2026-07-02T05-42/youtube.md
 - [2026-07-02] 레오님은 Writer와 Designer가 제공한 최종 스크립트 및 가이드라인을 바탕으로 Video 5의 최종 제작 일정(Timeline)과 세부 단계(Step-by-Step Plan)를 확정하고, 이를 기반으로 유튜브 콘텐츠 발행 계획을 수립하라. → 산출물 sessions/2026-07-02T06-19/youtube.md
 - [2026-07-02] Writer와 Designer가 제작할 A/B 테스트용 카피 및 비주얼 모듈을 기반으로, 유튜브 쇼츠/릴스 3개 채널에 대한 구체적인 A/B 테스트 실행 계획과 콘텐츠 배포 체크리스트를 수립하라. → 산출물 sessions/2026-07-02T07-19/youtube.md
+- [2026-07-02] Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목 및 후크 초안을 세 가지 페르소나별로 제작하고 배포를 시작할 준비를 완료하라. → 산출물 sessions/2026-07-02T07-34/youtube.md
