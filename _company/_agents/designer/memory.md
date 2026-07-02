@@ -553,3 +553,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-02] Video 5에 대해 확정된 브랜드 비주얼 시스템(Dark Blue/Accent Yellow)과 스토리라인을 기반으로, 최종 유튜브 썸네일 및 Instagram Reels Mockup 디자인 에셋을 즉시 제작하고 마스터 디자인 에셋 패키지(`video5_master_asset_package_v1.zip`)를 완성하라. → 산출물 sessions/2026-07-02T04-42/designer.md
 - [2026-07-02] 마스터 디자인 에셋 패키지(`video5_master_asset_package_v1.zip`)를 활용하여 최종 YouTube 썸네일 및 Instagram Reels Mockup을 실제 콘텐츠 발행에 최적화된 고해상도 파일(PSD/Figma)로 변환하여 출력하라. → 산출물 sessions/2026-07-02T04-57/designer.md
 - [2026-07-02] Writer가 제공할 전문 기고문을 바탕으로 잠재 고객의 신뢰를 얻고 행동을 유도할 수 있는 랜딩 페이지 핵심 카피라이팅 작업을 진행하라. → 산출물 sessions/2026-07-02T05-12/designer.md
+- [2026-07-02] Writer가 제공한 기고문을 바탕으로 확정된 랜딩 페이지 핵심 카피라이팅과 Dark Blue/Accent Yellow 시스템을 적용한 디자인 Mockup 파일(PSD/Figma)을 최종 출력하라. → 산출물 sessions/2026-07-02T05-27/designer.md
