@@ -599,3 +599,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-02] | **톤앤매너** | 냉철함, 객관성, 전문성 (Clinical & Authoritative) | 과도한 BGM이나 감정적인 연출(슬로우 모션 등)은 지양하고, 데이터가 움직이고 분석되는 느낌을 강조. | | _(근거: 세션 로그/회사 정체성)_
 - [2026-07-02] | **Pain $\rightarrow$ Gain** | 모든 비주얼 흐름의 구조화 (The Funnel Flow) | 1단계(위협): 빨강/어두운 색상 사용, 불안정한 애니메이션. 2단계(해결책): 파랑/노란색을 활용한 정교하고 선명한 그래프 애니메이션. | | _(근거: Designer 검증된 지식)_
 - [2026-07-02] | **정보 밀도** | 정보는 '쌓이는' 것이 아니라, '추출되는' 느낌으로 연출 (Extraction) | 텍스트를 한 번에 보여주지 않고, 핵심 단어만 점진적으로 나타나게(Typewriter effect 또는 Fade-in on click/beat) 하여 집중도를 유지. | | _(근거: Designer 개인 메모리)_
+- [2026-07-02] * **Primary Color (신뢰):** Dark Blue (`#0A2463`) - 전문성과 안정감을 유지하는 기본 배경 및 섹션 분리 색상. _(근거: Designer 검증된 지식)_
+- [2026-07-02] * **Accent Yellow (CTA/Gain):** Accent Yellow (`#FFD700`) - 모든 CTA, 최종 Gain 수치, 시선 유도 요소에 사용. _(근거: Designer 검증된 지식)_
+- [2026-07-02] * **Background Color:** Neutral Grey (`#F5F5F5`) - 본문 및 데이터 표의 배경색으로 가독성 확보. _(근거: Designer 검증된 지식)_
+- [2026-07-02] | **Hero Headline** | 중앙 정렬, 3단 구조 (Pain - 증명 필요성 - Solution). Pain 부분은 Dark Blue 배경에 대형 데이터 차트(가상의 지표)를 배치하여 '객관적 문제'임을 강조. | **배경:** `#0A2463` (Dark Blue)<br>**Headline:** `White (#FFFFFF)`<br>**Highlight Data:** `#FFD700` (Yellow) | 신뢰도를 최고로 높임. 데이터 자체가 메시지. | _(근거: Designer 검증된 지식)_
+- [2026-07-02] | **Hero Headline** | 좌측 정렬, 스토리텔링형 배치. Pain(좌측-회색), Transition(중앙-파란 화살표/흐름도), Gain(우측-Yellow). 헤드라인은 Noto Sans KR을 사용하여 친근하게 접근. | **Pain:** `#F5F5F5` (Grey)<br>**Transition:** `Dark Blue Gradient (#0A2463)`<br>**Gain:** `#FFD700` (Yellow) | 시선이 좌->우로 자연스럽게 흐르도록 유도. '변곡점'의 움직임 강조. | _(근거: Designer 검증된 지식)_
