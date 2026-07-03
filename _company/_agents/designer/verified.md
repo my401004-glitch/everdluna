@@ -620,3 +620,9 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-03] | **Pain Point 영역** | 배경색: 연한 그레이(Neutral Grey의 어둡게 변형) / 색상: Accent Yellow를 강하게 사용하여 위험 신호처럼 표현. | 사용자의 초기 불안감 및 '손실' 인지 유도 (``). | _(근거: sessions/2026-05-19T04:14/designer.md)_
 - [2026-07-03] | **진단 결과 영역** | 배경색: Dark Blue의 밝은 톤(Blue Gradient) / 색상: Primary Color를 사용하여 전문성과 객관성을 부여. | AI 데이터 진단의 신뢰성 확보 (``). | _(근거: Designer 검증된 지식)_
 - [2026-07-03] | **CTA 버튼 (전환)** | Accent Yellow (`#FFD700`) 배경, Dark Blue 텍스트. 모서리를 살짝 둥글게 처리하여 클릭 유도력을 높임. | 즉각적인 행동 유도 및 기회 포착 강조 (``). | _(근거: Designer 검증된 지식)_
+- [2026-07-03] * **기반 로직:** Pain $\rightarrow$ Insight $\rightarrow$ Solution/Gain (ROI 증명 논리). _(근거: Designer 검증된 지식)_
+- [2026-07-03] | **Primary Color (신뢰)** | Dark Blue (`#0A2463`) | 배경, 헤더, 핵심 데이터 영역. 신뢰감 구축. | | _(근거: Designer 검증된 지식)_
+- [2026-07-03] | **Accent Color (CTA/Gain)** | Accent Yellow (`#FFD700`) | CTA 버튼, '기회/성공' 수치 강조, 이탈 위험 표시(Pain). | | _(근거: Designer 검증된 지식)_
+- [2026-07-03] | **Background** | Neutral Grey (`#F5F5F5`) | 본문 텍스트 배경. 가독성 확보. | | _(근거: Designer 검증된 지식)_
+- [2026-07-03] | **Headline Type** | Montserrat Bold | Pain/Gain 핵심 메시지(헤드라인). 강력한 임팩트 제공. | | _(근거: Designer 검증된 지식)_
+- [2026-07-03] | **Body Type** | Noto Sans KR (Regular) | 데이터, 상세 설명 텍스트. 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
