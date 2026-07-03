@@ -561,3 +561,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-02] A/B 테스트를 통해 도출된 비주얼 변수(Variation A, B, C)가 실제 영상 편집 단계에서 적용될 때의 최종 편집 가이드라인(`Final Editing Guideline`)을 완성하고 모든 시각적 규칙을 명문화하라. → 산출물 sessions/2026-07-02T07-34/designer.md
 - [2026-07-02] 레오가 제공한 후크와 최종 편집 가이드라인(Final Editing Guideline V1.0)을 통합하여, 첫 번째 영상 제작에 즉시 투입 가능한 마스터 템플릿(Figma/PSD 기반)을 완성하라. → 산출물 sessions/2026-07-02T07-49/designer.md
 - [2026-07-03] Writer가 제시한 A/B 테스트용 카피와 Business 에이전트의 전략에 맞춰, 랜딩 페이지 디자인 시스템 내에서 시각 변주(Visual Variation)를 적용할 수 있는 모듈형 템플릿을 최종 검토하고 준비하라. → 산출물 sessions/2026-07-03T03-33/designer.md
+- [2026-07-03] Business 에이전트가 확정한 가격 구조 및 가치에 맞춰, Bronze/Silver/Gold 티어 간의 전환 과정을 시각화하는 사용자 여정 지도(Funnel Map) Mockup을 제작하라. → 산출물 sessions/2026-07-03T04-18/designer.md
