@@ -563,3 +563,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-03] Writer가 제시한 A/B 테스트용 카피와 Business 에이전트의 전략에 맞춰, 랜딩 페이지 디자인 시스템 내에서 시각 변주(Visual Variation)를 적용할 수 있는 모듈형 템플릿을 최종 검토하고 준비하라. → 산출물 sessions/2026-07-03T03-33/designer.md
 - [2026-07-03] Business 에이전트가 확정한 가격 구조 및 가치에 맞춰, Bronze/Silver/Gold 티어 간의 전환 과정을 시각화하는 사용자 여정 지도(Funnel Map) Mockup을 제작하라. → 산출물 sessions/2026-07-03T04-18/designer.md
 - [2026-07-03] CEO의 다음 액션 중 최우선 순위인 '레오'를 위한 마스터 컴포넌트 세트(랜딩 페이지 디자인으로 즉시 변환 가능한 Figma/PSD 기반) 생성을 시작하여, 확정된 가격 구조와 Funnel Map에 맞춰 시각적 일치를 확보하라. → 산출물 sessions/2026-07-03T04-33/designer.md
+- [2026-07-04] Business 에이전트가 확정한 가격 구조와 가치 포지셔닝에 맞춰, Bronze/Silver/Gold 티어 간의 전환 과정을 시각화하는 사용자 여정 지도(Funnel Map) 목업을 제작해줘. → 산출물 sessions/2026-07-04T08-54/designer.md
