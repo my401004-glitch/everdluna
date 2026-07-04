@@ -45,3 +45,4 @@ _루나 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-06-29] Writer가 제공한 스크립트 초안 및 확정된 VADP 규칙(Visual Adaptation Protocol)을 기반으로 Video 4에 최적화된 BGM 프롬프트 템플릿과 사운드 디자인 방향성을 즉시 생성하라. → 산출물 sessions/2026-06-29T22-51/editor.md
 - [2026-06-29] Designer가 확정한 마스터 프로덕션 가이드(V1)와 타임라인을 기반으로 Writer의 스크립트 및 루나의 오디오 블루프린트에 맞춰 Video 4의 최종 편집 및 비주얼 에셋 제작을 즉시 착수한다. → 산출물 sessions/2026-06-29T23-21/editor.md
 - [2026-07-01] writer의 스크립트 흐름에 맞춰 감정적 변곡점을 설정하고, MusicGen/ACE-Step을 활용하여 영상 분위기에 최적화된 BGM 프롬프트 템플릿을 생성하고 사운드 디자인 방향성을 확정하라. → 산출물 sessions/2026-07-01T03-45/editor.md
+- [2026-07-04] Writer의 스크립트를 기반으로 영상 길이와 흐름에 맞는 BGM 분위기 및 사운드 디자인(Sound Design) 전략을 구상하고, AI 음악 생성 도구(MusicGen/ACE-Step)를 활용할 수 있는 오디오 템플릿을 준비해줘. → 산출물 sessions/2026-07-04T09-35/editor.md
