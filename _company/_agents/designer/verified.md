@@ -668,3 +668,12 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-05] 1. [ ] **시각적 일관성:** 모든 컴포넌트가 동일한 그림자, 모서리 반경(Radius), 간격(Spacing: 24px 기준)을 유지하는가? _(근거: Designer 검증된 지식)_
 - [2026-07-05] 2. [ ] **데이터 흐름 유효성:** `PAIN_VISUALIZER`의 데이터 변화 시, 주변 컴포넌트들의 레이아웃이 깨지지 않고 자동으로 조정되는가? (Responsive Check) _(근거: 지난 의사결정 로그)_
 - [2026-07-05] 3. [ ] **메시지 명확성:** 모든 썸네일/영상 클립은 '문제 제시' $\rightarrow$ '솔루션 제시' $\rightarrow$ '행동 유도(CTA)'의 흐름을 반드시 따르는가? _(근거: Designer 검증된 지식)_
+- [2026-07-05] **[선정 컨셉]**: 기술적 불안정성(KPI 미달)을 Pain으로 설정하고, AI 활용 프로그램 도입을 Gain으로 제시하는 구조. (가장 데이터 기반이며 시각화 요소가 명확함 ) _(근거: Designer 검증된 지식)_
+- [2026-07-05] * **프레임워크:** Pain $\rightarrow$ Gain (Risk 제시 $\rightarrow$ ROI/솔루션 제시). 모든 시각 요소는 이 논리 흐름을 따라야 함. _(근거: Designer 검증된 지식)_
+- [2026-07-05] * **Primary Color (신뢰):** Dark Blue (`#0A2463`) - 배경 및 주요 정보 영역 (Professionalism). _(근거: Designer 검증된 지식)_
+- [2026-07-05] * **Accent Yellow (경고/기회):** Accent Yellow (`#FFD700`) - Pain(위험), Gap Score, CTA 강조. _(근거: Designer 검증된 지식)_
+- [2026-07-05] * **Body Color:** Neutral Grey (`#F5F5F5`) - 데이터 배경 및 가독성 확보. _(근거: Designer 검증된 지식)_
+- [2026-07-05] * **Title Font:** Montserrat Bold (강렬함, 헤드라인). _(근거: Designer 검증된 지식)_
+- [2026-07-05] * **Body Font:** Noto Sans KR (가독성, 데이터 제시). _(근거: Designer 검증된 지식)_
+- [2026-07-05] * **헤드라인 (Title):** "혹시, 당신의 실기 준비가 '이것' 때문에 흔들리고 있진 않나요?" (Montserrat Bold, White Text) _(근거: Designer 검증된 지식)_
+- [2026-07-05] * **시각화:** 간결한 막대 그래프 모형 사용. 목표치(Dark Blue)와 현재 수치(Light Grey)를 명확히 대비시키고, 그 사이의 Gap을 Accent Yellow로 강조한다. _(근거: Designer 검증된 지식)_
