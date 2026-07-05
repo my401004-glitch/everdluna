@@ -747,6 +747,57 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-07-02T07-34/_report.md\n- 레오: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목\n- Designer: A/B 테스트를 통해 도출된 비주얼 변수(Variation A, B, C)가 실제 영상 편집 단계에서 적용될 때의 최종 편집 가이드라인(`Fin\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목 및 후크 초안을 세 가지 페르소나별로 제작하고 배포를 시작할 준비를 완료하라.\n> 🔧 **도",
       "completedAt": "2026-07-02T07:37:27.966Z"
+    },
+    {
+      "id": "20260705084950-pdqb",
+      "title": "**시각적 일관성:** 모든 컴포넌트가 동일한 그림자, 모서리 반경(Radius), 간격(Spacing: 24px 기준)을 유지하는가? [근거: Designer 검증된 지식]",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-07-05T08:49:50.945Z",
+      "status": "done",
+      "sessionDir": "2026-07-05T08-30",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-05T08-30/_report.md\n- 레오: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 \n- Designer: 확정된 디자인 시스템과 기술적 KPI를 반영하여 영상 썸네일 목업(Mockup)의 구체적인 시각적 레이아웃 및 컴포넌트 적용 방안을 제시하라.\n- Writer: Designer가 제시한 썸네일 목업에 가장 효과적으로 결합될 'Fear & Proof' 기반의 후킹 카피(Headline) 3안을 작성하고, \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 정의하고, 최종 실행 계획을 수립하라.\n> 🔧 **도구 실행**: `competitor_bri",
+      "completedAt": "2026-07-05T08:58:51.103Z"
+    },
+    {
+      "id": "20260705084950-py8t",
+      "title": "**데이터 흐름 유효성:** `PAIN_VISUALIZER`의 데이터 변화 시, 주변 컴포넌트들의 레이아웃이 깨지지 않고 자동으로 조정되는가? (Responsive Check) [근거: 지난 의사결정 로그]",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-07-05T08:49:50.946Z",
+      "status": "done",
+      "sessionDir": "2026-07-05T08-30",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-05T08-30/_report.md\n- 레오: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 \n- Designer: 확정된 디자인 시스템과 기술적 KPI를 반영하여 영상 썸네일 목업(Mockup)의 구체적인 시각적 레이아웃 및 컴포넌트 적용 방안을 제시하라.\n- Writer: Designer가 제시한 썸네일 목업에 가장 효과적으로 결합될 'Fear & Proof' 기반의 후킹 카피(Headline) 3안을 작성하고, \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 정의하고, 최종 실행 계획을 수립하라.\n> 🔧 **도구 실행**: `competitor_bri",
+      "completedAt": "2026-07-05T08:58:51.104Z"
+    },
+    {
+      "id": "20260705084950-xe4o",
+      "title": "**메시지 명확성:** 모든 썸네일/영상 클립은 '문제 제시' $\\rightarrow$ '솔루션 제시' $\\rightarrow$ '행동 유도(CTA)'의 흐름을 반드시 따르는가? [근거: Designer 검증된 지식]",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-07-05T08:49:50.947Z",
+      "status": "done",
+      "sessionDir": "2026-07-05T08-30",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-05T08-30/_report.md\n- 레오: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 \n- Designer: 확정된 디자인 시스템과 기술적 KPI를 반영하여 영상 썸네일 목업(Mockup)의 구체적인 시각적 레이아웃 및 컴포넌트 적용 방안을 제시하라.\n- Writer: Designer가 제시한 썸네일 목업에 가장 효과적으로 결합될 'Fear & Proof' 기반의 후킹 카피(Headline) 3안을 작성하고, \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 정의하고, 최종 실행 계획을 수립하라.\n> 🔧 **도구 실행**: `competitor_bri",
+      "completedAt": "2026-07-05T08:58:51.105Z"
     }
   ]
 }
