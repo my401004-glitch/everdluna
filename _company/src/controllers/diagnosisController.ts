@@ -1,45 +1,53 @@
-// 기존 내용에 아래와 같이 재무적 손실 계산 로직 추가 및 export 합니다.
-import { DiagnosisInput, DiagnosisResult } from '../types/diagnosis';
-import { getDiagnosisScoreFromFinancialLoss } from '../services/scoreService'; 
+// src/controllers/diagnosisController.ts
 
-export class DiagnosisController {
-    /**
-     * GET /api/v1/diagnosis_score
-     * 사용자의 진단 점수를 계산하고 결과를 반환합니다.
-     * @param req - 요청 객체 (user id, context 등 포함)
-     * @param res - 응답 객체
-     */
-    public static async getDiagnosisScore(req: any, res: any): Promise<void> {
-        try {
-            // 1. 권한 및 유효성 검증 (RBAC & Input Validation)
-            const userId = req.user?.id; // 사용자 ID가 반드시 있어야 합니다.
-            if (!userId) return res.status(403).json({ message: "권한 부족 또는 사용자 정보 누락." });
+import { Request, Response, NextFunction } from 'express';
+import { DiagnosisService } from '../services/DiagnosisService';
+import { validateKpiPayload, DiagnosisRequestDto } from '../utils/validationUtils'; // 🛠️ 가상의 유효성 검증 유틸리티
 
-            // 2. 진단 데이터 로드 (실제 DB에서 가져와야 하지만, 테스트를 위해 Mocking 가정)
-            const diagnosisInput = req.body; // { type: 'financial_risk', data: {...} } 형태의 입력 예상
+// Global Dependency Injection (DI)를 통해 Service 인스턴스를 주입받는다고 가정합니다.
+const diagnosisService = new DiagnosisService();
 
-            if (!diagnosisInput || !['basic', 'engagement', 'monetization', 'financial_risk'].includes(diagnosisInput.type)) {
-                return res.status(400).json({ message: "유효하지 않은 진단 타입입니다." });
-            }
 
-            // 3. 핵심 로직 호출 (Video 3의 새로운 서비스 레이어 이용)
-            const scoreData = await getDiagnosisScoreFromFinancialLoss(diagnosisInput);
+/**
+ * @description POST /api/v1/diagnosis_score - KPI 진단 결과를 저장하고 처리하는 엔드포인트
+ * 
+ * [Flow]: 요청 수신 -> (1) 사용자 권한 확인 -> (2) Payload 유효성 검증 -> (3) 서비스 레이어 전달 -> DB 저장.
+ * @param req {DiagnosisRequestDto} Body에 KPI 데이터가 포함되어야 함.
+ * @param res Express Response 객체
+ */
+export const postDiagnosisScore = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        // 1. 사용자 Context 및 권한 확인 (RBAC 체크 필수)
+        // Middleware를 통해 이미 사용자의 Role과 User ID가 request에 붙어있다고 가정합니다.
+        const userId = req.user?.id;
+        const userRole = req.user?.role;
 
-            if (!scoreData) {
-                return res.status(500).json({ message: "진단 점수 계산에 실패했습니다." });
-            }
-
-            // 4. 결과 저장 및 반환 (DB Write & API Response)
-            const result = await DiagnosisResultService.saveScore(userId, diagnosisInput.type, scoreData);
-
-            res.status(200).json({ 
-                success: true, 
-                result: result 
-            });
-
-        } catch (error) {
-            console.error("Diagnosis API Error:", error);
-            res.status(500).json({ message: "서버 내부 오류가 발생했습니다." });
+        if (!userId || !userRole) {
+            return res.status(401).json({ message: "Authentication required: User ID or Role missing." });
         }
+
+        // 2. 요청 Payload 유효성 검사 (DTO와 스키마 준수 확인)
+        const payload = req.body as DiagnosisRequestDto;
+        if (!validateKpiPayload(payload)) {
+            return res.status(400).json({ message: "Invalid KPI payload structure or missing required fields." });
+        }
+
+        // 3. 핵심 로직 실행 (Service Layer 호출)
+        const result = await diagnosisService.processAndStoreScore(userId, userRole, payload);
+
+        if (!result) {
+            return res.status(422).json({ message: "Failed to process score due to validation or system error." });
+        }
+
+        // 4. 성공 응답
+        return res.status(201).json({
+            message: "Diagnosis score processed and stored successfully.",
+            data: result,
+        });
+
+    } catch (error) {
+        console.error("Error in postDiagnosisScore:", error);
+        // 다음 미들웨어로 에러 전파
+        next(error); 
     }
-}
+};
