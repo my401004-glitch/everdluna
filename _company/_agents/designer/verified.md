@@ -687,3 +687,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-05] | **Neutral** | Light Grey | `#F5F5F5` | 데이터 배경, 기본 텍스트 영역. 높은 가독성 확보. 애니메이션 시 부드러운 배경 변화에 활용. | | _(근거: Designer 검증된 지식)_
 - [2026-07-05] * **헤드라인 (H1/H2):** Montserrat Bold (``) - 강력한 임팩트 전달력 확보. 애니메이션 시 '타이핑(Typewriter)' 효과 적용 권장. _(근거: Designer 검증된 지식)_
 - [2026-07-05] * **본문/데이터:** Noto Sans KR Regular/Medium (``) - 데이터가 움직이는 곳에 가장 높은 가독성 요구됨. _(근거: Designer 검증된 지식)_
+- [2026-07-05] * **폰트/색상:** 유지. 타이틀(Montserrat Bold), 데이터(Noto Sans KR). Primary Blue (`#0A2463`), Accent Yellow (`#FFD700`). _(근거: Designer 검증된 지식)_
