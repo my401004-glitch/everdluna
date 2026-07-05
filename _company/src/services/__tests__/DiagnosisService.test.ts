@@ -1,75 +1,48 @@
-// src/services/__tests__/diagnosisService.test.ts
-
-import { DiagnosisService } from '../diagnosisService';
-
-// 가짜 DB 클라이언트 Mock 객체 (Side Effect 격리)
-const mockDbClient = {
-    // 필요한 DB 메서드들을 모킹합니다. 실제 구현에서는 Prisma나 TypeORM의 Client 인스턴스를 주입받을 것입니다.
-    saveDiagnosisResult: async (input, score) => {
-        console.log(`[MOCK_DB] Successfully mocked saving result for ${input.contextId}`);
-        return true;
-    }
-};
+// src/services/__tests__/DiagnosisService.test.ts
+import { DiagnosisService } from '../DiagnosisService';
+import { UserContext, SessionLog } from '../../types/diagnosis-types';
 
 describe('DiagnosisService', () => {
-    let service: DiagnosisService;
+    const mockContext: UserContext = { 
+        id: 'user_123', 
+        isPremiumUser: true, 
+        currentTier: 'Gold' 
+    };
 
-    beforeEach(() => {
-        // 테스트 시작 전 매번 깨끗한 환경으로 서비스 초기화
-        service = new DiagnosisService(mockDbClient);
+    it('should throw an error if required inputs are missing', () => {
+        // Context 누락 테스트
+        expect(() => DiagnosisService.calculateScore(null as any, [])).toThrow("필수 Context 및 세션 로그 데이터가 누락되었습니다.");
+        // Logs 누락 테스트
+        expect(() => DiagnosisService.calculateScore(mockContext, null as any)).toThrow("필수 Context 및 세션 로그 데이터가 누락되었습니다.");
     });
 
-    it('should initialize correctly with a mock DB client', () => {
-        expect(service).toBeDefined();
+    it('should calculate a reasonable score when logs are provided (Happy Path)', () => {
+        const mockLogs: SessionLog[] = [
+            { timestamp: 't1', duration: 60, feature: 'BasicPitch' },
+            { timestamp: 't2', duration: 90, feature: 'PremiumPitch' }, // Monetization 기여
+            { timestamp: 't3', duration: 45, feature: 'VocalWarmup' },
+            // ... 충분한 로그를 넣어 점수 계산에 영향을 주게 함
+        ];
+
+        const result = DiagnosisService.calculateScore(mockContext, mockLogs);
+
+        // 테스트 검증 포인트: 총점이 유효 범위 내에 들어와야 합니다.
+        expect(result).toHaveProperty('totalScore');
+        expect(result.totalScore).toBeGreaterThanOrEqual(0);
+        expect(result.totalScore).toBeLessThanOrEqual(100);
+
+        // 테스트 검증 포인트: KPI 필드가 누락되어서는 안 됩니다.
+        expect(result.kpiMetrics).toHaveProperty('growth');
     });
 
-    describe('calculateGapScore', () => {
-        const baseInput: any = {
-            contextId: 'test-user-123',
-            diagnosisType: 'Growth',
-            rawMetrics: { variance_a: 10, variance_b: 5 } // Mock Metric Values
-        };
+    it('should calculate low score if logs are minimal (Edge Case)', () => {
+        const mockLogs: SessionLog[] = [
+            { timestamp: 't1', duration: 5, feature: 'BasicPitch' },
+        ];
+        // 매우 짧은 세션에 대한 점수 계산이 정상적으로 작동하는지 확인합니다.
+        const result = DiagnosisService.calculateScore(mockContext, mockLogs);
 
-        it('should calculate a higher score for Growth type when metrics are favorable', () => {
-            // Expectation: Base Score (70) + Weight * Difference
-            const mockScore = service['calculateGapScore'](baseInput);
-            expect(mockScore).toBeGreaterThanOrEqual(70 - 15); // 최소한의 가중치 차이 예상
-        });
-
-        it('should handle missing or zero metrics gracefully', () => {
-            // Metric A가 없고, B도 없는 경우를 테스트하여 안정성 검증 (Defensive Coding)
-            const safeInput: any = {
-                contextId: 'safe-test',
-                diagnosisType: 'Engagement',
-                rawMetrics: {} 
-            };
-            // Expectation: Base Score (60) + 0 - 0 = 60. 최소값(1)을 넘겨야 함.
-            const mockScore = service['calculateGapScore'](safeInput);
-            expect(mockScore).toBe(60); // base score가 그대로 유지되는지 검증
-        });
-    });
-
-    describe('runDiagnosis', () => {
-        it('should throw an error if the user is not authorized for a sensitive type', async () => {
-            // Mocking RBAC failure scenario
-            const unauthorizedInput: any = {
-                contextId: 'free-user-xyz', // premium이 아님
-                diagnosisType: 'Monetization', // 유료만 가능하다고 가정한 타입
-                rawMetrics: {} 
-            };
-            await expect(service.runDiagnosis(unauthorizedInput)).rejects.toThrow("UnauthorizedAccess");
-        });
-
-        it('should successfully calculate score and save results for an authorized user', async () => {
-            const authorizedInput: any = {
-                contextId: 'premium-user-abc', // premium 포함하여 통과 예상
-                diagnosisType: 'Growth',
-                rawMetrics: { variance_a: 10, variance_b: 5 }
-            };
-
-            // runDiagnosis가 성공적으로 실행되면 Mock DB의 save 메서드가 호출되었는지 확인 (Mocking)
-            const result = await service.runDiagnosis(authorizedInput);
-            expect(result.score).toBeGreaterThan(0); // 점수 계산이 완료됨을 확인
-        });
+        // 점수가 0점보다는 높지만, 최대치와는 거리가 먼 적절한 값이어야 합니다.
+        expect(result.totalScore).toBeLessThan(50);
     });
 });

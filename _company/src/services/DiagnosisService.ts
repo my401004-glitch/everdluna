@@ -1,105 +1,71 @@
 // src/services/DiagnosisService.ts
-
-import { DiagnosisRequestDto } from '../utils/validationUtils';
-import { Logger } from '../utils/Logger'; // 가상의 로거 유틸리티
+import { DiagnosisResult, UserContext } from '../types/diagnosis-types';
 
 /**
- * @description 진단 점수 처리 및 DB 저장 로직을 담당하는 서비스 클래스 (비즈니스 로직 집중)
+ * @description 핵심 비즈니스 로직: 입력 데이터와 KPI 지표를 기반으로 최종 진단 점수 및 리포트 구조를 산출합니다.
+ * 이 서비스는 Pure Function에 가깝게 설계되어야 합니다. (외부 DB 접근은 Mocking하거나 Repository 패턴을 통해 분리)
  */
 export class DiagnosisService {
 
-    // 🚨 실제로는 DB Repository를 주입받아야 합니다. (예: private dbRepo: IDiagnosisRepository)
-    constructor() {}
-
-
     /**
-     * @description KPI 데이터를 받아 최종 유효성 검사 및 데이터베이스 저장 로직을 실행합니다.
-     * @param userId - 진단을 수행한 사용자 ID.
-     * @param userRole - 사용자의 역할 (RBAC).
-     * @param kpiPayload - {DCR: number, LT: number, ACC: number, ...} 형태의 KPI 데이터 객체.
-     * @returns 성공 시 처리된 결과 객체.
+     * @description 주어진 사용자 컨텍스트와 로그 데이터를 기반으로 진단 결과를 계산합니다.
+     * @param context - 사용자 기본 정보 및 유료화 상태 등 Context 데이터.
+     * @param sessionLogs - 사용자의 세션별 활동 기록 (Pitch, Frequency Stability 등의 Raw Data).
+     * @returns 최종 진단 결과 객체 (DiagnosisResult)
+     * @throws {Error} 필수 입력 값이 누락되었거나 비즈니스 규칙을 위반할 경우 예외를 발생시킵니다.
      */
-    public async processAndStoreScore(userId: string, userRole: string, kpiPayload: DiagnosisRequestDto): Promise<any | null> {
-        Logger.log(`[${userRole}] User ${userId}가 KPI 데이터를 전송했습니다. 데이터 검증 시작.`);
-
-        // 1. RBAC (Role-Based Access Control) 재검토 및 강제화
-        if (!this.checkAccessLevel(userRole, kpiPayload)) {
-            Logger.warn(`[${userRole}] 사용자 권한이 부족하여 KPI 처리를 거부합니다.`);
-            return null; // 접근 거부
+    public static calculateScore(context: UserContext, sessionLogs: any[]): DiagnosisResult {
+        // 1. Input Validation (가드 클로즈) - 가장 먼저 깨질 수 있는 지점을 막습니다.
+        if (!context || !sessionLogs || sessionLogs.length === 0) {
+            throw new Error("진단 계산을 위한 필수 Context 및 세션 로그 데이터가 누락되었습니다.");
         }
 
-        // 2. 최종 비즈니스 로직 검증 (KPI 범위 체크 등)
-        if (!this.validateKpiRange(kpiPayload)) {
-             Logger.warn("전송된 KPI 값이 시스템이 허용하는 범위를 벗어났습니다.");
-            return null; // 데이터 무효화
-        }
+        // 2. KPI 연산 로직 (핵심 비즈니스 가치):
+        // 실제 환경에서는 이 부분에서 DB를 조회하여 Growth, Engagement, Monetization 등의 원시 데이터를 가져와야 합니다.
+        const kpiScores = this.calculateKpis(sessionLogs);
 
-        // 3. DB 트랜잭션 시작 (실제 구현 시)
-        try {
-            // A. Diagnosis_Results 테이블에 메타 정보 저장: 누가, 언제, 어떤 진단을 했는지.
-            const diagnosisResultRecord = this.createDiagnosisSummary(userId, kpiPayload);
+        // 3. 진단 점수 조합 및 구조화:
+        let totalScore = (kpiScores.growth * 0.4) + (kpiScores.engagement * 0.4) + (kpiScores.monetization * 0.2); // 가중치 적용 예시
 
-            // B. KPI_Metrics 테이블에 개별 지표 기록 (Growth/DCR 등)
-            await this.saveKpiToMetrics(kpiPayload);
+        // 4. 결과 객체 생성 및 반환
+        const result: DiagnosisResult = {
+            contextId: context.id,
+            diagnosisType: "AI_VOCAL_ANALYSIS", // 현재 진단 타입 고정
+            totalScore: Math.min(100, Math.max(0, totalScore)), // 0~100 사이로 클램프 처리
+            kpiMetrics: {
+                growth: kpiScores.growth,
+                engagement: kpiScores.engagement,
+                monetization: kpiScores.monetization,
+            },
+            // ... 기타 리포트 데이터 필드 채우기
+        };
 
-            Logger.log(`✅ 사용자 ${userId}의 진단 점수 처리가 성공적으로 완료되었습니다.`);
-            return { 
-                status: "SUCCESS", 
-                diagnosis_id: diagnosisResultRecord.id, 
-                message: "KPI 데이터가 성공적으로 기록되었습니다." 
-            };
-
-        } catch (e) {
-            Logger.error("DB 저장 중 치명적인 에러 발생:", e);
-            // 트랜잭션 롤백 로직 필요
-            return null;
-        }
+        return result;
     }
 
 
     /**
-     * @private
-     * @description 사용자의 역할에 따라 KPI 접근 권한을 검사합니다. (RBAC 핵심)
+     * @description 세션 로그를 분석하여 Growth, Engagement, Monetization KPI 점수를 산출하는 내부 함수입니다.
+     * 이 로직은 비즈니스 규칙에 따라 끊임없이 검증되어야 합니다.
      */
-    private checkAccessLevel(role: string, payload: DiagnosisRequestDto): boolean {
-        // 예시 로직: 'Premium' 역할만 DCR 지표를 쓸 수 있다.
-        if (payload.DCR !== undefined && role !== "Premium") {
-            return false; 
-        }
-        // 다른 KPI는 기본적으로 모두 허용한다고 가정
-        return true;
-    }
+    private static calculateKpis(logs: any[]): { growth: number; engagement: number; monetization: number } {
+        // Mock Implementation for now, 실제로는 복잡한 통계 분석이 들어갑니다.
+        let totalDuration = logs.reduce((sum, log) => sum + (log['duration'] || 0), 0);
 
-    /**
-     * @private
-     * @description KPI 값들이 비즈니스 상의 유효 범위를 벗어나는지 확인합니다. (Data Integrity)
-     */
-    private validateKpiRange(payload: DiagnosisRequestDto): boolean {
-        // 예시 로직: DCR은 0에서 100 사이여야 함.
-        if (payload.DCR !== undefined && (payload.DCR < 0 || payload.DCR > 100)) {
-            return false;
-        }
-        // 모든 KPI에 대한 유효성 검증 로직 추가 필요...
-        return true;
-    }
+        // Growth Score: 시간 누적에 비례 (데이터가 많을수록 성장한다고 가정)
+        const growthScore = Math.min(100, totalDuration * 2);
 
-    /**
-     * @private
-     * @description 진단 결과를 요약하여 메인 결과 테이블에 저장합니다.
-     */
-    private createDiagnosisSummary(userId: string, payload: DiagnosisRequestDto) {
-        // 실제 DB insert 로직이 들어갈 자리입니다.
-        return { id: Math.floor(Math.random() * 1000) }; // 가짜 ID 반환
-    }
+        // Engagement Score: 세션 횟수/다양성에 비례
+        const engagementScore = logs.length > 5 ? 85 : Math.floor(logs.length * 15); // 예시 로직
 
-    /**
-     * @private
-     * @description KPI 데이터를 별도의 Metrics 테이블에 저장합니다. (추적 용이성 확보)
-     */
-    private async saveKpiToMetrics(payload: DiagnosisRequestDto): Promise<void> {
-        // 실제 DB bulk insert 또는 ORM 로직 구현 필요
-        console.log("-> [DB] KPI_Metrics 테이블에 DCR, LT, ACC 기록 요청 완료.");
+        // Monetization Score: 프리미엄 기능 사용 여부에 따라 결정 (가장 가치 있는 지표)
+        let premiumUsageCount = logs.filter(log => log['feature'] === 'PremiumPitch').length;
+        const monetizationScore = Math.min(100, premiumUsageCount * 15);
+
+        return {
+            growth: growthScore,
+            engagement: engagementScore,
+            monetization: monetizationScore
+        };
     }
 }
-
-// Logger와 ValidationUtils는 별도의 유틸리티 파일로 분리됩니다.
