@@ -435,3 +435,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-05] kpi_validator 및 데이터 흐름 검증 결과를 바탕으로, 영상 제작에 필요한 기술적 안정성 목표치(KPI)를 최종 확정하고, 이 목표 달성을 위한 백엔드 로직의 실행 타임라인을 점검하라. → 산출물 sessions/2026-07-05T07-46/developer.md
 - [2026-07-05] 확정된 KPI(DCR, LT, ACC)와 데이터 흐름 검증 결과를 바탕으로 Phase 1(Data Flow)의 백엔드 로직 구현에 필요한 구체적인 API 스펙 및 데이터 모델링을 시작한다. → 산출물 sessions/2026-07-05T08-01/developer.md
 - [2026-07-05] Designer가 정의한 컴포넌트 스펙(`[HEADER_TITLE]`, `[PAIN_VISUALIZER]` 등)에 맞춰, API 연동 로직의 데이터 모델링 및 백엔드 안정성 검증을 완료한다. → 산출물 sessions/2026-07-05T09-03/developer.md
+- [2026-07-05] DiagnosisService의 핵심 비즈니스 로직 및 KPI 연산 함수 구현을 즉시 시작하여 데이터 안정성을 확보하라. → 산출물 sessions/2026-07-05T09-18/developer.md
