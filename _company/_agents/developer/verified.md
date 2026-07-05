@@ -517,3 +517,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-02] 지난 세션 기록과 코다리 개인 메모리에 따르면, `Growth`, `Engagement`, `Monetization` KPI는 `Diagnosis_Results`와 별도의 `KPI_Metrics` 테이블에 연관되어 저장하도록 설계되었습니다 . _(근거: sessions/2026-05-18T43/developer.md)_
 - [2026-07-03] 현빈 에이전트가 A/B 테스트를 위한 세 가지 가격 구조와 가치 포지셔닝(진단, 성장, 완성)이라는 고수준 전략적 변수를 정의했습니다. 또한, 제가 지난 사이클에서 DB 스키마의 핵심은 `Growth`, `Engagement`, `Monetization` KPI를 분리하여 추적하는 것이라고 검증했죠 . _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-07-05] CEO님의 지시는 명확하게 시스템의 통합 검증을 요구하고 있습니다. 단순히 '오류가 없는지 점검'하는 것을 넘어, **데이터가 시각적 경험(Visual Experience)과 상호작용할 때 발생하는 엣지 케이스(Edge Case)**를 잡아내는 것이 목표입니다. _(근거: 지난 의사결정 로그)_
+- [2026-07-05] | **Data Consistency Rate (DCR)** | KPI 데이터가 `Diagnosis_Results`와 `KPI_Metrics` 테이블 간에 외래 키로 100% 매핑되는 비율. | $\ge 99.5\%$ | 가장 기본적인 데이터 무결성 확보. 단일 트랜잭션 실패 시 롤백 로직 필수. | _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-07-05] | **Latency Threshold (LT)** | 진단 점수 API 호출 응답 시간이 최대 허용치(예: 500ms)를 넘지 않는 비율. | $\ge 99\%$ | 시각적 요소와 데이터가 동기화될 때 사용자 경험을 깨뜨리지 않도록 성능 확보. | _(근거: High Impact UX 원칙)_
+- [2026-07-05] | **Access Control Compliance (ACC)** | 요청된 `diagnosis_type`에 대한 RBAC 검증이 빠짐없이 수행되는 비율. | $100\%$ | 유료/무료 기능 분리(Monetization)의 핵심이자, 법적 안정성 확보. | _(근거: sessions/2026-05-18T13-43/developer.md)_
