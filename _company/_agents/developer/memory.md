@@ -447,3 +447,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-08] Designer가 제작한 최종 목업 디자인 스펙(`sessions/2026-07-08T15-05/designer.md`)에 맞춰, `DiagnosisScoreWidget`이 실제 API 결과에 따라 시각적 컴포넌트가 정확하게 반응하도록 상태 변화 로직(State Machine)을 최종 확정하고 코드를 구현합니다. → 산출물 sessions/2026-07-08T15-54/developer.md
 - [2026-07-08] Designer가 제작한 최종 목업 디자인 스펙(`sessions/2026-07-08T15-05/designer.md`)에 맞춰, `DiagnosisScoreWidget`이 실제 API 결과에 따라 시각적 컴포넌트가 정확하게 반응하도록 상태 변화 로직(State Machine)을 최종 확정하고 코드를 구현한다. → 산출물 sessions/2026-07-08T16-37/developer.md
 - [2026-07-08] DiagnosisScoreWidget의 코드가 실제 비주얼 컴포넌트에 정확히 매핑되도록 상태 변화 로직을 최종 점검하고, 영상 에셋 제작에 필요한 코드화 가능한 요소(애니메이션 컴포넌트)를 정리하여 전달 준비를 완료하라. → 산출물 sessions/2026-07-08T19-24/developer.md
+- [2026-07-08] DiagnosisScoreWidget의 상태 변화 로직(State Machine) 및 핵심 코드 요소를 영상 에셋 제작에 필요한 구체적인 지침과 함께 정리하여 전달 준비를 완료하라. → 산출물 sessions/2026-07-08T20-14/developer.md
