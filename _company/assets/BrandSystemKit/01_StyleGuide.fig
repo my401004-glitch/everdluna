@@ -1,0 +1,36 @@
+// [Figma Template: Style Guide & Global Assets]
+/* 목적: 모든 에셋의 기준점 제공 */
+[Color Palette]
+- Primary Trust Blue (#0A2463): 신뢰, 전문성 (헤더, 배경, 주 데이터).
+- Accent Yellow (#FFD700): 경고/기회, CTA (위험 수치, 성과 강조, 버튼).
+- Neutral Grey (#F5F5F5): 본문 배경 및 구분선.
+[Typography]
+- Title: Montserrat Bold (H1~H3) - 강력한 메시지 전달용.
+- Body: Noto Sans KR Regular/Medium - 데이터 설명 텍스트용.
+[Spacing Grid]
+- 기본 그리드: 8pt 기준 간격 유지. 모든 섹션은 최소 64px 이상의 충분한 여백 확보 (가독성 극대화).
+<end_file>
+
+<create_file path="./Assets/BrandSystemKit/02_GapScoreWidgetTemplate.fig">
+// [Figma Template: 핵심 진단 위젯]
+/* 목적: 영상 내 AI 시스템의 시각적 구현 */
+[레이아웃 구조]
+1. 제목 섹션 (Montserrat Bold, Dark Blue 배경): "Diagnosis Score" / "현재 Gap 지점".
+2. 게이지/그래프 영역: 0~100% 스케일 바.
+3. 값 표시: 숫자 'X'와 함께 간격(Gap)을 시각화하는 애니메이션 포인트.
+4. 상태별 색상 로직 (필수):
+    - High Gap Zone (< 20%): Accent Yellow (#FFD700) 배경/경고 아이콘. **[근거: Designer 검증된 지식]**
+    - Normal Zone (20~80%): Primary Blue 배경, 안정적 색상.
+    - Low Gap Zone (> 80%): Green 계열 (옵션), 달성/승리 느낌의 희망색.
+[주의사항]: 값 변화 시(RoC) 그래프가 부드럽게 움직이도록 애니메이션 지점을 명시.
+<end_file>
+
+<create_file path="./Assets/BrandSystemKit/03_CTA_GainSlideTemplate.fig">
+// [Figma Template: 전환 및 행동 유도 슬라이드]
+/* 목적: Pain $\rightarrow$ Gain 프레임워크의 최종 결론 제시 */
+[레이아웃 구조]
+1. Before (Pain): 좌절 이미지와 텍스트 블록. 배경에 어둡고 불안정한 질감 적용. (Dark Blue/Grey 사용). 핵심 메시지에 Accent Yellow로 '위험' 표시. **[근거: Designer 검증된 지식]**
+2. The Solution: 시스템의 로직(Gap Score 등)을 간단한 도표나 플로우차트로 제시. 중앙에 위치.
+3. After (Gain): 밝고 희망적인 이미지, 긍정적 수치('ROI', '성장률')를 Accent Yellow로 강조. 배경은 깨끗하고 전문적인 느낌 유지. **[근거: Designer 검증된 지식]**
+4. CTA 버튼: 가장 크고 눈에 띄게 배치 (Dark Blue 배경 + Accent Yellow 텍스트). "지금 무료 진단 받기" 등 명확한 액션 유도 문구 사용.
+<end_file>
