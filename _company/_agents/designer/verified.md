@@ -697,3 +697,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-09] * 헤드라인/강조: Montserrat Bold (강렬함) _(근거: Designer 검증된 지식)_
 - [2026-07-09] * 본문/데이터: Noto Sans KR (가독성 최적화) _(근거: Designer 검증된 지식)_
 - [2026-07-09] * **구현 로직:** 개발팀이 정의한 State Machine 로직을 그대로 반영해야 합니다. (진단 전 $\rightarrow$ 진단 중 $\rightarrow$ 결과 제시). _(근거: Developer 활동 기록)_
+- [2026-07-09] - High Gap Zone (< 20%): Accent Yellow (#FFD700) 배경/경고 아이콘. **** _(근거: Designer 검증된 지식)_
+- [2026-07-09] 1. Before (Pain): 좌절 이미지와 텍스트 블록. 배경에 어둡고 불안정한 질감 적용. (Dark Blue/Grey 사용). 핵심 메시지에 Accent Yellow로 '위험' 표시. **** _(근거: Designer 검증된 지식)_
+- [2026-07-09] 3. After (Gain): 밝고 희망적인 이미지, 긍정적 수치('ROI', '성장률')를 Accent Yellow로 강조. 배경은 깨끗하고 전문적인 느낌 유지. **** _(근거: Designer 검증된 지식)_
