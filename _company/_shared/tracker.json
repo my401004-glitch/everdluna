@@ -798,6 +798,36 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-07-05T08-30/_report.md\n- 레오: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 \n- Designer: 확정된 디자인 시스템과 기술적 KPI를 반영하여 영상 썸네일 목업(Mockup)의 구체적인 시각적 레이아웃 및 컴포넌트 적용 방안을 제시하라.\n- Writer: Designer가 제시한 썸네일 목업에 가장 효과적으로 결합될 'Fear & Proof' 기반의 후킹 카피(Headline) 3안을 작성하고, \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 정의하고, 최종 실행 계획을 수립하라.\n> 🔧 **도구 실행**: `competitor_bri",
       "completedAt": "2026-07-05T08:58:51.105Z"
+    },
+    {
+      "id": "20260709075534-oqil",
+      "title": "모든 영상 전환 지점마다 위 State Machine 로직에 따른 사운드/색상 변화가 적용되었는가?",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-07-09T07:55:34.843Z",
+      "status": "pending",
+      "sessionDir": "2026-07-09T07-52",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": []
+    },
+    {
+      "id": "20260709075534-wk0p",
+      "title": "'열정'과 '데이터'를 대비시키는 비주얼적 충돌(Conflict)이 명확하게 표현되는가?",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-07-09T07:55:34.844Z",
+      "status": "pending",
+      "sessionDir": "2026-07-09T07-52",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": []
     }
   ]
 }
