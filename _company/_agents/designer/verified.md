@@ -689,3 +689,11 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-05] * **본문/데이터:** Noto Sans KR Regular/Medium (``) - 데이터가 움직이는 곳에 가장 높은 가독성 요구됨. _(근거: Designer 검증된 지식)_
 - [2026-07-05] * **폰트/색상:** 유지. 타이틀(Montserrat Bold), 데이터(Noto Sans KR). Primary Blue (`#0A2463`), Accent Yellow (`#FFD700`). _(근거: Designer 검증된 지식)_
 - [2026-07-05] * **애니메이션 가이드라인:** 각 데이터 요소가 별도의 아이콘(``)과 함께 설명되면서, 마치 하나의 거대한 엔진을 돌리는 '엔진'처럼 연결되는 애니메이션이 필요합니다. _(근거: Designer 검증된 지식)_
+- [2026-07-09] * 브랜드 가이드라인 요약 (컬러 코드, 폰트명) _(근거: Designer 검증된 지식)_
+- [2026-07-09] * 영상 스토리보드 및 장면별 비주얼 요구사항 (Writer 스크립트 기반) _(근거: Writer 산출물)_
+- [2026-07-09] * 핵심 인터랙션 및 기술 구현 가이드 (Gap Score Widget의 상태 변화 로직, 데이터 시각화 방법) _(근거: Developer 활동 기록)_
+- [2026-07-09] * **핵심 서사 구조:** Pain $\rightarrow$ Tension $\rightarrow$ Gain (위험 제시 $\rightarrow$ 문제점 극대화 $\rightarrow$ 해결책/시스템 제시) _(근거: Designer 검증된 지식)_
+- [2026-07-09] * Accent Yellow (경고/기회/CTA): Accent Yellow (`#FFD700`) - 위험 수치 강조(Pain), 최종 CTA 버튼, 핵심 성과 수치에 사용. 즉각적 행동 유도. _(근거: Designer 검증된 지식)_
+- [2026-07-09] * 헤드라인/강조: Montserrat Bold (강렬함) _(근거: Designer 검증된 지식)_
+- [2026-07-09] * 본문/데이터: Noto Sans KR (가독성 최적화) _(근거: Designer 검증된 지식)_
+- [2026-07-09] * **구현 로직:** 개발팀이 정의한 State Machine 로직을 그대로 반영해야 합니다. (진단 전 $\rightarrow$ 진단 중 $\rightarrow$ 결과 제시). _(근거: Developer 활동 기록)_

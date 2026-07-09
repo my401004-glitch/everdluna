@@ -535,3 +535,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-05] 이제 메인 페이지 컴포넌트에 데이터 패칭 및 에러 핸들링을 통합하겠습니다. React의 `useState`와 `useEffect`를 사용하여 라이프사이클에 맞춰 데이터를 가져오고, Loading/Error 상태를 명시적으로 관리하는 것이 중요합니다. _(근거: 시니어 엔지니어 패턴)_
 - [2026-07-05] // 사용자에게 명확하고 친절한 에러 메시지를 전달합니다. _(근거: UX 원칙)_
 - [2026-07-08] CEO의 지시 내용을 검토했습니다. 저희는 현재 **데이터 기반의 로직(State Machine)**은 상당히 완성된 상태이고, 이는 API 응답을 받아 `DiagnosisScoreWidget`에 매핑되어 시각적으로 작동하는 단계입니다 . _(근거: sessions/2026-07-08T15-54/developer.md)_
+- [2026-07-09] 12	* **핵심 서사 구조:** Pain $\rightarrow$ Tension $\rightarrow$ Gain (위험 제시 $\rightarrow$ 문제점 극대화 $\rightarrow$ 해결책/시스템 제시) _(근거: Designer 검증된 지식)_
+- [2026-07-09] 18 * Accent Yellow (경고/기회/CTA): Accent Yellow (`#FFD700`) - 위험 수치 강조(Pain), 최종 CTA 버튼, 핵심 성과 수치에 사용. 즉각적 행동 유도. _(근거: Designer 검증된 지식)_
+- [2026-07-09] 21 * 헤드라인/강조: Montserrat Bold (강렬함) _(근거: Designer 검증된 지식)_
+- [2026-07-09] 22 * 본문/데이터: Noto Sans KR (가독성 최적화) _(근거: Designer 검증된 지식)_
+- [2026-07-09] 35	* **구현 로직:** 개발팀이 정의한 State Machine 로직을 그대로 반영해야 합니다. (진단 전 $\rightarrow$ 진단 중 $\rightarrow$ 결과 제시). _(근거: Developer 활동 기록)_
