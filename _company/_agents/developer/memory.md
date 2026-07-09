@@ -451,3 +451,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-08] Designer가 제공한 시각적 요구사항을 기반으로 DiagnosisScoreWidget의 상태 변화 로직(State Machine) 코드를 최종 검토하고 구현한다. → 산출물 sessions/2026-07-08T21-07/developer.md
 - [2026-07-08] DiagnosisScoreWidget의 상태 변화 로직(State Machine) 코드를 최종 검토하고, 영상 에셋 제작에 필요한 구체적인 지침과 함께 정리하여 전달 준비를 완료하라. → 산출물 sessions/2026-07-08T22-05/developer.md
 - [2026-07-08] DiagnosisScoreWidget의 상태 변화 로직(State Machine) 코드를 최종 검토하고, 영상 에셋 제작에 필요한 구체적인 지침과 함께 정리하여 전달 준비를 완료하라. → 산출물 sessions/2026-07-08T22-59/developer.md
+- [2026-07-09] DiagnosisScoreWidget의 상태 변화 로직(State Machine) 코드와 시각적 요구사항을 기반으로, 영상 에셋 제작에 필요한 구체적인 지침과 기술적 제약 사항을 명확하게 정리하여 전달 준비를 완료하라. → 산출물 sessions/2026-07-09T00-00/developer.md
