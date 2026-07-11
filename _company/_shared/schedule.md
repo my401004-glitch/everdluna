@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 11. 오후 3:24:08_
+_업데이트: 2026. 7. 11. 오후 3:39:15_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 7. 11. 오후 3:24:08_
 - [2026-07-03] CEO의 다음 액션 중 두 번째 순위인 'Instagram'을 위한 A/B 테스트용 카피(Pain Point 강조 버전)를 제작하고, 초기 사용자 유입 극대화를 위한 Reels 및 피드 발행 계획 초안을 수립하라. → 산출물 sessions/2026-07-03T04-33/instagram.md
 - [2026-07-08] Designer가 제작한 콘텐츠 템플릿 패키지(`Content_Templates_Package_V1.zip`)를 활용하여 최종 확정된 비주얼 컨셉에 맞춰 인스타그램 마케팅 콘텐츠 발행 계획을 구체화한다. → 산출물 sessions/2026-07-08T21-07/instagram.md
 ### 🎨 Designer
-- [2026-07-11] Developer가 확정한 기술 사양(V3.0)과 Writer의 스크립트 방향성을 기반으로, 영상의 전체적인 톤앤매너 및 핵심 시각적 요구사항을 최종 마스터 비주얼 가이드라인으로 정리하라. → 산출물 sessions/2026-07-11T04-09/designer.md
 - [2026-07-11] VideoEditor_Handover_Package_V2.md에 명시된 최종 마스터 비주얼 가이드라인을 기반으로, 다음 영상 제작에 필요한 핵심 시각적 에셋 요구사항을 확정하고 정리하라. → 산출물 sessions/2026-07-11T06-05/designer.md
 - [2026-07-11] ModuleC_Asset_Requirement_List.md에 명시된 요구사항(톤앤매너: 전문적, 경고성)을 기반으로 DiagnosisScoreWidget의 3D 애니메이션 및 핵심 시각 요소를 즉시 제작하여 마스터 비주얼 가이드라인을 구체화한다. → 산출물 sessions/2026-07-11T06-20/designer.md
+- [2026-07-11] 마스터 비주얼 가이드라인(`Master_Visual_Guidebook/DiagnosisScoreWidget_V1.md`)을 기반으로, Developer가 제시한 API 스키마와 로직이 시각적으로 구현될 때 발생할 수 있는 기술적 병목 지점 및 아트 에셋 요구사항의 구체적인 목록을 정리하라. → 산출물 sessions/2026-07-11T06-35/designer.md
 ### 💻 코다리
-- [2026-07-11] VideoEditor_Handover_Package_V2.md에 명시된 기술적 지침과 Writer/Designer의 요구사항이 완벽하게 반영되었는지 최종 QA를 수행하고, 모든 에셋 및 로직에 대한 핸드오버 문서를 완성하여 외부 전달을 준비하라. → 산출물 sessions/2026-07-11T04-09/developer.md
 - [2026-07-11] VideoEditor_Handover_Package_V2.md의 기술 지침과 Designer/Writer의 요구사항이 반영된 최종 '마스터 프로덕션 바이블'에 대한 기술적 실현 가능성 검토(QA)를 수행하고, 제작 단계별 기술 체크리스트를 작성하라. → 산출물 sessions/2026-07-11T06-05/developer.md
 - [2026-07-11] Diagnosis Score 산출 로직($W_n$)에 대한 최종 백엔드 설계안을 확정하고, Designer가 요구하는 시각적 구현(3D 애니메이션)이 기술적으로 실현 가능한지 검토하여 개발 착수 준비를 완료한다. → 산출물 sessions/2026-07-11T06-20/developer.md
+- [2026-07-11] DiagnosisScoreWidget 구현에 필요한 기술적 로직($W_n$)과 Designer가 요구한 시각적 요구사항(Master Visual Guidebook)이 완벽하게 동기화되는지 검토하고, 영상 제작 단계별로 기술/시각 통합 실현 가능성 체크리스트를 작성하라. → 산출물 sessions/2026-07-11T06-35/developer.md
 ### 💼 현빈
 - [2026-07-05] 다음 4개 영상 시리즈에 대한 수익화 전략(티어 설정, 가격 책정)을 데이터 기반으로 재검토하고 실행 가능한 마케팅 로드맵을 수립하라. → 산출물 sessions/2026-07-05T13-14/business.md
 - [2026-07-05] 수익화 모듈 맵 중 가장 낮은 진입 장벽인 [Module A]에 대해 최소 기능 제품(MVP)의 구체적인 기능 목록과 초기 유료 사용자 확보를 위한 랜딩 페이지의 핵심 구조(AIDA 프레임워크 적용)를 설계하라. → 산출물 sessions/2026-07-05T13-29/business.md
