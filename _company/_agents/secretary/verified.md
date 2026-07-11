@@ -1593,3 +1593,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-10] **B. 타이포그래피 및 레이아웃 (Typography & Layout)** _(근거: Designer 검증된 지식)_
 - [2026-07-10] ### II. ⚙️ 핵심 로직 흐름 (The Diagnostic Flow & State Machine) _(근거: 코다리 활동 로그 / Self-RAG)_
 - [2026-07-10] ### III. 🎬 최종 제작 지침 (Production Checklist for Editor) _(근거: CEO 지시 / 통합 스케줄)_
+- [2026-07-11] * **현재 과제:** 기술적 로직($W_n$의 상태값 변화) $\leftrightarrow$ 비주얼 트랜지션(색상, 애니메이션) 간의 **'최종 동기화 매뉴얼'**을 제작하는 것이 최우선입니다. _(근거: CEO 지시/코다리 활동 로그)_
+- [2026-07-11] * **원천:** 백엔드 API로부터의 실시간 진단 점수($W_n$) 값 변화에 의해 모든 이벤트가 발생합니다. _(근거: DiagnosisScoreWidget_Technical_Spec_V1.0.md)_
