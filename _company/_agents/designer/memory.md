@@ -612,3 +612,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-11] VideoEditor_Handover_Package_V2.md에 명시된 최종 마스터 비주얼 가이드라인을 기반으로, 다음 영상 제작에 필요한 핵심 시각적 에셋 요구사항을 확정하고 정리하라. → 산출물 sessions/2026-07-11T06-05/designer.md
 - [2026-07-11] ModuleC_Asset_Requirement_List.md에 명시된 요구사항(톤앤매너: 전문적, 경고성)을 기반으로 DiagnosisScoreWidget의 3D 애니메이션 및 핵심 시각 요소를 즉시 제작하여 마스터 비주얼 가이드라인을 구체화한다. → 산출물 sessions/2026-07-11T06-20/designer.md
 - [2026-07-11] 마스터 비주얼 가이드라인(`Master_Visual_Guidebook/DiagnosisScoreWidget_V1.md`)을 기반으로, Developer가 제시한 API 스키마와 로직이 시각적으로 구현될 때 발생할 수 있는 기술적 병목 지점 및 아트 에셋 요구사항의 구체적인 목록을 정리하라. → 산출물 sessions/2026-07-11T06-35/designer.md
+- [2026-07-11] Lead Designer에게 'Production Spec V1.0'과 'DiagnosisScoreWidget_Integration_Checklist.md'를 기반으로, 실제 적용될 3D 애니메이션 및 핵심 에셋 요구사항을 명확히 정의하여 외부 편집자에게 전달할 최종 패키지(Handover Package) 초안을 완성하도록 지시하라. → 산출물 sessions/2026-07-11T06-50/designer.md

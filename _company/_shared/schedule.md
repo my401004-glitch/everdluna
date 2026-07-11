@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 11. 오후 3:39:15_
+_업데이트: 2026. 7. 11. 오후 3:54:44_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,21 +13,21 @@ _업데이트: 2026. 7. 11. 오후 3:39:15_
 - [2026-07-03] CEO의 다음 액션 중 두 번째 순위인 'Instagram'을 위한 A/B 테스트용 카피(Pain Point 강조 버전)를 제작하고, 초기 사용자 유입 극대화를 위한 Reels 및 피드 발행 계획 초안을 수립하라. → 산출물 sessions/2026-07-03T04-33/instagram.md
 - [2026-07-08] Designer가 제작한 콘텐츠 템플릿 패키지(`Content_Templates_Package_V1.zip`)를 활용하여 최종 확정된 비주얼 컨셉에 맞춰 인스타그램 마케팅 콘텐츠 발행 계획을 구체화한다. → 산출물 sessions/2026-07-08T21-07/instagram.md
 ### 🎨 Designer
-- [2026-07-11] VideoEditor_Handover_Package_V2.md에 명시된 최종 마스터 비주얼 가이드라인을 기반으로, 다음 영상 제작에 필요한 핵심 시각적 에셋 요구사항을 확정하고 정리하라. → 산출물 sessions/2026-07-11T06-05/designer.md
 - [2026-07-11] ModuleC_Asset_Requirement_List.md에 명시된 요구사항(톤앤매너: 전문적, 경고성)을 기반으로 DiagnosisScoreWidget의 3D 애니메이션 및 핵심 시각 요소를 즉시 제작하여 마스터 비주얼 가이드라인을 구체화한다. → 산출물 sessions/2026-07-11T06-20/designer.md
 - [2026-07-11] 마스터 비주얼 가이드라인(`Master_Visual_Guidebook/DiagnosisScoreWidget_V1.md`)을 기반으로, Developer가 제시한 API 스키마와 로직이 시각적으로 구현될 때 발생할 수 있는 기술적 병목 지점 및 아트 에셋 요구사항의 구체적인 목록을 정리하라. → 산출물 sessions/2026-07-11T06-35/designer.md
+- [2026-07-11] Lead Designer에게 'Production Spec V1.0'과 'DiagnosisScoreWidget_Integration_Checklist.md'를 기반으로, 실제 적용될 3D 애니메이션 및 핵심 에셋 요구사항을 명확히 정의하여 외부 편집자에게 전달할 최종 패키지(Handover Package) 초안을 완성하도록 지시하라. → 산출물 sessions/2026-07-11T06-50/designer.md
 ### 💻 코다리
-- [2026-07-11] VideoEditor_Handover_Package_V2.md의 기술 지침과 Designer/Writer의 요구사항이 반영된 최종 '마스터 프로덕션 바이블'에 대한 기술적 실현 가능성 검토(QA)를 수행하고, 제작 단계별 기술 체크리스트를 작성하라. → 산출물 sessions/2026-07-11T06-05/developer.md
 - [2026-07-11] Diagnosis Score 산출 로직($W_n$)에 대한 최종 백엔드 설계안을 확정하고, Designer가 요구하는 시각적 구현(3D 애니메이션)이 기술적으로 실현 가능한지 검토하여 개발 착수 준비를 완료한다. → 산출물 sessions/2026-07-11T06-20/developer.md
 - [2026-07-11] DiagnosisScoreWidget 구현에 필요한 기술적 로직($W_n$)과 Designer가 요구한 시각적 요구사항(Master Visual Guidebook)이 완벽하게 동기화되는지 검토하고, 영상 제작 단계별로 기술/시각 통합 실현 가능성 체크리스트를 작성하라. → 산출물 sessions/2026-07-11T06-35/developer.md
+- [2026-07-11] 코다리에게 'DiagnosisScoreWidget_Integration_Checklist.md'를 기반으로 최종 백엔드 로직($W_n$)에 대한 개발 착수 준비 완료 보고서를 작성하도록 지시하고, 기술적 병목 지점 목록을 확정하도록 요청하라. → 산출물 sessions/2026-07-11T06-50/developer.md
 ### 💼 현빈
 - [2026-07-05] 다음 4개 영상 시리즈에 대한 수익화 전략(티어 설정, 가격 책정)을 데이터 기반으로 재검토하고 실행 가능한 마케팅 로드맵을 수립하라. → 산출물 sessions/2026-07-05T13-14/business.md
 - [2026-07-05] 수익화 모듈 맵 중 가장 낮은 진입 장벽인 [Module A]에 대해 최소 기능 제품(MVP)의 구체적인 기능 목록과 초기 유료 사용자 확보를 위한 랜딩 페이지의 핵심 구조(AIDA 프레임워크 적용)를 설계하라. → 산출물 sessions/2026-07-05T13-29/business.md
 - [2026-07-08] MVP 구현에 앞서, 수익화 모듈(가격 구조)을 기반으로 MVP가 충족해야 할 최소한의 핵심 기능(MVP Scope)과 초기 유료 사용자 확보를 위한 핵심 KPI 지표를 재확인하고 개발팀에 전달할 준비를 하라. → 산출물 sessions/2026-07-08T13-54/business.md
 ### 📱 영숙
-- [2026-07-10] youtube와 editor가 수립한 제작 계획을 기반으로 다음 영상(Module C)에 대한 마일스톤별 상세 일정표를 생성하고, 필요한 리소스 및 외부 편집자 피드백 일정을 포함하여 1개월 실행 로드맵을 작성하라. → 산출물 sessions/2026-07-10T06-14/secretary.md
 - [2026-07-10] 개발자와 디자이너의 QA 결과를 통합하여, 외부 편집자가 즉시 작업에 착수할 수 있는 최종 검토 문서(Master Production Bible)를 취합하고 정리하는 작업을 주도하라. → 산출물 sessions/2026-07-10T06-29/secretary.md
 - [2026-07-11] 위 세 에이전트의 산출물을 취합하여 다음 영상(Module C)의 촬영, 편집, 사운드 디자인을 포함한 전체 제작 일정 로드맵 및 외부 편집자 전달용 액션 플랜을 작성하라. → 산출물 sessions/2026-07-11T06-05/secretary.md
+- [2026-07-11] 다음 작업에 대한 개발 및 디자인의 진행 상황을 모니터링하고, 외부 편집자에게 전달될 마스터 프로덕션 바이블 최종 배포 일정을 설정하여 트래킹하도록 준비하라. → 산출물 sessions/2026-07-11T06-50/secretary.md
 ### 🎵 루나
 - [2026-07-01] writer의 스크립트 흐름에 맞춰 감정적 변곡점을 설정하고, MusicGen/ACE-Step을 활용하여 영상 분위기에 최적화된 BGM 프롬프트 템플릿을 생성하고 사운드 디자인 방향성을 확정하라. → 산출물 sessions/2026-07-01T03-45/editor.md
 - [2026-07-04] Writer의 스크립트를 기반으로 영상 길이와 흐름에 맞는 BGM 분위기 및 사운드 디자인(Sound Design) 전략을 구상하고, AI 음악 생성 도구(MusicGen/ACE-Step)를 활용할 수 있는 오디오 템플릿을 준비해줘. → 산출물 sessions/2026-07-04T09-35/editor.md
