@@ -711,3 +711,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-10] **B. 데이터 표현 원칙**: _(근거: Designer 검증된 지식)_
 - [2026-07-10] **A. DiagnosisScoreWidget 로직 구현 규칙** _(근거: Designer 검증된 지식)_
 - [2026-07-10] **B. 사운드 디자인 아크 (Emotional Arc)** _(근거: Designer 검증된 지식)_
+- [2026-07-11] * **신뢰/안정 (Trust):** Dark Blue (`#0A2463`) - 메인 UI 구조, 배경의 안정적인 기반을 제공합니다. _(근거: Designer 검증된 지식)_
+- [2026-07-11] * **경고/위험 (Pain/Warning):** Red 계열 또는 Accent Yellow (`#FFD700`) - 점수가 낮은 구간(이탈 위험)에 즉각적으로 사용됩니다. _(근거: Designer 검증된 지식)_
+- [2026-07-11] * **기회/성공 (Gain/CTA):** Bright Green or Accent Yellow (`#FFD700`) - 최종 성공 메시지, 행동 유도 영역에 사용합니다. _(근거: Designer 검증된 지식)_
+- [2026-07-11] * **헤드라인:** Montserrat Bold - 점수 변화의 크기나 의미를 강조할 때만 사용. _(근거: Designer 검증된 지식)_
