@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 10. 오후 3:32:47_
+_업데이트: 2026. 7. 11. 오후 2:09:24_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 7. 10. 오후 3:32:47_
 - [2026-07-03] CEO의 다음 액션 중 두 번째 순위인 'Instagram'을 위한 A/B 테스트용 카피(Pain Point 강조 버전)를 제작하고, 초기 사용자 유입 극대화를 위한 Reels 및 피드 발행 계획 초안을 수립하라. → 산출물 sessions/2026-07-03T04-33/instagram.md
 - [2026-07-08] Designer가 제작한 콘텐츠 템플릿 패키지(`Content_Templates_Package_V1.zip`)를 활용하여 최종 확정된 비주얼 컨셉에 맞춰 인스타그램 마케팅 콘텐츠 발행 계획을 구체화한다. → 산출물 sessions/2026-07-08T21-07/instagram.md
 ### 🎨 Designer
-- [2026-07-09] 코다리가 정의한 최종 기술 사양서(V3.0)와 영상 내러티브를 기반으로, DiagnosisScoreWidget의 핵심 컴포넌트 라이브러리(`DiagnosisWidget`)에 대한 Figma 프로토타입 목업을 즉시 완성하고 시각적 가이드라인을 명확히 하라. → 산출물 sessions/2026-07-09T08-22/designer.md
 - [2026-07-10] VideoEditor_Handover_Package_V2.md에 명시된 시각적 요구사항과 최종 아트 에셋을 기반으로, 영상의 전체적인 톤앤매너(전문적이고 경고성)를 유지하는 마스터 비주얼 가이드라인 및 템플릿을 최종 완성하라. → 산출물 sessions/2026-07-10T05-59/designer.md
 - [2026-07-10] VideoEditor_Handover_Package_V2.md에 명시된 시각적 요구사항과 최종 아트 에셋을 기반으로, 영상의 전체적인 톤앤매너(전문적이고 경고성)를 유지하는 마스터 비주얼 가이드라인 및 템플릿을 최종 완성하라. → 산출물 sessions/2026-07-10T06-29/designer.md
+- [2026-07-11] Developer가 확정한 기술 사양(V3.0)과 Writer의 스크립트 방향성을 기반으로, 영상의 전체적인 톤앤매너 및 핵심 시각적 요구사항을 최종 마스터 비주얼 가이드라인으로 정리하라. → 산출물 sessions/2026-07-11T04-09/designer.md
 ### 💻 코다리
-- [2026-07-09] VideoEditor_Handover_Package_V2.md의 모든 기술적 지침과 비주얼 요구사항이 완벽하게 반영되었는지 최종 QA를 수행하고, 모든 에셋 및 로직에 대한 핸드오버 문서를 완성하라. → 산출물 sessions/2026-07-09T08-07/developer.md
 - [2026-07-10] VideoEditor_Handover_Package_V2.md에 명시된 기술적 지침(DiagnosisScoreWidget 로직, API 연동 등)과 시각적 요구사항이 완벽하게 반영되었는지 최종 QA를 수행하고, 모든 에셋 및 로직에 대한 핸드오버 문서를 완성하여 외부 전달을 준비하라. → 산출물 sessions/2026-07-10T05-59/developer.md
 - [2026-07-10] VideoEditor_Handover_Package_V2.md에 명시된 모든 기술적 지침(DiagnosisScoreWidget 로직, API 연동 등)과 시각적 요구사항이 완벽하게 반영되었는지 최종 QA를 수행하고, 모든 에셋 및 로직에 대한 핸드오버 문서를 완성하여 외부 전달을 준비하라. → 산출물 sessions/2026-07-10T06-29/developer.md
+- [2026-07-11] VideoEditor_Handover_Package_V2.md에 명시된 기술적 지침과 Writer/Designer의 요구사항이 완벽하게 반영되었는지 최종 QA를 수행하고, 모든 에셋 및 로직에 대한 핸드오버 문서를 완성하여 외부 전달을 준비하라. → 산출물 sessions/2026-07-11T04-09/developer.md
 ### 💼 현빈
 - [2026-07-05] 다음 4개 영상 시리즈에 대한 수익화 전략(티어 설정, 가격 책정)을 데이터 기반으로 재검토하고 실행 가능한 마케팅 로드맵을 수립하라. → 산출물 sessions/2026-07-05T13-14/business.md
 - [2026-07-05] 수익화 모듈 맵 중 가장 낮은 진입 장벽인 [Module A]에 대해 최소 기능 제품(MVP)의 구체적인 기능 목록과 초기 유료 사용자 확보를 위한 랜딩 페이지의 핵심 구조(AIDA 프레임워크 적용)를 설계하라. → 산출물 sessions/2026-07-05T13-29/business.md
@@ -33,9 +33,9 @@ _업데이트: 2026. 7. 10. 오후 3:32:47_
 - [2026-07-04] Writer의 스크립트를 기반으로 영상 길이와 흐름에 맞는 BGM 분위기 및 사운드 디자인(Sound Design) 전략을 구상하고, AI 음악 생성 도구(MusicGen/ACE-Step)를 활용할 수 있는 오디오 템플릿을 준비해줘. → 산출물 sessions/2026-07-04T09-35/editor.md
 - [2026-07-10] 마스터 비주얼 가이드라인(`Master_Visual_Guideline_V1.md`)과 기술 사양서에 기반하여, 영상 제작 단계별로 필요한 BGM 및 사운드 디자인의 전체적인 톤앤매너 및 요구사항을 정리한 초기 사운드 스펙 초안을 작성하라. → 산출물 sessions/2026-07-10T06-14/editor.md
 ### ✍️ Writer
-- [2026-07-09] Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, 확정된 영상 스크립트 및 내레이션 초안을 즉시 작성하라. → 산출물 sessions/2026-07-09T07-52/writer.md
 - [2026-07-09] DiagnosisScoreWidget의 각 상태(Phase 1: Crisis 등)에 정확히 매핑되는 영상 스크립트와 시각적 요구사항을 최종 확정하여 마스터 프로덕션 바이블에 통합하고 외부 편집자에게 전달할 최종 내러티브를 작성하라. → 산출물 sessions/2026-07-09T08-07/writer.md
 - [2026-07-10] VideoEditor_Handover_Package_V2.md에 명시된 영상 내러티브와 핵심 메시지를 기반으로, 최종 편집자가 사용할 수 있도록 각 챕터별 상세 스크립트 및 내레이션 가이드라인을 작성하라. → 산출물 sessions/2026-07-10T05-59/writer.md
+- [2026-07-11] 다음 영상(Module C)에 대한 구체적인 주제와 핵심 메시지를 바탕으로, 최종 스토리보드 및 편집 가이드라인 초안을 작성하여 Designer와 Developer에게 전달할 준비를 하라. → 산출물 sessions/2026-07-11T04-09/writer.md
 ### 🔍 Researcher
 - [2026-07-04] 선정된 3가지 콘텐츠 주제에 대해 경쟁사 데이터 및 트렌드를 분석하여, 각 주제의 잠재적 CTR과 수익화 가능성을 예측하고 우선순위를 재조정하라. → 산출물 sessions/2026-07-04T09-57/researcher.md
 - [2026-07-04] 이전 단계에서 확정된 'Fear & Proof' 전략과 AI 진단 기반의 Pain Focus/Gain Focus를 반영하여, 다음 4개 영상 제작에 가장 높은 조회수 잠재력을 가질 수 있는 최종 콘텐츠 주제 3가지를 선정하고, 각 주제별 경쟁사 데이터 및 트렌드 분석을 즉시 수행하라. → 산출물 sessions/2026-07-04T10-27/researcher.md

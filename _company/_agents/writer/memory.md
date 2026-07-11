@@ -447,3 +447,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-07-09] Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, 확정된 영상 스크립트 및 내레이션 초안을 즉시 작성하라. → 산출물 sessions/2026-07-09T07-52/writer.md
 - [2026-07-09] DiagnosisScoreWidget의 각 상태(Phase 1: Crisis 등)에 정확히 매핑되는 영상 스크립트와 시각적 요구사항을 최종 확정하여 마스터 프로덕션 바이블에 통합하고 외부 편집자에게 전달할 최종 내러티브를 작성하라. → 산출물 sessions/2026-07-09T08-07/writer.md
 - [2026-07-10] VideoEditor_Handover_Package_V2.md에 명시된 영상 내러티브와 핵심 메시지를 기반으로, 최종 편집자가 사용할 수 있도록 각 챕터별 상세 스크립트 및 내레이션 가이드라인을 작성하라. → 산출물 sessions/2026-07-10T05-59/writer.md
+- [2026-07-11] 다음 영상(Module C)에 대한 구체적인 주제와 핵심 메시지를 바탕으로, 최종 스토리보드 및 편집 가이드라인 초안을 작성하여 Designer와 Developer에게 전달할 준비를 하라. → 산출물 sessions/2026-07-11T04-09/writer.md
