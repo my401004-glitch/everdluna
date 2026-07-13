@@ -794,3 +794,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-13] * 좌측 상단의 핵심 메시지(Pain)를 가장 크게 배치하여 시선 집중도를 높인다. _(근거: Designer 개인 메모리 - Impact Point)_
 - [2026-07-13] * 세로형 비율(4:5 또는 1080x1350)을 최우선으로 준수한다. _(근거: Instagram 최근 활동 지식)_
 - [2026-07-13] * **필수 요소:** 'Gap Score' 시각화 차트(Gauge/Bar Graph), 데이터 출처 표기(``). _(근거: AI 진단 시스템)_
+- [2026-07-13] * **Primary Color (Trust):** Dark Blue (`#0A2463`) - 배경, 신뢰 영역, 헤더 사용. 전문성 확보. _(근거: Designer 검증된 지식)_
+- [2026-07-13] * **Accent Color (CTA/Gain):** Accent Yellow (`#FFD700`) - 위험(Pain) 강조, 기회(Gain), CTA 버튼에 사용. 즉각적 행동 유도. _(근거: Designer 검증된 지식)_
+- [2026-07-13] * **Background/Data:** Neutral Grey (`#F5F5F5`) - 데이터 영역의 명확성 확보. _(근거: Designer 검증된 지식)_
+- [2026-07-13] * **Typography:** Title (Montserrat Bold), Body (Noto Sans KR). _(근거: Designer 검증된 지식)_
