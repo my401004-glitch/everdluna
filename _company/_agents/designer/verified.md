@@ -750,3 +750,10 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-13] ### A. Gap Score Widget (데이터 위젯 - ) _(근거: ModuleC_Visual_Master_Guide_V1.0.md)_
 - [2026-07-13] ### B. 성장 곡선 그래프 (Growth Curve - ) _(근거: sessions/2026-05-18T14-38/designer.md)_
 - [2026-07-13] ## ✨ 3. 트랜지션 애니메이션 가이드 (Transition Logic - ) _(근거: ModuleC_Visual_Master_Guide_V1.0.md)_
+- [2026-07-13] | 요소 | 설정 값 | 목적 및 효과 | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] | **Primary Color (신뢰)** | Dark Blue (`#0A2463`) | 배경, 헤더, 주요 정보 섹션. 전문성과 신뢰감을 극대화합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] | **Accent Color (CTA/Gain)** | Accent Yellow (`#FFD700`) | 모든 CTA 버튼, '획득 가능한 이익(Gain)', 즉각적인 시선 집중 영역에 사용. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] | **Neutral Grey (가독성)** | `#F5F5F5` | 본문 텍스트 배경 및 데이터 테이블의 가독성을 높입니다. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] | **Title Typography** | Montserrat Bold | 모든 핵심 헤드라인(Pain, Gain)에 사용되어 강력한 메시지 전달력을 확보합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] | **Body Typography** | Noto Sans KR (Regular/Medium) | 구체적인 데이터 및 상세 설명 텍스트에 사용하여 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] * *예시 카피:* "노력만으로는 부족하다." _(근거: Writer의 카피 세트 A)_
