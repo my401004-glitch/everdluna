@@ -32,3 +32,4 @@ _Instagram 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-03] CEO의 다음 액션 중 두 번째 순위인 'Instagram'을 위한 A/B 테스트용 카피(Pain Point 강조 버전)를 제작하고, 초기 사용자 유입 극대화를 위한 Reels 및 피드 발행 계획 초안을 수립하라. → 산출물 sessions/2026-07-03T04-33/instagram.md
 - [2026-07-08] Designer가 제작한 콘텐츠 템플릿 패키지(`Content_Templates_Package_V1.zip`)를 활용하여 최종 확정된 비주얼 컨셉에 맞춰 인스타그램 마케팅 콘텐츠 발행 계획을 구체화한다. → 산출물 sessions/2026-07-08T21-07/instagram.md
 - [2026-07-13] Instagram은 Writer와 Designer가 준비한 마케팅 초안(캡션 및 시각 자료)에 맞춰 첫 주 콘텐츠 발행 계획(Reels 및 피드) 초안을 수립하고, 최적의 게시 시간을 제안하라. → 산출물 sessions/2026-07-13T06-27/instagram.md
+- [2026-07-13] Designer와 Writer가 준비한 마케팅 자산(최종 썸네일 및 광고 카드)을 활용하여 첫 주 콘텐츠 발행 계획(Reels 및 피드)을 수립하고, 가장 높은 인게이지먼트를 유도할 최적의 게시 시간을 제안하라. → 산출물 sessions/2026-07-13T07-57/instagram.md
