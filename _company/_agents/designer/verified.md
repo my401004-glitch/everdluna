@@ -757,3 +757,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-13] | **Title Typography** | Montserrat Bold | 모든 핵심 헤드라인(Pain, Gain)에 사용되어 강력한 메시지 전달력을 확보합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-07-13] | **Body Typography** | Noto Sans KR (Regular/Medium) | 구체적인 데이터 및 상세 설명 텍스트에 사용하여 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
 - [2026-07-13] * *예시 카피:* "노력만으로는 부족하다." _(근거: Writer의 카피 세트 A)_
+- [2026-07-13] | **Primary Color (신뢰)** | Dark Blue (`#0A2463`) | 배경, 헤더 등 전반적인 전문성 유지. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] | **Accent Yellow (CTA/Gain)** | Accent Yellow (`#FFD700`) | 신뢰 컴포넌트의 성공 상태 표시(✅), 경고 메시지(⚠️)에 사용되어 시선을 집중시키고 행동을 유도합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] | **Typography** | Montserrat Bold (헤드라인), Noto Sans KR (본문/데이터) | 기술적 정보라도 가독성을 유지하며, 중요한 경고나 성공 메시지에 강력한 임팩트를 부여합니다. | | _(근거: Designer 검증된 지식)_
