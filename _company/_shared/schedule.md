@@ -1,25 +1,25 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 13. 오후 12:13:42_
+_업데이트: 2026. 7. 13. 오후 12:29:35_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-07-13] Module C 영상에 대한 최종 제작 일정, 촬영, 편집, 사운드 디자인을 포함한 단계별 실행 계획(`ModuleC_Final_Production_Action_Plan_V3.md`)을 외부 편집자에게 배포할 구체적인 액션 플랜 문서를 작성하고 배포를 준비하세요. → 산출물 sessions/2026-07-13T02-16/youtube.md
 - [2026-07-13] Module C 영상 제작을 위한 최종 핸드오버 패키지(`ModuleC_Final_Production_Action_Plan_V3.md`)의 외부 편집자 배포 일정을 확정하고, 그에 따른 콘텐츠 배포 전략을 수립하라. → 산출물 sessions/2026-07-13T02-31/youtube.md
 - [2026-07-13] Module C 영상의 실제 제작 일정, 촬영, 편집, 사운드 디자인을 포함한 단계별 실행 계획(`ModuleC_Final_Production_Action_Plan_V3.md`)을 최종 확정하고 외부 편집자에게 배포할 구체적인 액션 플랜 문서를 작성하여 즉시 전달 준비를 완료하라. → 산출물 sessions/2026-07-13T03-10/youtube.md
+- [2026-07-13] 외부 편집자에게 ModuleC_Final_Production_Action_Plan_V3.md와 ModuleC_Technical_Spec_Handoff_V1.0.md를 통합한 최종 핸드오버 패키지를 즉시 배포할 수 있도록 모든 문서를 최종 검토하고 배포 준비를 완료하라. → 산출물 sessions/2026-07-13T03-25/youtube.md
 ### 📷 Instagram
 - [2026-07-01] Designer가 제작한 Mockup을 활용하여 확정된 마케팅 운영 플레이북에 따라 첫 주 마케팅 콘텐츠 발행(Reels 및 피드)을 즉시 실행하라. → 산출물 sessions/2026-07-01T05-25/instagram.md
 - [2026-07-03] CEO의 다음 액션 중 두 번째 순위인 'Instagram'을 위한 A/B 테스트용 카피(Pain Point 강조 버전)를 제작하고, 초기 사용자 유입 극대화를 위한 Reels 및 피드 발행 계획 초안을 수립하라. → 산출물 sessions/2026-07-03T04-33/instagram.md
 - [2026-07-08] Designer가 제작한 콘텐츠 템플릿 패키지(`Content_Templates_Package_V1.zip`)를 활용하여 최종 확정된 비주얼 컨셉에 맞춰 인스타그램 마케팅 콘텐츠 발행 계획을 구체화한다. → 산출물 sessions/2026-07-08T21-07/instagram.md
 ### 🎨 Designer
-- [2026-07-13] Module C 영상에 필요한 아트 에셋 요구사항 및 시각적 가이드라인(`ModuleC_Visual_Master_Guide_V1.0.md`)을 최종 확정하여 외부 편집자가 즉시 구현할 수 있도록 지원하세요. → 산출물 sessions/2026-07-13T02-16/designer.md
 - [2026-07-13] Master_Handover_V2.0 및 ModuleC_Visual_Master_Guide_V1.0.md를 기반으로 핵심 에셋 및 트랜지션의 프로토타입 제작을 즉시 시작하고, 기술 스펙 준수 여부를 검증하라. → 산출물 sessions/2026-07-13T02-31/designer.md
 - [2026-07-13] Module C 티저 콘텐츠에 필요한 비주얼 방향성(톤앤매너)을 확정하고, Writer가 제시한 카피에 기반하여 핵심 시각 요소(컬러 팔레트 및 타이포그래피)의 초기 브리프를 작성하라. → 산출물 sessions/2026-07-13T02-55/designer.md
+- [2026-07-13] 확정된 디자인 시스템(Primary Color(#0A2463), Accent Color(#FFD700))에 맞춰 핵심 에셋 및 트랜지션 프로토타입 제작을 최종 완료하고, 코다리에게 기술 스펙 준수 여부에 대한 검증 요청을 시작하라. → 산출물 sessions/2026-07-13T03-25/designer.md
 ### 💻 코다리
-- [2026-07-11] Master_Handover_V1.0.md 및 Designer가 확정한 아트 에셋 요구사항을 기반으로, Diagnosis Score Widget 구현에 필요한 기술적 병목 지점 목록과 Fallback Plan을 최종적으로 통합하고 시각적 요구사항과의 일치 여부를 검증하여 최종 핸드오버 문서를 완성하라. → 산출물 sessions/2026-07-11T09-50/developer.md
 - [2026-07-13] Module C 영상 제작에 필요한 기술적 병목 지점 목록과 Fallback Plan을 검토하여, 외부 편집자가 시스템 안정성을 확보하며 작업할 수 있도록 API 통합 및 시스템 안정성 검증에 필요한 모든 기술 지원 문서를 최종 확정하고 배포하라. → 산출물 sessions/2026-07-13T02-01/developer.md
 - [2026-07-13] Module C 영상 제작에 필요한 기술적 병목 지점 목록과 Fallback Plan을 검토하고, 확정된 디자인 시스템(색상, 타이포그래피 규칙)의 API 연동 및 시스템 안정성 검증을 최종 완료하여 외부 편집자가 즉시 구현할 수 있도록 모든 기술 문서를 통합하여 배포하라. → 산출물 sessions/2026-07-13T03-10/developer.md
+- [2026-07-13] 외부 편집자가 시스템 안정성을 확보하며 작업할 수 있도록 API 연동 시나리오(특히 Fallback Plan)에 대한 실시간 QA 프로세스를 설계하고, ModuleC 영상 제작에 필요한 모든 기술 지원 문서를 최종 확정하여 배포하라. → 산출물 sessions/2026-07-13T03-25/developer.md
 ### 💼 현빈
 - [2026-07-05] 다음 4개 영상 시리즈에 대한 수익화 전략(티어 설정, 가격 책정)을 데이터 기반으로 재검토하고 실행 가능한 마케팅 로드맵을 수립하라. → 산출물 sessions/2026-07-05T13-14/business.md
 - [2026-07-05] 수익화 모듈 맵 중 가장 낮은 진입 장벽인 [Module A]에 대해 최소 기능 제품(MVP)의 구체적인 기능 목록과 초기 유료 사용자 확보를 위한 랜딩 페이지의 핵심 구조(AIDA 프레임워크 적용)를 설계하라. → 산출물 sessions/2026-07-05T13-29/business.md

@@ -739,3 +739,14 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-13] | **Accent Color (CTA/Gain)** | Accent Yellow (`#FFD700`) | **모든 CTA 버튼, 성과 수치, '극복 가능성'을 상징하는 강조 요소**에 사용. 시청자의 눈이 가장 먼저 닿는 곳에 배치하여 즉각적인 행동 유도. | 🎨 Designer — 검증된 지식 | _(근거: Designer 검증된 지식)_
 - [2026-07-13] | **Title Typography** | Montserrat Bold | 가장 강력하고 임팩트가 필요한 헤드라인(Pain/Gain의 키워드)에 사용. 크기와 위치로 위압감과 중요도를 조절합니다. | 🎨 Designer — 검증된 지식 | _(근거: Designer 검증된 지식)_
 - [2026-07-13] | **Body Typography** | Noto Sans KR Medium | 구체적인 데이터(예: "평균 40% 상승", "3개월 만에") 제시 및 설명 텍스트에 사용. 가독성을 최우선합니다. | 🎨 Designer — 검증된 지식 | _(근거: Designer 검증된 지식)_
+- [2026-07-13] ### A. 컬러 팔레트 (Color Palette - ) _(근거: sessions/2026-05-19T04:14/designer.md)_
+- [2026-07-13] | **Primary Trust** | Dark Blue | `#0A2463` | 배경, 헤더, 주요 정보 섹션. 전문성과 신뢰감 확보. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] | **Accent CTA/Gain** | Accent Yellow | `#FFD700` | 모든 CTA 버튼, '기회(Gain)' 수치 강조, 위험 경고 구간 하이라이트. 즉각적 행동 유도. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] | **Neutral Background** | Light Grey | `#F5F5F5` | 본문 텍스트 배경, 데이터 테이블 영역. Dark Blue와의 명확한 대비를 통한 가독성 확보. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] ### B. 타이포그래피 시스템 (Typography - ) _(근거: sessions/2026-05-18T13:49/designer.md)_
+- [2026-07-13] | **Headline (H1)** | Montserrat | Bold | 영상의 핵심 메시지, Pain/Gain 타이틀. 강력한 시각적 임팩트 제공. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] | **Subhead (H2)** | Montserrat | Medium | 섹션 제목, 데이터 카테고리 이름. 구조화 및 가이드 역할. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] | **Body Text** | Noto Sans KR | Regular/Medium | 구체적인 설명 텍스트, 그래프 라벨링. 높은 가독성 보장. | | _(근거: Designer 검증된 지식)_
+- [2026-07-13] ### A. Gap Score Widget (데이터 위젯 - ) _(근거: ModuleC_Visual_Master_Guide_V1.0.md)_
+- [2026-07-13] ### B. 성장 곡선 그래프 (Growth Curve - ) _(근거: sessions/2026-05-18T14-38/designer.md)_
+- [2026-07-13] ## ✨ 3. 트랜지션 애니메이션 가이드 (Transition Logic - ) _(근거: ModuleC_Visual_Master_Guide_V1.0.md)_
