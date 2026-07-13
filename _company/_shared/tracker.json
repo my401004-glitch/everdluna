@@ -1,227 +1,6 @@
 {
   "tasks": [
     {
-      "id": "20260611062236-kd6b",
-      "title": "**환경 변수 검증**: `MUSIC_API_KEY`, `DIAGNOSIS_SCHEMA_VERSION` 등이 환경에 정확히 설정되었는가?",
-      "description": "자동 등록 (코다리 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "developer"
-      ],
-      "createdAt": "2026-06-11T06:22:36.205Z",
-      "status": "done",
-      "sessionDir": "2026-06-11T06-20",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-11T06-20/_report.md\n- Designer: 마스터 에셋 패키지(#0A2463, #FFD700)를 모든 영상 콘텐츠에 강제 적용했는지 최종 크로스 체크하고 시각적 품질 통일성을 확보했는지 \n- 코다리: `MusicGeneratorService`의 로직 보강 및 단위 테스트 환경 구축 완료 여부와 Go-Live 전 API 호출 및 데이터 동기화 \n- 영숙: 디자이너와 개발자의 최종 검토 결과를 바탕으로 'PRC 통합 검토 체크리스트'를 활용하여 전체 제작 프로세스의 안전장치(Go-Live 준비)가 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 마스터 에셋 패키지(#0A2463, #FFD700)를 모든 영상 콘텐츠에 강제 적용했는지 최종 크로스 체크하고 시각적 품질 통일성을 확보했는지 확인하여 보고하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 ",
-      "completedAt": "2026-06-11T06:24:35.739Z"
-    },
-    {
-      "id": "20260611062236-wpk4",
-      "title": "**DB 스키마 연동 확인**: 서비스가 참조하는 최소 필수 테이블(`Diagnosis_Results`)의 존재 및 접근 권한을 확인했는가?",
-      "description": "자동 등록 (코다리 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "developer"
-      ],
-      "createdAt": "2026-06-11T06:22:36.206Z",
-      "status": "done",
-      "sessionDir": "2026-06-11T06-20",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-11T06-20/_report.md\n- Designer: 마스터 에셋 패키지(#0A2463, #FFD700)를 모든 영상 콘텐츠에 강제 적용했는지 최종 크로스 체크하고 시각적 품질 통일성을 확보했는지 \n- 코다리: `MusicGeneratorService`의 로직 보강 및 단위 테스트 환경 구축 완료 여부와 Go-Live 전 API 호출 및 데이터 동기화 \n- 영숙: 디자이너와 개발자의 최종 검토 결과를 바탕으로 'PRC 통합 검토 체크리스트'를 활용하여 전체 제작 프로세스의 안전장치(Go-Live 준비)가 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 마스터 에셋 패키지(#0A2463, #FFD700)를 모든 영상 콘텐츠에 강제 적용했는지 최종 크로스 체크하고 시각적 품질 통일성을 확보했는지 확인하여 보고하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 ",
-      "completedAt": "2026-06-11T06:24:35.740Z"
-    },
-    {
-      "id": "20260611062236-ba5y",
-      "title": "**모니터링 설정**: API 응답 지연(Latency)에 대한 경고 임계치(Threshold)를 설정하고, 5xx 에러 발생 시 알림 시스템이 활성화되었는가?",
-      "description": "자동 등록 (코다리 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "developer"
-      ],
-      "createdAt": "2026-06-11T06:22:36.206Z",
-      "status": "done",
-      "sessionDir": "2026-06-11T06-20",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-11T06-20/_report.md\n- Designer: 마스터 에셋 패키지(#0A2463, #FFD700)를 모든 영상 콘텐츠에 강제 적용했는지 최종 크로스 체크하고 시각적 품질 통일성을 확보했는지 \n- 코다리: `MusicGeneratorService`의 로직 보강 및 단위 테스트 환경 구축 완료 여부와 Go-Live 전 API 호출 및 데이터 동기화 \n- 영숙: 디자이너와 개발자의 최종 검토 결과를 바탕으로 'PRC 통합 검토 체크리스트'를 활용하여 전체 제작 프로세스의 안전장치(Go-Live 준비)가 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 마스터 에셋 패키지(#0A2463, #FFD700)를 모든 영상 콘텐츠에 강제 적용했는지 최종 크로스 체크하고 시각적 품질 통일성을 확보했는지 확인하여 보고하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 ",
-      "completedAt": "2026-06-11T06:24:35.741Z"
-    },
-    {
-      "id": "20260611145721-rz0d",
-      "title": "**촬영 일정 확정 여부**: (날짜: YYYY-MM-DD) - 완료 시 A/V 제작 시작 보고서 요청.",
-      "description": "자동 등록 (영숙 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "secretary"
-      ],
-      "createdAt": "2026-06-11T14:57:21.748Z",
-      "status": "done",
-      "sessionDir": "2026-06-11T14-54",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-11T14-54/_report.md\n- Writer: 확정된 스크립트 및 스토리보드(Part 2)를 기반으로 A/V 제작팀에 전달할 최종 촬영 지침과 소스 확보 요구사항을 즉시 정리하고 배포하라.\n- Designer: 확정된 마스터 에셋 패키지(#0A2463, #FFD700)와 스토리보드를 기반으로 A/V 제작팀이 활용할 수 있는 최종 시각 자료(Visual \n- 영숙: A/V 제작팀의 작업 착수 일정을 확인하고, 진행 상황에 대한 중간 보고를 다음 업무 사이클에서 요청할 수 있도록 준비하라.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 확정된 스크립트 및 스토리보드(Part 2)를 기반으로 A/V 제작팀에 전달할 최종 촬영 지침과 소스 확보 요구사항을 즉시 정리하고 배포하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ✍️ Wr",
-      "completedAt": "2026-06-11T14:58:02.057Z"
-    },
-    {
-      "id": "20260611145721-bvro",
-      "title": "**소스 확보 현황**: (진행률 %) - 필요한 소스 리스트 대비 현재 확보된 분량.",
-      "description": "자동 등록 (영숙 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "secretary"
-      ],
-      "createdAt": "2026-06-11T14:57:21.749Z",
-      "status": "done",
-      "sessionDir": "2026-06-11T14-54",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-11T14-54/_report.md\n- Writer: 확정된 스크립트 및 스토리보드(Part 2)를 기반으로 A/V 제작팀에 전달할 최종 촬영 지침과 소스 확보 요구사항을 즉시 정리하고 배포하라.\n- Designer: 확정된 마스터 에셋 패키지(#0A2463, #FFD700)와 스토리보드를 기반으로 A/V 제작팀이 활용할 수 있는 최종 시각 자료(Visual \n- 영숙: A/V 제작팀의 작업 착수 일정을 확인하고, 진행 상황에 대한 중간 보고를 다음 업무 사이클에서 요청할 수 있도록 준비하라.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 확정된 스크립트 및 스토리보드(Part 2)를 기반으로 A/V 제작팀에 전달할 최종 촬영 지침과 소스 확보 요구사항을 즉시 정리하고 배포하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ✍️ Wr",
-      "completedAt": "2026-06-11T14:58:02.058Z"
-    },
-    {
-      "id": "20260611145721-0eu0",
-      "title": "**디자인 에셋 통합 현황**: (완료 / 미확정) - 최종 톤앤매너 적용 완료 여부.",
-      "description": "자동 등록 (영숙 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "secretary"
-      ],
-      "createdAt": "2026-06-11T14:57:21.750Z",
-      "status": "done",
-      "sessionDir": "2026-06-11T14-54",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-11T14-54/_report.md\n- Writer: 확정된 스크립트 및 스토리보드(Part 2)를 기반으로 A/V 제작팀에 전달할 최종 촬영 지침과 소스 확보 요구사항을 즉시 정리하고 배포하라.\n- Designer: 확정된 마스터 에셋 패키지(#0A2463, #FFD700)와 스토리보드를 기반으로 A/V 제작팀이 활용할 수 있는 최종 시각 자료(Visual \n- 영숙: A/V 제작팀의 작업 착수 일정을 확인하고, 진행 상황에 대한 중간 보고를 다음 업무 사이클에서 요청할 수 있도록 준비하라.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 확정된 스크립트 및 스토리보드(Part 2)를 기반으로 A/V 제작팀에 전달할 최종 촬영 지침과 소스 확보 요구사항을 즉시 정리하고 배포하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ✍️ Wr",
-      "completedAt": "2026-06-11T14:58:02.058Z"
-    },
-    {
-      "id": "20260611145721-m9pa",
-      "title": "**차주 액션 플랜**: 다음 주에 집중할 핵심 작업 1~2개 명시.",
-      "description": "자동 등록 (영숙 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "secretary"
-      ],
-      "createdAt": "2026-06-11T14:57:21.750Z",
-      "status": "done",
-      "sessionDir": "2026-06-11T14-54",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-11T14-54/_report.md\n- Writer: 확정된 스크립트 및 스토리보드(Part 2)를 기반으로 A/V 제작팀에 전달할 최종 촬영 지침과 소스 확보 요구사항을 즉시 정리하고 배포하라.\n- Designer: 확정된 마스터 에셋 패키지(#0A2463, #FFD700)와 스토리보드를 기반으로 A/V 제작팀이 활용할 수 있는 최종 시각 자료(Visual \n- 영숙: A/V 제작팀의 작업 착수 일정을 확인하고, 진행 상황에 대한 중간 보고를 다음 업무 사이클에서 요청할 수 있도록 준비하라.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 확정된 스크립트 및 스토리보드(Part 2)를 기반으로 A/V 제작팀에 전달할 최종 촬영 지침과 소스 확보 요구사항을 즉시 정리하고 배포하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ✍️ Wr",
-      "completedAt": "2026-06-11T14:58:02.058Z"
-    },
-    {
-      "id": "20260612025653-pokn",
-      "title": "브랜드 컬러(`Dark Blue`/`Accent Yellow`) 적용 완료",
-      "description": "자동 등록 (Designer 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "designer"
-      ],
-      "createdAt": "2026-06-12T02:56:53.998Z",
-      "status": "done",
-      "sessionDir": "2026-06-12T02-55",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-12T02-55/_report.md\n- Designer: Writer가 제공한 최종 스토리텔링 가이드라인과 마스터 디자인 시스템(#0A2463, #FFD700)을 기반으로, 선택된 썸네일 컨셉에 따른 \n- Writer: Designer가 제공한 시각적 요구사항(스토리텔링 가이드)을 최종 검토하고, Part 2 영상의 스크립트 및 비주얼 가이드라인을 통합하여 최종\n- 영숙: AV_Production_Tracker.md 파일에 Designer와 Writer의 최근 산출물(시각 자료 초안, 스토리텔링 가이드)을 반영하고\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: Writer가 제공한 최종 스토리텔링 가이드라인과 마스터 디자인 시스템(#0A2463, #FFD700)을 기반으로, 선택된 썸네일 컨셉에 따른 모든 비주얼 에셋 제작을 즉시 실행하고, 진행 상황을 AV_Production_Track",
-      "completedAt": "2026-06-12T02:59:26.237Z"
-    },
-    {
-      "id": "20260612025653-fidw",
-      "title": "타이포그래피(`Montserrat`/`Noto Sans KR`) 일관성 확보",
-      "description": "자동 등록 (Designer 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "designer"
-      ],
-      "createdAt": "2026-06-12T02:56:53.999Z",
-      "status": "done",
-      "sessionDir": "2026-06-12T02-55",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-12T02-55/_report.md\n- Designer: Writer가 제공한 최종 스토리텔링 가이드라인과 마스터 디자인 시스템(#0A2463, #FFD700)을 기반으로, 선택된 썸네일 컨셉에 따른 \n- Writer: Designer가 제공한 시각적 요구사항(스토리텔링 가이드)을 최종 검토하고, Part 2 영상의 스크립트 및 비주얼 가이드라인을 통합하여 최종\n- 영숙: AV_Production_Tracker.md 파일에 Designer와 Writer의 최근 산출물(시각 자료 초안, 스토리텔링 가이드)을 반영하고\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: Writer가 제공한 최종 스토리텔링 가이드라인과 마스터 디자인 시스템(#0A2463, #FFD700)을 기반으로, 선택된 썸네일 컨셉에 따른 모든 비주얼 에셋 제작을 즉시 실행하고, 진행 상황을 AV_Production_Track",
-      "completedAt": "2026-06-12T02:59:26.239Z"
-    },
-    {
-      "id": "20260612025653-0dvc",
-      "title": "Pain $\\rightarrow$ Gain 프레임워크 시각화 적용",
-      "description": "자동 등록 (Designer 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "designer"
-      ],
-      "createdAt": "2026-06-12T02:56:53.999Z",
-      "status": "done",
-      "sessionDir": "2026-06-12T02-55",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-12T02-55/_report.md\n- Designer: Writer가 제공한 최종 스토리텔링 가이드라인과 마스터 디자인 시스템(#0A2463, #FFD700)을 기반으로, 선택된 썸네일 컨셉에 따른 \n- Writer: Designer가 제공한 시각적 요구사항(스토리텔링 가이드)을 최종 검토하고, Part 2 영상의 스크립트 및 비주얼 가이드라인을 통합하여 최종\n- 영숙: AV_Production_Tracker.md 파일에 Designer와 Writer의 최근 산출물(시각 자료 초안, 스토리텔링 가이드)을 반영하고\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: Writer가 제공한 최종 스토리텔링 가이드라인과 마스터 디자인 시스템(#0A2463, #FFD700)을 기반으로, 선택된 썸네일 컨셉에 따른 모든 비주얼 에셋 제작을 즉시 실행하고, 진행 상황을 AV_Production_Track",
-      "completedAt": "2026-06-12T02:59:26.240Z"
-    },
-    {
-      "id": "20260612032702-pw0u",
-      "title": "촬영팀: 장비 점검 (조명, 렌즈, 녹음) - *날짜/시간 명시*",
-      "description": "자동 등록 (영숙 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "secretary"
-      ],
-      "createdAt": "2026-06-12T03:27:02.266Z",
-      "status": "done",
-      "sessionDir": "2026-06-12T03-25",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-12T03-25/_report.md\n- 영숙: 외부 촬영팀 및 편집팀에게 확정된 마일스톤(T+3 Days 본 촬영 실행)에 맞춰 자원을 최종 할당하고 예약하며, 전체 제작 일정을 확정하여 업\n- Designer: Writer의 대본 및 일정에 맞춰, Scene 1 및 Scene 2에 필요한 모든 비주얼 에셋(B-Roll 포함) 제작을 완료하고 영상 편집 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 외부 촬영팀 및 편집팀에게 확정된 마일스톤(T+3 Days 본 촬영 실행)에 맞춰 자원을 최종 할당하고 예약하며, 전체 제작 일정을 확정하여 업데이트하라\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 *",
-      "completedAt": "2026-06-12T03:28:27.333Z"
-    },
-    {
-      "id": "20260612032702-8wz1",
-      "title": "편집팀: 납품 포맷 확인 (최종 프로젝트 파일 경로) - *담당자 서명*",
-      "description": "자동 등록 (영숙 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "secretary"
-      ],
-      "createdAt": "2026-06-12T03:27:02.267Z",
-      "status": "done",
-      "sessionDir": "2026-06-12T03-25",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-12T03-25/_report.md\n- 영숙: 외부 촬영팀 및 편집팀에게 확정된 마일스톤(T+3 Days 본 촬영 실행)에 맞춰 자원을 최종 할당하고 예약하며, 전체 제작 일정을 확정하여 업\n- Designer: Writer의 대본 및 일정에 맞춰, Scene 1 및 Scene 2에 필요한 모든 비주얼 에셋(B-Roll 포함) 제작을 완료하고 영상 편집 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 외부 촬영팀 및 편집팀에게 확정된 마일스톤(T+3 Days 본 촬영 실행)에 맞춰 자원을 최종 할당하고 예약하며, 전체 제작 일정을 확정하여 업데이트하라\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 *",
-      "completedAt": "2026-06-12T03:28:27.335Z"
-    },
-    {
-      "id": "20260612032702-q9te",
-      "title": "콘텐츠 검수: R1, R2, R3 대응 계획 이행 여부 최종 점검 및 승인.",
-      "description": "자동 등록 (영숙 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "secretary"
-      ],
-      "createdAt": "2026-06-12T03:27:02.268Z",
-      "status": "done",
-      "sessionDir": "2026-06-12T03-25",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-06-12T03-25/_report.md\n- 영숙: 외부 촬영팀 및 편집팀에게 확정된 마일스톤(T+3 Days 본 촬영 실행)에 맞춰 자원을 최종 할당하고 예약하며, 전체 제작 일정을 확정하여 업\n- Designer: Writer의 대본 및 일정에 맞춰, Scene 1 및 Scene 2에 필요한 모든 비주얼 에셋(B-Roll 포함) 제작을 완료하고 영상 편집 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📱 영숙 _(비서 · Personal Assistant)_\n> 📋 **지시**: 외부 촬영팀 및 편집팀에게 확정된 마일스톤(T+3 Days 본 촬영 실행)에 맞춰 자원을 최종 할당하고 예약하며, 전체 제작 일정을 확정하여 업데이트하라\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 *",
-      "completedAt": "2026-06-12T03:28:27.336Z"
-    },
-    {
       "id": "20260618074910-7svz",
       "title": "도입부 후크가 시청자의 불안감을 즉각적으로 건드리는가?",
       "description": "자동 등록 (Writer 산출물에서 추출)",
@@ -934,6 +713,57 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-07-11T06-05/_report.md\n- Writer: 다음 영상(Module C)의 최종 스크립트 방향성과 핵심 메시지를 재확인하여, 제작 일정 수립에 필요한 명확한 내러티브를 제공하라.\n- Designer: VideoEditor_Handover_Package_V2.md에 명시된 최종 마스터 비주얼 가이드라인을 기반으로, 다음 영상 제작에 필요한 핵심\n- 코다리: VideoEditor_Handover_Package_V2.md의 기술 지침과 Designer/Writer의 요구사항이 반영된 최종 '마스터 프로\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 다음 영상(Module C)의 최종 스크립트 방향성과 핵심 메시지를 재확인하여, 제작 일정 수립에 필요한 명확한 내러티브를 제공하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ✍️ Writer:",
       "completedAt": "2026-07-11T06:11:07.501Z"
+    },
+    {
+      "id": "20260713020517-29u5",
+      "title": "모든 데이터 시각화 요소가 **'State-based Color'** 규칙을 따르는지 확인했는지?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-07-13T02:05:17.764Z",
+      "status": "done",
+      "sessionDir": "2026-07-13T02-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-13T02-01/_report.md\n- 레오: 다음 영상(Module C)의 실제 제작 일정, 촬영, 편집, 사운드 디자인을 포함한 단계별 실행 계획을 최종 확정하고 외부 편집자에게 전달할 \n- Designer: Module C 영상에 필요한 아트 에셋 요구사항 및 시각적 가이드라인을 Master_Handover_V2.0과 코다리의 기술 핸드오버 문서를 \n- 코다리: Module C 영상 제작에 필요한 기술적 병목 지점 목록과 Fallback Plan을 검토하여, 외부 편집자가 시스템 안정성을 확보하며 작업할\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 다음 영상(Module C)의 실제 제작 일정, 촬영, 편집, 사운드 디자인을 포함한 단계별 실행 계획을 최종 확정하고 외부 편집자에게 전달할 구체적인 액션 플랜 문서를 작성하라.\n> 🔧 **도구 실행**: `my_videos_check",
+      "completedAt": "2026-07-13T02:07:09.384Z"
+    },
+    {
+      "id": "20260713020517-6jpf",
+      "title": "진단 점수 변화 애니메이션이 충격적이고 명확한가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-07-13T02:05:17.765Z",
+      "status": "done",
+      "sessionDir": "2026-07-13T02-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-13T02-01/_report.md\n- 레오: 다음 영상(Module C)의 실제 제작 일정, 촬영, 편집, 사운드 디자인을 포함한 단계별 실행 계획을 최종 확정하고 외부 편집자에게 전달할 \n- Designer: Module C 영상에 필요한 아트 에셋 요구사항 및 시각적 가이드라인을 Master_Handover_V2.0과 코다리의 기술 핸드오버 문서를 \n- 코다리: Module C 영상 제작에 필요한 기술적 병목 지점 목록과 Fallback Plan을 검토하여, 외부 편집자가 시스템 안정성을 확보하며 작업할\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 다음 영상(Module C)의 실제 제작 일정, 촬영, 편집, 사운드 디자인을 포함한 단계별 실행 계획을 최종 확정하고 외부 편집자에게 전달할 구체적인 액션 플랜 문서를 작성하라.\n> 🔧 **도구 실행**: `my_videos_check",
+      "completedAt": "2026-07-13T02:07:09.386Z"
+    },
+    {
+      "id": "20260713020517-6ayq",
+      "title": "CTA 버튼과 핵심 수치가 Accent Yellow (`#FFD700`)를 통해 가장 먼저 눈에 띄는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-07-13T02:05:17.765Z",
+      "status": "done",
+      "sessionDir": "2026-07-13T02-01",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-13T02-01/_report.md\n- 레오: 다음 영상(Module C)의 실제 제작 일정, 촬영, 편집, 사운드 디자인을 포함한 단계별 실행 계획을 최종 확정하고 외부 편집자에게 전달할 \n- Designer: Module C 영상에 필요한 아트 에셋 요구사항 및 시각적 가이드라인을 Master_Handover_V2.0과 코다리의 기술 핸드오버 문서를 \n- 코다리: Module C 영상 제작에 필요한 기술적 병목 지점 목록과 Fallback Plan을 검토하여, 외부 편집자가 시스템 안정성을 확보하며 작업할\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 다음 영상(Module C)의 실제 제작 일정, 촬영, 편집, 사운드 디자인을 포함한 단계별 실행 계획을 최종 확정하고 외부 편집자에게 전달할 구체적인 액션 플랜 문서를 작성하라.\n> 🔧 **도구 실행**: `my_videos_check",
+      "completedAt": "2026-07-13T02:07:09.387Z"
     }
   ]
 }
