@@ -624,3 +624,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-13] Master_Handover_V2.0 및 ModuleC_Visual_Master_Guide_V1.0.md를 기반으로 핵심 에셋 및 트랜지션의 프로토타입 제작을 즉시 시작하고, 기술 스펙 준수 여부를 검증하라. → 산출물 sessions/2026-07-13T02-31/designer.md
 - [2026-07-13] Module C 티저 콘텐츠에 필요한 비주얼 방향성(톤앤매너)을 확정하고, Writer가 제시한 카피에 기반하여 핵심 시각 요소(컬러 팔레트 및 타이포그래피)의 초기 브리프를 작성하라. → 산출물 sessions/2026-07-13T02-55/designer.md
 - [2026-07-13] 확정된 디자인 시스템(Primary Color(#0A2463), Accent Color(#FFD700))에 맞춰 핵심 에셋 및 트랜지션 프로토타입 제작을 최종 완료하고, 코다리에게 기술 스펙 준수 여부에 대한 검증 요청을 시작하라. → 산출물 sessions/2026-07-13T03-25/designer.md
+- [2026-07-13] Writer가 제공한 최종 카피와 Business의 가격 구조를 기반으로, CTR 극대화를 목표로 하는 A/B 테스트용 구독 결제 페이지 Mockup을 시각적으로 구현하라. 디자인 시스템(Primary Color(#0A2463), Accent Color(#FFD700))을 반드시 준수해야 한다. → 산출물 sessions/2026-07-13T03-57/designer.md
