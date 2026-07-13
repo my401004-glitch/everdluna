@@ -483,3 +483,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-13] kpi_validator.py와 lint_test.py 실행 결과를 통합하여 최종 시스템 안정성 검증 보고서(`System_Stability_Report`)를 완성하고, 실패 지점 및 수정 계획을 명시하라. → 산출물 sessions/2026-07-13T06-12/developer.md
 - [2026-07-13] System_Stability_Report를 기반으로, 마케팅 자산 배포 시 발생할 수 있는 잠재적 기술 오류에 대한 QA 프로세스를 즉시 확립하고, 이 프로세스를 자동화할 방법을 검토하라. → 산출물 sessions/2026-07-13T07-12/developer.md
 - [2026-07-13] 마케팅 자산 배포 시 발생할 수 있는 잠재적 기술 오류에 대한 QA 프로세스를 자동화하고, 시스템 안정성 검증 보고서(`System_Stability_Report`)와 연계하여 최종 배포 전 자동 검증 루프를 확립 → 산출물 sessions/2026-07-13T07-42/developer.md
+- [2026-07-13] 마케팅 자산 배포 시 발생할 수 있는 잠재적 기술 오류에 대한 QA 프로세스를 실행하고, 모든 디자인 및 카피 결과물이 시스템 안정성 보고서(`System_Stability_Report`)의 데이터와 일치하는지 최종 검증하라. → 산출물 sessions/2026-07-13T08-12/developer.md
