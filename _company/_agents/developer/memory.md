@@ -487,3 +487,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-13] System_Stability_Report와 qa_automation_runner.py, kpi_validator.py 실행 결과를 분석하여 'ERROR] Stability' 지점의 실패 원인을 즉시 디버깅하고 QA 자동화 스크립트의 실패 원인을 파악하여 수정 계획을 수립하라. → 산출물 sessions/2026-07-13T08-27/developer.md
 - [2026-07-13] 마케팅 자산 배포 전 단계에 통합된 QA 프로세스를 재확인하고, 모든 디자인 및 카피 결과물이 시스템 안정성 보고서(`System_Stability_Report`)의 데이터와 일치하는지 최종 검증하라. → 산출물 sessions/2026-07-13T08-42/developer.md
 - [2026-07-13] 마케팅 자산 무결성 검증 스크립트(`marketing_asset_validator.py`)를 실제 시스템 보고서 데이터와 연결하여, 디자인 및 카피 결과물이 기술적 안정성 보고서의 데이터와 일치하는지 최종 검증 루프를 완성하고 오류 지점을 디버깅하라. → 산출물 sessions/2026-07-13T08-57/developer.md
+- [2026-07-15] Designer가 정의한 시각적 구조(모듈형 템플릿 사양)를 바탕으로, 마케팅 자산 제작 전 단계에 통합된 QA 프로세스(`marketing_asset_validator.py`)가 디자인 결과물과 기술적 안정성 보고서(`System_Stability_Report`) 데이터를 정확히 매핑하는 검증 로직을 최종 점검하고 구현 계획을 수립하라. → 산출물 sessions/2026-07-15T06-29/developer.md
