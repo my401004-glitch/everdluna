@@ -489,3 +489,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-13] 마케팅 자산 무결성 검증 스크립트(`marketing_asset_validator.py`)를 실제 시스템 보고서 데이터와 연결하여, 디자인 및 카피 결과물이 기술적 안정성 보고서의 데이터와 일치하는지 최종 검증 루프를 완성하고 오류 지점을 디버깅하라. → 산출물 sessions/2026-07-13T08-57/developer.md
 - [2026-07-15] Designer가 정의한 시각적 구조(모듈형 템플릿 사양)를 바탕으로, 마케팅 자산 제작 전 단계에 통합된 QA 프로세스(`marketing_asset_validator.py`)가 디자인 결과물과 기술적 안정성 보고서(`System_Stability_Report`) 데이터를 정확히 매핑하는 검증 로직을 최종 점검하고 구현 계획을 수립하라. → 산출물 sessions/2026-07-15T06-29/developer.md
 - [2026-07-15] Designer가 정의한 모듈형 비주얼 시스템 사양(`sessions/2026-07-15T06:29/designer.md`)을 바탕으로, 마케팅 자산 제작 전 단계에 통합된 QA 프로세스(`marketing_asset_validator.py`)에 디자인 컨텍스트 기반의 논리-디자인 일관성 검증 로직(`design_validator_service.py`)을 구현하고 기존 Validator에 통합하여 기술적 안정성 검증 로직을 완성하라. → 산출물 sessions/2026-07-15T06-44/developer.md
+- [2026-07-15] ROI 증명을 위한 'KPI 변환 계수'(`roi_calculator.py`) 개발을 즉시 시작하고, 비즈니스(현빈)가 정의한 재정 지표들을 시스템 데이터와 연동하여 계산 모듈의 핵심 로직 구현에 집중하라. → 산출물 sessions/2026-07-15T07-59/developer.md
