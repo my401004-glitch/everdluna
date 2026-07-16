@@ -1,0 +1,110 @@
+# Diagnosis Validator Gateway API Specification V2.0
+# Version: 2026-07-16
+# Purpose: Defines the canonical contract for retrieving structured, narrative-driven diagnostic results.
+# Must satisfy both business KPI logic and Designer's Pain -> Gain storytelling flow.
+
+openapi: 3.0.1
+info:
+  title: Diagnosis Score API Gateway
+  version: v2.0
+  description: Provides a comprehensive, multi-dimensional diagnosis report including growth metrics (KPI) and narrative context for client-side visualization.
+
+paths:
+  /api/v1/diagnosis_score:
+    get:
+      summary: Retrieves the structured diagnostic score based on user input context.
+      operationId: getDiagnosisScore
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                context_id: { type: string, description: "Unique identifier for the assessment session." }
+                diagnosis_type: { type: string, enum: ["Pitch", "Rhythm", "Melody"], description: "The specific skill area being diagnosed." }
+                user_role: { type: string, description: "User's current subscription role (e.g., FREE, PREMIUM)." }
+              required: [context_id, diagnosis_type]
+      responses:
+        # Success Response (200 OK)
+        '200':
+          description: Successful retrieval of the diagnostic report.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DiagnosticReport'
+        # Error Response (403 Forbidden) - RBAC Failure
+        '403':
+          description: Access denied due to insufficient user role or premium feature requirement.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error_code: { type: string, example: "RBAC_DENIED" }
+                  message: { type: string, example: "Premium diagnosis features require a PREMIUM subscription." }
+        # Error Response (503 Service Unavailable) - Data Processing Failure
+        '503':
+          description: The diagnostic service failed to process the request due to internal error or missing data.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error_code: { type: string, example: "SERVICE_UNAVAILABLE" }
+                  message: { type: string, example: "Unable to process score due to invalid input parameters." }
+
+components:
+  schemas:
+    DiagnosticReport:
+      type: object
+      required: [diagnosis_summary, kpi_metrics, narrative_flow]
+      properties:
+        # 1. Overall Summary (Design Focus)
+        diagnosis_summary:
+          type: object
+          description: The high-level summary and perceived score for immediate display.
+          properties:
+            overall_score: { type: number, description: "The calculated overall score (0-100)." }
+            current_status: { type: string, enum: ["Needs Improvement", "Developing", "Advanced"], description: "Categorical status based on the score." }
+            suggested_action: { type: string, description: "A concise, actionable next step for the user." }
+
+        # 2. Core Metric Tracking (Business/KPI Focus)
+        kpi_metrics:
+          type: object
+          description: Detailed tracking of key performance indicators over time.
+          properties:
+            growth_score: { type: number, description: "Measure of improvement rate in the current skill." }
+            engagement_score: { type: number, description: "Measure of consistency and practice frequency." }
+            monetization_potential: { type: number, description: "Estimated market value/upgrade path based on score (for premium upsell)." }
+
+        # 3. Narrative Flow (Storytelling Focus - Designer Requirement)
+        narrative_flow:
+          type: object
+          description: Structured data mapping the Pain -> Gain journey for visualization.
+          properties:
+            pain_point: { type: string, description: "The primary weakness identified by the diagnosis." }
+            gain_target: { type: string, description: "The desired goal state or improvement area (the 'Gain')." }
+            turning_points:
+              type: array
+              items:
+                type: object
+                properties:
+                  metric: { type: string, enum: ["Pitch", "Rhythm", "Tone"], description: "Specific metric contributing to the score." }
+                  initial_value: { type: number, format: float, example: 3.2 } # Low value (Pain)
+                  target_value: { type: number, format: float, example: 7.8 } # High value (Gain Target)
+              minItems: 1
+
+      # Edge Case Handling Schema Inclusion
+      discriminator:
+        propertyName: error_code
+        mapping:
+          RBAC_DENIED: '#/components/schemas/ErrorResponse'
+  
+  # Error Response schema definition for consistent API failure handling
+  ErrorResponse:
+    type: object
+    required: [error_code, message]
+    properties:
+      error_code: { type: string }
+      message: { type: string }
