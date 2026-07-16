@@ -809,3 +809,10 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-16] * 제목: "🚨 주요 위험 요소 진단 (Weakness Metrics)". (``) _(근거: diagnosis_gateway_v2.yaml)_
 - [2026-07-16] * 제목: "💡 당신의 성장을 가속화할 핵심 원리". (``) _(근거: diagnosis_summary)_
 - [2026-07-16] **<create_file path="design_specifications/V2.0_DiagnosisReport_Spec.md"># [V2.0] 진단 리포트 상세 보기 디자인 사양서 (Figma/Sketch Ready) </create_file>** _(근거: CEO 지시, sessions/2026-07-15T08-29/designer.md)_
+- [2026-07-16] | 영역 | 이름 | 코드 | 목적/의미 | 사용 방식 | | _(근거: Designer 검증된 지식)_
+- [2026-07-16] | **Pain Zone** | 불안한 회색 (Uncertain Grey) | `#A9B2C0` | 불명확성, 막연함. '현재의 상태'를 묘사하는 배경 색상으로 사용. | 낮은 채도의 그라디언트 배경. | | _(근거: Designer 검증된 지식)_
+- [2026-07-16] | **Bridge Zone** | 시스템 청색 (System Blue) | `#0A2463` | 신뢰, 분석, 객관성. AI 진단 과정을 상징하는 가장 전문적인 색상. | 섹션 헤더, 데이터 박스 배경. | | _(근거: Designer 검증된 지식)_
+- [2026-07-16] | **Gain Zone** | 기회 노란색 (Opportunity Yellow) | `#FFD700` | 희망, 성취, 해결책(Solution). 긍정적 결과를 시각적으로 폭발시키는 색상. | CTA 버튼, 핵심 수치 하이라이트. | | _(근거: Designer 검증된 지식)_
+- [2026-07-16] | 역할 | 폰트명 | 사용 목적 | 크기/굵기 강조 전략 | | _(근거: Designer 검증된 지식)_
+- [2026-07-16] | **헤드라인** | Montserrat Bold | Pain (문제), Gain (해결)의 제목. 감정적 메시지 전달. | 크고 굵게, 영역별 주력 색상 사용. | | _(근거: Designer 검증된 지식)_
+- [2026-07-16] | **데이터/본문** | Noto Sans KR Medium | 진단 수치, 설명 문구, 프로세스 단계. 객관성 강조. | 일정한 간격과 행간을 유지하여 신뢰감 부여. | | _(근거: Designer 검증된 지식)_
