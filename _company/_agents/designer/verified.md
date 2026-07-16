@@ -806,3 +806,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-15] | **🥉 3순위** | **배포 일정 최적화 및 채널 운영 계획 확정.** 유튜브와 인스타그램 콘텐츠 배포 일정을 통합하여, 매주/매월의 고정된 발행 스케줄과 각 플랫폼별 적합한 콘텐츠 비율(유튜브:기술 분석 60%, Instagram:팁/진단 40%)을 최종적으로 수립. | Instagram / Writer | 마케팅 실행력을 높이고 '어디서부터 시작할지 막막함'을 해소하는 로드맵 구축이 필요함. | _(근거: 회사 공동 목표 (지금 가장 필요한 것))_
 - [2026-07-16] 1. **최상단 (Emotional Hook):** 거대한 폰트 크기의 핵심 메시지 ("당신은 X%의 치명적인 Gap Score를 가지고 있습니다.") _(근거: Designer 검증된 지식)_
 - [2026-07-16] * `Color Usage`: 배경을 Dark Blue (`#0A2463`)로 깊게 설정하고, Gap Score 수치만 Accent Yellow (`#FFD700`)를 사용하여 경고등처럼 깜빡이게 연출합니다. _(근거: Designer 검증된 지식)_
+- [2026-07-16] * 제목: "🚨 주요 위험 요소 진단 (Weakness Metrics)". (``) _(근거: diagnosis_gateway_v2.yaml)_
+- [2026-07-16] * 제목: "💡 당신의 성장을 가속화할 핵심 원리". (``) _(근거: diagnosis_summary)_
+- [2026-07-16] **<create_file path="design_specifications/V2.0_DiagnosisReport_Spec.md"># [V2.0] 진단 리포트 상세 보기 디자인 사양서 (Figma/Sketch Ready) </create_file>** _(근거: CEO 지시, sessions/2026-07-15T08-29/designer.md)_
