@@ -1,71 +1,96 @@
-// src/services/DiagnosisService.ts
-import { DiagnosisResult, UserContext } from '../types/diagnosis-types';
+/**
+ * @fileoverview 진단 점수 계산 및 분석을 담당하는 핵심 비즈니스 로직 (Diagnosis Service Layer).
+ * 이 서비스는 외부 API 호출의 '백본'이 되며, 모든 기술적 안정성 검증이 여기서 일어납니다.
+ */
+
+import { DiagnosisRequest, DiagnosisResult, UserRole } from '../types/diagnosis';
+
+// 가상의 데이터베이스 연결 및 KPI 계산 함수 (실제 구현 필요)
+const fetchDiagnosisDataFromDB = async (userId: string, diagnosisType: string): Promise<any> => {
+    console.log(`[DB]: ${diagnosisType} 관련 데이터를 사용자 ${userId}의 권한으로 조회합니다.`);
+    // TODO: 실제 DB 쿼리 로직 구현 (SQL/ORM 사용)
+    return { /* ... db data ... */ };
+};
 
 /**
- * @description 핵심 비즈니스 로직: 입력 데이터와 KPI 지표를 기반으로 최종 진단 점수 및 리포트 구조를 산출합니다.
- * 이 서비스는 Pure Function에 가깝게 설계되어야 합니다. (외부 DB 접근은 Mocking하거나 Repository 패턴을 통해 분리)
+ * 핵심 진단 분석 서비스 엔드포인트.
+ * 모든 비즈니스 로직과 데이터 유효성 검증을 담당합니다.
+ * @param request - 클라이언트로부터 받은 진단 요청 객체.
+ * @returns DiagnosisResult 타입의 Promise.
  */
-export class DiagnosisService {
+export const calculateDiagnosisScore = async (request: DiagnosisRequest): Promise<DiagnosisResult> => {
+    const { userId, role, diagnosisType: requestedType, testResultSnapshot } = request;
 
-    /**
-     * @description 주어진 사용자 컨텍스트와 로그 데이터를 기반으로 진단 결과를 계산합니다.
-     * @param context - 사용자 기본 정보 및 유료화 상태 등 Context 데이터.
-     * @param sessionLogs - 사용자의 세션별 활동 기록 (Pitch, Frequency Stability 등의 Raw Data).
-     * @returns 최종 진단 결과 객체 (DiagnosisResult)
-     * @throws {Error} 필수 입력 값이 누락되었거나 비즈니스 규칙을 위반할 경우 예외를 발생시킵니다.
-     */
-    public static calculateScore(context: UserContext, sessionLogs: any[]): DiagnosisResult {
-        // 1. Input Validation (가드 클로즈) - 가장 먼저 깨질 수 있는 지점을 막습니다.
-        if (!context || !sessionLogs || sessionLogs.length === 0) {
-            throw new Error("진단 계산을 위한 필수 Context 및 세션 로그 데이터가 누락되었습니다.");
+    // 1. [핵심 검증] 권한 기반 접근 제어 (RBAC Check) - 가장 먼저 실패할 수 있는 지점
+    if (!checkUserAccess(role, requestedType)) {
+        return {
+            success: false,
+            message: `권한 오류: 사용자님의 레벨(${role})에서는 '${requestedType}' 리포트를 볼 수 없습니다.`,
+            data: null
+        };
+    }
+
+    try {
+        // 2. [데이터 파이프라인] 필수 데이터 유효성 검증 (Schema Validation)
+        if (!testResultSnapshot || !testResultSnapshot.score) {
+             return {
+                success: false,
+                message: "필수 진단 테스트 점수가 누락되었습니다. 다시 시도해주세요.",
+                data: null
+            };
         }
 
-        // 2. KPI 연산 로직 (핵심 비즈니스 가치):
-        // 실제 환경에서는 이 부분에서 DB를 조회하여 Growth, Engagement, Monetization 등의 원시 데이터를 가져와야 합니다.
-        const kpiScores = this.calculateKpis(sessionLogs);
+        // 3. [비즈니스 로직] 데이터 수집 및 분석 (KPI Calculation)
+        const kpiData = await Promise.all([
+             fetchDiagnosisDataFromDB(userId, 'Growth'),
+             fetchDiagnosisDataFromDB(userId, 'Engagement'),
+             fetchDiagnosisDataFromDB(userId, 'Monetization')
+             // 필요한 모든 KPI를 병렬로 가져와야 합니다.
+        ]);
 
-        // 3. 진단 점수 조합 및 구조화:
-        let totalScore = (kpiScores.growth * 0.4) + (kpiScores.engagement * 0.4) + (kpiScores.monetization * 0.2); // 가중치 적용 예시
-
-        // 4. 결과 객체 생성 및 반환
-        const result: DiagnosisResult = {
-            contextId: context.id,
-            diagnosisType: "AI_VOCAL_ANALYSIS", // 현재 진단 타입 고정
-            totalScore: Math.min(100, Math.max(0, totalScore)), // 0~100 사이로 클램프 처리
-            kpiMetrics: {
-                growth: kpiScores.growth,
-                engagement: kpiScores.engagement,
-                monetization: kpiScores.monetization,
-            },
-            // ... 기타 리포트 데이터 필드 채우기
+        const finalResult: DiagnosisResult = {
+            success: true,
+            message: "성공적으로 진단 점수를 계산했습니다.",
+            data: {
+                overallScore: testResultSnapshot.score * 0.9 + (Math.random() * 10), // 간단한 통합 로직 시뮬레이션
+                overallDiagnosisType: 'Overall',
+                kpis: {
+                    'Growth': { score: testResultSnapshot.keyIndicators['Growth'] || 0, potentialGapScore: Math.max(5, (testResultSnapshot.keyIndicators['Growth'] || 0) * 0.8), recommendation: ["구체적인 개념 복습 루틴 확립"] },
+                    'Engagement': { score: testResultSnapshot.keyIndicators['Engagement'] || 0, potentialGapScore: Math.max(5, (testResultSnapshot.keyIndicators['Engagement'] || 0) * 0.9), recommendation: ["학원 내 커뮤니티 활동 참여"] },
+                    'Monetization': { score: testResultSnapshot.keyIndicators['Monetization'] || 0, potentialGapScore: Math.max(5, (testResultSnapshot.keyIndicators['Monetization'] || 0) * 0.7), recommendation: ["추가 학습 자료에 대한 접근 권한 확보"] }
+                },
+                technicalMetadata: {
+                    sourceApiVersion: 'v1',
+                    processedTimestamp: new Date().toISOString(),
+                    accessGrantedByRBAC: true // RBAC 검증이 통과했으므로 true
+                }
+            }
         };
 
-        return result;
-    }
+        return finalResult;
 
-
-    /**
-     * @description 세션 로그를 분석하여 Growth, Engagement, Monetization KPI 점수를 산출하는 내부 함수입니다.
-     * 이 로직은 비즈니스 규칙에 따라 끊임없이 검증되어야 합니다.
-     */
-    private static calculateKpis(logs: any[]): { growth: number; engagement: number; monetization: number } {
-        // Mock Implementation for now, 실제로는 복잡한 통계 분석이 들어갑니다.
-        let totalDuration = logs.reduce((sum, log) => sum + (log['duration'] || 0), 0);
-
-        // Growth Score: 시간 누적에 비례 (데이터가 많을수록 성장한다고 가정)
-        const growthScore = Math.min(100, totalDuration * 2);
-
-        // Engagement Score: 세션 횟수/다양성에 비례
-        const engagementScore = logs.length > 5 ? 85 : Math.floor(logs.length * 15); // 예시 로직
-
-        // Monetization Score: 프리미엄 기능 사용 여부에 따라 결정 (가장 가치 있는 지표)
-        let premiumUsageCount = logs.filter(log => log['feature'] === 'PremiumPitch').length;
-        const monetizationScore = Math.min(100, premiumUsageCount * 15);
-
-        return {
-            growth: growthScore,
-            engagement: engagementScore,
-            monetization: monetizationScore
+    } catch (error) {
+        console.error("진단 점수 계산 중 치명적 오류 발생:", error);
+        // 4. [에러 처리] 예측 불가능한 시스템 에러는 구체적인 메시지를 반환하여 프론트엔드에서 대응하게 합니다.
+         return {
+            success: false,
+            message: "서버 내부 오류가 발생했습니다. 관리자에게 문의해주세요.",
+            data: null
         };
     }
-}
+};
+
+/**
+ * 사용자의 권한 레벨과 요청 진단 타입 간의 접근 가능 여부를 검증하는 로직 (RBAC).
+ * @param role - 사용자의 현재 Role.
+ * @param requestedType - 요청된 Diagnosis Type.
+ */
+const checkUserAccess = (role: UserRole, requestedType: string): boolean => {
+    // 예시 정책: FreeUser는 Growth 리포트만 접근 가능하다고 가정
+    if (role === UserRole.FreeUser && requestedType !== 'Growth') {
+        return false; // RBAC 실패
+    }
+    return true; // 접근 허용
+};
+
+export { calculateDiagnosisScore };
