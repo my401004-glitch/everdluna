@@ -1,0 +1,5 @@
+[Figma File Placeholder: Diagnosis Report Flowchart Mockup]
+- **Structure:** Horizontal 3-Stage Flow (Pain $\rightarrow$ Diagnosis $\rightarrow$ Gain)
+- **Colors:** Primary Blue (#0A2463), Accent Yellow (#FFD700), Neutral Grey (#F5F5F5).
+- **Typography:** Montserrat Bold (Title/Impact), Noto Sans KR (Body/Data Labels).
+- **Key Feature:** 중앙 'Gap Score' 섹션에 동적(Dynamic) 그래프와 코드리에서 제공한 측정 지표(e.g., Harmonic Deviation, Interval Consistency)를 배치하여 전문성 극대화.
