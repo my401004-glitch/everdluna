@@ -656,3 +656,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-16] Writer가 제공한 최종 카피(Pain $ightarrow$ Gain 구조)와 코다리의 기술적 안정성 검증 결과(Gap Score 등)를 기반으로, 사용자의 신뢰와 성취감을 즉각적으로 유도하는 시각화된 Mockup 이미지 및 핵심 흐름도를 통합하여 마케팅용 최종 시각 자산을 확정하라. → 산출물 sessions/2026-07-16T07-51/designer.md
 - [2026-07-16] 코다리가 제공한 기술적 검증 결과 및 Pain $ightarrow$ Gain 구조를 기반으로, 유튜브 영상에 즉시 적용 가능한 최종 썸네일과 인스타그램 마케팅 디자인을 `Marketing_Asset_Kit_V1.md` 표준에 맞춰 제작하라. → 산출물 sessions/2026-07-16T08-06/designer.md
 - [2026-07-17] Writer가 제공한 최종 카피 및 코다리의 기술적 검증 결과를 기반으로, 유튜브 썸네일과 인스타그램 마케팅 디자인을 `Marketing_Asset_Kit_V1.md` 표준에 맞춰 즉시 제작하라. → 산출물 sessions/2026-07-17T02-59/designer.md
+- [2026-07-17] Writer가 제공한 최종 카피 및 기술 검증 결과를 기반으로, 유튜브 썸네일과 인스타그램 마케팅 디자인을 `Marketing_Asset_Kit_V1.md` 표준에 맞춰 즉시 제작할 것. → 산출물 sessions/2026-07-17T04-30/designer.md
