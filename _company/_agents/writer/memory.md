@@ -480,3 +480,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-07-17] 개발팀(코다리)이 제공한 기술 검증 결과와 Pain $ightarrow$ Gain 구조를 기반으로, 가장 높은 전환율을 유도하는 최종 영상 스크립트 및 핵심 카피를 작성하라. → 산출물 sessions/2026-07-17T05-30/writer.md
 - [2026-07-17] youtube의 요청에 따라 Day 1부터 Day 5까지의 포스팅에 사용할 최종 스크립트 및 후킹 카피 초안을 제작하라. 이때, Designer가 정의한 시각적 가이드라인과 A/B 테스트 결과(Marketing_Asset_Kit_V1-ABTest)를 반드시 반영해야 한다. → 산출물 sessions/2026-07-17T06-15/writer.md
 - [2026-07-20] 현빈이 제시한 ROI 예측 모델과 레오의 전략(LossAversion)을 통합하여, 가장 높은 전환율을 유도할 'Reels 1번' 콘텐츠의 최종 스크립트와 핵심 메시지를 작성하라. → 산출물 sessions/2026-07-20T04-36/writer.md
+- [2026-07-20] Reels_Narrative_Flow_Spec_V1.0.md의 Pain $ightarrow$ Gain 흐름에 맞춰, Designer가 제시할 시각적 지침을 고려하여 데이터 변수가 서사에 녹아들도록 감성적 스크립트 초안을 수정 및 구체화한다. → 산출물 sessions/2026-07-20T06-06/writer.md
