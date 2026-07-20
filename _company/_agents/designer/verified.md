@@ -861,3 +861,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-20] | **CTA 버튼** | `conversion_flag` | IF `conversion_flag` = True $\rightarrow$ CTA 텍스트에 '즉시 확인', '지금 기회 잡기' 등의 긴급성 문구를 삽입하고, Yellow Accent를 가장 강력하게 적용한다. | **배치:** 화면 하단 20% 고정 배치 유지. **색상:** `#FFD700` (강력한 대비). | _(근거: Designer 검증된 지식)_
 - [2026-07-20] **** (Reels 1번 콘텐츠 제작 과정에서 동적 자산의 중요성이 강조됨) _(근거: sessions/2026-05-19T04:36)_
 - [2026-07-20] **** (Pain $\rightarrow$ Gain 프레임워크는 모든 마케팅 콘텐츠의 핵심 논리임을 재확인함) _(근거: Designer 검증된 지식)_
+- [2026-07-20] | 1 | **전반적 구조** | Pain $\rightarrow$ Gain 프레임워크가 명확한 시각적 전환(Pivot Point)을 가졌는가? | (Pain 섹션과 Solution 섹션 사이의 색상/모션 변화 확인). | ☐ 미완료 | 전환 효과(Transition Effect)를 '어둠' 또는 '깨달음의 빛'으로 처리해야 함. | _(근거: Designer 검증된 지식)_
+- [2026-07-20] | 2 | **데이터 연동** | 모든 수치적 강조는 `Impact Counter` 컴포넌트를 통해 카운트업되는가? (정지된 숫자는 금지). | (Dynamic Number Hook 활용) | ☐ 미완료 | 개발자에게 카운트 애니메이션의 **속도(Velocity Curve)**를 명확히 전달해야 함. | _(근거: Designer 검증된 지식)_
+- [2026-07-20] | 3 | **CTA 기능** | 최종 CTA 버튼 클릭 시, 시스템이 유효성 검사(`API Call`)를 거쳐 사용자 행동을 유도하는가? | (Accent Yellow 활용) | ☐ 미완료 | 단순 링크 연결이 아닌, *진행 과정*을 보여주는 로딩 스피너 애니메이션(Loading Spinner Animation) 필수. | _(근거: Designer 검증된 지식)_
+- [2026-07-20] | 4 | **브랜딩 일관성** | 모든 배경 및 섹션 구분은 Dark Blue/Neutral Grey 기반의 명확한 대비를 유지하는가? | (Primary Color / Background Color 활용) | ☐ 미완료 | 애니메이션 속에서도 브랜드 컬러의 '무게감'이 느껴져야 함. | _(근거: Designer 검증된 지식)_
