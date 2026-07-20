@@ -516,3 +516,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-20] Designer가 제공한 최종 애니메이션 지침서와 API 계약 사양을 기반으로, 동적 콘텐츠 시스템 구현에 필요한 모든 비주얼 규칙(색상, 속도 변수 등)이 코드로 정확히 매핑되는지 검증하는 개발 체크리스트를 작성하라. → 산출물 sessions/2026-07-20T06-36/developer.md
 - [2026-07-20] Writer가 확정한 'Gap Score' 변수와 Designer가 확정한 '애니메이션 지침서 V3.0'를 기반으로, 실제 API 로직(`reelsService.ts` 내의 애니메이션 변수 처리)에 대한 최종 검증 체크리스트(QA)를 실행하고 시각적 구현 오류를 방지할 것. → 산출물 sessions/2026-07-20T07-06/developer.md
 - [2026-07-20] Designer가 제공한 최종 애니메이션 지침서와 API 계약을 기반으로, `reelsService.ts`의 실시간 유효성 검사 로직이 성공적으로 통합되었는지에 대한 개발팀의 최종 검증 결과를 확보할 것. → 산출물 sessions/2026-07-20T07-21/developer.md
+- [2026-07-20] youtube_kpi_metrics 테이블 스키마 구현 및 kpi_ingestion_service.py 모듈 개발을 즉시 시작하라. → 산출물 sessions/2026-07-20T07-51/developer.md
