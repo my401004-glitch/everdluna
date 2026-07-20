@@ -859,3 +859,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-20] | **Pain Score 영역** | `ab_test_group`, `gap_score` | IF `ab_test_group` = 'LossAversion' AND `gap_score` > 70 $\rightarrow$ 배경을 Warning Red로 설정하고, "지금 이대로는..." 문구를 가장 크게 표시한다. | **폰트:** Montserrat Bold (강조). **색상:** 그룹별 지정 색상 사용. | _(근거: Designer 검증된 지식)_
 - [2026-07-20] | **Gain/ROI 시각화** | `suggested_gain_roi` | 이 값이 높을수록 그래프의 폭과 색상 농도가 진해져야 한다. '수치'보다 '증가하는 움직임'에 집중한다. | **차트:** 단순 바 차트 대신, 상승하는 화살표 모션이나 곡선형 그래프를 사용하여 역동성을 부여한다. (Animated Element 고려) | _(근거: Designer 검증된 지식)_
 - [2026-07-20] | **CTA 버튼** | `conversion_flag` | IF `conversion_flag` = True $\rightarrow$ CTA 텍스트에 '즉시 확인', '지금 기회 잡기' 등의 긴급성 문구를 삽입하고, Yellow Accent를 가장 강력하게 적용한다. | **배치:** 화면 하단 20% 고정 배치 유지. **색상:** `#FFD700` (강력한 대비). | _(근거: Designer 검증된 지식)_
+- [2026-07-20] **** (Reels 1번 콘텐츠 제작 과정에서 동적 자산의 중요성이 강조됨) _(근거: sessions/2026-05-19T04:36)_
+- [2026-07-20] **** (Pain $\rightarrow$ Gain 프레임워크는 모든 마케팅 콘텐츠의 핵심 논리임을 재확인함) _(근거: Designer 검증된 지식)_

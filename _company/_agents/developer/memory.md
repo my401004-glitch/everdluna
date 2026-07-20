@@ -506,3 +506,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-17] A/B 테스트 결과(conversion_flag, ab_test_group)를 기반으로 콘텐츠 동적 생성 API 연동 로직을 최종 확정하고, 디자인 에이전트가 요청할 수 있는 데이터 인터페이스 사양을 명확히 정리하여 구현 준비를 시작하라. → 산출물 sessions/2026-07-17T07-00/developer.md
 - [2026-07-20] A/B 테스트 결과(conversion_flag, ab_test_group)를 기반으로 콘텐츠 동적 생성 API 연동 로직을 최종 확정하고, 디자인 에이전트가 요청할 수 있는 데이터 인터페이스 사양을 명확히 정리하여 구현 준비를 시작하라. → 산출물 sessions/2026-07-20T03-21/developer.md
 - [2026-07-20] Master Design System Guide V3.0과 A/B 테스트 데이터를 기반으로, 마케팅 자산(AdCard)이 'Loss Area'와 CTA 영역에 동적으로 반응하도록 하는 API 연동 로직 및 A/B 테스트 그룹 선택 스위치 기능을 최우선으로 구현하고 테스트할 것. → 산출물 sessions/2026-07-20T04-06/developer.md
+- [2026-07-20] Master Design System Guide V3.0과 A/B 테스트 데이터를 기반으로, 동적 콘텐츠 생성 API 연동 로직 구현에 필요한 최종 데이터 인터페이스 사양과 시각적 변수 가이드라인을 통합하여 개발 착수를 위한 코드 설계 준비를 완료하라. → 산출물 sessions/2026-07-20T04-51/developer.md
