@@ -669,3 +669,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-20] Master Design System Guide V3.0 및 AdCard_Dynamic_Design_Guide.md를 기반으로, A/B 테스트 그룹별(예: conversion_flag)로 동적으로 변화하는 마케팅 자산(AdCard)의 시각적 Mockup 또는 초기 에셋 패키지 제작을 시작하고, 개발자에게 필요한 데이터 매핑 검증을 요청할 준비를 하라. → 산출물 sessions/2026-07-20T04-21/designer.md
 - [2026-07-20] 레오가 제시한 시각 컨셉 브리프와 Designer의 Master Design System Guide V3.0을 기반으로, Reels 1번 콘텐츠에 최적화된 비주얼 초안(핵심 프레임 및 분위기)을 제작하라. → 산출물 sessions/2026-07-20T04-36/designer.md
 - [2026-07-20] Master Design System Guide V3.0 및 AdCard_Dynamic_Design_Guide.md를 기반으로, 동적 변화에 따른 디자인 시스템의 API 연동을 위한 시각 변수 가이드라인과 데이터 매핑 검증 포인트를 명확히 정리하여 개발자에게 제공하라. → 산출물 sessions/2026-07-20T04-51/designer.md
+- [2026-07-20] Master Design System Guide V3.0과 AdCard API 데이터 매핑 프로토콜을 기반으로, Reels 1번 콘텐츠에 최적화된 비주얼 초안(핵심 프레임 및 분위기)을 제작하여 개발 검증 체크리스트를 구체화하도록 지시하라. → 산출물 sessions/2026-07-20T05-06/designer.md
