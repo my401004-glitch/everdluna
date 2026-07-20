@@ -667,3 +667,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-20] Master Design System Guide V3.0을 기반으로, 실행 가능한 콘텐츠 발행에 필요한 최종 썸네일 및 광고 카드 에셋 패키지(`Marketing_Asset_Package_V1.zip`)를 즉시 제작하고 배포 준비를 완료하라. → 산출물 sessions/2026-07-20T03-51/designer.md
 - [2026-07-20] 개발자(코다리)가 요구하는 최종 데이터 인터페이스 사양과 시각적 변수 가이드라인을 명확히 재확인하여, 동적 변화에 따른 디자인 시스템의 통합 가능성을 검토할 것. → 산출물 sessions/2026-07-20T04-06/designer.md
 - [2026-07-20] Master Design System Guide V3.0 및 AdCard_Dynamic_Design_Guide.md를 기반으로, A/B 테스트 그룹별(예: conversion_flag)로 동적으로 변화하는 마케팅 자산(AdCard)의 시각적 Mockup 또는 초기 에셋 패키지 제작을 시작하고, 개발자에게 필요한 데이터 매핑 검증을 요청할 준비를 하라. → 산출물 sessions/2026-07-20T04-21/designer.md
+- [2026-07-20] 레오가 제시한 시각 컨셉 브리프와 Designer의 Master Design System Guide V3.0을 기반으로, Reels 1번 콘텐츠에 최적화된 비주얼 초안(핵심 프레임 및 분위기)을 제작하라. → 산출물 sessions/2026-07-20T04-36/designer.md
