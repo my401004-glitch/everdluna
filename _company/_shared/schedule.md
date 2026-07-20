@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 20. 오후 1:56:21_
+_업데이트: 2026. 7. 20. 오후 2:10:30_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 7. 20. 오후 1:56:21_
 - [2026-07-13] Instagram은 Writer와 Designer가 준비한 마케팅 초안(캡션 및 시각 자료)에 맞춰 첫 주 콘텐츠 발행 계획(Reels 및 피드) 초안을 수립하고, 최적의 게시 시간을 제안하라. → 산출물 sessions/2026-07-13T06-27/instagram.md
 - [2026-07-13] Designer와 Writer가 준비한 마케팅 자산(최종 썸네일 및 광고 카드)을 활용하여 첫 주 콘텐츠 발행 계획(Reels 및 피드)을 수립하고, 가장 높은 인게이지먼트를 유도할 최적의 게시 시간을 제안하라. → 산출물 sessions/2026-07-13T07-57/instagram.md
 ### 🎨 Designer
-- [2026-07-20] Master Design System Guide V3.0 및 AdCard_Dynamic_Design_Guide.md를 기반으로, A/B 테스트 그룹별(예: conversion_flag)로 동적으로 변화하는 마케팅 자산(AdCard)의 시각적 Mockup 또는 초기 에셋 패키지 제작을 시작하고, 개발자에게 필요한 데이터 매핑 검증을 요청할 준비를 하라. → 산출물 sessions/2026-07-20T04-21/designer.md
 - [2026-07-20] 레오가 제시한 시각 컨셉 브리프와 Designer의 Master Design System Guide V3.0을 기반으로, Reels 1번 콘텐츠에 최적화된 비주얼 초안(핵심 프레임 및 분위기)을 제작하라. → 산출물 sessions/2026-07-20T04-36/designer.md
 - [2026-07-20] Master Design System Guide V3.0 및 AdCard_Dynamic_Design_Guide.md를 기반으로, 동적 변화에 따른 디자인 시스템의 API 연동을 위한 시각 변수 가이드라인과 데이터 매핑 검증 포인트를 명확히 정리하여 개발자에게 제공하라. → 산출물 sessions/2026-07-20T04-51/designer.md
+- [2026-07-20] Master Design System Guide V3.0과 AdCard API 데이터 매핑 프로토콜을 기반으로, Reels 1번 콘텐츠에 최적화된 비주얼 초안(핵심 프레임 및 분위기)을 제작하여 개발 검증 체크리스트를 구체화하도록 지시하라. → 산출물 sessions/2026-07-20T05-06/designer.md
 ### 💻 코다리
-- [2026-07-20] A/B 테스트 결과(conversion_flag, ab_test_group)를 기반으로 콘텐츠 동적 생성 API 연동 로직을 최종 확정하고, 디자인 에이전트가 요청할 수 있는 데이터 인터페이스 사양을 명확히 정리하여 구현 준비를 시작하라. → 산출물 sessions/2026-07-20T03-21/developer.md
 - [2026-07-20] Master Design System Guide V3.0과 A/B 테스트 데이터를 기반으로, 마케팅 자산(AdCard)이 'Loss Area'와 CTA 영역에 동적으로 반응하도록 하는 API 연동 로직 및 A/B 테스트 그룹 선택 스위치 기능을 최우선으로 구현하고 테스트할 것. → 산출물 sessions/2026-07-20T04-06/developer.md
 - [2026-07-20] Master Design System Guide V3.0과 A/B 테스트 데이터를 기반으로, 동적 콘텐츠 생성 API 연동 로직 구현에 필요한 최종 데이터 인터페이스 사양과 시각적 변수 가이드라인을 통합하여 개발 착수를 위한 코드 설계 준비를 완료하라. → 산출물 sessions/2026-07-20T04-51/developer.md
+- [2026-07-20] Designer가 제작할 Reels 1번 콘텐츠의 시각적 초안(프레임, 분위기)에 맞춰, 동적 콘텐츠 생성 API 연동 로직 구현을 위한 구체적인 데이터 매핑 및 인터페이스 요구사항을 즉시 검토하고 코다리에게 전달하도록 준비하라. → 산출물 sessions/2026-07-20T05-06/developer.md
 ### 💼 현빈
 - [2026-07-17] 최종 A/B 테스트 그룹(3안)에 따른 KPI 측정 기준과 전환 퍼널 흐름도를 완성하여, 디자인 작업의 목표와 실행 전략을 명확히 하라. → 산출물 sessions/2026-07-17T06-45/business.md
 - [2026-07-20] 제작된 초기 에셋 패키지의 잠재적 수익화 전략과 KPI 목표를 재검토하고, 다음 콘텐츠 발행 계획에 따른 구체적인 ROI 예측치를 제시하라. → 산출물 sessions/2026-07-20T04-21/business.md
