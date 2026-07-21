@@ -521,3 +521,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-21] KPI Validator 모듈의 QA 결과를 콘텐츠 제작 워크플로우에 완전히 통합하여 기술적 안정성을 최종적으로 확보하고, 다음 콘텐츠 발행을 위한 시스템 통합 검증 보고서를 작성하라. → 산출물 sessions/2026-07-21T07-21/developer.md
 - [2026-07-21] Designer와 Editor가 작업하는 과정에서 발생할 수 있는 비주얼/오디오 통합에 대한 기술적 안정성(KPI Validator 결과 반영)을 최종적으로 검증하고, 영상 제작 워크플로우의 기술적 안정성을 확보하라. → 산출물 sessions/2026-07-21T07-51/developer.md
 - [2026-07-21] Designer와 Editor가 제공한 마스터 사양서(`visual_asset_master_spec.md`)와 오디오 블루프린트(`audio_master_blueprint.json`)를 기반으로 영상 제작 워크플로우의 기술적 안정성을 확보하며 편집 작업을 시작한다. → 산출물 sessions/2026-07-21T08-21/developer.md
+- [2026-07-21] KPI Validator 결과를 최종 편집 단계에 통합하여, 콘텐츠 제작 워크플로우의 기술적 안정성을 확보하는 시스템 통합 보고서를 작성하라. → 산출물 sessions/2026-07-21T08-36/developer.md
