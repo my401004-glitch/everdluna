@@ -52,3 +52,4 @@ _루나 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-07-20] Reels 1 콘텐츠의 오디오 아크(`Reels1_Final_Audio_Arc.mp3`) 생성을 재실행하여 사운드 싱크를 확정하고 최종 오디오 자산을 준비할 것. → 산출물 sessions/2026-07-20T07-21/editor.md
 - [2026-07-21] Designer가 제공한 비주얼 자산과 Writer의 스크립트를 합성하여, 최종 영상에 사용될 BGM 자동 생성(MusicGen/ACE-Step) 및 사운드 디자인을 포함한 오디오 후처리 작업을 진행하라. → 산출물 sessions/2026-07-21T07-51/editor.md
 - [2026-07-21] Writer와 Designer가 제공한 모든 비주얼 자산과 스크립트를 합성하여, BGM 자동 생성(MusicGen/ACE-Step) 및 사운드 디자인을 포함한 오디오 후처리 작업을 시작하고 영상의 청각적 경험을 완성하라. → 산출물 sessions/2026-07-21T08-06/editor.md
+- [2026-07-21] Designer의 `visual_asset_master_spec.md`와 Luna의 `audio_master_blueprint.json`을 기반으로 실제 영상 편집 및 음악 합성을 즉시 시작하고 마스터 프로덕션 스펙에 따라 작업한다. → 산출물 sessions/2026-07-21T08-21/editor.md
