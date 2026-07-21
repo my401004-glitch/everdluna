@@ -681,3 +681,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-21] Writer가 제시한 스크립트와 Visual Guideline V3.0을 기반으로, 썸네일 컨셉 중 가장 높은 CTR이 예상되는 옵션을 최종 선정하고, 해당 컨셉에 맞는 색상 팔레트 및 핵심 애니메이션 소스를 확정하라. → 산출물 sessions/2026-07-21T06-51/designer.md
 - [2026-07-21] 최종 확정된 색상 팔레트(`Dark Blue #0A2463`, `Accent Yellow #FFD700`)와 핵심 애니메이션 소스를 활용하여, 영상에 사용될 고해상도 시각 클립 라이브러리 및 Gap Score 변화 트래킹 에셋을 즉시 구축하라. → 산출물 sessions/2026-07-21T07-06/designer.md
 - [2026-07-21] Writer가 최종 확정한 가장 높은 CTR 예측치를 보이는 비주얼 컨셉을 기반으로, 확정된 색상 팔레트(`Dark Blue #0A2463`, `Accent Yellow #FFD700`)와 핵심 애니메이션 소스를 적용하여 실제 영상에 사용될 고해상도 시각 클립 라이브러리 및 Gap Score 변화 트래킹 에셋을 즉시 구축하고 제작을 착수하라. → 산출물 sessions/2026-07-21T07-21/designer.md
+- [2026-07-21] 최종 확정된 색상 팔레트(`Dark Blue #0A2463`, `Accent Yellow #FFD700`)와 핵심 애니메이션 소스(Shake Effect, Zoom-In/Focus)를 활용하여 영상에 사용될 고해상도 시각 클립 라이브러리 및 Gap Score 변화 트래킹 에셋을 즉시 구축하라. → 산출물 sessions/2026-07-21T07-36/designer.md
