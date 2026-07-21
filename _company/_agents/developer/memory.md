@@ -518,3 +518,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-20] Designer가 제공한 최종 애니메이션 지침서와 API 계약을 기반으로, `reelsService.ts`의 실시간 유효성 검사 로직이 성공적으로 통합되었는지에 대한 개발팀의 최종 검증 결과를 확보할 것. → 산출물 sessions/2026-07-20T07-21/developer.md
 - [2026-07-20] youtube_kpi_metrics 테이블 스키마 구현 및 kpi_ingestion_service.py 모듈 개발을 즉시 시작하라. → 산출물 sessions/2026-07-20T07-51/developer.md
 - [2026-07-21] KPI Validator 모듈에 가상 실패 시나리오를 적용한 QA 코드를 최종 검증하고, 이 결과를 콘텐츠 제작 흐름(Workflow)에 통합할 수 있는 최종 기술 보고서를 작성하라. → 산출물 sessions/2026-07-21T06-21/developer.md
+- [2026-07-21] KPI Validator 모듈의 QA 결과를 콘텐츠 제작 워크플로우에 완전히 통합하여 기술적 안정성을 최종적으로 확보하고, 다음 콘텐츠 발행을 위한 시스템 통합 검증 보고서를 작성하라. → 산출물 sessions/2026-07-21T07-21/developer.md
