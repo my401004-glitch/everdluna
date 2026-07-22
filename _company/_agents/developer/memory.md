@@ -524,3 +524,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-21] KPI Validator 결과를 최종 편집 단계에 통합하여, 콘텐츠 제작 워크플로우의 기술적 안정성을 확보하는 시스템 통합 보고서를 작성하라. → 산출물 sessions/2026-07-21T08-36/developer.md
 - [2026-07-21] 시스템 청사진(`system_blueprint/README.md`)을 기반으로 실제 API 게이트웨이(`diagnosisController.ts`)와 데이터 레이어의 구조를 최종적으로 코딩하고, KPI Validator 결과를 통합하여 기술적 안정성을 검증하라. → 산출물 sessions/2026-07-21T08-51/developer.md
 - [2026-07-21] KPI Validator 결과를 최종 편집 단계에 통합하여, 콘텐츠 제작 워크플로우의 기술적 안정성을 확보하는 로직(`diagnosisController.ts` 및 데이터 레이어 API 게이트웨이 연동)을 즉시 코딩하고 시스템 통합 보고서를 작성하세요. → 산출물 sessions/2026-07-21T10-46/developer.md
+- [2026-07-22] Designer가 제공할 것으로 예상되는 최종 에셋 목록과 Dimension 가이드라인을 기반으로 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 게이트웨이 연동 작업을 위한 초기 설계 및 환경 구성을 준비하라. → 산출물 sessions/2026-07-22T02-28/developer.md
