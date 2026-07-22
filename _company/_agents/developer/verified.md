@@ -677,3 +677,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-22] 29 // 2. 유료화 트리거 검증 로직 - _(근거: sessions/2026-05-18T13:43/developer.md (RBAC), KPI_Metrics)_
 - [2026-07-22] 24 // 1. 핵심 진단 점수 (Gap Score) 산출 로직 - _(근거: sessions/2026-05-18T14-34/developer.md, Gap Score 개념)_
 - [2026-07-22] 29 // 2. 유료화 트리거 검증 로직 - _(근거: sessions/2026-05-18T13:43/developer.md (RBAC), KPI_Metrics)_
+- [2026-07-22] 24 // 1. 핵심 진단 점수 (Gap Score) 산출 로직 - _(근거: sessions/2026-05-18T14-34/developer.md, Gap Score 개념)_
+- [2026-07-22] 29 // 2. 유료화 트리거 검증 로직 - _(근거: sessions/2026-05-18T13:43/developer.md (RBAC), KPI_Metrics)_

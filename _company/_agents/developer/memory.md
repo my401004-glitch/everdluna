@@ -531,3 +531,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-22] 최종 JSON API 스크립트(`gap_score`, `monetization_triggers` 필드 포함) 초안을 작성하여 기술적 구현을 시작하고, Designer가 요구할 데이터 사양(Dimension 가이드라인)을 명확히 제공하라. → 산출물 sessions/2026-07-22T04-13/developer.md
 - [2026-07-22] DiagnosisService의 실제 테스트 케이스 및 예외 처리 로직을 구현하여 백엔드 안정성을 확보하고, 최종 JSON API 스크립트 작성을 재개하라. → 산출물 sessions/2026-07-22T04-28/developer.md
 - [2026-07-22] DiagnosisService의 핵심 로직(`diagnosisService.ts`)에 대해 Unit Test 케이스를 작성하여 백엔드 안정성을 즉시 확보하라. 특히 'Gap Score' 계산 및 트리거 로직에 대한 모든 예외 상황과 경계 조건을 커버해야 한다. → 산출물 sessions/2026-07-22T04-43/developer.md
+- [2026-07-22] Writer와 Designer가 준비한 스크립트 및 비주얼 명세서를 기반으로, 최종 JSON API 스크립트(`gap_score`, `monetization_triggers` 필드 포함)의 기술적 구현을 즉시 재개하고 코다리(Developer)가 요청한 데이터 사양을 확인하여 구현을 시작한다. → 산출물 sessions/2026-07-22T05-13/developer.md
