@@ -500,3 +500,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-07-22] Designer가 제공한 비디오 템플릿 사양서(Video Template Specification)를 기반으로, 'Pain $ightarrow$ Gain' 구조를 극대화하는 핵심 메시지 중심의 최종 영상 대본과 캡션을 작성하여 첫 번째 콘텐츠 제작을 위한 초안을 완성하라. → 산출물 sessions/2026-07-22T06-18/writer.md
 - [2026-07-22] Trigger 1(Quick Fix Module)에 맞춰 'Pain $ightarrow$ Gain' 구조를 극대화한 유튜브 제목 후보 5가지와 이에 맞는 핵심 스크립트 초안을 작성하라. → 산출물 sessions/2026-07-22T06-48/writer.md
 - [2026-07-22] Designer와 코다리가 제공한 'Gap Score' 시각화 결과 및 비주얼 가이드라인을 기반으로 유튜브 영상 제목 후보 5가지, 매력적인 썸네일 아이디어 3가지, 그리고 이에 맞는 상세한 영상 스크립트 초안(Pain $ightarrow$ Gain 구조)을 작성하라. → 산출물 sessions/2026-07-22T07-33/writer.md
+- [2026-07-22] Master Production Bible(`MasterProductionBible_GapScore.md`)을 바탕으로 영상 제작팀에 최종 지침을 전달하고, 데이터 기반 권위 구축 전략에 맞춰 스크립트 톤앤매너를 최종 검토하라. → 산출물 sessions/2026-07-22T07-48/writer.md
