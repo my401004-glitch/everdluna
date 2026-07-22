@@ -683,3 +683,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-22] 현재까지 `diagnosisController.ts`를 중심으로 API 엔드포인트 설계, Unit Test 케이스 작성, 그리고 데이터 모델링(Growth, Engagement, Monetization KPI)이 완료된 상태입니다. _(근거: sessions/2026-07-22T04:28)_
 - [2026-07-22] 현재 `diagnosisController.ts`를 읽어본 결과, API는 최종적인 'Gap Score'와 그 점수를 구성하는 세 가지 핵심 지표(`Growth`, `Engagement`, `Monetization`)의 *결과값*을 반환하도록 구조화되어 있습니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-07-22] 테스트 파일을 확인했습니다. 기존 테스트는 주로 '성공적인 데이터 계산'과 '권한 기반 접근 제어 실패 시나리오'를 검증하는 데 초점이 맞춰져 있습니다. _(근거: sessions/2026-05-18T13:43)_
+- [2026-07-22] CEO님의 지시와 현재의 기술적 맥락을 종합적으로 검토했습니다. 가장 높은 가치를 창출할 수 있는 단일 작업은 **핵심 비즈니스 로직인 진단 점수(Gap Score) 계산 및 KPI 연동 서비스 레이어 구현**입니다. _(근거: sessions/2026-07-22T05-13/developer.md, sessions/2026-05-18T14-34/developer.md)_
+- [2026-07-22] 1. **서비스 인터페이스 정의**: `DiagnosisService`의 함수 시그니처 및 입력/출력 타입(Interface)을 확정합니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-07-22] * 비즈니스 규칙과 데이터 흐름의 정확성을 책임집니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-07-22] * @description 원시 데이터를 기반으로 KPI를 계산하는 내부 함수. _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-07-22] * @description KPI를 기반으로 유료 기능 활성화 여부를 판단하는 함수. _(근거: sessions/2026-05-18T13:43)_
