@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 22. 오후 5:38:04_
+_업데이트: 2026. 7. 22. 오후 5:51:40_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 7. 22. 오후 5:38:04_
 - [2026-07-13] Designer와 Writer가 준비한 마케팅 자산(최종 썸네일 및 광고 카드)을 활용하여 첫 주 콘텐츠 발행 계획(Reels 및 피드)을 수립하고, 가장 높은 인게이지먼트를 유도할 최적의 게시 시간을 제안하라. → 산출물 sessions/2026-07-13T07-57/instagram.md
 - [2026-07-20] 최종 확정된 비주얼 가이드라인과 최적의 게시 시간 데이터를 활용하여, Reels 1번 콘텐츠의 최종 게시 포스팅 초안(캡션 및 해시태그 포함)을 작성하고 채널에 업로드할 준비를 완료하라. → 산출물 sessions/2026-07-20T06-51/instagram.md
 ### 🎨 Designer
-- [2026-07-22] 개발된 시각화 컴포넌트(`GapScoreVisualizer`)를 실제 채널 디자인 가이드라인에 맞춰 최종적으로 스타일링하고 애니메이션을 세밀하게 조정하여 영상 제작 준비를 완료하세요. (최근 액션 3) → 산출물 sessions/2026-07-22T08-03/designer.md
 - [2026-07-22] Writer가 제시한 스크립트와 데이터 흐름에 맞춰, 영상 제작에 바로 투입 가능한 최종 시각 효과 명세서(Motion Graphic Style Guide)를 스토리보드 구조에 맞게 세부 조정하고 통합하라. → 산출물 sessions/2026-07-22T08-18/designer.md
 - [2026-07-22] 최종 확정된 Motion Graphic Style Guide에 맞춰, Gap Score 시각화 컴포넌트(`GapScoreVisualizer`)의 애니메이션 및 스타일링을 영상 제작 단계에 바로 투입할 수 있도록 최종 QA를 수행하고 모든 요소를 통합하세요. → 산출물 sessions/2026-07-22T08-33/designer.md
+- [2026-07-22] MasterVideoAnimationBible.md 및 확정된 스타일 가이드라인을 기준으로, 개발된 GapScoreVisualizer 컴포넌트가 모든 디자인 사양(컬러 코드, 트랜지션 규칙)을 100% 준수하는지 최종 QA를 수행하고 애니메이션 통합을 검증하라. → 산출물 sessions/2026-07-22T08-48/designer.md
 ### 💻 코다리
-- [2026-07-22] 최종 확정된 Mockup Spec(`GapScoreFinalMockupSpec.md`)과 Master Production Bible(`MasterProductionBible_GapScore.md`)을 기반으로, Gap Score 시각화 컴포넌트의 실제 디자인 개발 및 애니메이션 구현 작업을 즉시 시작하고 코딩을 진행하라. → 산출물 sessions/2026-07-22T07-48/developer.md
 - [2026-07-22] Gap Score 시각화 컴포넌트(`GapScoreVisualizer`)에 실제 데이터를 주입하고 애니메이션을 완성하여 최종 QA를 수행하세요. (최근 액션 1) → 산출물 sessions/2026-07-22T08-03/developer.md
 - [2026-07-22] 최종 확정된 스토리보드와 디자인 사양에 맞춰, 콘텐츠가 실제로 시각화되는 과정(Gap Score 데이터 흐름)에 대한 시스템 통합 및 최종 QA를 진행하여 영상 제작 준비를 완료하세요. → 산출물 sessions/2026-07-22T08-33/developer.md
+- [2026-07-22] MasterVideoAnimationBible.md에 명시된 시간 좌표와 애니메이션 명령어를 기반으로, GapScoreVisualizer 컴포넌트가 실제 데이터를 삽입할 때의 최종 애니메이션 시퀀스를 구현하여 데모 환경에 통합하고 코딩 테스트를 진행하라. → 산출물 sessions/2026-07-22T08-48/developer.md
 ### 💼 현빈
 - [2026-07-22] 최고 CTR 및 수익화를 극대화할 수 있는 다음 영상의 주제(Gap Score 기반) 3가지를 연구하고, 각 주제에 대한 잠재적 수익화 경로를 분석하여 최우선 콘텐츠 방향을 결정하라. → 산출물 sessions/2026-07-22T03-28/business.md
 - [2026-07-22] Secretary가 도출한 가장 가치 있는 작업에 대해 수익화 및 KPI 관점에서 실행 전략을 제시하라. → 산출물 sessions/2026-07-22T03-58/business.md
@@ -33,9 +33,9 @@ _업데이트: 2026. 7. 22. 오후 5:38:04_
 - [2026-07-21] Designer의 `visual_asset_master_spec.md`와 Luna의 `audio_master_blueprint.json`을 기반으로 실제 영상 편집 및 음악 합성을 즉시 시작하고 마스터 프로덕션 스펙에 따라 작업한다. → 산출물 sessions/2026-07-21T08-21/editor.md
 - [2026-07-21] 코다리가 제공한 `editing_guide.md`를 기반으로 마스터 영상의 감정적 싱크 및 트랜지션 시간을 수동으로 조정하고 최종 폴리싱을 진행하라. → 산출물 sessions/2026-07-21T08-36/editor.md
 ### ✍️ Writer
-- [2026-07-22] 최종 확정된 비주얼 명세서와 데이터 구조를 바탕으로 첫 번째 영상의 전체 스크립트 초안과 비주얼 명세서를 작성하세요. (최근 액션 2) → 산출물 sessions/2026-07-22T08-03/writer.md
 - [2026-07-22] Designer가 확정한 Motion Graphic Style Guide와 Gap Score 기반의 데이터 흐름에 맞춰, 최종 영상 포맷(스크립트 구조 및 시각 효과 명세서)을 완성하고 디자인과 통합할 수 있도록 스토리보드 초안을 작성하라. → 산출물 sessions/2026-07-22T08-18/writer.md
 - [2026-07-22] 확정된 Motion Graphic Style Guide를 적용하여, 최종 제목 후보 및 스토리보드 초안을 바탕으로 전체 영상 스크립트와 비주얼 명세서를 최종 검토하고 완성하세요. → 산출물 sessions/2026-07-22T08-33/writer.md
+- [2026-07-22] 최근 확정된 제목 후보 중 가장 높은 CTR이 예상되는 옵션을 선정하고, 해당 영상의 첫 15초 후킹 구간(Hook Scene)에 대한 내레이션 톤앤매너를 최종 확정하여 다음 단계 영상 제작을 준비하라. → 산출물 sessions/2026-07-22T08-48/writer.md
 ### 🔍 Researcher
 - [2026-07-21] KPI Validator의 검증 결과를 바탕으로 현재 채널 데이터에서 가장 높은 전환율(CTR)과 리텐션 예측 가능성을 제공하는 'Pain Point' 주제 3가지를 도출하고, 각 주제에 대한 잠재적 수요를 분석하라. → 산출물 sessions/2026-07-21T06-36/researcher.md
 - [2026-07-22] 최근 실용음악 입시생들의 검색 트렌드 및 경쟁 채널의 성공적인 콘텐츠 포맷에 대한 데이터를 수집하여 다음 영상 주제 3가지를 선정하라. → 산출물 sessions/2026-07-22T01-15/researcher.md
