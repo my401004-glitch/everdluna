@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 22. 오후 12:46:14_
+_업데이트: 2026. 7. 22. 오후 1:01:28_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -21,13 +21,13 @@ _업데이트: 2026. 7. 22. 오후 12:46:14_
 - [2026-07-22] Visual_Flow_Map에 기반하여 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 즉시 시작하고, 이 과정에서 Designer가 제공할 것으로 예상되는 에셋 목록과 Dimension 가이드라인을 초기 설계로 준비하라. → 산출물 sessions/2026-07-22T03-13/developer.md
 - [2026-07-22] Designer가 제공한 Visual_Flow_Map 및 Dimension 가이드라인을 기반으로, 시스템 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 즉시 시작하고, 이 과정에서 Designer의 피드백을 반영하여 코딩을 진행하라. → 산출물 sessions/2026-07-22T03-43/developer.md
 ### 💼 현빈
-- [2026-07-21] 최근 KPI Validator 결과와 데이터 기반의 '성장 서사'를 바탕으로, 가장 높은 CTR 예측치를 보이는 주제(Pain $ ightarrow $ Gain 프레임워크)에 맞춰 다음 영상 콘텐츠 기획안을 1개 도출하고 제작 일정을 확정하라. → 자격증명 부족으로 차단됨
 - [2026-07-22] 선정된 3가지 주제 중 가장 높은 잠재적 CTR과 수익화 가능성을 보이는 주제를 분석하고, 해당 주제에 따른 초기 KPI 목표를 설정하라. → 산출물 sessions/2026-07-22T01-15/business.md
 - [2026-07-22] 최고 CTR 및 수익화를 극대화할 수 있는 다음 영상의 주제(Gap Score 기반) 3가지를 연구하고, 각 주제에 대한 잠재적 수익화 경로를 분석하여 최우선 콘텐츠 방향을 결정하라. → 산출물 sessions/2026-07-22T03-28/business.md
+- [2026-07-22] Secretary가 도출한 가장 가치 있는 작업에 대해 수익화 및 KPI 관점에서 실행 전략을 제시하라. → 산출물 sessions/2026-07-22T03-58/business.md
 ### 📱 영숙
-- [2026-07-21] Writer와 Designer의 최종 산출물을 바탕으로 다음 콘텐츠 제작을 위한 구체적인 48시간 실행 계획(스케줄링 포함)을 수립하고 Google Calendar에 등록하라. → 산출물 sessions/2026-07-21T06-51/secretary.md
 - [2026-07-22] Designer와 Writer의 작업 진척 상황을 모니터링하고 다음 작업에 필요한 리소스를 준비하기 위한 단기 일정을 정리하여 보고하라. → 산출물 sessions/2026-07-22T02-13/secretary.md
 - [2026-07-22] Designer의 자산 제작(1번)과 Developer의 기술 구현(2번) 간의 병목 현상을 최소화하는 통합 검증 프로세스(KPI Validator 연동 점검)를 관리하고, 전체 작업의 단기 일정을 재조정하여 실행 계획을 수립하라. → 산출물 sessions/2026-07-22T02-28/secretary.md
+- [2026-07-22] 최근 의사결정 기록, 회사 목표, 각 에이전트의 개인 목표(goal.md), 그리고 최근 메모리를 모두 검토하여 현재 가장 가치 있는 단일 작업 1개를 결정하고 그 이유를 요약하라. → 산출물 sessions/2026-07-22T03-58/secretary.md
 ### 🎵 루나
 - [2026-07-21] Writer와 Designer가 제공한 모든 비주얼 자산과 스크립트를 합성하여, BGM 자동 생성(MusicGen/ACE-Step) 및 사운드 디자인을 포함한 오디오 후처리 작업을 시작하고 영상의 청각적 경험을 완성하라. → 산출물 sessions/2026-07-21T08-06/editor.md
 - [2026-07-21] Designer의 `visual_asset_master_spec.md`와 Luna의 `audio_master_blueprint.json`을 기반으로 실제 영상 편집 및 음악 합성을 즉시 시작하고 마스터 프로덕션 스펙에 따라 작업한다. → 산출물 sessions/2026-07-21T08-21/editor.md
