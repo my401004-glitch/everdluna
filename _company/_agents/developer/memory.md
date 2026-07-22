@@ -527,3 +527,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-22] Designer가 제공할 것으로 예상되는 최종 에셋 목록과 Dimension 가이드라인을 기반으로 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 게이트웨이 연동 작업을 위한 초기 설계 및 환경 구성을 준비하라. → 산출물 sessions/2026-07-22T02-28/developer.md
 - [2026-07-22] Designer가 제공할 것으로 예상되는 최종 에셋 목록과 Dimension 가이드라인을 기반으로, Visual_Flow_Map에 따라 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 위한 초기 설계 및 환경 구성을 준비하라. → 산출물 sessions/2026-07-22T02-43/developer.md
 - [2026-07-22] Visual_Flow_Map에 기반하여 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 즉시 시작하고, 이 과정에서 Designer가 제공할 것으로 예상되는 에셋 목록과 Dimension 가이드라인을 초기 설계로 준비하라. → 산출물 sessions/2026-07-22T03-13/developer.md
+- [2026-07-22] Designer가 제공한 Visual_Flow_Map 및 Dimension 가이드라인을 기반으로, 시스템 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 즉시 시작하고, 이 과정에서 Designer의 피드백을 반영하여 코딩을 진행하라. → 산출물 sessions/2026-07-22T03-43/developer.md

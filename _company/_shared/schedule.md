@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 22. 오후 12:31:44_
+_업데이트: 2026. 7. 22. 오후 12:46:14_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 7. 22. 오후 12:31:44_
 - [2026-07-13] Designer와 Writer가 준비한 마케팅 자산(최종 썸네일 및 광고 카드)을 활용하여 첫 주 콘텐츠 발행 계획(Reels 및 피드)을 수립하고, 가장 높은 인게이지먼트를 유도할 최적의 게시 시간을 제안하라. → 산출물 sessions/2026-07-13T07-57/instagram.md
 - [2026-07-20] 최종 확정된 비주얼 가이드라인과 최적의 게시 시간 데이터를 활용하여, Reels 1번 콘텐츠의 최종 게시 포스팅 초안(캡션 및 해시태그 포함)을 작성하고 채널에 업로드할 준비를 완료하라. → 산출물 sessions/2026-07-20T06-51/instagram.md
 ### 🎨 Designer
-- [2026-07-22] Codari와 함께 Visual_Flow_Map에 기반하여 시각 효과와 기술 구현 간의 최종 매핑을 확정하기 위한 공동 워크숍(Joint Meeting/Workshop) 준비 및 참여를 시작하라. → 산출물 sessions/2026-07-22T02-43/designer.md
 - [2026-07-22] Writer가 작성한 스크립트 초안 및 Researcher의 트렌드 분석 결과를 기반으로, 최고 CTR을 유도할 수 있는 영상 썸네일과 핵심 비주얼 컨셉에 대한 디자인 브리프를 즉시 생성하라. → 산출물 sessions/2026-07-22T02-58/designer.md
 - [2026-07-22] Writer가 작성한 스크립트/훅을 기반으로, 선택된 주제에 가장 적합한 'Visual_Flow_Map' 상의 시각적 흐름과 핵심 비주얼 컨셉(색상 팔레트 및 애니메이션 스타일)을 디자인 브리프 형태로 구체화하라. → 산출물 sessions/2026-07-22T03-28/designer.md
+- [2026-07-22] Visual_Flow_Map에 기반한 시스템 핵심 로직 구현에 필요한 최종 에셋 목록과 Dimension 가이드라인을 명확히 제공하고, 개발자가 즉시 작업할 수 있도록 디자인 사양을 확정하라. → 산출물 sessions/2026-07-22T03-43/designer.md
 ### 💻 코다리
-- [2026-07-22] Designer가 제공할 것으로 예상되는 최종 에셋 목록과 Dimension 가이드라인을 기반으로 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 게이트웨이 연동 작업을 위한 초기 설계 및 환경 구성을 준비하라. → 산출물 sessions/2026-07-22T02-28/developer.md
 - [2026-07-22] Designer가 제공할 것으로 예상되는 최종 에셋 목록과 Dimension 가이드라인을 기반으로, Visual_Flow_Map에 따라 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 위한 초기 설계 및 환경 구성을 준비하라. → 산출물 sessions/2026-07-22T02-43/developer.md
 - [2026-07-22] Visual_Flow_Map에 기반하여 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 즉시 시작하고, 이 과정에서 Designer가 제공할 것으로 예상되는 에셋 목록과 Dimension 가이드라인을 초기 설계로 준비하라. → 산출물 sessions/2026-07-22T03-13/developer.md
+- [2026-07-22] Designer가 제공한 Visual_Flow_Map 및 Dimension 가이드라인을 기반으로, 시스템 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 즉시 시작하고, 이 과정에서 Designer의 피드백을 반영하여 코딩을 진행하라. → 산출물 sessions/2026-07-22T03-43/developer.md
 ### 💼 현빈
 - [2026-07-21] 최근 KPI Validator 결과와 데이터 기반의 '성장 서사'를 바탕으로, 가장 높은 CTR 예측치를 보이는 주제(Pain $ ightarrow $ Gain 프레임워크)에 맞춰 다음 영상 콘텐츠 기획안을 1개 도출하고 제작 일정을 확정하라. → 자격증명 부족으로 차단됨
 - [2026-07-22] 선정된 3가지 주제 중 가장 높은 잠재적 CTR과 수익화 가능성을 보이는 주제를 분석하고, 해당 주제에 따른 초기 KPI 목표를 설정하라. → 산출물 sessions/2026-07-22T01-15/business.md

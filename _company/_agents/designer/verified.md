@@ -897,3 +897,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-22] * **Neutral Base (가독성):** Neutral Grey (`#F5F5F5`) - 데이터 표, 텍스트 배경, 안정적이고 깨끗한 그리드 배경에 사용. 시선을 분산시키지 않고 정보 전달력을 높입니다. _(근거: Designer 검증된 지식)_
 - [2026-07-22] * **Headline / Metric:** Montserrat Bold - 가장 크고, 가장 강력해야 하는 메시지(예: "Pitch Deviation Index", "3가지 핵심")에 사용됩니다. 시각적 충격과 권위를 부여합니다. _(근거: Designer 검증된 지식)_
 - [2026-07-22] * **Body / Data Label:** Noto Sans KR Regular/Medium - 데이터 값, 상세 설명, 로드맵의 각 단계 제목 등 높은 가독성이 요구되는 텍스트에 사용됩니다. _(근거: Designer 검증된 지식)_
+- [2026-07-22] * **브랜드 컬러:** Primary: Dark Blue (#0A2463), Accent: Yellow (#FFD700), Neutral: Grey (#F5F5F5). _(근거: Designer 검증된 지식)_
+- [2026-07-22] * **타이포그래피:** Title: Montserrat Bold, Body: Noto Sans KR. _(근거: Designer 검증된 지식)_
