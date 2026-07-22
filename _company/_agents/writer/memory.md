@@ -503,3 +503,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-07-22] Master Production Bible(`MasterProductionBible_GapScore.md`)을 바탕으로 영상 제작팀에 최종 지침을 전달하고, 데이터 기반 권위 구축 전략에 맞춰 스크립트 톤앤매너를 최종 검토하라. → 산출물 sessions/2026-07-22T07-48/writer.md
 - [2026-07-22] 최종 확정된 비주얼 명세서와 데이터 구조를 바탕으로 첫 번째 영상의 전체 스크립트 초안과 비주얼 명세서를 작성하세요. (최근 액션 2) → 산출물 sessions/2026-07-22T08-03/writer.md
 - [2026-07-22] Designer가 확정한 Motion Graphic Style Guide와 Gap Score 기반의 데이터 흐름에 맞춰, 최종 영상 포맷(스크립트 구조 및 시각 효과 명세서)을 완성하고 디자인과 통합할 수 있도록 스토리보드 초안을 작성하라. → 산출물 sessions/2026-07-22T08-18/writer.md
+- [2026-07-22] 확정된 Motion Graphic Style Guide를 적용하여, 최종 제목 후보 및 스토리보드 초안을 바탕으로 전체 영상 스크립트와 비주얼 명세서를 최종 검토하고 완성하세요. → 산출물 sessions/2026-07-22T08-33/writer.md
