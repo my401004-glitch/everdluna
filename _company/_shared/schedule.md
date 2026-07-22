@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 22. 오후 4:07:26_
+_업데이트: 2026. 7. 22. 오후 4:21:44_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 7. 22. 오후 4:07:26_
 - [2026-07-13] Designer와 Writer가 준비한 마케팅 자산(최종 썸네일 및 광고 카드)을 활용하여 첫 주 콘텐츠 발행 계획(Reels 및 피드)을 수립하고, 가장 높은 인게이지먼트를 유도할 최적의 게시 시간을 제안하라. → 산출물 sessions/2026-07-13T07-57/instagram.md
 - [2026-07-20] 최종 확정된 비주얼 가이드라인과 최적의 게시 시간 데이터를 활용하여, Reels 1번 콘텐츠의 최종 게시 포스팅 초안(캡션 및 해시태그 포함)을 작성하고 채널에 업로드할 준비를 완료하라. → 산출물 sessions/2026-07-20T06-51/instagram.md
 ### 🎨 Designer
-- [2026-07-22] Writer가 작성한 스크립트와 최종 스토리보드 초안을 기반으로, 데이터 시각화에 최적화된 디자인 컴포넌트의 기술적 요구사항(Mockup Spec)을 개발팀에 제공할 준비를 하라. → 산출물 sessions/2026-07-22T06-33/designer.md
 - [2026-07-22] 레오가 제안한 마케팅 자산(제목 및 썸네일 아이디어) 중 가장 강력한 1가지에 대해, 'Quick Fix Module'의 데이터 입력 단계에서 추천 모듈 정보를 시각적으로 강조하는 애니메이션 사양을 최종 확정하고 Mockup Spec으로 구체화하라. → 산출물 sessions/2026-07-22T06-48/designer.md
 - [2026-07-22] 코다리가 요청한 JSON API 스크립트 구현에 필요한 데이터 구조 및 필드 명세서를 최종 확인하고, 이 데이터를 기반으로 'Gap Score' 시각화 컴포넌트의 Mockup Spec을 최종 확정할 것. → 산출물 sessions/2026-07-22T07-03/designer.md
+- [2026-07-22] 확정된 Mockup Spec을 기반으로 'Gap Score' 시각화 컴포넌트(CSS/React Component)의 실제 디자인 개발을 즉시 시작하라. → 산출물 sessions/2026-07-22T07-18/designer.md
 ### 💻 코다리
-- [2026-07-22] Writer와 Designer가 준비한 스크립트 및 비주얼 명세서를 기반으로, 최종 JSON API 스크립트(`gap_score`, `monetization_triggers` 필드 포함)의 기술적 구현을 즉시 재개하고 코다리(Developer)가 요청한 데이터 사양을 확인하여 구현을 시작한다. → 산출물 sessions/2026-07-22T05-13/developer.md
 - [2026-07-22] Designer와 Writer가 제공한 스토리보드 및 비주얼 명세서를 기반으로, 'Gap Score' 측정 애니메이션 및 데이터 시각화에 필요한 핵심 로직(`diagnosisController.ts` 관련)의 기술적 구현 가능성 검토 및 API/UI 사양 정의를 즉시 시작하라. → 산출물 sessions/2026-07-22T06-33/developer.md
 - [2026-07-22] Writer와 Designer가 요청한 JSON API 스크립트(`gap_score`, `monetization_triggers` 필드 포함)의 기술적 구현을 즉시 재개하고, 최종 디자인 사양(Mockup Spec)에 맞춰 데이터 흐름의 정확성을 검증하며 코딩을 진행할 것. → 산출물 sessions/2026-07-22T07-03/developer.md
+- [2026-07-22] 코다리가 구현한 Gap Score 계산 로직(`DiagnosisService`)에 대한 모든 Unit Test 케이스를 작성하고 실행하여 로직의 안정성을 최종 확보하라. → 산출물 sessions/2026-07-22T07-18/developer.md
 ### 💼 현빈
 - [2026-07-22] 최고 CTR 및 수익화를 극대화할 수 있는 다음 영상의 주제(Gap Score 기반) 3가지를 연구하고, 각 주제에 대한 잠재적 수익화 경로를 분석하여 최우선 콘텐츠 방향을 결정하라. → 산출물 sessions/2026-07-22T03-28/business.md
 - [2026-07-22] Secretary가 도출한 가장 가치 있는 작업에 대해 수익화 및 KPI 관점에서 실행 전략을 제시하라. → 산출물 sessions/2026-07-22T03-58/business.md
