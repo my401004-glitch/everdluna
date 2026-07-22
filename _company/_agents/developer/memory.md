@@ -530,3 +530,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-22] Designer가 제공한 Visual_Flow_Map 및 Dimension 가이드라인을 기반으로, 시스템 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 즉시 시작하고, 이 과정에서 Designer의 피드백을 반영하여 코딩을 진행하라. → 산출물 sessions/2026-07-22T03-43/developer.md
 - [2026-07-22] 최종 JSON API 스크립트(`gap_score`, `monetization_triggers` 필드 포함) 초안을 작성하여 기술적 구현을 시작하고, Designer가 요구할 데이터 사양(Dimension 가이드라인)을 명확히 제공하라. → 산출물 sessions/2026-07-22T04-13/developer.md
 - [2026-07-22] DiagnosisService의 실제 테스트 케이스 및 예외 처리 로직을 구현하여 백엔드 안정성을 확보하고, 최종 JSON API 스크립트 작성을 재개하라. → 산출물 sessions/2026-07-22T04-28/developer.md
+- [2026-07-22] DiagnosisService의 핵심 로직(`diagnosisService.ts`)에 대해 Unit Test 케이스를 작성하여 백엔드 안정성을 즉시 확보하라. 특히 'Gap Score' 계산 및 트리거 로직에 대한 모든 예외 상황과 경계 조건을 커버해야 한다. → 산출물 sessions/2026-07-22T04-43/developer.md

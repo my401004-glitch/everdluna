@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 22. 오후 1:31:09_
+_업데이트: 2026. 7. 22. 오후 1:45:02_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,9 +17,9 @@ _업데이트: 2026. 7. 22. 오후 1:31:09_
 - [2026-07-22] 개발자가 제공할 것으로 예상되는 최종 데이터 사양을 기반으로, 'Gap Score'의 심리적 무게감을 극대화하는 최종 진단 보고서 Mockup 제작에 필요한 시각 컨셉과 레이아웃 가이드라인을 즉시 준비하라. → 산출물 sessions/2026-07-22T04-13/designer.md
 - [2026-07-22] 제공된 Dimension 가이드라인을 기반으로 'Gap Score' 진단 보고서 Mockup 디자인 컴포넌트를 즉시 프로토타입화하여 시각적 피드백을 받으라. → 산출물 sessions/2026-07-22T04-28/designer.md
 ### 💻 코다리
-- [2026-07-22] Designer가 제공한 Visual_Flow_Map 및 Dimension 가이드라인을 기반으로, 시스템 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 즉시 시작하고, 이 과정에서 Designer의 피드백을 반영하여 코딩을 진행하라. → 산출물 sessions/2026-07-22T03-43/developer.md
 - [2026-07-22] 최종 JSON API 스크립트(`gap_score`, `monetization_triggers` 필드 포함) 초안을 작성하여 기술적 구현을 시작하고, Designer가 요구할 데이터 사양(Dimension 가이드라인)을 명확히 제공하라. → 산출물 sessions/2026-07-22T04-13/developer.md
 - [2026-07-22] DiagnosisService의 실제 테스트 케이스 및 예외 처리 로직을 구현하여 백엔드 안정성을 확보하고, 최종 JSON API 스크립트 작성을 재개하라. → 산출물 sessions/2026-07-22T04-28/developer.md
+- [2026-07-22] DiagnosisService의 핵심 로직(`diagnosisService.ts`)에 대해 Unit Test 케이스를 작성하여 백엔드 안정성을 즉시 확보하라. 특히 'Gap Score' 계산 및 트리거 로직에 대한 모든 예외 상황과 경계 조건을 커버해야 한다. → 산출물 sessions/2026-07-22T04-43/developer.md
 ### 💼 현빈
 - [2026-07-22] 선정된 3가지 주제 중 가장 높은 잠재적 CTR과 수익화 가능성을 보이는 주제를 분석하고, 해당 주제에 따른 초기 KPI 목표를 설정하라. → 산출물 sessions/2026-07-22T01-15/business.md
 - [2026-07-22] 최고 CTR 및 수익화를 극대화할 수 있는 다음 영상의 주제(Gap Score 기반) 3가지를 연구하고, 각 주제에 대한 잠재적 수익화 경로를 분석하여 최우선 콘텐츠 방향을 결정하라. → 산출물 sessions/2026-07-22T03-28/business.md
