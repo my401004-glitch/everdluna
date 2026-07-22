@@ -902,3 +902,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-22] * **Primary Color (신뢰/구조):** Dark Blue (`#0A2463`) - 안정적 배경, UI의 기본 틀. _(근거: Designer 검증된 지식)_
 - [2026-07-22] * **Accent Color (경고/기회):** Accent Yellow (`#FFD700`) - 이탈 위험(Pain) 표시, 개선 영역(Gain), CTA 강조. _(근거: Designer 검증된 지식)_
 - [2026-07-22] * **Body Color:** Neutral Grey (`#F5F5F5`) - 데이터 표면 배경색. _(근거: Designer 검증된 지식)_
+- [2026-07-22] | **Primary Trust** (신뢰) | `#0A2463` (Dark Blue) | 배경, 헤더, 진단 결과 섹션의 주 영역. 전문성과 안정감을 부여한다. | | _(근거: Designer 검증된 지식)_
+- [2026-07-22] | **Accent CTA/Pain** (강조) | `#FFD700` (Yellow Gold) | Gap Score 위험 수치 강조, 핵심 성과 수치(Gain), 모든 Call-To-Action (CTA). 시선 집중 및 경고. | | _(근거: Designer 검증된 지식)_
+- [2026-07-22] | **Background/Data** (가독성) | `#F5F5F5` (Neutral Grey) | 본문 텍스트 배경, 데이터 그래프 영역. Dark Blue와의 대비를 유지하여 가독성을 높인다. | | _(근거: Designer 검증된 지식)_
+- [2026-07-22] | **Title Font** (헤드라인) | Montserrat Bold | 모든 핵심 헤드라인(Pain/Gain)에 사용. 가장 강력한 메시지를 전달한다. | | _(근거: Designer 검증된 지식)_
+- [2026-07-22] | **Body Font** (본문/데이터) | Noto Sans KR Regular | 구체적인 데이터, 설명 텍스트, 그래프 레이블 등 높은 가독성이 요구되는 곳에 사용. | | _(근거: Designer 검증된 지식)_
