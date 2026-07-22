@@ -892,3 +892,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-22] | **배경/데이터 색상** | `#F5F5F5` (Neutral Grey) | 데이터 테이블 배경 및 본문 텍스트를 배치하여 가독성을 극대화합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-07-22] | **폰트 시스템** | Title: Montserrat Bold / Body: Noto Sans KR Regular/Medium | 모든 헤드라인과 핵심 메시지(Pain, Gain)에 적용됩니다. | | _(근거: Designer 검증된 지식)_
 - [2026-07-22] | 요소 | 설정 값 | 적용 목적 및 효과 | | _(근거: Designer 검증된 지식)_
+- [2026-07-22] * **Primary Trust (신뢰):** Dark Blue (`#0A2463`) - 영상의 전체적인 신뢰성, 배경 구조물, 제목 섹션에 사용. 전문성을 담당합니다. _(근거: Designer 검증된 지식)_
+- [2026-07-22] * **Accent Warning/Opportunity (행동 유도):** Accent Yellow (`#FFD700`) - **Gap Score 수치, 위험(Pain), 기회(Gain), CTA 버튼** 등 시청자가 *반드시 봐야 하는 핵심 정보*에만 사용. 즉각적인 주목을 유발합니다. _(근거: Designer 검증된 지식)_
+- [2026-07-22] * **Neutral Base (가독성):** Neutral Grey (`#F5F5F5`) - 데이터 표, 텍스트 배경, 안정적이고 깨끗한 그리드 배경에 사용. 시선을 분산시키지 않고 정보 전달력을 높입니다. _(근거: Designer 검증된 지식)_
+- [2026-07-22] * **Headline / Metric:** Montserrat Bold - 가장 크고, 가장 강력해야 하는 메시지(예: "Pitch Deviation Index", "3가지 핵심")에 사용됩니다. 시각적 충격과 권위를 부여합니다. _(근거: Designer 검증된 지식)_
+- [2026-07-22] * **Body / Data Label:** Noto Sans KR Regular/Medium - 데이터 값, 상세 설명, 로드맵의 각 단계 제목 등 높은 가독성이 요구되는 텍스트에 사용됩니다. _(근거: Designer 검증된 지식)_
