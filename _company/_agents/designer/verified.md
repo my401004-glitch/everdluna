@@ -899,3 +899,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-22] * **Body / Data Label:** Noto Sans KR Regular/Medium - 데이터 값, 상세 설명, 로드맵의 각 단계 제목 등 높은 가독성이 요구되는 텍스트에 사용됩니다. _(근거: Designer 검증된 지식)_
 - [2026-07-22] * **브랜드 컬러:** Primary: Dark Blue (#0A2463), Accent: Yellow (#FFD700), Neutral: Grey (#F5F5F5). _(근거: Designer 검증된 지식)_
 - [2026-07-22] * **타이포그래피:** Title: Montserrat Bold, Body: Noto Sans KR. _(근거: Designer 검증된 지식)_
+- [2026-07-22] * **Primary Color (신뢰/구조):** Dark Blue (`#0A2463`) - 안정적 배경, UI의 기본 틀. _(근거: Designer 검증된 지식)_
+- [2026-07-22] * **Accent Color (경고/기회):** Accent Yellow (`#FFD700`) - 이탈 위험(Pain) 표시, 개선 영역(Gain), CTA 강조. _(근거: Designer 검증된 지식)_
+- [2026-07-22] * **Body Color:** Neutral Grey (`#F5F5F5`) - 데이터 표면 배경색. _(근거: Designer 검증된 지식)_
