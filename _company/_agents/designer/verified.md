@@ -918,3 +918,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-22] | **Color Palette** | Dark Blue (`#0A2463`) / Accent Yellow (`#FFD700`) | ✅ Compliant | Pain 영역 배경/경고 문구에 옐로우 강조, Gain 영역/CTA에는 블루 기반 신뢰성 확보. | _(근거: Designer 검증된 지식)_
 - [2026-07-22] | **Typography** | Title: Montserrat Bold / Body: Noto Sans KR | ✅ Compliant | 헤드라인(Gap Score 수치)은 Montserrat Bold로 최대 임팩트 부여. 데이터 상세 설명은 Noto Sans KR 사용. | _(근거: Designer 검증된 지식)_
 - [2026-07-22] | **Data Visualization** | Gap Score (수직/가로 변화 추이) | ✅ Compliant | 단순 점수가 아닌, 시간 경과에 따른 *추이*를 Line Graph 형태로 시각화하여 객관적 신뢰도 극대화. | _(근거: Writer 제공 썸네일 아이디어)_
+- [2026-07-22] | **데이터 등장** | **Line Drawing / Reveal:** 숫자는 *0에서 시작하여 점진적으로 커지거나* 그래프는 *밑줄이 그려지듯(Stroke)* 완성되어야 한다. 갑자기 뿅 나타나면 안 된다. | _(근거: 데이터의 과학적 발견 과정 시뮬레이션)_
+- [2026-07-22] | **전환 (Transition)** | **Focus Shift / Data Overlay:** 한 컨셉에서 다음 컨셉으로 넘어갈 때, 배경이 바뀌기보다 *특정 수치(Gap Score)*에 포커스가 줌인되거나 해당 수치를 기준으로 화면 전체가 재배열되는 방식 사용. | _(근거: 논리적 흐름 유지)_
+- [2026-07-22] | **강조 (Highlight)** | **Pulse / Accent Pop:** CTA 버튼, 개선된 점수 등 중요한 Gain 지표는 *Accent Yellow*로 짧게 펄스(Pulse) 효과를 주어 즉각적인 시선 집중을 유도한다. | _(근거: 행동 유도 강화)_
+- [2026-07-22] | **Pain/Risk** | **Dampening / Warning Shake:** 불안정성이나 부족함이 드러날 때는 어두운 Blue 계열의 미세한 떨림(Shake)과 함께 낮은 채도의 색상을 사용하여 위기감을 조성한다. | _(근거: Gap Score 시각화)_
