@@ -1,96 +1,74 @@
 /**
- * @fileoverview 진단 점수 계산 및 분석을 담당하는 핵심 비즈니스 로직 (Diagnosis Service Layer).
- * 이 서비스는 외부 API 호출의 '백본'이 되며, 모든 기술적 안정성 검증이 여기서 일어납니다.
+ * DiagnosisService: 진단 점수 계산 및 비즈니스 트리거 검증 로직 처리 (Core Business Logic)
+ * @description 외부 API 요청으로부터 분리되어 핵심 도메인 규칙을 담당한다.
  */
 
-import { DiagnosisRequest, DiagnosisResult, UserRole } from '../types/diagnosis';
-
-// 가상의 데이터베이스 연결 및 KPI 계산 함수 (실제 구현 필요)
-const fetchDiagnosisDataFromDB = async (userId: string, diagnosisType: string): Promise<any> => {
-    console.log(`[DB]: ${diagnosisType} 관련 데이터를 사용자 ${userId}의 권한으로 조회합니다.`);
-    // TODO: 실제 DB 쿼리 로직 구현 (SQL/ORM 사용)
-    return { /* ... db data ... */ };
-};
+import { UserContext } from '../types/UserContext';
+import { DiagnosticResultInput } from '../types/DiagnosticResultTypes';
 
 /**
- * 핵심 진단 분석 서비스 엔드포인트.
- * 모든 비즈니스 로직과 데이터 유효성 검증을 담당합니다.
- * @param request - 클라이언트로부터 받은 진단 요청 객체.
- * @returns DiagnosisResult 타입의 Promise.
+ * 진단 점수를 계산하고, 사용자에게 제공할 추가 코칭 및 유료화 트리거를 산출합니다.
+ * @param input - 사용자의 세션 데이터와 테스트 결과를 포함하는 입력 객체입니다.
+ * @returns {object} 최종진단결과 (DiagnosisResult)
  */
-export const calculateDiagnosisScore = async (request: DiagnosisRequest): Promise<DiagnosisResult> => {
-    const { userId, role, diagnosisType: requestedType, testResultSnapshot } = request;
+export class DiagnosisService {
 
-    // 1. [핵심 검증] 권한 기반 접근 제어 (RBAC Check) - 가장 먼저 실패할 수 있는 지점
-    if (!checkUserAccess(role, requestedType)) {
+    /**
+     * 핵심 진단 로직을 수행하고 Gap Score 및 Monetization Triggers를 계산합니다.
+     * @param input - DiagnosticResultInput의 구조를 따르는 입력 데이터.
+     * @returns Promise<any> 최종진단결과 객체.
+     */
+    public static calculateDiagnosis(input: DiagnosticResultInput): any {
+        console.log(`[Service] DiagnosisService 호출됨. Context ID: ${input.contextId}`);
+
+        // 1. 핵심 진단 점수 (Gap Score) 산출 로직 - [근거: sessions/2026-05-18T14-34/developer.md, Gap Score 개념]
+        // 실제로는 복잡한 통계 모델이 들어가야 하지만, 현재는 가상의 계산을 수행합니다.
+        const rawScore = Math.random() * 10 + (input.sessionData?.pitchAccuracy || 5); // 임시 점수 산출
+        const gapScore = parseFloat(Math.min(10, rawScore).toFixed(2));
+
+        // 2. 유료화 트리거 검증 로직 - [근거: sessions/2026-05-18T13:43/developer.md (RBAC), KPI_Metrics]
+        // 진단 결과가 '중간' 이하이거나, 특정 KPI(예: Growth)가 낮을 경우 유료 기능 노출 트리거 발생 가정.
+        const monetizationTriggers = this.checkMonetizationTriggers(input);
+
+        // 3. 최종 결과 구조화 및 반환 (Schema adherence enforcement)
         return {
-            success: false,
-            message: `권한 오류: 사용자님의 레벨(${role})에서는 '${requestedType}' 리포트를 볼 수 없습니다.`,
-            data: null
+            diagnosisId: `D-${Date.now()}`,
+            contextId: input.contextId,
+            timestamp: new Date().toISOString(),
+            scoreDetails: {
+                gapScore: gapScore, // 핵심 지표 1
+                pitchAccuracy: input.sessionData?.pitchAccuracy || null,
+                frequencyStability: input.sessionData?.frequencyStability || null,
+            },
+            diagnosisType: 'Intermediate', // 실제 로직에서 결정되어야 함
+            summaryReport: `당신의 Gap Score는 ${gapScore}로 측정되었습니다. 주력 개선점은 [음정 안정성]입니다.`,
+            // 비즈니스 핵심 필드 2
+            monetizationTriggers: monetizationTriggers,
         };
     }
 
-    try {
-        // 2. [데이터 파이프라인] 필수 데이터 유효성 검증 (Schema Validation)
-        if (!testResultSnapshot || !testResultSnapshot.score) {
-             return {
-                success: false,
-                message: "필수 진단 테스트 점수가 누락되었습니다. 다시 시도해주세요.",
-                data: null
-            };
+    /**
+     * 사용자의 진단 결과와 Context를 기반으로 유료 기능 노출 여부를 판단합니다.
+     * @param input - 입력 데이터 객체.
+     * @returns {object} 활성화된 트리거 목록 및 권장 액션.
+     */
+    private static checkMonetizationTriggers(input: DiagnosticResultInput): { isPremiumRequired: boolean, recommendedActions: string[] } {
+        const triggers: { isPremiumRequired: boolean, recommendedActions: string[] } = {
+            isPremiumRequired: false,
+            recommendedActions: [],
+        };
+
+        // Rule 1: Gap Score가 매우 낮을 경우 (즉, 개선이 절실한 상태)
+        if (input.sessionData?.pitchAccuracy && input.sessionData.pitchAccuracy < 5) {
+            triggers.isPremiumRequired = true;
+            triggers.recommendedActions.push("프리미엄 '커스텀 연습 세션'을 이용해 즉각적인 피드백을 받으세요.");
         }
 
-        // 3. [비즈니스 로직] 데이터 수집 및 분석 (KPI Calculation)
-        const kpiData = await Promise.all([
-             fetchDiagnosisDataFromDB(userId, 'Growth'),
-             fetchDiagnosisDataFromDB(userId, 'Engagement'),
-             fetchDiagnosisDataFromDB(userId, 'Monetization')
-             // 필요한 모든 KPI를 병렬로 가져와야 합니다.
-        ]);
+        // Rule 2: Context가 특정 레벨(예: 심화 과정)에 도달했으나, 기록된 KPI가 부족한 경우 (Engagement 저하 감지)
+        if (input.contextId && input.contextId.includes('ADVANCE') && !input.sessionData?.isTrackedKPI) {
+             triggers.recommendedActions.push("전체 과정을 추적하는 '진도 관리 리포트'를 구독하여 학습 누수를 막으세요.");
+        }
 
-        const finalResult: DiagnosisResult = {
-            success: true,
-            message: "성공적으로 진단 점수를 계산했습니다.",
-            data: {
-                overallScore: testResultSnapshot.score * 0.9 + (Math.random() * 10), // 간단한 통합 로직 시뮬레이션
-                overallDiagnosisType: 'Overall',
-                kpis: {
-                    'Growth': { score: testResultSnapshot.keyIndicators['Growth'] || 0, potentialGapScore: Math.max(5, (testResultSnapshot.keyIndicators['Growth'] || 0) * 0.8), recommendation: ["구체적인 개념 복습 루틴 확립"] },
-                    'Engagement': { score: testResultSnapshot.keyIndicators['Engagement'] || 0, potentialGapScore: Math.max(5, (testResultSnapshot.keyIndicators['Engagement'] || 0) * 0.9), recommendation: ["학원 내 커뮤니티 활동 참여"] },
-                    'Monetization': { score: testResultSnapshot.keyIndicators['Monetization'] || 0, potentialGapScore: Math.max(5, (testResultSnapshot.keyIndicators['Monetization'] || 0) * 0.7), recommendation: ["추가 학습 자료에 대한 접근 권한 확보"] }
-                },
-                technicalMetadata: {
-                    sourceApiVersion: 'v1',
-                    processedTimestamp: new Date().toISOString(),
-                    accessGrantedByRBAC: true // RBAC 검증이 통과했으므로 true
-                }
-            }
-        };
-
-        return finalResult;
-
-    } catch (error) {
-        console.error("진단 점수 계산 중 치명적 오류 발생:", error);
-        // 4. [에러 처리] 예측 불가능한 시스템 에러는 구체적인 메시지를 반환하여 프론트엔드에서 대응하게 합니다.
-         return {
-            success: false,
-            message: "서버 내부 오류가 발생했습니다. 관리자에게 문의해주세요.",
-            data: null
-        };
+        return triggers;
     }
-};
-
-/**
- * 사용자의 권한 레벨과 요청 진단 타입 간의 접근 가능 여부를 검증하는 로직 (RBAC).
- * @param role - 사용자의 현재 Role.
- * @param requestedType - 요청된 Diagnosis Type.
- */
-const checkUserAccess = (role: UserRole, requestedType: string): boolean => {
-    // 예시 정책: FreeUser는 Growth 리포트만 접근 가능하다고 가정
-    if (role === UserRole.FreeUser && requestedType !== 'Growth') {
-        return false; // RBAC 실패
-    }
-    return true; // 접근 허용
-};
-
-export { calculateDiagnosisScore };
+}
