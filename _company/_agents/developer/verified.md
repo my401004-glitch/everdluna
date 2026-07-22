@@ -670,3 +670,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-21] 17	| **4. 배포 및 측정** | Leo | Master Video, 최종 캡션 | 실제 플랫폼 업로드 콘텐츠 + 초기 성과 지표 데이터 | `my_videos_check` 도구 실행 필수 (데이터 확보) | _(근거: sessions/2026-07-20T8:21)_
 - [2026-07-22] CEO 지시와 Designer가 작성해주신 `Visual_Flow_Map_Mapping_Spec_v1.md`를 검토했습니다. _(근거: Joint Workshop/Visual_Flow_Map_Mapping_Spec_v1.md)_
 - [2026-07-22] 현재 우리가 가진 아키텍처는 일반적인 '진단 점수 계산'에 초점을 맞추고 있습니다. 하지만 Designer의 스펙을 보니, 단순히 점수를 주는 것을 넘어 **특정 씬(Scene)에서 요구하는 맥락적 데이터(`Gap Score` 등)**를 API 호출 시점에 함께 전송하고, 백엔드에서 이를 처리해야 하는 복잡도가 추가되었습니다. _(근거: Joint Workshop/Visual_Flow_Map_Mapping_Spec_v1.md)_
+- [2026-07-22] // 1. 핵심 진단 점수 (Gap Score) 산출 로직 - _(근거: sessions/2026-05-18T14-34/developer.md, Gap Score 개념)_
+- [2026-07-22] // 2. 유료화 트리거 검증 로직 - _(근거: sessions/2026-05-18T13:43/developer.md (RBAC), KPI_Metrics)_
+- [2026-07-22] role: 'FREE' | 'PREMIUM'; // RBAC 검증에 사용됨 _(근거: sessions/2026-05-18T13:43/developer.md)_

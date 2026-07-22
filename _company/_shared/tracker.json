@@ -1002,6 +1002,57 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-07-22T03-13/_report.md\n- 코다리: Visual_Flow_Map에 기반하여 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 즉시 시작\n\nCEO 종합 요점: 💻 코다리: 작업 시작합니다.\n\nCEO의 지시와 지난 의사결정 로그를 검토했습니다. 핵심은 **`Visual_Flow_Map` 기반으로 `diagnosisController.ts`를 구현하고 API 게이트웨이를 완성**하는 것입니다. 이건 단순한 로직 추가가 아니라, 진단(Diagnosis)이라는 비즈니스 가치를 백엔드 서비스로 통합하는 과정입니다.\n\n이",
       "completedAt": "2026-07-22T03:15:20.583Z"
+    },
+    {
+      "id": "20260722041521-hq0r",
+      "title": "모든 그래프는 '학습 곡선' 또는 '성장 추이' 관점에서 해석될 수 있도록 디자인되었는가?",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-07-22T04:15:21.943Z",
+      "status": "done",
+      "sessionDir": "2026-07-22T04-13",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-22T04-13/_report.md\n- 코다리: 최종 JSON API 스크립트(`gap_score`, `monetization_triggers` 필드 포함) 초안을 작성하여 기술적 구현을 시작\n- Designer: 개발자가 제공할 것으로 예상되는 최종 데이터 사양을 기반으로, 'Gap Score'의 심리적 무게감을 극대화하는 최종 진단 보고서 Mockup \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💻 코다리 _(시니어 풀스택 엔지니어)_\n> 📋 **지시**: 최종 JSON API 스크립트(`gap_score`, `monetization_triggers` 필드 포함) 초안을 작성하여 기술적 구현을 시작하고, Designer가 요구할 데이터 사양(Dimension 가이드라인)을 명확히 제공하라.\n> ",
+      "completedAt": "2026-07-22T04:17:01.099Z"
+    },
+    {
+      "id": "20260722041521-8pp1",
+      "title": "CTA 카드는 단순히 버튼이 아니라, **비즈니스 가치**를 설명하는 콘텐츠 블록처럼 보이도록 설계했는가?",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-07-22T04:15:21.943Z",
+      "status": "done",
+      "sessionDir": "2026-07-22T04-13",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-22T04-13/_report.md\n- 코다리: 최종 JSON API 스크립트(`gap_score`, `monetization_triggers` 필드 포함) 초안을 작성하여 기술적 구현을 시작\n- Designer: 개발자가 제공할 것으로 예상되는 최종 데이터 사양을 기반으로, 'Gap Score'의 심리적 무게감을 극대화하는 최종 진단 보고서 Mockup \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💻 코다리 _(시니어 풀스택 엔지니어)_\n> 📋 **지시**: 최종 JSON API 스크립트(`gap_score`, `monetization_triggers` 필드 포함) 초안을 작성하여 기술적 구현을 시작하고, Designer가 요구할 데이터 사양(Dimension 가이드라인)을 명확히 제공하라.\n> ",
+      "completedAt": "2026-07-22T04:17:01.100Z"
+    },
+    {
+      "id": "20260722041521-5k93",
+      "title": "전반적인 톤앤매너(Tone & Manner)는 '전문성'과 '따뜻한 코칭'의 균형을 이루고 있는가?",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-07-22T04:15:21.944Z",
+      "status": "done",
+      "sessionDir": "2026-07-22T04-13",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-22T04-13/_report.md\n- 코다리: 최종 JSON API 스크립트(`gap_score`, `monetization_triggers` 필드 포함) 초안을 작성하여 기술적 구현을 시작\n- Designer: 개발자가 제공할 것으로 예상되는 최종 데이터 사양을 기반으로, 'Gap Score'의 심리적 무게감을 극대화하는 최종 진단 보고서 Mockup \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💻 코다리 _(시니어 풀스택 엔지니어)_\n> 📋 **지시**: 최종 JSON API 스크립트(`gap_score`, `monetization_triggers` 필드 포함) 초안을 작성하여 기술적 구현을 시작하고, Designer가 요구할 데이터 사양(Dimension 가이드라인)을 명확히 제공하라.\n> ",
+      "completedAt": "2026-07-22T04:17:01.101Z"
     }
   ]
 }
