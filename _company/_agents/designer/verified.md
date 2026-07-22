@@ -914,3 +914,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-22] * **역할:** 진단 결과의 약점(Pain)을 제시하고, 그것이 해결되었을 때 얻게 될 이익(Gain)과 최종 CTA로 자연스럽게 연결합니다. _(근거: 핵심 메시지)_
 - [2026-07-22] | 요소 | 내용/역할 | 스타일 가이드 | | _(근거: Designer 검증된 지식)_
 - [2026-07-22] /* */ _(근거: Designer 검증된 지식 - 컬러 팔레트)_
+- [2026-07-22] | **Narrative** | Pain $\rightarrow$ Gain 구조 | ✅ Compliant | Gap Score의 저점(Pain)에서 고점(Gain)으로 명확한 화살표 및 변화 양상 제시. | _(근거: Designer 검증된 지식)_
+- [2026-07-22] | **Color Palette** | Dark Blue (`#0A2463`) / Accent Yellow (`#FFD700`) | ✅ Compliant | Pain 영역 배경/경고 문구에 옐로우 강조, Gain 영역/CTA에는 블루 기반 신뢰성 확보. | _(근거: Designer 검증된 지식)_
+- [2026-07-22] | **Typography** | Title: Montserrat Bold / Body: Noto Sans KR | ✅ Compliant | 헤드라인(Gap Score 수치)은 Montserrat Bold로 최대 임팩트 부여. 데이터 상세 설명은 Noto Sans KR 사용. | _(근거: Designer 검증된 지식)_
+- [2026-07-22] | **Data Visualization** | Gap Score (수직/가로 변화 추이) | ✅ Compliant | 단순 점수가 아닌, 시간 경과에 따른 *추이*를 Line Graph 형태로 시각화하여 객관적 신뢰도 극대화. | _(근거: Writer 제공 썸네일 아이디어)_
