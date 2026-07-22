@@ -1,53 +1,50 @@
 // src/controllers/diagnosisController.ts
-
-import { Request, Response, NextFunction } from 'express';
-import { DiagnosisService } from '../services/DiagnosisService';
-import { validateKpiPayload, DiagnosisRequestDto } from '../utils/validationUtils'; // 🛠️ 가상의 유효성 검증 유틸리티
-
-// Global Dependency Injection (DI)를 통해 Service 인스턴스를 주입받는다고 가정합니다.
-const diagnosisService = new DiagnosisService();
-
+import { Request, Response } from 'express'; // Assuming Express or similar framework context
+import { DiagnosisInput } from '../core/diagnosis.interface';
+import { diagnosisService } from '../core/diagnosis.service';
 
 /**
- * @description POST /api/v1/diagnosis_score - KPI 진단 결과를 저장하고 처리하는 엔드포인트
- * 
- * [Flow]: 요청 수신 -> (1) 사용자 권한 확인 -> (2) Payload 유효성 검증 -> (3) 서비스 레이어 전달 -> DB 저장.
- * @param req {DiagnosisRequestDto} Body에 KPI 데이터가 포함되어야 함.
- * @param res Express Response 객체
+ * @description 핵심 진단 로직을 수행하는 컨트롤러.
+ * 요청의 유효성을 검증하고, 서비스 레이어를 호출하여 결과를 응답합니다.
  */
-export const postDiagnosisScore = async (req: Request, res: Response, next: NextFunction) => {
-    try {
-        // 1. 사용자 Context 및 권한 확인 (RBAC 체크 필수)
-        // Middleware를 통해 이미 사용자의 Role과 User ID가 request에 붙어있다고 가정합니다.
-        const userId = req.user?.id;
-        const userRole = req.user?.role;
+export class DiagnosisController {
 
-        if (!userId || !userRole) {
-            return res.status(401).json({ message: "Authentication required: User ID or Role missing." });
+    public async getDiagnosisScore(req: Request, res: Response): Promise<void> {
+        try {
+            // 1. 요청 바디에서 입력 데이터 추출 및 타입 체크 (Validation)
+            const diagnosisInput: DiagnosisInput = req.body; // Assume request body contains the required structure
+
+            if (!diagnosisInput || !diagnosisInput.contextId) {
+                res.status(400).json({ message: "Missing required parameters for diagnosis." });
+                return;
+            }
+
+            // 2. RBAC 체크 (권한 검증): 이 부분은 실제 DB/미들웨어가 처리해야 하지만, 컨트롤러에서 한번 더 방어 코드를 넣습니다.
+            if (diagnosisInput.userContext?.role === 'Free' && diagnosisInput.testData['monetization'] > 0) {
+                res.status(403).json({ message: "Permission Denied: Free users cannot run advanced monetization diagnostics." });
+                return;
+            }
+
+            // 3. 서비스 레이어 호출 (Core Business Logic)
+            const scoreResult = await diagnosisService.calculateScore(diagnosisInput);
+
+            // 4. 요약 보고서 생성 및 반환 준비
+            const summaryReport = await diagnosisService.generateReportSummary(scoreResult);
+
+            // 5. 최종 응답 전송
+            res.status(200).json({
+                success: true,
+                data: scoreResult,
+                reportSummary: summaryReport,
+                message: "Diagnosis completed successfully."
+            });
+
+        } catch (error) {
+            console.error("Error in DiagnosisController:", error);
+            // 500 Internal Server Error 처리
+            res.status(500).json({ message: "Internal server error during diagnosis processing.", details: error instanceof Error ? error.message : 'Unknown Error' });
         }
-
-        // 2. 요청 Payload 유효성 검사 (DTO와 스키마 준수 확인)
-        const payload = req.body as DiagnosisRequestDto;
-        if (!validateKpiPayload(payload)) {
-            return res.status(400).json({ message: "Invalid KPI payload structure or missing required fields." });
-        }
-
-        // 3. 핵심 로직 실행 (Service Layer 호출)
-        const result = await diagnosisService.processAndStoreScore(userId, userRole, payload);
-
-        if (!result) {
-            return res.status(422).json({ message: "Failed to process score due to validation or system error." });
-        }
-
-        // 4. 성공 응답
-        return res.status(201).json({
-            message: "Diagnosis score processed and stored successfully.",
-            data: result,
-        });
-
-    } catch (error) {
-        console.error("Error in postDiagnosisScore:", error);
-        // 다음 미들웨어로 에러 전파
-        next(error); 
     }
-};
+}
+
+export const diagnosisController = new DiagnosisController(); // 인스턴스화하여 사용 편의성 확보
