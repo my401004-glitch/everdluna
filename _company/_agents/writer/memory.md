@@ -497,3 +497,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-07-22] Researcher가 제시한 최신 트렌드 키워드 중 가장 잠재력이 높은 주제 1개를 선정하고, 해당 주제에 대해 '좌절 $\rightarrow$ 해결책 제시 $\rightarrow$ 승리로의 변곡점' 서사를 적용한 영상 스크립트 초안(후크 포함)을 작성하라. → 산출물 sessions/2026-07-22T02-58/writer.md
 - [2026-07-22] Business 에이전트가 제시한 최우선 주제 중 하나를 선택하여, '좌절 $ightarrow$ 해결책 제시 $ightarrow$ 승리로의 변곡점' 서사를 극대화하는 핵심 스크립트 구조와 후킹 문구(Hook) 초안을 작성하라. → 산출물 sessions/2026-07-22T03-28/writer.md
 - [2026-07-22] Designer가 제공한 Visual_Flow_Map과 Gap Score의 심리적 흐름을 반영하여, 다음 영상 1개의 전체 스크립트 초안(후크, 본론, 결론) 및 핵심 메시지를 작성하세요. → 산출물 sessions/2026-07-22T04-58/writer.md
+- [2026-07-22] Designer가 제공한 비디오 템플릿 사양서(Video Template Specification)를 기반으로, 'Pain $ightarrow$ Gain' 구조를 극대화하는 핵심 메시지 중심의 최종 영상 대본과 캡션을 작성하여 첫 번째 콘텐츠 제작을 위한 초안을 완성하라. → 산출물 sessions/2026-07-22T06-18/writer.md
