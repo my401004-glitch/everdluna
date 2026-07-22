@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 7. 22. 오후 12:01:58_
+_업데이트: 2026. 7. 22. 오후 12:15:20_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,9 +17,9 @@ _업데이트: 2026. 7. 22. 오후 12:01:58_
 - [2026-07-22] Codari와 함께 Visual_Flow_Map에 기반하여 시각 효과와 기술 구현 간의 최종 매핑을 확정하기 위한 공동 워크숍(Joint Meeting/Workshop) 준비 및 참여를 시작하라. → 산출물 sessions/2026-07-22T02-43/designer.md
 - [2026-07-22] Writer가 작성한 스크립트 초안 및 Researcher의 트렌드 분석 결과를 기반으로, 최고 CTR을 유도할 수 있는 영상 썸네일과 핵심 비주얼 컨셉에 대한 디자인 브리프를 즉시 생성하라. → 산출물 sessions/2026-07-22T02-58/designer.md
 ### 💻 코다리
-- [2026-07-21] KPI Validator 결과를 최종 편집 단계에 통합하여, 콘텐츠 제작 워크플로우의 기술적 안정성을 확보하는 로직(`diagnosisController.ts` 및 데이터 레이어 API 게이트웨이 연동)을 즉시 코딩하고 시스템 통합 보고서를 작성하세요. → 산출물 sessions/2026-07-21T10-46/developer.md
 - [2026-07-22] Designer가 제공할 것으로 예상되는 최종 에셋 목록과 Dimension 가이드라인을 기반으로 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 게이트웨이 연동 작업을 위한 초기 설계 및 환경 구성을 준비하라. → 산출물 sessions/2026-07-22T02-28/developer.md
 - [2026-07-22] Designer가 제공할 것으로 예상되는 최종 에셋 목록과 Dimension 가이드라인을 기반으로, Visual_Flow_Map에 따라 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 위한 초기 설계 및 환경 구성을 준비하라. → 산출물 sessions/2026-07-22T02-43/developer.md
+- [2026-07-22] Visual_Flow_Map에 기반하여 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 즉시 시작하고, 이 과정에서 Designer가 제공할 것으로 예상되는 에셋 목록과 Dimension 가이드라인을 초기 설계로 준비하라. → 산출물 sessions/2026-07-22T03-13/developer.md
 ### 💼 현빈
 - [2026-07-21] 현재 시스템의 KPI 측정 및 수익화 가설 검증에 대한 구조적 접근 방식을 재정립하고, 데이터 수집 실패 상황에서도 적용 가능한 최소한의 성장 서사 구축 전략을 제시하라. → 산출물 sessions/2026-07-21T06-06/business.md
 - [2026-07-21] 최근 KPI Validator 결과와 데이터 기반의 '성장 서사'를 바탕으로, 가장 높은 CTR 예측치를 보이는 주제(Pain $ ightarrow $ Gain 프레임워크)에 맞춰 다음 영상 콘텐츠 기획안을 1개 도출하고 제작 일정을 확정하라. → 자격증명 부족으로 차단됨

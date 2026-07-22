@@ -968,6 +968,40 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-07-21T08-36/_report.md\n- 루나: 코다리가 제공한 `editing_guide.md`를 기반으로 마스터 영상의 감정적 싱크 및 트랜지션 시간을 수동으로 조정하고 최종 폴리싱을 진행\n- Writer: 최종 확정된 스크립트와 시각/청각 자산을 기반으로 Instagram 콘텐츠 발행에 필요한 캡션과 해시태그를 최적화하여 준비하라.\n- 코다리: KPI Validator 결과를 최종 편집 단계에 통합하여, 콘텐츠 제작 워크플로우의 기술적 안정성을 확보하는 시스템 통합 보고서를 작성하라.\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎵 루나 _(Sound Director & Composer)_\n> 📋 **지시**: 코다리가 제공한 `editing_guide.md`를 기반으로 마스터 영상의 감정적 싱크 및 트랜지션 시간을 수동으로 조정하고 최종 폴리싱을 진행하라.\n> 🔧 **도구 실행**: `music_studio_setup.py`",
       "completedAt": "2026-07-21T08:40:54.027Z"
+    },
+    {
+      "id": "20260722031520-xknn",
+      "title": "모든 에셋은 최종 영상 길이(예: 90초)를 고려하여 제작되어야 함.",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-07-22T03:15:20.578Z",
+      "status": "done",
+      "sessionDir": "2026-07-22T03-13",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-22T03-13/_report.md\n- 코다리: Visual_Flow_Map에 기반하여 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 즉시 시작\n\nCEO 종합 요점: 💻 코다리: 작업 시작합니다.\n\nCEO의 지시와 지난 의사결정 로그를 검토했습니다. 핵심은 **`Visual_Flow_Map` 기반으로 `diagnosisController.ts`를 구현하고 API 게이트웨이를 완성**하는 것입니다. 이건 단순한 로직 추가가 아니라, 진단(Diagnosis)이라는 비즈니스 가치를 백엔드 서비스로 통합하는 과정입니다.\n\n이",
+      "completedAt": "2026-07-22T03:15:20.582Z"
+    },
+    {
+      "id": "20260722031520-1ga9",
+      "title": "**데이터 바인딩**: 애니메이션 소스는 *수동 키프레임 조정이 아니라*, API 또는 데이터 변경에 따라 값이 업데이트될 수 있는 구조여야 합니다. (프로덕션 환경 필수 요구사항)",
+      "description": "자동 등록 (코다리 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "developer"
+      ],
+      "createdAt": "2026-07-22T03:15:20.579Z",
+      "status": "done",
+      "sessionDir": "2026-07-22T03-13",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-07-22T03-13/_report.md\n- 코다리: Visual_Flow_Map에 기반하여 시스템의 핵심 로직(`diagnosisController.ts`) 구현 및 API 연동 작업을 즉시 시작\n\nCEO 종합 요점: 💻 코다리: 작업 시작합니다.\n\nCEO의 지시와 지난 의사결정 로그를 검토했습니다. 핵심은 **`Visual_Flow_Map` 기반으로 `diagnosisController.ts`를 구현하고 API 게이트웨이를 완성**하는 것입니다. 이건 단순한 로직 추가가 아니라, 진단(Diagnosis)이라는 비즈니스 가치를 백엔드 서비스로 통합하는 과정입니다.\n\n이",
+      "completedAt": "2026-07-22T03:15:20.583Z"
     }
   ]
 }
