@@ -1,0 +1,12 @@
+{
+  "BGM_PLAN": {
+    "ACT_I_TENSION": "cinematic tension build-up, minor key drone, 90 BPM",
+    "ACT_II_ANALYSIS": "ambient electronic, lo-fi beat, reflective, 105 BPM",
+    "ACT_III_UPLIFTING": "acoustic cinematic pop, major key, hopeful resolution, 128 BPM"
+  },
+  "MIXING_GUIDELINES": {
+    "VOICEOVER_LEVEL": 1.0,
+    "BGM_DEFAULT_LEVEL": 0.25,
+    "SFX_EMPHASIS_LEVEL": 0.6
+  }
+}
