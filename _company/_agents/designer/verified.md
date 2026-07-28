@@ -942,3 +942,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-28] | **Neutral Grey (Background)** | Neutral Grey (`#F5F5F5`) | 데이터 영역 배경. Dark Blue와의 대비를 통해 가독성을 극대화하고, 진단 결과의 명확한 경계를 만듭니다. | _(근거: Designer 검증된 지식)_
 - [2026-07-28] | **Title Typography** | Montserrat Bold | 강력한 헤드라인(Pain/Gain) 강조. 핵심 수치나 메시지를 가장 먼저 읽게 합니다. | _(근거: Designer 검증된 지식)_
 - [2026-07-28] | **Body Typography** | Noto Sans KR (Regular/Medium) | 상세 데이터, 설명 텍스트. 높은 가독성을 유지합니다. | _(근거: Designer 검증된 지식)_
+- [2026-07-28] * **속도 (Timing):** 대부분의 정보 노출은 **3초 이내**에 핵심 메시지가 전달되도록 합니다. 급격한 변화보다는 부드러운 가속/감속(Easing)을 사용합니다. _(근거: Designer 개인 메모리 - 2026-05-19)_
