@@ -54,3 +54,4 @@ _루나 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-07-21] Writer와 Designer가 제공한 모든 비주얼 자산과 스크립트를 합성하여, BGM 자동 생성(MusicGen/ACE-Step) 및 사운드 디자인을 포함한 오디오 후처리 작업을 시작하고 영상의 청각적 경험을 완성하라. → 산출물 sessions/2026-07-21T08-06/editor.md
 - [2026-07-21] Designer의 `visual_asset_master_spec.md`와 Luna의 `audio_master_blueprint.json`을 기반으로 실제 영상 편집 및 음악 합성을 즉시 시작하고 마스터 프로덕션 스펙에 따라 작업한다. → 산출물 sessions/2026-07-21T08-21/editor.md
 - [2026-07-21] 코다리가 제공한 `editing_guide.md`를 기반으로 마스터 영상의 감정적 싱크 및 트랜지션 시간을 수동으로 조정하고 최종 폴리싱을 진행하라. → 산출물 sessions/2026-07-21T08-36/editor.md
+- [2026-07-24] youtube의 최종 스크립트와 Designer의 시각 효과 명세서를 기반으로, 영상 제작에 필요한 BGM 및 사운드 디자인 계획을 수립하고, 오디오 후처리 프로세스를 위한 초기 사운드 아웃라인을 제시하라. → 산출물 sessions/2026-07-24T02-16/editor.md
