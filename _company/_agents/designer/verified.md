@@ -932,3 +932,13 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-23] * (0:55-1:20) **작동 원리 시각화:** 3개의 데이터 입력 창(Input A, B, C)이 순차적으로 활성화됨. 각 창에 숫자가 입력될 때마다 시스템 내부 로직을 상징하는 빛의 흐름(``) 애니메이션이 빠르게 지나감. (Motion: Data Flow Animation, Linear Speed). _(근거: Designer 검증된 지식)_
 - [2026-07-24] * **톤앤매너:** 냉철한 데이터 기반의 권위적 컨설팅 톤 유지. 감성적 공감보다 *팩트*에 집중. _(근거: 레오 개인 메모리)_
 - [2026-07-24] * **핵심 시각 원칙:** '위험 지표(Pain)'와 '해결책/이득(Gain)'의 대비를 가장 강력하게 사용한다. _(근거: Designer 검증된 지식)_
+- [2026-07-28] | **Primary Color (Trust)** | Dark Blue (`#0A2463`) | 신뢰성, 전문성. 헤더, 배경, 핵심 데이터 섹션에 사용하여 서비스의 권위와 안정감을 부여합니다. | _(근거: Designer 검증된 지식)_
+- [2026-07-28] | **Accent Yellow (Action/Gain)** | Accent Yellow (`#FFD700`) | 기회 포착, 위험 경고(Pain), 최종 CTA. 사용자가 '지금 행동해야 한다'는 직관적 신호를 전달합니다. | _(근거: Designer 검증된 지식)_
+- [2026-07-28] | **Neutral Grey (Background)** | Neutral Grey (`#F5F5F5`) | 데이터 영역 배경. Dark Blue와의 대비를 통해 가독성을 극대화하고, 진단 결과의 명확한 경계를 만듭니다. | _(근거: Designer 검증된 지식)_
+- [2026-07-28] | **Title Typography** | Montserrat Bold | 강력한 헤드라인(Pain/Gain) 강조. 핵심 수치나 메시지를 가장 먼저 읽게 합니다. | _(근거: Designer 검증된 지식)_
+- [2026-07-28] | **Body Typography** | Noto Sans KR (Regular/Medium) | 상세 데이터, 설명 텍스트. 높은 가독성을 유지합니다. | _(근거: Designer 검증된 지식)_
+- [2026-07-28] | **Primary Color (Trust)** | Dark Blue (`#0A2463`) | 신뢰성, 전문성. 헤더, 배경, 핵심 데이터 섹션에 사용하여 서비스의 권위와 안정감을 부여합니다. | _(근거: Designer 검증된 지식)_
+- [2026-07-28] | **Accent Yellow (Action/Gain)** | Accent Yellow (`#FFD700`) | 기회 포착, 위험 경고(Pain), 최종 CTA. 사용자가 '지금 행동해야 한다'는 직관적 신호를 전달합니다. | _(근거: Designer 검증된 지식)_
+- [2026-07-28] | **Neutral Grey (Background)** | Neutral Grey (`#F5F5F5`) | 데이터 영역 배경. Dark Blue와의 대비를 통해 가독성을 극대화하고, 진단 결과의 명확한 경계를 만듭니다. | _(근거: Designer 검증된 지식)_
+- [2026-07-28] | **Title Typography** | Montserrat Bold | 강력한 헤드라인(Pain/Gain) 강조. 핵심 수치나 메시지를 가장 먼저 읽게 합니다. | _(근거: Designer 검증된 지식)_
+- [2026-07-28] | **Body Typography** | Noto Sans KR (Regular/Medium) | 상세 데이터, 설명 텍스트. 높은 가독성을 유지합니다. | _(근거: Designer 검증된 지식)_
