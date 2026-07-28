@@ -560,3 +560,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-28] qa_automation_runner 실행 결과를 기반으로, UnboundLocalError 및 데이터 무결성 문제에 대한 기술적 결함 목록과 P0/P1 개선 로직 요구사항 명세서를 최종적으로 완성하라. → 산출물 sessions/2026-07-28T05-47/developer.md
 - [2026-07-28] qa_automation_runner 실행 결과를 분석하여 UnboundLocalError 및 데이터 무결성 문제에 대한 기술적 결함 목록과 P0/P1 개선 로직 요구사항 명세서를 작성하기 위해, 실제 실패 로그(Failure Log)를 확보하고 정리하여 보고하라. → 산출물 sessions/2026-07-28T06-02/developer.md
 - [2026-07-28] qa_automation_runner 실행 결과를 기반으로 발견된 UnboundLocalError 및 데이터 무결성 문제에 대한 근본 원인 진단 및 P0/P1 개선 로직 요구사항 명세서를 작성하여 개발 우선순위를 확정하라. → 산출물 sessions/2026-07-28T06-17/developer.md
+- [2026-07-28] qa_automation_runner 실행 결과를 분석하여 UnboundLocalError 및 데이터 무결성 문제에 대한 기술적 결함 목록과 P0/P1 개선 로직 요구사항 명세서를 최종적으로 완성하고, 이를 기반으로 Phase 1의 DB 스키마 정제 및 핵심 로직 리팩토링 작업을 즉시 시작하라. → 산출물 sessions/2026-07-28T07-00/developer.md
