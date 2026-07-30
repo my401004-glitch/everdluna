@@ -1,43 +1,67 @@
-import { Request, Response } from 'express';
-import * as diagnosisService from '../services/diagnosisService';
-import { DiagnosisInputParams, DiagnosisResultSchema } from '../types/diagnosisTypes';
+/**
+ * @description GET /api/v1/diagnosis_score - 사용자 진단 점수 및 Gap Score를 산출하여 반환하는 컨트롤러
+ * [WHY] 모든 수익화 퍼널의 출발점이자 가장 중요한 API 엔드포인트임.
+ */
+import { Request, Response, NextFunction } from 'express';
+import { getDiagnosisScoreService } from '../services/diagnosisService';
 
 /**
- * @description /api/v1/diagnosis_score 엔드포인트 핸들러.
- * 사용자 입력 데이터(params)를 받아 Gap Score 및 Monetization Trigger를 계산하고 JSON으로 반환합니다.
- * 이 함수는 비즈니스 로직 계층(Service)을 호출하는 컨트롤러의 역할을 합니다.
+ * 1. 요청 유효성 검증 및 권한 체크 (Middleware 역할 수행)
+ * @param req - Express Request 객체
+ * @returns Promise<void>
+ */
+export const validateAndAuthorize = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    const userRole = req.user?.role; // 인증 미들웨어가 사용자 정보를 주입했다고 가정
+    const diagnosisType = req.query.diagnosis_type as string;
+
+    if (!userRole || !['FREE', 'PREMIUM'].includes(userRole)) {
+        return res.status(403).json({ message: "Unauthorized access or user role invalid." }); // [근거: sessions/2026-05-18T13-43/developer.md]
+    }
+
+    if (!diagnosisType) {
+         return res.status(400).json({ message: "Missing required 'diagnosis_type' query parameter." });
+    }
+    
+    // TODO: 이 부분에 더 복잡한 권한 체크 로직 추가 (예: PREMIUM만 접근 가능한 Diagnosis Type 제한)
+
+    next(); 
+};
+
+
+/**
+ * @description 핵심 진단 점수 산출 로직 호출 (P0 기능)
+ * @param req - Express Request 객체 (사용자 ID, Context ID 등을 포함)
+ * @param res - Express Response 객체
  */
 export const getDiagnosisScore = async (req: Request, res: Response): Promise<void> => {
     try {
-        // 1. 입력 파라미터 추출 및 유효성 검증 (Guard Clause)
-        const params = req.query;
+        const userId = req.user?.id; // 가정
+        const contextId = req.query.context_id as string; // 요청 파라미터에서 Context ID 추출
 
-        if (!params || !Array.isArray(params.studentId)) {
-            return res.status(400).json({ success: false, message: "Invalid request parameters. studentId array is required." });
+        if (!userId || !contextId) {
+            return res.status(400).json({ message: "Missing User ID or Context ID in request." });
         }
 
-        // 타입 캐스팅 및 구조화
-        const inputParams: DiagnosisInputParams = {
-            studentIds: Array.isArray(params.studentId) ? params.studentId : [String(params.studentId)],
-            contextType: String(params.contextType), // 예: 'lesson_completion', 'test_score' 등
-        };
+        // 서비스 레이어 호출 (비즈니스 로직 분리)
+        const scoreData = await getDiagnosisScoreService(userId, contextId); 
 
-        // 2. 서비스 레이어 호출 (핵심 비즈니스 로직 실행)
-        const diagnosisResult = await diagnosisService.calculateDiagnosisScore(inputParams);
-
-        if (!diagnosisResult) {
-            return res.status(500).json({ success: false, message: "Failed to calculate diagnosis score from the service layer." });
+        if (!scoreData) {
+             return res.status(404).json({ message: "Could not generate diagnosis score for the provided context." });
         }
 
-        // 3. 성공 응답 반환 (Swagger/API Spec 준수)
+        // 성공적인 진단 결과 반환 (Gap Score 포함된 JSON 구조 확정)
         res.status(200).json({
             success: true,
-            data: diagnosisResult as DiagnosisResultSchema, // 최종 스키마를 맞춰서 전달
+            data: {
+                user_id: userId,
+                diagnosis_score: scoreData.overall_score, // 전체 점수
+                gap_details: scoreData.gap_details,     // Gap Score 상세 내역 (JSONB)
+                recommendation: scoreData.recommendation // 추천 로직 결과
+            }
         });
 
     } catch (error) {
-        console.error("Diagnosis API Error:", error);
-        // 500 에러는 내부 로직 문제로 간주하고 처리합니다.
-        res.status(500).json({ success: false, message: "Internal server error while processing diagnosis score." });
+        console.error("Error in getDiagnosisScore:", error);
+        res.status(500).json({ message: "Internal server error during diagnosis processing." });
     }
 };

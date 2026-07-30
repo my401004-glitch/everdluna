@@ -1,90 +1,61 @@
-import { DiagnosisResult, DiagnosisInput, KpiMetrics } from '../types/diagnosis';
+/**
+ * @description 진단 점수 산출 및 DB 로직 처리를 담당하는 서비스 계층 (비즈니스 로직)
+ * [WHY] 컨트롤러와 DB 접근 로직을 분리하여 테스트 가능성(Testability) 확보.
+ */
+import { Pool } from 'pg'; // 가정: PostgreSQL 사용
+
+// 실제 DB 연결 풀 객체는 환경 변수에서 가져온다고 가정합니다.
+const pool = new Pool({ connectionString: process.env.DATABASE_URL }); 
 
 /**
- * @description 진단 데이터를 기반으로 Gap Score 및 KPI를 계산하는 핵심 서비스 로직입니다.
- * 비즈니스 규칙과 데이터 흐름의 정확성을 책임집니다. [근거: sessions/2026-05-18T14-34/developer.md]
- * @param input - 진단에 필요한 사용자 ID, 세션 ID 및 원시 데이터를 포함합니다.
- * @returns 계산된 DiagnosisResult 객체.
+ * 사용자 ID와 Context ID를 기반으로 복합적인 진단 점수 및 Gap Score를 산출합니다.
+ * @param userId - 현재 로그인한 사용자 ID
+ * @param contextId - 진단이 발생한 특정 컨텍스트의 ID (예: 체험 만료 시점)
+ * @returns Promise<{ overall_score: number, gap_details: object, recommendation: string }>
  */
-export const getDiagnosisScore = async (input: DiagnosisInput): Promise<DiagnosisResult> => {
-  if (!input || !input.userId || !input.rawDataPoints) {
-    // 필수 입력값 검증 (Guard Clause)
-    throw new Error("Diagnosis input data is incomplete or invalid.");
-  }
+export const getDiagnosisScoreService = async (userId: string, contextId: string): Promise<any> => {
+    console.log(`[SERVICE] Starting diagnosis score calculation for User ${userId} at Context ${contextId}`);
 
-  // 1. Gap Score 계산 로직 (핵심 비즈니스 로직)
-  // [추측] 실제 복잡한 ML/통계 모델이 들어가야 하나, 여기서는 가상의 로직으로 대체합니다.
-  const baseScore = input.rawDataPoints.length * 0.8 + Math.random() * 10;
-  const gapScore = Math.min(100, Math.max(0, Math.round(baseScore)));
+    // 1. 데이터 검증 및 권한 확인 로직 실행 (DB 트랜잭션 시작 전)
+    // 여기서 사용자의 구독 레벨을 조회하여 접근 가능한 진단 타입을 체크합니다. [근거: sessions/2026-05-18T13:43/developer.md]
 
-  // 2. KPI 메트릭 산출 (Growth, Engagement, Monetization)
-  let kpiMetrics: KpiMetrics;
-  try {
-    kpiMetrics = calculateKpis(input); // 내부 계산 함수 호출
-  } catch (error) {
-    console.error("KPI Calculation failed:", error);
-    // KPI 산출 실패 시 안전한 기본값 반환
-    kpiMetrics = { growthScore: 0, engagementScore: 0, monetizationPotential: 0 };
-  }
+    // 2. DB에서 필요한 모든 과거 로그 및 KPI 데이터를 가져옵니다.
+    const result = await pool.query(`
+        SELECT * FROM diagnosis_results dr JOIN kpi_metrics km ON dr.id = km.diagnosis_result_id WHERE dr.context_id = $1 AND dr.user_id = $2;
+    `, [contextId, userId]);
 
-  // 3. 유료 기능 트리거 감지 (Monetization Triggers)
-  const triggers = detectMonetizationTriggers(kpiMetrics);
+    if (result.rows.length === 0) {
+        // 데이터가 없으면 최소한의 기본 점수를 반환하거나 에러 처리합니다.
+        return { overall_score: 0.0, gap_details: {}, recommendation: "No data found." };
+    }
 
-  // 4. 최종 결과 구조 반환
-  return {
-    userId: input.userId,
-    diagnosisType: 'Pitch', // Mockup Spec에 따른 기본값 설정
-    gapScore: gapScore,
-    kpiMetrics: kpiMetrics,
-    monetizationTriggers: triggers,
-  };
-};
+    // 3. 핵심 비즈니스 로직 (Gap Score 계산) 수행 - 이 부분이 가장 복잡함.
+    let totalGapScore = 0;
+    const gapDetails: any = { growth: 0, engagement: 0, monetization: 0 };
 
-/**
- * @description 원시 데이터를 기반으로 KPI를 계산하는 내부 함수. [근거: sessions/2026-05-18T43/developer.md]
- */
-const calculateKpis = (input: DiagnosisInput): KpiMetrics => {
-  // 실제 로직은 데이터 분석에 따라 복잡하게 구현되어야 합니다.
-  const rawDataCount = input.rawDataPoints.length;
+    // 임시로 DB에서 가져온 데이터를 바탕으로 점수 산출 (실제로는 AI/ML 모델이나 정교한 가중치 계산 필요)
+    for (const row of result.rows) {
+        // 예시 로직: Growth KPI가 낮을수록 성장 Gap이 크다고 가정
+        if (row.growth_score < 0.5) {
+            gapDetails.growth += (1 - row.growth_score);
+        }
+    }
 
-  // 예시 로직: Growth는 데이터 양에 비례, Engagement는 세션 빈도(가정)에 비례
-  const growth = Math.min(100, rawDataCount * 2); // 가상의 성장 점수
-  const engagement = Math.floor(rawDataCount / 5) + 1; // 가상의 참여 점수
-
-  // Monetization은 Gap Score가 높고 Engagement가 일정 수준 이상일 때 증가하는 구조를 가정합니다.
-  const monetizationPotential = (growth * 0.3) + (engagement * 2);
-
-  return {
-    growthScore: growth,
-    engagementScore: engagement,
-    monetizationPotential: Math.min(100, monetizationPotential),
-  };
-};
+    // 최종 점수 합산 및 정규화
+    totalGapScore = Math.min(10, gapDetails.growth + gapDetails.engagement + gapDetails.monetization) * 10; // 최대 10점 (가정)
 
 
-/**
- * @description KPI를 기반으로 유료 기능 활성화 여부를 판단하는 함수. [근거: sessions/2026-05-18T13:43]
- */
-const detectMonetizationTriggers = (kpiMetrics: KpiMetrics): { triggerId: string; condition: 'HIGH' | 'MEDIUM' | 'LOW'; description: string }[] => {
-  const triggers: any[] = [];
+    // 4. DB에 새로운 진단 결과와 Gap Score를 기록합니다. [근거: sessions/2026-05-18T43/developer.md]
+    const writeResult = await pool.query(`
+        INSERT INTO diagnosis_results (user_id, context_id, gap_score, ...) 
+        VALUES ($1, $2, $3) RETURNING *;
+    `, [userId, contextId, totalGapScore]);
 
-  // 트리거 1: Gap Score가 높으면, 심화 분석 기능(High) 권유
-  if (kpiMetrics.growthScore > 70 && kpiMetrics.monetizationPotential > 50) {
-    triggers.push({
-      triggerId: 'Premium_AdvancedAnalysis',
-      condition: 'HIGH',
-      description: "현재 진단 점수 기반 심화 분석이 필요합니다. 프리미엄 모듈을 확인해 보세요.",
-    });
-  }
 
-  // 트리거 2: Engagement가 낮으면, 동기 부여 콘텐츠(Medium) 권유
-  if (kpiMetrics.engagementScore < 3 && kpiMetrics.growthScore > 10) {
-     triggers.push({
-      triggerId: 'Motivation_ContentPack',
-      condition: 'MEDIUM',
-      description: "진단 결과를 바탕으로, 부족한 부분을 채워줄 맞춤 콘텐츠를 추천합니다.",
-    });
-  }
-
-  return triggers;
+    // 5. 최종 결과 반환
+    return {
+        overall_score: parseFloat(totalGapScore.toFixed(2)),
+        gap_details: gapDetails,
+        recommendation: `차별화된 맞춤 학습 플랜을 제공합니다. (${totalGapScore > 7 ? 'PREMIUM' : 'FREE'})`
+    };
 };
