@@ -715,3 +715,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-30] * **문제점:** 현재 `result_data`가 JSON으로 묶여 있어, 특정 KPI 필드의 유효성 검증(Schema Validation)이 백엔드 단에서 충분하지 않습니다. _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-07-30] * **문제점:** 진단 결과 저장 과정에서 여러 테이블(`Diagnosis_Results` $\rightarrow$ `KPI_Metrics`)에 걸쳐 트랜잭션 처리가 완벽하지 않아 일부 데이터만 커밋되고 나머지는 실패하는 상황이 발생할 수 있습니다. _(근거: sessions/2026-05-18T43/developer.md)_
 - [2026-07-30] * **문제점:** 권한 체크(`diagnosis_type` 접근 여부)가 여러 곳에 산재되어 있어, 비즈니스 규칙 변경 시 수정 지점이 많고 누락 위험이 높습니다. _(근거: sessions/2026-05-18T13:43/developer.md)_
+- [2026-07-30] 일단 `Writer`가 완성한 최종 영상 스크립트와 `Designer`가 고도화한 랜딩 페이지 와이어프레임(`Gap Score` 기반)을 보니, 기술적으로 가장 먼저 안정화해야 할 지점은 **진단 점수 산출 및 사용자 권한 관리 로직**입니다. _(근거: sessions/2026-07-30T03-03/designer.md)_
+- [2026-07-30] return res.status(403).json({ message: "Unauthorized access or user role invalid." }); // _(근거: sessions/2026-05-18T13-43/developer.md)_
+- [2026-07-30] // 여기서 사용자의 구독 레벨을 조회하여 접근 가능한 진단 타입을 체크합니다. _(근거: sessions/2026-05-18T13:43/developer.md)_
+- [2026-07-30] // 4. DB에 새로운 진단 결과와 Gap Score를 기록합니다. _(근거: sessions/2026-05-18T43/developer.md)_
