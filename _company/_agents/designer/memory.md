@@ -726,3 +726,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-31] 최종 확정된 영상 포맷과 비주얼 가이드라인에 맞춰, 다음 콘텐츠 제작에 필요한 핵심 시각 요소(Key Visual)의 디자인 컨셉 및 레이아웃 방향성을 구체화하라. → 산출물 sessions/2026-07-31T03-36/designer.md
 - [2026-07-31] P0 기능 구현의 기술적 요구사항과 Funnel Flow Map을 기반으로, 유료 전환을 유도하는 '구독 장벽(Subscription Wall)' 목업 디자인에 필요한 핵심 사용자 플로우와 감성적 메시지 방향성을 최종 점검하고 시각화 작업을 준비하라. → 산출물 sessions/2026-07-31T04-34/designer.md
 - [2026-07-31] 현빈과 코다리의 설계 기준(Funnel Flow Map 및 Subscription Wall 목업)을 바탕으로 '구독 장벽' 와이어프레임 초안에 Phase 1(Pain) 메시지 구조를 적용하여 시각적 프로토타입 제작을 즉시 시작하라 → 산출물 sessions/2026-07-31T04-49/designer.md
+- [2026-07-31] 코다리 및 CEO의 지시사항(Funnel Flow Map, Subscription Wall 목업)을 기반으로, '구독 장벽' 와이어프레임에 Phase 1(Pain) 메시지 구조를 적용하여 실제 Figma 컴포넌트 및 시각적 프로토타입 제작을 즉시 착수할 수 있도록 상세 디자인 명세서를 구체화하라. → 산출물 sessions/2026-07-31T05-04/designer.md
