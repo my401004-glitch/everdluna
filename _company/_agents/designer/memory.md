@@ -728,3 +728,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-31] 현빈과 코다리의 설계 기준(Funnel Flow Map 및 Subscription Wall 목업)을 바탕으로 '구독 장벽' 와이어프레임 초안에 Phase 1(Pain) 메시지 구조를 적용하여 시각적 프로토타입 제작을 즉시 시작하라 → 산출물 sessions/2026-07-31T04-49/designer.md
 - [2026-07-31] 코다리 및 CEO의 지시사항(Funnel Flow Map, Subscription Wall 목업)을 기반으로, '구독 장벽' 와이어프레임에 Phase 1(Pain) 메시지 구조를 적용하여 실제 Figma 컴포넌트 및 시각적 프로토타입 제작을 즉시 착수할 수 있도록 상세 디자인 명세서를 구체화하라. → 산출물 sessions/2026-07-31T05-04/designer.md
 - [2026-07-31] 코다리 및 CEO가 확정한 '구독 장벽' 와이어프레임의 상세 명세서를 기반으로, 즉시 Figma에서 시각적 프로토타입 제작을 착수하고 진행 상황을 보고할 것. → 산출물 sessions/2026-07-31T05-19/designer.md
+- [2026-07-31] 확정된 Motion Graphic Style Guide 및 시각화 명세서를 바탕으로, 영상 제작 과정에서 일관성을 유지할 수 있도록 시각적 가이드라인의 적용 상태를 점검하고 필요한 에셋을 준비하라. → 산출물 sessions/2026-07-31T05-34/designer.md

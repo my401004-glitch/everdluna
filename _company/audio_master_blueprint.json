@@ -1,12 +1,40 @@
 {
-  "BGM_PLAN": {
-    "ACT_I_TENSION": "cinematic tension build-up, minor key drone, 90 BPM",
-    "ACT_II_ANALYSIS": "ambient electronic, lo-fi beat, reflective, 105 BPM",
-    "ACT_III_UPLIFTING": "acoustic cinematic pop, major key, hopeful resolution, 128 BPM"
-  },
-  "MIXING_GUIDELINES": {
-    "VOICEOVER_LEVEL": 1.0,
-    "BGM_DEFAULT_LEVEL": 0.25,
-    "SFX_EMPHASIS_LEVEL": 0.6
+  "video_title": "The Awakening - 데이터 기반, 잠재력을 깨우는 발성 시스템",
+  "overall_mood_arc": {
+    "stage_1_hook_struggle": {
+      "timecode_range": "0:00 - 0:40 (Struggle/Pain)",
+      "emotion": "불안정함, 압박감, 좌절",
+      "bpm": "85-100 BPM (느리고 규칙적)",
+      "key": "E Minor (단조)",
+      "genre_prompt": "Dissonant cinematic ambient track with low frequency rumble and sparse piano chords. Focus on tension.",
+      "volume_level": 0.25,
+      "sfx_events": [
+        {"time": "0:10", "type": "Whoosh/Swipe", "description": "Pain Point 제시 시 날카로운 사운드 효과"},
+        {"time": "0:40", "type": "Stinger", "description": "기존 상식 파괴 지점, 강렬한 불협화음 (Discordance)"}
+      ]
+    },
+    "stage_2_system_analysis": {
+      "timecode_range": "0:40 - 1:30 (Analysis/Discovery)",
+      "emotion": "지적 호기심, 분석, 명료함",
+      "bpm": "110-125 BPM (규칙적이고 리듬감 있게)",
+      "key": "C Major (장조) 또는 A Minor",
+      "genre_prompt": "Minimalist electro-acoustic track. Crisp arpeggios, steady beat, and deep sub-bass emphasizing data flow. Focus on structure.",
+      "volume_level": 0.25,
+      "sfx_events": [
+        {"time": "1:00", "type": "Digital Beep/Sweep", "description": "데이터가 분석되는 시점의 명확하고 빠른 주파수 변화음"},
+        {"time": "1:30", "type": "Transition Hit", "description": "분석 완료 후 기대감을 고조시키는 짧고 강력한 타악기 사운드"}
+      ]
+    },
+    "stage_3_awakening_resolution": {
+      "timecode_range": "1:30 - End (Resolution/Uplifting)",
+      "emotion": "확신, 해방감, 성취",
+      "bpm": "125-140 BPM (빠르고 역동적)",
+      "key": "C Major (장조)",
+      "genre_prompt": "Uplifting cinematic acoustic pop with full orchestral elements and warm synth pads. Highly positive and motivational. Focus on grand scale.",
+      "volume_level": 0.25,
+      "sfx_events": [
+        {"time": "1:30", "type": "Swoosh/Ascend", "description": "최종 시스템 제시와 함께 상승하는 느낌의 사운드"},
+        {"time": "End", "type": "Echo Fade Out", "description": "메시지 마무리 후 여운을 남기는 잔향"}
+      ]
   }
 }
