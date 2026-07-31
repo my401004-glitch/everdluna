@@ -727,3 +727,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-07-31] P0 기능 구현의 기술적 요구사항과 Funnel Flow Map을 기반으로, 유료 전환을 유도하는 '구독 장벽(Subscription Wall)' 목업 디자인에 필요한 핵심 사용자 플로우와 감성적 메시지 방향성을 최종 점검하고 시각화 작업을 준비하라. → 산출물 sessions/2026-07-31T04-34/designer.md
 - [2026-07-31] 현빈과 코다리의 설계 기준(Funnel Flow Map 및 Subscription Wall 목업)을 바탕으로 '구독 장벽' 와이어프레임 초안에 Phase 1(Pain) 메시지 구조를 적용하여 시각적 프로토타입 제작을 즉시 시작하라 → 산출물 sessions/2026-07-31T04-49/designer.md
 - [2026-07-31] 코다리 및 CEO의 지시사항(Funnel Flow Map, Subscription Wall 목업)을 기반으로, '구독 장벽' 와이어프레임에 Phase 1(Pain) 메시지 구조를 적용하여 실제 Figma 컴포넌트 및 시각적 프로토타입 제작을 즉시 착수할 수 있도록 상세 디자인 명세서를 구체화하라. → 산출물 sessions/2026-07-31T05-04/designer.md
+- [2026-07-31] 코다리 및 CEO가 확정한 '구독 장벽' 와이어프레임의 상세 명세서를 기반으로, 즉시 Figma에서 시각적 프로토타입 제작을 착수하고 진행 상황을 보고할 것. → 산출물 sessions/2026-07-31T05-19/designer.md
