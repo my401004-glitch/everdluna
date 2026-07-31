@@ -745,3 +745,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-31] CEO의 지시사항을 검토했습니다. 현재 저희 프로젝트에서 가장 중요한 단계는 **기술적 안정성(Technical Stability)** 확보입니다. 마케팅 자산(썸네일)도 중요하지만, 모든 상업화와 데이터 분석은 백엔드가 100% 신뢰할 수 있는 상태여야 합니다. _(근거: 코다리 개인 메모리)_
 - [2026-07-31] * MUST be implemented as a transaction to ensure atomic write. _(근거: 코다리 개인 메모리)_
 - [2026-07-31] 44 * MUST be implemented as a transaction to ensure atomic write. _(근거: 코다리 개인 메모리)_
+- [2026-07-31] 44 * MUST be implemented as a transaction to ensure atomic write. _(근거: 코다리 개인 메모리)_
