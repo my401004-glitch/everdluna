@@ -2070,3 +2070,46 @@ Recently uploaded 유튜브 영상은 생산성 툴과 마케팅 트렌드에 �
     *   "AI 비즈니스에서 열린 틈새를 찾으려면, 다양한 채널과 기사를 분석할
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-07-31 17:23:54
+## 📡 키워드: 생산성 툴, 유튜브 자동화
+
+**유튜브 트렌드 해킹 분석 보고서**
+
+### 🌍 트렌드 해킹 분석
+
+ recently 30일 동안의 유튜브 영상 데이터를 analiz한 결과 다음과 같은 패턴이 discerned được:
+
+* **생산성 툴**: 채널과 제목을 바탕으로 생산성 툴에 대한 관심을 보인 채널들이 많으며, "AI tools"와 "Automation"와 관련된 키워드가 많다.
+* **유튜브 자동화**: automatization of YouTube를 topic으로 하는 채널이 많으며, "Higgsfield AI", "Faisal Shabbir", "Andres Garza" 등이 특징이다.
+
+### 🎯 빈집 털기 전략
+
+생산성 툴과 유튜브 автомати화를 topic으로 하는 채널들이 상당히 많고, 각 channel의 내용을 분석하여 차별화 가능한 틈새 주제를identifikan siguiente:
+
+* **생산성 툴**: 
+ + Long-Handled Finishing Tools와 Rebar Bending Tool을 관련로 한다.
+ + AI tool과 automation을 topic으로 한다.
+* **유튜브 автомати化**:
+ + Higgsfield AI와 Claude Fable 5를 사용한 automatization을 topic으로 한다.
+ + Faceless Channel From Zero와 10분만에 마스터하는법을 topic으로 한다.
+
+### 🎬 파괴적 영상 기획안
+
+영화-like의 유튜브 영상 기획안을 작성하여 following을 추천한다:
+
+* **썸네일 카피**:
+ + "Powerful AI tool builds bots, clones sites, links notes"
+ + "Find almost any tool #tools #tool #productivity"
+ + "Maximizing Construction Productivity with Long-Handled Finishing Tools"
+* **제목 3개**:
+ + "AI Power: Boost Your Productivity with These 5 Tools"
+ + "The Ultimate Guide to Automating YouTube with AI and Claude Fable 5"
+ + "From Zero to Hero: How to Create a Faceless Channel in 10 Minutes"
+* **후킹 오프닝 (첫 5초)**:
+ + "In 5 seconds, you'll be amazed at how easy it is to..."
+ + "Discover the secret to automating YouTube with AI and Claude Fable 5"
+ + "Get ready to transform your productivity with these 3 simple tools"
+
+---
