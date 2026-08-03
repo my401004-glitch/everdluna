@@ -760,3 +760,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-03] 확정된 '썸네일 마스터 디자인 시스템 v1.0'과 'Visual Asset Spec Sheet'를 기반으로, 다음 영상에 사용할 썸네일 및 핵심 시각 자료 제작을 병렬로 시작하고 디자인 시스템 적용을 완료하라. → 산출물 sessions/2026-08-03T05-27/designer.md
 - [2026-08-03] THUMBNAIL_PROTOTYPE_Mockup_v1.0.md를 최종 승인하고, 확정된 디자인 시스템을 기반으로 다음 영상에 사용할 모든 시각 자료(썸네일 및 핵심 시각 요소) 제작을 병렬로 시작하라. → 산출물 sessions/2026-08-03T05-42/designer.md
 - [2026-08-03] 확정된 디자인 시스템(`Master_Design_System_SpecSheet_v1.0.md`)을 기반으로, 다음 영상에 필요한 모든 시각 자료(썸네일 및 핵심 시각 요소) 제작에 이 규격서를 강제 적용하는 병렬 워크플로우를 확립하고 작업 시작 준비를 완료하라. → 산출물 sessions/2026-08-03T05-57/designer.md
+- [2026-08-03] Master_Design_System_Component_Library_Blueprint_v1.0.md의 디자인 규격을 코다리의 개발 로직 검증이 용이하도록 명확하게 구조화하여, 코드와 디자인 간의 연동 기준을 최종 확정할 것. → 산출물 sessions/2026-08-03T06-12/designer.md
