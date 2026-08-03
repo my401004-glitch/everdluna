@@ -746,3 +746,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-07-31] * MUST be implemented as a transaction to ensure atomic write. _(근거: 코다리 개인 메모리)_
 - [2026-07-31] 44 * MUST be implemented as a transaction to ensure atomic write. _(근거: 코다리 개인 메모리)_
 - [2026-07-31] 44 * MUST be implemented as a transaction to ensure atomic write. _(근거: 코다리 개인 메모리)_
+- [2026-08-03] CEO의 지시사항과 최근 Writer/Designer가 제공한 콘텐츠 초안을 종합적으로 검토했습니다. 와 [근거: Writer 스크립트], 그리고 저희가 구축해 온 데이터 모델(`DiagnosisResult` 스키마)이 모두 **핵심 로직인 `diagnosisService`의 완성도**에 의존하고 있습니다. _(근거: CEO 지시)_
+- [2026-08-03] * (Growth, Engagement, Monetization KPI를 분리 설계) _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-08-03] * (권한 기반 접근 제어, RBAC 구현 필요성) _(근거: sessions/2026-05-18T13:43)_
+- [2026-08-03] 2. **권한 게이팅 (RBAC):** `runDiagnosisPipeline` 내부에 사용자 역할에 따른 접근 제어 로직을 명시적으로 삽입했습니다. 이는 비즈니스 모델(유료 구독)의 핵심입니다. _(근거: sessions/2026-05-18T13:43)_
