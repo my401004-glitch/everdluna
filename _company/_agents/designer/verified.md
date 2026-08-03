@@ -1018,3 +1018,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-03] * 단순히 숫자를 보여주는 것이 아니라, 이상적인 범위와 실제 측정값이 얼마나 떨어져 있는지를 **시각적으로 'Gap'으로 표시**합니다. (게이지 차트 또는 꺾은선 그래프 이용) _(근거: Designer 검증된 지식)_
 - [2026-08-03] ## 💡 디자인 시스템 V2.0 요약 _(근거: Designer 검증된 지식)_
 - [2026-08-03] ## 🎬 컨셉 비교 분석: _(근거: /Users/iyeongjae/Desktop/초보프로젝트/_company/Design_Assets/Thumbnail_Concept_Analysis.md)_
+- [2026-08-03] | **보조 설명 (Context)** | 이 수치가 무엇을 의미하는지 명확히 알려줍니다. | White 또는 Light Grey | Montserrat SemiBold (중간 크기) | | _(근거: Writer 스크립트의 데이터 기반 주장)_
+- [2026-08-03] | **시각 요소** | 1. 왼쪽 상단에 불안정한 파형 그래프 (노란색으로 강조된 'Gap'). 2. 오른쪽 하단에 깔끔하게 정렬된 AI 진단 UI Mockup. | Accent Yellow (`#FFD700`) / Dark Blue (`#0A2463`) | N/A | | _(근거: Pain $\rightarrow$ Data $\rightarrow$ Solution 아키텍처)_
