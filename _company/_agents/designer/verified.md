@@ -1020,3 +1020,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-03] ## 🎬 컨셉 비교 분석: _(근거: /Users/iyeongjae/Desktop/초보프로젝트/_company/Design_Assets/Thumbnail_Concept_Analysis.md)_
 - [2026-08-03] | **보조 설명 (Context)** | 이 수치가 무엇을 의미하는지 명확히 알려줍니다. | White 또는 Light Grey | Montserrat SemiBold (중간 크기) | | _(근거: Writer 스크립트의 데이터 기반 주장)_
 - [2026-08-03] | **시각 요소** | 1. 왼쪽 상단에 불안정한 파형 그래프 (노란색으로 강조된 'Gap'). 2. 오른쪽 하단에 깔끔하게 정렬된 AI 진단 UI Mockup. | Accent Yellow (`#FFD700`) / Dark Blue (`#0A2463`) | N/A | | _(근거: Pain $\rightarrow$ Data $\rightarrow$ Solution 아키텍처)_
+- [2026-08-03] 즉, *프로토타입*을 넘어 *실제 영상 편집자가 바로 사용할 수 있는 에셋 키트*를 만드는 것이 목표입니다. _(근거: 이전 세션에서 제작한 썸네일 마스터 프로토타입)_
+- [2026-08-03] * **정보 계층 구조:** 반드시 'Pain $\rightarrow$ Gap Data $\rightarrow$ Solution' 순서를 시각적으로 따라가야 합니다. 이 흐름이 끊기지 않도록 트랜지션 그래픽을 통해 연결해야 함. _(근거: Self-RAG 메모 - 핵심 메시지)_
+- [2026-08-03] * **구성**: [문제 제목 (Montserrat Bold)] + [세부 설명 (Noto Sans KR)]. 반드시 `` 형태로 원인을 제시하도록 구조화합니다. _(근거: ...)_

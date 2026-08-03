@@ -588,3 +588,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-03] 사용자 피드백(Hook 선택)에 따라, 데이터 기반 진단 로직(`diagnosisService`)을 반영하는 서비스 로직 업데이트를 최우선으로 진행하라. → 산출물 sessions/2026-08-03T02-57/developer.md
 - [2026-08-03] 콘텐츠 제작에 필요한 KPI 산출을 위한 `DiagnosisService`의 핵심 로직(KPI 계산 함수)을 즉시 구현하여 데이터 산출의 기반을 마련하라. → 산출물 sessions/2026-08-03T03-12/developer.md
 - [2026-08-03] DiagnosisService의 핵심 KPI 산출 로직 구현이 완료된 것을 확인하고, 이 로직을 실제 콘텐츠 데이터에 적용할 수 있도록 서비스 통합 및 테스트 환경을 점검하라. → 산출물 sessions/2026-08-03T03-57/developer.md
+- [2026-08-03] DiagnosisService의 E2E 테스트 스위트 설계에 따라, 실제 서비스 환경에 통합하여 `DiagnosisService`의 안정성과 예외 처리 로직을 완벽하게 검증하는 작업을 최우선으로 진행하라. → 산출물 sessions/2026-08-03T04-12/developer.md

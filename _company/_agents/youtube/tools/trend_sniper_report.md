@@ -2113,3 +2113,35 @@ Recently uploaded 유튜브 영상은 생산성 툴과 마케팅 트렌드에 �
  + "Get ready to transform your productivity with these 3 simple tools"
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-08-03 13:14:42
+## 📡 키워드: AI 비즈니스, 마케팅 트렌드
+
+**마케팅 트렌드 해킹 분석 보고서**
+
+**1. 🌍 트rend 해킹 분석**
+
+트렌드 해킹 분석을 통해เรา 다양한 패턴을 발견했다.
+
+*   **AI 비즈니스**: 최근 30일 동안 AI 비즈니스 관련 영상이 상당히 많으며, 이 분야의 트렌드는 지속적으로 증가하고 있다. 이로 인해 많은 채널이 AI 비즈니스에 대해 더 많이 기사를 publish하고 estão trying to identify the best way to leverage AI for business.
+*   **마케팅 트렌드**: 마케팅 트렌드와 관련된 영상은 또한 상당히 많으며, 특히 백화점 재벌들이 억 단위 돈 쏟아붓고 목숨 거는 트렌드는特别로 인기를 끌고 있다. 이 분야의 트렌드는 지속적으로 증가하고 đang 인기가 있는 분야 중 하나이기 때문에 마케팅 channels가 이에 대해 더 많이 기사를 publish하고 đang 그 트렌드에 대해 deeper dive를 해보고 있습니다.
+
+**2. 🎯 빈집 털기 전략**
+
+트렌드 해킹 분석을 통해 voidable niche가 발견되었으며, 다음과 같은 차별화 가능한 틈새 주제가 identifies되었다.
+
+*   **AI 비즈니스**: AI 비즈니스와 관련된 voidable niche 가 discovery되지 않았습니다. 이 분야에서 voidable niche를 찾는 데에는 많은 기회가 있습니다.
+*   **마케팅 트렌드**: 백화점 재벌들이 억 단위 돈 쏟아붓고 목숨 거하는 트렌드는 currently 인기가 있는 분야이기 때문에 마케팅 channels가 이에 대해 더 많이 기사를 publish하고 đang 그 트렌드에 대해 deeper dive를 해보고 있습니다. 또한 Mecha Chameleon이 becoming marketing trend right now의 경우, voidable niche를 찾는 데에도 많은 기회가 있습니다.
+
+**3. 🎬 파괴적 영상 기획안**
+
+파괴적 영상 기획안을 통해 다음과 같은 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)이 discovery되지 않았습니다.
+
+*   **AI 비즈니스**: The Dirty AI lie : How the GREATEST bet in human history started to crack in June 2026? 
+*   **마케팅 트렌드**: 백화점 재벌들이 억 단위 돈 쏟아붓고 목숨 거하는 트렌드
+*   **Mecha Chameleon becomes marketing trend right now**
+
+이제까지 파괴적 영상 기획안을 통해 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)이 discovery되지 않았습니다.
+
+---
