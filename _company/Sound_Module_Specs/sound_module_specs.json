@@ -1,0 +1,9 @@
+{
+  "modules": [
+    {"name": "Tension Build-up SFX", "description": "장면 전환 직전, 불안감을 고조시키는 미세한 전자음과 저주파 드론.", "prompt": "subtle rising synthetic drone sound effect, industrial metal clang reverb, building tension, short burst (2 seconds)"},
+    {"name": "Data Reveal Pop SFX", "description": "Gap Score나 핵심 데이터를 화면에 띄울 때의 날카롭고 명쾌한 '팝' 사운드.", "prompt": "clean digital pop sound effect, precise electronic click, satisfying reveal sound, short (0.5 seconds)"},
+    {"name": "Solution Uplift Loop", "description": "해결책 제시 후, 지속적인 자신감과 희망을 주는 15초 루프 BGM.", "prompt": "bright cinematic arpeggiated synth loop, major key, steady tempo 100 BPM, uplifting and confident mood (15 seconds)"},
+    {"name": "Analysis Transition Pad", "description": "데이터 분석 구간에서 다음 주제로 넘어갈 때 쓰는 무감정하고 차분한 패드 사운드.", "prompt": "minimal ambient synth pad loop, neutral tone, analytical background texture, 100 BPM (15 seconds)"}
+  ],
+  "target_video_reference": "D1~D5 통합 콘텐츠"
+}
