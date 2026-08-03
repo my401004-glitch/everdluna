@@ -1,0 +1,54 @@
+{
+  "video_title": "AI 1인 기업: 단순 자동화를 넘어 '지능형 비즈니스'로",
+  "total_duration_sec": 180,
+  "overall_mood_goal": "Cinematic Uplifting / Trustworthy & Investigative",
+  "audio_arc_structure": [
+    {
+      "act": "Act I: Pain/Struggle (문제 제기)",
+      "time_range_sec": [0, 45],
+      "emotional_goal": "불안감 조성 (Tension), 막막함, 질문 던지기",
+      "music_genre": "Ambient / Cinematic Minimalist",
+      "bpm_target": "70 - 90 BPM (느리고 리드미컬한)",
+      "key_suggestion": "Minor Key (Am 또는 Cm 계열)",
+      "bmg_prompt": "Deep, melancholic piano chords and subtle synth pads. Low frequency sustained drones. Creates a sense of urgency and intellectual struggle. No defined melody yet.",
+      "sound_design_notes": [
+        "SFX: '데이터 로딩 실패' 사운드 (0-5초)",
+        "SFX: 질문을 던지는 듯한 톤의 공명음 (Echoing sound) - 주요 주장 전환 시",
+        "Transition: 점진적으로 고조되는 드론 사운드 (Crescendo)"
+      ]
+    },
+    {
+      "act": "Act II: Data/Discovery (시스템 발견)",
+      "time_range_sec": [46, 110],
+      "emotional_goal": "호기심 증폭 (Curiosity), 분석적 몰입, 지식 습득의 즐거움",
+      "music_genre": "Lo-Fi Chillhop / Academic Electronic",
+      "bpm_target": "100 - 120 BPM (규칙적인 리듬)",
+      "key_suggestion": "Relative Major Key (C 또는 G 계열) — 희망의 기미 포착",
+      "bmg_prompt": "Steady, rhythmic beat with warm Rhodes piano chords. Light arpeggiated synth lines suggesting discovery and pattern recognition. Maintains a sense of intellectual flow.",
+      "sound_design_notes": [
+        "SFX: '데이터가 연결되는' 듯한 핑(Ping) 사운드 (주요 데이터 포인트 등장 시)",
+        "SFX: 타이키(Tiki) 효과음 - 핵심 키워드 강조 시",
+        "Transition: 리듬감이 점진적으로 명확해지며 볼륨 상승"
+      ]
+    },
+    {
+      "act": "Act III: Solution/Resolution (과학적 해방)",
+      "time_range_sec": [111, 180],
+      "emotional_goal": "확신, 자신감 극대화 (Uplifting), 성취감",
+      "music_genre": "Cinematic Pop / Orchestral EDM",
+      "bpm_target": "125 - 135 BPM (역동적이고 활기찬)",
+      "key_suggestion": "Bright Major Key (C 또는 F 계열) — 완전한 해결의 느낌",
+      "bmg_prompt": "Full orchestral swell combined with punchy, motivational synth leads. Driving rhythm and soaring melody that builds to a powerful climax, symbolizing breakthrough.",
+      "sound_design_notes": [
+        "SFX: '깨달음'을 상징하는 웅장한 코러스(Choir) 사운드 (최종 메시지 전달 시)",
+        "SFX: 트랜지션이 깔끔하고 명료하게 전환됨 (Smooth whoosh/swish)",
+        "Outro: 페이드 아웃되는 여운과 잔잔한 피아노 멜로디로 마무리."
+      ]
+    }
+  ],
+  "mastering_instructions": {
+    "voiceover_mix_level": "1.0 (최우선)",
+    "bmg_average_mix_level": "0.25~0.3",
+    "sfx_peak_mix_level": "0.6~0.8 (강조 지점 한정)"
+  }
+}
