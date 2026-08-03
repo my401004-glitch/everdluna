@@ -1,84 +1,115 @@
 /**
- * @file Manages core diagnosis logic and ensures system stability by integrating error logging.
+ * src/services/diagnosisService.ts
+ * 핵심 진단 로직(KPI 계산)을 담당하는 서비스 레이어입니다.
+ * 비즈니스 규칙과 복잡한 계산이 이곳에 위치해야 합니다.
  */
 
-import { DatabaseClient } from '../utils/dbClient';
-// Assume these types are defined elsewhere
-export type UserRole = 'FREE' | 'PREMIUM' | 'ADMIN'; 
-export interface DiagnosisResult { /* ... structure of results ... */ }
+import { RawPerformanceData, DiagnosisScore, DiagnosisResult } from '../types/diagnosis';
 
 /**
- * Attempts to run the diagnosis and logs any failure encountered.
- * @param userId The ID of the user attempting the service call.
- * @param contextId Unique identifier for this specific attempt/session.
- * @param role User's current subscription role (for RBAC check).
- * @returns DiagnosisResult object or throws a controlled Error.
+ * @description Raw 데이터를 받아 3가지 핵심 KPI 점수를 산출합니다.
+ * @param rawData 진단에 필요한 원시 사용자 데이터
+ * @returns 계산된 진단 점수 객체
+ * [근거: sessions/2026-05-18T14-34/developer.md] (Growth, Engagement, Monetization KPI를 분리 설계)
  */
-export async function runDiagnosis(userId: string, contextId: string, role: UserRole): Promise<DiagnosisResult> {
+export const calculateDiagnosisScore = (rawData: RawPerformanceData): DiagnosisScore => {
+    // ------------------------------------------
+    // ⚠️ 중요 경고: 이 로직은 비즈니스 가설을 기반으로 합니다.
+    // 실제 구현 시에는 통계 모델(ML/AI) 또는 정밀한 수작업 계산이 필요합니다.
+    // 여기서는 예시적인 '가중치'와 'Threshold Check'로 대체합니다.
+    // ------------------------------------------
+
+    let growthScore: number = 0;
+    let engagementScore: number = 0;
+    let monetizationScore: number = 0;
+
+    // --- 1. Growth Score 계산 (기술적/객관적 발전) ---
+    // 음정 편차(Pitch Deviation)가 낮을수록 점수가 높다고 가정합니다.
+    const deviationPenaltyFactor = Math.max(0, 1 - rawData.averagePitchDeviationHz / 10); // 예시 가중치
+    growthScore = Math.min(100, Math.round(60 * deviationPenaltyFactor + 20));
+
+    // --- 2. Engagement Score 계산 (노력/지속성) ---
+    // 세션 시간이 길고, 프리미엄 사용자일수록 점수가 높다고 가정합니다.
+    let engagementBase = rawData.sessionDurationMinutes * 5; // 기본 가중치
+    if (rawData.userRole === 'premium') {
+        engagementBase += 20; // 추가 보너스 점수
+    }
+    engagementScore = Math.min(100, Math.round(engagementBase));
+
+    // --- 3. Monetization Score 계산 (시장 가치/잠재력) ---
+    // 진단 유형과 역할에 따라 점수를 부여합니다. (가설적 로직)
+    if (rawData.diagnosisType === 'monetization' && rawData.userRole === 'premium') {
+        monetizationScore = 85; // 최상의 조건이라고 가정하고 높은 값 부여
+    } else if (rawData.diagnosisType === 'growth') {
+        monetizationScore = Math.min(70, Math.round(growthScore * 0.8)); // 성장 점수의 일부를 반영
+    } else {
+        monetizationScore = Math.max(20, Math.min(60, rawData.averagePitchDeviationHz / 5 + 30));
+    }
+
+    // --- 4. 최종 종합 및 피드백 생성 ---
+    const totalScore = (growthScore * 0.4) + (engagementScore * 0.3) + (monetizationScore * 0.3); // 가중치 적용
+    const overallScore = Math.round(Math.min(100, Math.max(0, totalScore)));
+
+    let feedbackSummary: string;
+    if (overallScore < 40) {
+        feedbackSummary = "🚨 경고: 현재는 '노력'만 하고 있을 뿐입니다. 객관적인 진단 수치 분석이 필요합니다.";
+    } else if (overallScore >= 85) {
+        feedbackSummary = "✅ 우수: 목표 지점에 근접했습니다. 다음 단계로의 발전 방향을 설계하세요.";
+    } else {
+        feedbackSummary = `💡 잠재력 확인: ${Math.round(growthScore)}점(${rawData.diagnosisType})과 ${Math.round(monetizationScore)}점을 종합하여 로드맵이 필요합니다.`;
+    }
+
+    return {
+        growthScore,
+        engagementScore,
+        monetizationScore,
+        overallScore,
+        feedbackSummary
+    };
+};
+
+
+/**
+ * @description Diagnosis API의 핵심 엔드포인트 역할을 수행하는 함수입니다.
+ * 서비스 사용 전에 필수적인 권한 체크(RBAC)를 수행합니다.
+ * @param rawData 사용자 진단 원시 데이터
+ * @returns 최종 결과 객체
+ * [근거: sessions/2026-05-18T13:43] (권한 기반 접근 제어, RBAC 구현 필요성)
+ */
+export const runDiagnosisPipeline = async (rawData: RawPerformanceData): Promise<DiagnosisResult> => {
+    // 1. [RBAC 체크]: 진단 유형에 대한 접근 권한을 확인합니다.
+    if (rawData.userRole === 'free' && rawData.diagnosisType === 'monetization') {
+        throw new Error("Access Denied: 무료 사용자는 '수익화 가능성' 분석에 접근할 수 없습니다. 프리미엄 구독이 필요합니다.");
+    }
+
+    // 2. [로직 실행]: 실제 점수를 계산합니다.
+    const score = calculateDiagnosisScore(rawData);
+
+    // 3. [결과 포장]: DB 저장 및 반환을 위한 최종 결과 구조를 만듭니다.
+    return {
+        resultData: score,
+        contextId: 'mock-user-session-123', // 실제로는 세션 ID가 와야 함
+        timestamp: new Date()
+    };
+};
+
+// 테스트용 Mock 실행 예시 (실제 API 라우팅에서는 필요 없음)
+/*
+async function testService() {
     try {
-        // 1. Core Business Logic Simulation (e.g., API call to calculate score)
-        const result = await simulateCoreCalculation();
+        const freeUserRawData: RawPerformanceData = {
+            userRole: 'free', 
+            sessionDurationMinutes: 15, 
+            diagnosisType: 'growth', 
+            averagePitchDeviationHz: 6
+        };
+        const result = await runDiagnosisPipeline(freeUserRawData);
+        console.log("--- Free User Diagnosis Result ---");
+        console.log(JSON.stringify(result, null, 2));
 
-        // 2. Success path - nothing needs logging unless critical metric changes.
-        return result;
-
-    } catch (error: any) {
-        // --- [P0 Error Handling & RBAC Enforcement] ---
-        let finalError: Error;
-        if (this.isAccessDenied(role, error)) { 
-             // Role-Based Access Control Check: If the error is due to insufficient rights, don't log sensitive details publicly.
-            finalError = new Error("Unauthorized access or insufficient subscription level.");
-            await recordSystemError(userId, contextId, 'AUTH_FAIL_403', finalError.message, error);
-
-        } else {
-            // Standard Error Logging: Log everything for internal debugging.
-            finalError = error;
-            await recordSystemError(userId, contextId, 'SYSTEM_ERROR', `${error.name}: ${error.message}`, error);
-        }
-        throw finalError; // Re-throw a controlled exception
+    } catch (error) {
+        console.error("진단 서비스 실행 오류:", error.message);
     }
 }
-
-/**
- * Records detailed system errors into the dedicated log table.
- * MUST be implemented as a transaction to ensure atomic write. [근거: 코다리 개인 메모리]
- */
-async function recordSystemError(userId: string, contextId: string, errorCode: string, message: string, originalError: any): Promise<void> {
-    const dbClient = new DatabaseClient(); // Assume singleton DB client access
-
-    // Check RBAC before logging sensitive errors (e.g., only ADMIN can log 'CRITICAL' severity)
-    if (errorCode === 'INTERNAL_DB_FAILURE' && role !== 'ADMIN') { 
-        console.warn("Attempted to log critical error without admin rights.");
-        return; // Block unauthorized logging attempts
-    }
-
-    await dbClient.executeTransaction(async (tx) => {
-        // Insert the log record
-        await tx.query(`INSERT INTO error_logs (user_id, context_id, severity, error_code, error_message, stack_trace, is_handled) VALUES ($1, $2, 'ERROR', $3, $4, $5, FALSE)`, 
-            [userId, contextId, errorCode, message, originalError.stack || null]);
-
-        // Optional: Trigger an alert/webhook here for CRITICAL errors
-    });
-}
-
-
-/**
- * Mocks the core calculation and returns a result structure.
- */
-async function simulateCoreCalculation(): Promise<DiagnosisResult> {
-    // Simulate network latency or complex computation
-    await new Promise(resolve => setTimeout(resolve, 50));
-    return { /* ... data structure ... */ };
-}
-
-/**
- * Mocks the RBAC check logic.
- */
-function isAccessDenied(role: UserRole, error: any): boolean {
-    // Detailed checking based on specific API calls and role requirements
-    if (error.message?.includes("premium_content")) return true; 
-    return false;
-}
-
-// Exporting for testing purposes
-export { recordSystemError };
+// testService();
+*/
