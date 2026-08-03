@@ -1030,3 +1030,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-03] | **경고/Pain** | Accent Yellow (`#FFD700`) | Montserrat Bold (Title) | **'문제점', '위험', '손실'** 키워드나 수치에만 국한하여 사용. 시각적 긴장감 최고조. | | _(근거: Designer 검증된 지식)_
 - [2026-08-03] | **데이터/배경** | Neutral Grey (`#F5F5F5`) | Noto Sans KR (Body) | 데이터가 배치되는 영역의 배경색으로 지정하여, 정보의 가독성을 극대화합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-08-03] | **최종 결과/Gain** | Dark Blue + Accent Yellow 조합 | Montserrat Bold (Title) | 'Before'에서 'After'로 넘어가는 최종 수치나 성공적인 결과를 강조할 때만 사용. 노란색으로 변화를 시각화. | | _(근거: Designer 검증된 지식)_
+- [2026-08-03] | **Primary Trust** (신뢰/배경) | Dark Blue | `#0A2463` | 배경의 주축. 전문성과 깊은 신뢰감 부여. 전체적인 안정감을 잡아줍니다. | _(근거: Designer 검증된 지식)_
+- [2026-08-03] | **Accent Warning** (위험/Pain) | Accent Yellow | `#FFD700` | 불안정한 파형, 경고 문구(⚠️), 위험 수치 강조. 시선 즉시 집중 유도. | _(근거: Designer 검증된 지식)_
+- [2026-08-03] | **Neutral Base** (데이터/배경) | Dark Grey | `#1A1A2E` | Pain Zone과 Solution Zone의 구분 배경 또는 데이터 그리드 배경으로 사용하여 깊이감 부여. | _(근거: Designer 검증된 지식 확장)_
+- [2026-08-03] * **제목 (Headline):** Montserrat Bold (White/Yellow 조합). 글자 크기는 가장 크게, 좌측 상단에 배치하여 시선이 먼저 가도록 합니다. _(근거: Designer 검증된 지식)_
+- [2026-08-03] * **보조 캡션 (Sub-Headline):** Noto Sans KR Medium (Cyan 또는 White). 문제의 핵심 키워드를 명확히 전달합니다. _(근거: Designer 검증된 지식)_
