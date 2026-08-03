@@ -1,57 +1,6 @@
 {
   "tasks": [
     {
-      "id": "20260702073655-v8hh",
-      "title": "모든 텍스트는 Noto Sans KR (본문) 또는 Montserrat Bold (제목)을 따르는가?",
-      "description": "자동 등록 (Designer 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "designer"
-      ],
-      "createdAt": "2026-07-02T07:36:55.997Z",
-      "status": "done",
-      "sessionDir": "2026-07-02T07-34",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-02T07-34/_report.md\n- 레오: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목\n- Designer: A/B 테스트를 통해 도출된 비주얼 변수(Variation A, B, C)가 실제 영상 편집 단계에서 적용될 때의 최종 편집 가이드라인(`Fin\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목 및 후크 초안을 세 가지 페르소나별로 제작하고 배포를 시작할 준비를 완료하라.\n> 🔧 **도",
-      "completedAt": "2026-07-02T07:37:27.963Z"
-    },
-    {
-      "id": "20260702073655-m0x1",
-      "title": "Pain 지표를 제시할 때는 반드시 `Accent Yellow`로 하이라이팅하고, 그 옆에 `#0A2463` 기반의 '원인 분석' 박스를 배치하는가?",
-      "description": "자동 등록 (Designer 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "designer"
-      ],
-      "createdAt": "2026-07-02T07:36:55.999Z",
-      "status": "done",
-      "sessionDir": "2026-07-02T07-34",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-02T07-34/_report.md\n- 레오: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목\n- Designer: A/B 테스트를 통해 도출된 비주얼 변수(Variation A, B, C)가 실제 영상 편집 단계에서 적용될 때의 최종 편집 가이드라인(`Fin\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목 및 후크 초안을 세 가지 페르소나별로 제작하고 배포를 시작할 준비를 완료하라.\n> 🔧 **도",
-      "completedAt": "2026-07-02T07:37:27.965Z"
-    },
-    {
-      "id": "20260702073656-na27",
-      "title": "최종 CTA는 모든 변주(A/B/C)에서 **Dark Blue 배경 + Accent Yellow 버튼** 조합을 유지하여 시각적 일관성을 확보했는가?",
-      "description": "자동 등록 (Designer 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "designer"
-      ],
-      "createdAt": "2026-07-02T07:36:56.000Z",
-      "status": "done",
-      "sessionDir": "2026-07-02T07-34",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-02T07-34/_report.md\n- 레오: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목\n- Designer: A/B 테스트를 통해 도출된 비주얼 변수(Variation A, B, C)가 실제 영상 편집 단계에서 적용될 때의 최종 편집 가이드라인(`Fin\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 제공한 A/B 테스트용 카피(권위, 해결사, 경고)에 맞춰, Video 5에 대한 실제 유튜브 쇼츠/릴스용 제목 및 후크 초안을 세 가지 페르소나별로 제작하고 배포를 시작할 준비를 완료하라.\n> 🔧 **도",
-      "completedAt": "2026-07-02T07:37:27.966Z"
-    },
-    {
       "id": "20260705084950-pdqb",
       "title": "**시각적 일관성:** 모든 컴포넌트가 동일한 그림자, 모서리 반경(Radius), 간격(Spacing: 24px 기준)을 유지하는가? [근거: Designer 검증된 지식]",
       "description": "자동 등록 (Designer 산출물에서 추출)",
@@ -832,6 +781,40 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-07-31T05-34/_report.md\n- Writer: 최종 확정된 스크립트와 비주얼 명세서를 기반으로, 첫 번째 영상([The Awakening])의 촬영/편집에 필요한 최종 디테일 지침을 즉시 작\n- Designer: 확정된 Motion Graphic Style Guide 및 시각화 명세서를 바탕으로, 영상 제작 과정에서 일관성을 유지할 수 있도록 시각적 가이\n- 루나: Writer와 Designer가 제공한 영상 포맷과 스크립트 구조에 맞춰, BGM 자동 생성(MusicGen/ACE-Step) 및 사운드 디자인\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 최종 확정된 스크립트와 비주얼 명세서를 기반으로, 첫 번째 영상([The Awakening])의 촬영/편집에 필요한 최종 디테일 지침을 즉시 작성하고 전달하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산",
       "completedAt": "2026-07-31T05:40:07.794Z"
+    },
+    {
+      "id": "20260803054448-szs6",
+      "title": "모든 콘텐츠는 전환점마다 `Tension Build-up SFX`가 적절하게 삽입되었는지 확인했습니다.",
+      "description": "자동 등록 (루나 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "editor"
+      ],
+      "createdAt": "2026-08-03T05:44:48.388Z",
+      "status": "done",
+      "sessionDir": "2026-08-03T05-42",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-08-03T05-42/_report.md\n- 레오: Storyboarding_v1.md에 명시된 시간대별 지침(Hook, Data Shock 구간)에 맞춰 레오의 영상 편집 및 음성 녹음 실행 계\n- 루나: youtube에서 확정된 스크립트와 시각적 지침을 기반으로 BGM 자동 생성 및 사운드 디자인 작업을 선행하여 영상 편집의 기초 작업을 준비하라\n- Designer: THUMBNAIL_PROTOTYPE_Mockup_v1.0.md를 최종 승인하고, 확정된 디자인 시스템을 기반으로 다음 영상에 사용할 모든 시각 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Storyboarding_v1.md에 명시된 시간대별 지침(Hook, Data Shock 구간)에 맞춰 레오의 영상 편집 및 음성 녹음 실행 계획(Timeline)을 즉시 수립하고 다음 영상 제작을 위한 업로드 준비를 시작하라.\n> 🔧 ",
+      "completedAt": "2026-08-03T05:46:22.300Z"
+    },
+    {
+      "id": "20260803054448-xvpz",
+      "title": "BGM의 루프 지점이 오디오 아크의 변화(Peak/Valley)와 정확히 일치하는지 검토해야 합니다. (기술적 재검증 필요)",
+      "description": "자동 등록 (루나 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "editor"
+      ],
+      "createdAt": "2026-08-03T05:44:48.389Z",
+      "status": "done",
+      "sessionDir": "2026-08-03T05-42",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-08-03T05-42/_report.md\n- 레오: Storyboarding_v1.md에 명시된 시간대별 지침(Hook, Data Shock 구간)에 맞춰 레오의 영상 편집 및 음성 녹음 실행 계\n- 루나: youtube에서 확정된 스크립트와 시각적 지침을 기반으로 BGM 자동 생성 및 사운드 디자인 작업을 선행하여 영상 편집의 기초 작업을 준비하라\n- Designer: THUMBNAIL_PROTOTYPE_Mockup_v1.0.md를 최종 승인하고, 확정된 디자인 시스템을 기반으로 다음 영상에 사용할 모든 시각 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Storyboarding_v1.md에 명시된 시간대별 지침(Hook, Data Shock 구간)에 맞춰 레오의 영상 편집 및 음성 녹음 실행 계획(Timeline)을 즉시 수립하고 다음 영상 제작을 위한 업로드 준비를 시작하라.\n> 🔧 ",
+      "completedAt": "2026-08-03T05:46:22.302Z"
     }
   ]
 }
