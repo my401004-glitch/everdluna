@@ -58,3 +58,4 @@ _루나 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-07-31] Writer와 Designer가 제공한 영상 포맷과 스크립트 구조에 맞춰, BGM 자동 생성(MusicGen/ACE-Step) 및 사운드 디자인 계획을 수립하고 초기 오디오 환경 설정을 준비하라. → 산출물 sessions/2026-07-31T05-34/editor.md
 - [2026-08-03] Writer가 제출할 스크립트 초안과 Designer가 제공할 시각 자료를 기반으로, 영상에 최적화된 BGM 및 사운드 디자인 계획(MusicGen/ACE-Step 활용)을 사전 설계하라. → 산출물 sessions/2026-08-03T04-27/editor.md
 - [2026-08-03] youtube에서 확정된 스크립트와 시각적 지침을 기반으로 BGM 자동 생성 및 사운드 디자인 작업을 선행하여 영상 편집의 기초 작업을 준비하라. → 산출물 sessions/2026-08-03T05-42/editor.md
+- [2026-08-03] youtube의 요청에 따라 확정된 타임라인에 맞춰, 사운드 모듈(`sound_module_specs.json`)과 디자인 시스템(`Master_Design_System_SpecSheet_v1.0.md`)을 기반으로 영상 편집 및 음성 녹음을 즉시 시작할 수 있는 상세 실행 계획(Timeline)을 작성하라. → 산출물 sessions/2026-08-03T05-57/editor.md
