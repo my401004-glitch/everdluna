@@ -590,3 +590,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-03] DiagnosisService의 핵심 KPI 산출 로직 구현이 완료된 것을 확인하고, 이 로직을 실제 콘텐츠 데이터에 적용할 수 있도록 서비스 통합 및 테스트 환경을 점검하라. → 산출물 sessions/2026-08-03T03-57/developer.md
 - [2026-08-03] DiagnosisService의 E2E 테스트 스위트 설계에 따라, 실제 서비스 환경에 통합하여 `DiagnosisService`의 안정성과 예외 처리 로직을 완벽하게 검증하는 작업을 최우선으로 진행하라. → 산출물 sessions/2026-08-03T04-12/developer.md
 - [2026-08-03] DiagnosisService의 E2E 테스트 스위트를 기반으로, 콘텐츠 데이터에 적용된 KPI 산출 로직이 시각/청각 결과물과 정확히 연동되는지 최종 통합 검증을 수행하고 안정성을 확보하라. → 산출물 sessions/2026-08-03T04-42/developer.md
+- [2026-08-03] DiagnosisService의 Critical Failure Point(Zero Input, Out-of-Range Data)에 대한 예외 처리 로직 및 기본값 설정을 즉시 구현하여 시스템 안정성을 확보할 것. → 산출물 sessions/2026-08-03T04-57/developer.md
