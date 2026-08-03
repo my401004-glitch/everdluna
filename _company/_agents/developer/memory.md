@@ -592,3 +592,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-03] DiagnosisService의 E2E 테스트 스위트를 기반으로, 콘텐츠 데이터에 적용된 KPI 산출 로직이 시각/청각 결과물과 정확히 연동되는지 최종 통합 검증을 수행하고 안정성을 확보하라. → 산출물 sessions/2026-08-03T04-42/developer.md
 - [2026-08-03] DiagnosisService의 Critical Failure Point(Zero Input, Out-of-Range Data)에 대한 예외 처리 로직 및 기본값 설정을 즉시 구현하여 시스템 안정성을 확보할 것. → 산출물 sessions/2026-08-03T04-57/developer.md
 - [2026-08-03] Master_Design_System_Component_Library_Blueprint_v1.0.md를 기반으로, 핵심 UI 요소(예: Gap Score 계산기 위젯)의 프로그래밍 로직 구현을 즉시 시작하고, 디자인 시스템 적용을 최우선으로 하여 기능 구현에 착수할 것. → 산출물 sessions/2026-08-03T06-12/developer.md
+- [2026-08-03] Designer가 확정한 'Design-Dev Interface Specification'을 기반으로, 핵심 UI 요소(예: Gap Score 계산기 위젯)의 프로그래밍 로직 구현 계획 및 E2E 테스트 스위트 설계에 착수할 것. → 산출물 sessions/2026-08-03T06-27/developer.md
