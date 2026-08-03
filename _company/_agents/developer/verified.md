@@ -750,3 +750,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-03] * (Growth, Engagement, Monetization KPI를 분리 설계) _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-08-03] * (권한 기반 접근 제어, RBAC 구현 필요성) _(근거: sessions/2026-05-18T13:43)_
 - [2026-08-03] 2. **권한 게이팅 (RBAC):** `runDiagnosisPipeline` 내부에 사용자 역할에 따른 접근 제어 로직을 명시적으로 삽입했습니다. 이는 비즈니스 모델(유료 구독)의 핵심입니다. _(근거: sessions/2026-05-18T13:43)_
+- [2026-08-03] 13 * (Growth, Engagement, Monetization KPI를 분리 설계) _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-08-03] 77 * (권한 기반 접근 제어, RBAC 구현 필요성) _(근거: sessions/2026-05-18T13:43)_
