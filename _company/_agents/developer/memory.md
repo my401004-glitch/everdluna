@@ -605,3 +605,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-06] 작성된 E2E 테스트 시나리오에 기반하여 실제 API 호출 및 데이터 검증을 위한 자동화 스크립트(테스트 실행 환경 구축) 구현 계획을 수립하고 즉시 시작할 것. → 산출물 sessions/2026-08-06T06-49/developer.md
 - [2026-08-06] Designer가 완성한 데이터 흐름(Data Flow)과 KPI 매핑 컴포넌트 디자인을 기반으로, E2E 테스트 스위트에 UI/UX Mockup 검증 단계를 추가하고 시각적 일관성 검증 로직을 구현할 계획을 수립하라. → 산출물 sessions/2026-08-06T07-04/developer.md
 - [2026-08-06] Presentation Validator Service 구현을 위한 API 계약서(`src/interfaces/diagnosis.ts`) 확장 및 핵심 로직 구현을 즉시 시작하고, E2E 테스트 스위트 통합 계획을 수립하라. → 산출물 sessions/2026-08-06T07-19/developer.md
+- [2026-08-06] 정의된 E2E 테스트 스위트에 Presentation Validator Service 호출 및 결과 검증 단계를 통합하는 자동화 스크립트 구현 계획을 수립하라. → 산출물 sessions/2026-08-06T07-19/developer.md
