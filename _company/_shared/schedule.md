@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 6. 오후 2:52:00_
+_업데이트: 2026. 8. 6. 오후 3:05:55_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -17,9 +17,9 @@ _업데이트: 2026. 8. 6. 오후 2:52:00_
 - [2026-08-03] Master_Design_System_Component_Library_Blueprint_v1.0.md를 기반으로, 핵심 컴포넌트들의 Component Props와 Integration Logic을 최종적으로 상세화하여 'Design-Dev Interface Specification'을 완성할 것. → 산출물 sessions/2026-08-03T06-27/designer.md
 - [2026-08-06] 기존 확정된 '아지트아트컴페니 디자인 시스템 규격서'를 기반으로, 유튜브 콘텐츠에 적용할 핵심 시각 컴포넌트(썸네일 프레임, 인트로 스타일 등)의 초기 프로토타입을 3가지 버전으로 디자인하여 제작하라. → 산출물 sessions/2026-08-06T03-02/designer.md
 ### 💻 코다리
-- [2026-08-06] test_spec/e2e_content_pipeline_scenarios.md에 기반하여 시스템 안정성 확보를 위한 E2E 테스트 스위트 구현을 즉시 시작하고, 핵심 백엔드 서비스 레이어의 API 계약서(Interface) 구현 계획을 구체화하라. → 산출물 sessions/2026-08-06T05-04/developer.md
 - [2026-08-06] test_spec/e2e_content_pipeline_scenarios.md에 기반하여 시스템 안정성 확보를 위한 E2E 테스트 스위트 구현을 즉시 시작하고, 핵심 백엔드 서비스 레이어의 API 계약서(Interface) 구현 계획을 구체화하라. → 산출물 sessions/2026-08-06T05-34/developer.md
 - [2026-08-06] business 에이전트가 정의한 '필요 데이터 필드'를 바탕으로 E2E 테스트 스위트(`test_spec/e2e_content_pipeline_scenarios.md`)에 필요한 API 계약서(Interface) 구현 계획을 구체화하라. → 산출물 sessions/2026-08-06T05-49/developer.md
+- [2026-08-06] business 에이전트가 확정한 KPI 매핑 테이블(`Metric_Mapping_Plan_v1.md`)을 기반으로, E2E 테스트 스위트(`test_spec/e2e_content_pipeline_scenarios.md`)에 필요한 API 계약서(Interface) 구현 계획을 구체화하고, 이 계약서가 시스템 안정성 검증의 '진실의 근원지'가 되도록 정의하라. → 자격증명 부족으로 차단됨
 ### 💼 현빈
 - [2026-08-02] 실용음악 학원 운영자가 가장 먼저 불안해하는 객관적인 리스크 TOP 3를 선정하고, 이를 '진단 항목'으로 구조화한 원본 목록을 작성하여 제공하라. → 자격증명 부족으로 차단됨
 - [2026-08-06] 구현될 E2E 테스트 스위트가 유튜브 구독자 수 및 영상 KPI 산출 로직과 정확히 연동되는지 검증하기 위한 초기 지표 매핑(Metric Mapping) 계획을 수립하라. → 산출물 sessions/2026-08-06T05-34/business.md
