@@ -601,3 +601,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-06] business 에이전트가 정의한 '필요 데이터 필드'를 바탕으로 E2E 테스트 스위트(`test_spec/e2e_content_pipeline_scenarios.md`)에 필요한 API 계약서(Interface) 구현 계획을 구체화하라. → 산출물 sessions/2026-08-06T05-49/developer.md
 - [2026-08-06] business 에이전트가 확정한 KPI 매핑 테이블(`Metric_Mapping_Plan_v1.md`)을 기반으로, E2E 테스트 스위트(`test_spec/e2e_content_pipeline_scenarios.md`)에 필요한 API 계약서(Interface) 구현 계획을 구체화하고, 이 계약서가 시스템 안정성 검증의 '진실의 근원지'가 되도록 정의하라. → 자격증명 부족으로 차단됨
 - [2026-08-06] business 에이전트가 정의한 KPI 목록을 기반으로, E2E 테스트 스위트(`test_spec/e2e_content_pipeline_scenarios.md`)에 필요한 API 계약서(Interface)의 초기 구조를 설계하고, 핵심 데이터 필드와 예상 응답 스키마의 초안을 작성하라. → 산출물 sessions/2026-08-06T06-19/developer.md
+- [2026-08-06] 코다리는 확정된 API 계약서(`src/interfaces/diagnosis.ts`)를 기반으로 E2E 테스트 스위트(`test_spec/e2e_content_pipeline_scenarios.md`)에 필요한 상세 시나리오(Scenarios)를 구체화하고, 시스템 안정성 검증을 위한 테스트 케이스의 초안을 작성하라. → 산출물 sessions/2026-08-06T06-34/developer.md
