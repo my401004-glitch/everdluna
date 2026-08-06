@@ -2145,3 +2145,63 @@ Recently uploaded 유튜브 영상은 생산성 툴과 마케팅 트렌드에 �
 이제까지 파괴적 영상 기획안을 통해 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)이 discovery되지 않았습니다.
 
 ---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-08-03 15:44:57
+## 📡 키워드: AI 비즈니스, 유튜브 자동화
+
+**AI 비즈니스와 유튜브 자동화 트렌드 해킹 분석 보고서**
+
+**🌍 트렌드 해킹 분석**
+
+Recent 30일 동안 조회수를 끌고 있는 패턴을 분석했다.
+
+*   **AI 비즈니스**: 최근 30일 동안 AI 비즈니스에 대한 контenido가 많이 조회수에서 열등하게 끌어오고 있다. 유튜브 채널은 "The Dirty AI lie : How the GREATEST bet in human history started to crack in June 2026?"와 같은 제목의 비디오가 조회수를 끌어오는 데 큰 도움이 되었다.
+*   **유튜브 자동화**: 유튜브 automáticamente 생성된 비디오도 조회수를 끌고 있다. 채널 Faisal Shabbir는 "AI Video Workflow - Faceless Channel From Zero"라는 제목의 비디오를 통해 automatic video creation을 통해 유튜브 automatic화에 대한 관심이 높아지고 있다.
+*   **인터넷 마케팅**: 인터넷 마케팅에 대한 정보도 조회수를 끌고 있다. 채널 Andres Garza는 "Curso GRATIS Automatización de YouTube | Cómo Ganar Dinero con YouTube Con Inteligencia Artificial"라는 제목의 비디오를 통해 automatization of youtube에 대한 관심이 높아지고 있다.
+
+**🎯 빈집 털기 전략**
+
+차별화 가능한 틈새 주제를 분석했다.
+
+*   **AI 비즈니스**: AI 비즈니스와 관련된 niche topic은-growing 인 popularity으로 인해 조회수를 끌고 있다. 채널 Ayrish Stories는 "Gareeb Larki se Business Woman tak ka Safar"라는 제목의 비디오를 통해 Women entrepreneurship에 대한 관심이 높아지고 있다.
+*   **유튜브 자동화**: 유튜브自动화에 대한 niche topic은-growing 인 popularity으로 인해 조회수를 끌고 있다. 채널 GrowNex Ai는 "How To Clone Finance YouTube Channel With Claude Al [Full Automation]"라는 제목의 비디오를 통해 automatization of finance youtube channel에 대한 관심이 높아지고 있다.
+*   **인터넷 마케팅**: 인터넷 마케팅과 관련된 niche topic은-growing 인 popularity으로 인해 조회수를 끌고 있다. 채널 Shark Numbers는 "What If One AI Could Run Your Entire Business? Accio Work Review"라는 제목의 비디오를 통해 AI-powered business review에 대한 관심이 높아지고 있다.
+
+**🎬 파괴적 영상 기획안**
+
+ 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)을 분석했다.
+
+*   **썸네일 카피**: 조회수를 끌고자면 유clid적인이고 간결한 썸네일 카피가 필요
+
+---
+
+
+# 🎯 트렌드 스나이핑 보고서 — 2026-08-03 15:45:04
+## 📡 키워드: 생산성 툴, 유튜브 자동화
+
+**유튜브 생산성 툴과 자동화 트렌드 해킹 분석 보고서**
+
+### 🌍 트렌드 해킹 분석
+
+트렌드 해킹 분석을 통해 recent 30일 동안 조회수를 끌고 있는 패턴을分析할 수 있습니다.
+
+*   **생산성 툴**: 채널 "アルゴラブ(AlgoLab)"와 "ArtisanWild"가 높은 조회수를 올리는 제목과 태그를 가지고 있습니다. farm automation, CNC 초고속 가공, 농업 생산성, 파종기, 갈퀴형 채취 도구 등 다양한 주제에 대해 많은 시청자가関心을 가지고 있습니다.
+*   **AI 자동화**: 채널 "Faisal Shabbir"와 "Higgsfield AI", "ライ프해커", "Andres Garza", "GrowNex Ai"가 유튜브 자동화에 대한 트렌드를 보여주고 있습니다. Faceless Channel From Zero, Higgsfield AI + Claude Fable 5, 2026 클로드 사용법, Curso GRATIS Automatización de YouTube 등 다양한Automatic Youtube Tool에 대해 많은 시청자가 관심을 가지고 있습니다.
+*   **유튜브 자동화**: 채널 "Higgsfield AI"와 "GrowNex Ai"가 automatic youtube channel cloning에 대한 트렌드를 보여주고 있습니다. 60대 também 10분만에 마스터할 수 있는 2026 클로드 사용법, Curso GRATIS Automatización de YouTube 등 다양한Automatic Youtube Channel Cloning에 대해 많은 시청자가 관심을 가지고 있습니다.
+
+### 🎯 빈집 털기 전략
+
+빈집 털기 전략으로 차별화 가능한 틈새 주제를 identification 해보겠습니다. 
+
+*   **생산성 툴**: farm automation, CNC 초고속 가공, 농업 생산성, 파종기, 갈퀴형 채취 도구 등 다양한 주제에 대해 많은 시청자가 관심을 가지고 있습니다.
+*   **AI自動화**: Automatic Youtube Tool에 대한 트렌드를 보여주고 있으며, Automatic Youtube Channel Cloning에 대한 트렌드도 상승세를 보입니다.
+*   **유튜브 자동화**: Automatic Youtube Channel Cloning에 대한 트렌드를 보여주는 채널이 많으며, 60대 also 10분만에 마스터할 수 있는 2026 클로드 사용법을 포함한 다양한Automatic Youtube Channel Cloning에 대해 많은 시청자가 관심을 가지고 있습니다.
+
+### 🎬 파괴적 영상 기획안
+
+파괴적 영상 기획안을 creation하기 위해 썸네일 카피, 제목 3개, 후킹 오프닝(첫 5초)을 creation 해보겠습니다. 
+
+*   **썸네일 카피**: "AI
+
+---
