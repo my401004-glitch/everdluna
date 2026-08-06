@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 6. 오후 3:22:38_
+_업데이트: 2026. 8. 6. 오후 3:38:04_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 8. 6. 오후 3:22:38_
 - [2026-08-03] 확정된 비주얼 가이드라인과 최적 게시 시간을 활용하여 Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그)을 완성하고 배포 준비를 완료하라. → 산출물 sessions/2026-08-03T04-12/instagram.md
 - [2026-08-03] Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그 포함)을 완성하고 배포 준비를 완료할 것. → 산출물 sessions/2026-08-03T04-57/instagram.md
 ### 🎨 Designer
-- [2026-08-03] Master_Design_System_Component_Library_Blueprint_v1.0.md의 디자인 규격을 코다리의 개발 로직 검증이 용이하도록 명확하게 구조화하여, 코드와 디자인 간의 연동 기준을 최종 확정할 것. → 산출물 sessions/2026-08-03T06-12/designer.md
 - [2026-08-03] Master_Design_System_Component_Library_Blueprint_v1.0.md를 기반으로, 핵심 컴포넌트들의 Component Props와 Integration Logic을 최종적으로 상세화하여 'Design-Dev Interface Specification'을 완성할 것. → 산출물 sessions/2026-08-03T06-27/designer.md
 - [2026-08-06] 기존 확정된 '아지트아트컴페니 디자인 시스템 규격서'를 기반으로, 유튜브 콘텐츠에 적용할 핵심 시각 컴포넌트(썸네일 프레임, 인트로 스타일 등)의 초기 프로토타입을 3가지 버전으로 디자인하여 제작하라. → 산출물 sessions/2026-08-06T03-02/designer.md
+- [2026-08-06] Designer는 비즈니스 에이전트가 정의한 핵심 KPI(`Gap Score`, `Emotional Consistency Score`)를 사용자 대시보드에 시각적으로 매핑하는 디자인 프로토타입의 데이터 흐름(Data Flow) 구조를 먼저 설계하라. → 산출물 sessions/2026-08-06T06-34/designer.md
 ### 💻 코다리
-- [2026-08-06] business 에이전트가 정의한 '필요 데이터 필드'를 바탕으로 E2E 테스트 스위트(`test_spec/e2e_content_pipeline_scenarios.md`)에 필요한 API 계약서(Interface) 구현 계획을 구체화하라. → 산출물 sessions/2026-08-06T05-49/developer.md
 - [2026-08-06] business 에이전트가 확정한 KPI 매핑 테이블(`Metric_Mapping_Plan_v1.md`)을 기반으로, E2E 테스트 스위트(`test_spec/e2e_content_pipeline_scenarios.md`)에 필요한 API 계약서(Interface) 구현 계획을 구체화하고, 이 계약서가 시스템 안정성 검증의 '진실의 근원지'가 되도록 정의하라. → 자격증명 부족으로 차단됨
 - [2026-08-06] business 에이전트가 정의한 KPI 목록을 기반으로, E2E 테스트 스위트(`test_spec/e2e_content_pipeline_scenarios.md`)에 필요한 API 계약서(Interface)의 초기 구조를 설계하고, 핵심 데이터 필드와 예상 응답 스키마의 초안을 작성하라. → 산출물 sessions/2026-08-06T06-19/developer.md
+- [2026-08-06] 코다리는 확정된 API 계약서(`src/interfaces/diagnosis.ts`)를 기반으로 E2E 테스트 스위트(`test_spec/e2e_content_pipeline_scenarios.md`)에 필요한 상세 시나리오(Scenarios)를 구체화하고, 시스템 안정성 검증을 위한 테스트 케이스의 초안을 작성하라. → 산출물 sessions/2026-08-06T06-34/developer.md
 ### 💼 현빈
 - [2026-08-06] 구현될 E2E 테스트 스위트가 유튜브 구독자 수 및 영상 KPI 산출 로직과 정확히 연동되는지 검증하기 위한 초기 지표 매핑(Metric Mapping) 계획을 수립하라. → 산출물 sessions/2026-08-06T05-34/business.md
 - [2026-08-06] 현빈의 KPI 매핑 테이블(`Metric_Mapping_Plan_v1.md`)을 기반으로 실제 데이터 필드와 KPI 간의 연결 고리를 최종 확정하고, 코다리가 검증할 수 있는 명확한 로직 정의를 완료하라. → 산출물 sessions/2026-08-06T05-49/business.md
