@@ -598,3 +598,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-06] test_spec/e2e_content_pipeline_scenarios.md에 기반하여 시스템 안정성 확보를 위한 E2E 테스트 스위트 구현을 즉시 시작하고, 핵심 백엔드 서비스 레이어의 API 계약서(Interface) 구현 계획을 구체화하라. → 산출물 sessions/2026-08-06T04-31/developer.md
 - [2026-08-06] test_spec/e2e_content_pipeline_scenarios.md에 기반하여 시스템 안정성 확보를 위한 E2E 테스트 스위트 구현을 즉시 시작하고, 핵심 백엔드 서비스 레이어의 API 계약서(Interface) 구현 계획을 구체화하라. → 산출물 sessions/2026-08-06T05-04/developer.md
 - [2026-08-06] test_spec/e2e_content_pipeline_scenarios.md에 기반하여 시스템 안정성 확보를 위한 E2E 테스트 스위트 구현을 즉시 시작하고, 핵심 백엔드 서비스 레이어의 API 계약서(Interface) 구현 계획을 구체화하라. → 산출물 sessions/2026-08-06T05-34/developer.md
+- [2026-08-06] business 에이전트가 정의한 '필요 데이터 필드'를 바탕으로 E2E 테스트 스위트(`test_spec/e2e_content_pipeline_scenarios.md`)에 필요한 API 계약서(Interface) 구현 계획을 구체화하라. → 산출물 sessions/2026-08-06T05-49/developer.md
