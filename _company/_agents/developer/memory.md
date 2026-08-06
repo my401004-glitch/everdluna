@@ -593,3 +593,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-03] DiagnosisService의 Critical Failure Point(Zero Input, Out-of-Range Data)에 대한 예외 처리 로직 및 기본값 설정을 즉시 구현하여 시스템 안정성을 확보할 것. → 산출물 sessions/2026-08-03T04-57/developer.md
 - [2026-08-03] Master_Design_System_Component_Library_Blueprint_v1.0.md를 기반으로, 핵심 UI 요소(예: Gap Score 계산기 위젯)의 프로그래밍 로직 구현을 즉시 시작하고, 디자인 시스템 적용을 최우선으로 하여 기능 구현에 착수할 것. → 산출물 sessions/2026-08-03T06-12/developer.md
 - [2026-08-03] Designer가 확정한 'Design-Dev Interface Specification'을 기반으로, 핵심 UI 요소(예: Gap Score 계산기 위젯)의 프로그래밍 로직 구현 계획 및 E2E 테스트 스위트 설계에 착수할 것. → 산출물 sessions/2026-08-03T06-27/developer.md
+- [2026-08-06] 콘텐츠 제작 파이프라인에서 가장 중요한 KPI 연동 로직(예: 데이터 수집 $ightarrow$ 영상 길이/구성의 상관관계)에 대한 E2E 테스트 스위트의 초기 구조를 설계하고, 데이터 흐름을 검증할 수 있는 최소한의 API 엔드포인트를 정의하라. → 산출물 sessions/2026-08-06T03-02/developer.md
