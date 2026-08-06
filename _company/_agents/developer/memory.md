@@ -607,3 +607,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-06] Presentation Validator Service 구현을 위한 API 계약서(`src/interfaces/diagnosis.ts`) 확장 및 핵심 로직 구현을 즉시 시작하고, E2E 테스트 스위트 통합 계획을 수립하라. → 산출물 sessions/2026-08-06T07-19/developer.md
 - [2026-08-06] 정의된 E2E 테스트 스위트에 Presentation Validator Service 호출 및 결과 검증 단계를 통합하는 자동화 스크립트 구현 계획을 수립하라. → 산출물 sessions/2026-08-06T07-19/developer.md
 - [2026-08-06] E2E 테스트 스위트에서 KPI Gauge 로직이 올바르게 작동하고 시각적 일관성 검증 로직이 성공적으로 통합되었는지 최종 검증하는 자동화 스크립트를 구현하고 실행 환경을 점검하라. → 산출물 sessions/2026-08-06T07-34/developer.md
+- [2026-08-06] business 에이전트가 정의한 유료 모듈 구조와 KPI 데이터 흐름을 기반으로, 해당 모듈에서 필요한 '진행률 데이터' 및 '개인화 피드백 데이터'를 수집하고 반환하는 최소한의 API 인터페이스(Interface) 구현 계획을 수립하라. → 산출물 sessions/2026-08-06T07-49/developer.md
