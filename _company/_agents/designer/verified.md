@@ -1043,3 +1043,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-03] | **Subtitle/Score** | Montserrat Medium | 500 | 구체적인 수치나 섹션의 제목을 강조할 때 사용. | | _(근거: Designer 검증된 지식)_
 - [2026-08-03] | **Body (본문/데이터)** | Noto Sans KR | Regular/Medium | 상세 설명, 그래프 라벨, 일반 데이터 제시. 높은 가독성 유지. | | _(근거: Designer 검증된 지식)_
 - [2026-08-03] (컬러, 타이포) + [Designer 개인 메모리] (Pain $\rightarrow$ Gain 프레임워크) + [CEO 지시사항] (전체 구조화) _(근거: Designer 검증된 지식)_
+- [2026-08-06] * **Primary Color (신뢰):** Dark Blue (`#0A2463`) - 배경, 제목 영역. _(근거: Designer 검증된 지식)_
+- [2026-08-06] * **Accent Yellow (행동 유도/기회):** Accent Yellow (`#FFD700`) - KPI 위험 구간(Pain), 목표 달성 수치 강조(Gain), CTA. _(근거: Designer 검증된 지식)_
+- [2026-08-06] * **Background:** Neutral Grey (`#F5F5F5`) - 데이터 테이블 및 본문 배경. _(근거: Designer 검증된 지식)_
+- [2026-08-06] * **헤더 (지표명):** Montserrat Bold, Dark Blue (`#0A2463`), 18pt. _(근거: Designer 검증된 지식)_
