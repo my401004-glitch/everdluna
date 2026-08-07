@@ -1080,3 +1080,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-07] * **Neutral Background:** `#F5F5F5` (Light Grey) - 데이터 배경 및 가독성 확보. _(근거: Designer 검증된 지식)_
 - [2026-08-07] * > 70%: Red (심각 위험/Pain Point) - `#D32F2F` (Red 계열) _(근거: 진단 리포트 콘셉트)_
 - [2026-08-07] * **정보 계층 구조:** 모든 섹션은 반드시 **[Problem Statement] $\rightarrow$ [Diagnosis Data (Pain)] $\rightarrow$ [Solution/CTA (Gain)]**의 순서를 따릅니다. (Pain $\rightarrow$ Gain 프레임워크 유지). _(근거: Designer 검증된 지식)_
+- [2026-08-07] * **규칙:** 사용자에게 단순히 "잘못되었다"고 보여주는 것이 아니라, **"왜 잘못되었는지 (Cause)"**와 **"어떻게 개선해야 하는지 (Solution)"**를 명확히 제시합니다. _(근거: Designer 검증된 지식)_
+- [2026-08-07] | **Validation Alert** | 필드 단위의 실시간 오류 알림창. 가장 중요도가 높은 경고를 표시합니다. | 배경: Light Red/Pink 계열 (`#F8D7DA`), 테두리: `#DC3545`. 폰트: Montserrat Bold (강조). 아이콘: $\triangle$ (경고 삼각형). | "⚠️ 안정도가 너무 낮습니다. 최소 0.7 이상으로 조정해주세요." | _(근거: Designer 검증된 지식)_
+- [2026-08-07] | **Tooltip Guide** | 필드를 클릭하거나 포커싱 할 때 나타나는 상세 가이드라인/개선 방향 제시. | 배경: Light Yellow (`#FFF3CD`), 테두리: `#FFC107`. 아이콘: $i$ (정보). 폰트: Noto Sans KR (가독성 강조). | "💡 Tip: 안정도는 피치 변화폭을 평균하여 계산합니다. 이 값을 높이려면... 등의 구체적 설명." | _(근거: Designer 검증된 지식)_
+- [2026-08-07] | **Success State** | 데이터 유효성이 성공적으로 검증되었음을 사용자에게 알려주는 시각적 확신 제공. | 테두리/배경: Primary Color Dark Blue (`#0A2463`). 체크마크: $\checkmark$ (Green). | "✅ 모든 데이터가 시스템 프로토콜을 통과했습니다." | _(근거: Designer 검증된 지식)_
+- [2026-08-07] 1. 개발팀은 `POST /api/v1/validate_diagnosis` 응답 시, 위 테이블에 정의된 `error code`를 정확히 반환해야 합니다. _(근거: 코다리 산출물)_
