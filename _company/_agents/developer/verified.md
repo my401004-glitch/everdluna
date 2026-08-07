@@ -782,3 +782,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-07] monetization: number; // Monetization KPI 값 // _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-08-07] * **Test Case A (RBAC):** 무료 사용자(Role=Basic)로 테스트 시, `kpi_metrics`에 포함된 'Monetization' 관련 지표는 **Null 또는 0 값으로 처리되거나 아예 응답 스키마에서 제외**되어야 한다. _(근거: sessions/2026-05-18T13:43)_
 - [2026-08-07] * **Test Case B (Schema Compliance):** 모든 KPI(`Growth`, `Engagement`, `Monetization`) 값은 SQL 데이터베이스의 유효 범위(예: 0~100)를 초과할 수 없으며, JSON 스키마 (`DiagnosisResultSchema.ts`)에 정의된 타입을 반드시 준수해야 한다. _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-08-07] CEO 지시사항과 지난 의사결정 로그를 검토했습니다. 핵심은 **`POST /api/v1/validate_diagnosis` 엔드포인트의 구현 및 E2E 테스트 초안 마련**입니다. _(근거: sessions/2026-08-07T05:54/developer.md, CEO 지시)_
