@@ -1064,3 +1064,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-07] 2. **자막/본문:** Noto Sans KR Medium을 사용하여 데이터가 흐르는 듯한 리듬감을 유지한다. 배경색은 Neutral Grey (`#F5F5F5`)로 설정하여 시선 피로도를 줄이고 가독성을 높인다. _(근거: Designer 검증된 지식)_
 - [2026-08-07] **** _(근거: Designer 검증된 지식 / sessions/2026-08-07T02-39/designer.md)_
 - [2026-08-07] **** _(근거: 레오님 Shot List 및 Designer Visual Spec 통합)_
+- [2026-08-07] ## I. 프로젝트 개요 및 목표 _(근거: sessions/2026-08-07T02-39/designer.md)_
+- [2026-08-07] ## II. 비주얼 컴포넌트 사양 (Visual Components Spec) _(근거: sessions/2026-08-07T02-54/designer.md)_
+- [2026-08-07] * **헤드라인 (H1):** Montserrat Bold (``) _(근거: sessions/2026-05-19T04:14/designer.md)_
+- [2026-08-07] * **본문 (Body):** Noto Sans KR Regular/Medium (``) _(근거: sessions/2026-05-18T13-49/designer.md)_
+- [2026-08-07] ## III. 모션 및 전환 스타일 (Motion & Transition Style) _(근거: sessions/2026-08-07T02-54/designer.md)_
