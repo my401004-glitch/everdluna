@@ -1062,3 +1062,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-07] | **Body Font** | Noto Sans KR (Regular/Medium) | 설명 텍스트, 그래프 레이블, 데이터 수치 등에 사용. 가독성 최우선. | | _(근거: Designer 검증된 지식)_
 - [2026-08-07] 1. **제목 카드 (Title Cards):** Montserrat Bold를 사용하며, 크고, 각진 사각형 형태의 패널에 배치하여 전문적인 느낌을 준다. _(근거: Designer 검증된 지식)_
 - [2026-08-07] 2. **자막/본문:** Noto Sans KR Medium을 사용하여 데이터가 흐르는 듯한 리듬감을 유지한다. 배경색은 Neutral Grey (`#F5F5F5`)로 설정하여 시선 피로도를 줄이고 가독성을 높인다. _(근거: Designer 검증된 지식)_
+- [2026-08-07] **** _(근거: Designer 검증된 지식 / sessions/2026-08-07T02-39/designer.md)_
+- [2026-08-07] **** _(근거: 레오님 Shot List 및 Designer Visual Spec 통합)_
