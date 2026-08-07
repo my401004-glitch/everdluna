@@ -618,3 +618,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-07] ValidatorService의 Python/TypeScript 프로토타입 코드를 실제 API 엔드포인트(`POST /api/v1/validate_diagnosis`)에 통합하여 구현하고, 시스템적 일관성을 검증하는 로직을 완성하라. → 산출물 sessions/2026-08-07T05-54/developer.md
 - [2026-08-07] POST /api/v1/validate_diagnosis 엔드포인트 구현 및 E2E 테스트 스크립트 초안 작성을 최우선으로 진행하여 시스템의 핵심 기능 검증 기반을 마련할 것. → 산출물 sessions/2026-08-07T06-09/developer.md
 - [2026-08-07] POST /api/v1/validate_diagnosis 엔드포인트의 최종 API 출력 스키마(Contract)를 확정하고, 이 스키마에 기반한 E2E 테스트 스크립트 초안을 완성하여 산출물로 제시하라. → 산출물 sessions/2026-08-07T06-24/developer.md
+- [2026-08-07] diagnosis_v1_contract.ts에 대한 최종 승인 및 모든 필드/예외 처리 로직 확정 보고서를 작성하고, 이를 바탕으로 E2E 테스트 스크립트 초안을 완성할 준비를 하라. → 산출물 sessions/2026-08-07T06-39/developer.md

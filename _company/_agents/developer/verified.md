@@ -783,3 +783,9 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-07] * **Test Case A (RBAC):** 무료 사용자(Role=Basic)로 테스트 시, `kpi_metrics`에 포함된 'Monetization' 관련 지표는 **Null 또는 0 값으로 처리되거나 아예 응답 스키마에서 제외**되어야 한다. _(근거: sessions/2026-05-18T13:43)_
 - [2026-08-07] * **Test Case B (Schema Compliance):** 모든 KPI(`Growth`, `Engagement`, `Monetization`) 값은 SQL 데이터베이스의 유효 범위(예: 0~100)를 초과할 수 없으며, JSON 스키마 (`DiagnosisResultSchema.ts`)에 정의된 타입을 반드시 준수해야 한다. _(근거: sessions/2026-05-18T14-34/developer.md)_
 - [2026-08-07] CEO 지시사항과 지난 의사결정 로그를 검토했습니다. 핵심은 **`POST /api/v1/validate_diagnosis` 엔드포인트의 구현 및 E2E 테스트 초안 마련**입니다. _(근거: sessions/2026-08-07T05:54/developer.md, CEO 지시)_
+- [2026-08-07] 컨트랙트를 읽고 구조적 결함이나 누락된 필드가 없는지 확인했습니다. 현재 정의된 스키마는 **시스템의 일관성을 강제하는 관점에서 매우 견고합니다.** _(근거: sessions/2026-08-07T06-24/developer.md)_
+- [2026-08-07] | **Purpose** | 데이터 구조의 최우선화 | 진단 점수(`DiagnosisScore`)와 사용자의 맥락 정보(`Context`)를 결합하여 단일한 API 응답 스키마를 확립함. | ✅ 승인 | _(근거: sessions/2026-08-07T06-24/developer.md)_
+- [2026-08-07] | **필수 필드** | `diagnosisScore` (DiagnosisScore) | `growth`, `engagement`, `monetization` 세 가지 핵심 KPI 구조가 완벽하게 정의됨. 이 3가지 지표가 비즈니스 목표(KPI)와 직접 연결되어 있어 논리적 일관성이 높음. | ✅ 승인 | _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-08-07] | **필수 필드** | `context` (Context) | 진단이 이루어진 맥락 정보(예: 사용자가 어떤 콘텐츠를 소비했는지, 어느 단계에 있는지 등)가 포함되어 추적 가능성을 높임. 이는 나중에 리포트 생성의 근거가 됨. | ✅ 승인 | _(근거: sessions/2026-05-18T43/developer.md)_
+- [2026-08-07] | **예외 처리** | 유효성 검사 (Validation) | `diagnosis_type` 및 KPI 값에 대한 경계값(Boundary Value) 체크는 필수입니다. 스키마 레벨에서 타입만 정의할 것이 아니라, 백엔드 로직(`ValidatorService`)에서 **'예상 범위 이탈 감지'**를 반드시 구현해야 합니다. | ⚙️ 보강 필요 (백엔드) | _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-08-07] | **누락 가능성** | 사용자 세션 데이터 | `context` 객체 내에 세션 시작 시간(`sessionId`) 및 마지막 활동 시간(`lastActiveTimestamp`)을 추가하여, 시간이 흐름에 따른 변화 추이(Temporal Drift) 분석의 근거를 확보해야 합니다. | ➕ 추가 제안 | _(근거: sessions/2026-05-18T43/developer.md)_
