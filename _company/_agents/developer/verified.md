@@ -778,3 +778,7 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-07] 가장 중요한 것은 '일관성'입니다. 디자인 시스템이 아무리 완벽해도, 그 데이터를 뒷받침하는 API 계약(Contract)이 불안정하면 모든 것이 무너집니다. _(근거: 코딩 원칙 - 테스트 가능하게)_
 - [2026-08-07] 이제 정의된 계약을 실제로 지킬 백엔드 코드를 만듭니다. 저는 Express/FastAPI 패턴에 익숙하므로, TypeScript 기반의 `diagnosisController.ts`를 생성하고 핵심 엔드포인트와 유효성 검증 로직(Validation Guard)을 포함하겠습니다. _(근거: sessions/2026-05-19T09:57)_
 - [2026-08-07] Writer는 '시스템 제시'라는 강력한 논리 구조를 확보했고, [근거: 2] Designer는 이를 강제하는 시각적 가이드라인(Pain $\rightarrow$ Diagnosis $\rightarrow$ Gain)을 완성했습니다. [근거: 3] 저는 이미 백엔드 API 및 데이터 스키마(`DiagnosisResultSchema.ts`, `diagnosisController.ts`)를 통해 '데이터의 논리'는 준비했습니다. _(근거: 1)_
+- [2026-08-07] CEO님의 지시는 핵심적인 시스템 아키텍처 검증 단계입니다. 창의적인 결과물(시퀀스 스펙)이 기술적 실행 가능성(API 인터페이스)과 데이터 무결성을 잃으면, 아무리 멋진 영상도 '구현 불가능한 미학'으로 끝날 수밖에 없습니다. _(근거: sessions/2026-08-07T04-54)_
+- [2026-08-07] monetization: number; // Monetization KPI 값 // _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-08-07] * **Test Case A (RBAC):** 무료 사용자(Role=Basic)로 테스트 시, `kpi_metrics`에 포함된 'Monetization' 관련 지표는 **Null 또는 0 값으로 처리되거나 아예 응답 스키마에서 제외**되어야 한다. _(근거: sessions/2026-05-18T13:43)_
+- [2026-08-07] * **Test Case B (Schema Compliance):** 모든 KPI(`Growth`, `Engagement`, `Monetization`) 값은 SQL 데이터베이스의 유효 범위(예: 0~100)를 초과할 수 없으며, JSON 스키마 (`DiagnosisResultSchema.ts`)에 정의된 타입을 반드시 준수해야 한다. _(근거: sessions/2026-05-18T14-34/developer.md)_
