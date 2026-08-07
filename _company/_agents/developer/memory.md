@@ -615,3 +615,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-07] Writer와 Designer가 확정한 스크립트 및 디자인 요소를 바탕으로, 영상 편집에 필요한 상세 내레이션과 구성(Shot List)을 확정하고, 시스템적 일관성을 검증할 실행 계획 초안을 수립할 것. → 산출물 sessions/2026-08-07T05-09/developer.md
 - [2026-08-07] Writer와 Designer가 합의한 '통합 기술 시퀀스 스펙'(`Technical_Sequence_Spec_V1.md`)을 기반으로, 영상 제작에 필요한 모든 데이터 흐름(KPI 매핑, 디자인 시스템 변수)이 코드가 요구하는 API 인터페이스와 완벽하게 일치하도록 E2E 테스트 환경의 통합 검증 계획을 수립하라. → 산출물 sessions/2026-08-07T05-24/developer.md
 - [2026-08-07] 코다리는 `Data_Input_Mockup.json` 데이터를 기반으로, 디자인 프로토콜이 자동으로 검증하는 통합 테스트 환경(API 인터페이스 및 검증 스크립트 초안) 구축 계획을 수립하고, Designer가 정의한 QA 체크포인트를 코드로 변환할 방안을 제시하라. → 산출물 sessions/2026-08-07T05-39/developer.md
+- [2026-08-07] ValidatorService의 Python/TypeScript 프로토타입 코드를 실제 API 엔드포인트(`POST /api/v1/validate_diagnosis`)에 통합하여 구현하고, 시스템적 일관성을 검증하는 로직을 완성하라. → 산출물 sessions/2026-08-07T05-54/developer.md
