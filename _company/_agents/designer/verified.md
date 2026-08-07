@@ -1073,3 +1073,10 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-07] 2. **파열/붕괴(Collapse):** 시스템 오류 발생 시, 요소들은 단순 페이드 아웃이 아닌 **'픽셀화(Pixelation)' 또는 '글리치 효과(Glitch Effect)'**를 통해 흩어지거나 깨지는 애니메이션을 반드시 적용합니다. _(근거: CEO 지시 및 Video 2 콘셉트)_
 - [2026-08-07] * `T01_KPI_Gauge_Progress.aep`: 진행률 게이지 모듈 (색상: Yellow $\rightarrow$ Red). _(근거: Designer 검증된 지식)_
 - [2026-08-07] * **핵심 원칙 (Self-RAG):** Pain $\rightarrow$ Gain 프레임워크 적용. 모든 시각적 요소는 '현재 손실'과 '솔루션 이득'의 대비로 구성된다. _(근거: sessions/2026-05-19T04:14/designer.md)_
+- [2026-08-07] CEO 지시를 재검토했습니다. 운영자 Pain Point 강조형 진단 리포트 Mockup 자체는 이미 최종 디자인 명세서와 목업 형태로 완성되어 시스템에 기록되어 있습니다 . 단순히 '재제작'하는 것은 자원 낭비이며, 최고의 가치를 창출하기 위해서는 이 **최종 결과물을 표준화하고 재활용 가능한 아셋으로 변환**하는 것이 가장 시급합니다. _(근거: sessions/2026-08-07T04-09/designer.md)_
+- [2026-08-07] * **Primary Trust (신뢰/안정):** `#0A2463` (Dark Blue) - 배경, 신뢰 영역. _(근거: Designer 검증된 지식)_
+- [2026-08-07] * **Accent Risk/CTA (경고/행동유도):** `#FFD700` (Accent Yellow) - Pain Point 강조, CTA, 위험 지표. _(근거: Designer 검증된 지식)_
+- [2026-08-07] * **Secondary Success (성공/Gain):** `#4CAF50` (Green) - 개선 영역, 목표 달성 수치. _(근거: sessions/2026-05-18T19-13/designer.md 참고)_
+- [2026-08-07] * **Neutral Background:** `#F5F5F5` (Light Grey) - 데이터 배경 및 가독성 확보. _(근거: Designer 검증된 지식)_
+- [2026-08-07] * > 70%: Red (심각 위험/Pain Point) - `#D32F2F` (Red 계열) _(근거: 진단 리포트 콘셉트)_
+- [2026-08-07] * **정보 계층 구조:** 모든 섹션은 반드시 **[Problem Statement] $\rightarrow$ [Diagnosis Data (Pain)] $\rightarrow$ [Solution/CTA (Gain)]**의 순서를 따릅니다. (Pain $\rightarrow$ Gain 프레임워크 유지). _(근거: Designer 검증된 지식)_
