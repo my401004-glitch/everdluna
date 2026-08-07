@@ -1069,3 +1069,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-07] * **헤드라인 (H1):** Montserrat Bold (``) _(근거: sessions/2026-05-19T04:14/designer.md)_
 - [2026-08-07] * **본문 (Body):** Noto Sans KR Regular/Medium (``) _(근거: sessions/2026-05-18T13-49/designer.md)_
 - [2026-08-07] ## III. 모션 및 전환 스타일 (Motion & Transition Style) _(근거: sessions/2026-08-07T02-54/designer.md)_
+- [2026-08-07] 1. **데이터 전개(Build-up):** 모든 데이터는 갑자기 나타나지 않습니다. **'점진적 로딩 효과(Progressive Loading)'**와 함께 숫자가 카운트업되거나 그래프가 그려지는 애니메이션을 사용합니다. _(근거: Designer 검증된 지식)_
+- [2026-08-07] 2. **파열/붕괴(Collapse):** 시스템 오류 발생 시, 요소들은 단순 페이드 아웃이 아닌 **'픽셀화(Pixelation)' 또는 '글리치 효과(Glitch Effect)'**를 통해 흩어지거나 깨지는 애니메이션을 반드시 적용합니다. _(근거: CEO 지시 및 Video 2 콘셉트)_
+- [2026-08-07] * `T01_KPI_Gauge_Progress.aep`: 진행률 게이지 모듈 (색상: Yellow $\rightarrow$ Red). _(근거: Designer 검증된 지식)_
