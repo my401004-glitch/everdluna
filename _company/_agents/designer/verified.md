@@ -1055,3 +1055,10 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-07] | **메인 컨셉** | 신뢰 기반의 성장/개선 (Gain Focus) | **시스템 오류 진단/위험 경고 (Pain Focus)** | "운영 비효율"이라는 주제는 '경고'가 핵심. 시각적 공포(Fear)를 자극하여 문제 인식에 집중하게 합니다. | _(근거: Writer 스크립트)_
 - [2026-08-07] | **Primary Color** | Dark Blue (`#0A2463`) (안정성) | **Dark Blue (`#0A2463`) 유지**: 전문성의 배경 축을 담당합니다. | 신뢰성을 잃지 않기 위한 기반 색상으로 고수합니다. | _(근거: Designer 검증된 지식)_
 - [2026-08-07] | **Typography** | Montserrat Bold (헤드라인) | **Montserrat Bold 유지**: 강력한 메시지 전달력은 필수입니다. 다만, *글자에 Glitch/Digital 효과*를 추가합니다. | 전문성을 유지하며 '데이터 시스템'의 느낌을 강화합니다. | _(근거: Designer 검증된 지식)_
+- [2026-08-07] | **Primary Trust** | `#0A2463` (Dark Blue) | 메인 배경, 핵심 정보 패널, 안정적 데이터 그래프의 기본색. 신뢰와 전문성을 상징. | | _(근거: Designer 검증된 지식)_
+- [2026-08-07] | **Accent Opportunity (Gain)** | `#FFD700` (Yellow) | 전환점(Turnaround), AI 솔루션 제시 시점, 핵심 수치 강조. 즉각적인 주목 유도. | | _(근거: Designer 검증된 지식)_
+- [2026-08-07] | **Neutral Background** | `#F5F5F5` (Grey) | 데이터 텍스트 배경, 본문 설명 영역. Dark Blue와의 대비를 통한 가독성 확보. | | _(근거: Designer 검증된 지식)_
+- [2026-08-07] | **Title Font** | Montserrat Bold | 모든 헤드라인, 경고 문구(Pain), 핵심 결과값에 사용. 강력한 임팩트 필요. | | _(근거: Designer 검증된 지식)_
+- [2026-08-07] | **Body Font** | Noto Sans KR (Regular/Medium) | 설명 텍스트, 그래프 레이블, 데이터 수치 등에 사용. 가독성 최우선. | | _(근거: Designer 검증된 지식)_
+- [2026-08-07] 1. **제목 카드 (Title Cards):** Montserrat Bold를 사용하며, 크고, 각진 사각형 형태의 패널에 배치하여 전문적인 느낌을 준다. _(근거: Designer 검증된 지식)_
+- [2026-08-07] 2. **자막/본문:** Noto Sans KR Medium을 사용하여 데이터가 흐르는 듯한 리듬감을 유지한다. 배경색은 Neutral Grey (`#F5F5F5`)로 설정하여 시선 피로도를 줄이고 가독성을 높인다. _(근거: Designer 검증된 지식)_
