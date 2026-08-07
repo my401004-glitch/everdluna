@@ -1088,3 +1088,9 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-07] 1. **High (위험):** **강한 경고의 Yellow (`#FFD700`) 배경, Montserrat Bold 텍스트.** "즉시 개선 필요" 등의 문구와 함께 CTA 버튼을 강제 노출한다. _(근거: Designer 검증된 지식)_
 - [2026-08-07] 1. **Pain $\rightarrow$ Gain**: 진단 결과는 반드시 '현재 부족한 점(Pain)'에 대한 경고로 시작하여, 이 시스템을 통해 얻을 수 있는 '미래의 성과(Gain/ROI)'로 자연스럽게 연결되어야 한다. _(근거: Designer 검증된 지식)_
 - [2026-08-07] | **4** | **프론트엔드 시각화 (Visualization)** | 프론트엔드 / UI 컴포넌트 | DiagnosisScore, Context Data | 🔹 **Pain/Gain Framing 적용:** 핵심 메시지(``)를 활용하여 시각화 구조 설계. <br>🔸 `Diagnostic_Feedback_Panel` 컴포넌트 호출. | 사용자가 인지하는 최종 '피드백 패널' 및 개선 액션 플랜 (CTA) | _(근거: sessions/2026-05-19T04:14/designer.md)_
+- [2026-08-07] * 코다리가 정의한 데이터 상태 변화와 기존의 브랜드 시스템(``)을 결합하여, 실제 화면에 구현될 **핵심 컴포넌트별 디자인 규격(Color/Typography/Animation)**을 담은 최종 Working Spec 목업 가이드를 완성합니다. _(근거: Designer 검증된 지식)_
+- [2026-08-07] * **Pain $\rightarrow$ Gain 강조:** 시각화는 항상 사용자가 가진 현재의 문제점(Risk/Gap)을 먼저 보여주고, 우리의 솔루션 적용 시 얻게 될 이득(Potential Gain)으로 자연스럽게 연결되어야 합니다. _(근거: Designer 검증된 지식)_
+- [2026-08-07] ## 🎨 컬러 및 타이포그래피 시스템 적용 _(근거: Designer 검증된 지식)_
+- [2026-08-07] | **실제 점수 바** | Smooth gradient fill. `` | `diagnosis_score` 값에 따라 0% ~ 100% 채워짐. | **Conditional Styling:** <br> - 80점 이상: Dark Blue (`#0A2463`) (안정) <br> - 50~79점: Accent Yellow (`#FFD700`) (주의/기회) <br> - 50점 미만: Red (`#C53A3A`) (위험, 경고!) | _(근거: Designer 검증된 지식)_
+- [2026-08-07] * **목표:** 사용자가 인식하지 못했던 '결핍'을 숫자로 보여주어 충격 효과를 극대화합니다. _(근거: Designer 검증된 지식)_
+- [2026-08-07] * **목표:** Pain(Gap)을 제시한 직후에 반드시 이득(Gain)을 보여주어 동기 부여를 합니다. _(근거: Designer 검증된 지식)_
