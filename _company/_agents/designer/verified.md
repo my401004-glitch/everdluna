@@ -1087,3 +1087,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-07] 1. 개발팀은 `POST /api/v1/validate_diagnosis` 응답 시, 위 테이블에 정의된 `error code`를 정확히 반환해야 합니다. _(근거: 코다리 산출물)_
 - [2026-08-07] 1. **High (위험):** **강한 경고의 Yellow (`#FFD700`) 배경, Montserrat Bold 텍스트.** "즉시 개선 필요" 등의 문구와 함께 CTA 버튼을 강제 노출한다. _(근거: Designer 검증된 지식)_
 - [2026-08-07] 1. **Pain $\rightarrow$ Gain**: 진단 결과는 반드시 '현재 부족한 점(Pain)'에 대한 경고로 시작하여, 이 시스템을 통해 얻을 수 있는 '미래의 성과(Gain/ROI)'로 자연스럽게 연결되어야 한다. _(근거: Designer 검증된 지식)_
+- [2026-08-07] | **4** | **프론트엔드 시각화 (Visualization)** | 프론트엔드 / UI 컴포넌트 | DiagnosisScore, Context Data | 🔹 **Pain/Gain Framing 적용:** 핵심 메시지(``)를 활용하여 시각화 구조 설계. <br>🔸 `Diagnostic_Feedback_Panel` 컴포넌트 호출. | 사용자가 인지하는 최종 '피드백 패널' 및 개선 액션 플랜 (CTA) | _(근거: sessions/2026-05-19T04:14/designer.md)_
