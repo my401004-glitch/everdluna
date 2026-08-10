@@ -1,25 +1,25 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 10. 오후 12:23:33_
+_업데이트: 2026. 8. 10. 오후 12:37:46_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-08-10] Master Video Content System Guidebook v1.0과 Designer의 최종 디자인 시스템을 기반으로, 다음 4개 영상(또는 계획된 콘텐츠)에 대한 구체적인 시퀀스 목록 및 제작 실행 청사진을 작성하라. → 산출물 sessions/2026-08-10T01-33/youtube.md
 - [2026-08-10] Master Video Content System Guidebook v1.0 및 Designer의 마스터 디자인 시스템(Template A/B)을 기반으로, 향후 제작할 영상 4개에 대한 최종 시퀀스 목록과 각 영상별 스토리라인 적용 청사진을 구체적으로 작성하라. → 산출물 sessions/2026-08-10T01-48/youtube.md
 - [2026-08-10] Designer가 제작할 시각 결과물을 기반으로, 레오의 청사진을 구체화하여 향후 4개 영상에 대한 최종 시퀀스 목록 및 제작 실행 청사진을 완성하라. → 산출물 sessions/2026-08-10T03-03/youtube.md
+- [2026-08-10] Master Video Content System Guidebook 및 Designer의 Production Bible을 기반으로, 다음 영상(또는 계획된 콘텐츠)에 대한 최종 시퀀스 목록과 제작 실행 청사진을 구체적으로 작성하여 편집 준비를 완료하라. → 산출물 sessions/2026-08-10T03-33/youtube.md
 ### 📷 Instagram
 - [2026-07-28] 최종 확정된 영상 포맷 및 스크립트의 핵심 메시지를 활용하여 Reels 1번 콘텐츠의 최종 게시 포스팅 초안(캡션, 해시태그 포함)을 작성하고 최적의 게시 시간을 제안할 것. → 산출물 sessions/2026-07-28T02-32/instagram.md
 - [2026-08-03] 확정된 비주얼 가이드라인과 최적 게시 시간을 활용하여 Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그)을 완성하고 배포 준비를 완료하라. → 산출물 sessions/2026-08-03T04-12/instagram.md
 - [2026-08-03] Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그 포함)을 완성하고 배포 준비를 완료할 것. → 산출물 sessions/2026-08-03T04-57/instagram.md
 ### 🎨 Designer
-- [2026-08-10] Video 1 최종 디자인 에셋(`Video1_Final_Asset_Figma_Specs.md`)을 Master Template Kit v1.0에 완벽하게 통합하고, 실제 영상 제작 준비를 완료한다. → 산출물 sessions/2026-08-10T02-33/designer.md
 - [2026-08-10] Writer가 제공한 최종 Voice Over 스크립트와 Researcher가 제안한 Hook Point를 바탕으로 Master Template Kit v1.0을 활용하여 다음 콘텐츠에 대한 시각적 결과물 제작을 즉시 실행하라. → 산출물 sessions/2026-08-10T03-03/designer.md
 - [2026-08-10] Master Template Kit v1.0 및 Production Blueprint v2.0을 기반으로, 다음 영상에 대한 시각적 레이아웃과 애니메이션 요구사항을 최종 확정하여 즉시 제작 실행 준비를 완료하라. → 산출물 sessions/2026-08-10T03-18/designer.md
+- [2026-08-10] Production Bible에 명시된 레이아웃 좌표와 애니메이션 규칙을 실제 Figma/Premiere Pro 환경에서 최종 검증하고, 에셋 제작 프로세스를 시작하라. → 산출물 sessions/2026-08-10T03-33/designer.md
 ### 💻 코다리
-- [2026-08-10] E2E 테스트 성공 및 시스템 안정화 완료 보고서를 작성하여, 디자인/콘텐츠팀이 작업할 수 있도록 기술적 기반의 최종 검증 결과를 명확히 전달하라. → 산출물 sessions/2026-08-10T02-18/developer.md
 - [2026-08-10] E2E_Stabilization_Report.md를 기반으로 시스템 안정화에 필요한 DB 경계 조건 및 테스트 코드를 지속적으로 보강하여 기술적 기반을 유지한다. → 산출물 sessions/2026-08-10T02-33/developer.md
 - [2026-08-10] 최종 확정된 Production Blueprint의 데이터 흐름과 시스템 구조를 검토하고, 다음 콘텐츠 제작 시 발생할 수 있는 잠재적 기술적 병목 지점(Edge Case)에 대한 사전 테스트 코드를 보강하라. → 산출물 sessions/2026-08-10T03-18/developer.md
+- [2026-08-10] 최종 확정된 Production Blueprint의 데이터 흐름과 시스템 구조를 검토하여, 다음 콘텐츠 제작 시 발생할 수 있는 잠재적 기술적 병목 지점(Edge Case)에 대한 사전 테스트 코드를 보강하고 안정성을 최종적으로 확보하라. → 산출물 sessions/2026-08-10T03-33/developer.md
 ### 💼 현빈
 - [2026-08-06] 개발 및 디자인 통합 테스트의 결과가 설정한 비즈니스 목표(KPI)와 시스템 안정성 기준을 충족하는지 분석하고, 다음 단계의 콘텐츠 제작 전략에 대한 기술적 신뢰도를 보고하라. → 산출물 sessions/2026-08-06T07-34/business.md
 - [2026-08-06] 기술적 안정성(API 계약서 및 KPI 시스템)을 기반으로, 사용자에게 제공할 '핵심 유료 모듈'의 구조와 가격 정책에 대한 초기 설계안을 작성하고, 이를 코다리가 구현할 수 있는 명확한 요구사항 명세(PRD 초안)를 정의하라. → 산출물 sessions/2026-08-06T07-49/business.md
