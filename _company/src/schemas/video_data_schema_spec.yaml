@@ -1,0 +1,113 @@
+# Open API Specification for Diagnosis Video Assets
+
+openapi: 3.0.1
+info:
+  title: Student Growth Report - Video Visualization Data Schema
+  version: v2.0
+  description: |
+    이 스키마는 Backend에서 산출된 진단 데이터를 영상 제작팀(Designer, Editor)이 가장 효율적으로 소비할 수 있도록 최적화한 데이터 계약입니다.
+    기술적 정확성뿐만 아니라 '나레이티브 흐름'에 초점을 맞추었습니다.
+
+paths:
+  /api/v1/diagnosis_video_summary:
+    get:
+      summary: 최종 진단 결과를 영상 제작에 필요한 구조로 제공합니다.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VideoSummaryRequest'
+      responses:
+        '200':
+          description: 성공적으로 데이터를 반환했습니다.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VideoDiagnosisResult'
+
+components:
+  schemas:
+    # ------------------------------
+    # 요청 스키마 (Query Parameters)
+    # ------------------------------
+    VideoSummaryRequest:
+      type: object
+      required: [context_id]
+      properties:
+        context_id:
+          type: string
+          description: 진단 결과를 가져올 사용자/세션 컨텍스트 ID.
+        start_date:
+          type: string
+          format: date
+          description: 비교 분석을 시작할 날짜 (추이 분석용).
+        end_date:
+          type: string
+          format: date
+          description: 현재까지의 최종 진단일.
+
+    # ------------------------------
+    # 핵심 결과 스키마 (Video Diagnosis Result) - SSoT!
+    # ------------------------------
+    VideoDiagnosisResult:
+      type: object
+      required: [diagnosis_id, current_score, kpis]
+      properties:
+        diagnosis_id:
+          type: string
+          description: 이번 진단 결과의 고유 ID.
+        timestamp:
+          type: string
+          format: date-time
+          description: 데이터가 산출된 시간 (영상 내 타임스탬프 기준으로 사용).
+        overall_narrative_summary:
+          type: string
+          description: 이 결과를 요약하는 감성적, 스토리텔링 기반의 핵심 문구. (예: "지난 달 대비 집중력이 30% 향상되었습니다.")
+        current_score:
+          type: number
+          description: 현재 통합 진단 점수 (0~100).
+        kpis:
+          type: object
+          properties:
+            growth_score: { type: number, description: '성장 지표. 꾸준한 노력을 보여주는 점수.' }
+            engagement_score: { type: number, description: '몰입도 지표. 학습 지속성을 반영합니다.' }
+            monetization_potential: { type: number, description: '상업적 잠재력 지표. 상위 레벨 콘텐츠 전환 가능성.' }
+        
+        # ------------------------------
+        # [NEW] 영상 제작에 필수적인 추이 분석 데이터
+        # ------------------------------
+        historical_trend_data:
+          type: array
+          description: 진단 결과의 시간적 변화를 보여주는 배열. (그래프 시각화 용도)
+          items:
+            type: object
+            properties:
+              date: { type: string, format: date }
+              score: { type: number }
+              change_percentage: { type: number } # 이전 대비 변동률 (%)
+
+        # ------------------------------
+        # [NEW] 서사적 중요도를 강조하는 지표 (Pain -> Gain)
+        # ------------------------------
+        significance_points:
+          type: array
+          description: 이 진단 주기에서 가장 큰 변화(극복 또는 하락)를 보인 핵심 영역. 애니메이션/하이라이트 처리에 사용됩니다.
+          items:
+            type: object
+            properties:
+              kpi: { type: string } # 'Growth', 'Engagement' 등
+              change_magnitude: { type: number } # 변동 크기 (절댓값)
+              narrative_role: { 
+                type: string, 
+                enum: [
+                  "SIGNIFICANT_IMPROVEMENT", 
+                  "CRITICAL_DROP", 
+                  "STABLE"
+                ],
+                description: 스토리텔링 상의 역할 (성장/위기).
+              }
+
+    # 기존 데이터 구조 참고용 스키마 (참고만)
+    VideoSummaryRequest: # Error correction, should use the request body structure defined above.
+      pass
