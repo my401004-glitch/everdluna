@@ -646,3 +646,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-10] Designer가 제공할 Visual Blueprint를 기반으로, 영상 제작에 필요한 모든 시각적 에셋(아이콘, 그래프, UI 요소 등)의 기술 사양서와 개발팀이 즉시 구현 가능한 프로덕션 바이블을 완성하라. → 산출물 sessions/2026-08-10T07-43/developer.md
 - [2026-08-10] Designer가 제공한 프로덕션 바이블을 기반으로, 기술 사양서와 API 계약 정의를 확인하고, `DiagnosisScore` 데이터 모델을 기반으로 백엔드 API 엔드포인트(`GET /api/v1/diagnosis_score`)의 실제 로직 구현 및 시스템 안정성 검증을 최우선으로 진행하라. → 산출물 sessions/2026-08-10T07-58/developer.md
 - [2026-08-10] Designer가 제공한 프로덕션 바이블(`Visual Blueprint`) 및 API 계약 정의를 기반으로, `GET /api/v1/diagnosis_score` 엔드포인트의 백엔드 로직 구현 및 시스템 안정성 검증 작업을 시작하라. → 산출물 sessions/2026-08-10T08-28/developer.md
+- [2026-08-10] 코다리: 최종 JSON 스키마를 확정하고, 이 구조가 영상 제작에 필요한 모든 데이터 출력을 담도록 로직의 안정성을 최종 검증하라. → 산출물 sessions/2026-08-10T08-43/developer.md
