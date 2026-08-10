@@ -1115,3 +1115,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-07] | **Neutral Background** | Neutral Grey (`#F5F5F5`) | 본문 데이터 및 일반적인 설명 영역의 배경. Dark Blue와의 명확한 대비를 통해 가독성을 극대화합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-08-07] | **Title Font (헤드라인)** | Montserrat Bold | 모든 에피소드의 핵심 메시지(Pain/Gain) 및 섹션 제목에 사용됩니다. 강력하고 시각적인 임팩트를 제공해야 합니다. | | _(근거: Designer 검증된 지식)_
 - [2026-08-07] | **Body Font (본문/데이터)** | Noto Sans KR Regular/Medium | 상세 데이터, 설명 텍스트. 정보 전달의 가독성 극대화가 목적입니다. | | _(근거: Designer 검증된 지식)_
+- [2026-08-10] ****, **[근거: Designer 검증된 지식 - Primary Color/Accent Yellow 활용]**, **[근거: Designer 개인 목표 - 썸네일/포스트 템플릿 3종 표준화]** _(근거: Master_Video_Content_System_Guidebook_v1.0.md)_
