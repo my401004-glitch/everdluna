@@ -560,3 +560,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-08-10] Master Component 및 Production Blueprint를 기반으로, 시청자의 Pain $ightarrow$ Gain 구조에 맞는 핵심 영상 스크립트 초안을 작성하라. (기술적 안정성을 담보하는 서사 구축) → 산출물 sessions/2026-08-10T04-33/writer.md
 - [2026-08-10] Researcher가 제시한 3가지 주제 아이디어 중 가장 강력하다고 판단되는 주제를 선택하고, 이를 기반으로 최종 영상 스크립트 및 제작 실행 청사진(Production Blueprint)을 완성하여 다음 작업에 필요한 모든 내레이션과 핵심 메시지를 확정하라. → 산출물 sessions/2026-08-10T04-48/writer.md
 - [2026-08-10] youtube가 제공하는 최종 구조와 핵심 메시지를 기반으로, 시청자의 감성적 몰입을 극대화하는 영상 스크립트(Voice Over 포함) 초안을 작성할 것. → 산출물 sessions/2026-08-10T05-48/writer.md
+- [2026-08-10] youtube가 제공한 최종 실행 청사진(`Final Production Bible`) 및 `youtube_blueprint_v4.md`를 기반으로, 시청자 이탈 방지와 몰입도를 극대화하는 핵심 후크(Hook), 영상의 전체 구조(시퀀스), 그리고 각 장면에 필요한 상세 스크립트 초안을 작성하라. → 산출물 sessions/2026-08-10T06-18/writer.md
