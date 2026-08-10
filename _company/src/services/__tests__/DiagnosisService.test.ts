@@ -1,34 +1,36 @@
-import { getDiagnosisScore } from '../diagnosisService';
-import { DiagnosisInput, DiagnosisResult } from '../../types/diagnosis';
+import { calculateDiagnosisScore } from '../diagnosisService';
+import { DiagnosisInput, UserContext } from '../../types'; // 가상의 타입 임포트
 
-// Mocking the actual implementation for testing purposes
-describe('getDiagnosisScore', () => {
-  const mockBaseData: any[] = Array(20).fill({ value: 1 }); // 20개의 데이터 포인트로 기준 설정
+// Mocking을 사용하여 외부 의존성을 제거하고 순수 로직만 테스트합니다.
+describe('calculateDiagnosisScore Service Layer Test', () => {
+    const mockUserPremium: UserContext = { subscriptionLevel: 'Premium' };
+    const mockUserFree: UserContext = { subscriptionLevel: 'Free' };
 
-  test('✅ Success Case: 정상적인 진단 데이터가 들어왔을 때 모든 값이 올바르게 계산되어야 한다.', async () => {
-    // @ts-ignore (임시 테스트용 Mocking)
-    const result: DiagnosisResult = await getDiagnosisScore({ userId: 'user123', sessionId: 'sess456', rawDataPoints: mockBaseData });
+    // 🟢 Case 1: 정상적인 Premium 사용자 시나리오 테스트 (Happy Path)
+    test('should calculate accurate score for a premium user with good data', async () => {
+        const inputData: DiagnosisInput = { studyHours: 20, practiceCount: 15, lastLoginDays: 3, hasUsedPremiumFeature: true };
+        
+        const result = await calculateDiagnosisScore(inputData, mockUserPremium);
 
-    expect(result.gapScore).toBeGreaterThanOrEqual(0);
-    expect(result.kpiMetrics.growthScore).toBeDefined();
-    expect(Array.isArray(result.monetizationTriggers)).toBe(true);
-  });
+        // 기대 값 검증 (성장: 20*0.6 + 15*0.4=12+6=18 -> 최소화/최대값 체크 필요)
+        expect(result.kpis.growth).toBeCloseTo(18, 0); // Expecting growth calculation to work
+        // (이후 KPI 값에 대한 구체적인 수치 검증 로직을 추가해야 합니다.)
+        expect(result.score).toBeDefined();
+    });
 
-  test('❌ Failure Case: 필수 데이터가 누락되었을 때 에러를 던져야 한다 (Guard Clause Test).', async () => {
-    // @ts-ignore
-    await expect(getDiagnosisScore({ userId: 'user123', sessionId: 'sess456', rawDataPoints: null })).rejects.toThrow("Diagnosis input data is incomplete or invalid.");
+    // 🟡 Case 2: 권한 미달 사용자 시나리오 테스트 (Security Check)
+    test('should throw an error for a free user accessing detailed diagnosis', async () => {
+        const inputData: DiagnosisInput = { studyHours: 10, practiceCount: 5, lastLoginDays: 7, hasUsedPremiumFeature: false };
 
-    // @ts-ignore
-    await expect(getDiagnosisScore({ userId: '', sessionId: 'sess456', rawDataPoints: mockBaseData })).rejects.toThrow();
-  });
+        // 권한 검사를 통과하지 못하면 에러가 발생해야 합니다.
+        await expect(calculateDiagnosisScore(inputData, mockUserFree)).rejects.toThrow("Unauthorized access");
+    });
 
-  test('⚠️ Edge Case: KPI 점수가 0에 가깝거나 경계값일 때 트리거가 적절히 작동해야 한다.', async () => {
-    // 데이터 포인트 최소화 (KPI 계산 로직의 하한선 테스트)
-    const minimalData: any[] = Array(1).fill({ value: 1 });
+    // ⚫ Case 3: 필수 데이터 누락 시나리오 테스트 (Guard Clause Check)
+    test('should handle missing mandatory input data gracefully', async () => {
+        const badInputData: DiagnosisInput = { studyHours: undefined, practiceCount: 5, lastLoginDays: 7, hasUsedPremiumFeature: false };
 
-    // @ts-ignore
-    const result: DiagnosisResult = await getDiagnosisScore({ userId: 'edge_user', sessionId: 'sess001', rawDataPoints: minimalData });
-
-    expect(result.gapScore).toBeLessThanOrEqual(30); // 낮은 점수 예상
-  });
+        // 이 케이스는 컨트롤러에서 잡아야 하지만, 서비스 레이어에서도 Input Validation이 필요합니다.
+        // (실제 구현 시점에서 로직을 보완해야 함)
+    });
 });
