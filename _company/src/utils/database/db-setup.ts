@@ -1,4 +1,4 @@
-/**
+w/**
  * @fileoverview 데이터베이스 연결 초기화 및 시스템 안정성 검증 (Schema Migration & Edge Case Seeding).
  * 이 파일은 애플리케이션 시작 시 최우선으로 실행되어 DB의 일관성을 확보합니다.
  * @author Kodari (Senior Fullstack Engineer)
@@ -6,7 +6,7 @@
 
 import { getConnection } from 'typeorm'; // 예시: TypeORM 사용 가정
 import { DiagnosisResult, KPI_Metrics, UserProfile } from '../../contracts/diagnosis_v1_contract';
-import { dbConfig } from '../../../config/db.config'; 
+import { dbConfig } from '../../../config/db.config';
 
 // --- 전역 상수 및 설정 ---
 const DB_CONNECTION = getConnection(dbConfig);
@@ -92,7 +92,7 @@ export async function runDatabaseSetup(): Promise<void> {
     } catch (e) {
         console.error("\n🚨 [FATAL FAILURE] 데이터베이스 초기화 실패. 서비스 가동 불가!");
         // 실제로는 process.exit(1) 호출이 필요합니다.
-        throw e; 
+        throw e;
     } finally {
         DB_CONNECTION.close(); // 연결 해제
     }
