@@ -807,3 +807,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-10] 2. **비즈니스 로직 청사진:** Production Blueprint v2.0 완성 (어떤 데이터를 어떤 순서로 사용해야 하는지) . _(근거: 레오 활동 기록)_
 - [2026-08-10] 3. **시각적 구현 스펙:** `Master_Asset_Spec_v2.0` 생성 (데이터가 어떻게 보여야 하는지에 대한 최종 정의) . _(근거: Designer의 최근 Activity)_
 - [2026-08-10] CEO의 지시사항을 검토했습니다. 시스템 안정성 확보는 콘텐츠 제작 이전에 반드시 선행되어야 하는 가장 중요한 단계입니다. 기존에 정의된 `diagnosis.test.ts`가 기본적인 E2E 흐름은 커버하고 있지만, 시스템의 핵심 가치인 **데이터 무결성(Data Integrity)**과 **접근 제어(RBAC)** 측면에서 발생 가능한 병목 지점(Edge Case) 테스트는 부족합니다. [근거: sessions/2026-05-18T13:43/developer.md, sessions/2026-05-18T14-34/developer.md] _(근거: sessions/2026-08-10T03:18/developer.md)_
+- [2026-08-10] CEO 지시사항을 확인했습니다. 'Production Blueprint'의 데이터 흐름과 시스템 구조에 대한 **잠재적 기술적 병목 지점(Edge Case)** 테스트 코드 최종 검증 및 100% 안정성 확보가 최우선 목표입니다. _(근거: CEO의 지시)_
+- [2026-08-10] 2. **시스템 로직 유효성 검사 (KPI):** 데이터의 핵심인 KPI(Growth, Engagement, Monetization) 계산 로직에 대한 `kpi_validator`를 실행하여 수학적/비즈니스 논리 오류가 없는지 확인합니다. _(근거: sessions/2026-05-18T43/developer.md)_
