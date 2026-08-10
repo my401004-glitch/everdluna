@@ -801,3 +801,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-10] Production Bible에 명시된 레이아웃 좌표와 애니메이션 규칙을 실제 Figma/Premiere Pro 환경에서 최종 검증하고, 에셋 제작 프로세스를 시작하라. → 산출물 sessions/2026-08-10T03-33/designer.md
 - [2026-08-10] 코다리님의 안정성 기반과 레오님의 Production Blueprint를 반영하여, Writer가 제공할 스크립트에 맞춰 시각적 스토리보드 및 애니메이션 요구사항을 최종 확정하고 즉시 제작 실행 준비를 완료하라. → 산출물 sessions/2026-08-10T04-03/designer.md
 - [2026-08-10] Production Storyboard 및 Animation Specification Sheet를 기반으로, 실제 Figma/Premiere Pro 환경에서 시각적 레이아웃과 애니메이션 규칙의 오류 없는 최종 검증을 완료하고 에셋 제작 준비를 시작하라. → 산출물 sessions/2026-08-10T04-18/designer.md
+- [2026-08-10] Writer가 확정한 주제와 코다리님의 기술적 안정성 기반 위에서, Production Storyboard 및 Animation Specification Sheet를 최종 검증하고 에셋 제작을 위한 구체적인 시각적 레이아웃과 애니메이션 규칙을 즉시 확정하라. → 산출물 sessions/2026-08-10T04-48/designer.md
