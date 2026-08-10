@@ -552,3 +552,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-08-10] youtube가 제시한 각 영상별 스토리라인과 핵심 메시지를 기반으로, Pain $ ightarrow $ System $ ightarrow $ Hope의 감성 흐름을 따라 후킹 포인트를 극대화한 최종 스크립트 초안을 작성하라. → 산출물 sessions/2026-08-10T01-33/writer.md
 - [2026-08-10] 최종 확정된 마스터 시나리오 보드와 Designer의 시각적 규칙을 통합하여, 실제 편집자가 즉시 작업에 착수할 수 있는 '마스터 시나리오 보드(Master Scenario Board)'를 제작하라. → 산출물 sessions/2026-08-10T01-48/writer.md
 - [2026-08-10] 레오가 정리한 마스터 시나리오 보드를 기반으로, 확정된 시스템 안정성 확보라는 맥락에서 내레이션 스크립트의 감성 흐름(Pain $ightarrow$ System $ightarrow$ Hope)을 최종 점검하고 미세 조정하라. → 산출물 sessions/2026-08-10T02-03/writer.md
+- [2026-08-10] 시스템 안정성 확보라는 맥락(Pain $ightarrow$ System $ightarrow$ Hope)을 강조하는 내레이션 스크립트를 최종 점검하고, 데이터 기반 객관성을 극대화하여 Voice Over를 확정하라. → 산출물 sessions/2026-08-10T02-18/writer.md

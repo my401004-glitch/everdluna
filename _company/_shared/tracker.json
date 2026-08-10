@@ -1,227 +1,6 @@
 {
   "tasks": [
     {
-      "id": "20260705084950-pdqb",
-      "title": "**시각적 일관성:** 모든 컴포넌트가 동일한 그림자, 모서리 반경(Radius), 간격(Spacing: 24px 기준)을 유지하는가? [근거: Designer 검증된 지식]",
-      "description": "자동 등록 (Designer 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "designer"
-      ],
-      "createdAt": "2026-07-05T08:49:50.945Z",
-      "status": "done",
-      "sessionDir": "2026-07-05T08-30",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-05T08-30/_report.md\n- 레오: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 \n- Designer: 확정된 디자인 시스템과 기술적 KPI를 반영하여 영상 썸네일 목업(Mockup)의 구체적인 시각적 레이아웃 및 컴포넌트 적용 방안을 제시하라.\n- Writer: Designer가 제시한 썸네일 목업에 가장 효과적으로 결합될 'Fear & Proof' 기반의 후킹 카피(Headline) 3안을 작성하고, \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 정의하고, 최종 실행 계획을 수립하라.\n> 🔧 **도구 실행**: `competitor_bri",
-      "completedAt": "2026-07-05T08:58:51.103Z"
-    },
-    {
-      "id": "20260705084950-py8t",
-      "title": "**데이터 흐름 유효성:** `PAIN_VISUALIZER`의 데이터 변화 시, 주변 컴포넌트들의 레이아웃이 깨지지 않고 자동으로 조정되는가? (Responsive Check) [근거: 지난 의사결정 로그]",
-      "description": "자동 등록 (Designer 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "designer"
-      ],
-      "createdAt": "2026-07-05T08:49:50.946Z",
-      "status": "done",
-      "sessionDir": "2026-07-05T08-30",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-05T08-30/_report.md\n- 레오: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 \n- Designer: 확정된 디자인 시스템과 기술적 KPI를 반영하여 영상 썸네일 목업(Mockup)의 구체적인 시각적 레이아웃 및 컴포넌트 적용 방안을 제시하라.\n- Writer: Designer가 제시한 썸네일 목업에 가장 효과적으로 결합될 'Fear & Proof' 기반의 후킹 카피(Headline) 3안을 작성하고, \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 정의하고, 최종 실행 계획을 수립하라.\n> 🔧 **도구 실행**: `competitor_bri",
-      "completedAt": "2026-07-05T08:58:51.104Z"
-    },
-    {
-      "id": "20260705084950-xe4o",
-      "title": "**메시지 명확성:** 모든 썸네일/영상 클립은 '문제 제시' $\\rightarrow$ '솔루션 제시' $\\rightarrow$ '행동 유도(CTA)'의 흐름을 반드시 따르는가? [근거: Designer 검증된 지식]",
-      "description": "자동 등록 (Designer 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "designer"
-      ],
-      "createdAt": "2026-07-05T08:49:50.947Z",
-      "status": "done",
-      "sessionDir": "2026-07-05T08-30",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-05T08-30/_report.md\n- 레오: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 \n- Designer: 확정된 디자인 시스템과 기술적 KPI를 반영하여 영상 썸네일 목업(Mockup)의 구체적인 시각적 레이아웃 및 컴포넌트 적용 방안을 제시하라.\n- Writer: Designer가 제시한 썸네일 목업에 가장 효과적으로 결합될 'Fear & Proof' 기반의 후킹 카피(Headline) 3안을 작성하고, \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Designer와 Writer가 준비한 마스터 컴포넌트 및 KPI를 기반으로 다음 영상의 썸네일 목업(3안) 기획을 위한 시각적/후킹 포인트를 정의하고, 최종 실행 계획을 수립하라.\n> 🔧 **도구 실행**: `competitor_bri",
-      "completedAt": "2026-07-05T08:58:51.105Z"
-    },
-    {
-      "id": "20260709075534-oqil",
-      "title": "모든 영상 전환 지점마다 위 State Machine 로직에 따른 사운드/색상 변화가 적용되었는가?",
-      "description": "자동 등록 (코다리 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "developer"
-      ],
-      "createdAt": "2026-07-09T07:55:34.843Z",
-      "status": "done",
-      "sessionDir": "2026-07-09T07-52",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-09T07-52/_report.md\n- Writer: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, \n- Designer: 개발팀이 제공한 기술적 제약 사항과 시각적 요구사항(VideoEditor_Handover_Package_V1.md)에 맞춰, 영상 제작에 필요한\n- 코다리: 영상 편집자에게 전달할 기술적 지침(DiagnosisScoreWidget 로직 등)과 비주얼 요구사항이 명확히 반영된 최종 핸드오버 문서를 검토\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, 확정된 영상 스크립트 및 내레이션 초안을 즉시 작성하라.\n> 🔧 **도구 실행**: _(없음 —",
-      "completedAt": "2026-07-09T07:57:37.341Z"
-    },
-    {
-      "id": "20260709075534-wk0p",
-      "title": "'열정'과 '데이터'를 대비시키는 비주얼적 충돌(Conflict)이 명확하게 표현되는가?",
-      "description": "자동 등록 (코다리 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "developer"
-      ],
-      "createdAt": "2026-07-09T07:55:34.844Z",
-      "status": "done",
-      "sessionDir": "2026-07-09T07-52",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-09T07-52/_report.md\n- Writer: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, \n- Designer: 개발팀이 제공한 기술적 제약 사항과 시각적 요구사항(VideoEditor_Handover_Package_V1.md)에 맞춰, 영상 제작에 필요한\n- 코다리: 영상 편집자에게 전달할 기술적 지침(DiagnosisScoreWidget 로직 등)과 비주얼 요구사항이 명확히 반영된 최종 핸드오버 문서를 검토\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, 확정된 영상 스크립트 및 내레이션 초안을 즉시 작성하라.\n> 🔧 **도구 실행**: _(없음 —",
-      "completedAt": "2026-07-09T07:57:37.343Z"
-    },
-    {
-      "id": "20260709075653-s5m5",
-      "title": "**색상 팔레트:** 다크 블루 (`#0A2463`)와 액센트 옐로우 (`#FFD700`)를 메인으로 사용하고, 경고 시에만 빨간색을 제한적으로 사용한다. (전문 컨설팅 느낌 유지)",
-      "description": "자동 등록 (레오 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "youtube"
-      ],
-      "createdAt": "2026-07-09T07:56:53.478Z",
-      "status": "done",
-      "sessionDir": "2026-07-09T07-52",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-09T07-52/_report.md\n- Writer: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, \n- Designer: 개발팀이 제공한 기술적 제약 사항과 시각적 요구사항(VideoEditor_Handover_Package_V1.md)에 맞춰, 영상 제작에 필요한\n- 코다리: 영상 편집자에게 전달할 기술적 지침(DiagnosisScoreWidget 로직 등)과 비주얼 요구사항이 명확히 반영된 최종 핸드오버 문서를 검토\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, 확정된 영상 스크립트 및 내레이션 초안을 즉시 작성하라.\n> 🔧 **도구 실행**: _(없음 —",
-      "completedAt": "2026-07-09T07:57:37.344Z"
-    },
-    {
-      "id": "20260709075653-dcjg",
-      "title": "**사운드 디자인:** 전체적으로 빠르고 긴장감 있는 배경 음악(BGM)을 깔되, 데이터 제시 구간에서는 BGM 볼륨을 줄이고 내레이션과 시스템 효과음만 강조한다.",
-      "description": "자동 등록 (레오 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "youtube"
-      ],
-      "createdAt": "2026-07-09T07:56:53.479Z",
-      "status": "done",
-      "sessionDir": "2026-07-09T07-52",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-09T07-52/_report.md\n- Writer: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, \n- Designer: 개발팀이 제공한 기술적 제약 사항과 시각적 요구사항(VideoEditor_Handover_Package_V1.md)에 맞춰, 영상 제작에 필요한\n- 코다리: 영상 편집자에게 전달할 기술적 지침(DiagnosisScoreWidget 로직 등)과 비주얼 요구사항이 명확히 반영된 최종 핸드오버 문서를 검토\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, 확정된 영상 스크립트 및 내레이션 초안을 즉시 작성하라.\n> 🔧 **도구 실행**: _(없음 —",
-      "completedAt": "2026-07-09T07:57:37.345Z"
-    },
-    {
-      "id": "20260709075653-fg0k",
-      "title": "**전환 효과:** 모든 섹션 전환은 '데이터가 로딩되는' 듯한 디지털적인 사운드와 화면 플래시를 사용해 기술적 우위를 암시해야 한다.",
-      "description": "자동 등록 (레오 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "youtube"
-      ],
-      "createdAt": "2026-07-09T07:56:53.480Z",
-      "status": "done",
-      "sessionDir": "2026-07-09T07-52",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-09T07-52/_report.md\n- Writer: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, \n- Designer: 개발팀이 제공한 기술적 제약 사항과 시각적 요구사항(VideoEditor_Handover_Package_V1.md)에 맞춰, 영상 제작에 필요한\n- 코다리: 영상 편집자에게 전달할 기술적 지침(DiagnosisScoreWidget 로직 등)과 비주얼 요구사항이 명확히 반영된 최종 핸드오버 문서를 검토\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, 확정된 영상 스크립트 및 내레이션 초안을 즉시 작성하라.\n> 🔧 **도구 실행**: _(없음 —",
-      "completedAt": "2026-07-09T07:57:37.345Z"
-    },
-    {
-      "id": "20260709075653-ea1c",
-      "title": "**Gap Score 위젯**: `DiagnosisScoreWidget` 템플릿을 반드시 풀버전으로 활용할 것. 단순한 그래프가 아닌, '현재 지표와 이상치 간의 거리'를 시각적으로 표현해야 한다.",
-      "description": "자동 등록 (레오 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "youtube"
-      ],
-      "createdAt": "2026-07-09T07:56:53.481Z",
-      "status": "done",
-      "sessionDir": "2026-07-09T07-52",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-09T07-52/_report.md\n- Writer: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, \n- Designer: 개발팀이 제공한 기술적 제약 사항과 시각적 요구사항(VideoEditor_Handover_Package_V1.md)에 맞춰, 영상 제작에 필요한\n- 코다리: 영상 편집자에게 전달할 기술적 지침(DiagnosisScoreWidget 로직 등)과 비주얼 요구사항이 명확히 반영된 최종 핸드오버 문서를 검토\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, 확정된 영상 스크립트 및 내레이션 초안을 즉시 작성하라.\n> 🔧 **도구 실행**: _(없음 —",
-      "completedAt": "2026-07-09T07:57:37.346Z"
-    },
-    {
-      "id": "20260709075653-1lk9",
-      "title": "**로직 준수:** Module C 영상에서는 Gap Score가 불안정하게 변하는 과정을 *반드시 애니메이션으로 보여주어야 합니다*. (Codari V2 명세서 기반)",
-      "description": "자동 등록 (레오 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "youtube"
-      ],
-      "createdAt": "2026-07-09T07:56:53.482Z",
-      "status": "done",
-      "sessionDir": "2026-07-09T07-52",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-09T07-52/_report.md\n- Writer: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, \n- Designer: 개발팀이 제공한 기술적 제약 사항과 시각적 요구사항(VideoEditor_Handover_Package_V1.md)에 맞춰, 영상 제작에 필요한\n- 코다리: 영상 편집자에게 전달할 기술적 지침(DiagnosisScoreWidget 로직 등)과 비주얼 요구사항이 명확히 반영된 최종 핸드오버 문서를 검토\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: Designer와 Developer가 제공한 최종 시각적 흐름(Story Flow)과 핵심 메시지(Gap Score/RoC 강조)를 반영하여, 확정된 영상 스크립트 및 내레이션 초안을 즉시 작성하라.\n> 🔧 **도구 실행**: _(없음 —",
-      "completedAt": "2026-07-09T07:57:37.346Z"
-    },
-    {
-      "id": "20260710061546-vpy7",
-      "title": "**후크 (0-30초):** 가장 충격적인 통계(72% 확률)를 즉시 제시하며 시작하는가? (필수)",
-      "description": "자동 등록 (레오 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "youtube"
-      ],
-      "createdAt": "2026-07-10T06:15:46.251Z",
-      "status": "done",
-      "sessionDir": "2026-07-10T06-14",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-10T06-14/_report.md\n- 레오: 확정된 스토리보드와 마스터 프로덕션 바이블을 기반으로 다음 영상(Module C)의 실제 제작 일정 및 단계별 실행 계획(촬영, 편집, 사운드 \n- 루나: 마스터 비주얼 가이드라인(`Master_Visual_Guideline_V1.md`)과 기술 사양서에 기반하여, 영상 제작 단계별로 필요한 BGM\n- 영숙: youtube와 editor가 수립한 제작 계획을 기반으로 다음 영상(Module C)에 대한 마일스톤별 상세 일정표를 생성하고, 필요한 리소스\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 확정된 스토리보드와 마스터 프로덕션 바이블을 기반으로 다음 영상(Module C)의 실제 제작 일정 및 단계별 실행 계획(촬영, 편집, 사운드 디자인 포함)을 수립하고, 외부 편집자에게 전달할 구체적인 액션 플랜을 작성하라.\n> 🔧 **",
-      "completedAt": "2026-07-10T06:19:51.377Z"
-    },
-    {
-      "id": "20260710061546-7w7q",
-      "title": "**논리 구조:** Pain Point $\\rightarrow$ 데이터 제시 $\\rightarrow$ 해결책/서비스 안내 순서가 명확하게 유지되는가?",
-      "description": "자동 등록 (레오 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "youtube"
-      ],
-      "createdAt": "2026-07-10T06:15:46.252Z",
-      "status": "done",
-      "sessionDir": "2026-07-10T06-14",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-10T06-14/_report.md\n- 레오: 확정된 스토리보드와 마스터 프로덕션 바이블을 기반으로 다음 영상(Module C)의 실제 제작 일정 및 단계별 실행 계획(촬영, 편집, 사운드 \n- 루나: 마스터 비주얼 가이드라인(`Master_Visual_Guideline_V1.md`)과 기술 사양서에 기반하여, 영상 제작 단계별로 필요한 BGM\n- 영숙: youtube와 editor가 수립한 제작 계획을 기반으로 다음 영상(Module C)에 대한 마일스톤별 상세 일정표를 생성하고, 필요한 리소스\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 확정된 스토리보드와 마스터 프로덕션 바이블을 기반으로 다음 영상(Module C)의 실제 제작 일정 및 단계별 실행 계획(촬영, 편집, 사운드 디자인 포함)을 수립하고, 외부 편집자에게 전달할 구체적인 액션 플랜을 작성하라.\n> 🔧 **",
-      "completedAt": "2026-07-10T06:19:51.379Z"
-    },
-    {
-      "id": "20260710061546-i1kb",
-      "title": "**CTA 배치:** 영상의 클라이맥스(문제 인식 최고조)에서 서비스 홍보 및 무료 컨설팅 링크를 언급하는 부분이 자연스럽게 연결되는가?",
-      "description": "자동 등록 (레오 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "youtube"
-      ],
-      "createdAt": "2026-07-10T06:15:46.253Z",
-      "status": "done",
-      "sessionDir": "2026-07-10T06-14",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-10T06-14/_report.md\n- 레오: 확정된 스토리보드와 마스터 프로덕션 바이블을 기반으로 다음 영상(Module C)의 실제 제작 일정 및 단계별 실행 계획(촬영, 편집, 사운드 \n- 루나: 마스터 비주얼 가이드라인(`Master_Visual_Guideline_V1.md`)과 기술 사양서에 기반하여, 영상 제작 단계별로 필요한 BGM\n- 영숙: youtube와 editor가 수립한 제작 계획을 기반으로 다음 영상(Module C)에 대한 마일스톤별 상세 일정표를 생성하고, 필요한 리소스\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 확정된 스토리보드와 마스터 프로덕션 바이블을 기반으로 다음 영상(Module C)의 실제 제작 일정 및 단계별 실행 계획(촬영, 편집, 사운드 디자인 포함)을 수립하고, 외부 편집자에게 전달할 구체적인 액션 플랜을 작성하라.\n> 🔧 **",
-      "completedAt": "2026-07-10T06:19:51.380Z"
-    },
-    {
       "id": "20260711061024-vx6f",
       "title": "**내레이션:** 3단계 감정 흐름(좌절 $\\rightarrow$ 진단 $\\rightarrow$ 승리)에 따른 스크립트 분할 완료 및 녹음 준비.",
       "description": "자동 등록 (영숙 산출물에서 추출)",
@@ -815,6 +594,57 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-08-03T05-42/_report.md\n- 레오: Storyboarding_v1.md에 명시된 시간대별 지침(Hook, Data Shock 구간)에 맞춰 레오의 영상 편집 및 음성 녹음 실행 계\n- 루나: youtube에서 확정된 스크립트와 시각적 지침을 기반으로 BGM 자동 생성 및 사운드 디자인 작업을 선행하여 영상 편집의 기초 작업을 준비하라\n- Designer: THUMBNAIL_PROTOTYPE_Mockup_v1.0.md를 최종 승인하고, 확정된 디자인 시스템을 기반으로 다음 영상에 사용할 모든 시각 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Storyboarding_v1.md에 명시된 시간대별 지침(Hook, Data Shock 구간)에 맞춰 레오의 영상 편집 및 음성 녹음 실행 계획(Timeline)을 즉시 수립하고 다음 영상 제작을 위한 업로드 준비를 시작하라.\n> 🔧 ",
       "completedAt": "2026-08-03T05:46:22.302Z"
+    },
+    {
+      "id": "20260810022144-bl1e",
+      "title": "영상 길이 제한 확인: 모든 시퀀스는 60초를 넘기지 않도록 레이아웃이 조정되었는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-08-10T02:21:44.283Z",
+      "status": "done",
+      "sessionDir": "2026-08-10T02-18",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-08-10T02-18/_report.md\n- 코다리: E2E 테스트 성공 및 시스템 안정화 완료 보고서를 작성하여, 디자인/콘텐츠팀이 작업할 수 있도록 기술적 기반의 최종 검증 결과를 명확히 전달하\n- Designer: Developer가 제공한 시스템 안정성 데이터를 기반으로 Master Template Kit v1.0에 정의된 시각적 레이아웃과 좌표를 실제 \n- Writer: 시스템 안정성 확보라는 맥락(Pain $\rightarrow$ System $\rightarrow$ Hope)을 강조하는 내레이션 스크립트를 최종 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💻 코다리 _(시니어 풀스택 엔지니어)_\n> 📋 **지시**: E2E 테스트 성공 및 시스템 안정화 완료 보고서를 작성하여, 디자인/콘텐츠팀이 작업할 수 있도록 기술적 기반의 최종 검증 결과를 명확히 전달하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: CEO",
+      "completedAt": "2026-08-10T02:23:27.474Z"
+    },
+    {
+      "id": "20260810022144-yncw",
+      "title": "데이터 연결 검증: 진단 결과의 **'숫자'**와 디자인 시스템 상의 **'[Accent Yellow]'** 강조 처리가 일치하는가? (코드-디자인 동기화)",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-08-10T02:21:44.284Z",
+      "status": "done",
+      "sessionDir": "2026-08-10T02-18",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-08-10T02-18/_report.md\n- 코다리: E2E 테스트 성공 및 시스템 안정화 완료 보고서를 작성하여, 디자인/콘텐츠팀이 작업할 수 있도록 기술적 기반의 최종 검증 결과를 명확히 전달하\n- Designer: Developer가 제공한 시스템 안정성 데이터를 기반으로 Master Template Kit v1.0에 정의된 시각적 레이아웃과 좌표를 실제 \n- Writer: 시스템 안정성 확보라는 맥락(Pain $\rightarrow$ System $\rightarrow$ Hope)을 강조하는 내레이션 스크립트를 최종 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💻 코다리 _(시니어 풀스택 엔지니어)_\n> 📋 **지시**: E2E 테스트 성공 및 시스템 안정화 완료 보고서를 작성하여, 디자인/콘텐츠팀이 작업할 수 있도록 기술적 기반의 최종 검증 결과를 명확히 전달하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: CEO",
+      "completedAt": "2026-08-10T02:23:27.475Z"
+    },
+    {
+      "id": "20260810022144-z9j6",
+      "title": "CTA 명확성: 마지막 5초 동안 시청자가 취해야 할 액션(CTA)이 오직 하나만 노출되는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-08-10T02:21:44.285Z",
+      "status": "done",
+      "sessionDir": "2026-08-10T02-18",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-08-10T02-18/_report.md\n- 코다리: E2E 테스트 성공 및 시스템 안정화 완료 보고서를 작성하여, 디자인/콘텐츠팀이 작업할 수 있도록 기술적 기반의 최종 검증 결과를 명확히 전달하\n- Designer: Developer가 제공한 시스템 안정성 데이터를 기반으로 Master Template Kit v1.0에 정의된 시각적 레이아웃과 좌표를 실제 \n- Writer: 시스템 안정성 확보라는 맥락(Pain $\rightarrow$ System $\rightarrow$ Hope)을 강조하는 내레이션 스크립트를 최종 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💻 코다리 _(시니어 풀스택 엔지니어)_\n> 📋 **지시**: E2E 테스트 성공 및 시스템 안정화 완료 보고서를 작성하여, 디자인/콘텐츠팀이 작업할 수 있도록 기술적 기반의 최종 검증 결과를 명확히 전달하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: CEO",
+      "completedAt": "2026-08-10T02:23:27.476Z"
     }
   ]
 }
