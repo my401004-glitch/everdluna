@@ -1,21 +1,21 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 10. 오전 10:20:43_
+_업데이트: 2026. 8. 10. 오전 10:37:45_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-08-07] 레오의 지시에 따라 확정된 스토리라인을 기반으로 실제 영상 촬영 및 편집에 필요한 최종 시퀀스 목록과 제작 실행 청사진을 구체적으로 작성하여 전달할 준비를 하라. → 산출물 sessions/2026-08-07T08-09/youtube.md
 - [2026-08-10] Master Video Content System Guidebook v1.0 및 Designer의 최종 시각적 콘셉트를 기반으로, 다음 4개 영상(또는 계획된 다음 콘텐츠)에 대한 최종 시퀀스 목록과 제작 실행 청사진을 구체적으로 작성하라. → 산출물 sessions/2026-08-10T00-40/youtube.md
 - [2026-08-10] 개발팀의 안정화 작업이 병행되는 동안, '미니 진단 테스트'를 핵심으로 하는 Teaser 영상 시퀀스 및 제작 실행 청사진을 즉시 재설계하여 레오에게 전달할 준비를 하고, 다음 콘텐츠 제작에 필요한 스토리라인의 구체적인 초안을 확보하라. → 산출물 sessions/2026-08-10T01-04/youtube.md
+- [2026-08-10] Master Video Content System Guidebook v1.0과 Designer의 최종 디자인 시스템을 기반으로, 다음 4개 영상(또는 계획된 콘텐츠)에 대한 구체적인 시퀀스 목록 및 제작 실행 청사진을 작성하라. → 산출물 sessions/2026-08-10T01-33/youtube.md
 ### 📷 Instagram
 - [2026-07-28] 최종 확정된 영상 포맷 및 스크립트의 핵심 메시지를 활용하여 Reels 1번 콘텐츠의 최종 게시 포스팅 초안(캡션, 해시태그 포함)을 작성하고 최적의 게시 시간을 제안할 것. → 산출물 sessions/2026-07-28T02-32/instagram.md
 - [2026-08-03] 확정된 비주얼 가이드라인과 최적 게시 시간을 활용하여 Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그)을 완성하고 배포 준비를 완료하라. → 산출물 sessions/2026-08-03T04-12/instagram.md
 - [2026-08-03] Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그 포함)을 완성하고 배포 준비를 완료할 것. → 산출물 sessions/2026-08-03T04-57/instagram.md
 ### 🎨 Designer
-- [2026-08-07] 확정된 최종 디자인 시스템 가이드라인(v1.0)과 썸네일 Template A/B를 기반으로, 모든 영상 에피소드에 즉시 적용 가능한 마스터 디자인 시스템(템플릿)을 완성하고 배포할 준비를 하라. → 산출물 sessions/2026-08-07T08-24/designer.md
 - [2026-08-07] Writer의 스크립트와 Editor가 제시할 사운드/시각 흐름을 고려하여, Master Video Content System Guidebook의 모듈을 적용하는 시각화 구체적 적용 방안(레이아웃 및 톤앤매너) 초안을 준비하라. → 산출물 sessions/2026-08-07T08-39/designer.md
 - [2026-08-10] Master Design System 가이드라인 v1.0을 활용하여, 확정된 스토리라인에 따른 각 영상의 최종 썸네일 Template A/B 적용 방안과 레이아웃 시안을 완성하라. → 산출물 sessions/2026-08-10T00-40/designer.md
+- [2026-08-10] Master Design System 가이드라인 v1.0을 적용하여, 유튜브 영상에 즉시 적용 가능한 마스터 썸네일 템플릿(Template A/B) 및 시각적 레이아웃 초안을 확정하라. → 산출물 sessions/2026-08-10T01-33/designer.md
 ### 💻 코다리
 - [2026-08-10] 확정된 API Contract(`diagnosis_v1_contract.ts`)와 E2E 테스트 스크립트(`e2e_test_validate_diagnosis.test.ts`)를 기반으로, 시스템의 안정성을 최우선 목표로 설정하고 API 통합 및 E2E 테스트 안정화 작업을 즉시 착수하여 진행 상황을 보고하라. → 산출물 sessions/2026-08-10T00-55/developer.md
 - [2026-08-10] 확정된 API Contract(`diagnosis_v1_contract.ts`)와 E2E 테스트 스크립트(`e2e_test_validate_diagnosis.test.ts`)를 기반으로, `db-setup.ts` 파일 구현 및 E2E 테스트 시나리오에 경계 조건(Edge Cases)을 추가하는 작업을 즉시 시작하고 진행 상황을 보고하라. → 산출물 sessions/2026-08-10T01-04/developer.md
@@ -33,9 +33,9 @@ _업데이트: 2026. 8. 10. 오전 10:20:43_
 - [2026-08-07] 레오가 제시한 MPB(마스터 프로덕션 블루프린트)와 Designer의 시각적 실행 블루프린트를 통합하여, 실제 영상 촬영 및 편집에 필요한 최종 시퀀스 목록과 오디오 디자인 전략을 구체적으로 정리하라. → 산출물 sessions/2026-08-07T08-24/editor.md
 - [2026-08-07] Writer가 제공할 스크립트를 기반으로, Master_Production_Blueprint에 정의된 시퀀스 흐름에 따라 필요한 BGM 전환 지점 및 구체적인 사운드 이펙트(SFX) 지점을 선행적으로 설계하라. → 산출물 sessions/2026-08-07T08-39/editor.md
 ### ✍️ Writer
-- [2026-08-07] Master_Production_Blueprint에 명시된 핵심 주제(AI 진단 데이터 오류)의 Pain Point 구간에 맞춰, 시청자의 감성을 극대화하는 최종 내레이션 대본(스크립트)을 작성하여 제공하라. → 산출물 sessions/2026-08-07T08-39/writer.md
 - [2026-08-10] youtube 및 designer가 제시한 실행 청사진을 바탕으로, 각 영상에 대한 내레이션 스크립트와 후킹 포인트를 최종 다듬어 감성적 설득력을 극대화하라. → 산출물 sessions/2026-08-10T00-40/writer.md
 - [2026-08-10] 레오가 제시할 Teaser 영상의 방향성에 맞춰, Pain $ightarrow$ Principle $ightarrow$ Promise 구조로 스크립트를 재구성하고, 잠재적 사용자들을 위한 '베타 등용문' 링크를 삽입하여 감성적 설득력을 극대화하는 카피를 작성하라. → 산출물 sessions/2026-08-10T01-04/writer.md
+- [2026-08-10] youtube가 제시한 각 영상별 스토리라인과 핵심 메시지를 기반으로, Pain $ ightarrow $ System $ ightarrow $ Hope의 감성 흐름을 따라 후킹 포인트를 극대화한 최종 스크립트 초안을 작성하라. → 산출물 sessions/2026-08-10T01-33/writer.md
 ### 🔍 Researcher
 - [2026-08-03] 현재 실용음악 입시생들의 가장 높은 불안감(Pain Point)과 관련된 최신 트렌드 및 경쟁사 콘텐츠 데이터를 수집하여, 다음 영상의 핵심 주제와 후크(Hook)를 결정할 근거 자료를 확보하라. → 산출물 sessions/2026-08-03T05-12/researcher.md
 - [2026-08-06] 현재 실용음악 입시생 타깃의 유튜브 트렌드와 경쟁사 데이터를 수집하여 콘텐츠 주제 아이디어를 5가지 제안하고, 각 주제에 대한 잠재적 'Pain' 포인트를 도출하라. → 산출물 sessions/2026-08-06T03-02/researcher.md

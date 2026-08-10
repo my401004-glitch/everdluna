@@ -549,3 +549,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-08-07] Master_Production_Blueprint에 명시된 핵심 주제(AI 진단 데이터 오류)의 Pain Point 구간에 맞춰, 시청자의 감성을 극대화하는 최종 내레이션 대본(스크립트)을 작성하여 제공하라. → 산출물 sessions/2026-08-07T08-39/writer.md
 - [2026-08-10] youtube 및 designer가 제시한 실행 청사진을 바탕으로, 각 영상에 대한 내레이션 스크립트와 후킹 포인트를 최종 다듬어 감성적 설득력을 극대화하라. → 산출물 sessions/2026-08-10T00-40/writer.md
 - [2026-08-10] 레오가 제시할 Teaser 영상의 방향성에 맞춰, Pain $ightarrow$ Principle $ightarrow$ Promise 구조로 스크립트를 재구성하고, 잠재적 사용자들을 위한 '베타 등용문' 링크를 삽입하여 감성적 설득력을 극대화하는 카피를 작성하라. → 산출물 sessions/2026-08-10T01-04/writer.md
+- [2026-08-10] youtube가 제시한 각 영상별 스토리라인과 핵심 메시지를 기반으로, Pain $ ightarrow $ System $ ightarrow $ Hope의 감성 흐름을 따라 후킹 포인트를 극대화한 최종 스크립트 초안을 작성하라. → 산출물 sessions/2026-08-10T01-33/writer.md
