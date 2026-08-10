@@ -797,3 +797,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-10] Developer가 제공한 시스템 안정성 데이터를 기반으로 Master Template Kit v1.0에 정의된 시각적 레이아웃과 좌표를 실제 PSD/Figma 파일에 즉시 반영하여 Video 1의 최종 디자인 에셋을 완성하라. → 산출물 sessions/2026-08-10T02-18/designer.md
 - [2026-08-10] Video 1 최종 디자인 에셋(`Video1_Final_Asset_Figma_Specs.md`)을 Master Template Kit v1.0에 완벽하게 통합하고, 실제 영상 제작 준비를 완료한다. → 산출물 sessions/2026-08-10T02-33/designer.md
 - [2026-08-10] Writer가 제공한 최종 Voice Over 스크립트와 Researcher가 제안한 Hook Point를 바탕으로 Master Template Kit v1.0을 활용하여 다음 콘텐츠에 대한 시각적 결과물 제작을 즉시 실행하라. → 산출물 sessions/2026-08-10T03-03/designer.md
+- [2026-08-10] Master Template Kit v1.0 및 Production Blueprint v2.0을 기반으로, 다음 영상에 대한 시각적 레이아웃과 애니메이션 요구사항을 최종 확정하여 즉시 제작 실행 준비를 완료하라. → 산출물 sessions/2026-08-10T03-18/designer.md

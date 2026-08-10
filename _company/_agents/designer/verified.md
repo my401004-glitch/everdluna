@@ -1136,3 +1136,6 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-10] | **Body Color** | 데이터 가독성 확보 (배경 텍스트) | Neutral Grey (`#F5F5F5`) | 높은 대비를 통한 정보 전달력 극대화. | | _(근거: Designer 검증된 지식)_
 - [2026-08-10] | **Title Type** | 강력한 헤드라인 강조 (Pain/Gain 문구) | Montserrat Bold | 메시지 임팩트 최대화. | | _(근거: Designer 검증된 지식)_
 - [2026-08-10] | **Body Type** | 데이터 및 상세 설명 텍스트 가독성 | Noto Sans KR | 높은 정보 밀도 처리 능력 보장. | | _(근거: Designer 검증된 지식)_
+- [2026-08-10] * Primary (Trust/Background): `#0A2463` (Dark Blue) - 신뢰, 전문성. 배경 및 주요 정보 섹션에 사용. _(근거: Designer 검증된 지식)_
+- [2026-08-10] * Accent (CTA/Gain): `#FFD700` (Accent Yellow) - 기회, 주목, 결과 강조. CTA, 성공 수치, '솔루션 적용 시 얻는 이득' 영역에 집중적으로 사용. _(근거: Designer 검증된 지식)_
+- [2026-08-10] * Neutral (Data Background): `#F5F5F5` (Neutral Grey) - 데이터의 명확성 확보. 본문 텍스트 배경으로 사용하여 Dark Blue와의 대비를 유지함. _(근거: Designer 검증된 지식)_
