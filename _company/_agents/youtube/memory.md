@@ -2344,3 +2344,4 @@ https://youtu.be/zV4YOo2_-c0
 
 - [2026-08-10] Master Video Content System Guidebook v1.0과 Designer의 최종 디자인 시스템을 기반으로, 다음 4개 영상(또는 계획된 콘텐츠)에 대한 구체적인 시퀀스 목록 및 제작 실행 청사진을 작성하라. → 산출물 sessions/2026-08-10T01-33/youtube.md
 - [2026-08-10] Master Video Content System Guidebook v1.0 및 Designer의 마스터 디자인 시스템(Template A/B)을 기반으로, 향후 제작할 영상 4개에 대한 최종 시퀀스 목록과 각 영상별 스토리라인 적용 청사진을 구체적으로 작성하라. → 산출물 sessions/2026-08-10T01-48/youtube.md
+- [2026-08-10] Designer가 제작할 시각 결과물을 기반으로, 레오의 청사진을 구체화하여 향후 4개 영상에 대한 최종 시퀀스 목록 및 제작 실행 청사진을 완성하라. → 산출물 sessions/2026-08-10T03-03/youtube.md
