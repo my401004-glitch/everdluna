@@ -624,3 +624,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-07] E2E 테스트 실행 실패 원인(`root directory` 오류)을 즉시 분석하고 환경 설정을 수정하여 API 기능 검증을 완료할 것. → 산출물 sessions/2026-08-07T07-24/developer.md
 - [2026-08-07] 확정된 API Contract(`diagnosis_v1_contract.ts`)를 기반으로 데이터 흐름 다이어그램(Data Flow Diagram)을 생성하고 시스템 안정성의 최종 증거를 확보할 것. → 산출물 sessions/2026-08-07T07-39/developer.md
 - [2026-08-10] 확정된 API Contract(`diagnosis_v1_contract.ts`)와 E2E 테스트 스크립트(`e2e_test_validate_diagnosis.test.ts`)를 기반으로, 시스템의 안정성을 최우선 목표로 설정하고 API 통합 및 E2E 테스트 안정화 작업을 즉시 착수하여 진행 상황을 보고하라. → 산출물 sessions/2026-08-10T00-55/developer.md
+- [2026-08-10] 확정된 API Contract(`diagnosis_v1_contract.ts`)와 E2E 테스트 스크립트(`e2e_test_validate_diagnosis.test.ts`)를 기반으로, `db-setup.ts` 파일 구현 및 E2E 테스트 시나리오에 경계 조건(Edge Cases)을 추가하는 작업을 즉시 시작하고 진행 상황을 보고하라. → 산출물 sessions/2026-08-10T01-04/developer.md
