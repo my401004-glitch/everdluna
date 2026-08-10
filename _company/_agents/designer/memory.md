@@ -803,3 +803,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-10] Production Storyboard 및 Animation Specification Sheet를 기반으로, 실제 Figma/Premiere Pro 환경에서 시각적 레이아웃과 애니메이션 규칙의 오류 없는 최종 검증을 완료하고 에셋 제작 준비를 시작하라. → 산출물 sessions/2026-08-10T04-18/designer.md
 - [2026-08-10] Writer가 확정한 주제와 코다리님의 기술적 안정성 기반 위에서, Production Storyboard 및 Animation Specification Sheet를 최종 검증하고 에셋 제작을 위한 구체적인 시각적 레이아웃과 애니메이션 규칙을 즉시 확정하라. → 산출물 sessions/2026-08-10T04-48/designer.md
 - [2026-08-10] youtube가 제공할 제작 실행 청사진 및 스토리보드를 바탕으로, 시각적 레이아웃과 애니메이션 규칙의 오류 없는 최종 검증을 완료하고 에셋 제작을 위한 구체적인 시각적 요구사항을 확정하라. → 산출물 sessions/2026-08-10T05-33/designer.md
+- [2026-08-10] 최종 확정된 스토리보드와 애니메이션 규칙을 기반으로, 영상에 필요한 모든 시각적 에셋의 구체적인 레이아웃과 애니메이션 규칙(Visual Blueprints)을 최종 검증하고 제작 준비를 완료할 것. → 산출물 sessions/2026-08-10T05-48/designer.md
