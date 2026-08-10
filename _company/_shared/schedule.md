@@ -1,21 +1,21 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 10. 오후 2:20:24_
+_업데이트: 2026. 8. 10. 오후 2:37:03_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-08-10] Master Video Content System Guidebook 및 Designer의 Production Bible을 기반으로, 다음 영상(또는 계획된 콘텐츠)에 대한 최종 시퀀스 목록과 제작 실행 청사진을 구체적으로 작성하여 편집 준비를 완료하라. → 산출물 sessions/2026-08-10T03-33/youtube.md
 - [2026-08-10] 개발팀의 안정화 결과를 바탕으로, 다음 영상 제작을 위한 최종 시퀀스 목록과 제작 실행 청사진을 확정하고 편집 준비를 완료하라. → 산출물 sessions/2026-08-10T03-48/youtube.md
 - [2026-08-10] 개발팀의 안정화 결과를 바탕으로, 다음 영상 제작을 위한 최종 시퀀스 목록과 제작 실행 청사진을 확정하고 편집 준비를 완료하라. → 산출물 sessions/2026-08-10T05-03/youtube.md
+- [2026-08-10] 이전 논의된 시스템 안정화 결과와 Production Blueprint를 기반으로, 다음 영상 제작에 필요한 최종 시퀀스 목록과 제작 실행 청사진을 구체적으로 작성하고 편집 준비를 완료하라. → 산출물 sessions/2026-08-10T05-33/youtube.md
 ### 📷 Instagram
 - [2026-07-28] 최종 확정된 영상 포맷 및 스크립트의 핵심 메시지를 활용하여 Reels 1번 콘텐츠의 최종 게시 포스팅 초안(캡션, 해시태그 포함)을 작성하고 최적의 게시 시간을 제안할 것. → 산출물 sessions/2026-07-28T02-32/instagram.md
 - [2026-08-03] 확정된 비주얼 가이드라인과 최적 게시 시간을 활용하여 Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그)을 완성하고 배포 준비를 완료하라. → 산출물 sessions/2026-08-03T04-12/instagram.md
 - [2026-08-03] Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그 포함)을 완성하고 배포 준비를 완료할 것. → 산출물 sessions/2026-08-03T04-57/instagram.md
 ### 🎨 Designer
-- [2026-08-10] 코다리님의 안정성 기반과 레오님의 Production Blueprint를 반영하여, Writer가 제공할 스크립트에 맞춰 시각적 스토리보드 및 애니메이션 요구사항을 최종 확정하고 즉시 제작 실행 준비를 완료하라. → 산출물 sessions/2026-08-10T04-03/designer.md
 - [2026-08-10] Production Storyboard 및 Animation Specification Sheet를 기반으로, 실제 Figma/Premiere Pro 환경에서 시각적 레이아웃과 애니메이션 규칙의 오류 없는 최종 검증을 완료하고 에셋 제작 준비를 시작하라. → 산출물 sessions/2026-08-10T04-18/designer.md
 - [2026-08-10] Writer가 확정한 주제와 코다리님의 기술적 안정성 기반 위에서, Production Storyboard 및 Animation Specification Sheet를 최종 검증하고 에셋 제작을 위한 구체적인 시각적 레이아웃과 애니메이션 규칙을 즉시 확정하라. → 산출물 sessions/2026-08-10T04-48/designer.md
+- [2026-08-10] youtube가 제공할 제작 실행 청사진 및 스토리보드를 바탕으로, 시각적 레이아웃과 애니메이션 규칙의 오류 없는 최종 검증을 완료하고 에셋 제작을 위한 구체적인 시각적 요구사항을 확정하라. → 산출물 sessions/2026-08-10T05-33/designer.md
 ### 💻 코다리
 - [2026-08-10] Writer와 Designer가 확정한 제작 청사진(Blueprint)의 데이터 흐름 및 시스템 구조를 검토하여, 다음 콘텐츠 제작 과정에서 발생할 수 있는 잠재적 기술적 병목 지점(Edge Case)에 대한 사전 테스트 코드를 최종적으로 보강하고 시스템 안정성을 100% 확보하라. → 산출물 sessions/2026-08-10T04-48/developer.md
 - [2026-08-10] Writer 및 Designer가 확정한 Production Blueprint의 데이터 흐름 및 시스템 구조에 대한 잠재적 기술적 병목 지점(Edge Case)에 대한 사전 테스트 코드(`diagnosisService.test.ts`)를 구현하고 시스템 안정성을 100% 확보하는 작업을 최우선으로 실행하라. → 산출물 sessions/2026-08-10T05-03/developer.md
