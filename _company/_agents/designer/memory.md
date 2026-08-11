@@ -833,3 +833,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-11] Master Component Library를 Figma에 최종 구현하고 Motion Component 사양을 확정하여 디자인 시스템(Pain/Gain 구조 및 컬러 코드)을 완벽하게 완성하라. 이 결과물을 개발팀에게 전달할 수 있도록 명확한 가이드라인을 정리하라. → 산출물 sessions/2026-08-11T11-17/designer.md
 - [2026-08-11] Master Component Library와 Motion Component 사양을 최종 확정하여, 개발팀이 즉시 사용할 수 있는 명확한 디자인 시스템 가이드라인 및 비주얼 에셋 목록을 완성하라. → 산출물 sessions/2026-08-11T11-57/designer.md
 - [2026-08-11] 확정된 Motion Component 사양과 개발팀의 코드(코다리 산출물) 간의 시각적 일관성 최종 교차 검증을 수행하고 디자인 시스템의 기술적 완성도를 확인하라. → 산출물 sessions/2026-08-11T12-12/designer.md
+- [2026-08-11] 완성된 'System State Component Guide'를 기반으로 Master Component Library 내부에 해당 상태 컴포넌트(`isLoading`, `isError` 등)를 실제로 구현하여 디자인 시스템의 완성도를 높이고, 개발팀에 최종 시각적 사양을 전달할 준비를 하라. → 산출물 sessions/2026-08-11T12-27/designer.md
