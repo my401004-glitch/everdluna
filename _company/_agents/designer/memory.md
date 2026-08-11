@@ -821,3 +821,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-11] 최종 확정된 디자인 사양(`diagnosis_widget_design_spec.md`) 및 PoC 결과를 기반으로, 다음 콘텐츠 영상 제작에 필요한 모든 핵심 시각 에셋(위젯, 그래프 애니메이션)을 Figma에서 최종 구현하고 프레임별 기술 사양을 확정하라. → 산출물 sessions/2026-08-11T05-07/designer.md
 - [2026-08-11] 최종 기술 시퀀스 매뉴얼에 따라, 모든 핵심 장면의 시각적 일관성(Motion Component 적용)을 100% 확보하는 최종 디자인 가이드라인을 확정하고 Figma 구현에 필요한 에셋을 제공할 것. → 산출물 sessions/2026-08-11T05-22/designer.md
 - [2026-08-11] writer가 제시한 최종 후킹 문구들을 기반으로, 'Thumbnail Master Kit Design Guide'에 정의된 규칙을 준수하여 실제 영상 썸네일의 시각적 레이아웃 및 핵심 요소 배치(Wireframe)를 Figma에서 즉시 구현하라 → 산출물 sessions/2026-08-11T05-37/designer.md
+- [2026-08-11] Writer가 준비한 후킹 문구들을 기반으로, 'Thumbnail Master Kit Design Guide'에 정의된 규칙을 준수하여 실제 영상 썸네일의 시각적 레이아웃 및 핵심 요소 배치(Wireframe)를 Figma에서 즉시 구현하라. → 산출물 sessions/2026-08-11T06-07/designer.md
