@@ -747,6 +747,57 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-08-11T12-27/_report.md\n- Designer: 완성된 'System State Component Guide'를 기반으로 Master Component Library 내부에 해당 상태 컴포넌트\n- 코다리: 코다리가 구현한 API 호출 로직과 상태 관리(`isLoading`, `isError`)에 대한 통합 테스트 스위트의 안정성을 최종 검증하고, \n- 레오: 확정된 디자인 시스템 가이드라인(Pain/Gain 구조)과 Motion Component 사양을 기반으로, 다음 영상 콘텐츠의 스토리보드 초안 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 완성된 'System State Component Guide'를 기반으로 Master Component Library 내부에 해당 상태 컴포넌트(`isLoading`, `isError` 등)를 실제로 구현하여 디자인 시스템의 완성도",
       "completedAt": "2026-08-11T12:32:20.514Z"
+    },
+    {
+      "id": "20260811234113-znv6",
+      "title": "**Pain 제시**: 시청자가 '지금 이대로는 안 된다'고 느끼게 하는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-08-11T23:41:13.697Z",
+      "status": "done",
+      "sessionDir": "2026-08-11T23-24",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-08-11T23-24/_report.md\n- 레오: 최근 확정된 스토리보드 및 제목 후보 5가지를 기반으로 채널 목표(1만 구독자) 달성에 가장 기여할 수 있는 다음 영상의 최종 업로드 전략(제목\n- Designer: Writer와 코다리가 확정한 비주얼 가이드라인과 선택된 후크를 기반으로, 다음 영상에 사용될 핵심 시각 요소(썸네일 Mockup)의 최종 디자\n- 코다리: AI 진단 시스템(`DiagnosisScoreDisplay`)의 API 연동 안정성을 최종 점검하고, 콘텐츠 제작 프로세스에 적용할 수 있도록 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 최근 확정된 스토리보드 및 제목 후보 5가지를 기반으로 채널 목표(1만 구독자) 달성에 가장 기여할 수 있는 다음 영상의 최종 업로드 전략(제목, 핵심 태그, 최적 업로드 시간)을 결정하고 보고하라.\n> 🔧 **도구 실행**: `my_v",
+      "completedAt": "2026-08-11T23:57:41.348Z"
+    },
+    {
+      "id": "20260811234113-6gfa",
+      "title": "**Gain 명확화**: 콘텐츠를 본 후 얻을 수 있는 구체적이고 측정 가능한 이득(숫자, 점수)이 보이는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-08-11T23:41:13.698Z",
+      "status": "done",
+      "sessionDir": "2026-08-11T23-24",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-08-11T23-24/_report.md\n- 레오: 최근 확정된 스토리보드 및 제목 후보 5가지를 기반으로 채널 목표(1만 구독자) 달성에 가장 기여할 수 있는 다음 영상의 최종 업로드 전략(제목\n- Designer: Writer와 코다리가 확정한 비주얼 가이드라인과 선택된 후크를 기반으로, 다음 영상에 사용될 핵심 시각 요소(썸네일 Mockup)의 최종 디자\n- 코다리: AI 진단 시스템(`DiagnosisScoreDisplay`)의 API 연동 안정성을 최종 점검하고, 콘텐츠 제작 프로세스에 적용할 수 있도록 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 최근 확정된 스토리보드 및 제목 후보 5가지를 기반으로 채널 목표(1만 구독자) 달성에 가장 기여할 수 있는 다음 영상의 최종 업로드 전략(제목, 핵심 태그, 최적 업로드 시간)을 결정하고 보고하라.\n> 🔧 **도구 실행**: `my_v",
+      "completedAt": "2026-08-11T23:57:41.349Z"
+    },
+    {
+      "id": "20260811234113-186b",
+      "title": "**톤 & 매너 일관성**: 사용된 모든 폰트와 색상 코드가 v1.0 가이드라인에 부합하는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-08-11T23:41:13.699Z",
+      "status": "done",
+      "sessionDir": "2026-08-11T23-24",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-08-11T23-24/_report.md\n- 레오: 최근 확정된 스토리보드 및 제목 후보 5가지를 기반으로 채널 목표(1만 구독자) 달성에 가장 기여할 수 있는 다음 영상의 최종 업로드 전략(제목\n- Designer: Writer와 코다리가 확정한 비주얼 가이드라인과 선택된 후크를 기반으로, 다음 영상에 사용될 핵심 시각 요소(썸네일 Mockup)의 최종 디자\n- 코다리: AI 진단 시스템(`DiagnosisScoreDisplay`)의 API 연동 안정성을 최종 점검하고, 콘텐츠 제작 프로세스에 적용할 수 있도록 \n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 최근 확정된 스토리보드 및 제목 후보 5가지를 기반으로 채널 목표(1만 구독자) 달성에 가장 기여할 수 있는 다음 영상의 최종 업로드 전략(제목, 핵심 태그, 최적 업로드 시간)을 결정하고 보고하라.\n> 🔧 **도구 실행**: `my_v",
+      "completedAt": "2026-08-11T23:57:41.351Z"
     }
   ]
 }

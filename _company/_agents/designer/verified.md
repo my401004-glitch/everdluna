@@ -1194,3 +1194,11 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-11] | **Primary (신뢰/전문성)** | `#0A2463` (Dark Blue) | 배경, 주요 헤더, 핵심 데이터 영역. 브랜드의 신뢰도를 구축하는 주색. | | _(근거: Designer 검증된 지식)_
 - [2026-08-11] | **Accent (CTA/기회)** | `#FFD700` (Yellow Gold) | Pain(위험), Gain(획득), 최종 CTA 버튼. 시선 집중 및 행동 유도. | | _(근거: Designer 검증된 지식)_
 - [2026-08-11] | **Background (가독성)** | `#F5F5F5` (Neutral Grey) | 본문 텍스트 배경, 데이터 제시 영역의 명확한 분리. | | _(근거: Designer 검증된 지식)_
+- [2026-08-11] * Primary Color (신뢰/안정): Dark Blue (`#0A2463`) _(근거: Designer 검증된 지식)_
+- [2026-08-11] * Accent Yellow (행동 유도/기회): Accent Yellow (`#FFD700`) _(근거: Designer 검증된 지식)_
+- [2026-08-11] * Background Color (가독성/데이터): Neutral Grey (`#F5F5F5`) _(근거: Designer 검증된 지식)_
+- [2026-08-11] | **헤드라인 (Headline)** | Montserrat Bold | 대문자, 최대 크기 | Pain과 Gain의 핵심 키워드에 사용. 가장 강력한 메시지 전달력 확보. | | _(근거: Designer 검증된 지식)_
+- [2026-08-11] | **본문 텍스트 (Body)** | Noto Sans KR | Medium/Regular | 구체적인 수치, 데이터, 부연 설명. 가독성 최우선. | | _(근거: Designer 검증된 지식)_
+- [2026-08-11] | **Pain/위험** | Dark Blue (`#0A2463`) + Red Accent | 배경, 경고문구. 불안감 조성 및 신뢰성 확보 (대비). | 빨간색은 보조적으로만 사용하고, 주 배경은 반드시 Dark Blue를 유지합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-08-11] | **Gain/기회** | Accent Yellow (`#FFD700`) | 모든 CTA(Call-to-Action), 최종 수치, 성공적인 변화의 '빛'. | 이 색상을 과도하게 사용하면 가치가 떨어지므로, 반드시 전환점이나 강조점에만 제한적으로 사용합니다. | | _(근거: Designer 검증된 지식)_
+- [2026-08-11] | **Neutral/데이터** | Neutral Grey (`#F5F5F5`) | 데이터 배경 및 본문 영역의 분리. 시각적 피로도 감소. | 텍스트가 들어가는 모든 기본 데이터 박스의 배경색으로 사용합니다. | | _(근거: Designer 검증된 지식)_
