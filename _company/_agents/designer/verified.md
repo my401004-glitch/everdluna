@@ -1175,3 +1175,5 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-11] | **Severity Indicator** | 점수의 위험도를 색상과 아이콘으로 즉시 인지시킴. | Accent Yellow를 중심으로 3단계 컬러 코딩 (Green $\rightarrow$ Yellow $\rightarrow$ Red). | _(근거: Designer 검증된 지식)_
 - [2026-08-11] | **Interpretation Text** | 이 점수가 사용자에게 의미하는 바를 설명. (Pain/Gain 프레임워크 적용) | Noto Sans KR, 명확한 가독성을 유지하며 전문적인 톤을 전달해야 함. | _(근거: sessions/2026-05-19...)_
 - [2026-08-11] | **Action CTA** | 다음 단계로의 행동 유도 버튼 (가장 중요한 액션). | Accent Yellow를 배경으로 사용하여 즉각적인 클릭을 유도합니다. | _(근거: Designer 검증된 지식)_
+- [2026-08-11] * **Headline/Title:** Montserrat Bold (``) - 임팩트 있는 메시지 전달 (Pain, Gain). _(근거: Self-RAG)_
+- [2026-08-11] * **Body Text/Data:** Noto Sans KR Regular/Medium (``) - 데이터의 높은 가독성 확보. _(근거: Self-RAG)_
