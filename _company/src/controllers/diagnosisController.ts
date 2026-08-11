@@ -1,46 +1,30 @@
-/**
- * @fileoverview API 게이트웨이 역할을 수행하며, 진단 점수 계산을 위한 엔드포인트 핸들링 로직을 정의합니다.
- */
-
 import { Request, Response } from 'express';
-import { calculateDiagnosisScore, handleDiagnosisError } from '../services/diagnosisService';
-import { DiagnosisInput, UserContext } from '../types'; 
-
+import { getDiagnosisScoreFromService } from '../services/diagnosisService';
+import { DiagnosisResponse } from '../api/v1/diagnosis-score.interface';
 
 /**
- * GET /api/v1/diagnosis_score 엔드포인트 핸들러.
- * 요청 데이터를 받아 진단 서비스 레이어를 호출하고 결과를 응답합니다.
+ * @description GET /api/v1/diagnosis-score
+ * [근거: sessions/2026-05-19T09:57] - 기존 API 엔드포인트를 유지하되, 응답 스키마를 애니메이션 친화적으로 변경함.
+ * @param req - Express Request object (사용자 인증 정보 포함)
+ * @param res - Express Response object
  */
-export const getDiagnosisScoreHandler = async (req: Request, res: Response) => {
+export const getDiagnosisScoreFromController = async (req: Request, res: Response<DiagnosisResponse>) => {
     try {
-        // 1. 요청 데이터 추출 및 유효성 검증
-        const inputData: DiagnosisInput = req.body; // 실제로는 쿼리 파라미터나 경로 변수일 수 있음
-        const userContext: UserContext = { subscriptionLevel: 'Premium' }; // 실제는 토큰 기반으로 가져와야 함
+        // 1. 사용자 권한 및 유효성 검증을 먼저 수행하는 로직이 필요함. [근거: sessions/2026-05-18T13:43]
+        const userUuid = req.user?.id; // 가상의 인증 미들웨어에서 가져온 UUID
 
-        // [Pre-flight Check] 필수 데이터 유무 검사
-        if (!inputData || !inputData.studyHours) {
-            return res.status(400).json({ error: "요청 파라미터가 누락되었습니다. studyHours, practiceCount를 포함해야 합니다." });
+        if (!userUuid) {
+            return res.status(401).json({ success: false, message: 'Unauthorized access or missing user ID.' });
         }
 
-        // 2. 핵심 비즈니스 로직 호출 (서비스 레이어 사용)
-        const result = await calculateDiagnosisScore(inputData, userContext);
-
-        // 3. 성공적인 응답 반환
-        return res.status(200).json({
-            score: result.score,
-            kpis: result.kpis,
-            message: "진단 점수 계산이 완료되었습니다."
-        });
+        // 2. 서비스 레이어 호출 (실제 비즈니스 로직 포함)
+        const diagnosisResponse = await getDiagnosisScoreFromService(userUuid);
+        
+        res.status(200).json({ success: true, data: diagnosisResponse, message: 'Diagnosis scores retrieved successfully with animation trends.' });
 
     } catch (error) {
-        // 4. 에러 처리 및 사용자 친화적인 메시지 반환
-        const errorMessage = error instanceof Error ? error.message : "알 수 없는 서버 오류";
-        const friendlyMessage = handleDiagnosisError(new Error(errorMessage));
-        
-        console.error(`API 호출 실패: ${friendlyMessage}`);
-        return res.status(403).json({ 
-            error: friendlyMessage, 
-            code: 'DIAGNOSIS_ERROR' 
-        });
+        console.error('API Error:', error);
+        // 🐛 에러 처리: 구체적인 에러 메시지를 클라이언트에게 노출하지 않도록 함. [근거: 시니어 엔지니어 원칙]
+        res.status(500).json({ success: false, message: 'Internal server error while processing diagnosis.' });
     }
 };
