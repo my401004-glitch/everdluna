@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 11. 오후 3:24:01_
+_업데이트: 2026. 8. 11. 오후 4:25:56_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,9 +13,9 @@ _업데이트: 2026. 8. 11. 오후 3:24:01_
 - [2026-08-03] 확정된 비주얼 가이드라인과 최적 게시 시간을 활용하여 Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그)을 완성하고 배포 준비를 완료하라. → 산출물 sessions/2026-08-03T04-12/instagram.md
 - [2026-08-03] Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그 포함)을 완성하고 배포 준비를 완료할 것. → 산출물 sessions/2026-08-03T04-57/instagram.md
 ### 🎨 Designer
-- [2026-08-11] writer가 제시한 최종 후킹 문구들을 기반으로, 'Thumbnail Master Kit Design Guide'에 정의된 규칙을 준수하여 실제 영상 썸네일의 시각적 레이아웃 및 핵심 요소 배치(Wireframe)를 Figma에서 즉시 구현하라 → 산출물 sessions/2026-08-11T05-37/designer.md
 - [2026-08-11] Writer가 준비한 후킹 문구들을 기반으로, 'Thumbnail Master Kit Design Guide'에 정의된 규칙을 준수하여 실제 영상 썸네일의 시각적 레이아웃 및 핵심 요소 배치(Wireframe)를 Figma에서 즉시 구현하라. → 산출물 sessions/2026-08-11T06-07/designer.md
 - [2026-08-11] Writer가 제공한 'Thumbnail Master Kit Design Guide'와 최종 시퀀스 매뉴얼에 따라, 확정된 썸네일 와이어프레임 스펙(1280x720px)을 Figma에서 즉시 구현하고 핵심 디자인 에셋을 제공하라. → 산출물 sessions/2026-08-11T06-22/designer.md
+- [2026-08-11] Writer와 Researcher가 제공한 핵심 후킹 메시지 10가지를 바탕으로, 'Thumbnail Master Kit Design Guide'에 따라 시각적 레이아웃 및 핵심 요소 배치를 포함하는 초기 목업(Wireframe)을 3가지 유형으로 즉시 구현하라. → 산출물 sessions/2026-08-11T06-51/designer.md
 ### 💻 코다리
 - [2026-08-11] Designer가 정의한 모션 규칙과 레오가 정리한 시퀀스 매트릭스를 기반으로, 데이터 변환 로직의 API 명세서와 백엔드 연동 안정성을 최종 검증하여 시스템을 구축하라. → 산출물 sessions/2026-08-11T05-07/developer.md
 - [2026-08-11] 정의된 API 명세서와 데이터 스키마를 기반으로 백엔드 비즈니스 로직(`diagnosisService`, `diagnosisController`)을 구현하고 데이터 흐름의 안정성을 검증할 것. → 산출물 sessions/2026-08-11T05-22/developer.md
@@ -33,11 +33,11 @@ _업데이트: 2026. 8. 11. 오후 3:24:01_
 - [2026-08-07] 레오가 제시한 MPB(마스터 프로덕션 블루프린트)와 Designer의 시각적 실행 블루프린트를 통합하여, 실제 영상 촬영 및 편집에 필요한 최종 시퀀스 목록과 오디오 디자인 전략을 구체적으로 정리하라. → 산출물 sessions/2026-08-07T08-24/editor.md
 - [2026-08-07] Writer가 제공할 스크립트를 기반으로, Master_Production_Blueprint에 정의된 시퀀스 흐름에 따라 필요한 BGM 전환 지점 및 구체적인 사운드 이펙트(SFX) 지점을 선행적으로 설계하라. → 산출물 sessions/2026-08-07T08-39/editor.md
 ### ✍️ Writer
-- [2026-08-11] 최종 확정된 데이터 시각화 흐름과 '좌절 $ightarrow$ AI 해결 $ightarrow$ 승리로의 변곡점' 서사를 바탕으로, 다음 영상에 사용될 후킹 포인트(Hook)와 핵심 스토리라인 초안을 작성하라. → 산출물 sessions/2026-08-11T04-37/writer.md
 - [2026-08-11] 레오가 확보한 데이터와 Designer가 제공한 시각적 요구사항(Thumbnail Master Kit)을 통합하여, 가장 강력한 '좌절 $ightarrow$ AI 해결 $ightarrow$ 승리' 서사를 적용한 영상의 최종 스크립트 초안 및 핵심 후킹 문구를 작성하라 → 산출물 sessions/2026-08-11T05-37/writer.md
 - [2026-08-11] Researcher가 제시한 후킹 포인트를 통합하여 유튜브 영상 제목(Title) 5가지와 스크립트 도입부(Hook) 초안을 작성하고, 이 내용을 Designer에게 전달할 최종 카피를 준비하라. → 산출물 sessions/2026-08-11T06-07/writer.md
+- [2026-08-11] 최근 연구 결과와 데이터(Gap Score)를 기반으로, 유튜브 영상과 인스타그램 릴스에 즉시 적용 가능한 핵심 후킹 메시지 10가지(Pain $ightarrow$ Gain 구조)를 작성하라. → 산출물 sessions/2026-08-11T06-51/writer.md
 ### 🔍 Researcher
-- [2026-08-10] 최근 트렌드 및 데이터 분석을 통해, 현재 시장에서 가장 강력한 'Pain Point'를 핵심 소재로 선정하고 Writer에게 제공할 구체적인 주제 아이디어를 3가지 제안하라. → 산출물 sessions/2026-08-10T04-33/researcher.md
 - [2026-08-11] 경쟁 채널 댓글 및 시장 Pain Point 데이터를 분석하여, 영상 후킹에 가장 효과적인 '골든 타임' 지점과 이에 따른 스토리 흐름을 도출하고 보고하라. → 산출물 sessions/2026-08-11T04-22/researcher.md
 - [2026-08-11] 경쟁 채널들의 성공적인 콘텐츠 전략을 분석하여, Writer가 제시한 제목 및 스크립트에 적용할 구체적인 후킹 포인트를 도출하고 경쟁 우위를 분석하라. → 산출물 sessions/2026-08-11T05-52/researcher.md
+- [2026-08-11] 제공된 데이터와 목표를 바탕으로, 이 10가지 후킹 메시지에 가장 효과적인 키워드 및 데이터 근거를 보강하여 최종 리스트를 확정하라. → 산출물 sessions/2026-08-11T06-51/researcher.md
 

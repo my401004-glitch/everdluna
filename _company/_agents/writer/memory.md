@@ -566,3 +566,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-08-11] 최종 확정된 데이터 시각화 흐름과 '좌절 $ightarrow$ AI 해결 $ightarrow$ 승리로의 변곡점' 서사를 바탕으로, 다음 영상에 사용될 후킹 포인트(Hook)와 핵심 스토리라인 초안을 작성하라. → 산출물 sessions/2026-08-11T04-37/writer.md
 - [2026-08-11] 레오가 확보한 데이터와 Designer가 제공한 시각적 요구사항(Thumbnail Master Kit)을 통합하여, 가장 강력한 '좌절 $ightarrow$ AI 해결 $ightarrow$ 승리' 서사를 적용한 영상의 최종 스크립트 초안 및 핵심 후킹 문구를 작성하라 → 산출물 sessions/2026-08-11T05-37/writer.md
 - [2026-08-11] Researcher가 제시한 후킹 포인트를 통합하여 유튜브 영상 제목(Title) 5가지와 스크립트 도입부(Hook) 초안을 작성하고, 이 내용을 Designer에게 전달할 최종 카피를 준비하라. → 산출물 sessions/2026-08-11T06-07/writer.md
+- [2026-08-11] 최근 연구 결과와 데이터(Gap Score)를 기반으로, 유튜브 영상과 인스타그램 릴스에 즉시 적용 가능한 핵심 후킹 메시지 10가지(Pain $ightarrow$ Gain 구조)를 작성하라. → 산출물 sessions/2026-08-11T06-51/writer.md
