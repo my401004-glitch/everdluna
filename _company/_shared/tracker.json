@@ -1,74 +1,6 @@
 {
   "tasks": [
     {
-      "id": "20260711061024-vx6f",
-      "title": "**내레이션:** 3단계 감정 흐름(좌절 $\\rightarrow$ 진단 $\\rightarrow$ 승리)에 따른 스크립트 분할 완료 및 녹음 준비.",
-      "description": "자동 등록 (영숙 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "secretary"
-      ],
-      "createdAt": "2026-07-11T06:10:24.927Z",
-      "status": "done",
-      "sessionDir": "2026-07-11T06-05",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-11T06-05/_report.md\n- Writer: 다음 영상(Module C)의 최종 스크립트 방향성과 핵심 메시지를 재확인하여, 제작 일정 수립에 필요한 명확한 내러티브를 제공하라.\n- Designer: VideoEditor_Handover_Package_V2.md에 명시된 최종 마스터 비주얼 가이드라인을 기반으로, 다음 영상 제작에 필요한 핵심\n- 코다리: VideoEditor_Handover_Package_V2.md의 기술 지침과 Designer/Writer의 요구사항이 반영된 최종 '마스터 프로\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 다음 영상(Module C)의 최종 스크립트 방향성과 핵심 메시지를 재확인하여, 제작 일정 수립에 필요한 명확한 내러티브를 제공하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ✍️ Writer:",
-      "completedAt": "2026-07-11T06:11:07.500Z"
-    },
-    {
-      "id": "20260711061024-g1xz",
-      "title": "**비주얼:** Gap Score 위젯 애니메이션 구현 (가장 높은 우선순위).",
-      "description": "자동 등록 (영숙 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "secretary"
-      ],
-      "createdAt": "2026-07-11T06:10:24.928Z",
-      "status": "done",
-      "sessionDir": "2026-07-11T06-05",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-11T06-05/_report.md\n- Writer: 다음 영상(Module C)의 최종 스크립트 방향성과 핵심 메시지를 재확인하여, 제작 일정 수립에 필요한 명확한 내러티브를 제공하라.\n- Designer: VideoEditor_Handover_Package_V2.md에 명시된 최종 마스터 비주얼 가이드라인을 기반으로, 다음 영상 제작에 필요한 핵심\n- 코다리: VideoEditor_Handover_Package_V2.md의 기술 지침과 Designer/Writer의 요구사항이 반영된 최종 '마스터 프로\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 다음 영상(Module C)의 최종 스크립트 방향성과 핵심 메시지를 재확인하여, 제작 일정 수립에 필요한 명확한 내러티브를 제공하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ✍️ Writer:",
-      "completedAt": "2026-07-11T06:11:07.500Z"
-    },
-    {
-      "id": "20260711061024-q6pa",
-      "title": "**사운드:** 데이터 변화 시점마다의 '전자적 증명 사운드' 디자인 및 적용.",
-      "description": "자동 등록 (영숙 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "secretary"
-      ],
-      "createdAt": "2026-07-11T06:10:24.929Z",
-      "status": "done",
-      "sessionDir": "2026-07-11T06-05",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-11T06-05/_report.md\n- Writer: 다음 영상(Module C)의 최종 스크립트 방향성과 핵심 메시지를 재확인하여, 제작 일정 수립에 필요한 명확한 내러티브를 제공하라.\n- Designer: VideoEditor_Handover_Package_V2.md에 명시된 최종 마스터 비주얼 가이드라인을 기반으로, 다음 영상 제작에 필요한 핵심\n- 코다리: VideoEditor_Handover_Package_V2.md의 기술 지침과 Designer/Writer의 요구사항이 반영된 최종 '마스터 프로\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 다음 영상(Module C)의 최종 스크립트 방향성과 핵심 메시지를 재확인하여, 제작 일정 수립에 필요한 명확한 내러티브를 제공하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ✍️ Writer:",
-      "completedAt": "2026-07-11T06:11:07.501Z"
-    },
-    {
-      "id": "20260711061024-eri3",
-      "title": "**기술 통합:** Diagnosis Score 산출 공식($W_n$ 기반)을 화면에 애니메이션으로 띄우는 로직 확정 및 테스트 완료.",
-      "description": "자동 등록 (영숙 산출물에서 추출)",
-      "owner": "agent",
-      "agentIds": [
-        "secretary"
-      ],
-      "createdAt": "2026-07-11T06:10:24.929Z",
-      "status": "done",
-      "sessionDir": "2026-07-11T06-05",
-      "nudges": 0,
-      "priority": "normal",
-      "preAlarmsSent": [],
-      "evidence": "완료: sessions/2026-07-11T06-05/_report.md\n- Writer: 다음 영상(Module C)의 최종 스크립트 방향성과 핵심 메시지를 재확인하여, 제작 일정 수립에 필요한 명확한 내러티브를 제공하라.\n- Designer: VideoEditor_Handover_Package_V2.md에 명시된 최종 마스터 비주얼 가이드라인을 기반으로, 다음 영상 제작에 필요한 핵심\n- 코다리: VideoEditor_Handover_Package_V2.md의 기술 지침과 Designer/Writer의 요구사항이 반영된 최종 '마스터 프로\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### ✍️ Writer _(Copywriter)_\n> 📋 **지시**: 다음 영상(Module C)의 최종 스크립트 방향성과 핵심 메시지를 재확인하여, 제작 일정 수립에 필요한 명확한 내러티브를 제공하라.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> 💡 **핵심 산출**: ✍️ Writer:",
-      "completedAt": "2026-07-11T06:11:07.501Z"
-    },
-    {
       "id": "20260713020517-29u5",
       "title": "모든 데이터 시각화 요소가 **'State-based Color'** 규칙을 따르는지 확인했는지?",
       "description": "자동 등록 (Designer 산출물에서 추출)",
@@ -696,6 +628,36 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-08-10T02-33/_report.md\n- 코다리: E2E_Stabilization_Report.md를 기반으로 시스템 안정화에 필요한 DB 경계 조건 및 테스트 코드를 지속적으로 보강하여 기술적\n- Designer: Video 1 최종 디자인 에셋(`Video1_Final_Asset_Figma_Specs.md`)을 Master Template Kit v1.0\n- Writer: 최종 Voice Over 스크립트를 기반으로 첫 번째 영상의 전체 편집 흐름(타이밍 및 컷 전환)을 구체화하는 시나리오 보드를 작성하여 영상 제\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 💻 코다리 _(시니어 풀스택 엔지니어)_\n> 📋 **지시**: E2E_Stabilization_Report.md를 기반으로 시스템 안정화에 필요한 DB 경계 조건 및 테스트 코드를 지속적으로 보강하여 기술적 기반을 유지한다.\n> 🔧 **도구 실행**: _(없음 — LLM 추론만)_\n> ⚠️ **상태**",
       "completedAt": "2026-08-10T02:37:09.492Z"
+    },
+    {
+      "id": "20260811040946-xj8v",
+      "title": "**애니메이션 일관성:** 모든 점수 상승/하락 애니메이션의 속도(Timing Curve)와 탄성 계수(Spring Factor)를 통일된 규칙으로 정의해야 한다. (개발팀 전달 필수)",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-08-11T04:09:46.251Z",
+      "status": "pending",
+      "sessionDir": "2026-08-11T04-07",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": []
+    },
+    {
+      "id": "20260811040946-f57y",
+      "title": "**데이터 연동:** 위젯의 각 수치(Diagnosis Score, Risk %, Potential %)는 반드시 API 호출을 통해 실시간으로 데이터를 받아와야 하며, 이 데이터 구조가 애니메이션에 영향을 미쳐야 한다.",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-08-11T04:09:46.253Z",
+      "status": "pending",
+      "sessionDir": "2026-08-11T04-07",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": []
     }
   ]
 }
