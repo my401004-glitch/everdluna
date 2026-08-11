@@ -839,3 +839,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-11] Master Component Library와 Motion Component 사양을 기반으로, 다음 영상에 사용할 핵심 썸네일 시각 요소(Pain/Gain 강조 구조)를 디자인 시스템 내에서 프로토타입화하고 실제 제작을 위한 최종 디자인 파일(Mockup)을 생성하라. → 산출물 sessions/2026-08-11T14-50/designer.md
 - [2026-08-11] 확정된 Master Component Library 및 Motion Component 사양을 기반으로, 다음 영상에 사용할 핵심 썸네일 시각 요소(Pain/Gain 강조 구조)의 최종 디자인 파일(Mockup)을 생성하고 비주얼 에셋 목록을 확정하라. → 산출물 sessions/2026-08-11T16-11/designer.md
 - [2026-08-11] 최종 확정된 Master Component Library를 사용하여, 유튜브 콘텐츠의 핵심 메시지(Pain $ightarrow$ Gain)를 시각적으로 가장 효과적으로 강조하는 최종 썸네일 디자인 파일(Mockup)을 생성하고 비주얼 에셋 목록을 확정하라. → 산출물 sessions/2026-08-11T17-22/designer.md
+- [2026-08-11] 확정된 Master Component Library 및 Motion Component 사양을 기반으로, 가장 우선순위가 높은 다음 영상에 사용할 핵심 썸네일 시각 요소(Pain/Gain 강조 구조)의 최종 디자인 파일(Mockup)을 생성하고 비주얼 에셋 목록을 확정하라. → 산출물 sessions/2026-08-11T19-02/designer.md
