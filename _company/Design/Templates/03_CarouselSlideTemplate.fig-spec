@@ -1,0 +1,16 @@
+# Figma Component Specification: Educational Carousel Slide (1080x1080px)
+## [Component Name] Learning Sequence Template - Step-by-Step Guide
+### 🎯 적용 목적
+*   **최우선 원칙:** 지식 전달의 흐름을 논리적으로 분할하고, 다음 장으로 넘어가고 싶게 만드는 구조.
+*   **규격:** 정사각형 (1080px x 1080px). 시리즈 콘텐츠에 최적화.
+### 🖼️ 핵심 레이어 구조 및 스펙
+| Layer Name | Role | Dimension/Ratio | Content Rules | Color Code Usage |
+| :--- | :--- | :--- | :--- | :--- |
+| **A_Step_Number** | 순서 표시 | 폰트 크기: 60pt (ExtraBold) | 시퀀스 매뉴얼의 흐름에 따라 명확한 숫자로 시작을 알림. | Accent Yellow (`#FFD700`)를 사용하여 강력하게 강조. |
+| **B_Section_Title** | 섹션 주제/질문 | 폰트 크기: 48pt (Bold) | 해당 슬라이드에서 다루는 핵심 질문이나 개념을 명시. | Title Type (Montserrat Bold). Primary Blue (`#0A2463`) 배경의 작은 바 형태로 처리. |
+| **C_Body_Data** | 본문 내용/설명 | 폰트 크기: 30pt (Regular) | 구체적인 지식, 개념 정의, 데이터 근거를 제시합니다. | Body Type (Noto Sans KR). 가독성을 위해 충분한 여백(Padding) 확보. |
+| **D_Transition_Hook** | 다음 장 예고 | 화살표 및 문구 | '다음 슬라이드에서 이 부분이 해결됩니다'와 같은 연결고리 제공. | 연하고 부드러운 그라디언트 (배경과 조화롭게). |
+
+### ✨ 컴포넌트 활용 지침
+1.  **[A_Step_Number]**: 반드시 굵고 크게 배치하여 사용자가 '순서대로' 보게 만드는 심리적 압박감을 부여해야 합니다.
+2.  **[C_Body_Data]**: 정보의 밀도가 높으므로, 리스트(Bullet Point)와 소제목을 활용하여 시각적으로 휴식을 주어야 합니다.

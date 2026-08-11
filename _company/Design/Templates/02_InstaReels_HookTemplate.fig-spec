@@ -1,0 +1,16 @@
+# Figma Component Specification: Instagram Reels Cover (1080x1920px)
+## [Component Name] Short Form Hook Template - Quick Impact
+### 🎯 적용 목적
+*   **최우선 원칙:** 짧은 시간 안에 강력한 감성적 질문이나 충격적인 사실 제시.
+*   **규격:** 1080px (W) x 1920px (H). 세로형 최적화.
+### 🖼️ 핵심 레이어 구조 및 스펙
+| Layer Name | Role | Dimension/Ratio | Content Rules | Color Code Usage |
+| :--- | :--- | :--- | :--- | :--- |
+| **A_Background** | 배경 이미지 | Full (1080x1920) | 주제에 맞는 고화질, 드라마틱한 이미지를 사용. | 색상보다 분위기(Mood)가 중요함. |
+| **B_Question_Text** | 질문/핵심 키워드 | 폰트 크기: 70pt~100pt (SemiBold) | 시청자가 스스로 "어떻게?"라는 질문을 던지도록 유도. | Title Type (Montserrat Bold). Yellow (`#FFD700`) 배경 하이라이팅. |
+| **C_Mini_Proof** | 증거/결과 제시 | 텍스트와 작은 그래프 모듈 | 짧은 데이터 포인트(예: "3개월 만에 +50점"). 간결해야 함. | Primary Blue (`#0A2463`) 배경의 작은 박스 형태로 분리하여 강조. |
+| **D_CTA_Arrow** | 행동 유도 지시 | 화살표 및 문구 | 다음 영상을 기대하게 만드는 장치 (예: "➡️ 전체 과정은 프로필에서"). | Accent Yellow (`#FFD700`)를 사용하여 시선이 흐르는 방향을 안내. |
+
+### ✨ 컴포넌트 활용 지침
+1.  **[B_Question_Text]**: 2~3개의 핵심 단어 조합으로만 구성하고, 나머지는 배경 이미지나 분위기에 의존합니다. 문장이 길면 안 됩니다.
+2.  **[D_CTA_Arrow]**: 이 요소는 필수적으로 모든 콘텐츠에 포함되어 시청자의 다음 행동을 유도해야 합니다.
