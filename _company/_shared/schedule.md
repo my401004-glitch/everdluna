@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 11. 오후 7:06:50_
+_업데이트: 2026. 8. 11. 오후 7:43:39_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,9 +13,9 @@ _업데이트: 2026. 8. 11. 오후 7:06:50_
 - [2026-08-03] 확정된 비주얼 가이드라인과 최적 게시 시간을 활용하여 Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그)을 완성하고 배포 준비를 완료하라. → 산출물 sessions/2026-08-03T04-12/instagram.md
 - [2026-08-03] Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그 포함)을 완성하고 배포 준비를 완료할 것. → 산출물 sessions/2026-08-03T04-57/instagram.md
 ### 🎨 Designer
-- [2026-08-11] Writer와 Researcher가 제공한 핵심 후킹 메시지(Hook Text)를 기반으로, 'Thumbnail Master Kit Design Guide'에 따라 실제 영상 썸네일의 시각적 레이아웃 및 핵심 요소 배치를 포함하는 초기 목업(Wireframe)을 3가지 유형으로 Figma에서 즉시 구현하고 최종 디자인 가이드라인을 확정하라. → 산출물 sessions/2026-08-11T08-50/designer.md
 - [2026-08-11] MasterKit_Component_Usage_Guide_V2.0.md 파일에 명시된 디자인 시스템(Pain/Gain 구조, 컬러 코드)을 기반으로, 레오에게 전달할 구체적인 영상 클립 및 캐릭터 모델 등 핵심 비주얼 에셋 요청 목록을 작성하라. → 산출물 sessions/2026-08-11T09-05/designer.md
 - [2026-08-11] 확정된 'Thumbnail Master Kit Design Guide'와 'Pain $\rightarrow$ Gain' 구조를 기반으로, 모든 영상에 재사용 가능한 최종 Motion Component(애니메이션 프로토타입)을 Figma에서 구현하고 디자인 시스템을 확정하라. → 산출물 sessions/2026-08-11T09-45/designer.md
+- [2026-08-11] Writer가 작성한 후킹 메시지를 기반으로, MasterKit\_Component\_Usage\_Guide\_V2.0.md에 정의된 디자인 시스템을 적용하여 다음 영상의 썸네일 목업(Wireframe) 3가지 유형을 Figma에서 즉시 구현하라. → 산출물 sessions/2026-08-11T10-23/designer.md
 ### 💻 코다리
 - [2026-08-11] Researcher의 분석 결과를 바탕으로, 현재 시스템(AI 진단)의 데이터 정확도와 경쟁 우위를 검증하는 백엔드 로직 안정성 테스트 시나리오를 준비하라. → 산출물 sessions/2026-08-11T05-52/developer.md
 - [2026-08-11] Designer가 정의한 모션 규칙과 레오의 시퀀스 매트릭스를 기반으로, Motion Component를 Figma에서 실제 적용 가능한 형태로 구현하는 기술적 검증 및 프로토타입 코드를 작성하라. → 산출물 sessions/2026-08-11T09-20/developer.md
@@ -33,11 +33,11 @@ _업데이트: 2026. 8. 11. 오후 7:06:50_
 - [2026-08-07] 레오가 제시한 MPB(마스터 프로덕션 블루프린트)와 Designer의 시각적 실행 블루프린트를 통합하여, 실제 영상 촬영 및 편집에 필요한 최종 시퀀스 목록과 오디오 디자인 전략을 구체적으로 정리하라. → 산출물 sessions/2026-08-07T08-24/editor.md
 - [2026-08-07] Writer가 제공할 스크립트를 기반으로, Master_Production_Blueprint에 정의된 시퀀스 흐름에 따라 필요한 BGM 전환 지점 및 구체적인 사운드 이펙트(SFX) 지점을 선행적으로 설계하라. → 산출물 sessions/2026-08-07T08-39/editor.md
 ### ✍️ Writer
-- [2026-08-11] Researcher가 제시한 후킹 포인트를 통합하여 유튜브 영상 제목(Title) 5가지와 스크립트 도입부(Hook) 초안을 작성하고, 이 내용을 Designer에게 전달할 최종 카피를 준비하라. → 산출물 sessions/2026-08-11T06-07/writer.md
 - [2026-08-11] 최근 연구 결과와 데이터(Gap Score)를 기반으로, 유튜브 영상과 인스타그램 릴스에 즉시 적용 가능한 핵심 후킹 메시지 10가지(Pain $ightarrow$ Gain 구조)를 작성하라. → 산출물 sessions/2026-08-11T06-51/writer.md
 - [2026-08-11] Designer가 정리한 비주얼 가이드라인(Thumbnail Master Kit)에 맞춰, 다음 영상 기획에 필요한 'Pain $ightarrow$ Gain' 구조를 극대화하는 후킹 메시지 및 스크립트 초안 요청 목록을 작성하라. → 산출물 sessions/2026-08-11T09-05/writer.md
+- [2026-08-11] Researcher가 제공한 후킹 키워드 중 가장 잠재력이 높은 것을 선택하여, 확정된 디자인 시스템(Pain/Gain 구조)에 완벽하게 부합하는 유튜브 영상 스크립트 초안과 썸네일용 핵심 메시지(Hook Text)를 작성하라. → 산출물 sessions/2026-08-11T10-23/writer.md
 ### 🔍 Researcher
-- [2026-08-11] 경쟁 채널 댓글 및 시장 Pain Point 데이터를 분석하여, 영상 후킹에 가장 효과적인 '골든 타임' 지점과 이에 따른 스토리 흐름을 도출하고 보고하라. → 산출물 sessions/2026-08-11T04-22/researcher.md
 - [2026-08-11] 경쟁 채널들의 성공적인 콘텐츠 전략을 분석하여, Writer가 제시한 제목 및 스크립트에 적용할 구체적인 후킹 포인트를 도출하고 경쟁 우위를 분석하라. → 산출물 sessions/2026-08-11T05-52/researcher.md
 - [2026-08-11] 제공된 데이터와 목표를 바탕으로, 이 10가지 후킹 메시지에 가장 효과적인 키워드 및 데이터 근거를 보강하여 최종 리스트를 확정하라. → 산출물 sessions/2026-08-11T06-51/researcher.md
+- [2026-08-11] 최신 실용음악 입시생 관련 유튜브 트렌드와 경쟁사 성공 사례를 분석하여 다음 영상에 적용할 핵심 후킹 키워드 5가지와 데이터 기반의 'Pain $\rightarrow$ Gain' 구조 예시를 수집하라. → 산출물 sessions/2026-08-11T10-23/researcher.md
 

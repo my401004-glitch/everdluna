@@ -829,3 +829,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-11] Writer와 Researcher가 제공한 핵심 후킹 메시지(Hook Text)를 기반으로, 'Thumbnail Master Kit Design Guide'에 따라 실제 영상 썸네일의 시각적 레이아웃 및 핵심 요소 배치를 포함하는 초기 목업(Wireframe)을 3가지 유형으로 Figma에서 즉시 구현하고 최종 디자인 가이드라인을 확정하라. → 산출물 sessions/2026-08-11T08-50/designer.md
 - [2026-08-11] MasterKit_Component_Usage_Guide_V2.0.md 파일에 명시된 디자인 시스템(Pain/Gain 구조, 컬러 코드)을 기반으로, 레오에게 전달할 구체적인 영상 클립 및 캐릭터 모델 등 핵심 비주얼 에셋 요청 목록을 작성하라. → 산출물 sessions/2026-08-11T09-05/designer.md
 - [2026-08-11] 확정된 'Thumbnail Master Kit Design Guide'와 'Pain $\rightarrow$ Gain' 구조를 기반으로, 모든 영상에 재사용 가능한 최종 Motion Component(애니메이션 프로토타입)을 Figma에서 구현하고 디자인 시스템을 확정하라. → 산출물 sessions/2026-08-11T09-45/designer.md
+- [2026-08-11] Writer가 작성한 후킹 메시지를 기반으로, MasterKit\_Component\_Usage\_Guide\_V2.0.md에 정의된 디자인 시스템을 적용하여 다음 영상의 썸네일 목업(Wireframe) 3가지 유형을 Figma에서 즉시 구현하라. → 산출물 sessions/2026-08-11T10-23/designer.md
