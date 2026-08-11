@@ -662,6 +662,40 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-08-11T04-07/_report.md\n- 레오: 확정된 Blueprint v5와 디자인 스펙을 기반으로 다음 콘텐츠 영상 제작에 필요한 최종 편집 타임라인과 시퀀스 목록을 확정하고, 모든 에셋\n- Designer: 확정된 디자인 사양(`diagnosis_widget_design_spec.md`)을 기반으로, 영상 제작에 필요한 최종 시각적 요구사항 및 핵심\n- 코다리: 확정된 Blueprint v5와 디자인 스펙을 바탕으로, 영상 편집에 필요한 모든 데이터 출력과 API 연동 시퀀스 목록(Asset Reques\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: 확정된 Blueprint v5와 디자인 스펙을 기반으로 다음 콘텐츠 영상 제작에 필요한 최종 편집 타임라인과 시퀀스 목록을 확정하고, 모든 에셋 요청 목록을 정리하여 제공하라.\n> 🔧 **도구 실행**: `comment_harvester",
       "completedAt": "2026-08-11T04:11:37.767Z"
+    },
+    {
+      "id": "20260811095029-98tx",
+      "title": "**Master Kit 업데이트:** 기존 `/Users/iyeongjae/Desktop/초보프로젝트/_company/Design/Templates/01_YT_Thumbnail_V2_MasterKit.fig-spec` 파일 내에 위 3가지 컴포넌트를 인터랙티브 프로토타입으로 구현할 것.",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-08-11T09:50:29.517Z",
+      "status": "done",
+      "sessionDir": "2026-08-11T09-45",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-08-11T09-45/_report.md\n- Designer: 확정된 'Thumbnail Master Kit Design Guide'와 'Pain $\\rightarrow$ Gain' 구조를 기반으로, 모든 \n- 코다리: Designer가 정의한 Motion Component의 시퀀스 매트릭스를 기반으로, 실제 영상에 적용 가능한 수준의 재사용 가능한 컴포넌트 아\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 확정된 'Thumbnail Master Kit Design Guide'와 'Pain $\\rightarrow$ Gain' 구조를 기반으로, 모든 영상에 재사용 가능한 최종 Motion Component(애니메이션 프로토타입)을 Fig",
+      "completedAt": "2026-08-11T10:06:50.111Z"
+    },
+    {
+      "id": "20260811095029-m38m",
+      "title": "**레오 검증 요청:** 이 가이드라인을 바탕으로, 레오는 Figma에서 실제로 클릭 가능한 모션 시퀀스를 제작해야 함. (Leo에게 전달)",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-08-11T09:50:29.520Z",
+      "status": "done",
+      "sessionDir": "2026-08-11T09-45",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-08-11T09-45/_report.md\n- Designer: 확정된 'Thumbnail Master Kit Design Guide'와 'Pain $\\rightarrow$ Gain' 구조를 기반으로, 모든 \n- 코다리: Designer가 정의한 Motion Component의 시퀀스 매트릭스를 기반으로, 실제 영상에 적용 가능한 수준의 재사용 가능한 컴포넌트 아\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: 확정된 'Thumbnail Master Kit Design Guide'와 'Pain $\\rightarrow$ Gain' 구조를 기반으로, 모든 영상에 재사용 가능한 최종 Motion Component(애니메이션 프로토타입)을 Fig",
+      "completedAt": "2026-08-11T10:06:50.112Z"
     }
   ]
 }

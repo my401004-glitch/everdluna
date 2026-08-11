@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 11. 오후 6:23:10_
+_업데이트: 2026. 8. 11. 오후 7:06:50_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 8. 11. 오후 6:23:10_
 - [2026-08-03] 확정된 비주얼 가이드라인과 최적 게시 시간을 활용하여 Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그)을 완성하고 배포 준비를 완료하라. → 산출물 sessions/2026-08-03T04-12/instagram.md
 - [2026-08-03] Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그 포함)을 완성하고 배포 준비를 완료할 것. → 산출물 sessions/2026-08-03T04-57/instagram.md
 ### 🎨 Designer
-- [2026-08-11] Writer와 Researcher가 제공한 핵심 후킹 메시지(Hook Text)를 기반으로, 'Thumbnail Master Kit Design Guide'에 따라 실제 영상 썸네일의 시각적 레이아웃 및 핵심 요소 배치를 포함하는 초기 목업(Wireframe)을 3가지 유형으로 Figma에서 즉시 구현하고 최종 디자인 가이드라인을 확정하라. → 산출물 sessions/2026-08-11T08-22/designer.md
 - [2026-08-11] Writer와 Researcher가 제공한 핵심 후킹 메시지(Hook Text)를 기반으로, 'Thumbnail Master Kit Design Guide'에 따라 실제 영상 썸네일의 시각적 레이아웃 및 핵심 요소 배치를 포함하는 초기 목업(Wireframe)을 3가지 유형으로 Figma에서 즉시 구현하고 최종 디자인 가이드라인을 확정하라. → 산출물 sessions/2026-08-11T08-50/designer.md
 - [2026-08-11] MasterKit_Component_Usage_Guide_V2.0.md 파일에 명시된 디자인 시스템(Pain/Gain 구조, 컬러 코드)을 기반으로, 레오에게 전달할 구체적인 영상 클립 및 캐릭터 모델 등 핵심 비주얼 에셋 요청 목록을 작성하라. → 산출물 sessions/2026-08-11T09-05/designer.md
+- [2026-08-11] 확정된 'Thumbnail Master Kit Design Guide'와 'Pain $\rightarrow$ Gain' 구조를 기반으로, 모든 영상에 재사용 가능한 최종 Motion Component(애니메이션 프로토타입)을 Figma에서 구현하고 디자인 시스템을 확정하라. → 산출물 sessions/2026-08-11T09-45/designer.md
 ### 💻 코다리
-- [2026-08-11] 정의된 API 명세서와 데이터 스키마를 기반으로 백엔드 비즈니스 로직(`diagnosisService`, `diagnosisController`)을 구현하고 데이터 흐름의 안정성을 검증할 것. → 산출물 sessions/2026-08-11T05-22/developer.md
 - [2026-08-11] Researcher의 분석 결과를 바탕으로, 현재 시스템(AI 진단)의 데이터 정확도와 경쟁 우위를 검증하는 백엔드 로직 안정성 테스트 시나리오를 준비하라. → 산출물 sessions/2026-08-11T05-52/developer.md
 - [2026-08-11] Designer가 정의한 모션 규칙과 레오의 시퀀스 매트릭스를 기반으로, Motion Component를 Figma에서 실제 적용 가능한 형태로 구현하는 기술적 검증 및 프로토타입 코드를 작성하라. → 산출물 sessions/2026-08-11T09-20/developer.md
+- [2026-08-11] Designer가 정의한 Motion Component의 시퀀스 매트릭스를 기반으로, 실제 영상에 적용 가능한 수준의 재사용 가능한 컴포넌트 아키텍처 및 기술적 프로토타입 코드를 구현하여 디자인과 개발 간의 일관성을 검증하라. → 산출물 sessions/2026-08-11T09-45/developer.md
 ### 💼 현빈
 - [2026-08-06] 개발 및 디자인 통합 테스트의 결과가 설정한 비즈니스 목표(KPI)와 시스템 안정성 기준을 충족하는지 분석하고, 다음 단계의 콘텐츠 제작 전략에 대한 기술적 신뢰도를 보고하라. → 산출물 sessions/2026-08-06T07-34/business.md
 - [2026-08-06] 기술적 안정성(API 계약서 및 KPI 시스템)을 기반으로, 사용자에게 제공할 '핵심 유료 모듈'의 구조와 가격 정책에 대한 초기 설계안을 작성하고, 이를 코다리가 구현할 수 있는 명확한 요구사항 명세(PRD 초안)를 정의하라. → 산출물 sessions/2026-08-06T07-49/business.md
