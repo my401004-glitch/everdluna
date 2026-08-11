@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 11. 오후 5:05:29_
+_업데이트: 2026. 8. 11. 오후 5:32:04_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,9 +13,9 @@ _업데이트: 2026. 8. 11. 오후 5:05:29_
 - [2026-08-03] 확정된 비주얼 가이드라인과 최적 게시 시간을 활용하여 Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그)을 완성하고 배포 준비를 완료하라. → 산출물 sessions/2026-08-03T04-12/instagram.md
 - [2026-08-03] Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그 포함)을 완성하고 배포 준비를 완료할 것. → 산출물 sessions/2026-08-03T04-57/instagram.md
 ### 🎨 Designer
-- [2026-08-11] Writer가 제공한 'Thumbnail Master Kit Design Guide'와 최종 시퀀스 매뉴얼에 따라, 확정된 썸네일 와이어프레임 스펙(1280x720px)을 Figma에서 즉시 구현하고 핵심 디자인 에셋을 제공하라. → 산출물 sessions/2026-08-11T06-22/designer.md
 - [2026-08-11] Writer와 Researcher가 제공한 핵심 후킹 메시지 10가지를 바탕으로, 'Thumbnail Master Kit Design Guide'에 따라 시각적 레이아웃 및 핵심 요소 배치를 포함하는 초기 목업(Wireframe)을 3가지 유형으로 즉시 구현하라. → 산출물 sessions/2026-08-11T06-51/designer.md
 - [2026-08-11] Writer와 Researcher가 제공한 핵심 후킹 메시지(Hook Text)를 기반으로, 'Thumbnail Master Kit Design Guide'에 따라 실제 영상 썸네일의 시각적 레이아웃 및 핵심 요소 배치를 포함하는 초기 목업(Wireframe)을 3가지 유형으로 Figma에서 즉시 구현하고 최종 디자인 가이드라인을 확정하라. → 산출물 sessions/2026-08-11T07-48/designer.md
+- [2026-08-11] Writer와 Researcher가 제공한 핵심 후킹 메시지(Hook Text)를 기반으로, 'Thumbnail Master Kit Design Guide'에 따라 실제 영상 썸네일의 시각적 레이아웃 및 핵심 요소 배치를 포함하는 초기 목업(Wireframe)을 3가지 유형으로 Figma에서 즉시 구현하고 최종 디자인 가이드라인을 확정하라. → 산출물 sessions/2026-08-11T08-22/designer.md
 ### 💻 코다리
 - [2026-08-11] Designer가 정의한 모션 규칙과 레오가 정리한 시퀀스 매트릭스를 기반으로, 데이터 변환 로직의 API 명세서와 백엔드 연동 안정성을 최종 검증하여 시스템을 구축하라. → 산출물 sessions/2026-08-11T05-07/developer.md
 - [2026-08-11] 정의된 API 명세서와 데이터 스키마를 기반으로 백엔드 비즈니스 로직(`diagnosisService`, `diagnosisController`)을 구현하고 데이터 흐름의 안정성을 검증할 것. → 산출물 sessions/2026-08-11T05-22/developer.md
