@@ -656,3 +656,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-11] Designer가 정의한 모션 규칙과 레오의 시퀀스 매트릭스를 기반으로, Motion Component를 Figma에서 실제 적용 가능한 형태로 구현하는 기술적 검증 및 프로토타입 코드를 작성하라. → 산출물 sessions/2026-08-11T09-20/developer.md
 - [2026-08-11] Designer가 정의한 Motion Component의 시퀀스 매트릭스를 기반으로, 실제 영상에 적용 가능한 수준의 재사용 가능한 컴포넌트 아키텍처 및 기술적 프로토타입 코드를 구현하여 디자인과 개발 간의 일관성을 검증하라. → 산출물 sessions/2026-08-11T09-45/developer.md
 - [2026-08-11] Designer가 확정한 Motion Component 사양과 Master Component Library의 아키텍처를 기반으로, 기술적 프로토타입 코드와 애니메이션 연동 안정성을 검증하는 작업을 즉시 시작하라. 특히 데이터 변환 로직과 백엔드 연동 안정성 확보에 중점을 두어 진행하라. → 산출물 sessions/2026-08-11T11-17/developer.md
+- [2026-08-11] Designer가 확정한 Motion Component 사양과 Master Component Library의 아키텍처를 기반으로, 기술적 프로토타입 코드와 애니메이션 연동 안정성을 검증하는 작업을 즉시 시작하여 디자인 시스템의 기술적 완성도를 확보하라. → 산출물 sessions/2026-08-11T11-57/developer.md
