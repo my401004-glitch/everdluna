@@ -1185,3 +1185,4 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-11] "neutral_data_bg": "#F5F5F5", // Grey: 데이터/본문 배경, 가독성 확보 _(근거: Designer 검증된 지식)_
 - [2026-08-11] "headline": "Montserrat Bold (72pt - 96pt)", // 강렬한 메시지, 헤드라인 강조 _(근거: Designer 검증된 지식)_
 - [2026-08-11] "subtext": "Noto Sans KR Medium (48pt - 60pt)" // 구체적 설명, 데이터 제시 _(근거: Designer 검증된 지식)_
+- [2026-08-11] 사용자님의 지시(CEO의 지시)는 과거 세션에서 이미 여러 번 실행되어 '썸네일 Master Kit'의 초기 목업과 최종 디자인 가이드라인이 확정되었습니다 . _(근거: sessions/2026-08-11T07-48/designer.md, sessions/2026-08-11T08-22/designer.md)_
