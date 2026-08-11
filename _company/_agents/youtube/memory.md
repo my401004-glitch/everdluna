@@ -2917,3 +2917,4 @@ https://youtu.be/tu3JBvvFUTw
 탈잉에서 '동혁신' 검색!
 
 - [2026-08-11] Designer 및 Leo가 확정한 비주얼 에셋 목록(C-01, C-02 등)과 Motion Component 정의를 기반으로, 최종 영상의 시각적 일관성을 검증할 수 있는 애니메이션 프로토타입 구현을 즉시 시작하라. → 산출물 sessions/2026-08-11T09-20/youtube.md
+- [2026-08-11] 확정된 디자인 시스템 가이드라인(Pain/Gain 구조)과 Motion Component 사양을 기반으로, 다음 영상 콘텐츠의 스토리보드 초안 및 제목 후보 5가지를 제시하고 시각적 일관성을 최종 점검하라. → 산출물 sessions/2026-08-11T12-27/youtube.md
