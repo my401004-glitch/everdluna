@@ -2,7 +2,7 @@
   "name": "company-workspace",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
+  "scripts": {"test:integration": "jest src/tests/integration/**/*.test.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

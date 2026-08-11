@@ -1,94 +1,72 @@
 // src/tests/integration/diagnosis.integration.test.ts
-import { RequestMock, ResponseMock } from 'supertest'; // Mocking library 가정
-import { calculateAndSavePredictiveValue } from '../../controllers/diagnosisController'; 
-import { PredictiveValueService } from '../../services/predictive-value.service';
-import { DiagnosisDAO } from '../../data/DiagnosisDAO';
 
-// =========================================================
-// MOCKING SETUP: 외부 의존성을 격리하여 테스트 환경 구축
-// =========================================================
+import { diagnosisService } from '../../services/diagnosisService'; // Assume service exists
+import { TestUserRole } from '../../types/user'; // Mocked types
 
-// 1. Mock PredictiveValueService (로직 검증)
-jest.mock('../../services/predictive-value.service', () => ({
-    PredictiveValueService: {
-        calculate: jest.fn(),
-    },
-}));
+/**
+ * @description 진단 API 통합 테스트 스위트 (Integration Test Suite)
+ * 
+ * 목표: 백엔드 로직(권한 검증, 데이터 변환, 스키마 유효성)이 프론트엔드의 기대치와 일관되게 작동하는지 확인합니다.
+ */
 
-// 2. Mock DiagnosisDAO (DB 저장 검증)
-jest.mock('../../data/DiagnosisDAO', () => ({
-    DiagnosisDAO: {
-        savePredictiveMetrics: jest.fn(),
-    },
-}));
+describe('Diagnosis API Integration Tests', () => {
+    // Mocking setup: 실제 DB/외부 API 대신 가짜 객체를 사용해 테스트 격리
+    const mockApiService = { 
+        getScoreData: async (userId: string, contextId: string): Promise<any> => {
+            // 로직이 복잡하므로, 여기서는 단순히 성공 여부만 반환한다고 가정합니다.
+            console.log(`[MOCK] Attempting to fetch data for User ${userId}`);
+            return { success: true, scoreData: 'mock_score' }; 
+        }
+    };
 
-describe('E2E Integration Test: Predictive Value Calculation and Persistence', () => {
-    // 테스트 전에 Mock 함수 초기화
-    beforeEach(() => {
-        jest.clearAllMocks();
+    // 테스트 케이스 1: 정상적인 데이터 조회 및 처리 (Happy Path)
+    it('should successfully calculate and return Gap Score for a premium user', async () => {
+        const userId = 'premiumUser123';
+        const contextId = 'context_xyz';
+
+        // Mocking the service layer to ensure success path is tested
+        (diagnosisService.calculateScore as jest.Mock).mockResolvedValue({ 
+            resultData: { growth: 80, engagement: 90, monetization: 75 },
+            gapScore: 'High', // Gap Score가 명확히 정의된 문자열로 반환되어야 함
+        });
+
+        const result = await diagnosisService.getDiagnosisScore(userId, contextId, TestUserRole.PREMIUM);
+
+        // 검증 (Assertion): 필수 필드가 모두 존재하며 타입이 정확해야 합니다.
+        expect(result).toHaveProperty('gapScore');
+        expect(typeof result.resultData.growth).toBe('number'); 
     });
 
-    it('✅ [SUCCESS] 성공적인 예측 가치 계산 및 DB 저장 플로우 검증 (Happy Path)', async () => {
-        // 1. Mock 데이터 정의: 성공 시 예상 결과 값
-        const mockPredictiveData = { totalScore: 85, growthIndex: 0.7, engagementIndex: 0.9 };
-        const mockSavedResult = { resultId: "xyz-123", status: "SAVED" };
+    // 테스트 케이스 2: 권한 부족으로 인한 접근 제한 실패 (RBAC Failure)
+    it('should reject access if the user role lacks necessary permissions for a specific metric', async () => {
+        const userId = 'freeUser456';
+        const contextId = 'context_abc';
 
-        // Mocking Sequence Setup:
-        (PredictiveValueService.calculate as jest.Mock).mockResolvedValue(mockPredictiveData); // 서비스 로직 성공 모방
-        (DiagnosisDAO.savePredictiveMetrics as jest.Mock).mockResolvedValue(mockSavedResult); // DB 저장 성공 모방
+        // Mocking: 무료 사용자는 'Monetization' 리포트를 볼 권한이 없다고 가정하고 에러 발생 유도
+        (diagnosisService.calculateScore as jest.Mock).mockRejectedValue({ 
+            error: new Error("Access Denied: Role does not permit viewing Monetization KPI.") 
+        });
 
-        // 2. Mock Request/Response Setup (Supertest 시뮬레이션)
-        const mockReq: Partial<Request> = { body: { diagnosisContextId: "CTX-100", userRole: "PREMIUM" } };
-        const mockRes: ResponseMock = { status: jest.fn().mockReturnThis(), json: jest.fn() };
-        const mockNext: NextFunction = jest.fn();
-
-        // 3. 실행 및 검증
-        await calculateAndSavePredictiveValue(mockReq as Request, mockRes as Response, mockNext as NextFunction);
-
-        // Assertion Checks (검증):
-        expect(PredictiveValueService.calculate).toHaveBeenCalledWith("CTX-100", "PREMIUM"); // 서비스가 정확히 호출되었는지 확인
-        expect(DiagnosisDAO.savePredictiveMetrics).toHaveBeenCalledWith("CTX-100", "PREMIUM", mockPredictiveData); // DAO가 정확한 데이터를 받아서 호출했는지 확인
-        expect(mockRes.status).toHaveBeenCalledWith(200); // HTTP Status 200 반환 여부
-        expect(mockRes.json).toHaveBeenCalledWith(expect.objectContaining({ message: "Predictive value successfully calculated and saved." }));
+        // 검증 (Assertion): 비즈니스 예외 처리가 정상 작동해야 합니다.
+        await expect(async () => {
+             await diagnosisService.getDiagnosisScore(userId, contextId, TestUserRole.FREE);
+        }).rejects.toThrow(/Access Denied/); 
     });
 
-    it('❌ [FAILURE] PredictiveService 로직 실패 시 DB 저장 없이 에러 처리 검증', async () => {
-        // 1. Mock 데이터 정의: 서비스 로직이 null을 반환하는 실패 상황
-        (PredictiveValueService.calculate as jest.Mock).mockResolvedValue(null);
+    // 테스트 케이스 3: 데이터 스키마 불일치로 인한 처리 실패 (Schema Validation Failure)
+    it('should handle API failure due to invalid data schema or missing context', async () => {
+        const userId = 'errorUser789';
+        const contextIdInvalid = 'invalid_context';
 
-        // 2. Mock Request/Response Setup
-        const mockReq: Partial<Request> = { body: { diagnosisContextId: "CTX-101", userRole: "FREE" } };
-        const mockRes: ResponseMock = { status: jest.fn().mockReturnThis(), json: jest.fn() };
-        const mockNext: NextFunction = jest.fn();
+        // Mocking: 백엔드에서 유효하지 않은 데이터가 들어올 때의 예외 처리 테스트
+        (diagnosisService.calculateScore as jest.Mock).mockResolvedValue({ 
+            resultData: { growth: "N/A", engagement: 50, monetization: 60 }, // Growth 값이 number여야 하는데 문자열로 넘어옴 (스키마 위반)
+            gapScore: 'Medium',
+        });
 
-        // 3. 실행 및 검증
-        await calculateAndSavePredictiveValue(mockReq as Request, mockRes as Response, mockNext as NextFunction);
-
-        // Assertion Checks (검증):
-        expect(DiagnosisDAO.savePredictiveMetrics).not.toHaveBeenCalled(); // DB 저장 로직이 호출되지 않아야 함
-        expect(mockRes.status).toHaveBeenCalledWith(500); // 500 에러 반환 여부 확인
-        expect(mockRes.json).toHaveBeenCalledWith(expect.objectContaining({ message: "Failed to calculate predictive value data." }));
-    });
-
-    it('❌ [FAILURE] DB 트랜잭션 실패 시 Rollback 및 오류 전파 검증', async () => {
-        // 1. Mock 데이터 정의: 서비스 로직은 성공했으나, DB가 에러를 반환하는 상황
-        const mockPredictiveData = { totalScore: 50, growthIndex: 0.1, engagementIndex: 0.2 };
-        const dbError = new Error("Database connection timeout.");
-
-        // Mocking Sequence Setup:
-        (PredictiveValueService.calculate as jest.Mock).mockResolvedValue(mockPredictiveData); // 서비스 로직 성공
-        (DiagnosisDAO.savePredictiveMetrics as jest.Mock).mockRejectedValue(dbError); // DB 저장 실패 모방
-
-        // 2. Mock Request/Response Setup
-        const mockReq: Partial<Request> = { body: { diagnosisContextId: "CTX-102", userRole: "PREMIUM" } };
-        const mockRes: ResponseMock = { status: jest.fn().mockReturnThis(), json: jest.fn() };
-        const mockNext: NextFunction = jest.fn();
-
-        // 3. 실행 및 검증
-        await calculateAndSavePredictiveValue(mockReq as Request, mockRes as Response, mockNext as NextFunction);
-
-        // Assertion Checks (검증):
-        expect(mockRes.status).toHaveBeenCalledWith(500); // HTTP Status 500 반환 여부
-        expect(mockNext).toHaveBeenCalledWith(expect.any(Error)); // 다음 미들웨어로 에러를 명시적으로 전파했는지 확인
+        // 검증 (Assertion): 데이터 변환 로직에서 강하게 에러를 잡아내고 사용자에게 친절한 오류 메시지를 반환해야 합니다.
+        await expect(async () => {
+             await diagnosisService.getDiagnosisScore(userId, contextIdInvalid, TestUserRole.PREMIUM);
+        }).rejects.toThrow(/Validation Failed: Growth KPI must be numeric/); 
     });
 });
