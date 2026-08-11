@@ -1,21 +1,21 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 10. 오후 6:08:39_
+_업데이트: 2026. 8. 11. 오후 12:40:27_
 
 ## 📅 사람 일정 (Google Calendar)
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
-- [2026-08-10] 이전 작업 로그(sessions/2026-08-10T05-48/youtube.md)를 기반으로, 다음 영상 제작에 필요한 최종 시퀀스 목록과 제작 실행 청사진을 재확인하고 이를 확정하여 콘텐츠 기획의 최종 단계를 진행할 준비를 하라. → 산출물 sessions/2026-08-10T06-33/youtube.md
 - [2026-08-10] 이전 단계에서 확정된 영상 시퀀스 및 타임라인(`youtube_blueprint_v4.md`)와 디자인 사양서(`designer` 산출물)를 통합하여, 다음 콘텐츠 제작을 위한 최종 실행 청사진(Blueprint v5)을 작성하고 모든 에셋 요청 목록을 명확히 정리하라. → 산출물 sessions/2026-08-10T08-13/youtube.md
 - [2026-08-10] 확정된 Blueprint v5와 디자인 스펙을 기반으로 다음 콘텐츠 영상 제작에 필요한 최종 편집 타임라인과 시퀀스 목록을 확정하고, 모든 에셋 요청 목록을 정리하여 제공하라. → 산출물 sessions/2026-08-10T08-58/youtube.md
+- [2026-08-11] Blueprint v5와 디자인 스펙을 기반으로 다음 콘텐츠 영상 제작에 필요한 최종 편집 타임라인과 시퀀스 목록을 확정하고, 모든 에셋 요청 목록을 정리하여 제공하라. → 산출물 sessions/2026-08-11T03-37/youtube.md
 ### 📷 Instagram
 - [2026-07-28] 최종 확정된 영상 포맷 및 스크립트의 핵심 메시지를 활용하여 Reels 1번 콘텐츠의 최종 게시 포스팅 초안(캡션, 해시태그 포함)을 작성하고 최적의 게시 시간을 제안할 것. → 산출물 sessions/2026-07-28T02-32/instagram.md
 - [2026-08-03] 확정된 비주얼 가이드라인과 최적 게시 시간을 활용하여 Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그)을 완성하고 배포 준비를 완료하라. → 산출물 sessions/2026-08-03T04-12/instagram.md
 - [2026-08-03] Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그 포함)을 완성하고 배포 준비를 완료할 것. → 산출물 sessions/2026-08-03T04-57/instagram.md
 ### 🎨 Designer
-- [2026-08-10] Production Bible 사양(Visual Blueprint)을 기반으로, 다음 영상에 필요한 핵심 UI 컴포넌트(Diagnosis Score 위젯 등)의 시각적 목업 제작을 즉시 시작하고 M2 목표 달성을 위한 디자인 실행을 개시하라. → 산출물 sessions/2026-08-10T08-28/designer.md
 - [2026-08-10] Lead Designer: 코다리가 확정한 JSON 스키마를 기반으로, 시스템이 요구하는 핵심 UI 컴포넌트(예: Diagnosis Score 위젯)에 대한 구체적인 시각적 와이어프레임 및 상세 디자인 사양을 즉시 작성하라. → 산출물 sessions/2026-08-10T08-43/designer.md
 - [2026-08-10] 확정된 디자인 사양(`diagnosis_widget_design_spec.md`)을 기반으로 Figma에서 핵심 UI 컴포넌트(예: Diagnosis Score 위젯)의 와이어프레임 및 프로토타입 제작을 즉시 시작하라. → 산출물 sessions/2026-08-10T08-58/designer.md
+- [2026-08-11] 확정된 디자인 사양(`diagnosis_widget_design_spec.md`)을 기반으로 Figma에서 핵심 UI 컴포넌트(예: Diagnosis Score 위젯)의 와이어프레임 및 프로토타입 제작을 즉시 시작하고, 개발이 진행될 수 있도록 상세한 시각적 요구사항을 확정하라. → 산출물 sessions/2026-08-11T03-37/designer.md
 ### 💻 코다리
 - [2026-08-10] Designer가 제공한 프로덕션 바이블을 기반으로, 기술 사양서와 API 계약 정의를 확인하고, `DiagnosisScore` 데이터 모델을 기반으로 백엔드 API 엔드포인트(`GET /api/v1/diagnosis_score`)의 실제 로직 구현 및 시스템 안정성 검증을 최우선으로 진행하라. → 산출물 sessions/2026-08-10T07-58/developer.md
 - [2026-08-10] Designer가 제공한 프로덕션 바이블(`Visual Blueprint`) 및 API 계약 정의를 기반으로, `GET /api/v1/diagnosis_score` 엔드포인트의 백엔드 로직 구현 및 시스템 안정성 검증 작업을 시작하라. → 산출물 sessions/2026-08-10T08-28/developer.md

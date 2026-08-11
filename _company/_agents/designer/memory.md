@@ -814,3 +814,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-10] Production Bible 사양(Visual Blueprint)을 기반으로, 다음 영상에 필요한 핵심 UI 컴포넌트(Diagnosis Score 위젯 등)의 시각적 목업 제작을 즉시 시작하고 M2 목표 달성을 위한 디자인 실행을 개시하라. → 산출물 sessions/2026-08-10T08-28/designer.md
 - [2026-08-10] Lead Designer: 코다리가 확정한 JSON 스키마를 기반으로, 시스템이 요구하는 핵심 UI 컴포넌트(예: Diagnosis Score 위젯)에 대한 구체적인 시각적 와이어프레임 및 상세 디자인 사양을 즉시 작성하라. → 산출물 sessions/2026-08-10T08-43/designer.md
 - [2026-08-10] 확정된 디자인 사양(`diagnosis_widget_design_spec.md`)을 기반으로 Figma에서 핵심 UI 컴포넌트(예: Diagnosis Score 위젯)의 와이어프레임 및 프로토타입 제작을 즉시 시작하라. → 산출물 sessions/2026-08-10T08-58/designer.md
+- [2026-08-11] 확정된 디자인 사양(`diagnosis_widget_design_spec.md`)을 기반으로 Figma에서 핵심 UI 컴포넌트(예: Diagnosis Score 위젯)의 와이어프레임 및 프로토타입 제작을 즉시 시작하고, 개발이 진행될 수 있도록 상세한 시각적 요구사항을 확정하라. → 산출물 sessions/2026-08-11T03-37/designer.md
