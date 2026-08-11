@@ -2789,3 +2789,4 @@ https://youtu.be/tu3JBvvFUTw
 탈잉에서 '동혁신' 검색!
 
 - [2026-08-11] 최종 기술 시퀀스 매뉴얼에 따라, Designer가 정의한 Motion Component들을 Figma 환경에서 즉시 구현하여 애니메이션 프로토타입을 완성할 것. → 산출물 sessions/2026-08-11T05-22/youtube.md
+- [2026-08-11] writer가 작성한 스크립트 초안과 연구 결과를 기반으로, 유튜브 영상에 최적화된 제목(Title) 5가지와 썸네일용 핵심 메시지(Hook Text)를 제안하라 → 산출물 sessions/2026-08-11T05-37/youtube.md
