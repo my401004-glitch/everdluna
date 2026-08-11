@@ -837,3 +837,9 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-11] | **[2] AI 해결 (System Introduction)** | 1:30 - 3:00 | "데이터가 규칙을 바꾼다." 시스템 소개 및 원리 설명. | `GET /diagnosis_history/{context_id}` | Diagnosis Score Schema, KPI Metrics Schema | **시퀀스:** 과거 데이터(`history`)를 보여주며, 점수가 *변화할 수 있음*을 증명합니다. 'Gap Score' 계산 로직 시각화가 필요합니다. | _(근거: Self-RAG)_
 - [2026-08-11] | **[3] 승리 (Transformation)** | 3:00 - End | "객관적 진단으로 목표 달성." 성공 사례 제시 및 CTA 유도. | `GET /user/kpi/metrics` | KPI Metrics Schema | **최종 증명:** 시간 경과에 따른 `Growth`, `Engagement`의 긍정적인 추이를 그래프로 보여주며, 서비스 가입을 유도합니다. | _(근거: Self-RAG)_
 - [2026-08-11] 1. **RBAC 적용**: 모든 API 호출 시 반드시 사용자의 권한(`user_id`)을 통해 접근 가능 여부 및 데이터 열람 범위를 검증해야 합니다. 무료 사용자에게는 `Monetization` KPI가 가려지거나 제한되어야 합니다. _(근거: Self-RAG)_
+- [2026-08-11] * - 애니메이션 상태 변화를 수용하기 위해 구조 변경됨. _(근거: Master_Motion_Component_Manual_V2.0.md, api_asset_manifest.md)_
+- [2026-08-11] * - 기존 API 엔드포인트를 유지하되, 응답 스키마를 애니메이션 친화적으로 변경함. _(근거: sessions/2026-05-19T09:57)_
+- [2026-08-11] // 1. 사용자 권한 및 유효성 검증을 먼저 수행하는 로직이 필요함. _(근거: sessions/2026-05-18T13:43)_
+- [2026-08-11] // 🐛 에러 처리: 구체적인 에러 메시지를 클라이언트에게 노출하지 않도록 함. _(근거: 시니어 엔지니어 원칙)_
+- [2026-08-11] * - 모든 비즈니즈 로직은 서비스 레이어에 위치해야 함 (SRP). _(근거: sessions/2026-05-18T14-34/developer.md)_
+- [2026-08-11] * - Pain -> Gain 변곡점 서사 구현의 근간이 됨. _(근거: Master_Motion_Component_Manual_V2.0.md)_

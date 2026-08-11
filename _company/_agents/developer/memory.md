@@ -650,3 +650,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-11] Designer가 제공한 'DiagnosisScoreWidget_V1.0_Spec.md'를 기반으로, 백엔드 로직(State Management) 및 API 구현(`GET /api/v1/diagnosis_score` 엔드포인트 포함)을 즉시 시작하고 시스템 안정성을 최우선으로 검증하라. → 산출물 sessions/2026-08-11T03-52/developer.md
 - [2026-08-11] 확정된 Blueprint v5와 디자인 스펙을 바탕으로, 영상 편집에 필요한 모든 데이터 출력과 API 연동 시퀀스 목록(Asset Request List)을 명확하게 정리하여 제공하라. → 산출물 sessions/2026-08-11T04-07/developer.md
 - [2026-08-11] 최종 확정된 Blueprint v5와 디자인 스펙을 바탕으로, 영상 편집에 필요한 모든 데이터 출력과 API 연동 시퀀스 목록(Asset Request List)을 명확하게 정리하여 제공하라. → 산출물 sessions/2026-08-11T04-37/developer.md
+- [2026-08-11] Designer가 정의한 모션 규칙과 레오가 정리한 시퀀스 매트릭스를 기반으로, 데이터 변환 로직의 API 명세서와 백엔드 연동 안정성을 최종 검증하여 시스템을 구축하라. → 산출물 sessions/2026-08-11T05-07/developer.md
