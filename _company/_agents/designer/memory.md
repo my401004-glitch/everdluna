@@ -817,3 +817,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-11] 확정된 디자인 사양(`diagnosis_widget_design_spec.md`)을 기반으로 Figma에서 핵심 UI 컴포넌트(예: Diagnosis Score 위젯)의 와이어프레임 및 프로토타입 제작을 즉시 시작하고, 개발이 진행될 수 있도록 상세한 시각적 요구사항을 확정하라. → 산출물 sessions/2026-08-11T03-37/designer.md
 - [2026-08-11] 확정된 디자인 사양(`diagnosis_widget_design_spec.md`)을 기반으로, 영상 제작에 필요한 최종 시각적 요구사항 및 핵심 장면 디자인 가이드라인을 최종 점검하고 정리하라. → 산출물 sessions/2026-08-11T04-07/designer.md
 - [2026-08-11] 확정된 디자인 사양(`diagnosis_widget_design_spec.md`)과 영상 편집 타임라인을 기반으로, 다음 콘텐츠에 필요한 모든 시각적 요구사항 및 핵심 장면 디자인 가이드라인을 최종 점검하고 정리하라. → 산출물 sessions/2026-08-11T04-37/designer.md
+- [2026-08-11] Final_Visual_Design_Guideline_V1.0.md를 기반으로, 다음 콘텐츠의 핵심 장면별 시각적 요구사항 및 디자인 가이드라인을 최종 점검하고 모든 비주얼 일관성을 100% 확보하는 작업을 시작하라. → 산출물 sessions/2026-08-11T04-52/designer.md
