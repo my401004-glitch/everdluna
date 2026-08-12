@@ -866,3 +866,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-12] Pain $ightarrow$ Gain 프레임워크와 Dark Blue/Accent Yellow 스킴을 완벽하게 반영하여, AI 진단 결과(Gap Score) 시각화 컴포넌트(`DiagnosisScoreDisplay`)에 대한 최종 디자인 사양과 레이아웃 규칙을 명확히 정리하여 코다리에게 전달할 준비를 하세요. → 산출물 sessions/2026-08-12T16-48/designer.md
 - [2026-08-12] Pain $\rightarrow$ Gain 프레임워크와 Dark Blue/Accent Yellow 스킴을 완벽하게 반영한 AI 진단 결과(`DiagnosisScoreDisplay`)의 최종 디자인 사양과 레이아웃 규칙을 명확히 정리하여 코다리에게 전달할 준비를 하십시오. → 산출물 sessions/2026-08-12T17-40/designer.md
 - [2026-08-12] Pain $ightarrow$ Gain 프레임워크와 Dark Blue/Accent Yellow 스킴을 반영한 AI 진단 결과(`DiagnosisScoreDisplay`)의 최종 디자인 사양과 레이아웃 규칙을 명확히 정리하여 코다리에게 전달할 준비를 다시 하십시오. → 산출물 sessions/2026-08-12T18-31/designer.md
+- [2026-08-12] 선택된 영상 주제와 후킹 문구를 바탕으로, Dark Blue/Accent Yellow 스킴을 적용한 영상의 핵심 비주얼 컨셉(Concept)과 썸네일 방향성(Visual Direction)에 대한 초기 브리프를 작성해 주세요. → 산출물 sessions/2026-08-12T19-56/designer.md

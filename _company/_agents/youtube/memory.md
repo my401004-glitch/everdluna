@@ -3181,3 +3181,4 @@ https://youtu.be/tu3JBvvFUTw
 - [2026-08-12] writer가 제안한 최적의 주제 및 후킹 문구를 기반으로, 다음 영상의 최종 제목(Title), 핵심 태그(Tags), 그리고 최적 업로드 시간(Optimal Posting Time)을 결정하여 보고하라. → 산출물 sessions/2026-08-12T13-45/youtube.md
 - [2026-08-12] Writer가 제안한 주제 및 후킹 문구를 바탕으로, 채널 목표 달성에 가장 적합한 최종 제목(Title), 핵심 태그(Tags), 최적 업로드 시간(Optimal Posting Time)을 결정하고 보고하라. → 산출물 sessions/2026-08-12T14-25/youtube.md
 - [2026-08-12] Writer가 제공하는 스크립트 초안을 바탕으로, 채널 목표 달성에 가장 적합한 최종 제목(Title), 핵심 태그(Tags), 최적 업로드 시간(Optimal Posting Time)을 재확정하고 보고하라. → 산출물 sessions/2026-08-12T15-20/youtube.md
+- [2026-08-12] Writer가 제안한 주제 중 가장 잠재력이 높은 주제 1개를 선택하고, 해당 주제에 맞춰 채널 목표 달성에 최적화된 최종 제목(Title), 핵심 태그(Tags), 그리고 최적 업로드 시간(Optimal Posting Time)을 결정하여 보고해 주세요. → 산출물 sessions/2026-08-12T19-56/youtube.md
