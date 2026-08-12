@@ -845,3 +845,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-11] 이전 검토 결과에 따라, 다음 영상 콘텐츠에 사용할 핵심 비주얼 요소(썸네일 디자인)를 Master Component Library 기반으로 즉시 생성하고 시각적 일관성을 확보하여 최종 Mockup을 전달하라. → 산출물 sessions/2026-08-11T21-56/designer.md
 - [2026-08-11] Writer가 제시한 후크 중 가장 효과적인 안(Hook 1 또는 3)을 선택하여 Master Component Library를 기반으로 실제 썸네일 Mockup 디자인을 즉시 생성하라. → 산출물 sessions/2026-08-11T22-47/designer.md
 - [2026-08-11] Writer와 코다리가 확정한 비주얼 가이드라인과 선택된 후크를 기반으로, 다음 영상에 사용될 핵심 시각 요소(썸네일 Mockup)의 최종 디자인을 Master Component Library 기반으로 즉시 생성하라. → 산출물 sessions/2026-08-11T23-24/designer.md
+- [2026-08-12] Writer가 완성한 스토리보드와 후크를 기반으로, Master Component Library의 시각적 일관성을 100% 반영한 다음 영상의 최종 썸네일 Mockup 디자인을 즉시 생성할 것. → 산출물 sessions/2026-08-12T00-16/designer.md
