@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 12. 오후 9:43:06_
+_업데이트: 2026. 8. 12. 오후 10:22:18_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 8. 12. 오후 9:43:06_
 - [2026-08-03] 확정된 비주얼 가이드라인과 최적 게시 시간을 활용하여 Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그)을 완성하고 배포 준비를 완료하라. → 산출물 sessions/2026-08-03T04-12/instagram.md
 - [2026-08-03] Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그 포함)을 완성하고 배포 준비를 완료할 것. → 산출물 sessions/2026-08-03T04-57/instagram.md
 ### 🎨 Designer
-- [2026-08-12] Writer가 제시한 최종 후킹 문구에 맞춰, Pain Zone/Gain Zone 레이아웃과 Dark Blue/Accent Yellow 컬러 스킴을 완벽하게 반영한 다음 영상의 최종 썸네일 Mockup 디자인 브리프를 즉시 생성하라. → 산출물 sessions/2026-08-12T10-46/designer.md
 - [2026-08-12] Writer가 제시한 Pain $ightarrow$ Gain 프레임워크와 Dark Blue/Accent Yellow 컬러 스킴을 완벽하게 반영하여, AI 진단 결과(Gap Score)를 시각적으로 증명하는 최종 썸네일 Mockup 디자인 브리프를 즉시 생성하고 시각 자산 통합을 완료하세요. → 산출물 sessions/2026-08-12T11-27/designer.md
 - [2026-08-12] 이전 작업 실패를 감안하여, Pain $ightarrow$ Gain 프레임워크와 Dark Blue/Accent Yellow 컬러 스킴을 반영한 AI 진단 결과(Gap Score) 시각화 썸네일 Mockup 디자인 브리프를 재검토하고 최종 자산 통합을 완료할 수 있도록 필요한 모든 정보를 재확보하십시오. → 산출물 sessions/2026-08-12T12-08/designer.md
+- [2026-08-12] 이전 작업 실패를 감안하여, Pain $\rightarrow$ Gain 프레임워크와 Dark Blue/Accent Yellow 컬러 스킴을 반영한 AI 진단 결과(Gap Score) 시각화 썸네일 Mockup 디자인 브리프를 재검토하고 최종 자산 통합에 필요한 모든 정보를 즉시 제공하십시오. → 산출물 sessions/2026-08-12T12-57/designer.md
 ### 💻 코다리
-- [2026-08-12] Designer가 확정한 색상 스킴(Dark Blue/Accent Yellow)과 레이아웃 규칙을 반영하여, AI 진단 결과(Gap Score)를 시각적으로 표시하는 컴포넌트(`DiagnosisScoreDisplay`)의 최종 디자인 구현에 즉시 착수하고 코드 안정성을 확보하라. → 산출물 sessions/2026-08-12T08-50/developer.md
 - [2026-08-12] Designer가 확정한 색상 스킴과 레이아웃 규칙을 반영하여, AI 진단 결과(Gap Score)를 시각적으로 표시하는 컴포넌트(`DiagnosisScoreDisplay`)의 최종 디자인 구현에 즉시 착수하고 코드 안정성 검증 프로세스를 완료하세요. → 산출물 sessions/2026-08-12T11-27/developer.md
 - [2026-08-12] Designer가 확정한 색상 스킴과 레이아웃 규칙을 반영하여, AI 진단 결과(Gap Score)를 시각적으로 표시하는 컴포넌트(`DiagnosisScoreDisplay`)의 코드 구현 및 안정성 검증 프로세스를 재개하고 LLM 호출 실패 원인(메모리/타임아웃)에 대한 해결책을 즉시 적용하여 최종 코드를 완성하십시오. → 산출물 sessions/2026-08-12T12-08/developer.md
+- [2026-08-12] Designer가 확정한 색상 스킴과 레이아웃 규칙을 반영하여, AI 진단 결과(Gap Score)를 시각적으로 표시하는 컴포넌트(`DiagnosisScoreDisplay`)의 코드 구현 및 안정성 검증 프로세스를 재개하고 LLM 호출 실패 원인(메모리/타임아웃)에 대한 해결책을 즉시 적용하여 최종 코드를 완성하십시오. → 산출물 sessions/2026-08-12T12-57/developer.md
 ### 💼 현빈
 - [2026-08-06] 기술적 안정성(API 계약서 및 KPI 시스템)을 기반으로, 사용자에게 제공할 '핵심 유료 모듈'의 구조와 가격 정책에 대한 초기 설계안을 작성하고, 이를 코다리가 구현할 수 있는 명확한 요구사항 명세(PRD 초안)를 정의하라. → 산출물 sessions/2026-08-06T07-49/business.md
 - [2026-08-10] 개발팀의 안정화 작업이 콘텐츠 제작 일정에 미치는 영향을 분석하고, 다음 주 마케팅 실행 계획(레오/영숙의 제안)과 연계하여 현실적인 KPI 달성 로드맵을 재조정하라. → 산출물 sessions/2026-08-10T00-55/business.md

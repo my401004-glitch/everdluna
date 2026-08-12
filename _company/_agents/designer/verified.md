@@ -1230,3 +1230,12 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-12] | **Body Typography (본문/데이터)** | Noto Sans KR Regular | N/A | 구체적인 데이터 및 상세 설명 텍스트. 높은 가독성 보장. | _(근거: Designer 검증된 지식)_
 - [2026-08-12] * **Primary (신뢰/배경):** Dark Blue (`#0A2463`) — 전문성 확보 영역, 메인 배경색. _(근거: Designer 검증된 지식)_
 - [2026-08-12] * **Accent (기회/강조):** Accent Yellow (`#FFD700`) — **최종 CTA, Gain 수치, Gap Score '개선 가능' 표시**. 사용처가 가장 명확해야 함. _(근거: Designer 검증된 지식)_
+- [2026-08-12] | 요소 | 코드/명칭 | 색상 코드 | 역할 및 적용 목적 | | _(근거: Designer 검증된 지식)_
+- [2026-08-12] | **Primary Color** (신뢰) | Dark Blue | `#0A2463` | 배경, 헤더, 주요 텍스트. 시스템의 전문성과 신뢰성 확보에 사용한다. | | _(근거: Designer 검증된 지식)_
+- [2026-08-12] | **Accent Color A** (위험/경고) | Accent Yellow | `#FFD700` | 위험(Pain Zone), 부족한 점, 경고 메시지 강조. 클릭 유도 CTA와 함께 사용하여 즉각적인 시선 집중을 유도한다. | | _(근거: Designer 검증된 지식)_
+- [2026-08-12] | **Accent Color B** (성장/기회) | Success Green | `#4CAF50` | 개선 가능 영역, 성공적인 변화, 긍정적 결과(Gain). Dark Blue와의 보색 대비를 통해 희망을 제시한다. | | _(근거: Designer 개인 메모리)_
+- [2026-08-12] | **Background Color** | Neutral Grey | `#F5F5F5` | 데이터 및 본문 텍스트 배경. 주요 색상과의 명확한 대비로 가독성을 극대화한다. | | _(근거: Designer 검증된 지식)_
+- [2026-08-12] | 영역 | 내용 | 시각적 구현 원칙 | | _(근거: Designer 검증된 지식)_
+- [2026-08-12] | **헤드라인** | "❌ 이렇게 틀리면 망한다. Gap Score로 진단한 실력의 치명적 구멍 3가지" | Montserrat Bold, Dark Blue 배경에 Yellow 하이라이트 처리 (Pain 강조). | | _(근거: Designer 검증된 지식)_
+- [2026-08-12] | **비주얼** | 좌절하는 학생 이미지 + AI 스코어 그래프 Mockup. Yellow/Blue 대비 극대화. | Gap Score 컴포넌트의 Pain Zone을 전면에 배치하고, 성공적인 모습(Gain)과 비교하여 격차를 명확히 보여준다. | | _(근거: Designer 검증된 지식)_
+- [2026-08-12] | **핵심 문구** | "점수 65점 $\rightarrow$ 88점으로 만드세요" (Gap Score 변화 강조) | '$\rightarrow$' 기호와 함께 Green/Yellow를 사용하여 직관적인 변곡점을 제시한다. | | _(근거: Designer 검증된 지식)_
