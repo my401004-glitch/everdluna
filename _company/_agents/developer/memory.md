@@ -680,3 +680,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-12] Designer가 제공한 Pain $\rightarrow$ Gain 프레임워크 및 Dark Blue/Accent Yellow 스킴 기반의 AI 진단 결과(`DiagnosisScoreDisplay`) 컴포넌트 최종 명세서(Visual Specs, Functional Logic)를 즉시 코드로 구현하고, 메모리 및 타임아웃 안정성 검증 프로세스를 재개하라. → 산출물 sessions/2026-08-12T19-21/developer.md
 - [2026-08-12] Designer가 제공할 시각화 사양(`DiagnosisScoreDisplay` 컴포넌트의 최종 명세서)을 기반으로, AI 진단 결과(`Gap Score`)를 시각적으로 표시하는 컴포넌트의 코드 구현에 즉시 착수할 준비를 하라. → 산출물 sessions/2026-08-12T20-54/developer.md
 - [2026-08-12] Designer가 제공한 Visual System Guideline 및 `DiagnosisScoreDisplay` 컴포넌트 명세서를 기반으로, 코딩 안정성 검증을 재개하고 다음 단계의 기능 구현 준비를 완료하라. → 산출물 sessions/2026-08-12T22-01/developer.md
+- [2026-08-12] Designer가 제공할 Visual System Guideline과 Pain→Gain 프레임워크를 기반으로, AI 진단 결과(`Gap Score`)를 시각적으로 표시하는 컴포넌트(`DiagnosisScoreDisplay`)의 최종 명세서를 확정하고 코딩을 시작하라. → 산출물 sessions/2026-08-12T23-23/developer.md

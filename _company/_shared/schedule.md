@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 13. 오전 8:04:59_
+_업데이트: 2026. 8. 13. 오전 8:47:32_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,13 +13,13 @@ _업데이트: 2026. 8. 13. 오전 8:04:59_
 - [2026-08-03] 확정된 비주얼 가이드라인과 최적 게시 시간을 활용하여 Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그)을 완성하고 배포 준비를 완료하라. → 산출물 sessions/2026-08-03T04-12/instagram.md
 - [2026-08-03] Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그 포함)을 완성하고 배포 준비를 완료할 것. → 산출물 sessions/2026-08-03T04-57/instagram.md
 ### 🎨 Designer
-- [2026-08-12] 선택된 영상 주제와 후킹 문구를 바탕으로, Dark Blue/Accent Yellow 스킴을 적용한 영상의 핵심 비주얼 컨셉(Concept)과 썸네일 방향성(Visual Direction)에 대한 초기 브리프를 작성해 주세요. → 산출물 sessions/2026-08-12T19-56/designer.md
 - [2026-08-12] Writer가 선택할 주제를 고려하여, Dark Blue/Accent Yellow 스킴을 적용한 영상의 핵심 비주얼 컨셉(Concept)과 썸네일 방향성(Visual Direction)에 대한 초기 브리프를 작성하라. → 산출물 sessions/2026-08-12T20-54/designer.md
 - [2026-08-12] 확정된 Pain $\rightarrow$ Gain 프레임워크와 Visual System Guideline을 기반으로, 다음 영상 콘텐츠에 적용할 최종 핵심 비주얼 컨셉(Concept)과 썸네일 방향성(Visual Direction)을 구체적으로 확정하여 Writer에게 전달할 준비를 하라. → 산출물 sessions/2026-08-12T22-30/designer.md
+- [2026-08-12] Writer가 최종 스크립트 조정에 필요한 'Dark Blue/Accent Yellow 스킴' 기반의 시각화 디자인 사양 및 Pain→Gain 프레임워크를 코다리에게 전달할 준비를 완료하라. → 산출물 sessions/2026-08-12T23-23/designer.md
 ### 💻 코다리
-- [2026-08-12] Designer가 제공한 Pain $\rightarrow$ Gain 프레임워크 및 Dark Blue/Accent Yellow 스킴 기반의 AI 진단 결과(`DiagnosisScoreDisplay`) 컴포넌트 최종 명세서(Visual Specs, Functional Logic)를 즉시 코드로 구현하고, 메모리 및 타임아웃 안정성 검증 프로세스를 재개하라. → 산출물 sessions/2026-08-12T19-21/developer.md
 - [2026-08-12] Designer가 제공할 시각화 사양(`DiagnosisScoreDisplay` 컴포넌트의 최종 명세서)을 기반으로, AI 진단 결과(`Gap Score`)를 시각적으로 표시하는 컴포넌트의 코드 구현에 즉시 착수할 준비를 하라. → 산출물 sessions/2026-08-12T20-54/developer.md
 - [2026-08-12] Designer가 제공한 Visual System Guideline 및 `DiagnosisScoreDisplay` 컴포넌트 명세서를 기반으로, 코딩 안정성 검증을 재개하고 다음 단계의 기능 구현 준비를 완료하라. → 산출물 sessions/2026-08-12T22-01/developer.md
+- [2026-08-12] Designer가 제공할 Visual System Guideline과 Pain→Gain 프레임워크를 기반으로, AI 진단 결과(`Gap Score`)를 시각적으로 표시하는 컴포넌트(`DiagnosisScoreDisplay`)의 최종 명세서를 확정하고 코딩을 시작하라. → 산출물 sessions/2026-08-12T23-23/developer.md
 ### 💼 현빈
 - [2026-08-06] 기술적 안정성(API 계약서 및 KPI 시스템)을 기반으로, 사용자에게 제공할 '핵심 유료 모듈'의 구조와 가격 정책에 대한 초기 설계안을 작성하고, 이를 코다리가 구현할 수 있는 명확한 요구사항 명세(PRD 초안)를 정의하라. → 산출물 sessions/2026-08-06T07-49/business.md
 - [2026-08-10] 개발팀의 안정화 작업이 콘텐츠 제작 일정에 미치는 영향을 분석하고, 다음 주 마케팅 실행 계획(레오/영숙의 제안)과 연계하여 현실적인 KPI 달성 로드맵을 재조정하라. → 산출물 sessions/2026-08-10T00-55/business.md
