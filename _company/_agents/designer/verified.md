@@ -1217,3 +1217,9 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-12] * **Body/Data:** Noto Sans KR Regular/Medium _(근거: Designer 검증된 지식)_
 - [2026-08-12] * 모든 컴포넌트 레이어는 에 따라 **반응형(Responsive)** 구조로 설계되어야 한다. (최소 1920x1080 기준) _(근거: sessions/2026-08-12T02-32/developer.md)_
 - [2026-08-12] 기반으로 기존 브리프를 체계화하고, [근거: sessions/2026-08-12T02-32/developer.md]와 같은 팀의 최신 의사결정 로그까지 통합하여 실질적인 '사용 매뉴얼'을 완성했습니다. _(근거: Designer 검증된 지식)_
+- [2026-08-12] * **Primary Color (신뢰/안정):** Dark Blue (`#0A2463`). 배경의 주된 영역(헤더, 주요 정보 박스)에 사용되어 전문성을 강조합니다. _(근거: Designer 검증된 지식)_
+- [2026-08-12] * **Accent Yellow (CTA/Gain):** Accent Yellow (`#FFD700`). '개선 가능성', '최종 점수', CTA 버튼 등 시선을 집중시켜야 할 모든 곳에 사용됩니다. _(근거: Designer 검증된 지식)_
+- [2026-08-12] * **Danger Red (Pain 강조):** Deep Red (`#C83434`). 진단 시스템의 위험 수치(Gap Score Low)를 표시하는 박스에만 제한적으로 사용하여 경고 효과를 극대화합니다. _(근거: Designer 개인 메모리 - 신규 도입)_
+- [2026-08-12] * **Neutral Grey (가독성):** Neutral Grey (`#F5F5F5`). 메인 텍스트 배경으로 사용되어 Dark Blue와의 대비를 유지하고 가독성을 확보합니다. _(근거: Designer 검증된 지식)_
+- [2026-08-12] * **Headline (제목):** Montserrat Bold (72pt ~ 120pt). 영상의 핵심 메시지(예: "점수 몇 점 차이일까?")를 강력하게 전달합니다. _(근거: Designer 검증된 지식)_
+- [2026-08-12] * **Subtitle/Data:** Noto Sans KR Medium (36pt ~ 54pt). 진단 수치, 세부 데이터 등 구체적 정보를 제시합니다. 가독성을 최우선으로 합니다. _(근거: Designer 검증된 지식)_
