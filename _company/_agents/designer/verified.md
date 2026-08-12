@@ -1210,3 +1210,10 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-12] | **H1 (헤드라인)** | Montserrat Bold | ExtraBold | 컴포넌트의 가장 강력한 문구. 28pt 이상, Yellow/Dark Blue 조합 사용. | 임팩트 및 강력한 메시지 전달. | _(근거: Self-RAG)_
 - [2026-08-12] | **H2 (핵심 지표)** | Noto Sans KR | Black/Bold | 데이터 수치(예: 72%). *가장 크게* 표시되어야 함. Yellow 또는 Dark Blue 배경 위에 배치. | 시청자의 눈이 가장 먼저 포착해야 할 정보. | _(근거: Self-RAG)_
 - [2026-08-12] | **Body (설명)** | Noto Sans KR | Regular/Medium | 상세 설명, 부연 설명. 16pt 이하로 유지하여 가독성을 확보. Dark Blue 배경 위에서 Yellow로 강조. | 전문성 있는 정보를 전달하는 데 사용. | _(근거: Self-RAG)_
+- [2026-08-12] * **Primary Color (신뢰/전문성):** Dark Blue (`#0A2463`) _(근거: Designer 검증된 지식)_
+- [2026-08-12] * **Accent Color (행동 유도/기회):** Accent Yellow (`#FFD700`) _(근거: Designer 검증된 지식)_
+- [2026-08-12] * **Neutral Color (배경/가독성):** Neutral Grey (`#F5F5F5`) _(근거: Designer 검증된 지식)_
+- [2026-08-12] * **Title/Headline:** Montserrat Bold _(근거: Designer 검증된 지식)_
+- [2026-08-12] * **Body/Data:** Noto Sans KR Regular/Medium _(근거: Designer 검증된 지식)_
+- [2026-08-12] * 모든 컴포넌트 레이어는 에 따라 **반응형(Responsive)** 구조로 설계되어야 한다. (최소 1920x1080 기준) _(근거: sessions/2026-08-12T02-32/developer.md)_
+- [2026-08-12] 기반으로 기존 브리프를 체계화하고, [근거: sessions/2026-08-12T02-32/developer.md]와 같은 팀의 최신 의사결정 로그까지 통합하여 실질적인 '사용 매뉴얼'을 완성했습니다. _(근거: Designer 검증된 지식)_
