@@ -1223,3 +1223,8 @@ _사용자가 직접 줄을 지우면 그 주장은 다시 미검증 상태로 �
 - [2026-08-12] * **Neutral Grey (가독성):** Neutral Grey (`#F5F5F5`). 메인 텍스트 배경으로 사용되어 Dark Blue와의 대비를 유지하고 가독성을 확보합니다. _(근거: Designer 검증된 지식)_
 - [2026-08-12] * **Headline (제목):** Montserrat Bold (72pt ~ 120pt). 영상의 핵심 메시지(예: "점수 몇 점 차이일까?")를 강력하게 전달합니다. _(근거: Designer 검증된 지식)_
 - [2026-08-12] * **Subtitle/Data:** Noto Sans KR Medium (36pt ~ 54pt). 진단 수치, 세부 데이터 등 구체적 정보를 제시합니다. 가독성을 최우선으로 합니다. _(근거: Designer 검증된 지식)_
+- [2026-08-12] | **Primary Color (신뢰)** | Dark Blue | `#0A2463` | 배경, 헤더, 핵심 정보 영역. 전문성과 신뢰감을 극대화합니다. | _(근거: Designer 검증된 지식)_
+- [2026-08-12] | **Accent Color (CTA/Gain)** | Accent Yellow | `#FFD700` | CTA 버튼, Gap Score의 '기회', 핵심 성과 수치(ROI). 즉각적인 시선 집중 및 행동 유도. | _(근거: Designer 검증된 지식)_
+- [2026-08-12] | **Neutral Background** | Light Grey | `#F5F5F5` | 본문 텍스트 배경, 데이터 영역. Dark Blue와의 명확한 대비를 통해 가독성 극대화. | _(근거: Designer 검증된 지식)_
+- [2026-08-12] | **Title Typography (헤드라인)** | Montserrat Bold | N/A | 핵심 메시지(Pain, Gain)에 사용되어 강력한 시각적 임팩트를 제공합니다. | _(근거: Designer 검증된 지식)_
+- [2026-08-12] | **Body Typography (본문/데이터)** | Noto Sans KR Regular | N/A | 구체적인 데이터 및 상세 설명 텍스트. 높은 가독성 보장. | _(근거: Designer 검증된 지식)_
