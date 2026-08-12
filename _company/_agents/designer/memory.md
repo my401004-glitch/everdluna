@@ -858,3 +858,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-08-12] Writer와 코다리가 확정한 가이드라인 및 '썸네일 컴포넌트 라이브러리 v2.0'를 기반으로, 다음 영상에 필요한 최종 썸네일 Mockup 디자인을 즉시 생성하고 시각 자산 통합을 완료하라. → 산출물 sessions/2026-08-12T05-53/designer.md
 - [2026-08-12] Writer가 확정한 후킹 문구 중 가장 강력한 1가지에 대해 Pain->Gain 프레임워크를 적용하여, 시각적 레이아웃(Pain Zone/Gain Zone)과 컬러 스킴(Dark Blue/Accent Yellow)을 반영한 최종 썸네일 Mockup 디자인 브리프를 작성하라. → 산출물 sessions/2026-08-12T07-32/designer.md
 - [2026-08-12] Writer가 제시할 설득 문구와 결합하여, 유료 전환 과정에 필요한 핵심 비주얼 자산 3가지(Pain Point 시각화, CTA 강조, Before/After 애니메이션 컨셉)에 대한 디자인 브리프를 준비하고 Writer의 결과물을 기다릴 준비를 하세요. → 산출물 sessions/2026-08-12T08-31/designer.md
+- [2026-08-12] Writer가 제공할 후킹 문구를 기반으로 Pain $\rightarrow$ Gain 프레임워크를 시각화하여, 다음 영상에 사용될 최종 썸네일 Mockup 디자인 브리프(Pain Zone/Gain Zone 및 컬러 스킴 반영)를 즉시 생성하라. → 산출물 sessions/2026-08-12T09-53/designer.md
