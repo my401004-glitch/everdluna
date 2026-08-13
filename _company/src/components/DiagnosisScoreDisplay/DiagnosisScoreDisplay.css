@@ -1,0 +1,74 @@
+/* Base Styling */
+.diagnosis-display {
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dynamic Styling (Visual System Guideline 적용 지점) */
+.level-critical {
+    background: linear-gradient(135deg, #ffe0b2, #ffcc80); /* Accent Yellow 계열 */
+    border: 3px solid #ff9800;
+}
+
+.level-moderate {
+    background: linear-gradient(135deg, #bbdefb, #90caf9); /* Dark Blue 계열 */
+    border: 3px solid #42a5f5;
+}
+
+.level-stable {
+    background-color: #e8f5e9; /* 안정적인 Green/Light Gray 계열 */
+    border: 3px solid #c8e6c9;
+}
+
+/* Summary & Value Display */
+.score-summary h1 {
+    font-size: 4rem;
+    margin: 0.5rem 0;
+    color: #333; /* 진단 점수 강조 색상 */
+}
+
+.gap-label {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.score-description {
+    font-style: italic;
+    color: #777;
+}
+
+/* Visualization Bar */
+.visualization-container {
+    margin-top: 30px;
+    background: #eee;
+    height: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #42a5f5, #2196F3); /* Primary Blue */
+    transition: width 1s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.progress-label {
+    color: white;
+    font-weight: bold;
+    padding-right: 20px;
+    transform: translateX(10%); /* 여유 공간 확보 */
+}
+
+/* Metadata */
+.data-metadata {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}

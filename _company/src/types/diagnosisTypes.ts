@@ -1,25 +1,11 @@
-/**
- * API로부터 받을 진단 점수 데이터의 타입을 정의합니다.
- * 이 스키마는 백엔드 설계(sessions/2026-07-05T09:48)를 기반으로 합니다.
- */
-
-export interface KpiMetrics {
-    growthScore: number; // 예: 성취도 증가 예측 점수 (Growth)
-    engagementScore: number; // 예: 서비스 참여율 관련 점수 (Engagement)
-    monetizationScore: number; // 예: 유료 전환 가능성 점수 (Monetization)
+export interface GapScoreData {
+  score: number; // 전체 진단 점수 (0~100). 이 값이 높을수록 'Gap'이 큼.
+  gapType: 'Growth' | 'Engagement' | 'Monetization'; // 현재 측정된 KPI 유형
+  contextId: string; // 어떤 컨텍스트에서 측정되었는지 식별자
+  timestamp: Date; // 데이터 기록 시간
 }
 
-export interface DiagnosisScoreResponse {
-    contextId: string;
-    overallDiagnosisScore: number; // 종합 진단 점수 (0~100)
-    riskLevel: 'Low' | 'Medium' | 'High'; // 리스크 레벨
-    kpiMetrics: KpiMetrics; // KPI 상세 지표
-    timestamp: Date; 
-}
-
-// 사용자 권한 정보를 담는 가상의 타입
-export interface UserProfile {
-    userId: string;
-    subscriptionTier: 'Free' | 'Silver' | 'Gold';
-    hasAccessToDiagnosis: boolean;
+export interface DiagnosisScoreDisplayProps {
+  data: GapScoreData; // 진단 점수 데이터 전체를 받습니다.
+  title: string; // 이 섹션의 제목 (예: "성장 잠재력 분석")
 }
