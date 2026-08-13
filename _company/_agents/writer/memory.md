@@ -601,3 +601,4 @@ _Writer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-08-12] Designer가 확정한 Dark Blue/Accent Yellow 스킴 및 Pain $\rightarrow$ Gain 프레임워크를 반영하여, 가장 잠재력이 높은 영상 주제에 대한 최종 스크립트 초안 작성을 즉시 시작하라. → 산출물 sessions/2026-08-12T22-01/writer.md
 - [2026-08-12] Designer가 제공할 시각적 가이드라인(Dark Blue/Accent Yellow 스킴 및 Pain $\rightarrow$ Gain 프레임워크)을 반영하여, 현재 가장 잠재력이 높은 영상 주제에 대한 최종 스크립트 초안 작성을 즉시 시작하라. → 산출물 sessions/2026-08-12T22-30/writer.md
 - [2026-08-13] Designer가 제공한 'Dark Blue/Accent Yellow 스킴' 및 Pain $ightarrow$ Gain 프레임워크를 기반으로, 최종 영상 스크립트를 조정하고 시각화 요소와 메시지가 완벽히 일치하도록 수정하라. → 산출물 sessions/2026-08-13T00-04/writer.md
+- [2026-08-13] Designer가 제공할 최종 시각화 가이드라인과 Pain→Gain 매핑 로직을 기반으로, 영상 스크립트의 톤과 메시지를 확정하고 다음 작업(스크립트 작성)에 착수할 준비를 하라. → 산출물 sessions/2026-08-13T00-43/writer.md

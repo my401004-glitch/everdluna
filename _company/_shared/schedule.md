@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 8. 13. 오전 9:28:47_
+_업데이트: 2026. 8. 13. 오전 10:05:44_
 
 ## 📅 사람 일정 (Google Calendar)
 
@@ -13,9 +13,9 @@ _업데이트: 2026. 8. 13. 오전 9:28:47_
 - [2026-08-03] 확정된 비주얼 가이드라인과 최적 게시 시간을 활용하여 Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그)을 완성하고 배포 준비를 완료하라. → 산출물 sessions/2026-08-03T04-12/instagram.md
 - [2026-08-03] Reels 1번 콘텐츠의 최종 포스팅 초안(캡션 및 해시태그 포함)을 완성하고 배포 준비를 완료할 것. → 산출물 sessions/2026-08-03T04-57/instagram.md
 ### 🎨 Designer
-- [2026-08-12] Writer가 선택할 주제를 고려하여, Dark Blue/Accent Yellow 스킴을 적용한 영상의 핵심 비주얼 컨셉(Concept)과 썸네일 방향성(Visual Direction)에 대한 초기 브리프를 작성하라. → 산출물 sessions/2026-08-12T20-54/designer.md
 - [2026-08-12] 확정된 Pain $\rightarrow$ Gain 프레임워크와 Visual System Guideline을 기반으로, 다음 영상 콘텐츠에 적용할 최종 핵심 비주얼 컨셉(Concept)과 썸네일 방향성(Visual Direction)을 구체적으로 확정하여 Writer에게 전달할 준비를 하라. → 산출물 sessions/2026-08-12T22-30/designer.md
 - [2026-08-12] Writer가 최종 스크립트 조정에 필요한 'Dark Blue/Accent Yellow 스킴' 기반의 시각화 디자인 사양 및 Pain→Gain 프레임워크를 코다리에게 전달할 준비를 완료하라. → 산출물 sessions/2026-08-12T23-23/designer.md
+- [2026-08-13] Visual System Guideline과 Pain→Gain 프레임워크를 기반으로, 영상 콘텐츠에 적용할 최종 핵심 비주얼 컨셉(Concept) 및 썸네일 방향성(Visual Direction)을 확정하여 Writer에게 전달할 준비를 하라. → 산출물 sessions/2026-08-13T00-43/designer.md
 ### 💻 코다리
 - [2026-08-12] Designer가 제공한 Visual System Guideline 및 `DiagnosisScoreDisplay` 컴포넌트 명세서를 기반으로, 코딩 안정성 검증을 재개하고 다음 단계의 기능 구현 준비를 완료하라. → 산출물 sessions/2026-08-12T22-01/developer.md
 - [2026-08-12] Designer가 제공할 Visual System Guideline과 Pain→Gain 프레임워크를 기반으로, AI 진단 결과(`Gap Score`)를 시각적으로 표시하는 컴포넌트(`DiagnosisScoreDisplay`)의 최종 명세서를 확정하고 코딩을 시작하라. → 산출물 sessions/2026-08-12T23-23/developer.md
@@ -33,9 +33,9 @@ _업데이트: 2026. 8. 13. 오전 9:28:47_
 - [2026-08-12] Writer와 Designer가 확정한 가이드라인과 스토리보드를 바탕으로, 영상의 톤앤매너에 맞는 BGM 자동 생성(MusicGen/ACE-Step) 및 사운드 디자인을 실행하여 오디오 자산을 준비하라. → 산출물 sessions/2026-08-12T05-21/editor.md
 - [2026-08-12] Writer와 Designer가 확정한 최종 스토리보드를 기반으로 영상의 톤앤매너에 맞는 BGM 자동 생성(MusicGen/ACE-Step) 및 사운드 디자인을 실행하여 오디오 자산을 준비하라. → 산출물 sessions/2026-08-12T05-53/editor.md
 ### ✍️ Writer
-- [2026-08-12] Designer가 확정한 Dark Blue/Accent Yellow 스킴 및 Pain $\rightarrow$ Gain 프레임워크를 반영하여, 가장 잠재력이 높은 영상 주제에 대한 최종 스크립트 초안 작성을 즉시 시작하라. → 산출물 sessions/2026-08-12T22-01/writer.md
 - [2026-08-12] Designer가 제공할 시각적 가이드라인(Dark Blue/Accent Yellow 스킴 및 Pain $\rightarrow$ Gain 프레임워크)을 반영하여, 현재 가장 잠재력이 높은 영상 주제에 대한 최종 스크립트 초안 작성을 즉시 시작하라. → 산출물 sessions/2026-08-12T22-30/writer.md
 - [2026-08-13] Designer가 제공한 'Dark Blue/Accent Yellow 스킴' 및 Pain $ightarrow$ Gain 프레임워크를 기반으로, 최종 영상 스크립트를 조정하고 시각화 요소와 메시지가 완벽히 일치하도록 수정하라. → 산출물 sessions/2026-08-13T00-04/writer.md
+- [2026-08-13] Designer가 제공할 최종 시각화 가이드라인과 Pain→Gain 매핑 로직을 기반으로, 영상 스크립트의 톤과 메시지를 확정하고 다음 작업(스크립트 작성)에 착수할 준비를 하라. → 산출물 sessions/2026-08-13T00-43/writer.md
 ### 🔍 Researcher
 - [2026-08-12] 최근 7일간의 채널 성과, 경쟁사 트렌드 및 시장 반응 데이터를 수집하여 현재 가장 높은 잠재적 가치를 가진 단일 작업 아이디어를 도출하고 그 근거를 제시하세요. → 산출물 sessions/2026-08-12T03-31/researcher.md
 - [2026-08-12] 레오로부터 받은 키워드 데이터와 현재 채널의 트렌드를 교차 분석하여, 후킹 문구 재작성에 필요한 객관적인 데이터(Pain Point)를 최종 정리하고 보고하라. → 산출물 sessions/2026-08-12T06-43/researcher.md
